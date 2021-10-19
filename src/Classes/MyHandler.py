@@ -9,9 +9,9 @@ from shutil import copyfile
 from xml.etree.ElementTree import parse, ParseError  # 解析xml格式
 from aip import AipBodyAnalysis  # 百度ai人体分析
 
-from Class.MyJav import JavFile
-from Class.MyLogger import record_video_old
-from Class.MyError import TooManyDirectoryLevelsError, DownloadFanartError
+from Classes.MyJav import JavFile
+from Classes.MyLogger import record_video_old
+from Classes.MyError import TooManyDirectoryLevelsError, DownloadFanartError
 from Functions.Utils.Baidu import translate
 from Functions.Utils.Download import download_pic
 from Functions.Progress.Prepare import get_suren_cars

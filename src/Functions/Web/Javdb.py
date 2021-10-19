@@ -1,4 +1,5 @@
 # -*- coding:utf-8 -*-
+from configparser import RawConfigParser
 from math import ceil
 import re
 from lxml import etree
@@ -7,8 +8,16 @@ import requests
 # from traceback import format_exc
 
 from Functions.Metadata.Car import extract_number_from_car_suf, extract_number_from_car
-from Class.MyEnum import ScrapeStatusEnum
-from Class.MyError import SpecifiedUrlError
+from Classes.MyEnum import ScrapeStatusEnum
+from Classes.MyError import SpecifiedUrlError
+
+
+# 设置
+class DbHandler(object):
+    def __init__(self, pattern):
+        self._pattern = pattern
+        config_settings = RawConfigParser()
+        config_settings.read('【点我设置整理规则】.ini', encoding='utf-8-sig')
 
 
 # 请求jav在javdb上的网页，返回html

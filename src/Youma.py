@@ -3,11 +3,11 @@ import os
 import json
 from traceback import format_exc
 
-from Class.MyHandler import Handler
-from Class.MyEnum import ScrapeStatusEnum
-from Class.MyLogger import Logger
-from Class.MyJav import JavModel
-from Class.MyError import TooManyDirectoryLevelsError, SpecifiedUrlError
+from Classes.MyHandler import Handler
+from Classes.MyEnum import ScrapeStatusEnum
+from Classes.MyLogger import Logger
+from Classes.MyJav import JavModel
+from Classes.MyError import TooManyDirectoryLevelsError, SpecifiedUrlError
 from Functions.Progress.User import choose_directory
 from Functions.Metadata.Genre import better_dict_youma_genres
 from Functions.Web.Javdb import scrape_from_db

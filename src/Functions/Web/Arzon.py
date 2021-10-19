@@ -2,7 +2,7 @@
 import requests
 import re
 # from traceback import format_exc
-from Class.MyEnum import ScrapeStatusEnum
+from Classes.MyEnum import ScrapeStatusEnum
 from Functions.Progress.Prepare import write_new_arzon_phpsessid
 
 

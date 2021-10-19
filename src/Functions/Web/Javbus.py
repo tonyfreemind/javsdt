@@ -1,10 +1,10 @@
 # -*- coding:utf-8 -*-
 import re
 import requests
-from Class.MyEnum import ScrapeStatusEnum
+from Classes.MyEnum import ScrapeStatusEnum
 # from traceback import format_exc
 
-from Class.MyError import SpecifiedUrlError
+from Classes.MyError import SpecifiedUrlError
 
 
 # 搜索javbus，或请求javbus上jav所在网页，返回html
