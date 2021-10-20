@@ -4,8 +4,8 @@ from dataclasses import dataclass
 @dataclass
 class Const(object):
     # region ini
-    ini_file: str = '【点我设置整理规则】.ini'
-    encoding = 'utf-8-sig'
+    ini: str = '【点我设置整理规则】.ini'
+    encoding_ini = 'utf-8-sig'
 
     node_formula: str = '公式元素'
     need_actors_end_of_title: str = '标题末尾保留演员姓名？'
@@ -14,9 +14,9 @@ class Const(object):
     need_nfo = '是否收集nfo？'
     name_nfo_title_formula: str = 'title的公式'
     need_zh_plot = 'plot是否使用中文简介？'
-    custom_genres = '额外增加以下元素到特征中'
-    need_save_genres = '是否将特征保存到genre？'
-    need_save_tags = '是否将特征保存到tag？'
+    extra_genres = '额外增加以下元素到特征中'
+    need_nfo_genres = '是否将特征保存到genre？'
+    need_nfo_tags = '是否将特征保存到tag？'
 
     node_video = '重命名视频文件'
     need_rename_video = '是否重命名视频文件？'
@@ -28,8 +28,8 @@ class Const(object):
 
     node_classify = '归类影片'
     need_classify = '是否归类影片？'
-    need_classify_file_not_folder = '针对文件还是文件夹？'
-    custom_classify_target_dir = '归类的根目录'
+    need_classify_folder = '针对文件还是文件夹？'
+    dir_custom_classify_target = '归类的根目录'
     classify_formula = '归类的标准'
 
     node_fanart = '下载封面'
