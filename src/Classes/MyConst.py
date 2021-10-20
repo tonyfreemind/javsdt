@@ -3,6 +3,7 @@ from dataclasses import dataclass
 
 @dataclass
 class Const(object):
+    # region ini
     ini_file: str = '【点我设置整理规则】.ini'
     encoding = 'utf-8-sig'
 
@@ -14,8 +15,8 @@ class Const(object):
     name_nfo_title_formula: str = 'title的公式'
     need_zh_plot = 'plot是否使用中文简介？'
     custom_genres = '额外增加以下元素到特征中'
-    need_genre = '是否将特征保存到genre？'
-    need_tag = '是否将特征保存到tag？'
+    need_save_genres = '是否将特征保存到genre？'
+    need_save_tags = '是否将特征保存到tag？'
 
     node_video = '重命名视频文件'
     need_rename_video = '是否重命名视频文件？'
@@ -48,7 +49,6 @@ class Const(object):
     node_proxy = '局部代理'
     proxy = '代理端口'
     need_http_or_socks5 = 'http还是socks5？'
-    proxy_default = '127.0.0.1:1080'
     need_proxy = '是否使用局部代理？'
     need_proxy_library = '是否代理javlibrary？'
     need_proxy_bus = '是否代理javbus？'
@@ -60,11 +60,32 @@ class Const(object):
     node_file = '原影片文件的性质'
     surplus_words_in_youma_suren = '有码素人无视多余的字母数字'
     surplus_words_in_wuma = '无码无视多余的字母数字'
-    subtitle_expression = '是否中字即文件名包含'
+    subtitle_symbol_words = '是否中字即文件名包含'
+    subtitle_expression = '是否中字的表现形式'
+    divulge_symbol_words = '是否流出即文件名包含'
+    divulge_expression = '是否流出的表现形式'
 
+    node_other = '其他设置'
+    url_library = 'javlibrary网址'
+    url_bus = 'javbus网址'
+    url_db = 'javdb网址'
+    arzon_phpsessid = 'arzon的phpsessid'
+    tuple_video_types = '扫描文件类型'
+    int_title_len = '重命名中的标题长度（50~150）'
 
+    node_tran = '百度翻译API'
+    tran_id = 'APP ID'
+    tran_sk = '密钥'
 
+    node_body = '百度人体分析'
+    need_face = '是否需要准确定位人脸的poster？'
+    ai_id = 'appid'
+    ai_ak = 'api key'
+    ai_sk = 'secret key'
 
+    # endregion
+
+    proxy_default = '127.0.0.1:1080'
     title = '标题'
     complete_title = '完整标题'
     series = '系列'
