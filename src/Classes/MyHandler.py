@@ -12,7 +12,7 @@ from aip import AipBodyAnalysis  # 百度ai人体分析
 from Classes.MyJav import JavFile
 from Classes.MyLogger import record_video_old
 from Classes.MyError import TooManyDirectoryLevelsError, DownloadFanartError
-from Functions.Utils.Baidu import translate
+from Baidu import translate
 from Functions.Utils.Download import download_pic
 from Functions.Progress.Prepare import get_suren_cars
 from Functions.Progress.Picture import check_picture, crop_poster_youma, add_watermark_subtitle, add_watermark_divulge
@@ -21,136 +21,9 @@ from Functions.Metadata.Car import find_car_fc2, find_car_youma
 
 
 # 设置
-class Handler(object):
+class FileHandler(object):
     def __init__(self, pattern):
         self._pattern = pattern
-        config_settings = RawConfigParser()
-        config_settings.read('【点我设置整理规则】.ini', encoding='utf-8-sig')
-        # ###################################################### 公式元素 ##############################################
-        # 是否 去除 标题 末尾可能存在的演员姓名
-        self._bool_need_actors_end_of_title = config_settings.get("公式元素", "标题末尾保留演员姓名？") == '是'
-        # ###################################################### nfo ##################################################
-        # 是否 收集nfo
-        self._bool_nfo = config_settings.get("收集nfo", "是否收集nfo？") == '是'
-        # 自定义 nfo中title的公式
-        self._list_name_nfo_title = config_settings.get("收集nfo", "title的公式").replace('标题', '完整标题').split('+')
-        # 是否 在nfo中plot写入中文简介，否则写原日语简介
-        self._bool_need_zh_plot = config_settings.get("收集nfo", "plot是否使用中文简介？") == '是'
-        # 自定义 将系列、片商等元素作为特征，因为emby不会直接在影片介绍页面上显示片商，也不会读取系列set
-        list_custom_genres = config_settings.get("收集nfo", "额外增加以下元素到特征中").split('、') \
-            if config_settings.get("收集nfo", "额外增加以下元素到特征中") else []
-        # 自定义 将系列、片商等元素作为特征，因为emby不会直接在影片介绍页面上显示片商，也不会读取系列set
-        self._list_extra_genres = [i for i in list_custom_genres if i != '系列' and i != '片商']
-        # ？是否将“系列”写入到特征中
-        self._bool_write_series = True if '系列' in list_custom_genres else False
-        # ？是否将“片商”写入到特征中
-        self._bool_write_studio = True if '片商' in list_custom_genres else False
-        # 是否 将特征保存到风格中
-        self._bool_genre = config_settings.get("收集nfo", "是否将特征保存到genre？") == '是'
-        # 是否 将 片商 作为特征
-        self._bool_tag = config_settings.get("收集nfo", "是否将特征保存到tag？") == '是'
-        # ###################################################### 重命名 ################################################
-        # 是否 重命名 视频
-        self._bool_rename_video = config_settings.get("重命名视频文件", "是否重命名视频文件？") == '是'
-        # 自定义 重命名 视频
-        self._list_rename_video = config_settings.get("重命名视频文件", "重命名视频文件的公式").split('+')
-        # 是否 重命名视频所在文件夹，或者为它创建独立文件夹
-        self._bool_rename_folder = config_settings.get("修改文件夹", "是否重命名或创建独立文件夹？") == '是'
-        # 自定义 新的文件夹名  示例: ['车牌', '【', '全部演员', '】']
-        self._list_rename_folder = config_settings.get("修改文件夹", "新文件夹的公式").split('+')
-        # ######################################################### 归类 ###############################################
-        # 是否 归类jav
-        self._bool_classify = config_settings.get("归类影片", "是否归类影片？") == '是'
-        # 是否 针对“文件夹”归类jav，“否”即针对“文件”
-        self._bool_classify_folder = config_settings.get("归类影片", "针对文件还是文件夹？") == '文件夹'
-        # 自定义 路径 归类的jav放到哪
-        self._custom_classify_target_dir = config_settings.get("归类影片", "归类的根目录")
-        # 自定义 jav按什么类别标准来归类 比如: 影片类型\全部演员
-        self._custom_classify_basis = config_settings.get("归类影片", "归类的标准")
-        # ####################################################### 图片 ################################################
-        # 是否 下载图片
-        self._bool_jpg = config_settings.get("下载封面", "是否下载封面海报？") == '是'
-        # 自定义 命名 大封面fanart
-        self._list_name_fanart = config_settings.get("下载封面", "fanart的公式").split('+')
-        # 自定义 命名 小海报poster
-        self._list_name_poster = config_settings.get("下载封面", "poster的公式").split('+')
-        # 是否 如果视频有“中字”，给poster的左上角加上“中文字幕”的斜杠
-        self._bool_watermark_subtitle = config_settings.get("下载封面", "是否为poster加上中文字幕条幅？") == '是'
-        # 是否 如果视频是“无码流出”，给poster的右上角加上“无码流出”的斜杠
-        self._bool_watermark_divulge = config_settings.get("下载封面", "是否为poster加上无码流出条幅？") == '是'
-        # ##################################################### 字幕 ###################################################
-        # 是否 重命名用户已拥有的字幕
-        self._bool_rename_subtitle = config_settings.get("字幕文件", "是否重命名已有的字幕文件？") == '是'
-        # ##################################################### kodi ##################################################
-        # 是否 收集演员头像
-        self._bool_sculpture = config_settings.get("kodi专用", "是否收集演员头像？") == '是'
-        # 是否 对于多cd的影片，kodi只需要一份图片和nfo
-        self._bool_cd_only = config_settings.get("kodi专用", "是否对多cd只收集一份图片和nfo？") == '是'
-        # ##################################################### 代理 ##################################################
-        # 代理端口
-        custom_proxy = config_settings.get("局部代理", "代理端口").strip()
-        # 代理，如果为空则效果为不使用
-        proxys = {'http': f'http://{custom_proxy}', 'https': f'https://{custom_proxy}'} \
-            if config_settings.get("局部代理", "http还是socks5？") == '是' \
-            else {'http': f'socks5://{custom_proxy}', 'https': f'socks5://{custom_proxy}'}
-        # 是否 使用局部代理
-        self._bool_proxy = config_settings.get("局部代理", "是否使用局部代理？") == '是' and custom_proxy
-        # 是否 代理javlibrary
-        self.proxy_library = proxys if config_settings.get("局部代理", "是否代理javlibrary？") == '是' \
-                                       and self._bool_proxy else {}
-        # 是否 代理javbus，还有代理javbus上的图片cdnbus
-        self.proxy_bus = proxys if config_settings.get("局部代理", "是否代理javbus？") == '是' and self._bool_proxy else {}
-        # 是否 代理javbus，还有代理javbus上的图片cdnbus
-        self.proxy_321 = proxys if config_settings.get("局部代理", "是否代理jav321？") == '是' and self._bool_proxy else {}
-        # 是否 代理javdb，还有代理javdb上的图片
-        self.proxy_db = proxys if config_settings.get("局部代理", "是否代理javdb？") == '是' and self._bool_proxy else {}
-        # 是否 代理arzon
-        self.proxy_arzon = proxys if config_settings.get("局部代理", "是否代理arzon？") == '是' and self._bool_proxy else {}
-        # 是否 代理dmm图片，javlibrary和javdb上的有码图片几乎都是直接引用dmm
-        self.proxy_dmm = proxys if config_settings.get("局部代理", "是否代理dmm图片？") == '是' and self._bool_proxy else {}
-        # ################################################### 原影片文件的性质 ##########################################
-        # 自定义 无视的字母数字 去除影响搜索结果的字母数字 xhd1080、mm616、FHD-1080
-        self._list_surplus_words_in_filename = config_settings.get("原影片文件的性质", "有码素人无视多余的字母数字").upper().split('、') \
-            if self._pattern == '有码' \
-            else config_settings.get("原影片文件的性质", "无码无视多余的字母数字").upper().split('、')
-        # 自定义 原影片性质 影片有中文，体现在视频名称中包含这些字符
-        self._list_subtitle_words_in_filename = config_settings.get("原影片文件的性质", "是否中字即文件名包含").strip().split('、')
-        # 自定义 是否中字 这个元素的表现形式
-        self._custom_subtitle_expression = config_settings.get("原影片文件的性质", "是否中字的表现形式")
-        # 自定义 原影片性质 影片是无码流出片，体现在视频名称中包含这些字符
-        self._list_divulge_words_in_filename = config_settings.get("原影片文件的性质", "是否流出即文件名包含").strip().split('、')
-        # 自定义 是否流出 这个元素的表现形式
-        self._custom_divulge_expression = config_settings.get("原影片文件的性质", "是否流出的表现形式")
-        # 自定义 原影片性质 有码
-        self._av_type = config_settings.get("原影片文件的性质", self._pattern)
-        # ################################################## 其他设置 ##################################################
-        # 是否 使用简体中文 简介翻译的结果和jav特征会变成“简体”还是“繁体”，影响影片特征和简介。
-        # self.to_language = 'zh' if config_settings.get("其他设置", "简繁中文？") == '简' else 'cht'
-        self.to_language = 'zh'
-        # 网址 javlibrary
-        self.url_library = f'{config_settings.get("其他设置", "javlibrary网址").strip().rstrip("/")}/cn'
-        # 网址 javbus
-        self.url_bus = config_settings.get("其他设置", "javbus网址").strip().rstrip('/')
-        # 网址 javdb
-        self.url_db = config_settings.get("其他设置", "javdb网址").strip().rstrip('/')
-        # 网址 javdb
-        self._phpsessid = config_settings.get("其他设置", "arzon的phpsessid").strip()
-        # 自定义 文件类型 只有列举出的视频文件类型，才会被处理
-        self._tuple_video_types = tuple(config_settings.get("其他设置", "扫描文件类型").upper().split('、'))
-        # 自定义 命名公式中“标题”的长度 windows只允许255字符，所以限制长度，但nfo中的标题是全部
-        self._int_title_len = int(config_settings.get("其他设置", "重命名中的标题长度（50~150）"))
-        # ####################################### 百度翻译API ####################################################
-        # 账户 百度翻译api
-        self.tran_id = config_settings.get("百度翻译API", "APP ID")
-        self.tran_sk = config_settings.get("百度翻译API", "密钥")
-        # ####################################### 百度人体分析 ####################################################
-        # 是否 需要准确定位人脸的poster
-        self.bool_face = config_settings.get("百度人体分析", "是否需要准确定位人脸的poster？") == '是'
-        # 账户 百度人体分析
-        self._al_id = config_settings.get("百度人体分析", "appid")
-        self._ai_ak = config_settings.get("百度人体分析", "api key")
-        self._al_sk = config_settings.get("百度人体分析", "secret key")
-
         # ####################################### 本次程序启动通用 ####################################################
         # 素人番号: 得到事先设置的素人番号，让程序能跳过它们
         self.list_suren_cars = get_suren_cars()
@@ -196,9 +69,6 @@ class Handler(object):
         self.dict_subtitle_file = {}
         self.dict_car_episode = {}
         self.sum_videos_in_current_dir = 0
-
-    def get_last_arzon_cookie(self):
-        return {'PHPSESSID': self._phpsessid}
 
     # #########################[修改文件夹]##############################
     # 是否需要重命名文件夹或者创建新的文件夹

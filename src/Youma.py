@@ -3,40 +3,35 @@ import os
 import json
 from traceback import format_exc
 
-from Classes.MyHandler import Handler
+import Arzon
+import Javbus
+import Javdb
+import Javlibrary
+import MyHandler
+import MySettings
 from Classes.MyEnum import ScrapeStatusEnum
 from Classes.MyLogger import Logger
 from Classes.MyJav import JavModel
 from Classes.MyError import TooManyDirectoryLevelsError, SpecifiedUrlError
 from Functions.Progress.User import choose_directory
-from Functions.Metadata.Genre import better_dict_youma_genres
-from Functions.Web.Javdb import scrape_from_db
-from Functions.Web.Javlibrary import scrape_from_library
-from Functions.Web.Javbus import scrape_from_bus
-from Functions.Web.Arzon import scrape_from_arzon
 from Functions.Utils.JsonUtility import read_json_to_dict
+from MyConst import Const
+from os import sep    # 路径分隔符: 当前系统的路径分隔符 windows是“\”，linux和mac是“/”
 
 #  main开始
 # region（1）读取配置
-print('正在读取ini中的设置...', end='')
-try:
-    handler = Handler('有码')
-except:
-    handler = None
-    print(format_exc())
-    input('\n无法读取ini文件，请修改它为正确格式，或者打开“【ini】重新创建ini.exe”创建全新的ini！')
-print('\n读取ini文件成功!\n')
+settings = MySettings.Settings(Const.youma)
 # endregion
 
 # region（2）准备全局参数
-# 路径分隔符: 当前系统的路径分隔符 windows是“\”，linux和mac是“/”
-sep = os.sep
 # 当前程序文件夹 所处的 父文件夹路径
 dir_pwd_father = os.path.dirname(os.getcwd())
-# arzon通行证: 如果需要从arzon获取日语简介，需要先获得合法的arzon网站的cookie，用于通过成人验证。
-cookie_arzon = handler.get_last_arzon_cookie()
-# 优化特征的字典
-dict_db_genres, dict_library_genres, dict_bus_genres = better_dict_youma_genres(handler.to_language)
+# 各大网站的处理工具
+arzonHandler = Arzon.ArzonHandler(settings)
+dbHandler = Javdb.DbHandler(settings)
+libraryHandler = Javlibrary.libraryHandler(settings)
+busHandler = Javbus.BusHandler(settings)
+fileHandler = MyHandler.FileHandler(settings)
 # 用于记录失败次数、失败信息
 logger = Logger()
 # endregion
@@ -53,7 +48,7 @@ while not input_key:
     # 在txt中记录一下用户的这次操作，在某个时间选择了某个文件夹
     logger.record_start(dir_choose)
     # 新的所选文件夹，重置一些属性
-    handler.rest_choose_dir(dir_choose)
+    fileHandler.rest_choose_dir(dir_choose)
     # endregion
 
     # region （3.2）遍历所选文件夹内部进行处理
@@ -61,28 +56,27 @@ while not input_key:
     # dir_current【当前所处文件夹】，由浅及深遍历每一层文件夹，list_sub_dirs【子文件夹们】 list_sub_files【子文件们】
     for dir_current, list_sub_dirs, list_sub_files in os.walk(dir_choose):
         # 新的一层级文件夹，重置一些属性
-        handler.rest_current_dir(dir_current)
+        fileHandler.rest_current_dir(dir_current)
         # region （3.2.1）当前文件夹内包含jav及字幕文件的状况: 有多少视频，其中多少jav，同一车牌多少cd，当前文件夹是不是独立文件夹
         # （3.2.1.1）什么文件都没有 | 当前目录是之前已归类的目录，无需处理 | 判断这一层文件夹中有没有nfo
-        if not list_sub_files \
-                or '归类完成' in dir_current[len(dir_choose):]:
+        if not list_sub_files or '归类完成' in dir_current[len(dir_choose):]:
             # or handler.judge_skip_exist_nfo(list_sub_files):
             continue  # dir_current[len(dir_choose):] 当前所处文件夹 相对于 所选文件夹 的路径，主要用于报错
 
         # （3.2.1.2）判断文件是不是字幕文件，放入dict_subtitle_file中，字幕文件和车牌对应关系 {'c:\a\abc_123.srt': 'abc-123'}
-        handler.init_dict_subtitle_file(list_sub_files)
+        fileHandler.init_dict_subtitle_file(list_sub_files)
         # （3.2.1.3）获取当前所处文件夹，子一级内，包含的jav，放入list_jav_files 存放: 需要整理的jav文件对象jav_file;
-        list_jav_files = handler.get_list_jav_files(list_sub_files)
+        list_jav_files = fileHandler.get_list_jav_files(list_sub_files)
         # （3.2.1.4）没有jav，则跳出当前所处文件夹
         if not list_jav_files:
             continue
         # （3.2.1.5）判定当前所处文件夹是否是独立文件夹，独立文件夹是指该文件夹仅用来存放该影片，而不是大杂烩文件夹，是后期移动剪切操作的重要依据
         # 错误：JavFile.Bool_in_separate_folder = handler.judge_separate_folder(len(list_jav_files), list_sub_dirs)
         # 我在主程序里修改JavFile.Bool_in_separate_folder并不会成功，你知道为什么吗？
-        handler.judge_separate_folder(len(list_jav_files), list_sub_dirs)
+        fileHandler.judge_separate_folder(len(list_jav_files), list_sub_dirs)
         # Bool_in_separate_folder是类属性，不是实例属性，修改类属性会将list_jav_files中的所有jav_file的Bool_in_separate_folder同步
         # （3.2.1.6）处理“集”的问题，（1）所选文件夹总共有多少个视频文件，包括非jav文件，主要用于显示进度（2）同一车牌有多少cd，用于cd2...命名
-        handler.count_num_and_no(list_jav_files)
+        fileHandler.count_num_and_no(list_jav_files)
         # endregion
 
         # region（3.2.2）开始处理每一部jav文件
@@ -90,7 +84,7 @@ while not input_key:
             try:
                 # region（3.2.2.1）准备工作
                 # 当前进度
-                print(f'>> [{jav_file.No}/{handler.sum_videos_in_choose_dir}]:{jav_file.Name}')
+                print(f'>> [{jav_file.No}/{fileHandler.sum_videos_in_choose_dir}]:{jav_file.Name}')
                 print(f'    >发现车牌: {jav_file.Car}')
                 logger.path_relative = jav_file.Path[len(dir_choose):]  # 影片的相对于所选文件夹的路径，用于报错
                 # endregion
@@ -104,25 +98,17 @@ while not input_key:
                 else:
                     jav_model = JavModel()
                     # region（3.2.2.2）从javdb获取信息
-                    status, genres_db = scrape_from_db(jav_file, jav_model, handler.url_db, handler.proxy_db)
+                    status = dbHandler.scrape(jav_file, jav_model)
                     if status == ScrapeStatusEnum.db_not_found:
                         logger.record_warn(f'javdb找不到该车牌的信息: {jav_file.Car}，')
-                    # 优化genres_db
-                    genres_db = [dict_db_genres[i] for i in genres_db if dict_db_genres[i] != '删除']
                     # endregion
 
                     # region（3.2.2.3）从javlibrary获取信息
-                    status, genres_library = scrape_from_library(jav_file, jav_model, handler.url_library,
-                                                                 handler.proxy_library)
+                    status = libraryHandler.scrape(jav_file, jav_model)
                     if status == ScrapeStatusEnum.library_not_found:
                         logger.record_warn(f'javlibrary找不到该车牌的信息: {jav_file.Car}，')
                     elif status == ScrapeStatusEnum.library_multiple_search_results:
                         logger.record_warn(f'javlibrary搜索到同车牌的不同视频: {jav_file.Car}，')
-                    # 优化genres_library
-                    genres_library = [dict_library_genres[i] for i in genres_library
-                                      if not i.startswith('AV OP')
-                                      and not i.startswith('AVOP')
-                                      and dict_library_genres[i] != '删除']
                     # endregion
 
                     if not jav_model.Javdb and not jav_model.Javlibrary:
@@ -130,20 +116,15 @@ while not input_key:
                         continue  # 结束对该jav的整理
 
                     # region（3.2.2.4）前往javbus查找【封面】【系列】【特征】.py
-                    status, genres_bus = scrape_from_bus(jav_file, jav_model, handler.url_bus, handler.proxy_bus)
+                    status = busHandler.scrape(jav_file, jav_model)
                     if status == ScrapeStatusEnum.bus_multiple_search_results:
                         logger.record_warn(f'部分信息可能错误，javbus搜索到同车牌的不同视频: {jav_file.Car_id}，')
                     elif status == ScrapeStatusEnum.bus_not_found:
                         logger.record_warn(f'javbus有码找不到该车牌的信息: {jav_file.Car_id}，')
-                    # 优化genres_bus
-                    genres_bus = [dict_bus_genres[i] for i in genres_bus
-                                  if not i.startswith('AV OP')
-                                  and not i.startswith('AVOP')
-                                  and dict_bus_genres[i] != '删除']
                     # endregion
 
                     # region（3.2.2.5）arzon找简介
-                    status, cookie_arzon = scrape_from_arzon(jav_file, jav_model, cookie_arzon, handler.proxy_arzon)
+                    status = arzonHandler.scrape(jav_file, jav_model)
                     url_search_arzon = f'https://www.arzon.jp/itemlist.html?t=&m=all&s=&q={jav_file.Car_id.replace("-", "")}'
                     if status == ScrapeStatusEnum.arzon_exist_but_no_plot:
                         logger.record_warn(f'找不到简介，尽管arzon上有搜索结果: {url_search_arzon}，')
@@ -154,9 +135,9 @@ while not input_key:
                     # endregion
 
                     # 整合genres
-                    genres = list(set(genres_db + genres_library + genres_bus))
-                    # 我之前错误的写法是 jav_model.Genres = genres，导致genres发生改变后，jav_model.Genres也发生了变化
-                    jav_model.Genres = [genre for genre in genres]
+                    jav_model.Genres = list(set(jav_model.Genres))
+                    # 我之前错误的写法是 genrs = jav_model.Genrs，导致genrs发生改变后，jav_model.Genrs也发生了变化
+                    genres = [genre for genre in jav_model.Genres]
 
                     # 完善jav_model.CompletionStatus
                     jav_model.prefect_completion_status()
