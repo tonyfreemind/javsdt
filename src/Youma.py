@@ -4,6 +4,7 @@ import json
 from os import sep    # 路径分隔符: 当前系统的路径分隔符 windows是“\”，linux和mac是“/”
 from traceback import format_exc
 
+from Baidu import Translator
 from Classes.Web.Javdb import DbHandler
 from Classes.Web.Javlibrary import LibraryHandler
 from Classes.Web.Arzon import ArzonHandler
@@ -17,6 +18,7 @@ from Classes.MyError import TooManyDirectoryLevelsError, SpecifiedUrlError
 from Classes.MyConst import Const
 from Functions.Progress.User import choose_directory
 from Functions.Utils.JsonUtility import read_json_to_dict
+from VideoAnalysis import VideoFileAnalysis
 
 #  main开始
 # region（1）读取配置
@@ -30,6 +32,8 @@ dbHandler = DbHandler(settings)
 busHandler = BusHandler(settings)
 arzonHandler = ArzonHandler(settings)
 libraryHandler = LibraryHandler(settings)
+translator = Translator(settings)
+videoFileAnalysis = VideoFileAnalysis(settings)
 # 用于记录失败次数、失败信息
 logger = Logger()
 # 当前程序文件夹 所处的 父文件夹路径
@@ -142,7 +146,7 @@ while not input_key:
 
                 # region（3.2.3）后续完善
                 # 如果用户 首次整理该片不存在path_json 或 如果这次整理用户正确地输入了翻译账户，则保存json
-                if os.path.exists(path_json) or handler.prefect_zh(jav_model):
+                if os.path.exists(path_json) or translator.prefect_zh(jav_model):
                     if not os.path.exists(dir_prefs_jsons):
                         os.makedirs(dir_prefs_jsons)
                     with open(path_json, 'w', encoding='utf-8') as f:
@@ -150,7 +154,7 @@ while not input_key:
                     print(f'    >保存本地json成功: {path_json}')
 
                 # 完善jav_file
-                handler.judge_subtitle_and_divulge(jav_file)
+                videoFileAnalysis.judge_subtitle_and_divulge(jav_file)
                 # 完善写入nfo中的genres
                 if jav_file.Bool_subtitle:  # 有“中字“，加上特征”中文字幕”
                     genres.append('中文字幕')

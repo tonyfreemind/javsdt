@@ -6,13 +6,11 @@ from os import sep  # 系统路径分隔符
 from configparser import RawConfigParser  # 读取ini
 from configparser import NoOptionError  # ini文件不存在或不存在指定node的错误
 from shutil import copyfile
-from xml.etree.ElementTree import parse, ParseError  # 解析xml格式
 from aip import AipBodyAnalysis  # 百度ai人体分析
 
 from Classes.MyJav import JavFile
 from Classes.MyLogger import record_video_old
 from Classes.MyError import TooManyDirectoryLevelsError, DownloadFanartError
-from Baidu import translate
 from Functions.Utils.Download import download_pic
 from Functions.Progress.Prepare import get_suren_cars
 from Functions.Progress.Picture import check_picture, crop_poster_youma, add_watermark_subtitle, add_watermark_divulge
@@ -286,137 +284,7 @@ class FileHandler(object):
         JavFile.Bool_in_separate_folder = True  # 这一层文件夹是这部jav的独立文件夹
         return
 
-    # 功能: 根据【原文件名】和《已存在的、之前整理的nfo》，判断当前jav是否有“中文字幕”
-    # 参数: ①当前jav所处文件夹路径dir_current ②jav文件名不带文件类型后缀name_no_ext，
-    # 返回: True
-    # 辅助: os.path.exists，xml.etree.ElementTree.parse，xml.etree.ElementTree.ParseError
-    def judge_exist_subtitle(self, dir_current, name_no_ext):
-        # 去除 '-CD' 和 '-CARIB'对 '-C'判断中字的影响
-        name_no_ext = name_no_ext.upper().replace('-CD', '').replace('-CARIB', '')
-        # 如果原文件名包含“-c、-C、中字”这些字符
-        for i in self._list_subtitle_words_in_filename:
-            if i in name_no_ext:
-                return True
-        # 先前整理过的nfo中有 ‘中文字幕’这个Genre
-        path_old_nfo = f'{dir_current}{sep}{name_no_ext}.nfo'
-        if os.path.exists(path_old_nfo):
-            try:
-                tree = parse(path_old_nfo)
-            except ParseError:  # nfo可能损坏
-                return False
-            for child in tree.getroot():
-                if child.text == '中文字幕':
-                    return True
-        return False
 
-    # 功能: 根据【原文件名】和《已存在的、之前整理的nfo》，判断当前jav是否有“无码流出”
-    # 参数: ①当前jav所处文件夹路径dir_current ②jav文件名不带文件类型后缀name_no_ext
-    # 返回: True
-    # 辅助: os.path.exists，xml.etree.ElementTree.parse，xml.etree.ElementTree.ParseError
-    def judge_exist_divulge(self, dir_current, name_no_ext):
-        # 如果原文件名包含“-c、-C、中字”这些字符
-        for i in self._list_divulge_words_in_filename:
-            if i in name_no_ext:
-                return True
-        # 先前整理过的nfo中有 ‘中文字幕’这个Genre
-        path_old_nfo = f'{dir_current}{sep}{name_no_ext}.nfo'
-        if os.path.exists(path_old_nfo):
-            try:
-                tree = parse(path_old_nfo)
-            except ParseError:  # nfo可能损坏
-                return False
-            for child in tree.getroot():
-                if child.text == '无码流出':
-                    return True
-        return False
-
-    # 功能: 判断当前jav_file是否有“中文字幕”，是否有“无码流出”
-    # 参数: jav_file 处理的jav视频文件对象
-    # 返回: 无；更新jav_file
-    # 辅助: 无
-    def judge_subtitle_and_divulge(self, jav_file):
-        # 判断是否有中字的特征，条件有三满足其一即可: 1有外挂字幕 2文件名中含有“-C”之类的字眼 3旧的nfo中已经记录了它的中字特征
-        if jav_file.Subtitle:
-            jav_file.Bool_subtitle = True  # 判定成功
-        else:
-            jav_file.Bool_subtitle = self.judge_exist_subtitle(jav_file.Dir, jav_file.Name_no_ext)
-        # 判断是否是无码流出的作品，同理
-        jav_file.Bool_divulge = self.judge_exist_divulge(jav_file.Dir, jav_file.Name_no_ext)
-
-    # 功能: 用jav_file、jav_model中的原始数据完善dict_for_standard
-    # 参数: jav_file 处理的jav视频文件对象，jav_model 保存jav元数据的对象
-    # 返回: 无；更新dict_for_standard
-    # 辅助: replace_xml_win，replace_xml_win
-    def prefect_zh(self, jav_model):
-        # 翻译出中文标题和简介
-        if self.tran_id and self.tran_sk and not jav_model.TitleZh:
-            jav_model.TitleZh = translate(self.tran_id, self.tran_sk, jav_model.Title, self.to_language)
-            time.sleep(0.9)
-            jav_model.PlotZh = translate(self.tran_id, self.tran_sk, jav_model.Plot, self.to_language)
-            return True
-        else:
-            return False
-
-    # 功能: 用jav_file、jav_model中的原始数据完善dict_for_standard
-    # 参数: jav_file 处理的jav视频文件对象，jav_model 保存jav元数据的对象
-    # 返回: 无；更新dict_for_standard
-    # 辅助: replace_xml_win，replace_xml_win
-    def prefect_dict_for_standard(self, jav_file, jav_model):
-        # 标题
-        str_actors = ' '.join(jav_model.Actors[:3])
-        int_actors_len = len(str_actors) if self._bool_need_actors_end_of_title else 0
-        int_current_len = self._int_title_len - int_actors_len
-        self.dict_for_standard['完整标题'] = replace_xml_win(jav_model.Title)
-        self.dict_for_standard['中文完整标题'] = replace_xml_win(jav_model.TitleZh) \
-            if jav_model.TitleZh else self.dict_for_standard['完整标题']
-        # 处理影片的标题过长。用户只需要在ini中写“标题”，但事实上，文件重命名操作中的“标题“是删减过的标题，nfo中的标题才是完整标题
-        if len(self.dict_for_standard['完整标题']) > int_current_len:
-            self.dict_for_standard['标题'] = self.dict_for_standard['完整标题'][:int_current_len]
-        else:
-            self.dict_for_standard['标题'] = self.dict_for_standard['完整标题']
-        if len(self.dict_for_standard['中文完整标题']) > int_current_len:
-            self.dict_for_standard['中文标题'] = self.dict_for_standard['中文完整标题'][:int_current_len]
-        else:
-            self.dict_for_standard['中文标题'] = self.dict_for_standard['中文完整标题']
-        if self._bool_need_actors_end_of_title:
-            self.dict_for_standard['标题'] = f'{self.dict_for_standard["标题"]} {str_actors}'
-            self.dict_for_standard['完整标题'] += f'{self.dict_for_standard["完整标题"]} {str_actors}'
-            self.dict_for_standard['中文标题'] += f'{self.dict_for_standard["中文标题"]} {str_actors}'
-            self.dict_for_standard['中文完整标题'] += f'{self.dict_for_standard["中文完整标题"]} {str_actors}'
-
-        # '是否中字'这一命名元素被激活
-        self.dict_for_standard['是否中字'] = self._custom_subtitle_expression if jav_file.Bool_subtitle else ''
-        self.dict_for_standard['是否流出'] = self._custom_divulge_expression if jav_file.Bool_divulge else ''
-        # 车牌
-        self.dict_for_standard['车牌'] = jav_model.Car  # car可能发生了变化
-        self.dict_for_standard['车牌前缀'] = jav_model.Car.split('-')[0]
-        # 日期
-        self.dict_for_standard['发行年月日'] = jav_model.Release
-        self.dict_for_standard['发行年份'] = jav_model.Release[0:4]
-        self.dict_for_standard['月'] = jav_model.Release[5:7]
-        self.dict_for_standard['日'] = jav_model.Release[8:10]
-        # 演职人员
-        self.dict_for_standard['片长'] = jav_model.Runtime
-        self.dict_for_standard['导演'] = replace_xml_win(jav_model.Director) if jav_model.Director else '有码导演'
-        # 公司
-        self.dict_for_standard['发行商'] = replace_xml_win(jav_model.Publisher) if jav_model.Publisher else '有码发行商'
-        self.dict_for_standard['制作商'] = replace_xml_win(jav_model.Studio) if jav_model.Studio else '有码制作商'
-        # 评分 系列
-        self.dict_for_standard['评分'] = jav_model.Score / 10
-        self.dict_for_standard['系列'] = jav_model.Series if jav_model.Series else '有码系列'
-        # 全部演员（最多7个） 和 第一个演员
-        if jav_model.Actors:
-            if len(jav_model.Actors) > 7:
-                self.dict_for_standard['全部演员'] = ' '.join(jav_model.Actors[:7])
-            else:
-                self.dict_for_standard['全部演员'] = ' '.join(jav_model.Actors)
-            self.dict_for_standard['首个演员'] = jav_model.Actors[0]
-        else:
-            self.dict_for_standard['首个演员'] = self.dict_for_standard['全部演员'] = '有码演员'
-
-        # jav_file原文件的一些属性   dict_for_standard['视频']，先定义为原文件名，即将发生变化。
-        self.dict_for_standard['视频'] = self.dict_for_standard['原文件名'] = jav_file.Name_no_ext
-        self.dict_for_standard['原文件夹名'] = jav_file.Folder
 
     # 功能: 1重命名视频(jav_file和dict_for_standard发生改变）
     # 参数: 设置settings，命名信息dict_for_standard，处理的影片jav

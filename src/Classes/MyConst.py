@@ -82,7 +82,6 @@ class Const(object):
     ai_id = 'appid'
     ai_ak = 'api key'
     ai_sk = 'secret key'
-
     # endregion
 
     proxy_default = '127.0.0.1:1080'
@@ -92,3 +91,6 @@ class Const(object):
     studio = '片商'
     youma = '有码'
     wuma = '无码'
+
+    baidu_translate_account_empty_error = '    >你没有填写百度翻译api账户!'
+    baidu_translate_account_error = '    >请正确输入百度翻译API账号！'
