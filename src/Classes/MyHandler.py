@@ -117,11 +117,11 @@ class FileHandler(object):
         else:
             return None
 
-    # 功能: 收集文件们中的字幕文件，存储在dict_subtitle_file
+    # 功能: 收集文件们中的字幕文件，存储在self.dict_subtitle_file
     # 参数: list_sub_files（当前文件夹的）子文件们
     # 返回: 无；更新self.dict_subtitle_file
     # 辅助: find_car_youma, find_car_fc2
-    def init_dict_subtitle_file(self, list_sub_files):
+    def init_dict_subtitle_file(self, list_sub_files:list):
         for file_raw in list_sub_files:
             file_temp = file_raw.upper()
             if file_temp.endswith(('.SRT', '.VTT', '.ASS', '.SSA', '.SUB', '.SMI',)):

@@ -11,7 +11,7 @@ from Genre import better_dict_genres, prefect_genres
 from MyJav import JavFile, JavModel
 
 
-class libraryHandler(object):
+class LibraryHandler(object):
     def __init__(self, settings: MySettings.Settings):
         self.url = settings.url_library
         self.proxies = settings.proxy_library
