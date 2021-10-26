@@ -1,13 +1,14 @@
 import os
 from os import sep  # 系统路径分隔符
 from xml.etree.ElementTree import parse, ParseError  # 解析xml格式
-import MySettings
+
+from Config import Ini
 
 
-class VideoFileAnalysis(object):
-    def __init__(self, settings:MySettings.Settings):
-        self._list_subtitle_words_in_filename = settings.list_subtitle_symbol_words
-        self._list_divulge_words_in_filename = settings.list_divulge_symbol_words
+class FileAnalysis(object):
+    def __init__(self, ini: Ini):
+        self._list_subtitle_words_in_filename = ini.list_subtitle_symbol_words
+        self._list_divulge_words_in_filename = ini.list_divulge_symbol_words
 
     # 功能: 根据【原文件名】和《已存在的、之前整理的nfo》，判断当前jav是否有“中文字幕”
     # 参数: ①当前jav所处文件夹路径dir_current ②jav文件名不带文件类型后缀name_no_ext，

@@ -2,9 +2,9 @@
 import re
 import requests
 
-import MySettings
-from Classes.MyEnum import ScrapeStatusEnum
-from Classes.MyError import SpecifiedUrlError
+import Config
+from Classes.Enums import ScrapeStatusEnum
+from Classes.Errors import SpecifiedUrlError
 from Functions.Utils.XML import replace_xml_win
 # from traceback import format_exc
 from Genre import better_dict_genres, prefect_genres
@@ -12,7 +12,7 @@ from MyJav import JavFile, JavModel
 
 
 class LibraryHandler(object):
-    def __init__(self, settings: MySettings.Settings):
+    def __init__(self, settings: MySettings.Ini):
         self.url = settings.url_library
         self.proxies = settings.proxy_library
         self.dict_genres = better_dict_genres('library', settings.to_language)

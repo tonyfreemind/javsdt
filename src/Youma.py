@@ -9,21 +9,20 @@ from Classes.Web.Javdb import DbHandler
 from Classes.Web.Javlibrary import LibraryHandler
 from Classes.Web.Arzon import ArzonHandler
 from Classes.Web.Javbus import BusHandler
-from Classes.MyHandler import FileHandler
-from Classes.MySettings import Settings
-from Classes.MyEnum import ScrapeStatusEnum
+from Classes.FileHandler import FileHandler
+from Classes.Config import Ini
+from Classes.Enums import ScrapeStatusEnum
 from Classes.MyLogger import Logger
 from Classes.MyJav import JavModel
-from Classes.MyError import TooManyDirectoryLevelsError, SpecifiedUrlError
-from Classes.MyConst import Const
+from Classes.Errors import TooManyDirectoryLevelsError, SpecifiedUrlError
+from Classes.Const import Const
 from Functions.Progress.User import choose_directory
 from Functions.Utils.JsonUtility import read_json_to_dict
-from VideoAnalysis import VideoFileAnalysis
-from Classes.MyInfo import InfoHandler
+from FileAnalysis import FileAnalysis
 
 #  main开始
 # region（1）读取配置
-settings = Settings(Const.youma)
+settings = Ini(Const.youma)
 # endregion
 
 # region（2）准备全局参数
@@ -34,8 +33,7 @@ busHandler = BusHandler(settings)
 arzonHandler = ArzonHandler(settings)
 libraryHandler = LibraryHandler(settings)
 translator = Translator(settings)
-videoFileAnalysis = VideoFileAnalysis(settings)
-infoHandler = InfoHandler(settings)
+videoFileAnalysis = FileAnalysis(settings)
 # 用于记录失败次数、失败信息
 logger = Logger()
 # 当前程序文件夹 所处的 父文件夹路径

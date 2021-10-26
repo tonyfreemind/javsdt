@@ -2,13 +2,13 @@
 import requests
 import re
 # from traceback import format_exc
-import MySettings
-from Classes.MyEnum import ScrapeStatusEnum
+import Config
+from Classes.Enums import ScrapeStatusEnum
 from Functions.Progress.Prepare import write_new_arzon_phpsessid
 
 
 class ArzonHandler(object):
-    def __init__(self, settings: MySettings.Settings):
+    def __init__(self, settings: MySettings.Ini):
         self.url = 'https://www.arzon.jp'
         self.proxies = settings.proxy_arzon
         # arzon通行证: 如果需要从arzon获取日语简介，需要先获得合法的arzon网站的cookie，用于通过成人验证。

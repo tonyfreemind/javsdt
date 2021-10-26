@@ -6,10 +6,10 @@ from lxml import etree
 
 import requests
 # from traceback import format_exc
-import MySettings
+import Config
 from Functions.Metadata.Car import extract_number_from_car_suf, extract_number_from_car
-from Classes.MyEnum import ScrapeStatusEnum
-from Classes.MyError import SpecifiedUrlError
+from Classes.Enums import ScrapeStatusEnum
+from Classes.Errors import SpecifiedUrlError
 
 # 设置
 from Genre import better_dict_genres, prefect_genres
@@ -17,7 +17,7 @@ from MyJav import JavModel, JavFile
 
 
 class DbHandler(object):
-    def __init__(self, settings: MySettings.Settings):
+    def __init__(self, settings: MySettings.Ini):
         self.url = settings.url_db
         self.proxies = settings.proxy_db
         self.dict_genres = better_dict_genres("db", settings.to_language)

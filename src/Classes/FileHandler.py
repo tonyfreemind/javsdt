@@ -3,21 +3,21 @@ import os
 import re
 from os import sep  # 系统路径分隔符
 
-import MySettings
 from Classes.MyJav import JavFile
+from Config import Ini
 from Functions.Progress.Prepare import get_suren_cars
 from Functions.Metadata.Car import find_car_fc2, find_car_youma
 
 
 # 设置
 class FileHandler(object):
-    def __init__(self, pattern: str, settings: MySettings.Settings):
-        self._need_classify = settings.need_classify
-        self._need_classify_folder = settings.need_classify_folder
-        self._need_rename_folder = settings.need_rename_folder
-        self._dir_custom_classify_target = settings.dir_custom_classify_target
-        self._tuple_video_types = settings.tuple_video_types
-        self._list_surplus_words = settings.list_surplus_words
+    def __init__(self, pattern: str, ini: Ini):
+        self._need_classify = ini.need_classify
+        self._need_classify_folder = ini.need_classify_folder
+        self._need_rename_folder = ini.need_rename_folder
+        self._dir_custom_classify_target = ini.dir_custom_classify_target
+        self._tuple_video_types = ini.tuple_video_types
+        self._list_surplus_words = ini.list_surplus_words
 
         self._pattern = pattern
         # ####################################### 本次程序启动通用 ####################################################
@@ -195,11 +195,19 @@ class FileHandler(object):
             jav_file.Sum_all_episodes = self.dict_car_episode[jav_file.Car]
 
     # 功能: 判定影片所在文件夹是否是独立文件夹，独立文件夹是指该文件夹仅用来存放该影片，不包含“.actors”"extrafanrt”外的其他文件夹
-    # 参数: len_dict_car_pref 当前所处文件夹包含的车牌数量, len_list_jav_struct当前所处文件夹包含的、需要整理的jav的结构体数量,
+    # 参数: len_dict_car_pref , len_list_jav_struct当前所处文件夹包含的、需要整理的jav的结构体数量,
     #      list_sub_dirs当前所处文件夹包含的子文件夹们
     # 返回: True
     # 辅助: judge_exist_extra_folders
-    def judge_separate_folder(self, len_list_jav_files, list_sub_dirs):
+    def judge_separate_folder(self, len_list_jav_files:int, list_sub_dirs:list):
+        """
+        Args:
+            len_list_jav_files: 当前所处文件夹包含的车牌数量
+            list_sub_dirs:
+
+        Returns:
+            void;更新JavFile.Bool_in_separate_folder
+        """
         # 当前文件夹下，车牌不止一个；还有其他非jav视频；有其他文件夹，除了演员头像文件夹“.actors”和额外剧照文件夹“extrafanart”；
         if len(self.dict_car_episode) > 1 or self.sum_videos_in_current_dir > len_list_jav_files:
             JavFile.Bool_in_separate_folder = False

@@ -3,16 +3,16 @@ import requests
 import json
 from time import sleep, time
 from hashlib import md5
-import MySettings
-from aip import AipBodyAnalysis  # 百度ai人体分析
+# from aip import AipBodyAnalysis  # 百度ai人体分析
 # from traceback import format_exc
+from Config import Ini
 
 
 class Translator(object):
-    def __init__(self, settings: MySettings.Settings):
-        self._tran_id = settings.tran_id
-        self._tran_sk = settings.tran_sk
-        self._to_language = settings.to_language
+    def __init__(self, ini: Ini):
+        self._tran_id = ini.tran_id
+        self._tran_sk = ini.tran_sk
+        self._to_language = ini.to_language
 
     # 功能: 调用百度翻译API接口，翻译日语简介
     # 参数: 百度翻译api账户api_id, api_key，需要翻译的内容word，目标语言to_lang
@@ -53,7 +53,7 @@ class Translator(object):
             # 百度返回了dict json
             json_reads = json.loads(content)
             # print(json_reads)
-            if 'error_code' in json_reads:    # 返回错误码
+            if 'error_code' in json_reads:  # 返回错误码
                 error_code = json_reads['error_code']
                 if error_code == '54003':
                     print('    >请求百度翻译太快...技能冷却1秒...')
@@ -101,10 +101,10 @@ class Translator(object):
 
 
 class AIBody(object):
-    def __init__(self, settings:MySettings.Settings):
-        self._ai_id = settings.ai_id
-        self._ai_ak = settings.ai_ak
-        self._ai_sk = settings.ai_sk
+    def __init__(self, ini: Ini):
+        self._ai_id = ini.ai_id
+        self._ai_ak = ini.ai_ak
+        self._ai_sk = ini.ai_sk
 
     # #########################[百度人体分析]##############################
     # 百度翻译启动

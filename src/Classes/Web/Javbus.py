@@ -2,17 +2,17 @@
 import re
 import requests
 
-import MySettings
-from Classes.MyEnum import ScrapeStatusEnum
+import Config
+from Classes.Enums import ScrapeStatusEnum
 # from traceback import format_exc
 
-from Classes.MyError import SpecifiedUrlError
+from Classes.Errors import SpecifiedUrlError
 from Genre import better_dict_genres, prefect_genres
 from MyJav import JavFile, JavModel
 
 
 class BusHandler(object):
-    def __init__(self, settings: MySettings.Settings):
+    def __init__(self, settings: MySettings.Ini):
         self.url = settings.url_bus
         self.proxies = settings.proxy_bus
         self.dict_genres = better_dict_genres("bus", settings.to_language)

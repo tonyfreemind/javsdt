@@ -1,11 +1,11 @@
+from os import sep
 from configparser import RawConfigParser
 from traceback import format_exc
-
-from Classes.MyConst import Const
+from Classes.Const import Const
 
 
 # 从ini读取到的设置
-class Settings(object):
+class Ini(object):
     def __init__(self, pattern):
         self._pattern = pattern
         print('正在读取ini中的设置...', end='')
@@ -19,7 +19,8 @@ class Settings(object):
             # 是否 收集nfo
             self.need_nfo = conf.get(Const.node_nfo, Const.need_nfo) == '是'
             # 自定义 nfo中title的公式，注意：程序中有两个标题，一个“完整标题”，一个可能被删减的“标题”。用户只需写“标题”，这里nfo实际采用“完整标题”
-            self.list_name_nfo_title = conf.get(Const.node_nfo, Const.name_nfo_title_formula).replace(Const.title, Const.complete_title).split('+')
+            self.list_name_nfo_title = conf.get(Const.node_nfo, Const.name_nfo_title_formula)\
+                .replace(Const.title, Const.complete_title).split('+')
             # 是否 在nfo中plot写入中文简介，否则写原日语简介
             self.need_zh_plot = conf.get(Const.node_nfo, Const.need_zh_plot) == '是'
             # 自定义 将系列、片商等元素作为特征，因为emby不会直接在影片介绍页面上显示片商，也不会读取系列set
@@ -84,7 +85,8 @@ class Settings(object):
             # 是否 使用局部代理
             need_proxy = conf.get(Const.node_proxy, Const.need_proxy) == '是' and proxy
             # 是否 代理javlibrary
-            self.proxy_library = proxys if conf.get(Const.node_proxy, Const.need_proxy_library) == '是' and need_proxy else {}
+            self.proxy_library = proxys if conf.get(Const.node_proxy,
+                                                    Const.need_proxy_library) == '是' and need_proxy else {}
             # 是否 代理bus，还有代理javbus上的图片cdnbus
             self.proxy_bus = proxys if conf.get(Const.node_proxy, Const.need_proxy_bus) == '是' and need_proxy else {}
             # 是否 代理321，还有代理javbus上的图片cdnbus
@@ -92,13 +94,15 @@ class Settings(object):
             # 是否 代理db，还有代理javdb上的图片
             self.proxy_db = proxys if conf.get(Const.node_proxy, Const.need_proxy_db) == '是' and need_proxy else {}
             # 是否 代理arzon
-            self.proxy_arzon = proxys if conf.get(Const.node_proxy, Const.need_proxy_arzon) == '是' and need_proxy else {}
+            self.proxy_arzon = proxys if conf.get(Const.node_proxy,
+                                                  Const.need_proxy_arzon) == '是' and need_proxy else {}
             # 是否 代理dmm图片，javlibrary和javdb上的有码图片几乎都是直接引用dmm
             self.proxy_dmm = proxys if conf.get(Const.node_proxy, Const.need_proxy_dmm) == '是' and need_proxy else {}
             # ################################################### 原影片文件的性质 ##########################################
             # 自定义 无视的字母数字 去除影响搜索结果的字母数字 xhd1080、FHD-1080
             if self._pattern != Const.wuma:
-                self.list_surplus_words = conf.get(Const.node_file, Const.surplus_words_in_youma_suren).upper().split('、')
+                self.list_surplus_words = conf.get(Const.node_file, Const.surplus_words_in_youma_suren).upper().split(
+                    '、')
             else:
                 self.list_surplus_words = conf.get(Const.node_file, Const.surplus_words_in_wuma).upper().split('、')
             # 自定义 原影片性质 影片有中文，体现在视频名称中包含这些字符
@@ -110,7 +114,7 @@ class Settings(object):
             # 自定义 是否流出 这个元素的表现形式
             self.divulge_expression = conf.get(Const.node_file, Const.divulge_expression)
             # 自定义 原影片性质 有码
-            self.av_type = conf.get(Const.node_file, self._pattern)
+            self._av_type = conf.get(Const.node_file, self._pattern)
             # ################################################## 其他设置 ##################################################
             # 是否 使用简体中文 简介翻译的结果和jav特征会变成“简体”还是“繁体”，影响影片特征和简介。
             # self.to_language = 'zh' if config_settings.get(Const.node_other, "简繁中文？") == '简' else 'cht'
@@ -139,6 +143,9 @@ class Settings(object):
             self.ai_ak = conf.get(Const.node_body, Const.ai_ak)
             self.ai_sk = conf.get(Const.node_body, Const.ai_sk)
             print('\n读取ini文件成功!\n')
+            # 用于给用户自定义命名的字典
+            self.dict_for_standard = self.get_dict_for_standard()
+
         except:
             print(format_exc())
             input('\n无法读取ini文件，请修改它为正确格式，或者打开“【ini】重新创建ini.exe”创建全新的ini！')
