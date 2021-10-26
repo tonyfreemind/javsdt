@@ -53,6 +53,8 @@ class Settings(object):
             self.dir_custom_classify_target = conf.get(Const.node_classify, Const.dir_custom_classify_target)
             # 自定义 jav按什么类别标准来归类 比如: 影片类型\全部演员
             self.classify_formula = conf.get(Const.node_classify, Const.classify_formula)
+            # 归类的目标文件夹的拼接公式
+            self.list_name_dir_classify = []
             # ####################################################### 图片 ################################################
             # 是否 下载图片
             self.need_download_fanart = conf.get(Const.node_fanart, Const.need_download_fanart) == '是'
@@ -140,3 +142,61 @@ class Settings(object):
         except:
             print(format_exc())
             input('\n无法读取ini文件，请修改它为正确格式，或者打开“【ini】重新创建ini.exe”创建全新的ini！')
+
+    # 功能: （1）完善用于给用户命名的dict_for_standard，如果用户自定义的各种命名公式中有dict_for_standard未包含的元素，则添加。
+    #      （2）将_custom_classify_basis按“+”“\”切割好，准备用于组装后面的归类路径。
+    # 参数: 无
+    # 返回: dict_for_standard; 更新self.list_name_dir_classify
+    # 辅助: os.sep
+    def get_dict_for_standard(self):
+        dict_for_standard = {'车牌': 'ABC-123',
+                             '车牌前缀': 'ABC',
+                             '标题': f'{self._pattern}标题',
+                             '完整标题': f'完整{self._pattern}标题',
+                             '导演': f'{self._pattern}导演',
+                             '制作商': f'{self._pattern}制作商',
+                             '发行商': f'{self._pattern}发行商',
+                             '评分': 0.0,
+                             '片长': 0,
+                             '系列': f'{self._pattern}系列',
+                             '发行年月日': '1970-01-01', '发行年份': '1970', '月': '01', '日': '01',
+                             '首个演员': f'{self._pattern}演员', '全部演员': f'{self._pattern}演员',
+                             '空格': ' ',
+                             '\\': sep, '/': sep,  # 文件路径分隔符
+                             '是否中字': '',
+                             '是否流出': '',
+                             '影片类型': self._av_type,  # 自定义有码、无码、素人、FC2的对应称谓
+                             '视频': 'ABC-123',  # 当前及未来的视频文件名，不带ext
+                             '原文件名': 'ABC-123', '原文件夹名': 'ABC-123', }
+        if self._pattern == 'fc2':
+            dict_for_standard['车牌'] = 'FC2-123'
+            dict_for_standard['车牌前缀'] = 'FC2'
+            dict_for_standard['视频'] = 'FC2-123'
+            dict_for_standard['原文件名'] = 'FC2-123'
+            dict_for_standard['原文件夹名'] = 'FC2-123'
+        for i in self.list_extra_genres:
+            if i not in dict_for_standard:
+                dict_for_standard[i] = i
+        for i in self.list_name_video:
+            if i not in dict_for_standard:
+                dict_for_standard[i] = i
+        for i in self.list_name_folder:
+            if i not in dict_for_standard:
+                dict_for_standard[i] = i
+        for i in self.list_name_nfo_title:
+            if i not in dict_for_standard:
+                dict_for_standard[i] = i
+        for i in self.list_name_fanart:
+            if i not in dict_for_standard:
+                dict_for_standard[i] = i
+        for i in self.list_name_poster:
+            if i not in dict_for_standard:
+                dict_for_standard[i] = i
+        # 归类路径的组装公式
+        for i in self.dir_custom_classify_target.split('\\'):
+            for j in i.split('+'):
+                if j not in dict_for_standard:
+                    dict_for_standard[j] = j
+                self.list_name_dir_classify.append(j)
+            self.list_name_dir_classify.append(sep)
+        return dict_for_standard

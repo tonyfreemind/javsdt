@@ -19,6 +19,7 @@ from Classes.MyConst import Const
 from Functions.Progress.User import choose_directory
 from Functions.Utils.JsonUtility import read_json_to_dict
 from VideoAnalysis import VideoFileAnalysis
+from Classes.MyInfo import InfoHandler
 
 #  main开始
 # region（1）读取配置
@@ -34,6 +35,7 @@ arzonHandler = ArzonHandler(settings)
 libraryHandler = LibraryHandler(settings)
 translator = Translator(settings)
 videoFileAnalysis = VideoFileAnalysis(settings)
+infoHandler = InfoHandler(settings)
 # 用于记录失败次数、失败信息
 logger = Logger()
 # 当前程序文件夹 所处的 父文件夹路径
@@ -93,10 +95,13 @@ while not input_key:
 
                 dir_prefs_jsons = f'{dir_pwd_father}{sep}【重要须备份】已整理的jsons{sep}{jav_file.Pref}{sep}'
                 path_json = f'{dir_prefs_jsons}{jav_file.Car}.json'
+                # region 读取已有json
                 if os.path.exists(path_json):
                     print(f'    >从本地json读取元数据: {path_json}')
                     jav_model = JavModel(**read_json_to_dict(path_json))
                     genres = jav_model.Genres
+                # endregion
+                # region 去网站获取
                 else:
                     jav_model = JavModel()
                     # region（3.2.2.2）从javdb获取信息
@@ -143,6 +148,7 @@ while not input_key:
 
                     # 完善jav_model.CompletionStatus
                     jav_model.prefect_completion_status()
+                # endregion
 
                 # region（3.2.3）后续完善
                 # 如果用户 首次整理该片不存在path_json 或 如果这次整理用户正确地输入了翻译账户，则保存json
@@ -162,7 +168,7 @@ while not input_key:
                     genres.append('无码流出')
 
                 # 完善handler.dict_for_standard
-                handler.prefect_dict_for_standard(jav_file, jav_model)
+                infoHandler.prefect_dict_for_standard(jav_file, jav_model)
                 # endregion
 
                 # 1重命名视频

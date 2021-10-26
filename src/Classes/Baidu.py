@@ -4,6 +4,7 @@ import json
 from time import sleep, time
 from hashlib import md5
 import MySettings
+from aip import AipBodyAnalysis  # 百度ai人体分析
 # from traceback import format_exc
 
 
@@ -97,3 +98,18 @@ class Translator(object):
         else:
             print('    >你没有正确填写百度翻译api账户!')
             return False
+
+
+class AIBody(object):
+    def __init__(self, settings:MySettings.Settings):
+        self._ai_id = settings.ai_id
+        self._ai_ak = settings.ai_ak
+        self._ai_sk = settings.ai_sk
+
+    # #########################[百度人体分析]##############################
+    # 百度翻译启动
+    # def start_body_analysis(self):
+    #     if self.bool_face:
+    #         return AipBodyAnalysis(self._al_id, self._ai_ak, self._al_sk)
+    #     else:
+    #         return None

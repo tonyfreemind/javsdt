@@ -2,10 +2,12 @@ import MySettings
 from XML import replace_xml_win
 
 
-class infoHandler(object):
+class InfoHandler(object):
     def __init__(self, settings:MySettings.Settings):
         self._bool_need_actors_end_of_title = settings.need_actors_end_of_title
         self._int_title_len = settings.int_title_len
+        # 用于给用户自定义命名的字典
+        self.dict_for_standard = self.get_dict_for_standard()
 
 
     # 功能: 用jav_file、jav_model中的原始数据完善dict_for_standard
