@@ -52,7 +52,7 @@ while not input_key:
     # 在txt中记录一下用户的这次操作，在某个时间选择了某个文件夹
     logger.record_start(dir_choose)
     # 新的所选文件夹，重置一些属性
-    fileHandler.rest_choose_dir(dir_choose)
+    fileHandler.rest_when_choose(dir_choose)
     # endregion
 
     # region （3.2）遍历所选文件夹内部进行处理
@@ -78,7 +78,7 @@ while not input_key:
         fileHandler.judge_separate_folder(len(list_jav_files), list_sub_dirs)
         # Bool_in_separate_folder是类属性，不是实例属性，修改类属性会将list_jav_files中的所有jav_file的Bool_in_separate_folder同步
         # （3.2.1.6）处理“集”的问题，（1）所选文件夹总共有多少个视频文件，包括非jav文件，主要用于显示进度（2）同一车牌有多少cd，用于cd2...命名
-        fileHandler.count_num_and_no(list_jav_files)
+        fileHandler.init_jav_file_episodes(list_jav_files)
         # endregion
 
         # region（3.2.2）开始处理每一部jav文件
@@ -86,7 +86,7 @@ while not input_key:
             try:
                 # region（3.2.2.1）准备工作
                 # 当前进度
-                print(f'>> [{jav_file.No}/{fileHandler.sum_videos_in_choose_dir}]:{jav_file.Name}')
+                print(f'>> [{jav_file.No}/{fileHandler.sum_all_videos()}]:{jav_file.Name}')
                 print(f'    >发现车牌: {jav_file.Car}')
                 logger.path_relative = jav_file.Path[len(dir_choose):]  # 影片的相对于所选文件夹的路径，用于报错
                 # endregion

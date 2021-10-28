@@ -7,7 +7,7 @@ from Classes.Const import Const
 # 从ini读取到的设置
 class Ini(object):
     def __init__(self, pattern):
-        self._pattern = pattern
+        self.pattern = pattern
         print('正在读取ini中的设置...', end='')
         try:
             conf = RawConfigParser()
@@ -100,7 +100,7 @@ class Ini(object):
             self.proxy_dmm = proxys if conf.get(Const.node_proxy, Const.need_proxy_dmm) == '是' and need_proxy else {}
             # ################################################### 原影片文件的性质 ##########################################
             # 自定义 无视的字母数字 去除影响搜索结果的字母数字 xhd1080、FHD-1080
-            if self._pattern != Const.wuma:
+            if self.pattern != Const.wuma:
                 self.list_surplus_words = conf.get(Const.node_file, Const.surplus_words_in_youma_suren).upper().split(
                     '、')
             else:
@@ -114,7 +114,7 @@ class Ini(object):
             # 自定义 是否流出 这个元素的表现形式
             self.divulge_expression = conf.get(Const.node_file, Const.divulge_expression)
             # 自定义 原影片性质 有码
-            self._av_type = conf.get(Const.node_file, self._pattern)
+            self._av_type = conf.get(Const.node_file, self.pattern)
             # ################################################## 其他设置 ##################################################
             # 是否 使用简体中文 简介翻译的结果和jav特征会变成“简体”还是“繁体”，影响影片特征和简介。
             # self.to_language = 'zh' if config_settings.get(Const.node_other, "简繁中文？") == '简' else 'cht'
@@ -158,16 +158,16 @@ class Ini(object):
     def get_dict_for_standard(self):
         dict_for_standard = {'车牌': 'ABC-123',
                              '车牌前缀': 'ABC',
-                             '标题': f'{self._pattern}标题',
-                             '完整标题': f'完整{self._pattern}标题',
-                             '导演': f'{self._pattern}导演',
-                             '制作商': f'{self._pattern}制作商',
-                             '发行商': f'{self._pattern}发行商',
+                             '标题': f'{self.pattern}标题',
+                             '完整标题': f'完整{self.pattern}标题',
+                             '导演': f'{self.pattern}导演',
+                             '制作商': f'{self.pattern}制作商',
+                             '发行商': f'{self.pattern}发行商',
                              '评分': 0.0,
                              '片长': 0,
-                             '系列': f'{self._pattern}系列',
+                             '系列': f'{self.pattern}系列',
                              '发行年月日': '1970-01-01', '发行年份': '1970', '月': '01', '日': '01',
-                             '首个演员': f'{self._pattern}演员', '全部演员': f'{self._pattern}演员',
+                             '首个演员': f'{self.pattern}演员', '全部演员': f'{self.pattern}演员',
                              '空格': ' ',
                              '\\': sep, '/': sep,  # 文件路径分隔符
                              '是否中字': '',
@@ -175,7 +175,7 @@ class Ini(object):
                              '影片类型': self._av_type,  # 自定义有码、无码、素人、FC2的对应称谓
                              '视频': 'ABC-123',  # 当前及未来的视频文件名，不带ext
                              '原文件名': 'ABC-123', '原文件夹名': 'ABC-123', }
-        if self._pattern == 'fc2':
+        if self.pattern == 'fc2':
             dict_for_standard['车牌'] = 'FC2-123'
             dict_for_standard['车牌前缀'] = 'FC2'
             dict_for_standard['视频'] = 'FC2-123'

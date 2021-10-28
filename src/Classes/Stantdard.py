@@ -14,6 +14,8 @@ class StandardHandler(object):
         self._int_title_len = settings.int_title_len
         # 用于给用户自定义命名的字典
         self.dict_for_standard = self.get_dict_for_standard()
+        # 定义 Windows中的非法字符, 将非法字符替换为空格
+        self.winDic = str.maketrans(r':<>"\?/*', '        ')
 
 
     # 功能: 用jav_file、jav_model中的原始数据完善dict_for_standard

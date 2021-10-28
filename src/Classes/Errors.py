@@ -9,3 +9,7 @@ class DownloadFanartError(Exception):
 
 class SpecifiedUrlError(Exception):
     pass
+
+
+class CustomClassifyTargetDirError(Exception):
+    pass
