@@ -14,7 +14,7 @@ from Classes.Config import Ini
 from Classes.Enums import ScrapeStatusEnum
 from Classes.MyLogger import Logger
 from Classes.MyJav import JavModel
-from Classes.Errors import TooManyDirectoryLevelsError, SpecifiedUrlError
+from Classes.Errors import TooManyDirectoryLevelsError, SpecifiedUrlError, CustomClassifyTargetDirError
 from Classes.Const import Const
 from Functions.Progress.User import choose_directory
 from Functions.Utils.JsonUtility import read_json_to_dict
@@ -52,7 +52,11 @@ while not input_key:
     # 在txt中记录一下用户的这次操作，在某个时间选择了某个文件夹
     logger.record_start(dir_choose)
     # 新的所选文件夹，重置一些属性
-    fileHandler.rest_when_choose(dir_choose)
+    try:
+        fileHandler.rest_when_choose(dir_choose)
+    except CustomClassifyTargetDirError as error:
+        input(f'请修正上述错误后重启程序：{str(error)}')
+        # os.system('pause')
     # endregion
 
     # region （3.2）遍历所选文件夹内部进行处理

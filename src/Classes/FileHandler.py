@@ -5,6 +5,7 @@ import re
 
 from Classes.MyJav import JavFile
 from Config import Ini
+from Errors import CustomClassifyTargetDirError
 from Functions.Progress.Prepare import get_suren_cars
 from Functions.Metadata.Car import find_car_fc2, find_car_youma
 
@@ -103,37 +104,38 @@ class FileHandler(object):
     # #########################[归类影片]##############################
 
     def check_classify_target_directory(self):
-        """检查 用户设置的归类根目录 的合法性\n
+        """检查“用户设置的归类根目录”的合法性\n
         Returns:
-
+            void; update实例属性
         """
         # 检查 归类根目录 的合法性
         if self._need_classify:
-            custom_classify_target_dir = self._dir_custom_classify_target.rstrip(sep)
+            dir_custom_classify_target = self._dir_custom_classify_target.rstrip(sep)
             # 用户使用默认的“所选文件夹”
-            if custom_classify_target_dir == '所选文件夹':
+            if dir_custom_classify_target == '所选文件夹':
                 self._dir_classify_target = f'{self._dir_choose}{sep}归类完成'
             # 归类根目录 是 用户输入的路径c:\a，继续核实合法性
             else:
-                # 用户输入的路径 不是 所选文件夹dir_choose
-                if custom_classify_target_dir != self._dir_choose:
-                    if custom_classify_target_dir[:2] != self._dir_choose[:2]:
-                        raise CustomClassifyTargetDirError()
-                        input(f'归类的根目录: 【{custom_classify_target_dir}】和所选文件夹不在同一磁盘无法归类！请修正！')
-                    if not os.path.exists(custom_classify_target_dir):
-                        input(f'归类的根目录: 【{custom_classify_target_dir}】不存在！无法归类！请修正！')
-                    self._dir_classify_target = custom_classify_target_dir
-                # 用户输入的路径 就是 所选文件夹dir_choose
+                # 用户输入的路径 不是 所选文件夹
+                if dir_custom_classify_target != self._dir_choose:
+                    if dir_custom_classify_target[:2] != self._dir_choose[:2]:
+                        raise CustomClassifyTargetDirError(f'归类的根目录: 【{dir_custom_classify_target}】与所选文件夹不在同一磁盘，无法归类！请修正！')
+                    if not os.path.exists(dir_custom_classify_target):
+                        raise CustomClassifyTargetDirError(f'归类的根目录: 【{dir_custom_classify_target}】不存在！无法归类！请修正！')
+                    self._dir_classify_target = dir_custom_classify_target
+                # 用户输入的路径 就是 所选文件夹
                 else:
                     self._dir_classify_target = f'{self._dir_choose}{sep}归类完成'
         else:
             self._dir_classify_target = ''
 
-    # 功能: 收集文件们中的字幕文件，存储在self.dict_subtitle_file
-    # 参数: list_sub_files（当前文件夹的）子文件们
-    # 返回: 无；更新self.dict_subtitle_file
-    # 辅助: find_car_youma, find_car_fc2
     def init_dict_subtitle_file(self, list_sub_files: list):
+        """收集文件们中的字幕文件，存储在self.dict_subtitle_file\n
+        Args:
+            list_sub_files: (当前一级文件夹的)子文件们
+        Returns:
+            void; 更新self._dict_subtitle_file
+        """
         for file_raw in list_sub_files:
             file_temp = file_raw.upper()
             if file_temp.endswith(('.SRT', '.VTT', '.ASS', '.SSA', '.SUB', '.SMI',)):
