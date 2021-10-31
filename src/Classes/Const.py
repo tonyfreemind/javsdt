@@ -3,7 +3,7 @@ from dataclasses import dataclass
 
 @dataclass
 class Const(object):
-    # region ini
+    # region ini用户设置
     ini: str = '【点我设置整理规则】.ini'
     encoding_ini = 'utf-8-sig'
 
@@ -83,6 +83,10 @@ class Const(object):
     ai_ak = 'api key'
     ai_sk = 'secret key'
     # endregion
+
+    # region ini头像统计
+    ini_actor: str = '【缺失的演员头像统计For Kodi】.ini'
+    node_no_actor = '缺失的演员头像'
 
     proxy_default = '127.0.0.1:1080'
     title = '标题'

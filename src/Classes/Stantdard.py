@@ -1,96 +1,121 @@
+import os
+from os import sep
+import Config
 from Classes.MyLogger import record_video_old
 from Classes.Errors import TooManyDirectoryLevelsError, DownloadFanartError
+from Const import Const
 from Functions.Utils.Download import download_pic
 from configparser import RawConfigParser  # 读取ini
 from configparser import NoOptionError  # ini文件不存在或不存在指定node的错误
 from shutil import copyfile
 from Functions.Progress.Picture import check_picture, crop_poster_youma, add_watermark_subtitle, add_watermark_divulge
 from Functions.Utils.XML import replace_xml_win, replace_xml
+from Model.JavData import JavData
+from Model.JavFile import JavFile
 
 
 class StandardHandler(object):
-    def __init__(self):
-        self._bool_need_actors_end_of_title = settings.need_actors_end_of_title
-        self._int_title_len = settings.int_title_len
+    def __init__(self, ini: Config.Ini):
+        self._bool_need_actors_end_of_title = ini.need_actors_end_of_title
+        self._int_title_len = ini.int_title_len
         # 用于给用户自定义命名的字典
-        self.dict_for_standard = self.get_dict_for_standard()
+        self._dict_for_standard = ini.dict_for_standard()
+        self._subtitle_expression = ini.subtitle_expression
+        self._divulge_expression = ini.divulge_expression
+        self._need_rename_video = ini.need_rename_video
+        self._list_name_video = ini.list_name_video
+        self._need_rename_subtitle = ini.need_rename_subtitle
+        self._need_classify = ini.need_classify
+        self._need_classify_folder = ini.need_classify_folder
+        self._dir_custom_classify_target = ini.dir_custom_classify_target
+        self._list_name_dir_classify = ini.list_name_dir_classify
+        self._need_rename_folder = ini.need_rename_folder
+        self._list_name_folder = ini.list_name_folder
+        self._bool_sculpture =ini.need_actor_sculpture
+
         # 定义 Windows中的非法字符, 将非法字符替换为空格
         self.winDic = str.maketrans(r':<>"\?/*', '        ')
 
-
-    # 功能: 用jav_file、jav_model中的原始数据完善dict_for_standard
-    # 参数: jav_file 处理的jav视频文件对象，jav_model 保存jav元数据的对象
-    # 返回: 无；更新dict_for_standard
-    # 辅助: replace_xml_win，replace_xml_win
-    def prefect_dict_for_standard(self, jav_file, jav_model):
+    # jav_file: jav视频文件对象
+    # jav_data: jav元数据对象
+    def prefect_dict_for_standard(self, jav_file: JavFile, jav_data: JavData):
+        """用jav_file、jav_model中的原始数据完善dict_for_standard\n
+        Args:
+            jav_file: jav视频文件对象
+            jav_data: jav元数据对象
+        Returns:
+            void; 更新self._dict_for_standard
+        """
         # 标题
-        str_actors = ' '.join(jav_model.Actors[:3])
+        str_actors = ' '.join(jav_data.Actors[:3])
         int_actors_len = len(str_actors) if self._bool_need_actors_end_of_title else 0
-        int_current_len = self._int_title_len - int_actors_len
-        self.dict_for_standard['完整标题'] = replace_xml_win(jav_model.Title)
-        self.dict_for_standard['中文完整标题'] = replace_xml_win(jav_model.TitleZh) \
-            if jav_model.TitleZh else self.dict_for_standard['完整标题']
-        # 处理影片的标题过长。用户只需要在ini中写“标题”，但事实上，文件重命名操作中的“标题“是删减过的标题，nfo中的标题才是完整标题
-        if len(self.dict_for_standard['完整标题']) > int_current_len:
-            self.dict_for_standard['标题'] = self.dict_for_standard['完整标题'][:int_current_len]
+        int_current_len = self._int_title_len - int_actors_len  # 限制标题长 - 末尾可能存在的演员文字长 = 实际限制的标题长
+        self._dict_for_standard['完整标题'] = replace_xml_win(jav_data.Title)
+        self._dict_for_standard['中文完整标题'] = replace_xml_win(jav_data.TitleZh) \
+            if jav_data.TitleZh else self._dict_for_standard['完整标题']
+        # 处理影片的标题过长。文件重命名操作中的“标题“是删减过的标题，nfo中的标题才是“完整标题”，而用户只需要在ini中写“标题”
+        if len(self._dict_for_standard['完整标题']) > int_current_len:
+            self._dict_for_standard['标题'] = self._dict_for_standard['完整标题'][:int_current_len]
         else:
-            self.dict_for_standard['标题'] = self.dict_for_standard['完整标题']
-        if len(self.dict_for_standard['中文完整标题']) > int_current_len:
-            self.dict_for_standard['中文标题'] = self.dict_for_standard['中文完整标题'][:int_current_len]
+            self._dict_for_standard['标题'] = self._dict_for_standard['完整标题']
+        if len(self._dict_for_standard['中文完整标题']) > int_current_len:
+            self._dict_for_standard['中文标题'] = self._dict_for_standard['中文完整标题'][:int_current_len]
         else:
-            self.dict_for_standard['中文标题'] = self.dict_for_standard['中文完整标题']
+            self._dict_for_standard['中文标题'] = self._dict_for_standard['中文完整标题']
         if self._bool_need_actors_end_of_title:
-            self.dict_for_standard['标题'] = f'{self.dict_for_standard["标题"]} {str_actors}'
-            self.dict_for_standard['完整标题'] += f'{self.dict_for_standard["完整标题"]} {str_actors}'
-            self.dict_for_standard['中文标题'] += f'{self.dict_for_standard["中文标题"]} {str_actors}'
-            self.dict_for_standard['中文完整标题'] += f'{self.dict_for_standard["中文完整标题"]} {str_actors}'
+            self._dict_for_standard['标题'] = f'{self._dict_for_standard["标题"]} {str_actors}'
+            self._dict_for_standard['完整标题'] += f'{self._dict_for_standard["完整标题"]} {str_actors}'
+            self._dict_for_standard['中文标题'] += f'{self._dict_for_standard["中文标题"]} {str_actors}'
+            self._dict_for_standard['中文完整标题'] += f'{self._dict_for_standard["中文完整标题"]} {str_actors}'
 
         # '是否中字'这一命名元素被激活
-        self.dict_for_standard['是否中字'] = self._custom_subtitle_expression if jav_file.Bool_subtitle else ''
-        self.dict_for_standard['是否流出'] = self._custom_divulge_expression if jav_file.Bool_divulge else ''
+        self._dict_for_standard['是否中字'] = self._subtitle_expression if jav_file.Bool_subtitle else ''
+        self._dict_for_standard['是否流出'] = self._divulge_expression if jav_file.Bool_divulge else ''
         # 车牌
-        self.dict_for_standard['车牌'] = jav_model.Car  # car可能发生了变化
-        self.dict_for_standard['车牌前缀'] = jav_model.Car.split('-')[0]
+        self._dict_for_standard['车牌'] = jav_data.Car  # car可能发生了变化
+        self._dict_for_standard['车牌前缀'] = jav_data.Car.split('-')[0]
         # 日期
-        self.dict_for_standard['发行年月日'] = jav_model.Release
-        self.dict_for_standard['发行年份'] = jav_model.Release[0:4]
-        self.dict_for_standard['月'] = jav_model.Release[5:7]
-        self.dict_for_standard['日'] = jav_model.Release[8:10]
+        self._dict_for_standard['发行年月日'] = jav_data.Release
+        self._dict_for_standard['发行年份'] = jav_data.Release[0:4]
+        self._dict_for_standard['月'] = jav_data.Release[5:7]
+        self._dict_for_standard['日'] = jav_data.Release[8:10]
         # 演职人员
-        self.dict_for_standard['片长'] = jav_model.Runtime
-        self.dict_for_standard['导演'] = replace_xml_win(jav_model.Director) if jav_model.Director else '有码导演'
+        self._dict_for_standard['片长'] = jav_data.Runtime
+        self._dict_for_standard['导演'] = replace_xml_win(jav_data.Director) if jav_data.Director else '有码导演'
         # 公司
-        self.dict_for_standard['发行商'] = replace_xml_win(jav_model.Publisher) if jav_model.Publisher else '有码发行商'
-        self.dict_for_standard['制作商'] = replace_xml_win(jav_model.Studio) if jav_model.Studio else '有码制作商'
+        self._dict_for_standard['发行商'] = replace_xml_win(jav_data.Publisher) if jav_data.Publisher else '有码发行商'
+        self._dict_for_standard['制作商'] = replace_xml_win(jav_data.Studio) if jav_data.Studio else '有码制作商'
         # 评分 系列
-        self.dict_for_standard['评分'] = jav_model.Score / 10
-        self.dict_for_standard['系列'] = jav_model.Series if jav_model.Series else '有码系列'
+        self._dict_for_standard['评分'] = jav_data.Score / 10
+        self._dict_for_standard['系列'] = jav_data.Series if jav_data.Series else '有码系列'
         # 全部演员（最多7个） 和 第一个演员
-        if jav_model.Actors:
-            if len(jav_model.Actors) > 7:
-                self.dict_for_standard['全部演员'] = ' '.join(jav_model.Actors[:7])
+        if jav_data.Actors:
+            if len(jav_data.Actors) > 7:
+                self._dict_for_standard['全部演员'] = ' '.join(jav_data.Actors[:7])
             else:
-                self.dict_for_standard['全部演员'] = ' '.join(jav_model.Actors)
-            self.dict_for_standard['首个演员'] = jav_model.Actors[0]
+                self._dict_for_standard['全部演员'] = ' '.join(jav_data.Actors)
+            self._dict_for_standard['首个演员'] = jav_data.Actors[0]
         else:
-            self.dict_for_standard['首个演员'] = self.dict_for_standard['全部演员'] = '有码演员'
+            self._dict_for_standard['首个演员'] = self._dict_for_standard['全部演员'] = '有码演员'
 
         # jav_file原文件的一些属性   dict_for_standard['视频']，先定义为原文件名，即将发生变化。
-        self.dict_for_standard['视频'] = self.dict_for_standard['原文件名'] = jav_file.Name_no_ext
-        self.dict_for_standard['原文件夹名'] = jav_file.Folder
+        self._dict_for_standard['视频'] = self._dict_for_standard['原文件名'] = jav_file.Name_no_ext
+        self._dict_for_standard['原文件夹名'] = jav_file.Folder
 
-    # 功能: 1重命名视频(jav_file和dict_for_standard发生改变）
-    # 参数: 设置settings，命名信息dict_for_standard，处理的影片jav
-    # 返回: path_return，重命名操作可能不成功，返回path_return告知主程序提醒用户处理
-    # 辅助: os.exists, os.rename, record_video_old, record_fail
-    def rename_mp4(self, jav_file):
+    def rename_mp4(self, jav_file: JavFile):
+        """重命名磁盘中的视频文件\n
+        Args:
+            jav_file: jav视频文件对象
+        Returns:
+            path_return 如果重命名为新文件名不成功，将新文件名路径告知用户，提醒用户自行重命名；如果成功，则为空。
+        """
         # 如果重命名操作不成功，将path_new赋值给path_return，提醒用户自行重命名
         path_return = ''
-        if self._bool_rename_video:
+        if self._need_rename_video:
             # 构造新文件名，不带文件类型后缀
             name_without_ext = ''
             for j in self._list_name_video:
-                name_without_ext = f'{name_without_ext}{self.dict_for_standard[j]}'
+                name_without_ext = f'{name_without_ext}{self._dict_for_standard[j]}'
             if os.name == 'nt':  # 如果是windows系统
                 name_without_ext = name_without_ext.translate(self.winDic)  # 将文件名中的非法字符替换为空格
             name_without_ext = f'{name_without_ext.strip()}{jav_file.Cd}'  # 去除末尾空格，否则windows会自动删除空格，导致程序仍以为带空格
@@ -111,11 +136,11 @@ class StandardHandler(object):
             # 存在目标文件，不是现在的文件。
             else:
                 raise FileExistsError(f'重命名影片失败，重复的影片，已经有相同文件名的视频了: {path_new}')  # 【终止对该jav的整理】
-            self.dict_for_standard['视频'] = name_without_ext  # 【更新】 dict_for_standard['视频']
+            self._dict_for_standard['视频'] = name_without_ext  # 【更新】 dict_for_standard['视频']
             jav_file.Name = f'{name_without_ext}{jav_file.Ext}'  # 【更新】jav.name，重命名操作可能不成功，但之后的操作仍然围绕成功的jav.name来命名
             print(f'    >修改文件名{jav_file.Cd}完成')
             # 重命名字幕
-            if jav_file.Subtitle and self._bool_rename_subtitle:
+            if jav_file.Subtitle and self._need_rename_subtitle:
                 subtitle_new = f'{name_without_ext}{jav_file.Ext_subtitle}'  # 【临时变量】subtitle_new
                 path_subtitle_new = f'{jav_file.Dir}{sep}{subtitle_new}'  # 【临时变量】path_subtitle_new
                 if jav_file.Path_subtitle != path_subtitle_new:
@@ -124,18 +149,20 @@ class StandardHandler(object):
                 print('    >修改字幕名完成')
         return path_return
 
-    # 功能: 2归类影片，只针对视频文件和字幕文件，无视它们当前所在文件夹
-    # 参数: 设置settings，命名信息dict_for_standard，处理的影片jav
-    # 返回: 处理的影片jav（所在文件夹路径改变）
-    # 辅助: os.exists, os.rename, os.makedirs，
-    def classify_files(self, jav_file):
+    def classify_files(self, jav_file: JavFile):
+        """2归类影片，只针对视频文件和字幕文件，无视它们当前所在文件夹\n
+        Args:
+            jav_file: jav视频文件对象
+        Returns:
+            void
+        """
         # 如果需要归类，且不是针对文件夹来归类
         if self._need_classify and not self._need_classify_folder:
             # 移动的目标文件夹路径
-            dir_dest = f'{self.dir_classify_target}{sep}'
-            for j in self.list_name_dir_classify:
+            dir_dest = f'{self._dir_custom_classify_target}{sep}'
+            for j in self._list_name_dir_classify:
                 # 【临时变量】归类的目标文件夹路径    C:\Users\JuneRain\Desktop\测试文件夹\葵司\
-                dir_dest = f'{dir_dest}{self.dict_for_standard[j].strip()}'
+                dir_dest = f'{dir_dest}{self._dict_for_standard[j].strip()}'
             # 还不存在该文件夹，新建
             if not os.path.exists(dir_dest):
                 os.makedirs(dir_dest)
@@ -154,16 +181,19 @@ class StandardHandler(object):
             else:
                 raise FileExistsError(f'归类失败，重复的影片，归类的目标文件夹已经存在相同的影片: {path_new}')  # 【终止对该jav的整理】
 
-    # 功能: 3重命名文件夹【相同】如果已进行第2操作，第3操作不会进行，因为用户只需要归类视频文件，不需要管文件夹。
-    # 参数: 处理的影片jav
-    # 返回: 处理的影片jav（所在文件夹路径改变）
-    # 辅助: os.exists, os.rename, os.makedirs，record_fail
-    def rename_folder(self, jav_file):
-        if self.bool_rename_folder:
+    def rename_folder(self, jav_file: JavFile):
+        """ 3重命名文件夹或创建独立文件夹\n
+        如果已进行第2操作，第3操作不会进行，因为用户只需要归类视频文件，不需要管文件夹。\n
+        Args:
+            jav_file: jav元数据对象
+        Returns:
+            void; 更新jav_file.Dir
+        """
+        if self._need_rename_folder:
             # 构造 新文件夹名folder_new
             folder_new = ''
             for j in self._list_name_folder:
-                folder_new = f'{folder_new}{self.dict_for_standard[j]}'
+                folder_new = f'{folder_new}{self._dict_for_standard[j]}'
             folder_new = folder_new.rstrip(' .')  # 【临时变量】新的所在文件夹。去除末尾空格和“.”
             # 是独立文件夹，才会重命名文件夹
             if jav_file.Bool_in_separate_folder:
@@ -196,23 +226,26 @@ class StandardHandler(object):
                     if jav_file.Subtitle:
                         path_subtitle_new = f'{path_separate_folder}{sep}{jav_file.Subtitle}'  # 【临时变量】新的字幕路径
                         os.rename(jav_file.Path_subtitle, path_subtitle_new)
-                        # 下面不会操作 字幕文件 了，jav.path_subtitle不再更新
+                        # 后续不会操作 字幕文件 了，jav.path_subtitle不再更新
                         print('    >移动字幕到独立文件夹')
                     jav_file.Dir = path_separate_folder  # 【更新】jav.dir
                 # 里面已有“avop-127.mp4”，这不是它的家。
                 else:
                     raise FileExistsError(f'创建独立文件夹失败，已存在相同的视频文件: {path_new}')  # 【终止对该jav的整理】
 
-    # 功能: 6为当前jav收集演员头像到“.actors”文件夹中
-    # 参数: jav_file 处理的jav视频文件对象，jav_model 保存jav元数据的对象
-    # 返回: 无
-    # 辅助: os.path.exists，os.makedirs, configparser.RawConfigParser, shutil.copyfile
-    def collect_sculpture(self, jav_file, jav_model):
+    def collect_sculpture(self, jav_file: JavFile, jav_data: JavData):
+        """6为当前jav收集演员头像到“.actors”文件夹中\n
+        Args:
+            jav_file: jav视频文件对象
+            jav_data: jav元数据对象
+        Returns:
+            void;
+        """
         if self._bool_sculpture and jav_file.Episode == 1:
-            if not jav_model.Actors:
+            if not jav_data.Actors:
                 print('    >未知演员，无法收集头像')
             else:
-                for each_actor in jav_model.Actors:
+                for each_actor in jav_data.Actors:
                     path_exist_actor = f'演员头像{sep}{each_actor[0]}{sep}{each_actor}'  # 事先准备好的演员头像路径
                     if os.path.exists(f'{path_exist_actor}.jpg'):
                         pic_type = '.jpg'
@@ -220,13 +253,13 @@ class StandardHandler(object):
                         pic_type = '.png'
                     else:
                         config_actor = RawConfigParser()
-                        config_actor.read('【缺失的演员头像统计For Kodi】.ini', encoding='utf-8-sig')
+                        config_actor.read(Const.ini_actor, encoding='utf-8-sig')
                         try:
-                            each_actor_times = config_actor.get('缺失的演员头像', each_actor)
-                            config_actor.set("缺失的演员头像", each_actor, str(int(each_actor_times) + 1))
+                            each_actor_times = config_actor.get(Const.node_no_actor, each_actor)
+                            config_actor.set(Const.node_no_actor, each_actor, str(int(each_actor_times) + 1))
                         except NoOptionError:
-                            config_actor.set("缺失的演员头像", each_actor, '1')
-                        config_actor.write(open('【缺失的演员头像统计For Kodi】.ini', "w", encoding='utf-8-sig'))
+                            config_actor.set(Const.node_no_actor, each_actor, '1')
+                        config_actor.write(open(Const.ini_actor, "w", encoding='utf-8-sig'))
                         continue
                     # 已经收录了这个演员头像
                     dir_dest_actor = f'{jav_file.Dir}{sep}.actors{sep}'  # 头像的目标文件夹
@@ -236,22 +269,30 @@ class StandardHandler(object):
                     copyfile(f'{path_exist_actor}{pic_type}', f'{dir_dest_actor}{each_actor}{pic_type}')
                     print('    >演员头像收集完成: ', each_actor)
 
-    # 功能: 7归类影片，针对文件夹（如果已进行第2操作，第7操作不会进行，因为用户只需要归类视频文件，不需要管文件夹）
+    # 功能:
     # 参数: jav_file 处理的jav视频文件对象
     # 返回: 处理的影片jav（所在文件夹路径改变）
     # 辅助: os.exists, os.rename, os.makedirs，
     def classify_folder(self, jav_file):
+        """7归类影片，针对文件夹\n
+        （如果已进行第2操作，第7操作不会进行，因为用户只需要归类视频文件，不需要管文件夹）
+        Args:
+            jav_file:
+
+        Returns:
+
+        """
         # 需要移动文件夹，且，是该影片的最后一集
         if self._need_classify and self._need_classify_folder and jav_file.Episode == jav_file.Sum_all_episodes:
             # 用户选择的文件夹是一部影片的独立文件夹，为了避免在这个文件夹里又生成新的归类文件夹
-            if jav_file.Bool_in_separate_folder and self.dir_classify_target.startswith(jav_file.Dir):
+            if jav_file.Bool_in_separate_folder and self._dir_custom_classify_target.startswith(jav_file.Dir):
                 raise TooManyDirectoryLevelsError(f'无法归类，不建议在当前文件夹内再新建文件夹')
             # 归类放置的目标文件夹
-            dir_dest = f'{self.dir_classify_target}{sep}'
+            dir_dest = f'{self._dir_custom_classify_target}{sep}'
             # 移动的目标文件夹
-            for j in self.list_name_dir_classify:
+            for j in self._list_name_dir_classify:
                 # 【临时变量】 文件夹移动的目标上级文件夹  C:\Users\JuneRain\Desktop\测试文件夹\1\葵司\
-                dir_dest = f'{dir_dest}{self.dict_for_standard[j].rstrip(" .")}'
+                dir_dest = f'{dir_dest}{self._dict_for_standard[j].rstrip(" .")}'
             # 【临时变量】 文件夹移动的目标路径   C:\Users\JuneRain\Desktop\测试文件夹\1\葵司\【葵司】AVOP-127\
             dir_new = f'{dir_dest}{sep}{jav_file.Folder}'
             # print(dir_new)
@@ -283,7 +324,7 @@ class StandardHandler(object):
             # nfo中tilte的写法
             title_in_nfo = ''
             for i in self._list_name_nfo_title:
-                title_in_nfo = f'{title_in_nfo}{self.dict_for_standard[i]}'  # nfo中tilte的写法
+                title_in_nfo = f'{title_in_nfo}{self._dict_for_standard[i]}'  # nfo中tilte的写法
             # 开始写入nfo，这nfo格式是参考的kodi的nfo
             plot = replace_xml(jav_model.PlotZh) if self._bool_need_zh_plot else replace_xml(jav_model.Plot)
             f = open(path_nfo, 'w', encoding="utf-8")
@@ -316,7 +357,7 @@ class StandardHandler(object):
                 if self._bool_write_studio and jav_model.Studio:
                     f.write(f'  <genre>片商:{jav_model.Studio}</genre>\n')
                 for i in self._list_extra_genres:
-                    f.write(f'  <genre>{self.dict_for_standard[i]}</genre>\n')
+                    f.write(f'  <genre>{self._dict_for_standard[i]}</genre>\n')
             # 需要将特征写入tag
             if self._bool_tag:
                 for i in genres:
@@ -326,7 +367,7 @@ class StandardHandler(object):
                 if self._bool_write_studio and jav_model.Studio:
                     f.write(f'  <tag>片商:{jav_model.Studio}</tag>\n')
                 for i in self._list_extra_genres:
-                    f.write(f'  <tag>{self.dict_for_standard[i]}</tag>\n')
+                    f.write(f'  <tag>{self._dict_for_standard[i]}</tag>\n')
             # 写入演员
             for i in jav_model.Actors:
                 f.write(f'  <actor>\n'
@@ -343,9 +384,9 @@ class StandardHandler(object):
             path_fanart = f'{jav_file.Dir}{sep}'
             path_poster = f'{jav_file.Dir}{sep}'
             for i in self._list_name_fanart:
-                path_fanart = f'{path_fanart}{self.dict_for_standard[i]}'
+                path_fanart = f'{path_fanart}{self._dict_for_standard[i]}'
             for i in self._list_name_poster:
-                path_poster = f'{path_poster}{self.dict_for_standard[i]}'
+                path_poster = f'{path_poster}{self._dict_for_standard[i]}'
             # kodi只需要一份图片，不管视频是cd几，图片仅一份不需要cd几。
             if self._bool_cd_only:
                 path_fanart = path_fanart.replace(jav_file.Cd, '')
@@ -405,9 +446,9 @@ class StandardHandler(object):
         if self._bool_sculpture:
             if not os.path.exists('演员头像'):
                 input('\n“演员头像”文件夹丢失！请把它放进exe的文件夹中！\n')
-            if not os.path.exists('【缺失的演员头像统计For Kodi】.ini'):
+            if not os.path.exists(Const.ini_actor):
                 if os.path.exists('actors_for_kodi.ini'):
-                    copyfile('actors_for_kodi.ini', '【缺失的演员头像统计For Kodi】.ini')
-                    print('\n“【缺失的演员头像统计For Kodi】.ini”成功！')
+                    copyfile('actors_for_kodi.ini', Const.ini_actor)
+                    print(f'\n“{Const.ini_actor}”成功！')
                 else:
                     input('\n请打开“【ini】重新创建ini.exe”创建丢失的程序组件!')

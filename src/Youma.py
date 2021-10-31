@@ -13,7 +13,7 @@ from Classes.FileHandler import FileHandler
 from Classes.Config import Ini
 from Classes.Enums import ScrapeStatusEnum
 from Classes.MyLogger import Logger
-from Classes.MyJav import JavModel
+from Classes.Model.JavData import JavData
 from Classes.Errors import TooManyDirectoryLevelsError, SpecifiedUrlError, CustomClassifyTargetDirError
 from Classes.Const import Const
 from Functions.Progress.User import choose_directory
@@ -100,12 +100,12 @@ while not input_key:
                 # region 读取已有json
                 if os.path.exists(path_json):
                     print(f'    >从本地json读取元数据: {path_json}')
-                    jav_model = JavModel(**read_json_to_dict(path_json))
+                    jav_model = JavData(**read_json_to_dict(path_json))
                     genres = jav_model.Genres
                 # endregion
                 # region 去网站获取
                 else:
-                    jav_model = JavModel()
+                    jav_model = JavData()
                     # region（3.2.2.2）从javdb获取信息
                     status = dbHandler.scrape(jav_file, jav_model)
                     if status == ScrapeStatusEnum.db_not_found:
