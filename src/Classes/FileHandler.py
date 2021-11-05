@@ -3,7 +3,7 @@ import os
 from os import sep  # 系统路径分隔符
 import re
 
-from Classes.MyJav import JavFile
+from Classes.Model.JavFile import JavFile
 from Config import Ini
 from Errors import CustomClassifyTargetDirError
 from Functions.Progress.Prepare import get_suren_cars
@@ -101,8 +101,6 @@ class FileHandler(object):
         return False
     # endregion
 
-    # #########################[归类影片]##############################
-
     def check_classify_target_directory(self):
         """检查“用户设置的归类根目录”的合法性\n
         Returns:
@@ -158,11 +156,18 @@ class FileHandler(object):
                 if subtitle_car:
                     self._dict_subtitle_file[file_raw] = subtitle_car
 
-    # 功能: 发现文件中的jav视频文件，存储在list_jav_files
+    # 功能:
     # 参数: list_sub_files（当前文件夹的）子文件们
     # 返回: list_jav_files；更新self.dict_car_episode
     # 辅助: JavFile
     def get_list_jav_files(self, list_sub_files):
+        """发现jav视频文件\n
+        找出list_sub_files中的jav视频文件，实例每一个jav视频文件为javfile对象，存储为list\n
+        Args:
+            list_sub_files: (当前所处一级文件夹的)子文件们
+        Returns:
+            list <JavFile>
+        """
         list_jav_files = []  # 存放: 需要整理的jav_file
         for file_raw in list_sub_files:
             file_temp = file_raw.upper()

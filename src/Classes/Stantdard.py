@@ -104,6 +104,7 @@ class StandardHandler(object):
 
     def rename_mp4(self, jav_file: JavFile):
         """重命名磁盘中的视频文件\n
+        更新self._dict_for_standard['视频']、jav_file.name、jav_file.Subtitle\n
         Args:
             jav_file: jav视频文件对象
         Returns:
@@ -112,20 +113,22 @@ class StandardHandler(object):
         # 如果重命名操作不成功，将path_new赋值给path_return，提醒用户自行重命名
         path_return = ''
         if self._need_rename_video:
-            # 构造新文件名，不带文件类型后缀
-            name_without_ext = ''
+            # 构造新文件名
+            name_without_ext = ''    # 新文件名，不带文件类型后缀
             for j in self._list_name_video:
                 name_without_ext = f'{name_without_ext}{self._dict_for_standard[j]}'
             if os.name == 'nt':  # 如果是windows系统
                 name_without_ext = name_without_ext.translate(self.winDic)  # 将文件名中的非法字符替换为空格
             name_without_ext = f'{name_without_ext.strip()}{jav_file.Cd}'  # 去除末尾空格，否则windows会自动删除空格，导致程序仍以为带空格
-            path_new = f'{jav_file.Dir}{sep}{name_without_ext}{jav_file.Ext}'  # 【临时变量】path_new 视频文件的新路径
+            path_new = f'{jav_file.Dir}{sep}{name_without_ext}{jav_file.Ext}'
+            """视频文件的新路径"""
 
+            # 重命名视频文件
             # 一般情况，不存在同名视频文件
             if not os.path.exists(path_new):
                 os.rename(jav_file.Path, path_new)
                 record_video_old(jav_file.Path, path_new)
-            # 已存在目标文件，但就是现在的文件
+            # 已存在目标文件，且就是现在的文件
             elif jav_file.Path.upper() == path_new.upper():
                 try:
                     os.rename(jav_file.Path, path_new)
@@ -133,19 +136,22 @@ class StandardHandler(object):
                 except FileExistsError:
                     # 提醒用户后续自行更改
                     path_return = path_new
-            # 存在目标文件，不是现在的文件。
+                    # 虽然重命名操作没有成功，但之后的操作（归类、保存nfo、下载图片等）仍然围绕预期文件名来命名
+            # 存在目标文件，但不是现在的文件。
             else:
                 raise FileExistsError(f'重命名影片失败，重复的影片，已经有相同文件名的视频了: {path_new}')  # 【终止对该jav的整理】
-            self._dict_for_standard['视频'] = name_without_ext  # 【更新】 dict_for_standard['视频']
-            jav_file.Name = f'{name_without_ext}{jav_file.Ext}'  # 【更新】jav.name，重命名操作可能不成功，但之后的操作仍然围绕成功的jav.name来命名
+            self._dict_for_standard['视频'] = name_without_ext  # 【更新】
+            jav_file.Name = f'{name_without_ext}{jav_file.Ext}'  # 【更新】
             print(f'    >修改文件名{jav_file.Cd}完成')
+
             # 重命名字幕
             if jav_file.Subtitle and self._need_rename_subtitle:
-                subtitle_new = f'{name_without_ext}{jav_file.Ext_subtitle}'  # 【临时变量】subtitle_new
-                path_subtitle_new = f'{jav_file.Dir}{sep}{subtitle_new}'  # 【临时变量】path_subtitle_new
+                subtitle_new = f'{name_without_ext}{jav_file.Ext_subtitle}'  # 字幕文件的新文件名
+                path_subtitle_new = f'{jav_file.Dir}{sep}{subtitle_new}'
+                """字幕文件的新路径"""
                 if jav_file.Path_subtitle != path_subtitle_new:
                     os.rename(jav_file.Path_subtitle, path_subtitle_new)
-                    jav_file.Subtitle = subtitle_new  # 【更新】 jav.subtitle 字幕完整文件名
+                    jav_file.Subtitle = subtitle_new  # 【更新】
                 print('    >修改字幕名完成')
         return path_return
 
