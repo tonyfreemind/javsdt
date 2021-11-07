@@ -13,11 +13,12 @@ from Classes.Errors import SpecifiedUrlError
 
 # 设置
 from Genre import better_dict_genres, prefect_genres
-from MyJav import JavModel, JavFile
+from Classes.Model.JavData import JavData
+from Classes.Model.JavFile import JavFile
 
 
 class JavDb(object):
-    def __init__(self, settings: MySettings.Ini):
+    def __init__(self, settings: Config.Ini):
         self.url = settings.url_db
         self.proxies = settings.proxy_db
         self.dict_genres = better_dict_genres("db", settings.to_language)
@@ -32,7 +33,7 @@ class JavDb(object):
         for retry in range(1, 11):
             try:
                 if self.proxies:
-                    rqs = requests.get(url, header=headers, proxies=self.proxies, timeout=(6, 7))
+                    rqs = requests.get(url, headers=headers, proxies=self.proxies, timeout=(6, 7))
                 else:
                     rqs = requests.get(url, headers=headers, timeout=(6, 7))
             except requests.exceptions.ProxyError:
@@ -56,7 +57,7 @@ class JavDb(object):
                 continue
         input(f'>>请检查你的网络环境是否可以打开: {url}')
 
-    def scrape(self, jav_file:JavFile, jav_model:JavModel):
+    def scrape(self, jav_file: JavFile, jav_data: JavData):
         # 用户指定了网址，则直接得到jav所在网址
         if '仓库' in jav_file.Name:
             url_appointg = re.search(r'仓库(\w+?)\.', jav_file.Name)
@@ -154,43 +155,43 @@ class JavDb(object):
         # <title> BKD-171 母子交尾 ～西会津路～ 中森いつき | JavDB 成人影片資料庫及磁鏈分享 </title>
         car_title = re.search(r'title> (.+) \| JavDB', html_jav_db).group(1)
         list_car_title = car_title.split(' ', 1)
-        jav_model.Car = list_car_title[0]  # 围绕该jav的所有信息
-        jav_model.Title = list_car_title[1]
-        jav_model.JavDb = javdb
+        jav_data.Car = list_car_title[0]  # 围绕该jav的所有信息
+        jav_data.Title = list_car_title[1]
+        jav_data.JavDb = javdb
         # 带着主要信息的那一块 複製番號" data-clipboard-text="BKD-171">
         html_jav_db = re.search(r'複製番號([\s\S]+?)存入清單', html_jav_db, re.DOTALL).group(1)
         # 系列 "/series/RJmR">○○に欲望剥き出しでハメまくった中出し記録。</a>
         seriesg = re.search(r'series/.+?">(.+?)</a>', html_jav_db)
-        jav_model.Series = seriesg.group(1) if seriesg else ''
+        jav_data.Series = seriesg.group(1) if seriesg else ''
         # 上映日 e">2019-02-01<
         releaseg = re.search(r'(\d\d\d\d-\d\d-\d\d)', html_jav_db)
-        jav_model.Release = releaseg.group(1) if releaseg else '1970-01-01'
+        jav_data.Release = releaseg.group(1) if releaseg else '1970-01-01'
         # 片长 value">175 分鍾<
         runtimeg = re.search(r'value">(\d+) 分鍾<', html_jav_db)
-        jav_model.Runtime = int(runtimeg.group(1)) if runtimeg else 0
+        jav_data.Runtime = int(runtimeg.group(1)) if runtimeg else 0
         # 导演 /directors/WZg">NABE<
         directorg = re.search(r'directors/.+?">(.+?)<', html_jav_db)
-        jav_model.Director = directorg.group(1) if directorg else ''
+        jav_data.Director = directorg.group(1) if directorg else ''
         # 制作商 e"><a href="/makers/
         studiog = re.search(r'makers/.+?">(.+?)<', html_jav_db)
-        jav_model.Studio = studiog.group(1) if studiog else ''
+        jav_data.Studio = studiog.group(1) if studiog else ''
         # 发行商 /publishers/pkAb">AV OPEN 2018</a><
         publisherg = re.search(r'publishers.+?">(.+?)</a><', html_jav_db)
-        jav_model.Publisher = publisherg.group(1) if publisherg else ''
+        jav_data.Publisher = publisherg.group(1) if publisherg else ''
         # 评分 star gray"></i></span>&nbsp;3.75分
         scoreg = re.search(r'star gray"></i></span>&nbsp;(.+?)分', html_jav_db)
-        jav_model.Score = int(float(scoreg.group(1)) * 20) if scoreg else 0
+        jav_data.Score = int(float(scoreg.group(1)) * 20) if scoreg else 0
         # 演员们 /actors/M0xA">上川星空</a>  actors/P9mN">希美まゆ</a><strong class="symbol female
         actors = re.findall(r'actors/.+?">(.+?)</a><strong class="symbol female', html_jav_db)
-        jav_model.Actors = [i.strip() for i in actors]
-        str_actors = ' '.join(jav_model.Actors)
+        jav_data.Actors = [i.strip() for i in actors]
+        str_actors = ' '.join(jav_data.Actors)
         # 去除末尾的标题 javdb上的演员不像javlibrary使用演员最熟知的名字
-        if str_actors and jav_model.Title.endswith(str_actors):
-            jav_model.Title = jav_model.Title[:-len(str_actors)].strip()
+        if str_actors and jav_data.Title.endswith(str_actors):
+            jav_data.Title = jav_data.Title[:-len(str_actors)].strip()
         # print('    >演员: ', actors)
         # 特征 /tags?c7=8">精选、综合</a>
         genres = re.findall(r'tags.+?">(.+?)</a>', html_jav_db)
-        jav_model.Genres.append(prefect_genres(self.dict_genres, genres))
+        jav_data.Genres.append(prefect_genres(self.dict_genres, genres))
         return ScrapeStatusEnum.success
 
     @staticmethod

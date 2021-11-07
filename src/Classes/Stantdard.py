@@ -4,10 +4,11 @@ import Config
 from Classes.MyLogger import record_video_old
 from Classes.Errors import TooManyDirectoryLevelsError, DownloadFanartError
 from Const import Const
-from Functions.Utils.Download import download_pic
 from configparser import RawConfigParser  # 读取ini
 from configparser import NoOptionError  # ini文件不存在或不存在指定node的错误
 from shutil import copyfile
+
+from Download import download_pic
 from Functions.Progress.Picture import check_picture, crop_poster_youma, add_watermark_subtitle, add_watermark_divulge
 from Functions.Utils.XML import replace_xml_win, replace_xml
 from Model.JavData import JavData
@@ -19,7 +20,7 @@ class Standard(object):
         self._bool_need_actors_end_of_title = ini.need_actors_end_of_title
         self._int_title_len = ini.int_title_len
         # 用于给用户自定义命名的字典
-        self._dict_for_standard = ini.dict_for_standard()
+        self._dict_for_standard = ini.dict_for_standard
         self._subtitle_expression = ini.subtitle_expression
         self._divulge_expression = ini.divulge_expression
         self._need_rename_video = ini.need_rename_video
@@ -32,6 +33,25 @@ class Standard(object):
         self._need_rename_folder = ini.need_rename_folder
         self._list_name_folder = ini.list_name_folder
         self._bool_sculpture =ini.need_actor_sculpture
+        self._need_nfo = ini.need_nfo
+        self._need_only_cd = ini.need_only_cd
+        self._list_name_nfo_title = ini.list_name_nfo_title
+        self._need_zh_plot = ini.need_zh_plot
+        self._need_nfo_genres = ini.need_nfo_genres
+        self._need_series_as_genre = ini.need_series_as_genre
+        self._need_studio_as_genre = ini.need_studio_as_genre
+        self._list_extra_genres = ini.list_extra_genres
+        self._need_nfo_tags = ini.need_nfo_tags
+        self._need_download_fanart = ini.need_download_fanart
+        self._list_name_fanart = ini.list_name_fanart
+        self._list_name_poster = ini.list_name_poster
+        self._proxy_db = ini.proxy_db
+        self._url_bus = ini.url_bus
+        self._proxy_bus = ini.proxy_bus
+        self._proxy_dmm = ini.proxy_dmm
+        self._need_subtitle_watermark = ini.need_subtitle_watermark
+        self._need_divulge_watermark = ini.need_divulge_watermark
+        
 
         # 定义 Windows中的非法字符, 将非法字符替换为空格
         self.winDic = str.maketrans(r':<>"\?/*', '        ')
@@ -321,9 +341,9 @@ class Standard(object):
     # 返回: 素人车牌list
     # 辅助: 无
     def write_nfo(self, jav_file, jav_model, genres):
-        if self._bool_nfo:
+        if self._need_nfo:
             # 如果是为kodi准备的nfo，不需要多cd
-            if self._bool_cd_only:
+            if self._need_only_cd:
                 path_nfo = f'{jav_file.Dir}{sep}{jav_file.Name_no_ext.replace(jav_file.Cd, "")}.nfo'
             else:
                 path_nfo = f'{jav_file.Dir}{sep}{jav_file.Name_no_ext}.nfo'
@@ -332,7 +352,7 @@ class Standard(object):
             for i in self._list_name_nfo_title:
                 title_in_nfo = f'{title_in_nfo}{self._dict_for_standard[i]}'  # nfo中tilte的写法
             # 开始写入nfo，这nfo格式是参考的kodi的nfo
-            plot = replace_xml(jav_model.PlotZh) if self._bool_need_zh_plot else replace_xml(jav_model.Plot)
+            plot = replace_xml(jav_model.PlotZh) if self._need_zh_plot else replace_xml(jav_model.Plot)
             f = open(path_nfo, 'w', encoding="utf-8")
             f.write(f'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\" ?>\n'
                     f'<movie>\n'
@@ -355,22 +375,22 @@ class Standard(object):
                     f'  <num>{jav_model.Car}</num>\n'
                     f'  <set>{replace_xml(jav_model.Series)}</set>\n')  # emby不管set系列，kodi可以
             # 需要将特征写入genre
-            if self._bool_genre:
+            if self._need_nfo_genres:
                 for i in genres:
                     f.write(f'  <genre>{i}</genre>\n')
-                if self._bool_write_series and jav_model.Series:
+                if self._need_series_as_genre and jav_model.Series:
                     f.write(f'  <genre>系列:{jav_model.Series}</genre>\n')
-                if self._bool_write_studio and jav_model.Studio:
+                if self._need_studio_as_genre and jav_model.Studio:
                     f.write(f'  <genre>片商:{jav_model.Studio}</genre>\n')
                 for i in self._list_extra_genres:
                     f.write(f'  <genre>{self._dict_for_standard[i]}</genre>\n')
             # 需要将特征写入tag
-            if self._bool_tag:
+            if self._need_nfo_tags:
                 for i in genres:
                     f.write(f'  <tag>{i}</tag>\n')
-                if self._bool_write_series and jav_model.Series:
+                if self._need_series_as_genre and jav_model.Series:
                     f.write(f'  <tag>系列:{jav_model.Series}</tag>\n')
-                if self._bool_write_studio and jav_model.Studio:
+                if self._need_studio_as_genre and jav_model.Studio:
                     f.write(f'  <tag>片商:{jav_model.Studio}</tag>\n')
                 for i in self._list_extra_genres:
                     f.write(f'  <tag>{self._dict_for_standard[i]}</tag>\n')
@@ -385,7 +405,7 @@ class Standard(object):
             print('    >nfo收集完成')
 
     def download_fanart(self, jav_file, jav_model):
-        if self._bool_jpg:
+        if self._need_download_fanart:
             # fanart和poster路径
             path_fanart = f'{jav_file.Dir}{sep}'
             path_poster = f'{jav_file.Dir}{sep}'
@@ -394,7 +414,7 @@ class Standard(object):
             for i in self._list_name_poster:
                 path_poster = f'{path_poster}{self._dict_for_standard[i]}'
             # kodi只需要一份图片，不管视频是cd几，图片仅一份不需要cd几。
-            if self._bool_cd_only:
+            if self._need_only_cd:
                 path_fanart = path_fanart.replace(jav_file.Cd, '')
                 path_poster = path_poster.replace(jav_file.Cd, '')
             # emby需要多份，现在不是第一集，直接复制第一集的图片
@@ -418,15 +438,15 @@ class Standard(object):
                     url_cover = f'https://jdbimgs.com/covers/{jav_model.JavDb[:2].lower()}/{jav_model.JavDb}.jpg'
                     # print('    >从javdb下载封面: ', url_cover)
                     print('    >下载封面: ...')
-                    status = download_pic(url_cover, path_fanart, self.proxy_db)
+                    status = download_pic(url_cover, path_fanart, self._proxy_db)
                 if not status and jav_model.CoverBus:
-                    url_cover = f'{self.url_bus}/pics/cover/{jav_model.CoverBus}'
+                    url_cover = f'{self._url_bus}/pics/cover/{jav_model.CoverBus}'
                     print('    >从javbus下载封面: ', url_cover)
-                    status = download_pic(url_cover, path_fanart, self.proxy_bus)
+                    status = download_pic(url_cover, path_fanart, self._proxy_bus)
                 if not status and jav_model.CoverLibrary:
                     url_cover = jav_model.CoverLibrary
                     print('    >从dmm下载封面: ', url_cover)
-                    status = download_pic(url_cover, path_fanart, self.proxy_dmm)
+                    status = download_pic(url_cover, path_fanart, self._proxy_dmm)
                 if status:
                     pass
                 else:
@@ -438,9 +458,9 @@ class Standard(object):
             else:
                 crop_poster_youma(path_fanart, path_poster)
                 # 需要加上条纹
-                if self._bool_watermark_subtitle and jav_file.Bool_subtitle:
+                if self._need_subtitle_watermark and jav_file.Bool_subtitle:
                     add_watermark_subtitle(path_poster)
-                if self._bool_watermark_divulge and jav_file.Bool_divulge:
+                if self._need_divulge_watermark and jav_file.Bool_divulge:
                     add_watermark_divulge(path_poster)
 
     # 功能: 如果需要为kodi整理头像，则先检查“演员头像for kodi.ini”、“演员头像”文件夹是否存在; 检查 归类根目录 的合法性

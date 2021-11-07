@@ -8,11 +8,12 @@ from Classes.Errors import SpecifiedUrlError
 from Functions.Utils.XML import replace_xml_win
 # from traceback import format_exc
 from Genre import better_dict_genres, prefect_genres
-from MyJav import JavFile, JavModel
+from Classes.Model.JavData import JavData
+from JavFile import JavFile
 
 
 class JavLibrary(object):
-    def __init__(self, settings: MySettings.Ini):
+    def __init__(self, settings: Config.Ini):
         self.url = settings.url_library
         self.proxies = settings.proxy_library
         self.dict_genres = better_dict_genres('library', settings.to_language)
@@ -44,7 +45,7 @@ class JavLibrary(object):
         input(f'>>请检查你的网络环境是否可以打开: {url}')
 
     # 返回: Status, html_jav_library
-    def scrape(self, jav_file: JavFile, jav_model: JavModel):
+    def scrape(self, jav_file: JavFile, jav_model: JavData):
         status = ScrapeStatusEnum.success
         # 用户指定了网址，则直接得到jav所在网址
         if '图书馆' in jav_file.Name:

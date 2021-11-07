@@ -8,11 +8,12 @@ from Classes.Enums import ScrapeStatusEnum
 
 from Classes.Errors import SpecifiedUrlError
 from Genre import better_dict_genres, prefect_genres
-from MyJav import JavFile, JavModel
+from Classes.Model.JavData import JavData
+from JavFile import JavFile
 
 
 class JavBus(object):
-    def __init__(self, settings: MySettings.Ini):
+    def __init__(self, settings: Config.Ini):
         self.url = settings.url_bus
         self.proxies = settings.proxy_bus
         self.dict_genres = better_dict_genres("bus", settings.to_language)
@@ -44,7 +45,7 @@ class JavBus(object):
 
     # 去javbus搜寻系列、在javbus的封面链接
     # 返回: 系列名称，图片链接，状态码
-    def scrape(self, jav_file: JavFile, jav_model: JavModel):
+    def scrape(self, jav_file: JavFile, jav_model: JavData):
         status = ScrapeStatusEnum.bus_not_found
         # 用户指定了网址，则直接得到jav所在网址
         if '公交车' in jav_file.Name:
