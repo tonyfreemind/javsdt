@@ -11,7 +11,7 @@ from Genre import better_dict_genres, prefect_genres
 from MyJav import JavFile, JavModel
 
 
-class BusHandler(object):
+class JavBus(object):
     def __init__(self, settings: MySettings.Ini):
         self.url = settings.url_bus
         self.proxies = settings.proxy_bus
@@ -54,7 +54,7 @@ class BusHandler(object):
                 html_jav_bus = self.get_bus_html(url_jav_bus)
                 if re.search(r'404 Page', html_jav_bus):
                     raise SpecifiedUrlError(f'你指定的javbus网址找不到jav: {url_jav_bus}，')
-                jav_model.Javbus = url_appointg.group(1)
+                jav_model.JavBus = url_appointg.group(1)
                 status = ScrapeStatusEnum.success
             else:
                 # 指定的javlibrary网址有错误
@@ -69,7 +69,7 @@ class BusHandler(object):
             html_temp = self.get_bus_html(url_jav_bus)
             if not re.search(r'404 Page', html_temp):
                 html_jav_bus = html_temp
-                jav_model.Javbus = jav_file.Car_id
+                jav_model.JavBus = jav_file.Car_id
                 status = ScrapeStatusEnum.success
                 # 这部jav在javbus的网址不简单
             else:
@@ -100,7 +100,7 @@ class BusHandler(object):
                             status = ScrapeStatusEnum.success
                         # 默认用第一个搜索结果
                         url_first_result = list_fit_results[0]
-                        jav_model.Javbus = url_first_result
+                        jav_model.JavBus = url_first_result
                         print('    >获取系列: ', url_first_result)
                         html_jav_bus = self.get_bus_html(url_first_result)
 

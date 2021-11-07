@@ -5,7 +5,9 @@ from xml.etree.ElementTree import parse, ParseError  # 解析xml格式
 from Config import Ini
 
 
-class FileAnalysis(object):
+class FileAnalyzer(object):
+    """jav视频文件性质鉴定器\n
+    """
     def __init__(self, ini: Ini):
         self._list_subtitle_words_in_filename = ini.list_subtitle_symbol_words
         self._list_divulge_words_in_filename = ini.list_divulge_symbol_words

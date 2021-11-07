@@ -16,7 +16,7 @@ from Genre import better_dict_genres, prefect_genres
 from MyJav import JavModel, JavFile
 
 
-class DbHandler(object):
+class JavDb(object):
     def __init__(self, settings: MySettings.Ini):
         self.url = settings.url_db
         self.proxies = settings.proxy_db
@@ -156,7 +156,7 @@ class DbHandler(object):
         list_car_title = car_title.split(' ', 1)
         jav_model.Car = list_car_title[0]  # 围绕该jav的所有信息
         jav_model.Title = list_car_title[1]
-        jav_model.Javdb = javdb
+        jav_model.JavDb = javdb
         # 带着主要信息的那一块 複製番號" data-clipboard-text="BKD-171">
         html_jav_db = re.search(r'複製番號([\s\S]+?)存入清單', html_jav_db, re.DOTALL).group(1)
         # 系列 "/series/RJmR">○○に欲望剥き出しでハメまくった中出し記録。</a>

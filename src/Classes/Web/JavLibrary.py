@@ -11,7 +11,7 @@ from Genre import better_dict_genres, prefect_genres
 from MyJav import JavFile, JavModel
 
 
-class LibraryHandler(object):
+class JavLibrary(object):
     def __init__(self, settings: MySettings.Ini):
         self.url = settings.url_library
         self.proxies = settings.proxy_library
@@ -130,7 +130,7 @@ class LibraryHandler(object):
         # 有大部分信息的html_jav_library
         html_jav_library = re.search(r'video_title"([\s\S]*?)favorite_edit', html_jav_library, re.DOTALL).group(1)
         # href="/cn/?v=javmeza25m"
-        jav_model.Javlibrary = re.search(r'href="/cn/\?v=(.+?)"', html_jav_library).group(1)
+        jav_model.JavLibrary = re.search(r'href="/cn/\?v=(.+?)"', html_jav_library).group(1)
         # DVD封面cover
         coverg = re.search(r'src="(.+?)" width="600', html_jav_library)
         if coverg:

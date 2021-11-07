@@ -6,6 +6,9 @@ from Classes.Const import Const
 
 # 从ini读取到的设置
 class Ini(object):
+    """ini配置\n
+    读取并存储【点我设置整理规则】.ini中的设置，用于其他class的依赖注入。
+    """
     def __init__(self, pattern):
         self.pattern = pattern
         print('正在读取ini中的设置...', end='')

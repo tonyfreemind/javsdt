@@ -7,7 +7,7 @@ from Classes.Enums import ScrapeStatusEnum
 from Functions.Progress.Prepare import write_new_arzon_phpsessid
 
 
-class ArzonHandler(object):
+class Arzon(object):
     def __init__(self, settings: MySettings.Ini):
         self.url = 'https://www.arzon.jp'
         self.proxies = settings.proxy_arzon

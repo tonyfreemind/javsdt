@@ -14,7 +14,7 @@ from Model.JavData import JavData
 from Model.JavFile import JavFile
 
 
-class StandardHandler(object):
+class Standard(object):
     def __init__(self, ini: Config.Ini):
         self._bool_need_actors_end_of_title = ini.need_actors_end_of_title
         self._int_title_len = ini.int_title_len
@@ -414,8 +414,8 @@ class StandardHandler(object):
                 pass
             else:
                 status = False
-                if jav_model.Javdb:
-                    url_cover = f'https://jdbimgs.com/covers/{jav_model.Javdb[:2].lower()}/{jav_model.Javdb}.jpg'
+                if jav_model.JavDb:
+                    url_cover = f'https://jdbimgs.com/covers/{jav_model.JavDb[:2].lower()}/{jav_model.JavDb}.jpg'
                     # print('    >从javdb下载封面: ', url_cover)
                     print('    >下载封面: ...')
                     status = download_pic(url_cover, path_fanart, self.proxy_db)

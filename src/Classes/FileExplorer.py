@@ -11,8 +11,9 @@ from Functions.Metadata.Car import find_car_fc2, find_car_youma
 
 
 # 设置
-class FileHandler(object):
-    """在磁盘中搜索发现视频文件"""
+class FileExplorer(object):
+    """磁盘文件检索器\n
+    在磁盘中搜索发现jav视频文件，构建javFile对象"""
 
     def __init__(self, ini: Ini):
         self._pattern = ini.pattern

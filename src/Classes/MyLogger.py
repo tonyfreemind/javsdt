@@ -2,6 +2,9 @@ from time import strftime, localtime, time
 
 
 class Logger(object):
+    """日志工具\n
+    用于记录失败/警告次数、失败/警告信息
+    """
     def __init__(self):
         self.no_fail = 0  # 数量: 已经或可能导致致命错误，比如整理未完成，同车牌有不同视频
         self.no_warn = 0  # 数量: 对整理结果不致命的问题，比如找不到简介
