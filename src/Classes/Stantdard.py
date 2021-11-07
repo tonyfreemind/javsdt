@@ -404,7 +404,7 @@ class Standard(object):
             f.close()
             print('    >nfo收集完成')
 
-    def download_fanart(self, jav_file, jav_model):
+    def download_fanart(self, jav_file, jav_model:JavData):
         if self._need_download_fanart:
             # fanart和poster路径
             path_fanart = f'{jav_file.Dir}{sep}'
@@ -434,8 +434,8 @@ class Standard(object):
                 pass
             else:
                 status = False
-                if jav_model.JavDb:
-                    url_cover = f'https://jdbimgs.com/covers/{jav_model.JavDb[:2].lower()}/{jav_model.JavDb}.jpg'
+                if jav_model.Javdb:
+                    url_cover = f'https://jdbimgs.com/covers/{jav_model.Javdb[:2].lower()}/{jav_model.Javdb}.jpg'
                     # print('    >从javdb下载封面: ', url_cover)
                     print('    >下载封面: ...')
                     status = download_pic(url_cover, path_fanart, self._proxy_db)
