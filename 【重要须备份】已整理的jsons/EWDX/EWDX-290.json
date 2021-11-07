@@ -1,0 +1,36 @@
+{
+    "Car": "EWDX-290",
+    "CarOrigin": "",
+    "Series": "",
+    "Title": "\u5854\u5b50",
+    "TitleZh": "\u5854\u5b50",
+    "Plot": "\u3010\u5f71\u7247\u4e0b\u67b6\uff0c\u6682\u65e0\u7b80\u4ecb\u3011",
+    "PlotZh": "\u3010\u5f71\u7247\u4e0b\u67b6\uff0c\u6682\u65f6\u65e0\u7b80\u4ecb\u3011",
+    "Review": "",
+    "Release": "2020-01-14",
+    "Runtime": 74,
+    "Director": "",
+    "Studio": "",
+    "Publisher": "E\u2605\u4eba\u59bbDX",
+    "Score": 80,
+    "CoverLibrary": "",
+    "CoverBus": "",
+    "CutType": 1,
+    "Javdb": "WkYmp",
+    "Javlibrary": "",
+    "Javbus": "",
+    "Arzon": "",
+    "CompletionStatus": 1,
+    "Version": 1,
+    "Genres": [
+        "\u4e2d\u51fa",
+        "\u730e\u8273",
+        "\u9a91\u4e58",
+        "\u773c\u955c",
+        "\u4eba\u59bb"
+    ],
+    "Actors": [
+        "\u4e26\u6728\u5854\u5b50"
+    ],
+    "Modify": "2021-11-07 20:40:06"
+}

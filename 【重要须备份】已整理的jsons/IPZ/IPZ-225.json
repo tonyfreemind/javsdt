@@ -12,7 +12,7 @@
     "Director": "\u6ca2\u5eb5",
     "Studio": "IDEA POCKET",
     "Publisher": "\u30c6\u30a3\u30c3\u30b7\u30e5",
-    "Score": 80,
+    "Score": 77,
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipz225/ipz225pl.jpg",
     "CoverBus": "3z5r_b.jpg",
     "CutType": 1,
@@ -24,12 +24,12 @@
     "Version": 1,
     "Genres": [
         "\u5355\u4f53\u4f5c\u54c1",
-        "\u6570\u4f4d\u9a6c\u8d5b\u514b",
         "\u591aP",
+        "\u6570\u4f4d\u9a6c\u8d5b\u514b",
         "\u767d\u5929\u51fa\u8f68"
     ],
     "Actors": [
         "\u5929\u6d77\u3064\u3070\u3055"
     ],
-    "Modify": "2021-11-21 10:00:43"
+    "Modify": "2021-09-21 08:02:58"
 }

@@ -12,7 +12,7 @@
     "Director": "GORY\u677e\u7530",
     "Studio": "\u30b1\u30a4\u30fb\u30a8\u30e0\u30fb\u30d7\u30ed\u30c7\u30e5\u30fc\u30b9",
     "Publisher": "million\uff08\u30df\u30ea\u30aa\u30f3\uff09",
-    "Score": 78,
+    "Score": 74,
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/84mkmp307/84mkmp307pl.jpg",
     "CoverBus": "7gcf_b.jpg",
     "CutType": 1,
@@ -24,11 +24,11 @@
     "Version": 1,
     "Genres": [
         "\u809b\u4ea4",
-        "\u5355\u4f53\u4f5c\u54c1",
-        "\u7eaa\u5f55\u7247"
+        "\u7eaa\u5f55\u7247",
+        "\u5355\u4f53\u4f5c\u54c1"
     ],
     "Actors": [
         "\u4f50\u5009\u7d46"
     ],
-    "Modify": "2021-12-18 21:53:13"
+    "Modify": "2021-09-13 22:48:22"
 }

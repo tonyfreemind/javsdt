@@ -1,0 +1,34 @@
+{
+    "Car": "RBD-800",
+    "CarOrigin": "rbd800",
+    "Series": "\u5974\u96b7\u30bd\u30fc\u30d7\u306b\u5815\u3061\u305f\u25cb\u25cb",
+    "Title": "\u5974\u96b7\u30bd\u30fc\u30d7\u306b\u5815\u3068\u3055\u308c\u305f\u5973\u6559\u5e2b7",
+    "TitleZh": "\u88ab\u5974\u96b6\u80a5\u7682\u5815\u843d\u7684\u5973\u6559\u5e087",
+    "Plot": "\u3010\u5f71\u7247\u4e0b\u67b6\uff0c\u6682\u65e0\u7b80\u4ecb\u3011",
+    "PlotZh": "\u3010\u5f71\u7247\u4e0b\u67b6\uff0c\u6682\u65f6\u65e0\u7b80\u4ecb\u3011",
+    "Review": "",
+    "Release": "2016-09-07",
+    "Runtime": 130,
+    "Director": "\u5f8c\u624b\u7e1b\u308a",
+    "Studio": "Attackers",
+    "Publisher": "\u9f8d\u7e1b",
+    "Score": 83,
+    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/rbd800/rbd800pl.jpg",
+    "CoverBus": "5me2_b.jpg",
+    "CutType": 1,
+    "Javdb": "akx9O",
+    "Javlibrary": "javlil3xta",
+    "Javbus": "RBD-800",
+    "Arzon": "",
+    "CompletionStatus": 6,
+    "Version": 1,
+    "Genres": [
+        "\u51cc\u8fb1",
+        "\u5973\u6559\u5e08",
+        "\u5355\u4f53\u4f5c\u54c1"
+    ],
+    "Actors": [
+        "\u77f3\u539f\u8389\u5948"
+    ],
+    "Modify": "2021-09-25 18:13:27"
+}

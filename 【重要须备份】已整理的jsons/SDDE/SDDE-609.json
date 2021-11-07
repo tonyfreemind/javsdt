@@ -12,7 +12,7 @@
     "Director": "\u592a\u7530\u307f\u304e\u308f",
     "Studio": "SOD Create",
     "Publisher": "SENZ",
-    "Score": 86,
+    "Score": 89,
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1sdde609/1sdde609pl.jpg",
     "CoverBus": "7i2d_b.jpg",
     "CutType": 1,
@@ -23,8 +23,8 @@
     "CompletionStatus": 6,
     "Version": 1,
     "Genres": [
-        "\u7edd\u9876\u9ad8\u6f6e",
         "\u5973\u6218\u58eb",
+        "\u7edd\u9876\u9ad8\u6f6e",
         "\u5947\u5e7b",
         "\u4e3b\u89c2\u89c6\u89d2"
     ],
@@ -32,5 +32,5 @@
         "\u7f8e\u5712\u548c\u82b1",
         "\u7a32\u5ddd\u306a\u3064\u3081"
     ],
-    "Modify": "2021-12-18 21:59:48"
+    "Modify": "2021-09-21 08:07:16"
 }

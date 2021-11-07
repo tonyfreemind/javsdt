@@ -12,7 +12,7 @@
     "Director": "\u304d\u3068\u308b\u306d\u5ddd\u53e3",
     "Studio": "MOODYZ",
     "Publisher": "MOODYZ ACID",
-    "Score": 88,
+    "Score": 90,
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/miae099/miae099pl.jpg",
     "CoverBus": "63cp_b.jpg",
     "CutType": 1,
@@ -23,16 +23,16 @@
     "CompletionStatus": 6,
     "Version": 1,
     "Genres": [
-        "\u6f6e\u5439",
         "\u51cc\u8fb1",
-        "\u5355\u4f53\u4f5c\u54c1",
-        "\u6570\u4f4d\u9a6c\u8d5b\u514b",
-        "\u9ad8\u4e2d\u751f",
+        "\u4e3b\u89c2\u89c6\u89d2",
         "\u8f6e\u5978",
-        "\u4e3b\u89c2\u89c6\u89d2"
+        "\u9ad8\u4e2d\u751f",
+        "\u6570\u4f4d\u9a6c\u8d5b\u514b",
+        "\u5355\u4f53\u4f5c\u54c1",
+        "\u6f6e\u5439"
     ],
     "Actors": [
         "\u6804\u5ddd\u4e43\u4e9c"
     ],
-    "Modify": "2021-12-18 16:34:48"
+    "Modify": "2021-09-13 22:48:06"
 }

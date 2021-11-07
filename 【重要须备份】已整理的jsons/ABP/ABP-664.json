@@ -12,7 +12,7 @@
     "Director": "\u30c1\u30e3\u30fc\u30ea\u30fc\u4e2d\u7530",
     "Studio": "\u30d7\u30ec\u30b9\u30c6\u30fc\u30b8",
     "Publisher": "ABSOLUTELY PERFECT",
-    "Score": 89,
+    "Score": 88,
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/118abp664/118abp664pl.jpg",
     "CoverBus": "6afn_b.jpg",
     "CutType": 1,
@@ -23,14 +23,14 @@
     "CompletionStatus": 6,
     "Version": 1,
     "Genres": [
-        "\u4e73\u4ea4",
-        "\u65e0\u7801\u6d41\u51fa",
         "\u5de8\u4e73",
         "\u4e3b\u89c2\u89c6\u89d2",
-        "\u5355\u4f53\u4f5c\u54c1"
+        "\u5355\u4f53\u4f5c\u54c1",
+        "\u65e0\u7801\u6d41\u51fa",
+        "\u4e73\u4ea4"
     ],
     "Actors": [
         "\u3042\u3084\u307f\u65ec\u679c"
     ],
-    "Modify": "2022-02-13 16:37:47"
+    "Modify": "2021-09-05 15:07:29"
 }

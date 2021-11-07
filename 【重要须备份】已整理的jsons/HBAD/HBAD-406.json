@@ -12,7 +12,7 @@
     "Director": "\u99ac\u4e26\u6b21\u90ce",
     "Studio": "\u30d2\u30d3\u30ce",
     "Publisher": "BABE",
-    "Score": 88,
+    "Score": 90,
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1hbad406/1hbad406pl.jpg",
     "CoverBus": "6gmv_b.jpg",
     "CutType": 1,
@@ -23,14 +23,14 @@
     "CompletionStatus": 6,
     "Version": 1,
     "Genres": [
-        "\u5355\u4f53\u4f5c\u54c1",
+        "\u4e2d\u51fa",
         "\u4f01\u753b",
+        "\u5355\u4f53\u4f5c\u54c1",
         "\u5267\u60c5",
-        "\u4eba\u59bb",
-        "\u4e2d\u51fa"
+        "\u4eba\u59bb"
     ],
     "Actors": [
         "\u821e\u5cf6\u3042\u304b\u308a"
     ],
-    "Modify": "2021-11-21 09:55:10"
+    "Modify": "2021-09-13 22:45:42"
 }

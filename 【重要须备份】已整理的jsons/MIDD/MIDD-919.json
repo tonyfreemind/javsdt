@@ -12,7 +12,7 @@
     "Director": "K.C.\u6b66\u7530",
     "Studio": "MOODYZ",
     "Publisher": "MOODYZ DIVA",
-    "Score": 96,
+    "Score": 88,
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/midd919/midd919pl.jpg",
     "CoverBus": "2bq2_b.jpg",
     "CutType": 1,
@@ -23,15 +23,15 @@
     "CompletionStatus": 6,
     "Version": 1,
     "Genres": [
-        "\u4e73\u4ea4",
-        "\u604b\u4e73\u7656",
+        "\u5993\u5973",
         "\u82d7\u6761",
-        "\u6570\u4f4d\u9a6c\u8d5b\u514b",
+        "\u4e73\u4ea4",
         "\u5de8\u4e73",
-        "\u5993\u5973"
+        "\u604b\u4e73\u7656",
+        "\u6570\u4f4d\u9a6c\u8d5b\u514b"
     ],
     "Actors": [
         "JULIA"
     ],
-    "Modify": "2021-12-18 16:35:20"
+    "Modify": "2021-09-21 08:05:48"
 }

@@ -23,14 +23,14 @@
     "CompletionStatus": 6,
     "Version": 1,
     "Genres": [
-        "\u804c\u4e1a\u88c5",
-        "\u604b\u817f\u7656",
-        "\u5355\u4f53\u4f5c\u54c1",
         "\u8fde\u88e4\u889c",
-        "\u8db3\u4ea4"
+        "\u5355\u4f53\u4f5c\u54c1",
+        "\u8db3\u4ea4",
+        "\u804c\u4e1a\u88c5",
+        "\u604b\u817f\u7656"
     ],
     "Actors": [
         "\u7f8e\u91cc\u6709\u7d17"
     ],
-    "Modify": "2021-11-20 15:18:26"
+    "Modify": "2021-09-05 15:52:51"
 }

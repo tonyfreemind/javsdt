@@ -1,0 +1,35 @@
+{
+    "Car": "RBD-682",
+    "CarOrigin": "rbd682",
+    "Series": "",
+    "Title": "\u65b0\u4efb\u5973\u6559\u5e2b \u7d42\u308f\u3089\u306a\u3044\u8fb1\u3081\u306b\u5815\u3061\u3066",
+    "TitleZh": "\u65b0\u4efb\u5973\u6559\u5e08\u5815\u843d\u4e3a\u65e0\u5c3d\u7684\u803b\u8fb1",
+    "Plot": "\u3010\u5f71\u7247\u4e0b\u67b6\uff0c\u6682\u65e0\u7b80\u4ecb\u3011",
+    "PlotZh": "\u3010\u5f71\u7247\u4e0b\u67b6\uff0c\u6682\u65f6\u65e0\u7b80\u4ecb\u3011",
+    "Review": "////\u5206\u6570\u4e3a\u4ec0\u4e48\u4e0d\u9ad8\uff1f\u6211\u89c9\u5f97\u5f88\u6b63\u554a\uff01\uff01\uff01\uff01\u5c0f\u732b\u54aa\u4e00\u6837\u7684\u5973\u5fe7////\u771f\u662f\u592a\u6b63\u70b9\u4e86\uff01\uff01\uff01\uff01\uff01\u77f3\u539fmm\u5c31\u662f\u767e\u770b\u4e0d\u817b\uff01\uff01\uff01\uff01\uff01\u695a\u695a\u53ef\u601c\u7684\u65e0\u8f9c\u7684\u5c0f\u773c\u795e+\u5a07\u5c0f\u7684\u4f53\u578b+\u4e24\u4e2a\u76ae\u7403\u822c\u5f39\u6027\u4e30\u6ee1\u7684\u54aa\u54aa+\u767d\u7699\u6ed1\u5ae9\u7684\u76ae\u80a4\uff01\uff01\uff01\uff01\u8c01\u4eba\u80fd\u62b5\u6321\uff01\uff01\uff01\uff01//",
+    "Release": "2015-05-07",
+    "Runtime": 120,
+    "Director": "\u5712\u7530\u5341\u4e09",
+    "Studio": "Attackers",
+    "Publisher": "\u9f8d\u7e1b",
+    "Score": 86,
+    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/rbd682/rbd682pl.jpg",
+    "CoverBus": "4r57_b.jpg",
+    "CutType": 1,
+    "Javdb": "VwK3G",
+    "Javlibrary": "javliitmy4",
+    "Javbus": "RBD-682",
+    "Arzon": "",
+    "CompletionStatus": 6,
+    "Version": 1,
+    "Genres": [
+        "\u5355\u4f53\u4f5c\u54c1",
+        "\u51cc\u8fb1",
+        "\u5973\u6559\u5e08",
+        "\u4e2d\u51fa"
+    ],
+    "Actors": [
+        "\u77f3\u539f\u8389\u5948"
+    ],
+    "Modify": "2021-09-25 18:13:09"
+}

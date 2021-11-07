@@ -12,7 +12,7 @@
     "Director": "NAKIBESO",
     "Studio": "BeFree",
     "Publisher": "BeFree",
-    "Score": 87,
+    "Score": 86,
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/bf342/bf342pl.jpg",
     "CoverBus": "4gko_b.jpg",
     "CutType": 1,
@@ -24,12 +24,12 @@
     "Version": 1,
     "Genres": [
         "\u5973\u6559\u5e08",
-        "\u4e2d\u51fa",
         "\u5355\u4f53\u4f5c\u54c1",
+        "\u4e2d\u51fa",
         "\u7eaa\u5f55\u7247"
     ],
     "Actors": [
         "\u6797\u3086\u306a"
     ],
-    "Modify": "2022-02-03 23:02:56"
+    "Modify": "2021-09-05 15:35:23"
 }

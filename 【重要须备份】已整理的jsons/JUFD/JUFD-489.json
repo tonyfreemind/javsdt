@@ -12,7 +12,7 @@
     "Director": "\u8c46\u6ca2\u8c46\u592a\u90ce",
     "Studio": "Fitch",
     "Publisher": "Fitch",
-    "Score": 83,
+    "Score": 87,
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/jufd489/jufd489pl.jpg",
     "CoverBus": "4u3a_b.jpg",
     "CutType": 1,
@@ -23,16 +23,16 @@
     "CompletionStatus": 6,
     "Version": 1,
     "Genres": [
-        "\u6570\u4f4d\u9a6c\u8d5b\u514b",
         "\u8361\u5987",
-        "\u5355\u4f53\u4f5c\u54c1",
+        "\u6570\u4f4d\u9a6c\u8d5b\u514b",
         "\u9a91\u4e58",
-        "\u6deb\u8bed",
         "\u7d27\u7f1a\u76ae\u8863",
-        "\u5de8\u4e73"
+        "\u6deb\u8bed",
+        "\u5de8\u4e73",
+        "\u5355\u4f53\u4f5c\u54c1"
     ],
     "Actors": [
         "\u6797\u3086\u306a"
     ],
-    "Modify": "2022-02-06 10:41:40"
+    "Modify": "2021-09-05 19:01:48"
 }

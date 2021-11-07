@@ -1,0 +1,36 @@
+{
+    "Car": "SNIS-091",
+    "CarOrigin": "snis091",
+    "Series": "\u30d0\u30b3\u30d0\u30b3\u9ad8\u7d1a\u30bd\u30fc\u30d7\u5b22",
+    "Title": "\u30d0\u30b3\u30d0\u30b3\u9ad8\u7d1a\u30bd\u30fc\u30d7\u5b22",
+    "TitleZh": "\u5df4\u53e4\u5df4\u54e5\u9ad8\u7ea7\u9999\u7682\u5c0f\u59d0",
+    "Plot": "\u3010\u5f71\u7247\u4e0b\u67b6\uff0c\u6682\u65e0\u7b80\u4ecb\u3011",
+    "PlotZh": "\u3010\u5f71\u7247\u4e0b\u67b6\uff0c\u6682\u65f6\u65e0\u7b80\u4ecb\u3011",
+    "Review": "////\u697c\u4e0b\u8bf4\u8138\u4e0d\u597d\u770b\u7684\uff0c\u4f60\u4eec\u7684\u8981\u6c42\u662f\u6709\u591a\u9ad8\u554a\u3002//",
+    "Release": "2014-02-07",
+    "Runtime": 150,
+    "Director": "K.C.\u6b66\u7530",
+    "Studio": "S1 NO.1 STYLE",
+    "Publisher": "S1 NO.1 STYLE",
+    "Score": 88,
+    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/snis091/snis091pl.jpg",
+    "CoverBus": "441v_b.jpg",
+    "CutType": 1,
+    "Javdb": "0RrY3",
+    "Javlibrary": "javlijqrsy",
+    "Javbus": "SNIS-091",
+    "Arzon": "",
+    "CompletionStatus": 6,
+    "Version": 1,
+    "Genres": [
+        "\u4e73\u4ea4",
+        "\u8584\u9a6c\u8d5b\u514b",
+        "\u5de8\u4e73",
+        "\u5993\u5973",
+        "\u5355\u4f53\u4f5c\u54c1"
+    ],
+    "Actors": [
+        "\u5b87\u90fd\u5bae\u3057\u3092\u3093"
+    ],
+    "Modify": "2021-09-25 18:27:39"
+}
