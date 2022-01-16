@@ -287,6 +287,7 @@ class Handler(object):
                 self.sum_videos_in_current_dir += 1
                 if 'FC2' in file_temp:
                     continue
+                # file_temp = file_temp.replace('HHD800', '')
                 for word in self._list_surplus_words_in_filename:
                     file_temp = file_temp.replace(word, '')
                 # 得到视频中的车牌
