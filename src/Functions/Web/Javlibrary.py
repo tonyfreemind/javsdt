@@ -1,14 +1,23 @@
 # -*- coding:utf-8 -*-
+import os
 import re
 import requests
 from Class.MyEnum import ScrapeStatusEnum
 from Class.MyError import SpecifiedUrlError
 from Functions.Utils.XML import replace_xml_win
+
+
 # from traceback import format_exc
 
 
 # 搜索javlibrary，或请求javlibrary上jav所在网页，返回html
 def get_library_html(url, proxy):
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+        'Cookie': 'cf_clearance=fkVIwAxfUImKmp0.gbrmYeIWEIdVk8uWdDvEHfivoeI-1644029703-0-150;',
+        # search后的cf_clearance
+        'Host': 'www.javlibrary.com',
+        'cache-control': 'no-cache'}
     for retry in range(10):
         try:
             if proxy:
@@ -26,11 +35,19 @@ def get_library_html(url, proxy):
         rqs.encoding = 'utf-8'
         rqs_content = rqs.text
         # print(rqs_content)
-        if re.search(r'JAVLibrary', rqs_content):        # 得到想要的网页，直接返回
+        if re.search(r'JAVLibrary', rqs_content):  # 得到想要的网页，直接返回
             return rqs_content
-        else:                                         # 代理工具返回的错误信息
-            print('    >打开网页失败，空返回...重新尝试...')
-            continue
+        else:
+            target_urlg = re.search(r'(\?v=jav.+?)&', rqs_content)
+            if target_urlg:
+                url = 'https://www.javlibrary.com/cn/' + target_urlg.group(1)  # rqs_content是一个非常简短的跳转网页，内容是目标jav所在网址
+                if len(url) > 70:  # 跳转车牌特别长，cf已失效
+                    print('请更新cookies')
+                    os.system('pause')
+                print('    >获取信息：', url)
+            else:  # 代理工具返回的错误信息
+                print('    >打开网页失败，空返回...重新尝试...')
+
     input(f'>>请检查你的网络环境是否可以打开: {url}')
 
 

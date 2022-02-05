@@ -1,0 +1,36 @@
+{
+    "Car": "BBI-208",
+    "CarOrigin": "bbi208",
+    "Series": "",
+    "Title": "\u5922\u306e\u53cc\u5b50\u6deb\u8a9e\u59c9\u59b9",
+    "TitleZh": "\u68a6\u4e4b\u53cc\u5b50\u6deb\u8bed\u59d0\u59b9",
+    "Plot": "\u3010\u5f71\u7247\u4e0b\u67b6\uff0c\u6682\u65e0\u7b80\u4ecb\u3011",
+    "PlotZh": "\u3010\u5f71\u7247\u4e0b\u67b6\uff0c\u6682\u65f6\u65e0\u7b80\u4ecb\u3011",
+    "Review": "",
+    "Release": "2015-10-25",
+    "Runtime": 120,
+    "Director": "ZAMPA",
+    "Studio": "\u7f8e",
+    "Publisher": "\u7f8e",
+    "Score": 80,
+    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/bbi208/bbi208pl.jpg",
+    "CoverBus": "55tx_b.jpg",
+    "CutType": 1,
+    "Javdb": "DRvk2",
+    "Javlibrary": "javlii36qm",
+    "Javbus": "BBI-208",
+    "Arzon": "",
+    "CompletionStatus": 6,
+    "Version": 1,
+    "Genres": [
+        "\u6deb\u8bed",
+        "\u591aP",
+        "\u4e3b\u89c2\u89c6\u89d2",
+        "\u5355\u4f53\u4f5c\u54c1",
+        "\u8361\u5987"
+    ],
+    "Actors": [
+        "\u685c\u6728\u51db"
+    ],
+    "Modify": "2022-02-03 22:59:48"
+}
