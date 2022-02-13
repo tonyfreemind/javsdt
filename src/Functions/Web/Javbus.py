@@ -9,12 +9,17 @@ from Class.MyError import SpecifiedUrlError
 
 # 搜索javbus，或请求javbus上jav所在网页，返回html
 def get_bus_html(url, proxy):
+    headers = {
+        'Cookie': 'cf_clearance=Ao1amvRJekvxzwjbyl5s5y.qZ3FrW6u6YAgqBGt4iAA-1644084147-0-150;existmag=all',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+        'Host': 'www.buscdn.me',
+    }
     for retry in range(10):
         try:
             if proxy:       # existmag=all为了 获得所有影片，而不是默认的有磁力的链接
-                rqs = requests.get(url, proxies=proxy, timeout=(6, 7), headers={'Cookie': 'existmag=all'})
+                rqs = requests.get(url, proxies=proxy, timeout=(6, 7), headers=headers)
             else:
-                rqs = requests.get(url, timeout=(6, 7), headers={'Cookie': 'existmag=all'})
+                rqs = requests.get(url, timeout=(6, 7), headers=headers)
         except requests.exceptions.ProxyError:
             # print(format_exc())
             print('    >通过局部代理失败，重新尝试...')
@@ -29,6 +34,7 @@ def get_bus_html(url, proxy):
             return rqs_content
         else:
             print('    >打开网页失败，空返回...重新尝试...')
+            print(rqs_content)
             continue
     input(f'>>请检查你的网络环境是否可以打开: {url}')
 

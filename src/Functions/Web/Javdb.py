@@ -14,14 +14,15 @@ from Class.MyError import SpecifiedUrlError
 # 请求jav在javdb上的网页，返回html
 def get_db_html(url, proxy):
     headers = {
-        "user-agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) "
-                      "Chrome/86.0.4240.198 Safari/537.36",
+        'Cookie': 'cf_clearance=v7IDflwP8qwLVhNAm.5THp8UfbhArX6_2E9DPgpw7Ck-1644084305-0-150;',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+        'Host': 'javdb35.com',
         "accept-encodin": "gzip, deflate, br",
     }
     for retry in range(1, 11):
         try:
             if proxy:
-                rqs = requests.get(url, header=headers, proxies=proxy, timeout=(6, 7))
+                rqs = requests.get(url, headers=headers, proxies=proxy, timeout=(6, 7))
             else:
                 rqs = requests.get(url, headers=headers, timeout=(6, 7))
         except requests.exceptions.ProxyError:
@@ -61,10 +62,10 @@ def scrape_from_db(jav_file, jav_model, url_db, proxy_db):
             raise SpecifiedUrlError(f'你指定的javdb网址有错误: ')
 
     # 用户没有指定网址，则去搜索
-    else:   # https://javdb9.com/video_codes/PKPD
+    else:  # https://javdb9.com/video_codes/PKPD
         # 当前车牌的车头、车尾
         pref_current, suf_current = jav_file.Car.split("-")
-        suf_current = int(extract_number_from_car_suf(suf_current))    # 去除车尾 末尾可能存在的字母
+        suf_current = int(extract_number_from_car_suf(suf_current))  # 去除车尾 末尾可能存在的字母
         # 车头的第一页
         url_pref = f'{url_db}/video_codes/{pref_current}'
         html_pref = get_db_html(url_pref, proxy_db)
@@ -127,7 +128,8 @@ def scrape_from_db(jav_file, jav_model, url_db, proxy_db):
                     no_target = find_javdb_code(suf_current, list_cars_next)
                     # 找到了退出
                     if no_target:
-                        javdb = etree.HTML(html_pref_next).xpath(f'//*[@id="videos"]/div/div[{no_target}]/a/@href')[0][3:]
+                        javdb = etree.HTML(html_pref_next).xpath(f'//*[@id="videos"]/div/div[{no_target}]/a/@href')[0][
+                                3:]
                         break
                     # 当前车牌suf在这一首尾之间,但还是找不到,则退出
                     suf_min_next = int(extract_number_from_car(list_cars_next[-1]))
@@ -184,5 +186,5 @@ def scrape_from_db(jav_file, jav_model, url_db, proxy_db):
 def find_javdb_code(suf_current, list_cars):
     for i, suf_str in enumerate(list_cars):
         if int(extract_number_from_car(suf_str)) == suf_current:
-            return i + 1    # 第几个，在list的下标基础上+1
+            return i + 1  # 第几个，在list的下标基础上+1
     return ''

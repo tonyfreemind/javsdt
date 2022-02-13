@@ -1,4 +1,6 @@
 # -*- coding:utf-8 -*-
+from traceback import format_exc
+
 import requests
 from PIL import Image
 
@@ -23,7 +25,7 @@ def download_pic(url, path, proxy):
             print('    >通过局部代理失败，重新尝试...')
             continue
         except:
-            # print(format_exc())
+            print(format_exc())
             print('    >下载失败，重新下载...')
             continue
         # 如果下载的图片打不开，则重新下载

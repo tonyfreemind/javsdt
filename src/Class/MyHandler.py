@@ -836,15 +836,15 @@ class Handler(object):
                 pass
             else:
                 status = False
-                if jav_model.Javdb:
-                    url_cover = f'https://jdbimgs.com/covers/{jav_model.Javdb[:2].lower()}/{jav_model.Javdb}.jpg'
-                    # print('    >从javdb下载封面: ', url_cover)
-                    print('    >下载封面: ...')
-                    status = download_pic(url_cover, path_fanart, self.proxy_db)
-                if not status and jav_model.CoverBus:
-                    url_cover = f'{self.url_bus}/pics/cover/{jav_model.CoverBus}'
-                    print('    >从javbus下载封面: ', url_cover)
-                    status = download_pic(url_cover, path_fanart, self.proxy_bus)
+                # if jav_model.Javdb:
+                #     url_cover = f'https://jdbimgs.com/covers/{jav_model.Javdb[:2].lower()}/{jav_model.Javdb}.jpg'
+                #     # print('    >从javdb下载封面: ', url_cover)
+                #     print('    >下载封面: ...')
+                #     status = download_pic(url_cover, path_fanart, self.proxy_db)
+                # if not status and jav_model.CoverBus:
+                #     url_cover = f'{self.url_bus}/pics/cover/{jav_model.CoverBus}'
+                #     print('    >从javbus下载封面: ', url_cover)
+                #     status = download_pic(url_cover, path_fanart, self.proxy_bus)
                 if not status and jav_model.CoverLibrary:
                     url_cover = jav_model.CoverLibrary
                     print('    >从dmm下载封面: ', url_cover)

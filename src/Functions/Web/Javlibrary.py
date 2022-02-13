@@ -13,8 +13,8 @@ from Functions.Utils.XML import replace_xml_win
 # 搜索javlibrary，或请求javlibrary上jav所在网页，返回html
 def get_library_html(url, proxy):
     headers = {
+        'Cookie': 'cf_clearance=qpCv7EmgZvx3BGS0pnJ.yWZo39S2JIzGjB3l4U9EmT0-1644419921-0-150;',
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
-        'Cookie': 'cf_clearance=fkVIwAxfUImKmp0.gbrmYeIWEIdVk8uWdDvEHfivoeI-1644029703-0-150;',
         # search后的cf_clearance
         'Host': 'www.javlibrary.com',
         'cache-control': 'no-cache'}
@@ -23,7 +23,7 @@ def get_library_html(url, proxy):
             if proxy:
                 rqs = requests.get(url, proxies=proxy, timeout=(6, 7))
             else:
-                rqs = requests.get(url, timeout=(6, 7))
+                rqs = requests.get(url, timeout=(6, 7), headers=headers)
         except requests.exceptions.ProxyError:
             # print(format_exc())
             print('    >通过局部代理失败，重新尝试...')
