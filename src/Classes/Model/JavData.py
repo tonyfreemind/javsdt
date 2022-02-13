@@ -1,5 +1,6 @@
 # -*- coding:utf-8 -*-
 import time
+
 from Classes.Enums import CompletionStatusEnum, CutTypeEnum
 
 
@@ -8,9 +9,12 @@ class JavData(object):
     一部影片的元数据
 
     在整理流程中逐渐从各大网站充实数据，最终以json格式写到本地
+
+    Args:
+        **kwargs (dict): 用于初始化成员变量的字典
     """
 
-    def __init__(self, **entries):
+    def __init__(self, **kwargs):
         self.Car = ''
         """1 车牌"""
 
@@ -53,35 +57,35 @@ class JavData(object):
         self.Score = 0
         """14 评分"""
 
-        self.CoverLibrary = ''
-        """15 封面Library"""
+        self.CoverDb = ''
+        """15 封面Db"""
 
         self.CoverLibrary = ''
-        """15 封面Library"""
+        """16 封面Library"""
 
         self.CoverBus = ''
-        """16 封面Bus"""
+        """17 封面Bus"""
 
         self.CutType = CutTypeEnum.left.value
-        """17 裁剪方式"""
+        """18 裁剪方式"""
 
         self.Javdb = ''
-        """18 db编号"""
+        """19 db编号"""
 
         self.Javlibrary = ''
-        """19 library编号"""
+        """20 library编号"""
 
         self.Javbus = ''
-        """20 bus编号"""
+        """21 bus编号"""
 
         self.Arzon = ''
-        """21 arzon编号"""
+        """22 arzon编号"""
 
         self.CompletionStatus = CompletionStatusEnum.unknown.value
-        """22 完成度，三大网站为全部"""
+        """23 完成度，三大网站为全部"""
 
         self.Version = 1
-        """23 版本"""
+        """24 版本"""
 
         self.Genres = []
         """24 类型"""
@@ -92,13 +96,13 @@ class JavData(object):
         self.Modify = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
         """26 修改时间"""
 
-        self.__dict__.update(entries)
+        self.__dict__.update(kwargs)
 
     def prefect_completion_status(self):
         """
         更新一下整理的完成度
 
-        整理流程的末尾，
+        整理流程的末尾，更新一下这部影片成功收集到哪几个网站的数据
         """
         if self.Javdb:
             if self.Javlibrary:

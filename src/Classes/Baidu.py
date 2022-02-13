@@ -1,29 +1,45 @@
 # -*- coding:utf-8 -*-
-import requests
 import json
-from time import sleep, time
+import requests
 from hashlib import md5
-# from aip import AipBodyAnalysis  # 百度ai人体分析
+from time import sleep, time
 # from traceback import format_exc
-from Config import Ini
+# from aip import AipBodyAnalysis  # 百度ai人体分析
+
+from Classes.Config import Ini
 
 
 class Translator(object):
+    """
+    百度翻译器
+
+    目前用于翻译简介和标题
+    """
+
     def __init__(self, ini: Ini):
         self._tran_id = ini.tran_id
         self._tran_sk = ini.tran_sk
         self._to_language = ini.to_language
 
-    # 功能: 调用百度翻译API接口，翻译日语简介
-    # 参数: 百度翻译api账户api_id, api_key，需要翻译的内容word，目标语言to_lang
-    # 返回: 中文简介string
-    # 辅助: os.system, hashlib.md5，time.time，requests.get，json.loads
-    def translate(self, word):
+    def translate(self, word: str):
+        """
+        调用百度翻译API接口，翻译日语简介
+
+        Args:
+            word: 需要翻译的内容
+
+        Returns:
+            翻译后的内容
+
+        Notes:
+            如果百度翻译返回错误码，会用input暂停程序。
+        """
         if not word:
             return ''
         if not self._tran_id or not self._tran_sk:
             print('    >你没有正确填写百度翻译api账户!')
             return ''
+
         for retry in range(10):
             # 把账户、翻译的内容、时间 混合md5加密，传给百度验证
             salt = str(time())[:10]
@@ -84,11 +100,18 @@ class Translator(object):
         print('    >翻译简介失败...请截图联系作者...')
         return f'【百度翻译出错】{word}'
 
-    # 功能: 用jav_file、jav_model中的原始数据完善dict_for_standard
-    # 参数: jav_file 处理的jav视频文件对象，jav_model 保存jav元数据的对象
-    # 返回: 无；更新dict_for_standard
-    # 辅助: replace_xml_win，replace_xml_win
     def prefect_zh(self, jav_model):
+        """
+        翻译jav_model中的简介和标题
+
+        效果：更新jav_model中的TitleZh、PlotZh
+
+        Args:
+            jav_model: 当前影片的元数据
+
+        Returns:
+            是否进行了翻译操作
+        """
         # 翻译出中文标题和简介
         if self._tran_id and self._tran_sk and not jav_model.TitleZh:
             jav_model.TitleZh = self.translate(jav_model.Title)
@@ -101,6 +124,12 @@ class Translator(object):
 
 
 class AIBody(object):
+    """
+    百度AL人体分析
+
+    Todo:
+    无码的部分还没写，这里待完善
+    """
     def __init__(self, ini: Ini):
         self._ai_id = ini.ai_id
         self._ai_ak = ini.ai_ak

@@ -1,14 +1,17 @@
 from os import sep
 from configparser import RawConfigParser
 from traceback import format_exc
+
 from Classes.Const import Const
 
 
-# 从ini读取到的设置
 class Ini(object):
-    """ini配置\n
-    读取并存储【点我设置整理规则】.ini中的设置，用于其他class的依赖注入。
     """
+    ini配置
+
+    读取记录【点我设置整理规则】.ini中的设置，用于其他class的依赖注入。
+    """
+
     def __init__(self, pattern):
         self.pattern = pattern
         print('正在读取ini中的设置...', end='')
@@ -22,7 +25,7 @@ class Ini(object):
             # 是否 收集nfo
             self.need_nfo = conf.get(Const.node_nfo, Const.need_nfo) == '是'
             # 自定义 nfo中title的公式，注意：程序中有两个标题，一个“完整标题”，一个可能被删减的“标题”。用户只需写“标题”，这里nfo实际采用“完整标题”
-            self.list_name_nfo_title = conf.get(Const.node_nfo, Const.name_nfo_title_formula)\
+            self.list_name_nfo_title = conf.get(Const.node_nfo, Const.name_nfo_title_formula) \
                 .replace(Const.title, Const.complete_title).split('+')
             # 是否 在nfo中plot写入中文简介，否则写原日语简介
             self.need_zh_plot = conf.get(Const.node_nfo, Const.need_zh_plot) == '是'
