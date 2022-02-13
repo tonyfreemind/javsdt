@@ -1,0 +1,39 @@
+{
+    "Car": "KURO-023",
+    "CarOrigin": "",
+    "Series": "",
+    "Title": "\u3010\u61a7\u308c\u306eAV\u7537\u512a\u30fb\u306a\u3064\u307f\u3061\u3083\u3093\u7de8\u3011\u30ad\u30e5\u30fc\u30c8\u3067\u30a8\u30ed\u30a8\u30ed\u306a\u9ed2\u9aea\u5973\u5b50\u3007\u751f\u3068\u30de\u30b8\u30a4\u30ad\u672c\u6c17\u30bb\u30c3\u30af\u30b9\u3057\u3066\u307f\u305f\uff01",
+    "TitleZh": "\u3010\u61a7\u61ac\u7684AV\u7537\u6f14\u5458\u590f\u7f8e\u7bc7\u3011\u548c\u53ef\u7231\u53c8\u6027\u611f\u7684\u9ed1\u53d1\u5973\u3007\u751f\u8ba4\u771f\u505a\u7231\uff01",
+    "Plot": "\u3010\u5f71\u7247\u4e0b\u67b6\uff0c\u6682\u65e0\u7b80\u4ecb\u3011",
+    "PlotZh": "\u3010\u5f71\u7247\u4e0b\u67b6\uff0c\u6682\u65f6\u65e0\u7b80\u4ecb\u3011",
+    "Review": "",
+    "Release": "2020-04-02",
+    "Runtime": 62,
+    "Director": "",
+    "Studio": "\u9ed2\u8239",
+    "Publisher": "\u9ed2\u732b",
+    "Score": 88,
+    "CoverLibrary": "",
+    "CoverBus": "",
+    "CutType": 1,
+    "Javdb": "gDWeZ",
+    "Javlibrary": "",
+    "Javbus": "",
+    "Arzon": "",
+    "CompletionStatus": 1,
+    "Version": 1,
+    "Genres": [
+        "\u7f8e\u5c11\u5973",
+        "\u5973\u5927\u5b66\u751f",
+        "\u73a9\u7269",
+        "\u4f01\u753b",
+        "\u82d7\u6761",
+        "\u4e1a\u4f59",
+        "\u7f8e\u4e73",
+        "\u4e3b\u89c2\u89c6\u89d2"
+    ],
+    "Actors": [
+        "\u6210\u6ca2\u304d\u3055\u304d"
+    ],
+    "Modify": "2022-02-06 10:42:38"
+}
