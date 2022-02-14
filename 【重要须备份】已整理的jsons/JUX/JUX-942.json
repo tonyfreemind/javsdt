@@ -1,0 +1,38 @@
+{
+    "Car": "JUX-942",
+    "CarOrigin": "jux942",
+    "Series": "\u592b\u306e\u4e0a\u53f8\u306b\u72af\u3055\u308c\u7d9a\u3051\u30667\u65e5\u76ee\u3001\u79c1\u306f\u7406\u6027\u3092\u5931\u3063\u305f\u2026\u3002",
+    "Title": "\u592b\u306e\u4e0a\u53f8\u306b\u72af\u3055\u308c\u7d9a\u3051\u30667\u65e5\u76ee\u3001\u79c1\u306f\u7406\u6027\u3092\u5931\u3063\u305f\u2026\u3002",
+    "TitleZh": "\u88ab\u4e08\u592b\u7684\u4e0a\u53f8\u6301\u7eed\u4fb5\u72af\u7684\u7b2c7\u5929\uff0c\u6211\u5931\u53bb\u4e86\u7406\u6027\u2026\u3002",
+    "Plot": "\u3010arzon\u6709\u8be5\u5f71\u7247\uff0c\u4f46\u627e\u4e0d\u5230\u7b80\u4ecb\u3011",
+    "PlotZh": "\u3010arzon\u6709\u8be5\u5f71\u7247\uff0c\u4f46\u627e\u4e0d\u5230\u7b80\u4ecb\u3011",
+    "Review": "",
+    "Release": "2016-08-25",
+    "Runtime": 140,
+    "Director": "\u53e4\u8cc0\u4e08\u58eb",
+    "Studio": "\u30de\u30c9\u30f3\u30ca",
+    "Publisher": "Madonna",
+    "Score": 87,
+    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/jux942/jux942pl.jpg",
+    "CoverBus": "5lvy_b.jpg",
+    "CutType": 1,
+    "Javdb": "J2J7B",
+    "Javlibrary": "javlilt5yi",
+    "Javbus": "JUX-942",
+    "Arzon": "",
+    "CompletionStatus": 6,
+    "Version": 1,
+    "Genres": [
+        "\u6570\u4f4d\u9a6c\u8d5b\u514b",
+        "\u82d7\u6761",
+        "\u719f\u5973",
+        "\u4eba\u59bb",
+        "\u767d\u5929\u51fa\u8f68",
+        "\u5355\u4f53\u4f5c\u54c1",
+        "\u8c03\u6559"
+    ],
+    "Actors": [
+        "\u4eca\u4e95\u771f\u7531\u7f8e"
+    ],
+    "Modify": "2022-02-13 16:57:56"
+}
