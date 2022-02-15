@@ -4,15 +4,15 @@ from dataclasses import dataclass
 @dataclass
 class Const(object):
     # region ini用户设置
-    ini: str = '【点我设置整理规则】.ini'
+    ini = '【点我设置整理规则】.ini'
     encoding_ini = 'utf-8-sig'
 
-    node_formula: str = '公式元素'
-    need_actors_end_of_title: str = '标题末尾保留演员姓名？'
+    node_formula = '公式元素'
+    need_actors_end_of_title = '标题末尾保留演员姓名？'
 
-    node_nfo: str = '收集nfo'
+    node_nfo = '收集nfo'
     need_nfo = '是否收集nfo？'
-    name_nfo_title_formula: str = 'title的公式'
+    name_nfo_title_formula = 'title的公式'
     need_zh_plot = 'plot是否使用中文简介？'
     extra_genres = '额外增加以下元素到特征中'
     need_nfo_genres = '是否将特征保存到genre？'
@@ -46,6 +46,7 @@ class Const(object):
     need_actor_sculpture = '是否收集演员头像？'
     need_only_cd = '是否对多cd只收集一份图片和nfo？'
 
+    proxy_default = '127.0.0.1:1080'
     node_proxy = '局部代理'
     proxy = '代理端口'
     need_http_or_socks5 = 'http还是socks5？'
@@ -84,17 +85,22 @@ class Const(object):
     ai_sk = 'secret key'
     # endregion
 
-    # region ini头像统计
+    # region 头像统计
     ini_actor: str = '【缺失的演员头像统计For Kodi】.ini'
     node_no_actor = '缺失的演员头像'
+    # endregion
 
-    proxy_default = '127.0.0.1:1080'
+    # region 元素名称
     title = '标题'
     complete_title = '完整标题'
     series = '系列'
     studio = '片商'
+    # endregion
+
     youma = '有码'
     wuma = '无码'
 
+    # region 错误信息
     baidu_translate_account_empty_error = '    >你没有填写百度翻译api账户!'
     baidu_translate_account_error = '    >请正确输入百度翻译API账号！'
+    # endregion

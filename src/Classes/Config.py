@@ -3,6 +3,7 @@ from configparser import RawConfigParser
 from traceback import format_exc
 
 from Classes.Const import Const
+from LittleUtils import convert_2dlist_to_dict
 
 
 class Ini(object):
@@ -12,87 +13,126 @@ class Ini(object):
     读取记录【点我设置整理规则】.ini中的设置，用于其他class的依赖注入。
     """
 
-    def __init__(self, pattern):
+    def __init__(self, pattern: str):
+        """
+        Args:
+            pattern: 当前整理的模式，例如“有码”“无码”
+        """
         self.pattern = pattern
         print('正在读取ini中的设置...', end='')
         try:
             conf = RawConfigParser()
             conf.read(Const.ini, encoding=Const.encoding_ini)
-            # ###################################################### 公式元素 ##############################################
-            # 是否 去除 标题末尾 可能存在的演员姓名
+            dict_nfo = convert_2dlist_to_dict(conf.items(Const.node_nfo))
+
+            # region ######################################## 1公式元素 ########################################
             self.need_actors_end_of_title = conf.get(Const.node_formula, Const.need_actors_end_of_title) == '是'
-            # ###################################################### nfo ##################################################
-            # 是否 收集nfo
-            self.need_nfo = conf.get(Const.node_nfo, Const.need_nfo) == '是'
-            # 自定义 nfo中title的公式，注意：程序中有两个标题，一个“完整标题”，一个可能被删减的“标题”。用户只需写“标题”，这里nfo实际采用“完整标题”
+            """是否 去除 标题末尾 可能存在的演员姓名"""
+            # endregion
+
+            # region ######################################## 2nfo ########################################
+            self.need_nfo = dict_nfo[Const.need_nfo] == '是'
+            """是否 收集nfo"""
+
             self.list_name_nfo_title = conf.get(Const.node_nfo, Const.name_nfo_title_formula) \
                 .replace(Const.title, Const.complete_title).split('+')
-            # 是否 在nfo中plot写入中文简介，否则写原日语简介
+            """公式: nfo中title\n\n注意：程序中有两个标题，一个“完整标题”，一个“可能被删减的标题”。用户只需写“标题”，这里nfo实际采用“完整标题”"""
+
             self.need_zh_plot = conf.get(Const.node_nfo, Const.need_zh_plot) == '是'
-            # 自定义 将系列、片商等元素作为特征，因为emby不会直接在影片介绍页面上显示片商，也不会读取系列set
+            """是否 在nfo中plot写入中文简介，否则写原日语简介"""
+
+            # 额外添加进特征的元素，允许用户将系列、片商等元素作为特征，因为emby不会直接在影片介绍页面上显示片商，也不会读取系列set
             extra_genres = conf.get(Const.node_nfo, Const.extra_genres)
             list_extra_genres = extra_genres.split('、') if extra_genres else []
-            # 自定义 将系列、片商等元素作为特征，因为emby不会直接在影片介绍页面上显示片商，也不会读取系列set
+
+            # Todo emby对set的处理
             self.list_extra_genres = [i for i in list_extra_genres if i != Const.series and i != Const.studio]
-            # 是否 将“系列”写入到特征中
+            """公式: 额外添加进特征的元素\n\n允许用户将系列、片商等元素作为特征，因为emby不会直接在影片介绍页面上显示片商，也不会读取系列set"""
+
             self.need_series_as_genre = True if Const.series in list_extra_genres else False
-            # 是否 将“片商”写入到特征中
+            """是否 将“系列”写入到特征中"""
+
             self.need_studio_as_genre = True if Const.studio in list_extra_genres else False
-            # 是否 将特征保存到nfo的<genre>中
+            """是否 将“片商”写入到特征中"""
+
             self.need_nfo_genres = conf.get(Const.node_nfo, Const.need_nfo_genres) == '是'
-            # 是否 将特征保存到nfo的<tag>中
+            """是否 将特征保存到nfo的<genre>中"""
+
             self.need_nfo_tags = conf.get(Const.node_nfo, Const.need_nfo_tags) == '是'
-            # ###################################################### 重命名 ################################################
-            # 是否 重命名 视频
+            """是否 将特征保存到nfo的<tag>中"""
+            # endregion
+
+            # region ######################################## 3重命名 ########################################
             self.need_rename_video = conf.get(Const.node_video, Const.need_rename_video) == '是'
-            # 自定义 重命名 视频
+            """是否 重命名视频"""
+
             self.list_name_video = conf.get(Const.node_video, Const.name_video_formula).split('+')
-            # 是否 重命名视频所在文件夹，或者为它创建独立文件夹
+            """公式: 重命名视频"""
+
             self.need_rename_folder = conf.get(Const.node_folder, Const.need_rename_folder) == '是'
-            # 自定义 新的文件夹名  示例: ['车牌', '【', '全部演员', '】']
+            """是否 重命名视频所在文件夹，或者为它创建独立文件夹"""
+
             self.list_name_folder = conf.get(Const.node_folder, Const.name_folder_formula).split('+')
-            # ######################################################### 归类 ###############################################
-            # 是否 归类jav
+            """公式: 新的文件夹名  示例: '车牌', '【', '全部演员', '】'"""
+            # endregion
+
+            # region ######################################## 4归类 ########################################
             self.need_classify = conf.get(Const.node_classify, Const.need_classify) == '是'
-            # 是否 针对“文件夹”归类jav，“否”即针对“文件”
+            """是否 归类jav"""
+
             self.need_classify_folder = conf.get(Const.node_classify, Const.need_classify_folder) == '文件夹'
-            # 自定义 路径 归类的jav放到哪个根目录
+            """是否 针对“文件夹”归类jav，“否”即针对“文件”"""
+
             self.dir_custom_classify_target = conf.get(Const.node_classify, Const.dir_custom_classify_target)
-            # 自定义 jav按什么类别标准来归类 比如: 影片类型\全部演员
+            """路径: 归类的jav放到哪个根目录"""
+
             self.classify_formula = conf.get(Const.node_classify, Const.classify_formula)
-            # 归类的目标文件夹的拼接公式
+            """公式str: 影片按什么文件结构来归类 比如: 影片类型\\全部演员"""
+
             self.list_name_dir_classify = []
-            # ####################################################### 图片 ################################################
-            # 是否 下载图片
+            """公式: 归类的目标文件夹的拼接"""
+            # endregion
+
+            # region ######################################## 5图片 ########################################
             self.need_download_fanart = conf.get(Const.node_fanart, Const.need_download_fanart) == '是'
-            # 自定义 命名 大封面fanart
+            """是否 下载图片"""
+
             self.list_name_fanart = conf.get(Const.node_fanart, Const.name_fanart_formula).split('+')
-            # 自定义 命名 小海报poster
+            """公式: 命名 大封面fanart"""
+
             self.list_name_poster = conf.get(Const.node_fanart, Const.name_poster_formula).split('+')
-            # 是否 如果视频有“中字”，给poster的左上角加上“中文字幕”的斜杠
+            """公式: 命名 小海报poster"""
+
             self.need_subtitle_watermark = conf.get(Const.node_fanart, Const.need_subtitle_watermark) == '是'
-            # 是否 如果视频是“无码流出”，给poster的右上角加上“无码流出”的斜杠
+            """是否 如果视频有“中字”，给poster的左上角加上“中文字幕”的斜杠"""
+
             self.need_divulge_watermark = conf.get(Const.node_fanart, Const.need_divulge_watermark) == '是'
-            # ##################################################### 字幕 ###################################################
-            # 是否 重命名用户已拥有的字幕
+            """是否 如果视频是“无码流出”，给poster的右上角加上“无码流出”的斜杠"""
+            # endregion
+
+            # region ######################################## 6字幕 ########################################
             self.need_rename_subtitle = conf.get(Const.node_subtitle, Const.need_rename_subtitle) == '是'
-            # ##################################################### kodi ##################################################
-            # 是否 收集演员头像
+            """是否 重命名用户已拥有的字幕"""
+            # endregion
+
+            # region ######################################## 7kodi ########################################
             self.need_actor_sculpture = conf.get(Const.node_kodi, Const.need_actor_sculpture) == '是'
-            # 是否 对于多cd的影片，kodi只需要一份图片和nfo
+            """是否 收集演员头像"""
+
             self.need_only_cd = conf.get(Const.node_kodi, Const.need_only_cd) == '是'
-            # ##################################################### 代理 ##################################################
-            # 代理端口
-            proxy = conf.get(Const.node_proxy, Const.proxy)
-            # 代理，如果为空则效果为不使用
+            """是否 对于多cd的影片，kodi只需要一份图片和nfo"""
+            # endregion
+
+            # region ######################################## 7代理 ########################################
+            proxy = conf.get(Const.node_proxy, Const.proxy)  # 代理端口
             proxys = {'http': f'http://{proxy}', 'https': f'https://{proxy}'} \
                 if conf.get(Const.node_proxy, Const.need_http_or_socks5) == 'http' \
-                else {'http': f'socks5://{proxy}', 'https': f'socks5://{proxy}'}
-            # 是否 使用局部代理
-            need_proxy = conf.get(Const.node_proxy, Const.need_proxy) == '是' and proxy
-            # 是否 代理javlibrary
+                else {'http': f'socks5://{proxy}', 'https': f'socks5://{proxy}'}  # 代理，如果为空则效果为不使用
+            need_proxy = conf.get(Const.node_proxy, Const.need_proxy) == '是' and proxy  # 代理，如果为空则效果为不使用
+
             self.proxy_library = proxys if conf.get(Const.node_proxy,
                                                     Const.need_proxy_library) == '是' and need_proxy else {}
+            """是否 代理javlibrary"""
             # 是否 代理bus，还有代理javbus上的图片cdnbus
             self.proxy_bus = proxys if conf.get(Const.node_proxy, Const.need_proxy_bus) == '是' and need_proxy else {}
             # 是否 代理321，还有代理javbus上的图片cdnbus
@@ -206,7 +246,7 @@ class Ini(object):
             if i not in dict_for_standard:
                 dict_for_standard[i] = i
         # 归类路径的组装公式
-        for i in self.dir_custom_classify_target.split('\\'):
+        for i in self.classify_formula.split('\\'):
             for j in i.split('+'):
                 if j not in dict_for_standard:
                     dict_for_standard[j] = j

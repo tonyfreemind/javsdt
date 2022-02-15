@@ -81,7 +81,7 @@ try:
     config_settings.set("百度人体分析", "appid", "")
     config_settings.set("百度人体分析", "api key", "")
     config_settings.set("百度人体分析", "secret key", "")
-    config_settings.write(open('【点我设置整理规则】.ini', "w", encoding='utf-8-sig'))
+    config_settings.write(open('../../../MyGit/StudyProjects/Python/TestPy/ListUnion/【点我设置整理规则】.ini', "w", encoding='utf-8-sig'))
     print('    >“【点我设置整理规则】.ini”重写成功！')
     ####################################################################################################################
     config_actor = RawConfigParser()

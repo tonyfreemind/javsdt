@@ -39,3 +39,10 @@ class CutTypeEnum(IntEnum):
     middle = 2
     right = 3
     custom = 4
+
+
+class PatternEnum():
+    """暂时没用"""
+    youma = 1
+    wuma = 2
+    suren = 3
