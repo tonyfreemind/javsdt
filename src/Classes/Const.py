@@ -67,6 +67,7 @@ class Const(object):
     divulge_expression = '是否流出的表现形式'
 
     node_other = '其他设置'
+    language = '简繁中文？'
     url_library = 'javlibrary网址'
     url_bus = 'javbus网址'
     url_db = 'javdb网址'

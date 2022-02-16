@@ -23,26 +23,26 @@ class Ini(object):
         try:
             conf = RawConfigParser()
             conf.read(Const.ini, encoding=Const.encoding_ini)
-            dict_nfo = convert_2dlist_to_dict(conf.items(Const.node_nfo))
+            dict_ini = self.tran_config_parser_to_dict(conf)
 
             # region ######################################## 1公式元素 ########################################
-            self.need_actors_end_of_title = conf.get(Const.node_formula, Const.need_actors_end_of_title) == '是'
+            self.need_actors_end_of_title = dict_ini[Const.need_actors_end_of_title] == '是'
             """是否 去除 标题末尾 可能存在的演员姓名"""
             # endregion
 
             # region ######################################## 2nfo ########################################
-            self.need_nfo = dict_nfo[Const.need_nfo] == '是'
+            self.need_nfo = dict_ini[Const.need_nfo] == '是'
             """是否 收集nfo"""
 
-            self.list_name_nfo_title = conf.get(Const.node_nfo, Const.name_nfo_title_formula) \
-                .replace(Const.title, Const.complete_title).split('+')
+            self.list_name_nfo_title = dict_ini[Const.name_nfo_title_formula].replace(Const.title,
+                                                                                      Const.complete_title).split('+')
             """公式: nfo中title\n\n注意：程序中有两个标题，一个“完整标题”，一个“可能被删减的标题”。用户只需写“标题”，这里nfo实际采用“完整标题”"""
 
-            self.need_zh_plot = conf.get(Const.node_nfo, Const.need_zh_plot) == '是'
+            self.need_zh_plot = dict_ini[Const.need_zh_plot] == '是'
             """是否 在nfo中plot写入中文简介，否则写原日语简介"""
 
             # 额外添加进特征的元素，允许用户将系列、片商等元素作为特征，因为emby不会直接在影片介绍页面上显示片商，也不会读取系列set
-            extra_genres = conf.get(Const.node_nfo, Const.extra_genres)
+            extra_genres = dict_ini[Const.extra_genres]
             list_extra_genres = extra_genres.split('、') if extra_genres else []
 
             # Todo emby对set的处理
@@ -55,38 +55,38 @@ class Ini(object):
             self.need_studio_as_genre = True if Const.studio in list_extra_genres else False
             """是否 将“片商”写入到特征中"""
 
-            self.need_nfo_genres = conf.get(Const.node_nfo, Const.need_nfo_genres) == '是'
+            self.need_nfo_genres = dict_ini[Const.need_nfo_genres] == '是'
             """是否 将特征保存到nfo的<genre>中"""
 
-            self.need_nfo_tags = conf.get(Const.node_nfo, Const.need_nfo_tags) == '是'
+            self.need_nfo_tags = dict_ini[Const.need_nfo_tags] == '是'
             """是否 将特征保存到nfo的<tag>中"""
             # endregion
 
             # region ######################################## 3重命名 ########################################
-            self.need_rename_video = conf.get(Const.node_video, Const.need_rename_video) == '是'
+            self.need_rename_video = dict_ini[Const.need_rename_video] == '是'
             """是否 重命名视频"""
 
-            self.list_name_video = conf.get(Const.node_video, Const.name_video_formula).split('+')
+            self.list_name_video = dict_ini[Const.name_video_formula].split('+')
             """公式: 重命名视频"""
 
-            self.need_rename_folder = conf.get(Const.node_folder, Const.need_rename_folder) == '是'
+            self.need_rename_folder = dict_ini[Const.need_rename_folder] == '是'
             """是否 重命名视频所在文件夹，或者为它创建独立文件夹"""
 
-            self.list_name_folder = conf.get(Const.node_folder, Const.name_folder_formula).split('+')
+            self.list_name_folder = dict_ini[Const.name_folder_formula].split('+')
             """公式: 新的文件夹名  示例: '车牌', '【', '全部演员', '】'"""
             # endregion
 
             # region ######################################## 4归类 ########################################
-            self.need_classify = conf.get(Const.node_classify, Const.need_classify) == '是'
+            self.need_classify = dict_ini[Const.need_classify] == '是'
             """是否 归类jav"""
 
-            self.need_classify_folder = conf.get(Const.node_classify, Const.need_classify_folder) == '文件夹'
+            self.need_classify_folder = dict_ini[Const.need_classify_folder] == '文件夹'
             """是否 针对“文件夹”归类jav，“否”即针对“文件”"""
 
-            self.dir_custom_classify_target = conf.get(Const.node_classify, Const.dir_custom_classify_target)
+            self.dir_custom_classify_target = dict_ini[Const.dir_custom_classify_target]
             """路径: 归类的jav放到哪个根目录"""
 
-            self.classify_formula = conf.get(Const.node_classify, Const.classify_formula)
+            self.classify_formula = dict_ini[Const.classify_formula]
             """公式str: 影片按什么文件结构来归类 比如: 影片类型\\全部演员"""
 
             self.list_name_dir_classify = []
@@ -94,107 +94,135 @@ class Ini(object):
             # endregion
 
             # region ######################################## 5图片 ########################################
-            self.need_download_fanart = conf.get(Const.node_fanart, Const.need_download_fanart) == '是'
+            self.need_download_fanart = dict_ini[Const.need_download_fanart] == '是'
             """是否 下载图片"""
 
-            self.list_name_fanart = conf.get(Const.node_fanart, Const.name_fanart_formula).split('+')
+            self.list_name_fanart = dict_ini[Const.name_fanart_formula].split('+')
             """公式: 命名 大封面fanart"""
 
-            self.list_name_poster = conf.get(Const.node_fanart, Const.name_poster_formula).split('+')
+            self.list_name_poster = dict_ini[Const.name_poster_formula].split('+')
             """公式: 命名 小海报poster"""
 
-            self.need_subtitle_watermark = conf.get(Const.node_fanart, Const.need_subtitle_watermark) == '是'
+            self.need_subtitle_watermark = dict_ini[Const.need_subtitle_watermark] == '是'
             """是否 如果视频有“中字”，给poster的左上角加上“中文字幕”的斜杠"""
 
-            self.need_divulge_watermark = conf.get(Const.node_fanart, Const.need_divulge_watermark) == '是'
+            self.need_divulge_watermark = dict_ini[Const.need_divulge_watermark] == '是'
             """是否 如果视频是“无码流出”，给poster的右上角加上“无码流出”的斜杠"""
             # endregion
 
             # region ######################################## 6字幕 ########################################
-            self.need_rename_subtitle = conf.get(Const.node_subtitle, Const.need_rename_subtitle) == '是'
+            self.need_rename_subtitle = dict_ini[Const.need_rename_subtitle] == '是'
             """是否 重命名用户已拥有的字幕"""
             # endregion
 
             # region ######################################## 7kodi ########################################
-            self.need_actor_sculpture = conf.get(Const.node_kodi, Const.need_actor_sculpture) == '是'
+            self.need_actor_sculpture = dict_ini[Const.need_actor_sculpture] == '是'
             """是否 收集演员头像"""
 
-            self.need_only_cd = conf.get(Const.node_kodi, Const.need_only_cd) == '是'
+            self.need_only_cd = dict_ini[Const.need_only_cd] == '是'
             """是否 对于多cd的影片，kodi只需要一份图片和nfo"""
             # endregion
 
-            # region ######################################## 7代理 ########################################
-            proxy = conf.get(Const.node_proxy, Const.proxy)  # 代理端口
+            # region ######################################## 8代理 ########################################
+            proxy = dict_ini[Const.proxy]  # 代理端口
             proxys = {'http': f'http://{proxy}', 'https': f'https://{proxy}'} \
-                if conf.get(Const.node_proxy, Const.need_http_or_socks5) == 'http' \
+                if dict_ini[Const.need_http_or_socks5] == 'http' \
                 else {'http': f'socks5://{proxy}', 'https': f'socks5://{proxy}'}  # 代理，如果为空则效果为不使用
-            need_proxy = conf.get(Const.node_proxy, Const.need_proxy) == '是' and proxy  # 代理，如果为空则效果为不使用
+            need_proxy = dict_ini[Const.need_proxy] == '是' and proxy  # 代理，如果为空则效果为不使用
 
-            self.proxy_library = proxys if conf.get(Const.node_proxy,
-                                                    Const.need_proxy_library) == '是' and need_proxy else {}
+            self.proxy_library = proxys if dict_ini[Const.need_proxy_library] == '是' and need_proxy else {}
             """是否 代理javlibrary"""
-            # 是否 代理bus，还有代理javbus上的图片cdnbus
-            self.proxy_bus = proxys if conf.get(Const.node_proxy, Const.need_proxy_bus) == '是' and need_proxy else {}
-            # 是否 代理321，还有代理javbus上的图片cdnbus
-            self.proxy_321 = proxys if conf.get(Const.node_proxy, Const.need_proxy_321) == '是' and need_proxy else {}
-            # 是否 代理db，还有代理javdb上的图片
-            self.proxy_db = proxys if conf.get(Const.node_proxy, Const.need_proxy_db) == '是' and need_proxy else {}
-            # 是否 代理arzon
-            self.proxy_arzon = proxys if conf.get(Const.node_proxy,
-                                                  Const.need_proxy_arzon) == '是' and need_proxy else {}
-            # 是否 代理dmm图片，javlibrary和javdb上的有码图片几乎都是直接引用dmm
-            self.proxy_dmm = proxys if conf.get(Const.node_proxy, Const.need_proxy_dmm) == '是' and need_proxy else {}
-            # ################################################### 原影片文件的性质 ##########################################
-            # 自定义 无视的字母数字 去除影响搜索结果的字母数字 xhd1080、FHD-1080
-            if self.pattern != Const.wuma:
-                self.list_surplus_words = conf.get(Const.node_file, Const.surplus_words_in_youma_suren).upper().split(
-                    '、')
-            else:
-                self.list_surplus_words = conf.get(Const.node_file, Const.surplus_words_in_wuma).upper().split('、')
-            # 自定义 原影片性质 影片有中文，体现在视频名称中包含这些字符
-            self.list_subtitle_symbol_words = conf.get(Const.node_file, Const.subtitle_symbol_words).split('、')
-            # 自定义 是否中字 这个元素的表现形式
-            self.subtitle_expression = conf.get(Const.node_file, Const.subtitle_expression)
-            # 自定义 原影片性质 影片是无码流出片，体现在视频名称中包含这些字符
-            self.list_divulge_symbol_words = conf.get(Const.node_file, Const.divulge_symbol_words).split('、')
-            # 自定义 是否流出 这个元素的表现形式
-            self.divulge_expression = conf.get(Const.node_file, Const.divulge_expression)
-            # 自定义 原影片性质 有码
-            self._av_type = conf.get(Const.node_file, self.pattern)
-            # ################################################## 其他设置 ##################################################
-            # 是否 使用简体中文 简介翻译的结果和jav特征会变成“简体”还是“繁体”，影响影片特征和简介。
-            # self.to_language = 'zh' if config_settings.get(Const.node_other, "简繁中文？") == '简' else 'cht'
-            self.to_language = 'zh'
-            # 网址 javlibrary
-            self.url_library = f'{conf.get(Const.node_other, Const.url_library).rstrip("/")}/cn'
-            # 网址 javbus
-            self.url_bus = conf.get(Const.node_other, Const.url_bus).rstrip('/')
-            # 网址 javdb
-            self.url_db = conf.get(Const.node_other, Const.url_db).rstrip('/')
-            # 网址 javdb
-            self.arzon_phpsessid = conf.get(Const.node_other, Const.arzon_phpsessid)
-            # 自定义 文件类型 只有列举出的视频文件类型，才会被处理
-            self.tuple_video_types = tuple(conf.get(Const.node_other, Const.tuple_video_types).upper().split('、'))
-            # 自定义 命名公式中“标题”的长度 windows只允许255字符，所以限制长度，但nfo中的标题是全部
-            self.int_title_len = int(conf.get(Const.node_other, Const.int_title_len))
-            # ####################################### 百度翻译API ####################################################
-            # 账户 百度翻译api
-            self.tran_id = conf.get(Const.node_tran, Const.tran_id)
-            self.tran_sk = conf.get(Const.node_tran, Const.tran_sk)
-            # ####################################### 百度人体分析 ####################################################
-            # 是否 需要准确定位人脸的poster
-            self.need_face = conf.get(Const.node_body, Const.need_face) == '是'
-            # 账户 百度人体分析
-            self.ai_id = conf.get(Const.node_body, Const.ai_id)
-            self.ai_ak = conf.get(Const.node_body, Const.ai_ak)
-            self.ai_sk = conf.get(Const.node_body, Const.ai_sk)
-            print('\n读取ini文件成功!\n')
-            # 用于给用户自定义命名的字典
-            self.dict_for_standard = self.get_dict_for_standard()
 
+            self.proxy_bus = proxys if dict_ini[Const.need_proxy_bus] == '是' and need_proxy else {}
+            """是否 代理bus，还有代理javbus上的图片cdnbus"""
+
+            self.proxy_321 = proxys if dict_ini[Const.need_proxy_321] == '是' and need_proxy else {}
+            """是否 代理321"""
+
+            self.proxy_db = proxys if dict_ini[Const.need_proxy_db] == '是' and need_proxy else {}
+            """是否 代理db，还有代理javdb上的图片"""
+
+            self.proxy_arzon = proxys if dict_ini[Const.need_proxy_arzon] == '是' and need_proxy else {}
+            """是否 代理arzon"""
+
+            self.proxy_dmm = proxys if dict_ini[Const.need_proxy_dmm] == '是' and need_proxy else {}
+            """是否 代理dmm图片\n\njavlibrary和javdb上的有码图片几乎都是直接引用dmm"""
+            # endregion
+
+            # region ######################################## 9原影片文件的性质 ########################################
+            if self.pattern != Const.wuma:
+                self.list_surplus_words = dict_ini[Const.surplus_words_in_youma_suren].upper().split('、')
+                """字符集: 无视的字母数字\n\n去除影响搜索结果的字母数字，例如xhd1080、FHD-1080"""
+            else:
+                self.list_surplus_words = dict_ini[Const.surplus_words_in_wuma].upper().split('、')
+
+            self.list_subtitle_symbol_words = dict_ini[Const.subtitle_symbol_words].split('、')
+            """字符集: 影片有字幕，体现在视频名称中包含这些字符"""
+
+            self.subtitle_expression = dict_ini[Const.subtitle_expression]
+            """是否中字 这个元素的表现形式"""
+
+            self.list_divulge_symbol_words = dict_ini[Const.divulge_symbol_words].split('、')
+            """字符集: 影片是无码流出，体现在视频名称中包含这些字符"""
+
+            self.divulge_expression = dict_ini[Const.divulge_expression]
+            """是否流出 这个元素的表现形式"""
+
+            self._av_type = dict_ini[self.pattern]
+            """影片性质 这个元素的表现形式"""
+            # endregion
+
+            # region ######################################## 10其他设置 ########################################
+            # Todo 支持繁体
+            self.to_language = 'zh' if dict_ini[Const.language] == '简' else 'cht'
+            """是否 使用简体中文\n\n简介翻译的结果和jav特征会变成“简体”还是“繁体”，影响影片特征和简介。"""
+
+            self.url_library = f'{dict_ini[Const.url_library].rstrip("/")}/cn'
+            """网址 javlibrary"""
+
+            self.url_bus = dict_ini[Const.url_bus].rstrip('/')
+            """网址 javbus"""
+
+            self.url_db = dict_ini[Const.url_db].rstrip('/')
+            """网址 javdb"""
+
+            self.arzon_phpsessid = dict_ini[Const.arzon_phpsessid]
+            """网址 javdb"""
+
+            self.tuple_video_types = tuple(dict_ini[Const.tuple_video_types].upper().split('、'))
+            """集合:文件类型\n\n只有列举出的视频文件类型，才会被处理"""
+
+            self.int_title_len = int(dict_ini[Const.int_title_len])
+            """命名公式中“标题”的长度\n\nwindows只允许255字符，所以限制长度，但nfo中的标题是全部"""
+            # endregion
+
+            # region ######################################## 11百度翻译API ########################################
+            self.tran_id = dict_ini[Const.tran_id]
+            """账户ID 百度翻译api """
+            self.tran_sk = dict_ini[Const.tran_sk]
+            """账户sk 百度翻译api """
+            # endregion
+
+            # region ######################################## 12百度人体分析 ########################################
+            self.need_face = dict_ini[Const.need_face] == '是'
+            """是否 需要准确定位人脸的poster"""
+
+            # 账户 百度人体分析
+            self.ai_id = dict_ini[Const.ai_id]
+            """账户id 百度人体分析 """
+            self.ai_ak = dict_ini[Const.ai_ak]
+            """账户ak 百度人体分析 """
+            self.ai_sk = dict_ini[Const.ai_sk]
+            """账户sk 百度人体分析 """
+            # endregion
+
+            print('\n读取ini文件成功!\n')
         except:
             print(format_exc())
             input('\n无法读取ini文件，请修改它为正确格式，或者打开“【ini】重新创建ini.exe”创建全新的ini！')
+
+        self.dict_for_standard = self.get_dict_for_standard()
+        """字典\n\n用于给用户自定义命名的各类元素包含其中"""
 
     # 功能: （1）完善用于给用户命名的dict_for_standard，如果用户自定义的各种命名公式中有dict_for_standard未包含的元素，则添加。
     #      （2）将_custom_classify_basis按“+”“\”切割好，准备用于组装后面的归类路径。
@@ -253,3 +281,25 @@ class Ini(object):
                 self.list_name_dir_classify.append(j)
             self.list_name_dir_classify.append(sep)
         return dict_for_standard
+
+    @staticmethod
+    def tran_config_parser_to_dict(config: RawConfigParser):
+        """
+        将ini文件读取出来的内容转化为字典
+
+        Args:
+            config: 读取了ini文件的RawConfigParser
+
+        Returns:
+            ini中的内容
+
+        Notes:
+            请保证ini中的键唯一，否则会发生覆盖。
+        """
+        dict_dest = {}
+        sections = config.sections()
+        for section in sections:
+            options = config.options(section)
+            for option in options:
+                dict_dest[option] = config.get(section, option)
+        return dict_dest
