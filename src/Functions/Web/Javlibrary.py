@@ -13,7 +13,7 @@ from Functions.Utils.XML import replace_xml_win
 # 搜索javlibrary，或请求javlibrary上jav所在网页，返回html
 def get_library_html(url, proxy):
     headers = {
-        'Cookie': 'cf_clearance=YF6.9rUPVPDm4U7P5X.Sez82AR.ObQo7Ww2Hsvjd0Kc-1644746475-0-150;',
+        'Cookie': 'cf_clearance=2nEMOI0qsZO4gHYhhefQsmyUFn5Cfp8x.SCL6VHgBrI-1645074204-0-150;',
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
         # search后的cf_clearance
         'Host': 'www.javlibrary.com',
