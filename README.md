@@ -1,4 +1,6 @@
-# jav-standard-tool 简称javsdt
+# jav-standard-tool short form javsdt
+Introduction: I am forking this software from another programmer. After I setup my own Xpenology and later run JellyFin docker. I wanna to have all my porn collection to have proper metadata as well. So after extensive googling, I found this Python software which can be used to create .nfo file for JellyFin.
+
 简介：收集影视元数据，并规范本地文件（夹）的格式，收集演员头像，为emby、kodi、jellyfin、极影派等影片管理软件铺路。  
 
 ## 0、【长远计划】：
