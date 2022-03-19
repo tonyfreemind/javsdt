@@ -3,6 +3,8 @@ from os import system
 from configparser import RawConfigParser
 from traceback import format_exc
 
+from Const import Const
+
 try:
     print('>>正在重写ini文件...')
     config_settings = RawConfigParser()
@@ -55,8 +57,9 @@ try:
     config_settings.set("局部代理", "是否代理dmm图片？", "否")
     # config_settings.set("其他设置", "是否将全部演员（多个）表现为“n人共演？", "否")
     config_settings.add_section("原影片文件的性质")
-    config_settings.set("原影片文件的性质", "有码素人无视多余的字母数字", "xhd1080、mm616、fhd-1080、bbs2048、hhd800")
-    config_settings.set("原影片文件的性质", "无码无视多余的字母数字", "1080p、caribbean、carib、1pondo、1pon、fhd、all、tokyo-hot、tokyohot、3xplanet、full")
+    config_settings.set("原影片文件的性质", "有码素人无视多余的字母数字", "xhd1080、mm616、fhd-1080")
+    config_settings.set("原影片文件的性质", "无码无视多余的字母数字",
+                        "1080p、caribbean、carib、1pondo、1pon、fhd、all、tokyo-hot、tokyohot、3xplanet、full")
     config_settings.set("原影片文件的性质", "是否中字即文件名包含", "-C、_C、中字、中文字幕、字幕")
     config_settings.set("原影片文件的性质", "是否中字的表现形式", "㊥")
     config_settings.set("原影片文件的性质", "是否流出即文件名包含", "流出")
@@ -67,7 +70,7 @@ try:
     config_settings.set("原影片文件的性质", "FC2", "FC2")
     config_settings.add_section("其他设置")
     config_settings.set("其他设置", "简繁中文？", "简")
-    config_settings.set("其他设置", "javlibrary网址", "https://www.javlibrary.com/")
+    config_settings.set("其他设置", "javlibrary网址", "https://www.n53i.com/")
     config_settings.set("其他设置", "javbus网址", "https://www.buscdn.me")
     config_settings.set("其他设置", "javdb网址", "https://javdb31.com/")
     config_settings.set("其他设置", "arzon的phpsessid", "679fpv1fgl9vjoeuo36q8crre7")
@@ -81,16 +84,19 @@ try:
     config_settings.set("百度人体分析", "appid", "")
     config_settings.set("百度人体分析", "api key", "")
     config_settings.set("百度人体分析", "secret key", "")
-    config_settings.write(open('../../../MyGit/StudyProjects/Python/TestPy/ListUnion/【点我设置整理规则】.ini', "w", encoding='utf-8-sig'))
+    # Todo看不懂了
+    config_settings.write(
+        open('../../../MyGit/StudyProjects/Python/TestPy/ListUnion/【点我设置整理规则】.ini', "w", encoding='utf-8-sig'))
     print('    >“【点我设置整理规则】.ini”重写成功！')
     ####################################################################################################################
     config_actor = RawConfigParser()
     config_actor.add_section("缺失的演员头像")
     config_actor.set("缺失的演员头像", "演员姓名", "N(次数)")
+    # Todo 改成注释
     config_actor.add_section("说明")
     config_actor.set("说明", "上面的“演员姓名 = N(次数)”的表达式", "后面的N数字表示你有N部(次)影片都在找她的头像，可惜找不到")
     config_actor.set("说明", "你可以去保存一下她的头像jpg到“演员头像”文件夹", "以后就能保存她的头像到影片的文件夹了")
-    config_actor.write(open('actors_for_kodi.ini', "w", encoding='utf-8-sig'))
+    config_actor.write(open(Const.INI_ACTOR, "w", encoding='utf-8-sig'))
     input('    >“actors_for_kodi.ini”重写成功！')
 except:
     print(format_exc())

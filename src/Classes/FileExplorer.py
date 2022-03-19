@@ -1,19 +1,21 @@
 # -*- coding:utf-8 -*-
 import os
-from os import sep  # 系统路径分隔符
+from os import sep
 import re
 
 from Classes.Model.JavFile import JavFile
-from Config import Ini
-from Errors import CustomClassifyTargetDirError
-from Functions.Progress.Prepare import get_suren_cars
+from Classes.Config import Ini
+from Classes.Errors import CustomClassifyTargetDirError
+from Const import Const
 from Functions.Metadata.Car import find_car_fc2, find_car_youma
 
 
-# 设置
 class FileExplorer(object):
-    """磁盘文件检索器\n
-    在磁盘中搜索发现jav视频文件，构建javFile对象"""
+    """
+    磁盘文件检索器
+
+    在磁盘中搜索发现jav视频文件，构建javFile对象
+    """
 
     def __init__(self, ini: Ini):
         self._pattern = ini.pattern
@@ -24,7 +26,7 @@ class FileExplorer(object):
         """归类是针对【文件夹】而不是【文件】"""
         self._need_rename_folder = ini.need_rename_folder
         """需要重命名文件夹或创建新的独立文件夹"""
-        self._dir_custom_classify_target = ini.dir_custom_classify_target
+        self._dir_custom_classify_target = ini.dir_custom_classify_root
         """归类的根目录"""
         self._tuple_video_types = ini.tuple_video_types
         """视频文件类型"""
@@ -32,13 +34,13 @@ class FileExplorer(object):
         """视频文件名中多余的、干扰车牌的文字"""
 
         # region 本次程序启动通用
-        self._list_suren_cars = get_suren_cars()
+        self._list_suren_cars = self._get_suren_cars()
         """素人车牌前缀\n\n如果当前处理模式是youma、wuma，让程序能跳过这些素人车牌"""
-        self._need_rename_folder = self.judge_need_rename_folder()
+        self._need_rename_folder = self._judge_need_rename_folder()
         """是否需要重命名文件夹"""
         # endregion
 
-        # region 每次新选择文件夹通用
+        # region 每次选择文件夹通用
         self._dir_choose = ''
         """用户此次选择的文件夹"""
         self._dir_classify_target = ''
@@ -46,7 +48,7 @@ class FileExplorer(object):
         self._no_current = 0
         """当前视频（包括非jav）的编号\n\n用于显示进度、获取当前文件夹内视频数量"""
         self._sum_videos_in_choose_dir = 0
-        """此次所选文件夹内视频总数"""
+        """此次所选文件夹内需处理视频总数"""
         # endregion
 
         # region 主程序for循环的每一级文件夹通用
@@ -60,13 +62,15 @@ class FileExplorer(object):
         """主程序for循环所处的这一级文件夹包含的视频总数\n\n用于判断这一级文件夹是否是独立文件夹"""
         # endregion
 
-    # region 文件夹变化后的重置
-    def rest_when_choose(self, dir_choose:str):
-        """用户选择新文件夹后重置类实例属性\n
+    # region 每次选择文件夹后的重置
+    def rest_when_choose(self, dir_choose: str):
+        """
+        用户每次选择文件夹后重置类实例属性\
+
         Args:
-            dir_choose: 用户新选择的文件夹路径
+            dir_choose: 用户选择的文件夹路径
         Returns:
-            void; 更新实例属性
+            void
         """
         self._dir_choose = dir_choose
         # self.dir_classify_target = ''  通过check_classify_target_directory重置
@@ -74,22 +78,28 @@ class FileExplorer(object):
         self._no_current = 0
         self._sum_videos_in_choose_dir = self.count_num_videos()
 
-    def rest_current_dir(self, dir_current:str):
-        """主程序for循环，每进入新一级文件夹的重置\n
+    def rest_current_dir(self, dir_current: str):
+        """
+        主程序for循环，每进入新一级文件夹的重置
+
         Args:
             dir_current: 当前所处文件夹
         Returns:
-            void; 更新实例属性
+            void
         """
         self._dir_current = dir_current
         self._dict_subtitle_file = {}
         self._dict_car_episode = {}
         self._sum_videos_in_current_dir = 0
+
     # endregion
 
-    # region 修改文件夹
-    def judge_need_rename_folder(self):
-        """判断到底要不要 重命名文件夹或者创建新的文件夹\n
+    def _judge_need_rename_folder(self):
+        """
+        判断到底要不要 重命名文件夹或者创建新的文件夹
+
+        用户可能选择了不修改文件夹，但选择了归类，那么仍需要修改文件夹
+
         Returns:
             bool
         """
@@ -100,12 +110,13 @@ class FileExplorer(object):
             if self._need_rename_folder:  # 但是用户本来就在ini中写了要重命名文件夹
                 return True
         return False
-    # endregion
 
     def check_classify_target_directory(self):
-        """检查“用户设置的归类根目录”的合法性\n
+        """
+        检查用户设置的“归类根目录”的合法性
+
         Returns:
-            void; update实例属性
+            void
         """
         # 检查 归类根目录 的合法性
         if self._need_classify:
@@ -118,7 +129,8 @@ class FileExplorer(object):
                 # 用户输入的路径 不是 所选文件夹
                 if dir_custom_classify_target != self._dir_choose:
                     if dir_custom_classify_target[:2] != self._dir_choose[:2]:
-                        raise CustomClassifyTargetDirError(f'归类的根目录: 【{dir_custom_classify_target}】与所选文件夹不在同一磁盘，无法归类！请修正！')
+                        raise CustomClassifyTargetDirError(
+                            f'归类的根目录: 【{dir_custom_classify_target}】与所选文件夹不在同一磁盘，无法归类！请修正！')
                     if not os.path.exists(dir_custom_classify_target):
                         raise CustomClassifyTargetDirError(f'归类的根目录: 【{dir_custom_classify_target}】不存在！无法归类！请修正！')
                     self._dir_classify_target = dir_custom_classify_target
@@ -129,11 +141,13 @@ class FileExplorer(object):
             self._dir_classify_target = ''
 
     def init_dict_subtitle_file(self, list_sub_files: list):
-        """收集文件们中的字幕文件，存储在self.dict_subtitle_file\n
+        """
+        收集文件中的字幕文件，存储在self.dict_subtitle_file
+
         Args:
             list_sub_files: (当前一级文件夹的)子文件们
         Returns:
-            void; 更新self._dict_subtitle_file
+            void
         """
         for file_raw in list_sub_files:
             file_temp = file_raw.upper()
@@ -157,15 +171,15 @@ class FileExplorer(object):
                 if subtitle_car:
                     self._dict_subtitle_file[file_raw] = subtitle_car
 
-    # 功能:
-    # 参数: list_sub_files（当前文件夹的）子文件们
-    # 返回: list_jav_files；更新self.dict_car_episode
-    # 辅助: JavFile
-    def get_list_jav_files(self, list_sub_files):
-        """发现jav视频文件\n
-        找出list_sub_files中的jav视频文件，实例每一个jav视频文件为javfile对象，存储为list\n
+    def get_list_jav_files(self, list_sub_files: list):
+        """
+        发现jav视频文件
+
+        找出list_sub_files中的jav视频文件，实例每一个jav视频文件为javfile对象，存储为list
+
         Args:
             list_sub_files: (当前所处一级文件夹的)子文件们
+
         Returns:
             list <JavFile>
         """
@@ -207,11 +221,13 @@ class FileExplorer(object):
                     print(f'>>无法处理: {self._dir_current[len(self._dir_choose):]}{sep}{file_raw}')
         return list_jav_files
 
-    # 功能：所选文件夹总共有多少个视频文件
-    # 参数：用户选择整理的文件夹路径root_choose，视频类型后缀集合tuple_video_type
-    # 返回：无
-    # 辅助：os.walk
     def count_num_videos(self):
+        """
+        所选文件夹总共有多少个视频文件
+
+        Returns:
+            void
+        """
         num_videos = 0
         len_choose = len(self._dir_choose)
         for root, dirs, files in os.walk(self._dir_choose):
@@ -224,28 +240,31 @@ class FileExplorer(object):
 
     def init_jav_file_episodes(self, list_jav_files: list):
         """
+        更新list_jav_files中每一个jav有多少cd
 
-        更新list_jav_files中每一个jav有多少cd（用于“多cd命名”“判定处理完最后一个cd后允许重命名文件夹等操作”。）
+        用于“多cd命名”“判定处理完最后一个cd后允许重命名文件夹”等操作。
 
         Args:
             list_jav_files: (当前所处文件夹的子一级包含的)jav视频文件们
 
         Returns:
-            void; 更新list_jav_files
-
+            void
         """
         for jav_file in list_jav_files:
             jav_file.Sum_all_episodes = self._dict_car_episode[jav_file.Car]
 
-    # 功能: 判定影片所在文件夹是否是独立文件夹，独立文件夹是指该文件夹仅用来存放该影片，不包含“.actors”"extrafanrt”外的其他文件夹
-    # 辅助: 无
     def judge_separate_folder(self, len_list_jav_files: int, list_sub_dirs: list):
         """
+        判定影片所在文件夹是否是独立文件夹
+
+        独立文件夹是指该文件夹仅用来存放该影片，不包含“.actors”"extrafanrt”外的其他文件夹
+
         Args:
-            len_list_jav_files: 当前所处文件夹包含的车牌数量
+            len_list_jav_files: （当前所处文件夹包含的）车牌数量
             list_sub_dirs:（当前所处文件夹包含的）子文件夹们
+
         Returns:
-            void; 设定JavFile.Bool_in_separate_folder=bool
+            void
         """
         # 当前文件夹下，车牌不止一个；还有其他非jav视频；有其他文件夹，除了演员头像文件夹“.actors”和额外剧照文件夹“extrafanart”；
         if len(self._dict_car_episode) > 1 or self._sum_videos_in_current_dir > len_list_jav_files:
@@ -259,4 +278,22 @@ class FileExplorer(object):
         return
 
     def sum_all_videos(self):
+        """所选文件夹中包含的需处理的视频总数量"""
         return self._sum_videos_in_choose_dir
+
+    @staticmethod
+    def _get_suren_cars():
+        """
+        得到素人车牌集合
+
+        Returns:
+            list 素人车牌
+        """
+        try:
+            with open(Const.TXT_SUREN_CARS, 'r', encoding="utf-8") as f:
+                list_suren_cars = list(f)
+        except:
+            input(f'“{Const.TXT_SUREN_CARS}”读取失败！')
+        list_suren_cars = [i.strip().upper() for i in list_suren_cars if i != '\n']
+        # print(list_suren_cars)
+        return list_suren_cars

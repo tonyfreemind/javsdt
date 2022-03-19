@@ -25,7 +25,7 @@ from Functions.Utils.JsonUtility import read_json_to_dict
 
 
 # region（1）准备全局工具
-ini = Ini(Const.youma)
+ini = Ini(Const.YOUMA)
 fileExplorer = FileExplorer(ini)
 fileAnalyzer = FileAnalyzer(ini)
 javDb = JavDb(ini)
@@ -90,7 +90,7 @@ while not input_key:
                 # region（3.2.2.1）当前进度
                 print(f'>> [{jav_file.No}/{fileExplorer.sum_all_videos()}]:{jav_file.Name}')
                 print(f'    >发现车牌: {jav_file.Car}')
-                logger.path_relative = jav_file.Path[len(dir_choose):]  # 影片的相对于所选文件夹的路径，用于报错
+                logger.update_relative_path(jav_file.Path[len(dir_choose):])  # 影片的相对于所选文件夹的路径，用于报错
                 # endregion
 
                 dir_prefs_jsons = f'{dir_pwd_father}{sep}【重要须备份】已整理的jsons{sep}{jav_file.Pref}{sep}'
@@ -183,7 +183,7 @@ while not input_key:
                 standard.rename_folder(jav_file)
 
                 # 更新一下path_relative
-                logger.path_relative = f'{sep}{jav_file.Path.replace(dir_choose, "")}'  # 影片的相对于所选文件夹的路径，用于报错
+                logger.update_relative_path(f'{sep}{jav_file.Path.replace(dir_choose, "")}')  # 影片的相对于所选文件夹的路径，用于报错
 
                 # 4写入nfo【独特】
                 standard.write_nfo(jav_file, jav_model, genres)

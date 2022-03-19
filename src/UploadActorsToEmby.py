@@ -7,8 +7,10 @@ from json import loads
 from os.path import exists
 
 # 检查“演员头像”文件夹是否就绪
-if not exists('演员头像'):
-    input('\n“演员头像”文件夹丢失！请把它放进exe的文件夹中！\n')
+from Const import Const
+
+if not exists(Const.FOLDER_ACTOR):
+    input('\n“{Const.folder_actor}”文件夹丢失！请把它放进exe的文件夹中！\n')
 # 读取配置文件，这个ini文件用来给用户设置emby网址和api id
 print('正在读取ini中的设置...')
 config_settings = RawConfigParser()
@@ -56,14 +58,14 @@ try:
     num_persons = len(list_persons)
     print(f'当前有{num_persons}个Person！\n')
     # 用户emby中的persons，在“演员头像”文件夹中，已有头像的，记录下来
-    f_txt = open("已收录的人员清单.txt", 'w', encoding="utf-8")
+    f_txt = open(Const.TXT_ACTORS_INCLUDED, 'w', encoding="utf-8")
     f_txt.close()
-    f_txt = open("未收录的人员清单.txt", 'w', encoding="utf-8")
+    f_txt = open(Const.TXT_ACTORS_NOT_INCLUDED, 'w', encoding="utf-8")
     f_txt.close()
     for dic_each_actor in list_persons:
         actor_name = dic_each_actor['Name']
         # 头像jpg/png在“演员头像”中的路径
-        actor_pic_path = f'演员头像{sep}{actor_name[0]}{sep}{actor_name}'
+        actor_pic_path = f'{Const.FOLDER_ACTOR}{sep}{actor_name[0]}{sep}{actor_name}'
         if exists(f'{actor_pic_path}.jpg'):
             actor_pic_path = f'{actor_pic_path}.jpg'
             header = {"Content-Type": 'image/jpeg', }
@@ -72,13 +74,13 @@ try:
             header = {"Content-Type": 'image/png', }
         else:
             print('>>暂无头像: ', actor_name)
-            f_txt = open("未收录的人员清单.txt", 'a', encoding="utf-8")
+            f_txt = open(Const.TXT_ACTORS_NOT_INCLUDED, 'a', encoding="utf-8")
             f_txt.write(f'{actor_name}\n')
             f_txt.close()
             num_fail += 1
             continue
         # emby有某个演员，“演员头像”文件夹也有这个演员的头像，记录一下
-        f_txt = open("已收录的人员清单.txt", 'a', encoding="utf-8")
+        f_txt = open(Const.TXT_ACTORS_INCLUDED, 'a', encoding="utf-8")
         f_txt.write(f'{actor_name}\n')
         f_txt.close()
         # emby有某个演员，已经有他的头像，不再进行下面“上传头像”的操作
