@@ -1,9 +1,13 @@
 # -*- coding:utf-8 -*-
 import os
+import re
 from os import sep
 
 
 # 每一部jav的“结构体”
+from Car import get_suf_from_car
+
+
 class JavFile(object):
     """
     一部影片在用户本地的文件结构
@@ -11,16 +15,23 @@ class JavFile(object):
     包含文件名、文件路径、是否有中文字幕等属性
     """
 
-    def __init__(self, car: str, car_id: str, file_raw: str, dir_current: str, episode: int, subtitle: str,
+    def __init__(self, car: str, file_raw: str, dir_current: str, episode: int, subtitle: str,
                  no_current: int):
+        # Todo 是否需要在流程中修正car，Car_id，Car_search是否置为property
         self.Car = car
         """1 车牌"""
 
-        self.Car_id = car_id
-        """2 去bus和arzon搜索的车牌\n\n 不同在于Car_id是26ID-xxx，Car是ID-26xxx，ID这类车牌的命名在各大网站有分歧"""
+        self.Car_id = self._car_id()
+        """2 ID放前面的车牌\n\nCar是ID-26xxx，Car_id则是26ID-xxx，db和library是前者，bus和arzon是后者"""
 
-        self.Pref = car.split('-')[0]
-        """3 车牌前缀"""
+        self.Car_search = self._car_search()
+        """2 搜索用的车牌\n\nCar是ID-26xxx，Car_search则是26IDxxx，用于bus和arzon搜索"""
+
+        self.Pref = self.Car.split('-')[0]
+        """3 车牌前缀\n\n例如IPZ"""
+
+        self.Suf = get_suf_from_car(self.Car)
+        """3 车牌后缀\n\n纯数字，例如ABC-123z的123"""
 
         self.Name = file_raw
         """4 完整文件名\n\n例如ABC-123-cd2.mp4，会在重命名过程中发生变化"""
@@ -29,7 +40,7 @@ class JavFile(object):
         """5 视频文件扩展名\n\n例如.mp4、.wmv"""
 
         self.Dir = dir_current
-        """6 视频所在文件夹的路径\n\n例如D:\\MyData\\测试\\DV-1594【朝日奈あかり】，会在重命名过程中发生变化"""
+        """6 视频所在文件夹的路径\n\n例如D:\\\\MyData\\\\测试\\\\DV-1594【朝日奈あかり】，会在重命名过程中发生变化"""
 
         self.Episode = episode
         """7 第几集\n\n一部时间较长的影片可能被分为多部份，例如cd1 cd2 cd3的1 2 3"""
@@ -79,3 +90,12 @@ class JavFile(object):
     def Path_subtitle(self):
         """字幕文件完整路径"""
         return f'{self.Dir}{sep}{self.Subtitle}'
+
+    def _car_id(self):
+        if carg := re.search(r'ID-(\d\d)(\d+)', self.Car):
+            return f'{carg.group(1)}ID-{carg.group(2)}'
+        else:
+            return self.Car
+
+    def _car_search(self):
+        return self.Car_id.replace("-", "")

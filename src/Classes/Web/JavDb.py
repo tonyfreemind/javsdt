@@ -1,157 +1,79 @@
 # -*- coding:utf-8 -*-
-from configparser import RawConfigParser
-from math import ceil
 import re
 from lxml import etree
-
 import requests
 # from traceback import format_exc
-import Config
-from Functions.Metadata.Car import extract_number_from_car_suf, extract_number_from_car
-from Classes.Enums import ScrapeStatusEnum
-from Classes.Errors import SpecifiedUrlError
 
-# 设置
-from Genre import better_dict_genres, prefect_genres
+from Classes.Config import Ini
+from Classes.Enums import ScrapeStatusEnum
+from Classes.Errors import SpecifiedUrlError, DbCodePageNothingError, InRangeButDbNotFoundError
 from Classes.Model.JavData import JavData
 from Classes.Model.JavFile import JavFile
+from Classes.Const import Const
+from Functions.Metadata.Genre import better_dict_genres, prefect_genres
+from Functions.Metadata.Car import extract_number_from_car_suf, get_suf_from_car
 
 
 class JavDb(object):
-    def __init__(self, settings: Config.Ini):
-        self.url = settings.url_db
-        self.proxies = settings.proxy_db
-        self.dict_genres = better_dict_genres("db", settings.to_language)
+    """
+    javbus刮削工具
 
-    # 请求jav在javdb上的网页，返回html
-    def get_html(self, url: str):
-        headers = {
+    获取网址、封面、系列、特征
+    """
+
+    def __init__(self, settings: Ini):
+        self._URL = settings.url_db
+        """db网址"""
+
+        self._PROXIES = settings.proxy_db
+        """db使用代理"""
+
+        self._DICT_GENRES = better_dict_genres("db", settings.to_language)
+        """优化后的db genres"""
+
+        self._HEADERS = {
             "user-agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) "
                           "Chrome/86.0.4240.198 Safari/537.36",
             "accept-encodin": "gzip, deflate, br",
         }
-        for retry in range(1, 11):
+        """db的请求头\n\ndb会检查"""
+
+        self._item = Const.CAR_DEFAULT
+        """车牌在bus上的网址item\n\n例如ABC-123_2011-11-11，如果刮削成功则将它更新为正确值，交给jav_model"""
+
+    def _get_html(self, url: str):
+        """获取html"""
+        for _ in range(10):
             try:
-                if self.proxies:
-                    rqs = requests.get(url, headers=headers, proxies=self.proxies, timeout=(6, 7))
+                if self._PROXIES:
+                    rqs = requests.get(url, headers=self._HEADERS, timeout=(6, 7), proxies=self._PROXIES)
                 else:
-                    rqs = requests.get(url, headers=headers, timeout=(6, 7))
+                    rqs = requests.get(url, headers=self._HEADERS, timeout=(6, 7))
             except requests.exceptions.ProxyError:
                 # print(format_exc())
-                print('    >通过局部代理失败，重新尝试...')
+                print(Const.PROXY_ERROR_TRY_AGAIN)
                 continue
             except:
                 # print(format_exc())
-                print(f'    >打开网页失败，重新尝试...{url}')
+                print(f'{Const.REQUEST_ERROR_TRY_AGAIN}{url}')
                 continue
             rqs.encoding = 'utf-8'
             rqs_content = rqs.text
+            if re.search(r'成人影片數據庫', rqs_content) or re.search(r'頁面未找到', rqs_content):
+                return rqs_content
+            # Todo 很可能遇到cf
             # print(rqs_content)
-            if re.search(r'成人影片數據庫', rqs_content):
-                return rqs_content
-            elif re.search(r'頁面未找到', rqs_content):
-                return rqs_content
-            else:
-                print(rqs_content)
-                print('    >打开网页失败，空返回...重新尝试...')
-                continue
-        input(f'>>请检查你的网络环境是否可以打开: {url}')
+            print(Const.HTML_NOT_TARGET_TRY_AGAIN)
+        input(f'{Const.PLEASE_CHECK_URL}{url}')
 
     def scrape(self, jav_file: JavFile, jav_data: JavData):
-        # 用户指定了网址，则直接得到jav所在网址
-        if '仓库' in jav_file.Name:
-            url_appointg = re.search(r'仓库(\w+?)\.', jav_file.Name)
-            if url_appointg:
-                javdb = url_appointg.group(1)
-                url_jav_db = f'{self.url}/v/{javdb}'
-                html_jav_db = self.get_html(url_jav_db)
-                if re.search(r'頁面未找到', html_jav_db):
-                    raise SpecifiedUrlError(f'你指定的javdb网址找不到jav: {url_jav_db}，')
-            else:
-                # 指定的javlibrary网址有错误
-                raise SpecifiedUrlError(f'你指定的javdb网址有错误: ')
 
-        # 用户没有指定网址，则去搜索
-        else:  # https://javdb9.com/video_codes/PKPD
-            # 当前车牌的车头、车尾
-            pref_current, suf_current = jav_file.Car.split("-")
-            suf_current = int(extract_number_from_car_suf(suf_current))  # 去除车尾 末尾可能存在的字母
-            # 车头的第一页
-            url_pref = f'{self.url}/video_codes/{pref_current}'
-            html_pref = self.get_html(url_pref)
-            # 第一页上的所有box
-            list_cars = etree.HTML(html_pref).xpath('//*[@id="videos"]/div/div[*]/a/div[2]/text()')
-            # javdb没有该车头的页面
-            if not list_cars:
-                return ScrapeStatusEnum.db_not_found
-            else:
-                # 第一页的末尾，即最小suf
-                suf_min = int(extract_number_from_car(list_cars[-1]))
-                # 预估 当前车尾 和 第一页的最小车尾 的差距，在第几页
-                no_page = (suf_min - suf_current) // 40 + 2 if suf_min > suf_current else 1
-                # 预估当前车牌 所在页面
-                if no_page > 1:
-                    url_page = f'{self.url}/video_codes/{pref_current}?page={no_page}'
-                    html_pref = self.get_html(url_page)
-                    list_cars = etree.HTML(html_pref).xpath('//*[@id="videos"]/div/div[*]/a/div[2]/text()')
-                # 预估的页面的最小和最大suf
-                if list_cars:
-                    suf_min_n = int(extract_number_from_car(list_cars[-1]))
-                    suf_max_n = int(extract_number_from_car(list_cars[0]))
-                # 预估的页面已经超出范围，比如实际只有10页，预估到12页。
-                else:
-                    # 防止预估的no_page太大，比如HODV-21301
-                    if no_page > 100:
-                        no_page = 100
-                    # 往前推,直至找到最后有数据的那一页
-                    while True:
-                        no_page -= 1
-                        url_page = f'{self.url}/video_codes/{pref_current}?page={no_page}'
-                        # print(url_page)
-                        html_pref = self.get_html(url_page)
-                        list_cars = etree.HTML(html_pref).xpath('//*[@id="videos"]/div/div[*]/a/div[2]/text()')
-                        if list_cars:
-                            # 将往前推的、第一个有数据的这一页,作为预估的页面,取最小和最大suf
-                            suf_min_n = int(extract_number_from_car(list_cars[-1]))
-                            suf_max_n = int(extract_number_from_car(list_cars[0]))
-                            break
-                # 在预估页面中
-                if suf_max_n >= suf_current >= suf_min_n:
-                    no_target = self.find_code_index(suf_current, list_cars)
-                    if not no_target:
-                        return ScrapeStatusEnum.db_not_found
-                    javdb = etree.HTML(html_pref).xpath(f'//*[@id="videos"]/div/div[{no_target}]/a/@href')[0][3:]
-                else:
-                    # 如果比 预估页面 的最小车尾 还小，页码依次往后+1；如果比 预估页面 的最大车尾 还大，页码依次往前-1
-                    one = 1 if suf_current < suf_min_n else -1
-                    while True:
-                        no_page += one
-                        if no_page == 0:
-                            return ScrapeStatusEnum.db_not_found
-                        url_page_next = f'{self.url}/video_codes/{pref_current}?page={no_page}'
-                        html_pref_next = self.get_html(url_page_next)
-                        list_cars_next = etree.HTML(html_pref_next).xpath(
-                            '//*[@id="videos"]/div/div[*]/a/div[2]/text()')
-                        # 这一页已经没有内容了
-                        if not list_cars_next:
-                            return ScrapeStatusEnum.db_not_found
-                        # 有内容,匹配下
-                        no_target = self.find_code_index(suf_current, list_cars_next)
-                        # 找到了退出
-                        if no_target:
-                            javdb = etree.HTML(html_pref_next).xpath(f'//*[@id="videos"]/div/div[{no_target}]/a/@href')[
-                                        0][3:]
-                            break
-                        # 当前车牌suf在这一首尾之间,但还是找不到,则退出
-                        suf_min_next = int(extract_number_from_car(list_cars_next[-1]))
-                        suf_max_next = int(extract_number_from_car(list_cars_next[0]))
-                        if suf_current in range(suf_min_next, suf_max_next + 1):
-                            return ScrapeStatusEnum.db_not_found
+        javdb = self._find_target_item(jav_file.Name, jav_file.Car_id)
 
         # 得到 javdb
-        url_jav_db = f'{self.url}/v/{javdb}'
+        url_jav_db = f'{self._URL}/v/{javdb}'
         print('    >前往javdb: ', url_jav_db)
-        html_jav_db = self.get_html(url_jav_db)
+        html_jav_db = self._get_html(url_jav_db)
         # <title> BKD-171 母子交尾 ～西会津路～ 中森いつき | JavDB 成人影片資料庫及磁鏈分享 </title>
         car_title = re.search(r'title> (.+) \| JavDB', html_jav_db).group(1)
         list_car_title = car_title.split(' ', 1)
@@ -191,12 +113,179 @@ class JavDb(object):
         # print('    >演员: ', actors)
         # 特征 /tags?c7=8">精选、综合</a>
         genres = re.findall(r'tags.+?">(.+?)</a>', html_jav_db)
-        jav_data.Genres.append(prefect_genres(self.dict_genres, genres))
+        jav_data.Genres.append(prefect_genres(self._DICT_GENRES, genres))
         return ScrapeStatusEnum.success
 
-    @staticmethod
-    def find_code_index(suf_current, list_cars):
-        for i, suf_str in enumerate(list_cars):
-            if int(extract_number_from_car(suf_str)) == suf_current:
-                return i + 1  # 第几个，在list的下标基础上+1
-        return ''
+    def _find_target_item(self, name: str, car: str):
+        """
+        获取车牌所在html
+
+        三种方式直至成功找到html：(1)用户指定，则用指定网址；(2)直接访问 网址+车牌；（3）搜索车牌。
+
+        Args:
+            name: 视频文件名
+            car: 当前处理的车牌
+
+        Returns:
+            html
+        """
+        return (
+            self._appoint(name)
+            if '仓库' in name
+            else self._iterate(car)
+        )
+
+    def _appoint(self, name: str):
+        """
+        从用户指定的网址中获取目标html
+
+        用户将视频命名为“ABC-123公交车DEF-456_2011-11-11.mp4"，即指定为”https://www.buscdn.me/DEF-456_2011-11-11"。
+
+        Args:
+            name: 视频文件名
+
+        Returns:
+            目标html
+        """
+        car_appointg = re.search(r'仓库(\w+?)\.', name)
+        if not car_appointg:
+            raise SpecifiedUrlError(f'{Const.SPECIFIED_FORMAT_ERROR} {type(self).__name__} {name}')
+        car_appoint = car_appointg.group(1)
+        url_appoint = f'{self._URL}/v/{car_appoint}'
+        html_appoint = self._get_html(url_appoint)
+        if re.search(r'頁面未找到', html_appoint):
+            raise SpecifiedUrlError(f'{Const.SPECIFIED_URL_ERROR} {url_appoint}，')
+        self._item = car_appoint
+        return html_appoint
+
+    def _iterate(self, pref: str, suf: int):
+        """
+        遍历video_codes网页找出目标html
+
+        Args:
+            pref: ABC-123z的ABC
+            suf: ABC-123z的123
+
+        Returns:
+
+        """
+
+        no_page = 1  # 先从首页开始
+        """当前车牌 预估在第几页"""
+
+        # region 预估当前车牌在第几页
+        # 先看看首页的车尾
+        tuple_temp = self._find_suf_min_max_in_page(self._url_page(pref, no_page))
+        # javdb没有该车头的页面
+        if not tuple_temp:
+            raise
+        suf_min, suf_max = tuple_temp
+        # 通过 当前车尾 和 首页的最小车尾 的差距，除以40一页，预估在第几页
+        no_page = (suf_min - suf) // 40 + 2 if suf_min > suf else 1
+        # endregion
+
+        # region 车牌在预估页面之前还是之后
+        if no_page != 1:
+            # 不是首页，访问预估页面，找到最小和最大车尾
+            if tuple_temp := self._find_suf_min_max_in_page(self._url_page(pref, no_page)):
+                suf_min, suf_max = tuple_temp
+            # 预估的页面找不到数据，即已经超出范围，比如实际只有10页，预估到12页。
+            else:
+                # 防止预估的no_page太大，比如HODV-21301
+                no_page = min(no_page, 100)
+                # 往前推，直至找到最后有数据的那一页
+                while True:
+                    no_page -= 1
+                    if tuple_temp := self._find_suf_min_max_in_page(self._url_page(pref, no_page)):
+                        suf_min, suf_max = tuple_temp
+                        break
+        # 如果比 预估页面 的最小车尾 还小，往下一页找，否则往前一页找。
+        one = 1 if suf < suf_min else -1
+        # endregion
+
+        # region 从预估页面开始，一页一页查找
+        while True:
+
+            # 比首页收录的最大车牌还大，找不到
+            if no_page == 0:
+                raise
+
+            # 在当前页面查找item
+            try:
+                item = self._find_target_item_in_page(self._url_page(pref, no_page), suf)
+            except RuntimeError:
+                # 走到尾也找不到；虽然在页面车尾范围内，但也找不到。
+                raise
+
+            # 找到了
+            if item:
+                return item
+
+            # 页码往后(或往前）推一页
+            no_page += one
+        # endregion
+
+    def _find_suf_min_max_in_page(self, url_page: str):
+        """
+        查找第no_page页上的最小和最大车尾
+
+        Args:
+            pref: 车头
+            no_page: 第几页
+
+        Returns:
+            最小车尾，最大车尾
+        """
+        html_pref = self._get_html(url_page)
+        # Todo xpath直接取第一个和最后一个
+        if list_cars := etree.HTML(html_pref).xpath(Const.XPATH_DB_CARS):
+            suf_min = int(get_suf_from_car(list_cars[-1]))
+            suf_max = int(get_suf_from_car(list_cars[0]))
+            return suf_min, suf_max
+        else:
+            return None
+
+    def _find_target_item_in_page(self, url_page: str, suf: int):
+        """
+        在当前页面查找目标item
+
+        Raises:
+            当前页面无内容；suf不在车尾范围内
+
+        Args:
+            url_page: 车头的某一页网址
+            suf: 当前处理的车牌的车尾，例如ABC-123z的123
+
+        Returns:
+            成功找到，返回item；不在车尾范围内（需要去下一页），返回空。
+        """
+
+        html_pref = self._get_html(url_page)
+        html_tree = etree.HTML(html_pref)
+        list_cars = html_tree.xpath(Const.XPATH_DB_CARS)
+
+        # 这一页已经没内容了
+        if not list_cars:
+            raise
+
+        suf_min = int(get_suf_from_car(list_cars[-1]))
+        suf_max = int(get_suf_from_car(list_cars[0]))
+        if not suf_max >= suf >= suf_min:
+            return ''
+        for i, car in enumerate(list_cars):
+            if int(get_suf_from_car(car)) == suf:
+                return html_tree.xpath(f'//*[@id="videos"]/div/div[{i + 1}]/a/@href')[0][3:]
+        raise
+
+    def _url_page(self, pref: str, no_page: int):
+        """
+        车头的某一页网址
+
+        Args:
+            pref: 车头，例如ABC
+            no_page: 第几页
+
+        Returns:
+            网址
+        """
+        return f'{self._URL}/video_codes/{pref}?page={no_page}'

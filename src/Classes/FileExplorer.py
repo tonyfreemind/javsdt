@@ -207,13 +207,8 @@ class FileExplorer(object):
                         del self._dict_subtitle_file[subtitle_file]
                     else:
                         subtitle_file = ''
-                    carg = re.search(r'ID-(\d\d)(\d+)', car)
-                    if carg:
-                        car_id = f'{carg.group(1)}ID-{carg.group(2)}'
-                    else:
-                        car_id = car
                     # 将该jav的各种属性打包好，包括原文件名带扩展名、所在文件夹路径、第几集、所属字幕文件名
-                    jav_struct = JavFile(car, car_id, file_raw, self._dir_current, self._dict_car_episode[car],
+                    jav_struct = JavFile(car, file_raw, self._dir_current, self._dict_car_episode[car],
                                          subtitle_file,
                                          self._no_current)
                     list_jav_files.append(jav_struct)

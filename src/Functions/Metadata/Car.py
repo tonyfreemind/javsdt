@@ -103,7 +103,7 @@ def extract_number_from_car_suf(suf):
     return re.search(r'(\d+)\w*', suf).group(1)
 
 
-def extract_number_from_car(car):
+def get_suf_from_car(car):
     if '-' in car:
         return re.search(r'-(\d+)\w*', car).group(1)
     else:

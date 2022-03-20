@@ -6,7 +6,7 @@ import requests
 
 # 用户指定jav321的网址后，请求jav所在网页，返回html
 def get_321_html(url, proxy):
-    for retry in range(10):
+    for _ in range(10):
         try:
             if proxy:
                 rqs = requests.get(url, proxies=proxy, timeout=(6, 7))
@@ -25,13 +25,12 @@ def get_321_html(url, proxy):
             return rqs_content
         else:
             print('    >打开网页失败，空返回...重新尝试...')
-            continue
     input(f'>>请检查你的网络环境是否可以打开: {url}')
 
 
 # 向jav321 post车牌，得到jav所在网页，也可能是无结果的网页，返回html
 def post_321_html(url, data, proxy):
-    for retry in range(10):
+    for _ in range(10):
         try:
             if proxy:
                 rqs = requests.post(url, data=data, proxies=proxy, timeout=(6, 7))
@@ -51,5 +50,4 @@ def post_321_html(url, data, proxy):
             return rqs_content
         else:
             print('    >打开网页失败，空返回...重新尝试...')
-            continue
     input(f'>>请检查你的网络环境是否可以打开: {url}')

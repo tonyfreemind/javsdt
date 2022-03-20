@@ -126,6 +126,10 @@ class Const(object):
     REQUEST_ERROR_TRY_AGAIN = '    >打开网页失败，重新尝试...'
     HTML_NOT_TARGET_TRY_AGAIN = '    >打开网页失败，空返回...重新尝试...'
     PLEASE_CHECK_URL = '>>请检查你的网络环境是否可以打开: '
+    ARZON_EXIST_BUT_NO_PLOT = '【arzon有该影片，但找不到简介】'
+    ARZON_PLOT_NOT_FOUND = '【影片下架，暂无简介】'
+    SPECIFIED_FORMAT_ERROR = '你指定的网址的格式有问题:'
+    SPECIFIED_URL_ERROR = '你指定的网址找不到jav:'
     # endregion
 
     # region 本地文件
@@ -142,3 +146,8 @@ class Const(object):
 
     FOLDER_ACTOR = '演员头像'
     # endregion
+
+    # region 其他
+    CAR_DEFAULT = 'ABC-123'
+    XPATH_DB_CARS = '//*[@id="videos"]/div/div[*]/a/div[2]/text()'
+    # region
