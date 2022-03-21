@@ -4,6 +4,9 @@ from configparser import RawConfigParser
 from traceback import format_exc
 
 from Classes.Const import Const
+from JavBus import JavBus
+from JavDb import JavDb
+from JavLibrary import JavLibrary
 
 
 class Ini(object):
@@ -302,3 +305,16 @@ class Ini(object):
             for option in options:
                 dict_dest[option] = config.get(section, option)
         return dict_dest
+
+    def web_url_proxy(self, pattern):
+        """按模式返回网址"""
+        if pattern == type(JavBus).__name__:
+            return self.url_bus, self.proxy_bus
+        elif pattern == type(JavDb).__name__:
+            return self.url_db, self.proxy_db
+        elif pattern == type(JavLibrary).__name__:
+            return self.url_library, self.proxy_library
+        elif pattern == 'Jav321':
+            return '', self.proxy_321
+        else:
+            raise

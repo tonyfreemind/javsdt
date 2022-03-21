@@ -11,9 +11,10 @@ from Classes.Model.JavData import JavData
 from Classes.Model.JavFile import JavFile
 from Classes.Config import Ini
 from Functions.Metadata.Genre import better_dict_genres, prefect_genres
+from Classes.Web.JavWeb import JavWeb
 
 
-class JavBus(object):
+class JavBus(JavWeb):
     """
     javbus刮削工具
 
@@ -21,23 +22,14 @@ class JavBus(object):
     """
 
     def __init__(self, settings: Ini):
-        self._URL = settings.url_bus
-        """bus网址"""
-
-        self._PROXIES = settings.proxy_bus
-        """bus使用代理"""
-
-        self._DICT_GENRES = better_dict_genres('bus', settings.to_language)
-        """优化后的bus genres"""
-
-        self._HEADERS = {'Cookie': 'existmag=all'}
-        """bus的请求头\n\n为了获得所有影片，而不是默认的仅显示有磁力的链接"""
-
-        self._is_only: bool = True
-        """是否 刮削到唯一结果\n\n如果有多个结果，需警告用户"""
-
-        self._item = Const.CAR_DEFAULT
-        """车牌在bus上的网址item\n\n例如ABC-123_2011-11-11，如果刮削成功则将它更新为正确值，交给jav_model"""
+        pattern = type(self).__name__
+        headers = {'Cookie': 'existmag=all'}
+        super().__init__(
+            settings.web_url_proxy(pattern),
+            better_dict_genres(pattern, settings.to_language),
+            pattern,
+            headers
+        )
 
     def scrape(self, jav_file: JavFile, jav_model: JavData):
         """
@@ -116,7 +108,7 @@ class JavBus(object):
             self._appoint(name)
             if '公交车' in name
             else self._guess(car)
-            or self._search(car)
+                 or self._search(car)
         )
 
     def _appoint(self, name: str):
@@ -131,15 +123,15 @@ class JavBus(object):
         Returns:
             目标html
         """
-        car_appointg = re.search(r'公交车(.+?)\.', name)
-        if not car_appointg:
+        item_appointg = re.search(r'公交车(.+?)\.', name)
+        if not item_appointg:
             raise SpecifiedUrlError(f'{Const.SPECIFIED_FORMAT_ERROR} {type(self).__name__} {name}')
-        car_appoint = car_appointg.group(1)
-        url_appoint = f'{self._URL}/{car_appoint}'
+        item_appoint = item_appointg.group(1)
+        url_appoint = self._url_item(item_appoint)
         html_appoint = self._get_html(url_appoint)
         if re.search(r'404 Page', html_appoint):
             raise SpecifiedUrlError(f'{Const.SPECIFIED_URL_ERROR} {url_appoint}，')
-        self._item = car_appoint
+        self._item = item_appoint
         return html_appoint
 
     def _guess(self, car: str):
@@ -155,7 +147,7 @@ class JavBus(object):
             目标html
         """
         # jav在javbus上的url，一般就是javbus网址/车牌
-        url_guess = f'{self._URL}/{car}'
+        url_guess = self._url_item(car)
         print('    >前往javbus: ', url_guess)
         # 获得影片在javbus上的html
         html_guess = self._get_html(url_guess)
@@ -233,3 +225,15 @@ class JavBus(object):
         """开始处理时，重置状态"""
         self._is_only = True
         self._item = Const.CAR_DEFAULT
+
+    def _url_item(self, item: str):
+        """
+        一部jav在javbus上的网址
+
+        Args:
+            item: 影片在javdb上的代号，例如“4d5E6”
+
+        Returns:
+            网址，例如“https://javdb36.com/v/4d5E6”
+        """
+        return f'{self._URL}/{item}'
