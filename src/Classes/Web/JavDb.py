@@ -41,31 +41,6 @@ class JavDb(object):
         self._item = Const.CAR_DEFAULT
         """车牌在bus上的网址item\n\n例如ABC-123_2011-11-11，如果刮削成功则将它更新为正确值，交给jav_model"""
 
-    def _get_html(self, url: str):
-        """获取html"""
-        for _ in range(10):
-            try:
-                if self._PROXIES:
-                    rqs = requests.get(url, headers=self._HEADERS, timeout=(6, 7), proxies=self._PROXIES)
-                else:
-                    rqs = requests.get(url, headers=self._HEADERS, timeout=(6, 7))
-            except requests.exceptions.ProxyError:
-                # print(format_exc())
-                print(Const.PROXY_ERROR_TRY_AGAIN)
-                continue
-            except:
-                # print(format_exc())
-                print(f'{Const.REQUEST_ERROR_TRY_AGAIN}{url}')
-                continue
-            rqs.encoding = 'utf-8'
-            rqs_content = rqs.text
-            if re.search(r'成人影片數據庫', rqs_content) or re.search(r'頁面未找到', rqs_content):
-                return rqs_content
-            # Todo 很可能遇到cf
-            # print(rqs_content)
-            print(Const.HTML_NOT_TARGET_TRY_AGAIN)
-        input(f'{Const.PLEASE_CHECK_URL}{url}')
-
     def scrape(self, jav_file: JavFile, jav_data: JavData):
 
         javdb = self._find_target_item(jav_file.Name, jav_file.Car_id)
@@ -303,3 +278,16 @@ class JavDb(object):
             网址，例如“https://javdb36.com/v/4d5E6”
         """
         return f'{self._URL}/v/{item}'
+
+    @staticmethod
+    def _confirm_rsp(content: str):
+        """
+        检查是否是预期响应
+
+        Args:
+            content: html
+
+        Returns:
+            是否是预期响应
+        """
+        return bool(re.search(r'成人影片數據庫', content) or re.search(r'頁面未找到', content))

@@ -63,3 +63,30 @@ class PatternEnum():
     youma = 1
     wuma = 2
     suren = 3
+
+
+class ExcelColEnum(IntEnum):
+    """执行刮削的结果"""
+
+    JavDb = 0
+    """A列 db特征"""
+
+    JavLibrary = 1
+    """B列 library特征"""
+
+    JavBus = 2
+    """C列 bus特征"""
+
+    Zh = 3
+    """D列 简体中文"""
+
+    Cht = 4
+    """F列 繁体中文"""
+
+    def get_state(value: int):
+        for member in ExcelColEnum:
+            if value == member.value:
+                print(member)
+
+if __name__ == '__main__':
+    ExcelColEnum.get_state(1)

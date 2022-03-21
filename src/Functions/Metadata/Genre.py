@@ -1,6 +1,6 @@
 # -*- coding:utf-8 -*-
 import os
-import xlrd
+from openpyxl import load_workbook
 
 
 # 功能: 得到优化的特征字典
@@ -11,6 +11,7 @@ def better_dict_genres(website, to_language):
     # 返回一个字典 {'伴侶': '招待小姐'}
     dict_genres = {}
     # 使用哪一个网站的特征原数据 0 javdb，1 javlibrary， 2 javbus
+    # Todo 枚举=int
     if website == 'db':
         col = 0
     elif website == 'library':
@@ -24,8 +25,10 @@ def better_dict_genres(website, to_language):
     # 打开Excel文件
     path_xlsx = '【特征对照表】.xlsx' if os.path.exists('StaticFiles/【特征对照表】.xlsx') else '../../【特征对照表】.xlsx'
     # xlsxPath = '【特征对照表】.xlsx'
-    excel = xlrd.open_workbook(path_xlsx)
-    sheet = excel.sheet_by_name('有码')  # excel中的某一sheet
+    excel = load_workbook(filename=path_xlsx, read_only=True)
+    sheet = excel['有码']  # excel中的某一sheet
+    for row in sheet.rows:
+
     row = sheet.nrows  # 总行数
     for i in range(1, row):
         list_row = sheet.row_values(i)  # i行的list

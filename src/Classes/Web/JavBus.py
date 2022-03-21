@@ -22,14 +22,8 @@ class JavBus(JavWeb):
     """
 
     def __init__(self, settings: Ini):
-        pattern = type(self).__name__
         headers = {'Cookie': 'existmag=all'}
-        super().__init__(
-            settings.web_url_proxy(pattern),
-            better_dict_genres(pattern, settings.to_language),
-            pattern,
-            headers
-        )
+        super().__init__(settings, headers)
 
     def scrape(self, jav_file: JavFile, jav_model: JavData):
         """
@@ -65,31 +59,6 @@ class JavBus(JavWeb):
         jav_model.Genres.append(prefect_genres(self._DICT_GENRES, genres))
 
         return ScrapeStatusEnum.success if self._is_only else ScrapeStatusEnum.bus_multiple_search_results
-
-    def _get_html(self, url):
-        """获取html"""
-        for _ in range(10):
-            try:
-                if self._PROXIES:
-                    rqs = requests.get(url, headers=self._HEADERS, timeout=(6, 7), proxies=self._PROXIES)
-                else:
-                    rqs = requests.get(url, headers=self._HEADERS, timeout=(6, 7))
-            except requests.exceptions.ProxyError:
-                # print(format_exc())
-                print(Const.PROXY_ERROR_TRY_AGAIN)
-                continue
-            except:
-                # print(format_exc())
-                print(f'{Const.REQUEST_ERROR_TRY_AGAIN}{url}')
-                continue
-            rqs.encoding = 'utf-8'
-            rqs_content = rqs.text
-            if re.search(r'JavBus', rqs_content):
-                return rqs_content
-            # Todo 很可能遇到cf
-            # print(rqs_content)
-            print(Const.HTML_NOT_TARGET_TRY_AGAIN)
-        input(f'{Const.PLEASE_CHECK_URL}{url}')
 
     def _find_target_html(self, name: str, car: str):
         """
@@ -237,3 +206,16 @@ class JavBus(JavWeb):
             网址，例如“https://javdb36.com/v/4d5E6”
         """
         return f'{self._URL}/{item}'
+
+    @staticmethod
+    def _confirm_rsp(content: str):
+        """
+        检查是否是预期响应
+
+        Args:
+            content: html
+
+        Returns:
+            是否是预期响应
+        """
+        return bool(re.search(r'JavBus', content))

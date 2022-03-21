@@ -130,6 +130,7 @@ class Const(object):
     ARZON_PLOT_NOT_FOUND = '【影片下架，暂无简介】'
     SPECIFIED_FORMAT_ERROR = '你指定的网址的格式有问题:'
     SPECIFIED_URL_ERROR = '你指定的网址找不到jav:'
+    NO_ATTRIBUTE_ERROR = '方法还未实现'
     # endregion
 
     # region 本地文件
