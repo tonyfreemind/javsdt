@@ -123,7 +123,8 @@ class Ini(object):
 
             # region ######################################## 8代理 ########################################
             proxy = dict_ini[Const.PROXY]  # 代理端口
-            proxys = {'http': f'http://{proxy}', 'https': f'https://{proxy}'} \
+            # 这里的写法会把https也用http，因为clash等代理实际不支持https
+            proxys = {'http': f'http://{proxy}', 'https': f'http://{proxy}'} \
                 if dict_ini[Const.NEED_HTTP_OR_SOCKS5] == 'http' \
                 else {'http': f'socks5://{proxy}', 'https': f'socks5://{proxy}'}
             need_proxy = dict_ini[Const.NEED_PROXY] == '是' and proxy  # 代理，如果为空则不使用

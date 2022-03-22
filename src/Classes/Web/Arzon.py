@@ -59,7 +59,7 @@ class Arzon(object):
 
                 # 几个搜索结果查找完了，也没有找到简介
                 jav_model.Plot = Const.ARZON_EXIST_BUT_NO_PLOT
-                return ScrapeStatusEnum.arzon_exist_but_no_plot
+                return ScrapeStatusEnum.exist_but_no_want
 
             # 返回的页面实际是18岁验证，更新cookies，重新再来
             elif re.search(r'１８歳未満', html_search):
@@ -69,10 +69,10 @@ class Arzon(object):
             # 找不到
             else:
                 jav_model.Plot = Const.ARZON_PLOT_NOT_FOUND
-                return ScrapeStatusEnum.arzon_not_found
+                return ScrapeStatusEnum.not_found
 
         input(f'>>请检查你的网络环境是否可以通过成人验证: {self._URL}')
-        return ScrapeStatusEnum.interrupted
+        return ScrapeStatusEnum.failed
 
     def _update_cookies(self):
         """

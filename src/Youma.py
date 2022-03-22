@@ -106,15 +106,15 @@ while not input_key:
                     jav_model = JavData()
                     # region（3.2.2.2）从javdb获取信息
                     status = javDb.scrape(jav_file, jav_model)
-                    if status == ScrapeStatusEnum.db_not_found:
+                    if status == ScrapeStatusEnum.not_found:
                         logger.record_warn(f'javdb找不到该车牌的信息: {jav_file.Car}，')
                     # endregion
 
                     # region（3.2.2.3）从javlibrary获取信息
                     status = javLibrary.scrape(jav_file, jav_model)
-                    if status == ScrapeStatusEnum.library_not_found:
+                    if status == ScrapeStatusEnum.not_found:
                         logger.record_warn(f'javlibrary找不到该车牌的信息: {jav_file.Car}，')
-                    elif status == ScrapeStatusEnum.library_multiple_search_results:
+                    elif status == ScrapeStatusEnum.multiple_results:
                         logger.record_warn(f'javlibrary搜索到同车牌的不同视频: {jav_file.Car}，')
                     # endregion
 
@@ -124,20 +124,20 @@ while not input_key:
 
                     # region（3.2.2.4）前往javbus查找【封面】【系列】【特征】.py
                     status = javBus.scrape(jav_file, jav_model)
-                    if status == ScrapeStatusEnum.bus_multiple_search_results:
+                    if status == ScrapeStatusEnum.multiple_results:
                         logger.record_warn(f'部分信息可能错误，javbus搜索到同车牌的不同视频: {jav_file.Car_id}，')
-                    elif status == ScrapeStatusEnum.bus_not_found:
+                    elif status == ScrapeStatusEnum.not_found:
                         logger.record_warn(f'javbus有码找不到该车牌的信息: {jav_file.Car_id}，')
                     # endregion
 
                     # region（3.2.2.5）arzon找简介
                     status = arzon.scrape(jav_file, jav_model)
                     url_search_arzon = f'https://www.arzon.jp/itemlist.html?t=&m=all&s=&q={jav_file.Car_id.replace("-", "")}'
-                    if status == ScrapeStatusEnum.arzon_exist_but_no_plot:
+                    if status == ScrapeStatusEnum.exist_but_no_want:
                         logger.record_warn(f'找不到简介，尽管arzon上有搜索结果: {url_search_arzon}，')
-                    elif status == ScrapeStatusEnum.arzon_not_found:
+                    elif status == ScrapeStatusEnum.not_found:
                         logger.record_warn(f'找不到简介，影片被arzon下架: {url_search_arzon}，')
-                    elif status == ScrapeStatusEnum.interrupted:
+                    elif status == ScrapeStatusEnum.failed:
                         logger.record_warn(f'访问arzon失败，需要重新整理该简介: {url_search_arzon}，')
                     # endregion
 

@@ -1,3 +1,7 @@
+from enum import IntEnum
+from pyclbr import Class
+
+
 def convert_2dlist_to_dict(list_src: list):
     """
     将二维list转换为字典
@@ -10,10 +14,7 @@ def convert_2dlist_to_dict(list_src: list):
     Returns:
         目标字典
     """
-    dict_dest = {}
-    for list_sub in list_src:
-        dict_dest[list_sub[0]] = list_sub[1]
-    return dict_dest
+    return {list_sub[0]: list_sub[1] for list_sub in list_src}
 
 
 def cut_str(src: str, len_limit: int):
@@ -27,8 +28,4 @@ def cut_str(src: str, len_limit: int):
     Returns:
         新字符串
     """
-    if len(src) > len_limit:
-        target = src[:len_limit]
-    else:
-        target = src
-    return target
+    return src[:len_limit] if len(src) > len_limit else src

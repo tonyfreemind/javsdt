@@ -91,14 +91,14 @@ class JavLibrary(object):
                         # 不同的片，但车牌完全相同，比如id-020。警告用户，但默认用第一个结果。
                         elif list_search_results[1][1].split(' ', 1)[0] == jav_file.Car:
                             # 搜索到同车牌的不同视频
-                            status = ScrapeStatusEnum.library_multiple_search_results
+                            status = ScrapeStatusEnum.multiple_results
                         # else: 还有一种情况，不同片，车牌也不同，但搜索到一堆，比如搜“AVOP-039”，还会得到“AVOP-390”，正确的肯定是第一个。
                     # 打开这个jav在library上的网页
                     print(f'    >获取信息: {url_jav}')
                     html_jav_library = self.get_library_html(url_jav)
                 # 第三种情况: 搜索不到这部影片，搜索结果页面什么都没有
                 else:
-                    return ScrapeStatusEnum.library_not_found
+                    return ScrapeStatusEnum.not_found
         # 标题
         if not jav_model.Title:
             jav_model.Title = re.search(r'<title>([A-Z].+?) - JAVLibrary</title>', html_jav_library).group(1)

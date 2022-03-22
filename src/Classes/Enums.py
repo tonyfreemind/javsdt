@@ -5,30 +5,24 @@ from enum import IntEnum
 class ScrapeStatusEnum(IntEnum):
     """执行刮削的结果"""
 
-    interrupted = 0
+    failed = 0
     """终止"""
+
     success = 1
     """成功"""
 
-    db_multiple_search_results = 2
-    """db存在多个搜索结果"""
-    db_not_found = 3
-    """db没找到"""
+    not_found = 2
+    """没找到"""
 
-    library_multiple_search_results = 4
-    """library存在多个搜索结果"""
-    library_not_found = 5
-    """library没找到"""
+    multiple_results = 3
+    """存在多个搜索结果"""
 
-    bus_multiple_search_results = 6
-    """bus存在多个搜索结果"""
-    bus_not_found = 7
-    """bus没找到"""
-
-    arzon_exist_but_no_plot = 8
-    """arzon存在搜索结果但页面上没有简介"""
-    arzon_not_found = 9
-    """arzon没找到"""
+    exist_but_no_want = 4
+    """
+    有结果，但结果页面上没有想要的内容
+    
+    比如arzon找得到，但没有简介
+    """
 
 
 class CompletionStatusEnum(IntEnum):
@@ -77,16 +71,8 @@ class ExcelColEnum(IntEnum):
     JavBus = 2
     """C列 bus特征"""
 
-    Zh = 3
+    zh = 3
     """D列 简体中文"""
 
-    Cht = 4
+    cht = 4
     """F列 繁体中文"""
-
-    def get_state(value: int):
-        for member in ExcelColEnum:
-            if value == member.value:
-                print(member)
-
-if __name__ == '__main__':
-    ExcelColEnum.get_state(1)

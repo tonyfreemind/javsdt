@@ -291,3 +291,7 @@ class JavDb(object):
             是否是预期响应
         """
         return bool(re.search(r'成人影片數據庫', content) or re.search(r'頁面未找到', content))
+
+    @staticmethod
+    def _confirm_not_found(html: str):
+        return bool(re.search(r'頁面未找到', html))
