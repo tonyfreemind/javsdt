@@ -98,13 +98,65 @@ def find_car_fc2(file):
     return subtitle_car
 
 
-def extract_number_from_car_suf(suf):
-    # print(type(suf))
-    return re.search(r'(\d+)\w*', suf).group(1)
+def tran_car_same_with_bus_arzon(car: str):
+    """
+    车牌转换
 
+    ID这一个类的车牌在不同网站的表现形式不一样，将library和db上的车牌转换为适用于bus和arzon的车牌。
 
-def get_suf_from_car(car):
-    if '-' in car:
-        return re.search(r'-(\d+)\w*', car).group(1)
+    Args:
+        car: ID-26123
+
+    Returns:
+        26ID-123
+    """
+    if carg := re.search(r'ID-(\d\d)(\d+)', car):
+        return f'{carg.group(1)}ID-{carg.group(2)}'
     else:
-        return re.search(r'(\d+)\w*', car).group(1)
+        return car
+
+
+def tran_car_for_search_bus_arzon(car: str):
+    """
+    车牌转换
+
+    ID这一个类的车牌在不同网站的表现形式不一样，将library和db上的车牌转换为适用于在bus和arzon搜索的车牌。
+
+    Args:
+        car: ID-26123
+
+    Returns:
+        26ID123
+    """
+    return tran_car_same_with_bus_arzon(car).replace("-", "")
+
+
+def extract_pref(car: str):
+    """
+    从车牌中提取前缀(车头)
+
+    Args:
+        car: ABC-123
+
+    Returns:
+        ABC
+    """
+    return car.split('-')[0] \
+        if '-' in car \
+        else re.search(r'(\w+)', car).group(1)
+
+
+def extract_suf(car):
+    """
+    从车牌中提取后缀数字（车尾）
+
+    Args:
+        car: ID-26123
+
+    Returns:
+        26123
+    """
+    if '-' in car:
+        return re.search(r'-(\d+)\w*', car).group(1).lstrip('0')
+    else:
+        return re.search(r'(\d+)\w*', car).group(1).lstrip('0')

@@ -5,7 +5,7 @@ from os import sep
 
 
 # 每一部jav的“结构体”
-from Car import get_suf_from_car
+from Car import extract_suf, tran_car_same_with_bus_arzon, tran_car_for_search_bus_arzon, extract_pref
 
 
 class JavFile(object):
@@ -21,17 +21,17 @@ class JavFile(object):
         self.Car = car
         """1 车牌"""
 
-        self.Car_bus_arzon = self._car_id()
+        self.Car_26id = tran_car_same_with_bus_arzon(car)
         """2 ID放前面的车牌\n\nCar是ID-26xxx，Car_id则是26ID-xxx，db和library是前者，bus和arzon是后者"""
 
-        self.Car_search_arzon = self._car_search()
+        self.Car_search_arzon = tran_car_for_search_bus_arzon(car)
         """2 搜索用的车牌\n\nCar是ID-26xxx，Car_search则是26IDxxx，用于bus和arzon搜索"""
 
-        self.Pref = self.Car.split('-')[0]
+        self.Pref = extract_pref(self.Car)
         """3 车牌前缀\n\n例如IPZ"""
 
-        self.Suf = get_suf_from_car(self.Car)
-        """3 车牌后缀\n\n纯数字，例如ABC-123z的123"""
+        self.Suf = extract_suf(self.Car)
+        """3 车牌后缀\n\n纯数字，例如ABC-123z的123，ID-26123的26123"""
 
         self.Name = file_raw
         """4 完整文件名\n\n例如ABC-123-cd2.mp4，会在重命名过程中发生变化"""
@@ -90,12 +90,3 @@ class JavFile(object):
     def Path_subtitle(self):
         """字幕文件完整路径"""
         return f'{self.Dir}{sep}{self.Subtitle}'
-
-    def _car_id(self):
-        if carg := re.search(r'ID-(\d\d)(\d+)', self.Car):
-            return f'{carg.group(1)}ID-{carg.group(2)}'
-        else:
-            return self.Car
-
-    def _car_search(self):
-        return self.Car_bus_arzon.replace("-", "")

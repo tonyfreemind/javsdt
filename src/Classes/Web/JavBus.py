@@ -3,7 +3,7 @@ import re
 import requests
 from typing import List
 # from traceback import format_exc
-
+from Car import tran_car_same_with_bus_arzon, tran_car_for_search_bus_arzon, extract_pref, extract_suf
 from Classes.Enums import ScrapeStatusEnum
 from Classes.Errors import SpecifiedUrlError
 from Classes.Const import Const
@@ -28,7 +28,7 @@ class JavBus(JavWeb):
 
     # region 重写父类方法
 
-    def _search(self, car: str):
+    def _search(self, car_temp: str):
         """
         搜索车牌，获取目标html
 
@@ -38,20 +38,14 @@ class JavBus(JavWeb):
         Returns:
             目标html
         """
+        car = tran_car_same_with_bus_arzon(car_temp)  # 适用于bus的车牌
 
-        # region 尝试直接访问规则的网址
-        # jav在javbus上的url，一般就是javbus网址/车牌
-        url_guess = self._url_item(car)
-        print('    >前往javbus: ', url_guess)
-        html_guess = self._get_html(url_guess)
-        # 成功找到
-        if not re.search(r'404 Page', html_guess):
-            self._item = car
-            return html_guess
-        # endregion
+        # 尝试直接访问规则的网址
+        if html := self._guess(car):
+            return html
 
         # region 搜索该车牌
-        url_search = f'{self._URL}/search/{car.replace("-", "")}&type=1&parent=ce'
+        url_search = f'{self._URL}/search/{tran_car_for_search_bus_arzon(car_temp)}&type=1&parent=ce'
         print('    >搜索javbus: ', url_search)
         html_search = self._get_html(url_search)
 
@@ -90,19 +84,19 @@ class JavBus(JavWeb):
         """
         return f'{self._URL}/{item}'
 
-    def _select_special(self, html: str, jav_model: JavData):
+    def _select_special(self, html: str, jav_data: JavData):
 
         # 封面
         if coverg := re.search(r'bigImage" href="/pics/cover/(.+?)"', html):
-            jav_model.CoverBus = coverg.group(1)
+            jav_data.CoverBus = coverg.group(1)
         # 系列
-        if not jav_model.Series:
+        if not jav_data.Series:
             # 系列:</span> <a href="https://www.cdnbus.work/series/kpl">悪質シロウトナンパ</a>
             if seriesg := re.search(r'系列:</span> <a href=".+?">(.+?)</a>', html):
-                jav_model.Series = seriesg.group(1)
+                jav_data.Series = seriesg.group(1)
         # 特征
         genres = re.findall(r'gr_sel" value="\d+"><a href=".+">(.+?)</a>', html)
-        jav_model.Genres.append(prefect_genres(self._DICT_GENRES, genres))
+        jav_data.Genres.append(prefect_genres(self._DICT_GENRES, genres))
 
         return ScrapeStatusEnum.success if self._is_only else ScrapeStatusEnum.multiple_results
 
@@ -125,6 +119,17 @@ class JavBus(JavWeb):
 
     # endregion
 
+    def _guess(self, car: str):
+        # jav在javbus上的url，一般就是javbus网址/车牌
+        url_guess = self._url_item(car)
+        print('    >前往javbus: ', url_guess)
+        html_guess = self._get_html(url_guess)
+        # 找不到
+        if re.search(r'404 Page', html_guess):
+            return ''
+        self._item = car
+        return html_guess
+
     @staticmethod
     def _check_search_results(car: str, list_items: List[str]):
         """
@@ -137,8 +142,8 @@ class JavBus(JavWeb):
         Returns:
             符合预期的items
         """
-        pref = car.split('-')[0]  # 车牌的前缀字母，例如ABC
-        suf = car.split('-')[-1].lstrip('0')  # 车牌的后缀数字 去除多余的0，例如123
+        pref = extract_pref(car)  # 车牌的前缀，例如ABC，26ID
+        suf = extract_suf(car)  # 车牌的后缀数字 去除多余的0，例如26ID-012的12
         list_fit = []  # 存放，筛选出的结果
         for url_item in list_items:
             # Todo 正则单独作方法

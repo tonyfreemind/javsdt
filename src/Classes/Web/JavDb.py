@@ -1,18 +1,15 @@
 # -*- coding:utf-8 -*-
 import re
 from lxml import etree
-import requests
 # from traceback import format_exc
 
 from Classes.Config import Ini
-from Classes.Enums import ScrapeStatusEnum
-from Classes.Errors import SpecifiedUrlError, DbCodePageNothingError, InRangeButDbNotFoundError
-from Classes.Model.JavData import JavData
-from Classes.Model.JavFile import JavFile
 from Classes.Const import Const
-from Functions.Metadata.Genre import better_dict_genres, prefect_genres
-from Functions.Metadata.Car import get_suf_from_car
+from Classes.Enums import ScrapeStatusEnum
+from Classes.Model.JavData import JavData
 from Classes.Web.JavWeb import JavWeb
+from Functions.Metadata.Car import extract_suf, extract_pref
+from Functions.Metadata.Genre import prefect_genres
 
 
 class JavDb(JavWeb):
@@ -33,7 +30,7 @@ class JavDb(JavWeb):
 
     # region 重写父类方法
 
-    def _search(self, pref: str, suf: int):
+    def _search(self, car: str):
         """
         遍历video_codes网页找出目标html
 
@@ -44,6 +41,9 @@ class JavDb(JavWeb):
         Returns:
             成功找到，返回item，例如4d5E6；找不到，返回
         """
+
+        pref = extract_pref(car)  # 车牌的前缀，例如ABC，26ID
+        suf = extract_suf(car)  # 车牌的后缀数字 去除多余的0，例如26ID-012的12
 
         # region 预估当前车牌在第几页
         # 先从首页开始
@@ -112,47 +112,53 @@ class JavDb(JavWeb):
         """
         return f'{self._URL}/v/{item}'
 
-    def _select_special(self, html: str, jav_model: JavData):
-        # Todo 更换一个注释
-        # <title> BKD-171 母子交尾 ～西会津路～ 中森いつき | JavDB 成人影片資料庫及磁鏈分享 </title>
+    def _select_special(self, html: str, jav_data: JavData):
+        # <title> ID-020 可愛すぎる魔法少女5人とパジャマで中出し性交 | JavDB 成人影片數據庫 </title>
         car_title = re.search(r'title> (.+) \| JavDB', html).group(1)
-        list_car_title = car_title.split(' ', 1)
-        jav_model.Car = list_car_title[0]  # 围绕该jav的所有信息
-        jav_model.Title = list_car_title[1]
+        jav_data.Car, jav_data.Title = car_title.split(' ', 1)
         # 带着主要信息的那一块 複製番號" data-clipboard-text="BKD-171">
         html = re.search(r'複製番號([\s\S]+?)存入清單', html, re.DOTALL).group(1)
+
         # 系列 "/series/RJmR">○○に欲望剥き出しでハメまくった中出し記録。</a>
         seriesg = re.search(r'series/.+?">(.+?)</a>', html)
-        jav_model.Series = seriesg.group(1) if seriesg else ''
+        jav_data.Series = seriesg.group(1) if seriesg else ''
+
         # 上映日 e">2019-02-01<
         releaseg = re.search(r'(\d\d\d\d-\d\d-\d\d)', html)
-        jav_model.Release = releaseg.group(1) if releaseg else '1970-01-01'
+        jav_data.Release = releaseg.group(1) if releaseg else '1970-01-01'
+
         # 片长 value">175 分鍾<
         runtimeg = re.search(r'value">(\d+) 分鍾<', html)
-        jav_model.Runtime = int(runtimeg.group(1)) if runtimeg else 0
+        jav_data.Runtime = int(runtimeg.group(1)) if runtimeg else 0
+
         # 导演 /directors/WZg">NABE<
         directorg = re.search(r'directors/.+?">(.+?)<', html)
-        jav_model.Director = directorg.group(1) if directorg else ''
+        jav_data.Director = directorg.group(1) if directorg else ''
+
         # 制作商 e"><a href="/makers/
         studiog = re.search(r'makers/.+?">(.+?)<', html)
-        jav_model.Studio = studiog.group(1) if studiog else ''
+        jav_data.Studio = studiog.group(1) if studiog else ''
+
         # 发行商 /publishers/pkAb">AV OPEN 2018</a><
         publisherg = re.search(r'publishers.+?">(.+?)</a><', html)
-        jav_model.Publisher = publisherg.group(1) if publisherg else ''
+        jav_data.Publisher = publisherg.group(1) if publisherg else ''
+
         # 评分 star gray"></i></span>&nbsp;3.75分
         scoreg = re.search(r'star gray"></i></span>&nbsp;(.+?)分', html)
-        jav_model.Score = int(float(scoreg.group(1)) * 20) if scoreg else 0
+        jav_data.Score = int(float(scoreg.group(1)) * 20) if scoreg else 0
+
         # 演员们 /actors/M0xA">上川星空</a>  actors/P9mN">希美まゆ</a><strong class="symbol female
         actors = re.findall(r'actors/.+?">(.+?)</a><strong class="symbol female', html)
-        jav_model.Actors = [i.strip() for i in actors]
-        str_actors = ' '.join(jav_model.Actors)
+        jav_data.Actors = [i.strip() for i in actors]
+        str_actors = ' '.join(jav_data.Actors)
+
         # 去除末尾的标题 javdb上的演员不像javlibrary使用演员最熟知的名字
-        if str_actors and jav_model.Title.endswith(str_actors):
-            jav_model.Title = jav_model.Title[:-len(str_actors)].strip()
-        # print('    >演员: ', actors)
+        if str_actors and jav_data.Title.endswith(str_actors):
+            jav_data.Title = jav_data.Title[:-len(str_actors)].strip()
+
         # 特征 /tags?c7=8">精选、综合</a>
         genres = re.findall(r'tags.+?">(.+?)</a>', html)
-        jav_model.Genres.append(prefect_genres(self._DICT_GENRES, genres))
+        jav_data.Genres.append(prefect_genres(self._DICT_GENRES, genres))
         return ScrapeStatusEnum.success
 
     @staticmethod
@@ -188,8 +194,8 @@ class JavDb(JavWeb):
         html_pref = self._get_html(url_page)
         # Todo xpath直接取第一个和最后一个
         if list_cars := etree.HTML(html_pref).xpath(Const.XPATH_DB_CARS):
-            suf_min = int(get_suf_from_car(list_cars[-1]))
-            suf_max = int(get_suf_from_car(list_cars[0]))
+            suf_min = int(extract_suf(list_cars[-1]))
+            suf_max = int(extract_suf(list_cars[0]))
             return suf_min, suf_max
         else:
             return None
@@ -217,13 +223,13 @@ class JavDb(JavWeb):
         if not list_cars:
             raise
 
-        suf_min = int(get_suf_from_car(list_cars[-1]))
-        suf_max = int(get_suf_from_car(list_cars[0]))
+        suf_min = int(extract_suf(list_cars[-1]))
+        suf_max = int(extract_suf(list_cars[0]))
         if not suf_max >= suf >= suf_min:
             # 不在车尾范围内（希望程序直接去下一页）
             return ''
         for i, car in enumerate(list_cars):
-            if int(get_suf_from_car(car)) == suf:
+            if int(extract_suf(car)) == suf:
                 return html_tree.xpath(f'//*[@id="videos"]/div/div[{i + 1}]/a/@href')[0][3:]
         # suf在该页面的车尾范围内，但找不到
         raise

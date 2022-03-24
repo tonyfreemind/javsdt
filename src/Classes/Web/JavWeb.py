@@ -57,13 +57,13 @@ class JavWeb(object):
         如果刮削成功则将它更新为正确值，交给jav_model。
         """
 
-    def scrape(self, jav_file: JavFile, jav_model: JavData):
+    def scrape(self, jav_file: JavFile, jav_data: JavData):
         """
         获取网站上的内容
 
         Args:
             jav_file: jav视频文件对象
-            jav_model: jav元数据对象
+            jav_data: jav元数据对象
 
         Returns:
             刮削结果
@@ -72,20 +72,16 @@ class JavWeb(object):
         self._reset()
         # endregion
 
-        if self.__class__.__name__ == 'JavDb' or self.__class__.__name__ == 'JavLibrary':
-            car = jav_file.Car
-        elif self.__class__.__name__ == 'JavBus':
-
         # region 2找到网页
-        html = self._find_target_html(jav_file.Name, jav_file.Car_bus_arzon)
+        html = self._find_target_html(jav_file.Name, jav_file.Car)
         """当前车牌所在的html"""
         if not html:
             return ScrapeStatusEnum.not_found
         # endregion
 
         # region 3摘取信息
-        self._select_normal(jav_model)
-        return self._select_special(html, jav_model)
+        self._select_normal(jav_data)
+        return self._select_special(html, jav_data)
         # endregion
 
     @staticmethod
@@ -183,7 +179,7 @@ class JavWeb(object):
         raise AttributeError(Const.NO_IMPLEMENT_ERROR)
 
     @staticmethod
-    def _select_special(html: str, jav_model: JavData) -> ScrapeStatusEnum:
+    def _select_special(html: str, jav_data: JavData) -> ScrapeStatusEnum:
         raise AttributeError(Const.NO_IMPLEMENT_ERROR)
 
     @staticmethod

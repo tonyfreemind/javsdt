@@ -5,6 +5,7 @@ from shutil import copyfile
 from configparser import RawConfigParser  # 读取ini
 from configparser import NoOptionError  # ini文件不存在或不存在指定node的错误
 
+from Car import extract_pref
 from Classes.Model.JavData import JavData
 from Classes.Model.JavFile import JavFile
 from Classes.MyLogger import record_video_old
@@ -178,7 +179,7 @@ class Standard(object):
         self._dict_for_standard[Const.BOOL_DIVULGE] = self._divulge_expression if jav_file.Bool_divulge else ''
         # 车牌
         self._dict_for_standard[Const.CAR] = jav_data.Car  # car可能发生了变化
-        self._dict_for_standard[Const.CAR_PREF] = jav_data.Car.split('-')[0]
+        self._dict_for_standard[Const.CAR_PREF] = extract_pref(jav_data.Car)
         # 日期
         self._dict_for_standard[Const.RELEASE] = jav_data.Release
         self._dict_for_standard[Const.RELEASE_YEAR] = jav_data.Release[0:4]
