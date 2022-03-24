@@ -45,7 +45,7 @@ class Arzon(object):
         for _ in range(2):
 
             # 搜索结果页面
-            html_search = self._search_html(jav_file.Car_search)
+            html_search = self._search_html(jav_file.Car_search_arzon)
 
             # 搜索结果页面上的items <dt><a href="https://www.arzon.jp/item_1376110.html" title="限界集落 ～村民
             if items := re.findall(r'h2><a href="/item_(.+?)\.html" title=', html_search):

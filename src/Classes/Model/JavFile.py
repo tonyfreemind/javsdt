@@ -21,10 +21,10 @@ class JavFile(object):
         self.Car = car
         """1 车牌"""
 
-        self.Car_id = self._car_id()
+        self.Car_bus_arzon = self._car_id()
         """2 ID放前面的车牌\n\nCar是ID-26xxx，Car_id则是26ID-xxx，db和library是前者，bus和arzon是后者"""
 
-        self.Car_search = self._car_search()
+        self.Car_search_arzon = self._car_search()
         """2 搜索用的车牌\n\nCar是ID-26xxx，Car_search则是26IDxxx，用于bus和arzon搜索"""
 
         self.Pref = self.Car.split('-')[0]
@@ -98,4 +98,4 @@ class JavFile(object):
             return self.Car
 
     def _car_search(self):
-        return self.Car_id.replace("-", "")
+        return self.Car_bus_arzon.replace("-", "")

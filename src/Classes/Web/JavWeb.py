@@ -30,8 +30,8 @@ class JavWeb(object):
         self._URL: str = tuple_temp[0]
         """网址"""
 
-        self._PROXIES: dict[str:str] = tuple_temp[1]
-        """代理"""
+        self._requests = self._create_session(tuple_temp[1], headers)
+        """requests服务"""
 
         self._DICT_GENRES = better_dict_genres(pattern, settings.to_language)
         """优化后的genres"""
@@ -39,7 +39,7 @@ class JavWeb(object):
         self._HEADERS = headers
         """请求头\n\n不同网站会有不同要求"""
 
-        self._appoint_symbol = appoint_symbol
+        self._APPOINT_SYMBOL = appoint_symbol
         """
         指定网址的标志
         
@@ -57,11 +57,6 @@ class JavWeb(object):
         如果刮削成功则将它更新为正确值，交给jav_model。
         """
 
-        rqs = requests.Session()
-        rqs.mount('http://', HTTPAdapter(max_retries=1))
-        rqs.mount('https://', HTTPAdapter(max_retries=1))
-        self._rqs = rqs
-
     def scrape(self, jav_file: JavFile, jav_model: JavData):
         """
         获取网站上的内容
@@ -77,8 +72,12 @@ class JavWeb(object):
         self._reset()
         # endregion
 
+        if self.__class__.__name__ == 'JavDb' or self.__class__.__name__ == 'JavLibrary':
+            car = jav_file.Car
+        elif self.__class__.__name__ == 'JavBus':
+
         # region 2找到网页
-        html = self._find_target_html(jav_file.Name, jav_file.Car_id)
+        html = self._find_target_html(jav_file.Name, jav_file.Car_bus_arzon)
         """当前车牌所在的html"""
         if not html:
             return ScrapeStatusEnum.not_found
@@ -88,6 +87,13 @@ class JavWeb(object):
         self._select_normal(jav_model)
         return self._select_special(html, jav_model)
         # endregion
+
+    @staticmethod
+    def _create_session(proxies: Dict[str, str], headers: Dict[str, str]):
+        rqs = requests.Session()
+        rqs.proxies = proxies
+        rqs.headers = headers
+        return rqs
 
     def _find_target_html(self, name: str, car: str):
         """
@@ -102,7 +108,7 @@ class JavWeb(object):
         Returns:
             html
         """
-        if self._appoint_symbol in name:
+        if self._APPOINT_SYMBOL in name:
             return self._appoint(name)
         else:
             return self._search(car)
@@ -119,7 +125,7 @@ class JavWeb(object):
         Returns:
             目标html
         """
-        item_appointg = re.search(rf'{self._appoint_symbol}(.+?)\.', name)
+        item_appointg = re.search(rf'{self._APPOINT_SYMBOL}(.+?)\.', name)
         if not item_appointg:
             raise SpecifiedUrlError(f'{Const.SPECIFIED_FORMAT_ERROR} {self.__class__.__name__} {name}')
         item_appoint = item_appointg.group(1)
@@ -134,12 +140,7 @@ class JavWeb(object):
         """获取html"""
         for _ in range(1):
             try:
-                if self._PROXIES:
-                    print('yes porxy')
-                    rsp = self._rqs.get(url, headers=self._HEADERS, timeout=(6, 7), proxies=self._PROXIES, verify=False)
-                else:
-                    print('no porxy')
-                    rsp = requests.get(url, headers=self._HEADERS, timeout=(6, 7), verify=False)
+                rsp = self._requests.get(url, timeout=(6, 7))
             except requests.exceptions.ProxyError:
                 print(format_exc())
                 print(Const.PROXY_ERROR_TRY_AGAIN)

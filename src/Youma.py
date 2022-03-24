@@ -125,14 +125,14 @@ while not input_key:
                     # region（3.2.2.4）前往javbus查找【封面】【系列】【特征】.py
                     status = javBus.scrape(jav_file, jav_model)
                     if status == ScrapeStatusEnum.multiple_results:
-                        logger.record_warn(f'部分信息可能错误，javbus搜索到同车牌的不同视频: {jav_file.Car_id}，')
+                        logger.record_warn(f'部分信息可能错误，javbus搜索到同车牌的不同视频: {jav_file.Car_bus_arzon}，')
                     elif status == ScrapeStatusEnum.not_found:
-                        logger.record_warn(f'javbus有码找不到该车牌的信息: {jav_file.Car_id}，')
+                        logger.record_warn(f'javbus有码找不到该车牌的信息: {jav_file.Car_bus_arzon}，')
                     # endregion
 
                     # region（3.2.2.5）arzon找简介
                     status = arzon.scrape(jav_file, jav_model)
-                    url_search_arzon = f'https://www.arzon.jp/itemlist.html?t=&m=all&s=&q={jav_file.Car_id.replace("-", "")}'
+                    url_search_arzon = f'https://www.arzon.jp/itemlist.html?t=&m=all&s=&q={jav_file.Car_bus_arzon.replace("-", "")}'
                     if status == ScrapeStatusEnum.exist_but_no_want:
                         logger.record_warn(f'找不到简介，尽管arzon上有搜索结果: {url_search_arzon}，')
                     elif status == ScrapeStatusEnum.not_found:
