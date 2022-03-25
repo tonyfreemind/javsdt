@@ -1,12 +1,8 @@
 # -*- coding:utf-8 -*-
 import re
-import ssl
-
 import requests
 from typing import Dict
 from traceback import format_exc
-
-from requests.adapters import HTTPAdapter
 
 from Classes.Model.JavData import JavData
 from Classes.Model.JavFile import JavFile
@@ -43,7 +39,8 @@ class JavWeb(object):
         """
         指定网址的标志
         
-        比如
+        db是仓库，library是图书馆，bus是公交车。arzon是阿如。
+        例如ABC-123仓库3d4E5.图书馆javldef.公交车ABC-123_2011-11-11.arzon.mp4。
         """
 
         self._is_only: bool = True

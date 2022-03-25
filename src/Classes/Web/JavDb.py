@@ -1,5 +1,7 @@
 # -*- coding:utf-8 -*-
 import re
+from typing import List
+
 from lxml import etree
 # from traceback import format_exc
 
@@ -215,8 +217,7 @@ class JavDb(JavWeb):
             成功找到，返回item，例如4d5E6；不在车尾范围内（需要去下一页），返回空。
         """
 
-        html_pref = self._get_html(url_page)
-        html_tree = etree.HTML(html_pref)
+        html_tree = etree.HTML(self._get_html(url_page))
         list_cars = html_tree.xpath(Const.XPATH_DB_CARS)
 
         # 这一页已经没内容了
@@ -228,11 +229,19 @@ class JavDb(JavWeb):
         if not suf_max >= suf >= suf_min:
             # 不在车尾范围内（希望程序直接去下一页）
             return ''
-        for i, car in enumerate(list_cars):
-            if int(extract_suf(car)) == suf:
-                return html_tree.xpath(f'//*[@id="videos"]/div/div[{i + 1}]/a/@href')[0][3:]
-        # suf在该页面的车尾范围内，但找不到
-        raise
+
+        # 这一页中和当前车牌长得相似的车牌
+        list_fit_index = self._check_cars_in_page(suf, list_cars)
+
+        if not list_fit_index:
+            # suf在该页面的车尾范围内，但找不到
+            raise
+        elif len(list_fit_index) > 1:
+            # 多个结果
+            self._is_only = False
+        else:
+            # 唯一结果
+            return html_tree.xpath(f'//*[@id="videos"]/div/div[{list_fit_index[0]}]/a/@href')[0][3:]
 
     def _url_page(self, pref: str, no_page: int):
         """
@@ -246,3 +255,7 @@ class JavDb(JavWeb):
             网址，例如“https://javdb36.com/video_codes/ABC?page=2”
         """
         return f'{self._URL}/video_codes/{pref}?page={no_page}'
+
+    @staticmethod
+    def _check_cars_in_page(suf: int, list_cars: List[str]):
+        return [i + 1 for i, car in enumerate(list_cars) if int(extract_suf(car)) == suf]
