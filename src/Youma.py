@@ -53,6 +53,7 @@ while not input_key:
         fileExplorer.rest_and_check_choose(dir_choose)
     except CustomClassifyTargetDirError as error:
         input(f'请修正上述错误后重启程序：{str(error)}')
+    standard.update_dir_classify_root(fileExplorer.dir_classify_target())
     # endregion
 
     # region （3.2）遍历所选文件夹内部进行处理

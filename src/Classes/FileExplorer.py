@@ -105,6 +105,9 @@ class FileExplorer(object):
 
     # endregion
 
+    def dir_classify_target(self):
+        return self._dir_classify_target
+
     def _judge_need_rename_folder(self):
         """
         判断到底要不要 重命名文件夹或者创建新的文件夹

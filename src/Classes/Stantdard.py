@@ -77,7 +77,7 @@ class Standard(object):
         self._need_classify_folder = ini.need_classify_folder
         """是否 针对“文件夹”归类jav\n\n“否”即针对“文件”"""
 
-        self._dir_custom_classify_root = ini.dir_custom_classify_root
+        self._dir_classify_root = ''
         """路径: 归类的目标根目录"""
 
         self._list_name_classify_dir = ini.list_name_classify_dir
@@ -144,6 +144,9 @@ class Standard(object):
         self._winDic = str.maketrans(r':<>"\?/*', '        ')
         """定义 Windows中的非法字符, 将非法字符替换为空格"""
         # endregion
+
+    def update_dir_classify_root(self, dir: str):
+        self._dir_classify_root = dir
 
     def prefect_dict_for_standard(self, jav_file: JavFile, jav_data: JavData):
         """
@@ -282,7 +285,7 @@ class Standard(object):
         if self._need_classify and not self._need_classify_folder:
 
             # region 得到归类的目标文件夹
-            dir_dest = f'{self._dir_custom_classify_root}{sep}'
+            dir_dest = f'{self._dir_classify_root}{sep}'
             """归类的目标文件夹路径"""
             for element in self._list_name_classify_dir:
                 dir_dest = f'{dir_dest}{self._dict_for_standard[element].strip()}'
@@ -423,11 +426,11 @@ class Standard(object):
         if self._need_classify and self._need_classify_folder and jav_file.Episode == jav_file.Sum_all_episodes:
 
             # 用户选择的文件夹是一部影片的独立文件夹，为了避免在这个文件夹里又创建新的归类文件夹
-            if jav_file.Bool_in_separate_folder and self._dir_custom_classify_root.startswith(jav_file.Dir):
+            if jav_file.Bool_in_separate_folder and self._dir_classify_root.startswith(jav_file.Dir):
                 raise TooManyDirectoryLevelsError(f'无法归类，不建议在当前文件夹内再新建文件夹')
 
             # region 得到归类的目标文件夹
-            dir_dest = f'{self._dir_custom_classify_root}{sep}'  # 例如C:\Users\JuneRain\Desktop\测试文件夹\1\葵司\
+            dir_dest = f'{self._dir_classify_root}{sep}'  # 例如C:\Users\JuneRain\Desktop\测试文件夹\1\葵司\
             """归类的目标文件夹路径\n\n不包含视频文件所在的文件夹"""
             for j in self._list_name_classify_dir:
                 dir_dest = f'{dir_dest}{self._dict_for_standard[j].rstrip(" .")}'
