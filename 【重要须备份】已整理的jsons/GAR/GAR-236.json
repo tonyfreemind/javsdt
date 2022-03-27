@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1gar236/1gar236pl.jpg",
     "CoverBus": "3v3q_b.jpg",
     "CutType": 1,
-    "Javdb": "a8BPn",
-    "Javlibrary": "javliablru",
-    "Javbus": "GAR-236",
     "Arzon": "932369",
     "CompletionStatus": 6,
     "Version": 1,
@@ -29,5 +26,8 @@
     "Actors": [
         "\u53cb\u7530\u5f69\u4e5f\u9999"
     ],
-    "Modify": "2021-09-05 16:01:30"
+    "Modify": "2021-09-05 16:01:30",
+    "JavDb": "a8BPn",
+    "JavLibrary": "javliablru",
+    "JavBus": "GAR-236"
 }

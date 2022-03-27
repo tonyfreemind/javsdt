@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/team041/team041pl.jpg",
     "CoverBus": "4aks_b.jpg",
     "CutType": 1,
-    "Javdb": "bnK0",
-    "Javlibrary": "javlij3g6m",
-    "Javbus": "TEAM-041",
     "Arzon": "1198756",
     "CompletionStatus": 6,
     "Version": 1,
@@ -31,5 +28,8 @@
     "Actors": [
         "\u8fbb\u672c\u674f"
     ],
-    "Modify": "2021-09-25 19:59:57"
+    "Modify": "2021-09-25 19:59:57",
+    "JavDb": "bnK0",
+    "JavLibrary": "javlij3g6m",
+    "JavBus": "TEAM-041"
 }

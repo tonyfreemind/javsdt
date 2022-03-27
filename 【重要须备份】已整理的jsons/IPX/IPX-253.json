@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipx253/ipx253pl.jpg",
     "CoverBus": "6wob_b.jpg",
     "CutType": 1,
-    "Javdb": "OQEbv",
-    "Javlibrary": "javli7rz3m",
-    "Javbus": "IPX-253",
     "Arzon": "1494546",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,8 @@
     "Actors": [
         "\u5929\u6d77\u3064\u3070\u3055"
     ],
-    "Modify": "2021-09-05 18:45:01"
+    "Modify": "2021-09-05 18:45:01",
+    "JavDb": "OQEbv",
+    "JavLibrary": "javli7rz3m",
+    "JavBus": "IPX-253"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/rbd931/rbd931pl.jpg",
     "CoverBus": "769q_b.jpg",
     "CutType": 1,
-    "Javdb": "xZdmV",
-    "Javlibrary": "javli6azzu",
-    "Javbus": "RBD-931",
     "Arzon": "1522137",
     "CompletionStatus": 6,
     "Version": 1,
@@ -31,5 +28,8 @@
     "Actors": [
         "\u660e\u91cc\u3064\u3080\u304e"
     ],
-    "Modify": "2021-09-25 18:13:44"
+    "Modify": "2021-09-25 18:13:44",
+    "JavDb": "xZdmV",
+    "JavLibrary": "javli6azzu",
+    "JavBus": "RBD-931"
 }

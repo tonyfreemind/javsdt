@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/miae205/miae205pl.jpg",
     "CoverBus": "6gem_b.jpg",
     "CutType": 1,
-    "Javdb": "pmzZ",
-    "Javlibrary": "javli4zcs4",
-    "Javbus": "MIAE-205",
     "Arzon": "1445985",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,8 @@
     "Actors": [
         "\u661f\u5948\u3042\u3044"
     ],
-    "Modify": "2021-09-25 17:19:31"
+    "Modify": "2021-09-25 17:19:31",
+    "JavDb": "pmzZ",
+    "JavLibrary": "javli4zcs4",
+    "JavBus": "MIAE-205"
 }

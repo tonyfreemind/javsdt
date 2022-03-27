@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/eyan145/eyan145pl.jpg",
     "CoverBus": "7fos_b.jpg",
     "CutType": 1,
-    "Javdb": "P2PRe",
-    "Javlibrary": "javli6tny4",
-    "Javbus": "EYAN-145",
     "Arzon": "1545331",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u67cf\u6728\u80e1\u6843"
     ],
-    "Modify": "2021-09-05 16:00:02"
+    "Modify": "2021-09-05 16:00:02",
+    "JavDb": "P2PRe",
+    "JavLibrary": "javli6tny4",
+    "JavBus": "EYAN-145"
 }

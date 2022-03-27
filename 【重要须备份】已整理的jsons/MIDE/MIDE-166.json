@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mide166/mide166pl.jpg",
     "CoverBus": "4i9k_b.jpg",
     "CutType": 1,
-    "Javdb": "bKGmE",
-    "Javlibrary": "javliiaj6m",
-    "Javbus": "MIDE-166",
     "Arzon": "1230162",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u9234\u6728\u5fc3\u6625"
     ],
-    "Modify": "2021-09-25 17:23:45"
+    "Modify": "2021-09-25 17:23:45",
+    "JavDb": "bKGmE",
+    "JavLibrary": "javliiaj6m",
+    "JavBus": "MIDE-166"
 }

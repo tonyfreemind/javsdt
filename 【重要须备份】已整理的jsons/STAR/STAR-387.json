@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1star387/1star387pl.jpg",
     "CoverBus": "1nfw_b.jpg",
     "CutType": 1,
-    "Javdb": "829gW",
-    "Javlibrary": "javliorv3a",
-    "Javbus": "STAR-387",
     "Arzon": "1099863",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u53e4\u5ddd\u4f0a\u7ec7"
     ],
-    "Modify": "2021-09-25 19:13:01"
+    "Modify": "2021-09-25 19:13:01",
+    "JavDb": "829gW",
+    "JavLibrary": "javliorv3a",
+    "JavBus": "STAR-387"
 }

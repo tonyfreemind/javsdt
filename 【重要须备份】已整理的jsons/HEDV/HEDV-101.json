@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/49hedv101/49hedv101pl.jpg",
     "CoverBus": "2uv3_b.jpg",
     "CutType": 1,
-    "Javdb": "eeXR",
-    "Javlibrary": "javlimyp5a",
-    "Javbus": "HEDV-101",
     "Arzon": "517595",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
         "\u771f\u54b2\u5357\u670b",
         "\u4eac\u91ce\u304b\u3059\u307f"
     ],
-    "Modify": "2021-09-05 17:43:26"
+    "Modify": "2021-09-05 17:43:26",
+    "JavDb": "eeXR",
+    "JavLibrary": "javlimyp5a",
+    "JavBus": "HEDV-101"
 }

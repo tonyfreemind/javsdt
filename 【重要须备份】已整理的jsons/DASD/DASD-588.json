@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/dasd588/dasd588pl.jpg",
     "CoverBus": "7c3c_b.jpg",
     "CutType": 1,
-    "Javdb": "2KRpX",
-    "Javlibrary": "javli6ifra",
-    "Javbus": "DASD-588",
     "Arzon": "1538448",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u6e1a\u307f\u3064\u304d"
     ],
-    "Modify": "2021-09-05 15:48:38"
+    "Modify": "2021-09-05 15:48:38",
+    "JavDb": "2KRpX",
+    "JavLibrary": "javli6ifra",
+    "JavBus": "DASD-588"
 }

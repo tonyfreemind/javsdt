@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1idol007/1idol007pl.jpg",
     "CoverBus": "",
     "CutType": 1,
-    "Javdb": "wKDQ7",
-    "Javlibrary": "javliayera",
-    "Javbus": "",
     "Arzon": "1515491",
     "CompletionStatus": 4,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u91cc\u7f8e\u3086\u308a\u3042"
     ],
-    "Modify": "2021-09-21 08:42:19"
+    "Modify": "2021-09-21 08:42:19",
+    "JavDb": "wKDQ7",
+    "JavLibrary": "javliayera",
+    "JavBus": ""
 }

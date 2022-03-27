@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ssni600/ssni600pl.jpg",
     "CoverBus": "7d5f_b.jpg",
     "CutType": 1,
-    "Javdb": "wpAgm",
-    "Javlibrary": "javli6ig3e",
-    "Javbus": "SSNI-600",
     "Arzon": "1536668",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u795e\u6728\u307e\u307b\u308d"
     ],
-    "Modify": "2021-09-25 19:04:22"
+    "Modify": "2021-09-25 19:04:22",
+    "JavDb": "wpAgm",
+    "JavLibrary": "javli6ig3e",
+    "JavBus": "SSNI-600"
 }

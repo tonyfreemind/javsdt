@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/cesd477/cesd477pl.jpg",
     "CoverBus": "6a8u_b.jpg",
     "CutType": 1,
-    "Javdb": "k4AYY",
-    "Javlibrary": "javli4qmqe",
-    "Javbus": "CESD-477",
     "Arzon": "1427063",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u9999\u690e\u308a\u3042"
     ],
-    "Modify": "2022-02-15 19:13:20"
+    "Modify": "2022-02-15 19:13:20",
+    "JavDb": "k4AYY",
+    "JavLibrary": "javli4qmqe",
+    "JavBus": "CESD-477"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ssni196/ssni196pl.jpg",
     "CoverBus": "6jf1_b.jpg",
     "CutType": 1,
-    "Javdb": "yx3kv",
-    "Javlibrary": "javli7dhsm",
-    "Javbus": "SSNI-196",
     "Arzon": "1455188",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u5c0f\u91ce\u5915\u5b50"
     ],
-    "Modify": "2021-09-25 18:45:44"
+    "Modify": "2021-09-25 18:45:44",
+    "JavDb": "yx3kv",
+    "JavLibrary": "javli7dhsm",
+    "JavBus": "SSNI-196"
 }

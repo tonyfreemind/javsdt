@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1star993/1star993pl.jpg",
     "CoverBus": "7dav_b.jpg",
     "CutType": 1,
-    "Javdb": "pkEyb",
-    "Javlibrary": "javli7lvsi",
-    "Javbus": "STAR-993",
     "Arzon": "1481929",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u767d\u77f3\u8309\u8389\u5948"
     ],
-    "Modify": "2021-09-25 19:47:09"
+    "Modify": "2021-09-25 19:47:09",
+    "JavDb": "pkEyb",
+    "JavLibrary": "javli7lvsi",
+    "JavBus": "STAR-993"
 }

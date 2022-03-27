@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipx369/ipx369pl.jpg",
     "CoverBus": "79sc_b.jpg",
     "CutType": 1,
-    "Javdb": "pPJZ5",
-    "Javlibrary": "javli6lrsy",
-    "Javbus": "IPX-369",
     "Arzon": "1531720",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,8 @@
     "Actors": [
         "\u5929\u6d77\u3064\u3070\u3055"
     ],
-    "Modify": "2021-09-05 18:49:37"
+    "Modify": "2021-09-05 18:49:37",
+    "JavDb": "pPJZ5",
+    "JavLibrary": "javli6lrsy",
+    "JavBus": "IPX-369"
 }

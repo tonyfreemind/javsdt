@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/hunta613/hunta613pl.jpg",
     "CoverBus": "752u_b.jpg",
     "CutType": 1,
-    "Javdb": "aevr3",
-    "Javlibrary": "javli6dq3q",
-    "Javbus": "HUNTA-613",
     "Arzon": "1518084",
     "CompletionStatus": 6,
     "Version": 1,
@@ -36,5 +33,8 @@
         "\u8c4a\u4e2d\u30a2\u30ea\u30b9",
         "NIMO"
     ],
-    "Modify": "2021-09-05 18:27:35"
+    "Modify": "2021-09-05 18:27:35",
+    "JavDb": "aevr3",
+    "JavLibrary": "javli6dq3q",
+    "JavBus": "HUNTA-613"
 }

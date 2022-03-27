@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/meyd097/meyd097pl.jpg",
     "CoverBus": "58bd_b.jpg",
     "CutType": 1,
-    "Javdb": "qAY4x",
-    "Javlibrary": "javlila44i",
-    "Javbus": "MEYD-097",
     "Arzon": "1303712",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u6f81\u8c37\u679c\u6b69"
     ],
-    "Modify": "2021-09-05 21:27:40"
+    "Modify": "2021-09-05 21:27:40",
+    "JavDb": "qAY4x",
+    "JavLibrary": "javlila44i",
+    "JavBus": "MEYD-097"
 }

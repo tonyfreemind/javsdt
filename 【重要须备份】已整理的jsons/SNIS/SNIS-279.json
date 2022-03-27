@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/snis279/snis279pl.jpg",
     "CoverBus": "4il4_b.jpg",
     "CutType": 1,
-    "Javdb": "Awaw",
-    "Javlibrary": "javliiamrq",
-    "Javbus": "SNIS-279",
     "Arzon": "1230774",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u5922\u4e43\u3042\u3044\u304b"
     ],
-    "Modify": "2021-09-25 18:29:24"
+    "Modify": "2021-09-25 18:29:24",
+    "JavDb": "Awaw",
+    "JavLibrary": "javliiamrq",
+    "JavBus": "SNIS-279"
 }

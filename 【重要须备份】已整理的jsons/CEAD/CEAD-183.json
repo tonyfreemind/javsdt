@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/cead183/cead183pl.jpg",
     "CoverBus": "5m66_b.jpg",
     "CutType": 1,
-    "Javdb": "K4bKO",
-    "Javlibrary": "javlilt42m",
-    "Javbus": "CEAD-183",
     "Arzon": "1347305",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u7be0\u7530\u3042\u3086\u307f"
     ],
-    "Modify": "2022-02-15 19:12:26"
+    "Modify": "2022-02-15 19:12:26",
+    "JavDb": "K4bKO",
+    "JavLibrary": "javlilt42m",
+    "JavBus": "CEAD-183"
 }

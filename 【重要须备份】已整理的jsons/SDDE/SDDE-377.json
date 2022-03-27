@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1sdde377/1sdde377pl.jpg",
     "CoverBus": "4jwl_b.jpg",
     "CutType": 1,
-    "Javdb": "3572N",
-    "Javlibrary": "javliib73m",
-    "Javbus": "SDDE-377",
     "Arzon": "",
     "CompletionStatus": 6,
     "Version": 1,
@@ -30,5 +27,8 @@
     "Actors": [
         "\u4e0a\u539f\u4e9a\u8863"
     ],
-    "Modify": "2021-09-25 18:18:18"
+    "Modify": "2021-09-25 18:18:18",
+    "JavDb": "3572N",
+    "JavLibrary": "javliib73m",
+    "JavBus": "SDDE-377"
 }

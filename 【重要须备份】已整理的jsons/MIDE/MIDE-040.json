@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mide040/mide040pl.jpg",
     "CoverBus": "40s4_b.jpg",
     "CutType": 1,
-    "Javdb": "PQOv0",
-    "Javlibrary": "javlijib4y",
-    "Javbus": "MIDE-040",
     "Arzon": "1164519",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u5927\u6a4b\u672a\u4e45"
     ],
-    "Modify": "2021-09-25 17:22:11"
+    "Modify": "2021-09-25 17:22:11",
+    "JavDb": "PQOv0",
+    "JavLibrary": "javlijib4y",
+    "JavBus": "MIDE-040"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/dasd409/dasd409pl.jpg",
     "CoverBus": "6bx6_b.jpg",
     "CutType": 1,
-    "Javdb": "2mmBZ",
-    "Javlibrary": "javli4t7q4",
-    "Javbus": "DASD-409",
     "Arzon": "1539754",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u306a\u306a\u305b\u9ebb\u8863"
     ],
-    "Modify": "2021-09-05 15:46:46"
+    "Modify": "2021-09-05 15:46:46",
+    "JavDb": "2mmBZ",
+    "JavLibrary": "javli4t7q4",
+    "JavBus": "DASD-409"
 }

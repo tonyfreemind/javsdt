@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/h_910vrtm378/h_910vrtm378pl.jpg",
     "CoverBus": "6qmk_b.jpg",
     "CutType": 1,
-    "Javdb": "deA10",
-    "Javlibrary": "javli7iara",
-    "Javbus": "VRTM-378",
     "Arzon": "1474047",
     "CompletionStatus": 6,
     "Version": 1,
@@ -40,5 +37,8 @@
         "\u4ed3\u591a\u771f\u592e",
         "\u4e09\u539f\u307b\u306e\u304b"
     ],
-    "Modify": "2021-09-25 20:25:43"
+    "Modify": "2021-09-25 20:25:43",
+    "JavDb": "deA10",
+    "JavLibrary": "javli7iara",
+    "JavBus": "VRTM-378"
 }

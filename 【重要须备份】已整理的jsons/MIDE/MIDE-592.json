@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mide592/mide592pl.jpg",
     "CoverBus": "6smd_b.jpg",
     "CutType": 1,
-    "Javdb": "pkJ3w",
-    "Javlibrary": "javli7ly2a",
-    "Javbus": "MIDE-592",
     "Arzon": "1483432",
     "CompletionStatus": 6,
     "Version": 1,
@@ -36,5 +33,8 @@
     "Actors": [
         "\u3064\u307c\u307f"
     ],
-    "Modify": "2021-09-25 17:33:28"
+    "Modify": "2021-09-25 17:33:28",
+    "JavDb": "pkJ3w",
+    "JavLibrary": "javli7ly2a",
+    "JavBus": "MIDE-592"
 }

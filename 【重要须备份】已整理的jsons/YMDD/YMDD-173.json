@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ymdd173so/ymdd173sopl.jpg",
     "CoverBus": "7go4_b.jpg",
     "CutType": 1,
-    "Javdb": "ZdKBA",
-    "Javlibrary": "javli6tetm",
-    "Javbus": "YMDD-173",
     "Arzon": "1549119",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,8 @@
     "Actors": [
         "\u30e1\u30ed\u30c7\u30a3\u30fc\u30fb\u96db\u30fb\u30de\u30fc\u30af\u30b9"
     ],
-    "Modify": "2021-09-25 20:37:11"
+    "Modify": "2021-09-25 20:37:11",
+    "JavDb": "ZdKBA",
+    "JavLibrary": "javli6tetm",
+    "JavBus": "YMDD-173"
 }

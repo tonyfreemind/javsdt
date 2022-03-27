@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1star809/1star809pl.jpg",
     "CoverBus": "66wj_b.jpg",
     "CutType": 1,
-    "Javdb": "Xe5VV",
-    "Javlibrary": "javlikr4si",
-    "Javbus": "STAR-809",
     "Arzon": "1411411",
     "CompletionStatus": 6,
     "Version": 1,
@@ -31,5 +28,8 @@
     "Actors": [
         "\u767d\u77f3\u8309\u8389\u5948"
     ],
-    "Modify": "2021-09-25 19:22:33"
+    "Modify": "2021-09-25 19:22:33",
+    "JavDb": "Xe5VV",
+    "JavLibrary": "javlikr4si",
+    "JavBus": "STAR-809"
 }

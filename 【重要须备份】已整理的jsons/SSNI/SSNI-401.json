@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ssni401/ssni401pl.jpg",
     "CoverBus": "6xuq_b.jpg",
     "CutType": 1,
-    "Javdb": "EZ0z3",
-    "Javlibrary": "javli7tz7i",
-    "Javbus": "SSNI-401",
     "Arzon": "1498211",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u5965\u7530\u54b2"
     ],
-    "Modify": "2021-09-25 18:55:07"
+    "Modify": "2021-09-25 18:55:07",
+    "JavDb": "EZ0z3",
+    "JavLibrary": "javli7tz7i",
+    "JavBus": "SSNI-401"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/kawd785/kawd785pl.jpg",
     "CoverBus": "5veq_b.jpg",
     "CutType": 1,
-    "Javdb": "kKp24",
-    "Javlibrary": "javlikbh6u",
-    "Javbus": "KAWD-785",
     "Arzon": "1381414",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u6a31\u7531\u7f57"
     ],
-    "Modify": "2021-09-05 21:17:29"
+    "Modify": "2021-09-05 21:17:29",
+    "JavDb": "kKp24",
+    "JavLibrary": "javlikbh6u",
+    "JavBus": "KAWD-785"
 }

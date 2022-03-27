@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ssni058/ssni058pl.jpg",
     "CoverBus": "69u2_b.jpg",
     "CutType": 1,
-    "Javdb": "kwEm",
-    "Javlibrary": "javli4rutm",
-    "Javbus": "SSNI-058",
     "Arzon": "1426830",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u5922\u4e43\u3042\u3044\u304b"
     ],
-    "Modify": "2021-09-25 18:42:59"
+    "Modify": "2021-09-25 18:42:59",
+    "JavDb": "kwEm",
+    "JavLibrary": "javli4rutm",
+    "JavBus": "SSNI-058"
 }

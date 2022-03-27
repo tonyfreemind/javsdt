@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/dvaj411so/dvaj411sopl.jpg",
     "CoverBus": "79st_b.jpg",
     "CutType": 1,
-    "Javdb": "BbBRa",
-    "Javlibrary": "javli6ltye",
-    "Javbus": "DVAJ-411",
     "Arzon": "1531632",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u5ddd\u4e0a\u5948\u3005\u7f8e"
     ],
-    "Modify": "2021-09-13 22:55:42"
+    "Modify": "2021-09-13 22:55:42",
+    "JavDb": "BbBRa",
+    "JavLibrary": "javli6ltye",
+    "JavBus": "DVAJ-411"
 }

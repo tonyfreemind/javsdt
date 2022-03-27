@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipx316/ipx316pl.jpg",
     "CoverBus": "73ar_b.jpg",
     "CutType": 1,
-    "Javdb": "6D8zK",
-    "Javlibrary": "javli7zjsy",
-    "Javbus": "IPX-316",
     "Arzon": "1512985",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u660e\u91cc\u3064\u3080\u304e"
     ],
-    "Modify": "2021-09-05 18:47:29"
+    "Modify": "2021-09-05 18:47:29",
+    "JavDb": "6D8zK",
+    "JavLibrary": "javli7zjsy",
+    "JavBus": "IPX-316"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipx370/ipx370pl.jpg",
     "CoverBus": "79tb_b.jpg",
     "CutType": 1,
-    "Javdb": "Z4MkP",
-    "Javlibrary": "javli6lrry",
-    "Javbus": "IPX-370",
     "Arzon": "1531721",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u5e0c\u5d0e\u30b8\u30a7\u30b7\u30ab"
     ],
-    "Modify": "2021-09-05 18:49:45"
+    "Modify": "2021-09-05 18:49:45",
+    "JavDb": "Z4MkP",
+    "JavLibrary": "javli6lrry",
+    "JavBus": "IPX-370"
 }

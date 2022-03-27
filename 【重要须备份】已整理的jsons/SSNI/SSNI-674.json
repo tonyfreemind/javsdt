@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ssni674/ssni674pl.jpg",
     "CoverBus": "7hde_b.jpg",
     "CutType": 1,
-    "Javdb": "YmQnz",
-    "Javlibrary": "javli6qdsa",
-    "Javbus": "SSNI-674",
     "Arzon": "1550506",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u4e09\u4e0a\u60a0\u4e9c"
     ],
-    "Modify": "2021-10-30 10:03:01"
+    "Modify": "2021-10-30 10:03:01",
+    "JavDb": "YmQnz",
+    "JavLibrary": "javli6qdsa",
+    "JavBus": "SSNI-674"
 }

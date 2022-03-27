@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ssni488/ssni488pl.jpg",
     "CoverBus": "74jd_b.jpg",
     "CutType": 1,
-    "Javdb": "gOxNE",
-    "Javlibrary": "javli6ar5q",
-    "Javbus": "SSNI-488",
     "Arzon": "1517066",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u5915\u7f8e\u3057\u304a\u3093"
     ],
-    "Modify": "2021-09-25 18:59:39"
+    "Modify": "2021-09-25 18:59:39",
+    "JavDb": "gOxNE",
+    "JavLibrary": "javli6ar5q",
+    "JavBus": "SSNI-488"
 }

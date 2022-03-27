@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipz202/ipz202pl.jpg",
     "CoverBus": "3xko_b.jpg",
     "CutType": 1,
-    "Javdb": "QVGd9",
-    "Javlibrary": "javlijd4t4",
-    "Javbus": "IPZ-202",
     "Arzon": "1152129",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u6765\u90a3"
     ],
-    "Modify": "2021-09-21 08:02:39"
+    "Modify": "2021-09-21 08:02:39",
+    "JavDb": "QVGd9",
+    "JavLibrary": "javlijd4t4",
+    "JavBus": "IPZ-202"
 }

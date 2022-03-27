@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ebod454/ebod454pl.jpg",
     "CoverBus": "4unx_b.jpg",
     "CutType": 1,
-    "Javdb": "PeBE",
-    "Javlibrary": "javliityyq",
-    "Javbus": "EBOD-454",
     "Arzon": "1274719",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u7f8e\u7af9\u3059\u305a"
     ],
-    "Modify": "2021-09-05 15:56:34"
+    "Modify": "2021-09-05 15:56:34",
+    "JavDb": "PeBE",
+    "JavLibrary": "javliityyq",
+    "JavBus": "EBOD-454"
 }

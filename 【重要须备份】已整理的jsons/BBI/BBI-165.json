@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/bbi165/bbi165pl.jpg",
     "CoverBus": "4cvw_b.jpg",
     "CutType": 1,
-    "Javdb": "KkdWO",
-    "Javlibrary": "javlijym7m",
-    "Javbus": "BBI-165",
     "Arzon": "",
     "CompletionStatus": 6,
     "Version": 1,
@@ -31,5 +28,8 @@
     "Actors": [
         "\u685c\u6728\u51db"
     ],
-    "Modify": "2021-09-05 15:33:46"
+    "Modify": "2021-09-05 15:33:46",
+    "JavDb": "KkdWO",
+    "JavLibrary": "javlijym7m",
+    "JavBus": "BBI-165"
 }

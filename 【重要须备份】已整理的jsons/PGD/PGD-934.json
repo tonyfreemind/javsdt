@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/pgd934/pgd934pl.jpg",
     "CoverBus": "5ua5_b.jpg",
     "CutType": 1,
-    "Javdb": "neENe",
-    "Javlibrary": "javlikb2y4",
-    "Javbus": "PGD-934",
     "Arzon": "1377525",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u82e5\u83dc\u5948\u592e"
     ],
-    "Modify": "2021-09-21 08:06:36"
+    "Modify": "2021-09-21 08:06:36",
+    "JavDb": "neENe",
+    "JavLibrary": "javlikb2y4",
+    "JavBus": "PGD-934"
 }

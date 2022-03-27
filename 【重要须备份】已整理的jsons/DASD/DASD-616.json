@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/dasd616/dasd616pl.jpg",
     "CoverBus": "7f4w_b.jpg",
     "CutType": 1,
-    "Javdb": "wkxxe",
-    "Javlibrary": "javli6rryq",
-    "Javbus": "DASD-616",
     "Arzon": "1547705",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,8 @@
         "\u6c38\u702c\u3086\u3044",
         "\u67ca\u308b\u3044"
     ],
-    "Modify": "2021-09-05 17:24:15"
+    "Modify": "2021-09-05 17:24:15",
+    "JavDb": "wkxxe",
+    "JavLibrary": "javli6rryq",
+    "JavBus": "DASD-616"
 }

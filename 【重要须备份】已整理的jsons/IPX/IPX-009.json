@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipx009/ipx009pl.jpg",
     "CoverBus": "654o_b.jpg",
     "CutType": 1,
-    "Javdb": "2nmm",
-    "Javlibrary": "javlikrhtu",
-    "Javbus": "IPX-009",
     "Arzon": "1410915",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u67da\u6708\u3072\u307e\u308f\u308a"
     ],
-    "Modify": "2021-09-05 18:37:10"
+    "Modify": "2021-09-05 18:37:10",
+    "JavDb": "2nmm",
+    "JavLibrary": "javlikrhtu",
+    "JavBus": "IPX-009"
 }

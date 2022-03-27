@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipx232/ipx232pl.jpg",
     "CoverBus": "6t6n_b.jpg",
     "CutType": 1,
-    "Javdb": "ZNErV",
-    "Javlibrary": "javli7tt64",
-    "Javbus": "IPX-232",
     "Arzon": "1484573",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,8 @@
     "Actors": [
         "\u76f8\u6ca2\u307f\u306a\u307f"
     ],
-    "Modify": "2021-09-05 18:44:06"
+    "Modify": "2021-09-05 18:44:06",
+    "JavDb": "ZNErV",
+    "JavLibrary": "javli7tt64",
+    "JavBus": "IPX-232"
 }

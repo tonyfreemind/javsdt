@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/49ekdv273/49ekdv273pl.jpg",
     "CoverBus": "2s58_b.jpg",
     "CutType": 1,
-    "Javdb": "0eyyX",
-    "Javlibrary": "javliol5su",
-    "Javbus": "EKDV-273",
     "Arzon": "1084397",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u3064\u307c\u307f"
     ],
-    "Modify": "2021-09-05 15:59:09"
+    "Modify": "2021-09-05 15:59:09",
+    "JavDb": "0eyyX",
+    "JavLibrary": "javliol5su",
+    "JavBus": "EKDV-273"
 }

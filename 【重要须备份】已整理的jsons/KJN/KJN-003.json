@@ -16,9 +16,6 @@
     "CoverLibrary": "",
     "CoverBus": "",
     "CutType": 1,
-    "Javdb": "qJyM6",
-    "Javlibrary": "",
-    "Javbus": "",
     "Arzon": "",
     "CompletionStatus": 1,
     "Version": 1,
@@ -35,5 +32,8 @@
     "Actors": [
         "\u307f\u304f\u308b"
     ],
-    "Modify": "2021-10-30 12:27:30"
+    "Modify": "2021-10-30 12:27:30",
+    "JavDb": "qJyM6",
+    "JavLibrary": "",
+    "JavBus": ""
 }

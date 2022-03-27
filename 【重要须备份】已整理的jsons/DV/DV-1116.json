@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/53dv1116/53dv1116pl.jpg",
     "CoverBus": "30zd_b.jpg",
     "CutType": 1,
-    "Javdb": "8mMK",
-    "Javlibrary": "javlipac24",
-    "Javbus": "DV-1116",
     "Arzon": "932774",
     "CompletionStatus": 6,
     "Version": 1,
@@ -31,5 +28,8 @@
     "Actors": [
         "\u8fb0\u5df3\u3086\u3044"
     ],
-    "Modify": "2021-09-05 15:51:43"
+    "Modify": "2021-09-05 15:51:43",
+    "JavDb": "8mMK",
+    "JavLibrary": "javlipac24",
+    "JavBus": "DV-1116"
 }

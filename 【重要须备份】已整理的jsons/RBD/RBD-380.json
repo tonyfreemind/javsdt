@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/rbd380/rbd380pl.jpg",
     "CoverBus": "lzj_b.jpg",
     "CutType": 1,
-    "Javdb": "d48qa",
-    "Javlibrary": "javliody4e",
-    "Javbus": "RBD-380",
     "Arzon": "1034647",
     "CompletionStatus": 6,
     "Version": 1,
@@ -30,5 +27,8 @@
     "Actors": [
         "\u82a6\u540d\u672a\u5e06"
     ],
-    "Modify": "2021-09-25 18:12:53"
+    "Modify": "2021-09-25 18:12:53",
+    "JavDb": "d48qa",
+    "JavLibrary": "javliody4e",
+    "JavBus": "RBD-380"
 }

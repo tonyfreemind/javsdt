@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/h_635sw348/h_635sw348pl.jpg",
     "CoverBus": "4xcd_b.jpg",
     "CutType": 1,
-    "Javdb": "ZAyX",
-    "Javlibrary": "javliiztti",
-    "Javbus": "SW-348",
     "Arzon": "1281700",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
         "\u8449\u5c71\u7f8e\u7a7a",
         "\u4e0a\u6749\u73b2\u5948"
     ],
-    "Modify": "2021-09-25 19:57:27"
+    "Modify": "2021-09-25 19:57:27",
+    "JavDb": "ZAyX",
+    "JavLibrary": "javliiztti",
+    "JavBus": "SW-348"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/49ekdv531/49ekdv531pl.jpg",
     "CoverBus": "6kpy_b.jpg",
     "CutType": 1,
-    "Javdb": "knpz",
-    "Javlibrary": "javli7bqqq",
-    "Javbus": "EKDV-531",
     "Arzon": "1454609",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,8 @@
     "Actors": [
         "\u512a\u6708\u307e\u308a\u306a"
     ],
-    "Modify": "2021-09-05 15:59:36"
+    "Modify": "2021-09-05 15:59:36",
+    "JavDb": "knpz",
+    "JavLibrary": "javli7bqqq",
+    "JavBus": "EKDV-531"
 }

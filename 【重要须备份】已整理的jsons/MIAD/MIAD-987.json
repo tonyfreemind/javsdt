@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/miad987/miad987pl.jpg",
     "CoverBus": "5r3e_b.jpg",
     "CutType": 1,
-    "Javdb": "7R9V",
-    "Javlibrary": "javlil3u7q",
-    "Javbus": "MIAD-987",
     "Arzon": "1366816",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u672c\u7530\u5cac"
     ],
-    "Modify": "2021-09-05 21:39:49"
+    "Modify": "2021-09-05 21:39:49",
+    "JavDb": "7R9V",
+    "JavLibrary": "javlil3u7q",
+    "JavBus": "MIAD-987"
 }

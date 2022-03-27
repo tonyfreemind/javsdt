@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/dvdms086so/dvdms086sopl.jpg",
     "CoverBus": "5uwi_b.jpg",
     "CutType": 1,
-    "Javdb": "bKKqg",
-    "Javlibrary": "javlikb55m",
-    "Javbus": "DVDMS-086",
     "Arzon": "1378509",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
         "\u7be0\u7530\u3086\u3046",
         "\u82b1\u54b2\u3044\u3042\u3093"
     ],
-    "Modify": "2021-09-05 15:55:24"
+    "Modify": "2021-09-05 15:55:24",
+    "JavDb": "bKKqg",
+    "JavLibrary": "javlikb55m",
+    "JavBus": "DVDMS-086"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/digital/video/sivr00002/sivr00002pl.jpg",
     "CoverBus": "60vf_b.jpg",
     "CutType": 1,
-    "Javdb": "r3rXN",
-    "Javlibrary": "javlikqps4",
-    "Javbus": "SIVR-002",
     "Arzon": "",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u4e09\u4e0a\u60a0\u4e9c"
     ],
-    "Modify": "2021-09-25 18:27:14"
+    "Modify": "2021-09-25 18:27:14",
+    "JavDb": "r3rXN",
+    "JavLibrary": "javlikqps4",
+    "JavBus": "SIVR-002"
 }

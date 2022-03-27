@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1sdde552/1sdde552pl.jpg",
     "CoverBus": "6rkx_b.jpg",
     "CutType": 1,
-    "Javdb": "DRZO5",
-    "Javlibrary": "javli7iiy4",
-    "Javbus": "SDDE-552",
     "Arzon": "1477227",
     "CompletionStatus": 6,
     "Version": 1,
@@ -37,5 +34,8 @@
         "\u91ce\u3005\u5bae\u307f\u3055\u3068",
         "\u9999\u82d7\u30ec\u30ce\u30f3"
     ],
-    "Modify": "2021-09-25 18:20:14"
+    "Modify": "2021-09-25 18:20:14",
+    "JavDb": "DRZO5",
+    "JavLibrary": "javli7iiy4",
+    "JavBus": "SDDE-552"
 }

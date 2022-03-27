@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/hunta431/hunta431pl.jpg",
     "CoverBus": "6hpd_b.jpg",
     "CutType": 1,
-    "Javdb": "ydG50",
-    "Javlibrary": "javli43y3a",
-    "Javbus": "HUNTA-431",
     "Arzon": "1450340",
     "CompletionStatus": 6,
     "Version": 1,
@@ -36,5 +33,8 @@
         "\u5317\u5ddd\u3086\u305a",
         "\u7434\u6c34\u305b\u3044\u3089"
     ],
-    "Modify": "2021-09-05 18:27:11"
+    "Modify": "2021-09-05 18:27:11",
+    "JavDb": "ydG50",
+    "JavLibrary": "javli43y3a",
+    "JavBus": "HUNTA-431"
 }

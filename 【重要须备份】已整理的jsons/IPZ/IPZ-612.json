@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipz612/ipz612pl.jpg",
     "CoverBus": "4wn9_b.jpg",
     "CutType": 1,
-    "Javdb": "yX6v",
-    "Javlibrary": "javliiyts4",
-    "Javbus": "IPZ-612",
     "Arzon": "1284268",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u6728\u5357\u65e5\u83dc"
     ],
-    "Modify": "2021-09-05 18:57:33"
+    "Modify": "2021-09-05 18:57:33",
+    "JavDb": "yX6v",
+    "JavLibrary": "javliiyts4",
+    "JavBus": "IPZ-612"
 }

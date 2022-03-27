@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mdyd930/mdyd930pl.jpg",
     "CoverBus": "4cdc_b.jpg",
     "CutType": 1,
-    "Javdb": "J2Z5z",
-    "Javlibrary": "javlijyb5m",
-    "Javbus": "MDYD-930",
     "Arzon": "1204531",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u6ce2\u591a\u91ce\u7ed3\u8863"
     ],
-    "Modify": "2021-09-05 21:26:52"
+    "Modify": "2021-09-05 21:26:52",
+    "JavDb": "J2Z5z",
+    "JavLibrary": "javlijyb5m",
+    "JavBus": "MDYD-930"
 }

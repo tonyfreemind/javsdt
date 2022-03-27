@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/kawd963/kawd963pl.jpg",
     "CoverBus": "6yyt_b.jpg",
     "CutType": 1,
-    "Javdb": "eBQ6N",
-    "Javlibrary": "javli7yq3e",
-    "Javbus": "KAWD-963",
     "Arzon": "1501454",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u685c\u3082\u3053"
     ],
-    "Modify": "2021-09-05 21:19:09"
+    "Modify": "2021-09-05 21:19:09",
+    "JavDb": "eBQ6N",
+    "JavLibrary": "javli7yq3e",
+    "JavBus": "KAWD-963"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mide389/mide389pl.jpg",
     "CoverBus": "5si2_b.jpg",
     "CutType": 1,
-    "Javdb": "VwdK2",
-    "Javlibrary": "javlikas4q",
-    "Javbus": "MIDE-389",
     "Arzon": "1372071",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u9ad8\u6865\u5723\u5b50"
     ],
-    "Modify": "2021-09-25 17:27:07"
+    "Modify": "2021-09-25 17:27:07",
+    "JavDb": "VwdK2",
+    "JavLibrary": "javlikas4q",
+    "JavBus": "MIDE-389"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mimk020/mimk020pl.jpg",
     "CoverBus": "4d4o_b.jpg",
     "CutType": 1,
-    "Javdb": "zK8Y4",
-    "Javlibrary": "javlijz25m",
-    "Javbus": "MIMK-020",
     "Arzon": "",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
         "\u6c96\u7530\u674f\u68a8",
         "\u3042\u304b\u304e\u78a7"
     ],
-    "Modify": "2021-09-25 17:42:45"
+    "Modify": "2021-09-25 17:42:45",
+    "JavDb": "zK8Y4",
+    "JavLibrary": "javlijz25m",
+    "JavBus": "MIMK-020"
 }

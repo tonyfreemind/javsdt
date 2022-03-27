@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/118abp104/118abp104pl.jpg",
     "CoverBus": "45es_b.jpg",
     "CutType": 1,
-    "Javdb": "ZNxDm",
-    "Javlibrary": "javlijtfte",
-    "Javbus": "ABP-104",
     "Arzon": "1178012",
     "CompletionStatus": 6,
     "Version": 1,
@@ -31,5 +28,8 @@
     "Actors": [
         "\u3042\u3084\u307f\u65ec\u679c"
     ],
-    "Modify": "2021-09-05 13:46:06"
+    "Modify": "2021-09-05 13:46:06",
+    "JavDb": "ZNxDm",
+    "JavLibrary": "javlijtfte",
+    "JavBus": "ABP-104"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/shkd882/shkd882pl.jpg",
     "CoverBus": "7fs3_b.jpg",
     "CutType": 1,
-    "Javdb": "6qDVn",
-    "Javlibrary": "javli6l724",
-    "Javbus": "SHKD-882",
     "Arzon": "1544734",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u661f\u91ce\u30ca\u30df"
     ],
-    "Modify": "2021-09-25 18:26:13"
+    "Modify": "2021-09-25 18:26:13",
+    "JavDb": "6qDVn",
+    "JavLibrary": "javli6l724",
+    "JavBus": "SHKD-882"
 }

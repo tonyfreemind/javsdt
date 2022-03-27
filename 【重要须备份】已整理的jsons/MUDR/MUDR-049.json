@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mudr049/mudr049pl.jpg",
     "CoverBus": "6q06_b.jpg",
     "CutType": 1,
-    "Javdb": "8255d",
-    "Javlibrary": "javli7i5ti",
-    "Javbus": "MUDR-049",
     "Arzon": "1474781",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u5411\u4e95\u85cd"
     ],
-    "Modify": "2021-09-25 17:50:26"
+    "Modify": "2021-09-25 17:50:26",
+    "JavDb": "8255d",
+    "JavLibrary": "javli7i5ti",
+    "JavBus": "MUDR-049"
 }

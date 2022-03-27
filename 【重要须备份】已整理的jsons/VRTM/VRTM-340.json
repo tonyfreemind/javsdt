@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/h_910vrtm340/h_910vrtm340pl.jpg",
     "CoverBus": "6jpp_b.jpg",
     "CutType": 1,
-    "Javdb": "K44aP",
-    "Javlibrary": "javli4355y",
-    "Javbus": "VRTM-340",
     "Arzon": "1449931",
     "CompletionStatus": 6,
     "Version": 1,
@@ -39,5 +36,8 @@
         "\u4e09\u539f\u307b\u306e\u304b",
         "\u5c0f\u5cf0\u3072\u306a\u305f"
     ],
-    "Modify": "2021-09-25 20:25:27"
+    "Modify": "2021-09-25 20:25:27",
+    "JavDb": "K44aP",
+    "JavLibrary": "javli4355y",
+    "JavBus": "VRTM-340"
 }

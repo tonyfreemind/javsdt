@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipx428/ipx428pl.jpg",
     "CoverBus": "7h17_b.jpg",
     "CutType": 1,
-    "Javdb": "n4ape",
-    "Javlibrary": "javli6qny4",
-    "Javbus": "IPX-428",
     "Arzon": "1549800",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u685c\u7a7a\u3082\u3082"
     ],
-    "Modify": "2021-09-05 18:52:54"
+    "Modify": "2021-09-05 18:52:54",
+    "JavDb": "n4ape",
+    "JavLibrary": "javli6qny4",
+    "JavBus": "IPX-428"
 }

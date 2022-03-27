@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/snis990/snis990pl.jpg",
     "CoverBus": "654v_b.jpg",
     "CutType": 1,
-    "Javdb": "g0kWZ",
-    "Javlibrary": "javlikrh7i",
-    "Javbus": "SNIS-990",
     "Arzon": "1410938",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u5965\u7530\u54b2"
     ],
-    "Modify": "2021-09-25 18:40:24"
+    "Modify": "2021-09-25 18:40:24",
+    "JavDb": "g0kWZ",
+    "JavLibrary": "javlikrh7i",
+    "JavBus": "SNIS-990"
 }

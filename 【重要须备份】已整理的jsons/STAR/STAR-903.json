@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1star903/1star903pl.jpg",
     "CoverBus": "6jad_b.jpg",
     "CutType": 1,
-    "Javdb": "DeqK",
-    "Javlibrary": "javli7dt2e",
-    "Javbus": "STAR-903",
     "Arzon": "1453071",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u4e09\u7530\u674f"
     ],
-    "Modify": "2021-09-25 19:31:39"
+    "Modify": "2021-09-25 19:31:39",
+    "JavDb": "DeqK",
+    "JavLibrary": "javli7dt2e",
+    "JavBus": "STAR-903"
 }

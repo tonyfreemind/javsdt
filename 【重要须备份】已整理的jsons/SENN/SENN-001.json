@@ -16,9 +16,6 @@
     "CoverLibrary": "",
     "CoverBus": "7g0j_b.jpg",
     "CutType": 1,
-    "Javdb": "QWR6M",
-    "Javlibrary": "",
-    "Javbus": "SENN-001",
     "Arzon": "",
     "CompletionStatus": 5,
     "Version": 1,
@@ -33,5 +30,8 @@
         "\u5c71\u4e95\u3059\u305a",
         "\u6850\u5c71\u7d50\u7fbd"
     ],
-    "Modify": "2021-09-25 18:22:45"
+    "Modify": "2021-09-25 18:22:45",
+    "JavDb": "QWR6M",
+    "JavLibrary": "",
+    "JavBus": "SENN-001"
 }

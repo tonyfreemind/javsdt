@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ebod571/ebod571pl.jpg",
     "CoverBus": "5wea_b.jpg",
     "CutType": 1,
-    "Javdb": "4DWga",
-    "Javlibrary": "javlikdvqi",
-    "Javbus": "EBOD-571",
     "Arzon": "1383568",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u9234\u6728\u5fc3\u6625"
     ],
-    "Modify": "2021-09-05 15:58:02"
+    "Modify": "2021-09-05 15:58:02",
+    "JavDb": "4DWga",
+    "JavLibrary": "javlikdvqi",
+    "JavBus": "EBOD-571"
 }

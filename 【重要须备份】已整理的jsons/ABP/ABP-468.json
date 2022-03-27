@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/118abp468/118abp468pl.jpg",
     "CoverBus": "5fth_b.jpg",
     "CutType": 1,
-    "Javdb": "J2eEz",
-    "Javlibrary": "javliljd4i",
-    "Javbus": "ABP-468",
     "Arzon": "1326845",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u5742\u4e95\u91cc\u7f8e"
     ],
-    "Modify": "2021-09-05 13:57:26"
+    "Modify": "2021-09-05 13:57:26",
+    "JavDb": "J2eEz",
+    "JavLibrary": "javliljd4i",
+    "JavBus": "ABP-468"
 }

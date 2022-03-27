@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipx395/ipx395pl.jpg",
     "CoverBus": "7cwb_b.jpg",
     "CutType": 1,
-    "Javdb": "ZqVxv",
-    "Javlibrary": "javli6j62a",
-    "Javbus": "IPX-395",
     "Arzon": "1540549",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u5929\u6d77\u3064\u3070\u3055"
     ],
-    "Modify": "2021-09-05 18:50:25"
+    "Modify": "2021-09-05 18:50:25",
+    "JavDb": "ZqVxv",
+    "JavLibrary": "javli6j62a",
+    "JavBus": "IPX-395"
 }

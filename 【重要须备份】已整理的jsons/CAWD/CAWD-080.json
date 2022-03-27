@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/cawd080/cawd080pl.jpg",
     "CoverBus": "7q0a_b.jpg",
     "CutType": 1,
-    "Javdb": "R672R",
-    "Javlibrary": "javme2ztqa",
-    "Javbus": "CAWD-080",
     "Arzon": "1569216",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u685c\u3082\u3053"
     ],
-    "Modify": "2022-02-15 19:05:50"
+    "Modify": "2022-02-15 19:05:50",
+    "JavDb": "R672R",
+    "JavLibrary": "javme2ztqa",
+    "JavBus": "CAWD-080"
 }

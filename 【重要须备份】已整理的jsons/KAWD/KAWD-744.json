@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/kawd744/kawd744pl.jpg",
     "CoverBus": "5nh3_b.jpg",
     "CutType": 1,
-    "Javdb": "96rOp",
-    "Javlibrary": "javlilytte",
-    "Javbus": "KAWD-744",
     "Arzon": "1355151",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u9234\u6728\u5fc3\u6625"
     ],
-    "Modify": "2021-09-05 21:16:53"
+    "Modify": "2021-09-05 21:16:53",
+    "JavDb": "96rOp",
+    "JavLibrary": "javlilytte",
+    "JavBus": "KAWD-744"
 }

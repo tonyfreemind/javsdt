@@ -1,12 +1,13 @@
 # -*- coding:utf-8 -*-
 import os
-from json import load
+from json import load, dump
+
+from User import choose_directory
 
 
 def read_json_to_dict(path):
-    f = open(path, encoding='utf-8')
-    dict_json = load(f)
-    f.close()
+    with open(path, encoding='utf-8') as f:
+        dict_json = load(f)
     return dict_json
 
 
@@ -42,10 +43,7 @@ def check_lost_plot(path):
         dict_json = read_json_to_dict(path)
         # print('当前plot如下')
         # print('plot:', dict_json['plot'])
-        if dict_json['plot'] == '未知简介':
-            return True
-        else:
-            return False
+        return dict_json['plot'] == '未知简介'
     else:
         print('  >没有json：', path)
         return False
@@ -55,16 +53,14 @@ def check_lost_plot(path):
 def check_lost_series(path):
     if os.path.exists(path):
         dict_json = read_json_to_dict(path)
-        if dict_json['series'] == '未知系列':
-            return True
-        else:
-            return False
+        return dict_json['series'] == '未知系列'
     else:
         print('  >没有json：', path)
         return False
 
 
 def judge_json_contain_one_genre_by_path(path, genre):
+    """检查某一个json是否包含指定的genre"""
     dict_json = read_json_to_dict(path)
     print('正在检查: ', path)
     if genre in dict_json['Genres']:
@@ -72,3 +68,30 @@ def judge_json_contain_one_genre_by_path(path, genre):
         return True
     else:
         return False
+
+
+def write_json(path, dict_json):
+    # 重新写
+    with open(path, 'w', encoding='utf-8') as f:
+        dump(dict_json, f, indent=4)
+
+
+def replace_key_name(path, key_old, key_new):
+    dict_json = read_json_to_dict(path)
+    if key_old in dict_json:
+        # print('旧: ', dict_json)
+        dict_json[key_new] = dict_json[key_old]
+        del dict_json[key_old]
+        # print('新: ', dict_json)
+        write_json(path, dict_json)
+
+
+if __name__ == '__main__':
+    print('请选择要整理的文件夹：')
+    root_choose = choose_directory()
+    for root, dirs, files in os.walk(root_choose):
+        for file in files:
+            if file.endswith('.json'):
+                replace_key_name(f'{root}\\{file}', 'Javdb', 'JavDb')
+                replace_key_name(f'{root}\\{file}', 'Javlibrary', 'JavLibrary')
+                replace_key_name(f'{root}\\{file}', 'Javbus', 'JavBus')

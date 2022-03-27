@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1nhdt561/1nhdt561pl.jpg",
     "CoverBus": "29ou_b.jpg",
     "CutType": 1,
-    "Javdb": "mpOZ",
-    "Javlibrary": "javlicbi5q",
-    "Javbus": "NHDT-561",
     "Arzon": "424955",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
         "\u771f\u5d0e\u5be7\u3005",
         "\u611b\u91cc\u3072\u306a"
     ],
-    "Modify": "2021-09-25 17:54:35"
+    "Modify": "2021-09-25 17:54:35",
+    "JavDb": "mpOZ",
+    "JavLibrary": "javlicbi5q",
+    "JavBus": "NHDT-561"
 }

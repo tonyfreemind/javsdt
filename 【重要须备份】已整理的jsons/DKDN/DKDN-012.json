@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/h_139dkdn012/h_139dkdn012pl.jpg",
     "CoverBus": "4f9v_b.jpg",
     "CutType": 1,
-    "Javdb": "2a20m",
-    "Javlibrary": "javliorfre",
-    "Javbus": "DKDN-012",
     "Arzon": "1104949",
     "CompletionStatus": 6,
     "Version": 1,
@@ -36,5 +33,8 @@
         "\u96e8\u5bab\u7434\u97f3",
         "\u5927\u69fb\u3072\u3073\u304d"
     ],
-    "Modify": "2021-09-05 15:50:40"
+    "Modify": "2021-09-05 15:50:40",
+    "JavDb": "2a20m",
+    "JavLibrary": "javliorfre",
+    "JavBus": "DKDN-012"
 }

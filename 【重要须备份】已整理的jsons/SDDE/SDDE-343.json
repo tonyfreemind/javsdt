@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1sdde343/1sdde343pl.jpg",
     "CoverBus": "45po_b.jpg",
     "CutType": 1,
-    "Javdb": "5dkp",
-    "Javlibrary": "javlijtgre",
-    "Javbus": "SDDE-343",
     "Arzon": "1177681",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
         "\u9ad8\u68a8\u6b65",
         "\u661f\u5ddd\u9ebb\u7eaa"
     ],
-    "Modify": "2021-09-25 18:17:42"
+    "Modify": "2021-09-25 18:17:42",
+    "JavDb": "5dkp",
+    "JavLibrary": "javlijtgre",
+    "JavBus": "SDDE-343"
 }

@@ -185,6 +185,9 @@ class Ini(object):
             self.url_db = dict_ini[Const.URL_DB].rstrip('/')
             """网址 javdb"""
 
+            self.library_cf_clearance = dict_ini[Const.LIBRARY_CF_CLEARANCE]
+            """library cookies的一部分"""
+
             self.arzon_phpsessid = dict_ini[Const.ARZON_PHPSESSID]
             """arzon cookies的一部分"""
 
@@ -304,15 +307,18 @@ class Ini(object):
                 dict_dest[option] = config.get(section, option)
         return dict_dest
 
-    def web_url_proxy(self, pattern):
+    def web_url_proxy(self, website):
         """按模式返回网址"""
-        if pattern == 'JavBus':
-            return self.url_bus, self.proxy_bus
-        elif pattern == 'JavDb':
+
+        if website == 'JavDb':
             return self.url_db, self.proxy_db
-        elif pattern == 'JavLibrary':
+        elif website == 'JavLibrary':
             return self.url_library, self.proxy_library
-        elif pattern == 'Jav321':
-            return '', self.proxy_321
+        elif website == 'JavBus':
+            return self.url_bus, self.proxy_bus
+        elif website == 'Arzon':
+            return 'https://www.arzon.jp', self.proxy_321
+        elif website == 'Jav321':
+            return 'https://www.jav321.com/', self.proxy_321
         else:
             raise

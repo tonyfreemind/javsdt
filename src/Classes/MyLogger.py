@@ -23,10 +23,11 @@ class Logger(object):
         self._path_relative = ''
         """路径: 当前jav_file相对于dir_choose的路径\n\n用于报错"""
 
-    def rest(self):
+    def rest_and_record_choose(self, dir_choose:str):
         """每次选择文件夹后重置"""
         self._no_fail = 0
         self._no_warn = 0
+        self._record_start(dir_choose)
 
     def record_fail(self, fail_msg: str, extra_msg: str = None):
         """
@@ -58,7 +59,7 @@ class Logger(object):
         write_txt(Const.TXT_WARN, msg)
         print(msg, end='')
 
-    def record_start(self, dir_choose):
+    def _record_start(self, dir_choose):
         """
         记录此次整理的文件夹、整理的时间
 
@@ -73,18 +74,18 @@ class Logger(object):
 
     def print_end(self):
         """（当前文件夹处理结束）显示整理情况"""
+        print('\n当前文件夹完成，', end='')
         if self._no_fail > 0:
             print('失败', self._no_fail, '个!  ', self._dir_choose, '\n')
-            line = -1
             with open(Const.TXT_FAIL, 'r', encoding="utf-8") as f:
                 content = list(f)
+            line = -1
             while 1:
                 if content[line].startswith('已'):
                     break
                 line -= 1
             for i in range(line + 1, 0):
                 print(content[i], end='')
-            print(f'\n“{Const.TXT_FAIL}”已记录错误\n')
         else:
             print(' “0”失败！  ', self._dir_choose, '\n')
         if self._no_warn > 0:
@@ -120,6 +121,5 @@ def write_txt(path_txt: str, msg: str):
         path_txt: 文本路径
         msg: 写入内容，注意加换行符
     """
-    txt = open(path_txt, 'a', encoding="utf-8")
-    txt.write(msg)
-    txt.close()
+    with open(path_txt, 'a', encoding="utf-8") as txt:
+        txt.write(msg)

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/cjod136/cjod136pl.jpg",
     "CoverBus": "6gyt_b.jpg",
     "CutType": 1,
-    "Javdb": "m0DY",
-    "Javlibrary": "javli4zmq4",
-    "Javbus": "CJOD-136",
     "Arzon": "1448731",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u661f\u5948\u3042\u3044"
     ],
-    "Modify": "2021-09-05 15:41:40"
+    "Modify": "2021-09-05 15:41:40",
+    "JavDb": "m0DY",
+    "JavLibrary": "javli4zmq4",
+    "JavBus": "CJOD-136"
 }

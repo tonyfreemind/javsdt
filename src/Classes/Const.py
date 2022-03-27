@@ -72,6 +72,7 @@ class Const(object):
     URL_BUS = 'javbus网址'
     URL_DB = 'javdb网址'
     ARZON_PHPSESSID = 'arzon的phpsessid'
+    LIBRARY_CF_CLEARANCE = 'javlibrary的cf_clearance'
     TUPLE_VIDEO_TYPES = '扫描文件类型'
     INT_TITLE_LEN = '重命名中的标题长度（50~150）'
 
@@ -126,6 +127,7 @@ class Const(object):
     REQUEST_ERROR_TRY_AGAIN = '    >打开网页失败，重新尝试...'
     REQUEST_MAX_TRY = '    >打开网页失败，网站拒绝了你的请求，你可能在使用公共的代理...'
     HTML_NOT_TARGET_TRY_AGAIN = '    >打开网页失败，空返回...重新尝试...'
+    NEED_UPDATE_HEADERS = '    >打开网页失败，需要更新headers...'
     PLEASE_CHECK_URL = '>>请检查你的网络环境是否可以打开: '
     ARZON_EXIST_BUT_NO_PLOT = '【arzon有该影片，但找不到简介】'
     ARZON_PLOT_NOT_FOUND = '【影片下架，暂无简介】'

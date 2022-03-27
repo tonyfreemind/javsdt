@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1sdde305/1sdde305pl.jpg",
     "CoverBus": "nob_b.jpg",
     "CutType": 1,
-    "Javdb": "qM5P",
-    "Javlibrary": "javlioznti",
-    "Javbus": "SDDE-305",
     "Arzon": "",
     "CompletionStatus": 6,
     "Version": 1,
@@ -31,5 +28,8 @@
     "Actors": [
         "\u6c34\u5e0c\u674f"
     ],
-    "Modify": "2021-09-25 18:17:02"
+    "Modify": "2021-09-25 18:17:02",
+    "JavDb": "qM5P",
+    "JavLibrary": "javlioznti",
+    "JavBus": "SDDE-305"
 }

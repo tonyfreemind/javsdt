@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1dvdes543/1dvdes543pl.jpg",
     "CoverBus": "257j_b.jpg",
     "CutType": 1,
-    "Javdb": "YJb",
-    "Javlibrary": "javlioif24",
-    "Javbus": "DVDES-543",
     "Arzon": "1072448",
     "CompletionStatus": 6,
     "Version": 1,
@@ -36,5 +33,8 @@
         "\u6d77\u5b9d\u7f8e\u7fbd",
         "\u6708\u7f8e\u5f25\u751f"
     ],
-    "Modify": "2021-09-05 15:54:39"
+    "Modify": "2021-09-05 15:54:39",
+    "JavDb": "YJb",
+    "JavLibrary": "javlioif24",
+    "JavBus": "DVDES-543"
 }

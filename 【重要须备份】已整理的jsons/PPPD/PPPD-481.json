@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/pppd481/pppd481pl.jpg",
     "CoverBus": "5i4k_b.jpg",
     "CutType": 1,
-    "Javdb": "AXrM",
-    "Javlibrary": "javlilrt2u",
-    "Javbus": "PPPD-481",
     "Arzon": "1445351",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u6c34\u91ce\u671d\u9633"
     ],
-    "Modify": "2021-09-25 18:06:31"
+    "Modify": "2021-09-25 18:06:31",
+    "JavDb": "AXrM",
+    "JavLibrary": "javlilrt2u",
+    "JavBus": "PPPD-481"
 }

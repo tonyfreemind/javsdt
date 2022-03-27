@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/shkd886/shkd886pl.jpg",
     "CoverBus": "7gno_b.jpg",
     "CutType": 1,
-    "Javdb": "6q3Qn",
-    "Javlibrary": "javli6titq",
-    "Javbus": "SHKD-886",
     "Arzon": "1549044",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,8 @@
     "Actors": [
         "\u4e8c\u5bae\u3072\u304b\u308a"
     ],
-    "Modify": "2021-09-25 18:26:22"
+    "Modify": "2021-09-25 18:26:22",
+    "JavDb": "6q3Qn",
+    "JavLibrary": "javli6titq",
+    "JavBus": "SHKD-886"
 }

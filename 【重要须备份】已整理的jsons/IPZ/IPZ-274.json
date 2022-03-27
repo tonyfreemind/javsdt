@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipz274/ipz274pl.jpg",
     "CoverBus": "428u_b.jpg",
     "CutType": 1,
-    "Javdb": "Qkwq",
-    "Javlibrary": "javlijjbqa",
-    "Javbus": "IPZ-274",
     "Arzon": "1269259",
     "CompletionStatus": 6,
     "Version": 1,
@@ -31,5 +28,8 @@
         "\u7f8e\u96ea\u3042\u308a\u3059",
         "\u7be0\u5bae\u3086\u308a"
     ],
-    "Modify": "2021-09-21 08:03:36"
+    "Modify": "2021-09-21 08:03:36",
+    "JavDb": "Qkwq",
+    "JavLibrary": "javlijjbqa",
+    "JavBus": "IPZ-274"
 }

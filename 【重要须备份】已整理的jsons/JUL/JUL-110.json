@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/jul110/jul110pl.jpg",
     "CoverBus": "7hot_b.jpg",
     "CutType": 1,
-    "Javdb": "Ym5Ex",
-    "Javlibrary": "javli6qg44",
-    "Javbus": "JUL-110",
     "Arzon": "1551994",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u6d41\u5ddd\u5343\u7a42"
     ],
-    "Modify": "2021-09-21 08:42:40"
+    "Modify": "2021-09-21 08:42:40",
+    "JavDb": "Ym5Ex",
+    "JavLibrary": "javli6qg44",
+    "JavBus": "JUL-110"
 }

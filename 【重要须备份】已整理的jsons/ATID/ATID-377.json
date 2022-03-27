@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/atid377/atid377pl.jpg",
     "CoverBus": "7crz_b.jpg",
     "CutType": 1,
-    "Javdb": "MYer1",
-    "Javlibrary": "javli6ju6a",
-    "Javbus": "ATID-377",
     "Arzon": "1540211",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u590f\u76ee\u5f69\u6625"
     ],
-    "Modify": "2021-11-07 21:38:32"
+    "Modify": "2021-11-07 21:38:32",
+    "JavDb": "MYer1",
+    "JavLibrary": "javli6ju6a",
+    "JavBus": "ATID-377"
 }

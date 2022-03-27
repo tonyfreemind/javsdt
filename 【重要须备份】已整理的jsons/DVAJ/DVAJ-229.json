@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/dvaj229so/dvaj229sopl.jpg",
     "CoverBus": "7nqa_b.jpg",
     "CutType": 1,
-    "Javdb": "NQXJg",
-    "Javlibrary": "javliklqqy",
-    "Javbus": "https://www.buscdn.me/DVAJ-229_2020-04-10",
     "Arzon": "1388565",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u3059\u307f\u308c\u7f8e\u9999"
     ],
-    "Modify": "2021-09-05 15:53:43"
+    "Modify": "2021-09-05 15:53:43",
+    "JavDb": "NQXJg",
+    "JavLibrary": "javliklqqy",
+    "JavBus": "https://www.buscdn.me/DVAJ-229_2020-04-10"
 }

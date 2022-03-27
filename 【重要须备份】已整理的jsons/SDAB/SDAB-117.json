@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1sdab117/1sdab117pl.jpg",
     "CoverBus": "7h6s_b.jpg",
     "CutType": 1,
-    "Javdb": "9Yzag",
-    "Javlibrary": "javli6tjyu",
-    "Javbus": "SDAB-117",
     "Arzon": "1566343",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u4e45\u7559\u6728\u73b2"
     ],
-    "Modify": "2021-09-25 18:16:46"
+    "Modify": "2021-09-25 18:16:46",
+    "JavDb": "9Yzag",
+    "JavLibrary": "javli6tjyu",
+    "JavBus": "SDAB-117"
 }

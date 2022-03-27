@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/apns025so/apns025sopl.jpg",
     "CoverBus": "66hk_b.jpg",
     "CutType": 1,
-    "Javdb": "akXpO",
-    "Javlibrary": "javliktuty",
-    "Javbus": "APNS-025",
     "Arzon": "1415834",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u677e\u7530\u771f\u590f"
     ],
-    "Modify": "2021-09-05 15:26:44"
+    "Modify": "2021-09-05 15:26:44",
+    "JavDb": "akXpO",
+    "JavLibrary": "javliktuty",
+    "JavBus": "APNS-025"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/iptd555/iptd555pl.jpg",
     "CoverBus": "hsl_b.jpg",
     "CutType": 1,
-    "Javdb": "9986",
-    "Javlibrary": "javliplg6i",
-    "Javbus": "IPTD-555",
     "Arzon": "",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "Rio"
     ],
-    "Modify": "2021-09-05 18:35:55"
+    "Modify": "2021-09-05 18:35:55",
+    "JavDb": "9986",
+    "JavLibrary": "javliplg6i",
+    "JavBus": "IPTD-555"
 }

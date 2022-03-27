@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1star894/1star894pl.jpg",
     "CoverBus": "6iho_b.jpg",
     "CutType": 1,
-    "Javdb": "W2ae",
-    "Javlibrary": "javli4ze5e",
-    "Javbus": "STAR-894",
     "Arzon": "1446616",
     "CompletionStatus": 6,
     "Version": 1,
@@ -31,5 +28,8 @@
     "Actors": [
         "\u6238\u7530\u771f\u7434"
     ],
-    "Modify": "2021-09-25 19:30:08"
+    "Modify": "2021-09-25 19:30:08",
+    "JavDb": "W2ae",
+    "JavLibrary": "javli4ze5e",
+    "JavBus": "STAR-894"
 }

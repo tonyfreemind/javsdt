@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/iptd538/iptd538pl.jpg",
     "CoverBus": "17ls_b.jpg",
     "CutType": 1,
-    "Javdb": "yGkb",
-    "Javlibrary": "javlimtfra",
-    "Javbus": "IPTD-538",
     "Arzon": "",
     "CompletionStatus": 6,
     "Version": 1,
@@ -31,5 +28,8 @@
     "Actors": [
         "Rio"
     ],
-    "Modify": "2021-09-05 18:35:40"
+    "Modify": "2021-09-05 18:35:40",
+    "JavDb": "yGkb",
+    "JavLibrary": "javlimtfra",
+    "JavBus": "IPTD-538"
 }

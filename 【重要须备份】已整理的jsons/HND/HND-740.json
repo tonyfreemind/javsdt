@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/hnd740/hnd740pl.jpg",
     "CoverBus": "7c46_b.jpg",
     "CutType": 1,
-    "Javdb": "vZxMk",
-    "Javlibrary": "javli6if4u",
-    "Javbus": "HND-740",
     "Arzon": "1538486",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u677e\u672c\u83dc\u5948\u5b9f"
     ],
-    "Modify": "2021-09-05 17:46:53"
+    "Modify": "2021-09-05 17:46:53",
+    "JavDb": "vZxMk",
+    "JavLibrary": "javli6if4u",
+    "JavBus": "HND-740"
 }

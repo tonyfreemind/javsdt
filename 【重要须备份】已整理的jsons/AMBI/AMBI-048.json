@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/h_237ambi048/h_237ambi048pl.jpg",
     "CoverBus": "4tr6_b.jpg",
     "CutType": 1,
-    "Javdb": "7yNOV",
-    "Javlibrary": "javliiqs2m",
-    "Javbus": "AMBI-048",
     "Arzon": "1263132",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u65e9\u4e59\u5973\u3086\u3044"
     ],
-    "Modify": "2021-09-05 15:24:25"
+    "Modify": "2021-09-05 15:24:25",
+    "JavDb": "7yNOV",
+    "JavLibrary": "javliiqs2m",
+    "JavBus": "AMBI-048"
 }

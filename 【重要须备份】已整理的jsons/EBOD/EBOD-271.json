@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ebod271/ebod271pl.jpg",
     "CoverBus": "nu8_b.jpg",
     "CutType": 1,
-    "Javdb": "mwAv",
-    "Javlibrary": "javlioyjrm",
-    "Javbus": "EBOD-271",
     "Arzon": "1120039",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u30c6\u30a3\u30a2"
     ],
-    "Modify": "2021-09-05 15:55:53"
+    "Modify": "2021-09-05 15:55:53",
+    "JavDb": "mwAv",
+    "JavLibrary": "javlioyjrm",
+    "JavBus": "EBOD-271"
 }

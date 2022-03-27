@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/pppd299/pppd299pl.jpg",
     "CoverBus": "4cib_b.jpg",
     "CutType": 1,
-    "Javdb": "me7gY",
-    "Javlibrary": "javlijyh2m",
-    "Javbus": "PPPD-299",
     "Arzon": "1204764",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u6ce2\u591a\u91ce\u7ed3\u8863"
     ],
-    "Modify": "2021-09-25 18:05:16"
+    "Modify": "2021-09-25 18:05:16",
+    "JavDb": "me7gY",
+    "JavLibrary": "javlijyh2m",
+    "JavBus": "PPPD-299"
 }

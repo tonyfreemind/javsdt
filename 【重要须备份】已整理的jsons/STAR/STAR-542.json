@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1star542/1star542pl.jpg",
     "CoverBus": "4ezt_b.jpg",
     "CutType": 1,
-    "Javdb": "WwwA7",
-    "Javlibrary": "javlijzkr4",
-    "Javbus": "STAR-542",
     "Arzon": "1215428",
     "CompletionStatus": 6,
     "Version": 1,
@@ -31,5 +28,8 @@
     "Actors": [
         "\u4e18\u54b2\u30a8\u30df\u30ea"
     ],
-    "Modify": "2021-09-25 19:16:08"
+    "Modify": "2021-09-25 19:16:08",
+    "JavDb": "WwwA7",
+    "JavLibrary": "javlijzkr4",
+    "JavBus": "STAR-542"
 }

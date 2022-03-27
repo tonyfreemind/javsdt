@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/9mide377/9mide377pl.jpg",
     "CoverBus": "5pzk_b.jpg",
     "CutType": 1,
-    "Javdb": "bAMag",
-    "Javlibrary": "javlilz74q",
-    "Javbus": "MIDE-377",
     "Arzon": "1362523",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u9ad8\u6865\u5723\u5b50"
     ],
-    "Modify": "2021-09-25 17:26:52"
+    "Modify": "2021-09-25 17:26:52",
+    "JavDb": "bAMag",
+    "JavLibrary": "javlilz74q",
+    "JavBus": "MIDE-377"
 }

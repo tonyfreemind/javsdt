@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1stars148/1stars148pl.jpg",
     "CoverBus": "7dtw_b.jpg",
     "CutType": 1,
-    "Javdb": "Xqb1M",
-    "Javlibrary": "javli6j224",
-    "Javbus": "STARS-148",
     "Arzon": "1539647",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u552f\u4e95\u307e\u3072\u308d"
     ],
-    "Modify": "2021-09-25 19:53:36"
+    "Modify": "2021-09-25 19:53:36",
+    "JavDb": "Xqb1M",
+    "JavLibrary": "javli6j224",
+    "JavBus": "STARS-148"
 }

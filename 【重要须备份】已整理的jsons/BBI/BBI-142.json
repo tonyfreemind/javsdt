@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/bbi142/bbi142pl.jpg",
     "CoverBus": "2t7b_b.jpg",
     "CutType": 1,
-    "Javdb": "gy7b7",
-    "Javlibrary": "javlija45u",
-    "Javbus": "BBI-142",
     "Arzon": "",
     "CompletionStatus": 6,
     "Version": 1,
@@ -31,5 +28,8 @@
     "Actors": [
         "\u685c\u6728\u51db"
     ],
-    "Modify": "2021-09-05 15:33:32"
+    "Modify": "2021-09-05 15:33:32",
+    "JavDb": "gy7b7",
+    "JavLibrary": "javlija45u",
+    "JavBus": "BBI-142"
 }

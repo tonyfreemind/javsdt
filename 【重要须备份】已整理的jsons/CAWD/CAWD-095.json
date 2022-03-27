@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/cawd095/cawd095pl.jpg",
     "CoverBus": "7q05_b.jpg",
     "CutType": 1,
-    "Javdb": "M7zq1",
-    "Javlibrary": "javme2yxti",
-    "Javbus": "CAWD-095",
     "Arzon": "1575309",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u77f3\u539f\u5e0c\u671b"
     ],
-    "Modify": "2022-02-15 19:07:19"
+    "Modify": "2022-02-15 19:07:19",
+    "JavDb": "M7zq1",
+    "JavLibrary": "javme2yxti",
+    "JavBus": "CAWD-095"
 }

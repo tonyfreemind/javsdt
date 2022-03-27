@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/dasd531/dasd531pl.jpg",
     "CoverBus": "7214_b.jpg",
     "CutType": 1,
-    "Javdb": "0kka0",
-    "Javlibrary": "javli7zzq4",
-    "Javbus": "DASD-531",
     "Arzon": "1511029",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,8 @@
     "Actors": [
         "\u6709\u6751\u306e\u305e\u307f"
     ],
-    "Modify": "2021-09-05 15:47:20"
+    "Modify": "2021-09-05 15:47:20",
+    "JavDb": "0kka0",
+    "JavLibrary": "javli7zzq4",
+    "JavBus": "DASD-531"
 }

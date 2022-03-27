@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/bda074/bda074pl.jpg",
     "CoverBus": "6ry8_b.jpg",
     "CutType": 1,
-    "Javdb": "Xe68J",
-    "Javlibrary": "javli7jiqu",
-    "Javbus": "BDA-074",
     "Arzon": "1480299",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u661f\u5948\u3042\u3044"
     ],
-    "Modify": "2021-09-05 15:34:35"
+    "Modify": "2021-09-05 15:34:35",
+    "JavDb": "Xe68J",
+    "JavLibrary": "javli7jiqu",
+    "JavBus": "BDA-074"
 }

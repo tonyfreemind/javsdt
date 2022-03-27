@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/snis953/snis953pl.jpg",
     "CoverBus": "62x3_b.jpg",
     "CutType": 1,
-    "Javdb": "KkNBQ",
-    "Javlibrary": "javlikrry4",
-    "Javbus": "SNIS-953",
     "Arzon": "1405278",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u5c0f\u91ce\u5915\u5b50"
     ],
-    "Modify": "2021-09-25 18:39:44"
+    "Modify": "2021-09-25 18:39:44",
+    "JavDb": "KkNBQ",
+    "JavLibrary": "javlikrry4",
+    "JavBus": "SNIS-953"
 }

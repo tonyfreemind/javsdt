@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/miad524/miad524pl.jpg",
     "CoverBus": "k29_b.jpg",
     "CutType": 1,
-    "Javdb": "7yNVd",
-    "Javlibrary": "javlialdr4",
-    "Javbus": "MIAD-524",
     "Arzon": "938084",
     "CompletionStatus": 6,
     "Version": 1,
@@ -31,5 +28,8 @@
     "Actors": [
         "\u771f\u7530\u6625\u9999"
     ],
-    "Modify": "2021-10-30 12:25:51"
+    "Modify": "2021-10-30 12:25:51",
+    "JavDb": "7yNVd",
+    "JavLibrary": "javlialdr4",
+    "JavBus": "MIAD-524"
 }

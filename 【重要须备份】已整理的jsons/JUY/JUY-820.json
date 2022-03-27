@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/juy820/juy820pl.jpg",
     "CoverBus": "720i_b.jpg",
     "CutType": 1,
-    "Javdb": "GJJw5",
-    "Javlibrary": "javli7z664",
-    "Javbus": "JUY-820",
     "Arzon": "1511000",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u685c\u6a39\u73b2\u5948"
     ],
-    "Modify": "2021-09-05 19:10:27"
+    "Modify": "2021-09-05 19:10:27",
+    "JavDb": "GJJw5",
+    "JavLibrary": "javli7z664",
+    "JavBus": "JUY-820"
 }

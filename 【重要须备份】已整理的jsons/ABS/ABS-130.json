@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/118abs130/118abs130pl.jpg",
     "CoverBus": "qv1_b.jpg",
     "CutType": 1,
-    "Javdb": "wqk6D",
-    "Javlibrary": "javliolgti",
-    "Javbus": "ABS-130",
     "Arzon": "1053832",
     "CompletionStatus": 6,
     "Version": 1,
@@ -31,5 +28,8 @@
     "Actors": [
         "\u6cf7\u6cfd\u841d\u62c9"
     ],
-    "Modify": "2021-09-05 15:21:27"
+    "Modify": "2021-09-05 15:21:27",
+    "JavDb": "wqk6D",
+    "JavLibrary": "javliolgti",
+    "JavBus": "ABS-130"
 }

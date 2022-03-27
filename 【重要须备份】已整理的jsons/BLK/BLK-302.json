@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/blk302/blk302pl.jpg",
     "CoverBus": "5tdd_b.jpg",
     "CutType": 1,
-    "Javdb": "AqVk0",
-    "Javlibrary": "javlikaaym",
-    "Javbus": "BLK-302",
     "Arzon": "1374093",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u8de1\u7f8e\u3057\u3085\u308a"
     ],
-    "Modify": "2021-09-21 08:41:39"
+    "Modify": "2021-09-21 08:41:39",
+    "JavDb": "AqVk0",
+    "JavLibrary": "javlikaaym",
+    "JavBus": "BLK-302"
 }

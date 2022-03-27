@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/118chn181/118chn181pl.jpg",
     "CoverBus": "7gok_b.jpg",
     "CutType": 1,
-    "Javdb": "v06pn",
-    "Javlibrary": "javli6tqru",
-    "Javbus": "CHN-181",
     "Arzon": "1547757",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u658e\u85e4\u3042\u307f\u308a"
     ],
-    "Modify": "2021-09-05 15:41:07"
+    "Modify": "2021-09-05 15:41:07",
+    "JavDb": "v06pn",
+    "JavLibrary": "javli6tqru",
+    "JavBus": "CHN-181"
 }

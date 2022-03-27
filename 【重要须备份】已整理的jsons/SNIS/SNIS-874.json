@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/snis874/snis874pl.jpg",
     "CoverBus": "5who_b.jpg",
     "CutType": 1,
-    "Javdb": "82wDK",
-    "Javlibrary": "javliklp6m",
-    "Javbus": "SNIS-874",
     "Arzon": "1384123",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u8475\u53f8"
     ],
-    "Modify": "2021-09-25 18:37:54"
+    "Modify": "2021-09-25 18:37:54",
+    "JavDb": "82wDK",
+    "JavLibrary": "javliklp6m",
+    "JavBus": "SNIS-874"
 }

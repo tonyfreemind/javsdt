@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ebod513/ebod513pl.jpg",
     "CoverBus": "5gso_b.jpg",
     "CutType": 1,
-    "Javdb": "mORwv",
-    "Javlibrary": "javlill2se",
-    "Javbus": "EBOD-513",
     "Arzon": "1333993",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u9234\u6728\u5fc3\u6625"
     ],
-    "Modify": "2021-09-05 15:57:23"
+    "Modify": "2021-09-05 15:57:23",
+    "JavDb": "mORwv",
+    "JavLibrary": "javlill2se",
+    "JavBus": "EBOD-513"
 }

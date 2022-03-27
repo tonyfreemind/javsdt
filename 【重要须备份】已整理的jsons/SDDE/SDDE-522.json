@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1sdde522/1sdde522pl.jpg",
     "CoverBus": "6cxd_b.jpg",
     "CutType": 1,
-    "Javdb": "bbyP",
-    "Javlibrary": "javli4tv6u",
-    "Javbus": "SDDE-522",
     "Arzon": "",
     "CompletionStatus": 6,
     "Version": 1,
@@ -37,5 +34,8 @@
         "\u685c\u6728\u512a\u5e0c\u97f3",
         "\u52a0\u85e4\u3042\u3084\u306e"
     ],
-    "Modify": "2021-09-25 18:19:16"
+    "Modify": "2021-09-25 18:19:16",
+    "JavDb": "bbyP",
+    "JavLibrary": "javli4tv6u",
+    "JavBus": "SDDE-522"
 }

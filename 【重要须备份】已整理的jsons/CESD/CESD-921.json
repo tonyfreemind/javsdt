@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/cesd921/cesd921pl.jpg",
     "CoverBus": "7t8y_b.jpg",
     "CutType": 1,
-    "Javdb": "q7YyM",
-    "Javlibrary": "javmezbwy4",
-    "Javbus": "CESD-921",
     "Arzon": "1582484",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
         "\u65b0\u5ddd\u611b\u4e03",
         "\u4f50\u85e4\u306e\u306e\u304b"
     ],
-    "Modify": "2022-02-15 19:13:53"
+    "Modify": "2022-02-15 19:13:53",
+    "JavDb": "q7YyM",
+    "JavLibrary": "javmezbwy4",
+    "JavBus": "CESD-921"
 }

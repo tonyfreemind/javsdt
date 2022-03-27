@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/snis515/snis515pl.jpg",
     "CoverBus": "4zai_b.jpg",
     "CutType": 1,
-    "Javdb": "kKJeN",
-    "Javlibrary": "javliizesi",
-    "Javbus": "SNIS-515",
     "Arzon": "1291306",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,8 @@
     "Actors": [
         "\u5712\u7530\u307f\u304a\u3093"
     ],
-    "Modify": "2021-09-25 18:33:11"
+    "Modify": "2021-09-25 18:33:11",
+    "JavDb": "kKJeN",
+    "JavLibrary": "javliizesi",
+    "JavBus": "SNIS-515"
 }

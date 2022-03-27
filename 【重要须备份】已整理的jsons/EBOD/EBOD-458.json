@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ebod458/ebod458pl.jpg",
     "CoverBus": "4uo4_b.jpg",
     "CutType": 1,
-    "Javdb": "3x71",
-    "Javlibrary": "javliity3a",
-    "Javbus": "EBOD-458",
     "Arzon": "1275169",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u30c6\u30a3\u30a2"
     ],
-    "Modify": "2021-09-05 15:56:42"
+    "Modify": "2021-09-05 15:56:42",
+    "JavDb": "3x71",
+    "JavLibrary": "javliity3a",
+    "JavBus": "EBOD-458"
 }

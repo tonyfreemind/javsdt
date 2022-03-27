@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/miaa176/miaa176pl.jpg",
     "CoverBus": "7cdl_b.jpg",
     "CutType": 1,
-    "Javdb": "mpWmn",
-    "Javlibrary": "javli6ijze",
-    "Javbus": "MIAA-176",
     "Arzon": "1538839",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u671b\u6708\u3042\u3089\u308c"
     ],
-    "Modify": "2021-09-05 21:36:01"
+    "Modify": "2021-09-05 21:36:01",
+    "JavDb": "mpWmn",
+    "JavLibrary": "javli6ijze",
+    "JavBus": "MIAA-176"
 }

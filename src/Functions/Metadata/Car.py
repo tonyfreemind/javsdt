@@ -1,33 +1,40 @@
 # -*- coding:utf-8 -*-
 import re
+from typing import List
 
 
-# 功能: 发现原视频文件名中用于javbus的有码车牌
-# 参数: 大写后的视频文件名，素人车牌list_suren_car    示例: AVOP-127.MP4    ['LUXU', 'MIUM']
-# 返回: 发现的车牌    示例: AVOP-127
-# 辅助: re.search
-def find_car_youma(file, list_suren_car):
+def find_car_youma(file, list_suren_car: List[str]):
+    """
+    发现原视频文件名中的有码车牌
+
+    Args:
+        file: 全大写的文件名，例如: AVOP-127.MP4
+        list_suren_car: 要排除的素人车牌，例如: ['LUXU', 'MIUM']
+
+    Returns:
+        车牌，例如：ID-26020，没找到则返回空
+    """
     # car_pref 车牌前缀 ABP-，带横杠；car_suf，车牌后缀 123。
-    # 先处理特例 T28 车牌
+    # 处理T28-
     if re.search(r'[^A-Z]?T28[-_ ]*\d\d+', file):
         car_pref = 'T28-'
         car_suf = re.search(r'T28[-_ ]*(\d\d+)', file).group(1)
-    # 以javbus上记录的20ID-020为标准
+    # 处理20ID-020
     elif re.search(r'[^\d]?\d\dID[-_ ]*\d\d+', file):
-        carg = re.search(r'(\d\d)ID[-_ ]*(\d\d+)', file)
-        car_pref = 'ID-'
-        car_suf = f'{carg.group(1)}{carg.group(2)}'
+        carg = re.search(r'(\d\dID)[-_ ]*(\d\d+)', file)
+        car_pref = f'{carg.group(1)}-'
+        car_suf = carg.group(2)
     # 一般车牌
     elif re.search(r'[A-Z]+[-_ ]*\d\d+', file):
         carg = re.search(r'([A-Z]+)[-_ ]*(\d\d+)', file)
-        car_pref = carg.group(1)
-        if car_pref in list_suren_car or car_pref in ['HEYZO', 'PONDO', 'CARIB', 'OKYOHOT']:
+        pref = carg.group(1)
+        if pref in list_suren_car or pref in ['HEYZO', 'PONDO', 'CARIB', 'OKYOHOT']:
             return ''
-        car_pref = f'{car_pref}-'
+        car_pref = f'{pref}-'
         car_suf = carg.group(2)
     else:
         return ''
-    # 去掉太多的0，avop00127 => avop-127
+    # 去掉太多的0，avop00027 => avop-027
     if len(car_suf) > 3:
         car_suf = f'{car_suf[:-3].lstrip("0")}{car_suf[-3:]}'
     return f'{car_pref}{car_suf}'
@@ -141,9 +148,9 @@ def extract_pref(car: str):
     Returns:
         ABC
     """
-    return car.split('-')[0] \
+    return car.split('-')[0].upper() \
         if '-' in car \
-        else re.search(r'(\w+)', car).group(1)
+        else re.search(r'(.+?)\d', car).group(1).upper()
 
 
 def extract_suf(car):
@@ -151,12 +158,12 @@ def extract_suf(car):
     从车牌中提取后缀数字（车尾）
 
     Args:
-        car: ID-26123
+        car: ID-26012
 
     Returns:
-        26123
+        ID-26012 => 26123 ABC-012 => 12
     """
     if '-' in car:
-        return re.search(r'-(\d+)\w*', car).group(1).lstrip('0')
+        return int(re.search(r'-(\d+)\w*', car).group(1))
     else:
-        return re.search(r'(\d+)\w*', car).group(1).lstrip('0')
+        return int(re.search(r'(\d+)\w*', car).group(1))

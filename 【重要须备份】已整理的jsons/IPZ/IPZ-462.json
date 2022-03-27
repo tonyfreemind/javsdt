@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipz462/ipz462pl.jpg",
     "CoverBus": "4ga9_b.jpg",
     "CutType": 1,
-    "Javdb": "E2Nbx",
-    "Javlibrary": "javliida3q",
-    "Javbus": "IPZ-462",
     "Arzon": "1223667",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
         "\u7acb\u82b1\u7f8e\u6dbc",
         "\u685c\u4e95\u3042\u3086"
     ],
-    "Modify": "2021-09-05 18:55:26"
+    "Modify": "2021-09-05 18:55:26",
+    "JavDb": "E2Nbx",
+    "JavLibrary": "javliida3q",
+    "JavBus": "IPZ-462"
 }

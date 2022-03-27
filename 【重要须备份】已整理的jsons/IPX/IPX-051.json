@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipx051/ipx051pl.jpg",
     "CoverBus": "69vb_b.jpg",
     "CutType": 1,
-    "Javdb": "vVdk",
-    "Javlibrary": "javli4rvqq",
-    "Javbus": "IPX-051",
     "Arzon": "1426838",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u5cac\u306a\u306a\u307f"
     ],
-    "Modify": "2021-09-05 18:38:01"
+    "Modify": "2021-09-05 18:38:01",
+    "JavDb": "vVdk",
+    "JavLibrary": "javli4rvqq",
+    "JavBus": "IPX-051"
 }

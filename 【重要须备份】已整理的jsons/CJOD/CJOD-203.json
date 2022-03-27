@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/cjod203/cjod203pl.jpg",
     "CoverBus": "78un_b.jpg",
     "CutType": 1,
-    "Javdb": "xZEWP",
-    "Javlibrary": "javli6du2i",
-    "Javbus": "CJOD-203",
     "Arzon": "1529701",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u677e\u672c\u83dc\u5948\u5b9f"
     ],
-    "Modify": "2021-09-05 15:42:49"
+    "Modify": "2021-09-05 15:42:49",
+    "JavDb": "xZEWP",
+    "JavLibrary": "javli6du2i",
+    "JavBus": "CJOD-203"
 }

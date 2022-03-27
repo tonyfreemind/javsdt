@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/snis546/snis546pl.jpg",
     "CoverBus": "56zn_b.jpg",
     "CutType": 1,
-    "Javdb": "2Znw",
-    "Javlibrary": "javlilasya",
-    "Javbus": "SNIS-546",
     "Arzon": "1301311",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u5922\u4e43\u3042\u3044\u304b"
     ],
-    "Modify": "2021-09-25 18:33:47"
+    "Modify": "2021-09-25 18:33:47",
+    "JavDb": "2Znw",
+    "JavLibrary": "javlilasya",
+    "JavBus": "SNIS-546"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipx031/ipx031pl.jpg",
     "CoverBus": "67gl_b.jpg",
     "CutType": 1,
-    "Javdb": "qAGGx",
-    "Javlibrary": "javli4tp5q",
-    "Javbus": "IPX-031",
     "Arzon": "1420191",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u5929\u6d77\u3064\u3070\u3055"
     ],
-    "Modify": "2021-09-25 16:01:25"
+    "Modify": "2021-09-25 16:01:25",
+    "JavDb": "qAGGx",
+    "JavLibrary": "javli4tp5q",
+    "JavBus": "IPX-031"
 }

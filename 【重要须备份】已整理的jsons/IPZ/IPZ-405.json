@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipz405/ipz405pl.jpg",
     "CoverBus": "4as2_b.jpg",
     "CutType": 1,
-    "Javdb": "8Vq3V",
-    "Javlibrary": "javlij3j3i",
-    "Javbus": "IPZ-405",
     "Arzon": "1198784",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u6cf7\u6cfd\u841d\u62c9"
     ],
-    "Modify": "2021-09-05 18:55:10"
+    "Modify": "2021-09-05 18:55:10",
+    "JavDb": "8Vq3V",
+    "JavLibrary": "javlij3j3i",
+    "JavBus": "IPZ-405"
 }

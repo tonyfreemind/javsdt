@@ -1,17 +1,15 @@
 # -*- coding:utf-8 -*-
 import re
-import requests
 from typing import List
 # from traceback import format_exc
-from Car import tran_car_same_with_bus_arzon, tran_car_for_search_bus_arzon, extract_pref, extract_suf
+
+from Classes.Config import Ini
 from Classes.Enums import ScrapeStatusEnum
-from Classes.Errors import SpecifiedUrlError
-from Classes.Const import Const
 from Classes.Model.JavData import JavData
 from Classes.Model.JavFile import JavFile
-from Classes.Config import Ini
-from Functions.Metadata.Genre import prefect_genres
 from Classes.Web.JavWeb import JavWeb
+from Functions.Metadata.Genre import prefect_genres
+from Functions.Metadata.Car import extract_suf, extract_pref
 
 
 class JavBus(JavWeb):
@@ -28,64 +26,42 @@ class JavBus(JavWeb):
 
     # region 重写父类方法
 
-    def _search(self, car_temp: str):
-        """
-        搜索车牌，获取目标html
-
-        Args:
-            car: 当前处理的车牌
-
-        Returns:
-            目标html
-        """
-        car = tran_car_same_with_bus_arzon(car_temp)  # 适用于bus的车牌
+    def _search(self, jav_file: JavFile):
 
         # 尝试直接访问规则的网址
-        if html := self._guess(car):
-            return html
+        if html := self._guess(jav_file):
+            return html  # bus找到了
 
-        # region 搜索该车牌
-        url_search = f'{self._URL}/search/{tran_car_for_search_bus_arzon(car_temp)}&type=1&parent=ce'
-        print('    >搜索javbus: ', url_search)
-        html_search = self._get_html(url_search)
+        # region 搜索该车牌，检查结果
+        html_search = self._get_html('    >搜索javbus:', self._url_search(jav_file))
 
-        # 检查搜索结果
-        # <a class="movie-box" href="https://www.dmmsee.fun/ABP-991">
+        # 检查搜索结果 <a class="movie-box" href="https://www.dmmsee.fun/ABP-991">
         list_items = re.findall(r'movie-box" href="(.+?)">', html_search)
         if not list_items:
-            return ''
-        # 筛选搜索结果中和当前车牌基本符合的
-        list_fit = self._check_search_results(car, list_items)
+            return ''  # bus找不到
+        # 筛选 搜索结果中 和 当前车牌 基本符合的
+        list_fit = self._check_result_items(jav_file, list_items)
 
         # 没找到
         if not list_fit:
-            return ''
-
-        # 有多个结果，警告一下用户
-        self._is_only = len(list_fit) == 1
+            return ''  # bus找不到
         # endregion
 
-        # region 找到目标所在html
+        # region 确定目标所在html
         url_target = list_fit[0]  # 默认用第一个搜索结果
-        self._item = url_target.split('/')[-1].upper()  # 例如 ABC-123_2011-11-11
-        print('    >获取系列: ', url_target)
-        return self._get_html(url_target)
+        item = url_target.split('/')[-1].upper()  # 例如 ABC-123_2011-11-11
+        status = ScrapeStatusEnum.success if len(list_fit) == 1 else ScrapeStatusEnum.multiple_results
+        self._update_item_status(item, status)
+        return self._get_html('    >获取系列:', url_target)  # bus找到了
         # endregion
 
     def _url_item(self, item: str):
-        """
-        一部jav在javbus上的网址
-
-        Args:
-            item: 影片在javdb上的代号，例如“4d5E6”
-
-        Returns:
-            网址，例如“https://javdb36.com/v/4d5E6”
-        """
         return f'{self._URL}/{item}'
 
-    def _select_special(self, html: str, jav_data: JavData):
+    def _url_search(self, jav_file: JavFile):
+        return f'{self._URL}/search/{jav_file.Car_search}&type=1&parent=ce'
 
+    def _select_special(self, html: str, jav_data: JavData):
         # 封面
         if coverg := re.search(r'bigImage" href="/pics/cover/(.+?)"', html):
             jav_data.CoverBus = coverg.group(1)
@@ -96,42 +72,48 @@ class JavBus(JavWeb):
                 jav_data.Series = seriesg.group(1)
         # 特征
         genres = re.findall(r'gr_sel" value="\d+"><a href=".+">(.+?)</a>', html)
-        jav_data.Genres.append(prefect_genres(self._DICT_GENRES, genres))
-
-        return ScrapeStatusEnum.success if self._is_only else ScrapeStatusEnum.multiple_results
+        jav_data.Genres.extend(prefect_genres(self._DICT_GENRES, genres))
 
     @staticmethod
     def _confirm_normal_rsp(content: str):
-        """
-        检查是否是预期响应
-
-        Args:
-            content: html
-
-        Returns:
-            是否是预期响应
-        """
         return bool(re.search(r'JavBus', content))
 
     @staticmethod
     def _confirm_not_found(html: str):
         return bool(re.search(r'404 Page', html))
 
-    # endregion
-
-    def _guess(self, car: str):
-        # jav在javbus上的url，一般就是javbus网址/车牌
-        url_guess = self._url_item(car)
-        print('    >前往javbus: ', url_guess)
-        html_guess = self._get_html(url_guess)
-        # 找不到
-        if re.search(r'404 Page', html_guess):
-            return ''
-        self._item = car
-        return html_guess
+    def _need_update_headers(self, html: str):
+        return self._confirm_cloudflare(html)
 
     @staticmethod
-    def _check_search_results(car: str, list_items: List[str]):
+    def _update_headers():
+        # Todo 实现
+        pass
+
+    # endregion
+
+    # region 特色方法
+
+    def _guess(self, jav_file: JavFile):
+        """
+        直接访问猜测的网址，得到目标html
+
+        Args:
+            car: 车牌，例如26ID-020
+
+        Returns:
+            html，找不到则返回空
+        """
+        # jav在javbus上的url，一般就是javbus网址/车牌
+        html_guess = self._get_html('    >前往javbus:', self._url_item(jav_file.Car))
+        # 找不到
+        if self._confirm_not_found(html_guess):
+            return ''  # 指定网址无内容（希望接下来去搜索）
+        self._update_item_status(jav_file.Car, ScrapeStatusEnum.success)
+        return html_guess  # bus找到了
+
+    @staticmethod
+    def _check_result_items(jav_file: JavFile, list_items: List[str]):
         """
         筛选 搜索结果 和 当前处理车牌 相同的 几个结果
 
@@ -142,14 +124,13 @@ class JavBus(JavWeb):
         Returns:
             符合预期的items
         """
-        pref = extract_pref(car)  # 车牌的前缀，例如ABC，26ID
-        suf = extract_suf(car)  # 车牌的后缀数字 去除多余的0，例如26ID-012的12
         list_fit = []  # 存放，筛选出的结果
         for url_item in list_items:
-            # Todo 正则单独作方法
             car_bus = url_item.split('/')[-1].upper()  # 例如 ABC-123_2011-11-11
-            suf_url = re.search(r'[-_](\d+)', car_bus).group(1).lstrip('0')  # 找出ABC-123_2011-11-11中的123
-            pref_url = re.search(r'([A-Z]+2?8?)', car_bus).group(1).upper()  # 找出ABC-123_2011-11-11中的ABC
-            if suf == suf_url and pref == pref_url:  # 车牌相同
+            suf = extract_suf(car_bus)  # 找出ABC-123_2011-11-11中的123
+            pref = extract_pref(car_bus)  # 找出ABC-123_2011-11-11中的ABC
+            if jav_file.Suf == suf and jav_file.Pref == pref:  # 车牌相同
                 list_fit.append(url_item)
         return list_fit
+
+    # endregion

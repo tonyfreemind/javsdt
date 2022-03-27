@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ssni338/ssni338pl.jpg",
     "CoverBus": "6svn_b.jpg",
     "CutType": 1,
-    "Javdb": "7yz9B",
-    "Javlibrary": "javli7tc6y",
-    "Javbus": "SSNI-338",
     "Arzon": "1483813",
     "CompletionStatus": 6,
     "Version": 1,
@@ -39,5 +36,8 @@
         "\u52a0\u85e4\u3042\u3084\u306e",
         "\u5c0f\u91ce\u5915\u5b50"
     ],
-    "Modify": "2021-09-25 18:52:25"
+    "Modify": "2021-09-25 18:52:25",
+    "JavDb": "7yz9B",
+    "JavLibrary": "javli7tc6y",
+    "JavBus": "SSNI-338"
 }

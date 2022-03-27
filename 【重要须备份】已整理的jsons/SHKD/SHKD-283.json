@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/shkd283/shkd283pl.jpg",
     "CoverBus": "27tx_b.jpg",
     "CutType": 1,
-    "Javdb": "bKxv0",
-    "Javlibrary": "javlipla6u",
-    "Javbus": "SHKD-283",
     "Arzon": "151052",
     "CompletionStatus": 6,
     "Version": 1,
@@ -31,5 +28,8 @@
     "Actors": [
         "\u9234\u6728\u9ebb\u5948\u7f8e"
     ],
-    "Modify": "2021-09-25 18:24:24"
+    "Modify": "2021-09-25 18:24:24",
+    "JavDb": "bKxv0",
+    "JavLibrary": "javlipla6u",
+    "JavBus": "SHKD-283"
 }

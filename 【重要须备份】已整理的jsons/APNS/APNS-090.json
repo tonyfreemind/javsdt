@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/apns090so/apns090sopl.jpg",
     "CoverBus": "6t93_b.jpg",
     "CutType": 1,
-    "Javdb": "2mEmP",
-    "Javlibrary": "javli7ttri",
-    "Javbus": "APNS-090",
     "Arzon": "1484591",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
         "\u702c\u540d\u304d\u3089\u308a",
         "\u677e\u7530\u771f\u590f"
     ],
-    "Modify": "2021-09-05 15:26:53"
+    "Modify": "2021-09-05 15:26:53",
+    "JavDb": "2mEmP",
+    "JavLibrary": "javli7ttri",
+    "JavBus": "APNS-090"
 }

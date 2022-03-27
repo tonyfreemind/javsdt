@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mifd070/mifd070pl.jpg",
     "CoverBus": "7466_b.jpg",
     "CutType": 1,
-    "Javdb": "M6AEQ",
-    "Javlibrary": "javli6dssm",
-    "Javbus": "MIFD-070",
     "Arzon": "1516060",
     "CompletionStatus": 6,
     "Version": 1,
@@ -36,5 +33,8 @@
     "Actors": [
         "\u6c38\u702c\u3086\u3044"
     ],
-    "Modify": "2021-09-25 17:41:40"
+    "Modify": "2021-09-25 17:41:40",
+    "JavDb": "M6AEQ",
+    "JavLibrary": "javli6dssm",
+    "JavBus": "MIFD-070"
 }

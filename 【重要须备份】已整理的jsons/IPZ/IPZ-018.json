@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipz018/ipz018pl.jpg",
     "CoverBus": "2bsi_b.jpg",
     "CutType": 1,
-    "Javdb": "YNVb",
-    "Javlibrary": "javliordr4",
-    "Javbus": "IPZ-018",
     "Arzon": "1103219",
     "CompletionStatus": 6,
     "Version": 1,
@@ -30,5 +27,8 @@
     "Actors": [
         "\u7f8e\u96ea\u3042\u308a\u3059"
     ],
-    "Modify": "2021-09-05 18:53:42"
+    "Modify": "2021-09-05 18:53:42",
+    "JavDb": "YNVb",
+    "JavLibrary": "javliordr4",
+    "JavBus": "IPZ-018"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1stars005/1stars005pl.jpg",
     "CoverBus": "6vfw_b.jpg",
     "CutType": 1,
-    "Javdb": "MbgQ4",
-    "Javlibrary": "javli7taze",
-    "Javbus": "STARS-005",
     "Arzon": "1487194",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u6238\u7530\u771f\u7434"
     ],
-    "Modify": "2021-09-25 19:49:45"
+    "Modify": "2021-09-25 19:49:45",
+    "JavDb": "MbgQ4",
+    "JavLibrary": "javli7taze",
+    "JavBus": "STARS-005"
 }

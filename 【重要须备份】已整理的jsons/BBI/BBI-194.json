@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/bbi194/bbi194pl.jpg",
     "CoverBus": "4s7a_b.jpg",
     "CutType": 1,
-    "Javdb": "EbRk9",
-    "Javlibrary": "javliiqa4e",
-    "Javbus": "BBI-194",
     "Arzon": "",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u685c\u6728\u51db"
     ],
-    "Modify": "2021-09-05 15:34:27"
+    "Modify": "2021-09-05 15:34:27",
+    "JavDb": "EbRk9",
+    "JavLibrary": "javliiqa4e",
+    "JavBus": "BBI-194"
 }

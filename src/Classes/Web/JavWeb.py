@@ -1,27 +1,46 @@
 # -*- coding:utf-8 -*-
 import re
 import requests
-from typing import Dict
+from typing import Dict, List
+from requests.exceptions import ProxyError, SSLError
 from traceback import format_exc
 
+from Car import extract_pref, extract_suf
 from Classes.Model.JavData import JavData
 from Classes.Model.JavFile import JavFile
 from Classes.Const import Const
 from Classes.Config import Ini
-from Enums import ScrapeStatusEnum
-from Errors import SpecifiedUrlError
-from Functions.Metadata.Genre import better_dict_genres, prefect_genres
+from Classes.Enums import ScrapeStatusEnum
+from Classes.Errors import SpecifiedUrlError
+from Functions.Metadata.Genre import better_dict_genres
 
 
 class JavWeb(object):
-    """网站刮削工具父类"""
+    """
+    网站刮削工具父类
+
+    Notes:
+        刮削后，主程序依据 self.status 判断刮削的结果，刮削到的元数据保存在 jav_data 中
+
+    Examples:
+        javdb = JavDb(ini)\n
+        javdb.scrape(jav_file, jav_data)\n
+        if javdb.status == success:
+            刮削成功且结果唯一\n
+        elif javdb.status == multiple_results:
+            刮削成功但结果不唯一，警告用户\n
+        elif javdb.status == exist_but_no_want:
+            刮削失败，虽然在网站上能搜索到车牌，但找不到想要的元数据\n
+        elif javdb.status == not_found:
+            刮削失败，网站上搜不到\n
+    """
 
     def __init__(self, settings: Ini, appoint_symbol: str, headers: Dict[str, str]):
-        if type(self) is JavWeb:
+        if self.__class__ is JavWeb:
             raise Exception("<JavWeb>不能被实例化")
 
-        pattern = self.__class__.__name__  # 当前类名，表示处理模式，例如“JavBus”
-        tuple_temp: tuple[str, dict] = settings.web_url_proxy(pattern)
+        website = self.__class__.__name__  # 当前类名，表示处理模式，例如“JavBus”
+        tuple_temp: tuple[str, dict] = settings.web_url_proxy(website)
 
         self._URL: str = tuple_temp[0]
         """网址"""
@@ -29,30 +48,23 @@ class JavWeb(object):
         self._requests = self._create_session(tuple_temp[1], headers)
         """requests服务"""
 
-        self._DICT_GENRES = better_dict_genres(pattern, settings.to_language)
+        self._DICT_GENRES = better_dict_genres(website, settings.to_language)
         """优化后的genres"""
 
-        self._HEADERS = headers
-        """请求头\n\n不同网站会有不同要求"""
-
         self._APPOINT_SYMBOL = appoint_symbol
-        """
-        指定网址的标志
-        
-        db是仓库，library是图书馆，bus是公交车。arzon是阿如。
-        例如ABC-123仓库3d4E5.图书馆javldef.公交车ABC-123_2011-11-11.arzon.mp4。
-        """
-
-        self._is_only: bool = True
-        """是否 刮削到唯一结果\n\n如果有多个结果，需警告用户"""
+        """指定网址的标志\n\ndb是仓库，library是图书馆，bus是公交车。arzon是阿如。"""
 
         self._item = Const.CAR_DEFAULT
         """
         车牌在网站上的item
         
-        例如ABC-123_2011-11-11
-        如果刮削成功则将它更新为正确值，交给jav_model。
+        例如“https://javdb35.com/v/JPx8”的JPx8，“https://www.javlibrary.com/cn/?v=javliadfy4”的javliadfy4，
+        “https://www.seejav.men/SW-028_2011-05-07”的SW-028_2011-05-07，“https://www.arzon.jp/item_706193.html”的706193。
+        如果刮削成功则更新它，最终交给jav_data。
         """
+
+        self.status = ScrapeStatusEnum.not_found
+        """刮削状态\n\n搜寻过程中，"""
 
     def scrape(self, jav_file: JavFile, jav_data: JavData):
         """
@@ -61,88 +73,115 @@ class JavWeb(object):
         Args:
             jav_file: jav视频文件对象
             jav_data: jav元数据对象
-
-        Returns:
-            刮削结果
         """
-        # region 1重置状态
         self._reset()
-        # endregion
 
-        # region 2找到网页
-        html = self._find_target_html(jav_file.Name, jav_file.Car)
+        html = self._find_target_html(jav_file)
         """当前车牌所在的html"""
-        if not html:
-            return ScrapeStatusEnum.not_found
-        # endregion
+        if html:
+            self._select_normal(jav_data)
+            self._select_special(html, jav_data)
 
-        # region 3摘取信息
-        self._select_normal(jav_data)
-        return self._select_special(html, jav_data)
-        # endregion
+    def _update_item_status(self, item: str, status: ScrapeStatusEnum):
+        """（成功找到）更新item和status"""
+        self._item = item
+        self.status = status
 
     @staticmethod
     def _create_session(proxies: Dict[str, str], headers: Dict[str, str]):
+        """
+        初始化requests服务
+
+        Args:
+            proxies: 代理
+            headers: 请求头
+
+        Returns:
+            为某个网站定制的requests.session
+        """
         rqs = requests.Session()
         rqs.proxies = proxies
         rqs.headers = headers
         return rqs
 
-    def _find_target_html(self, name: str, car: str):
+    def _find_target_html(self, jav_file: JavFile):
         """
         获取车牌所在html
 
-        三种方式直至成功找到html：(1)用户指定，则用指定网址；(2)直接访问 网址+车牌；（3）搜索车牌。
+        两种方式直至成功找到html：(1)用户指定，则用指定网址；(2)搜索车牌。
 
         Args:
-            name: 视频文件名
-            car: 当前处理的车牌
+            jav_file: jav视频文件对象
 
         Returns:
             html
         """
-        if self._APPOINT_SYMBOL in name:
-            return self._appoint(name)
+        if self._APPOINT_SYMBOL in jav_file.Name:
+            # 用户指定了网址
+            return self._appoint(jav_file)
         else:
-            return self._search(car)
+            return self._search(jav_file)
 
-    def _appoint(self, name: str):
+    def _appoint(self, jav_file: JavFile):
         """
         从用户指定的网址中获取目标html
 
-        用户将视频命名为“ABC-123公交车DEF-456_2011-11-11.mp4"，即指定为”https://www.buscdn.me/DEF-456_2011-11-11"。
+        Examples:
+            用户将视频文件命名为“sw-028仓库JPx8.图书馆javliadfy4.公交车SW-028_2011-05-07.阿如706193.mp4”，
+            即将sw-028指定为“https://javdb35.com/v/JPx8”，“https://www.javlibrary.com/cn/?v=javliadfy4”，
+            “https://www.seejav.men/SW-028_2011-05-07”，“https://www.arzon.jp/item_706193.html”。
+            用户可以指定一个或多个。
+
+        Raises:
+            指定的格式不正确 || 指定的网页上没内容 => 主程序终止
 
         Args:
-            name: 视频文件名
+            jav_file: jav视频文件对象
 
         Returns:
             目标html
         """
-        item_appointg = re.search(rf'{self._APPOINT_SYMBOL}(.+?)\.', name)
+        item_appointg = re.search(rf'{self._APPOINT_SYMBOL}(.+?)\.', jav_file.Name)
         if not item_appointg:
-            raise SpecifiedUrlError(f'{Const.SPECIFIED_FORMAT_ERROR} {self.__class__.__name__} {name}')
+            # 指定的格式不正确
+            raise SpecifiedUrlError(f'{Const.SPECIFIED_FORMAT_ERROR} {self.__class__.__name__} {jav_file.Name}')
         item_appoint = item_appointg.group(1)
         url_appoint = self._url_item(item_appoint)
-        html_appoint = self._get_html(url_appoint)
+        html_appoint = self._get_html('    >前往指定网址:', url_appoint)
         if self._confirm_not_found(html_appoint):
+            # 指定的网页上没内容，报错
             raise SpecifiedUrlError(f'{Const.SPECIFIED_URL_ERROR} {url_appoint}，')
-        self._item = item_appoint
+        # 用户指定正确，更新item
+        self._update_item_status(item_appoint, ScrapeStatusEnum.success)
         return html_appoint
 
-    def _get_html(self, url: str):
-        """获取html"""
-        for _ in range(1):
+    def _get_html(self, aim: str, url: str):
+        """
+        获取html
+
+        Args:
+            aim: 目的描述
+            url: 网址
+
+        Returns:
+            html
+        """
+        allow_redirects = self.__class__.__name__ != 'JavLibrary'  # javlibrary不需要跳转
+        if aim:
+            print(aim, url)
+        for _ in range(2):
             try:
-                rsp = self._requests.get(url, timeout=(6, 7))
-            except requests.exceptions.ProxyError:
-                print(format_exc())
-                print(Const.PROXY_ERROR_TRY_AGAIN)
+                rsp = self._requests.get(url, timeout=(6, 7), allow_redirects=allow_redirects)
+            except ProxyError:
+                # 代理出错，用户可能想使用代理，但实际没开代理软件
+                print(f'{Const.PROXY_ERROR_TRY_AGAIN}{url}')
                 continue
-            except requests.exceptions.SSLError:
-                print(format_exc())
+            except SSLError:
+                # 2种情况（1）网址是https，requests也走https，但代理只支持http，导致证书验证不通过（2）用户的代理是公用代理，访问太频繁被拒绝
                 print(f'{Const.REQUEST_MAX_TRY}{url}')
                 continue
             except:
+                # 其他出错
                 print(format_exc())
                 print(f'{Const.REQUEST_ERROR_TRY_AGAIN}{url}')
                 continue
@@ -150,33 +189,86 @@ class JavWeb(object):
             rsp_content = rsp.text
             # 响应内容是否正常
             if self._confirm_normal_rsp(rsp_content):
+                # 正常响应
                 return rsp_content
-            # Todo 很可能遇到cf
+            elif self._need_update_headers(rsp_content):
+                # 网站遇到某些特殊情况需要更新headers，比如cloudflare、18岁验证
+                print(Const.NEED_UPDATE_HEADERS)
+                self._update_headers()
+                continue
             # print(rsp_content)
             print(Const.HTML_NOT_TARGET_TRY_AGAIN)
         input(f'{Const.PLEASE_CHECK_URL}{url}')
 
-    def _select_normal(self, jav_model: JavData):
-        # 更新网站对应的item，例如javdb的item是"3d4E5"
-        setattr(jav_model, self.__class__.__name__, self._item)
+    def _select_normal(self, jav_data: JavData):
+        """（找到目标网页后）更新信息"""
+        # Todo 把json中的Javdb更新为JavDb
+        # 更新网站对应的item
+        setattr(jav_data, self.__class__.__name__, self._item)
 
     def _reset(self):
         """开始处理时，重置状态"""
-        self._is_only = True
         self._item = Const.CAR_DEFAULT
-
-    # region 必须被子类重写
+        self.status = ScrapeStatusEnum.not_found
+        self._reset_special()
 
     @staticmethod
-    def _search(car: str) -> str:
+    def _confirm_cloudflare(html: str):
+        return bool(re.search(r'Cloudflare', html))
+
+    @staticmethod
+    def _check_result_cars(jav_file: JavFile, list_cars: List[str]):
+        """
+        筛选 搜索结果 和 当前处理车牌 相同的 几个结果
+
+        Args:
+            jav_file: jav视频文件对象
+            list_cars: （搜索结果页面上）车牌
+
+        Returns:
+            符合预期的items
+        """
+        return [
+            index
+            for index, car_temp in enumerate(list_cars)
+            if extract_pref(car_temp) == jav_file.Pref
+               and extract_suf(car_temp) == jav_file.Suf
+        ]
+
+    # region 被子类重写
+
+    @staticmethod
+    def _search(jav_file: JavFile) -> str:
+        """
+        在网站上查找车牌，得到目标html
+
+        Returns:
+            目标html，找不到则返回空
+        """
         raise AttributeError(Const.NO_IMPLEMENT_ERROR)
 
     @staticmethod
     def _url_item(item: str) -> str:
+        """用item拼接出车牌所在网址"""
         raise AttributeError(Const.NO_IMPLEMENT_ERROR)
 
     @staticmethod
-    def _select_special(html: str, jav_data: JavData) -> ScrapeStatusEnum:
+    def _url_search(jav_file: JavFile) -> str:
+        """搜索用的网址"""
+        raise AttributeError(Const.NO_IMPLEMENT_ERROR)
+
+    @staticmethod
+    def _select_special(html: str, jav_data: JavData) -> None:
+        """
+        从html中筛选出所需的各种信息
+
+        Args:
+            html: 网页
+            jav_data: JavData
+
+        Returns:
+            刮削结果
+        """
         raise AttributeError(Const.NO_IMPLEMENT_ERROR)
 
     @staticmethod
@@ -193,10 +285,46 @@ class JavWeb(object):
 
     @staticmethod
     def _confirm_not_found(html: str) -> bool:
+        """
+        确认是没内容的页面
+
+        Args:
+            html: 网页
+
+        Returns:
+            没内容 => True
+        """
         raise AttributeError(Const.NO_IMPLEMENT_ERROR)
+
+    @staticmethod
+    def _need_update_headers(html: str) -> bool:
+        """
+        是否需要更新headers
+
+        headers失效，需要更新，比如cloudflare通行证过期，arzon的成人通行证过期
+
+        Args:
+            html: 网页
+
+        Returns:
+            是否需要更新
+        """
+        return False
+
+    @staticmethod
+    def _update_headers() -> None:
+        """更新headers"""
+        pass
+
+    @staticmethod
+    def _reset_special():
+        pass
 
     # endregion
 
     # Todo 测试方法
     def test(self, url: str):
-        return self._get_html(url)
+        return self._get_html('测试:', url)
+
+    def test_update_headers(self, headers: dict):
+        self._requests.headers = headers

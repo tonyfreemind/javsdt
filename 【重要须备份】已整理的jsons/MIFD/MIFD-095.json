@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mifd095/mifd095pl.jpg",
     "CoverBus": "7h09_b.jpg",
     "CutType": 1,
-    "Javdb": "AQx6n",
-    "Javlibrary": "javli6tmze",
-    "Javbus": "MIFD-095",
     "Arzon": "1549929",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u82b1\u97f3\u3046\u3089\u3089"
     ],
-    "Modify": "2021-09-25 17:41:48"
+    "Modify": "2021-09-25 17:41:48",
+    "JavDb": "AQx6n",
+    "JavLibrary": "javli6tmze",
+    "JavBus": "MIFD-095"
 }

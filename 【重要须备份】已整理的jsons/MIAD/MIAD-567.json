@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/miad567/miad567pl.jpg",
     "CoverBus": "m61_b.jpg",
     "CutType": 1,
-    "Javdb": "QDDJ",
-    "Javlibrary": "javlioler4",
-    "Javbus": "MIAD-567",
     "Arzon": "1052925",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u9752\u6728\u7f8e\u7a7a"
     ],
-    "Modify": "2021-09-05 21:38:57"
+    "Modify": "2021-09-05 21:38:57",
+    "JavDb": "QDDJ",
+    "JavLibrary": "javlioler4",
+    "JavBus": "MIAD-567"
 }

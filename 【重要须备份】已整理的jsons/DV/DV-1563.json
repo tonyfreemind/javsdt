@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/53dv1563/53dv1563pl.jpg",
     "CoverBus": "3ysp_b.jpg",
     "CutType": 1,
-    "Javdb": "d8Y8",
-    "Javlibrary": "javlijlcya",
-    "Javbus": "DV-1563",
     "Arzon": "1150758",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u8fb0\u5df3\u3086\u3044"
     ],
-    "Modify": "2021-10-30 12:23:47"
+    "Modify": "2021-10-30 12:23:47",
+    "JavDb": "d8Y8",
+    "JavLibrary": "javlijlcya",
+    "JavBus": "DV-1563"
 }

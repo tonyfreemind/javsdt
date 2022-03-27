@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/5pms071/5pms071pl.jpg",
     "CoverBus": "",
     "CutType": 1,
-    "Javdb": "XWDbV",
-    "Javlibrary": "javliaz6q4",
-    "Javbus": "PMS-071",
     "Arzon": "400229",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u5c0f\u5009\u307f\u306a\u307f"
     ],
-    "Modify": "2021-09-25 18:04:44"
+    "Modify": "2021-09-25 18:04:44",
+    "JavDb": "XWDbV",
+    "JavLibrary": "javliaz6q4",
+    "JavBus": "PMS-071"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipx434/ipx434pl.jpg",
     "CoverBus": "7h11_b.jpg",
     "CutType": 1,
-    "Javdb": "ydaJZ",
-    "Javlibrary": "javli6qn3a",
-    "Javbus": "IPX-434",
     "Arzon": "1549806",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u4e09\u7530\u3086\u3044"
     ],
-    "Modify": "2021-09-05 18:53:34"
+    "Modify": "2021-09-05 18:53:34",
+    "JavDb": "ydaJZ",
+    "JavLibrary": "javli6qn3a",
+    "JavBus": "IPX-434"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/hnd770/hnd770pl.jpg",
     "CoverBus": "7f5f_b.jpg",
     "CutType": 1,
-    "Javdb": "P2002",
-    "Javlibrary": "javli6rqrm",
-    "Javbus": "HND-770",
     "Arzon": "1547736",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u594f\u97f3\u304b\u306e\u3093"
     ],
-    "Modify": "2021-09-25 16:00:19"
+    "Modify": "2021-09-25 16:00:19",
+    "JavDb": "P2002",
+    "JavLibrary": "javli6rqrm",
+    "JavBus": "HND-770"
 }

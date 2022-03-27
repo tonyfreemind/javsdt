@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/atid311/atid311pl.jpg",
     "CoverBus": "6ppd_b.jpg",
     "CutType": 1,
-    "Javdb": "gBDMQ",
-    "Javlibrary": "javli7iy6u",
-    "Javbus": "ATID-311",
     "Arzon": "1474358",
     "CompletionStatus": 6,
     "Version": 1,
@@ -31,5 +28,8 @@
     "Actors": [
         "\u795e\u54b2\u8a69\u7e54"
     ],
-    "Modify": "2021-11-07 21:35:38"
+    "Modify": "2021-11-07 21:35:38",
+    "JavDb": "gBDMQ",
+    "JavLibrary": "javli7iy6u",
+    "JavBus": "ATID-311"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/pppd819/pppd819pl.jpg",
     "CoverBus": "7hcb_b.jpg",
     "CutType": 1,
-    "Javdb": "3kXn3",
-    "Javlibrary": "javli6qdze",
-    "Javbus": "PPPD-819",
     "Arzon": "1550490",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "JULIA"
     ],
-    "Modify": "2021-09-25 18:09:10"
+    "Modify": "2021-09-25 18:09:10",
+    "JavDb": "3kXn3",
+    "JavLibrary": "javli6qdze",
+    "JavBus": "PPPD-819"
 }

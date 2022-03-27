@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/h_254vnds3219/h_254vnds3219pl.jpg",
     "CoverBus": "5the_b.jpg",
     "CutType": 1,
-    "Javdb": "GbeJ",
-    "Javlibrary": "javlikdr7i",
-    "Javbus": "VNDS-3219",
     "Arzon": "1367422",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,8 @@
     "Actors": [
         "\u4fdd\u5742\u3048\u308a"
     ],
-    "Modify": "2021-09-25 20:21:56"
+    "Modify": "2021-09-25 20:21:56",
+    "JavDb": "GbeJ",
+    "JavLibrary": "javlikdr7i",
+    "JavBus": "VNDS-3219"
 }

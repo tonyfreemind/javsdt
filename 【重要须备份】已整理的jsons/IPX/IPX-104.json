@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipx104/ipx104pl.jpg",
     "CoverBus": "6ewy_b.jpg",
     "CutType": 1,
-    "Javdb": "Www27",
-    "Javlibrary": "javli4yjym",
-    "Javbus": "IPX-104",
     "Arzon": "1441699",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u76f8\u6ca2\u307f\u306a\u307f"
     ],
-    "Modify": "2021-09-05 18:39:40"
+    "Modify": "2021-09-05 18:39:40",
+    "JavDb": "Www27",
+    "JavLibrary": "javli4yjym",
+    "JavBus": "IPX-104"
 }

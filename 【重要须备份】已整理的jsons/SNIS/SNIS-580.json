@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/snis580/snis580pl.jpg",
     "CoverBus": "59id_b.jpg",
     "CutType": 1,
-    "Javdb": "e8WYr",
-    "Javlibrary": "javlilb6ye",
-    "Javbus": "SNIS-580",
     "Arzon": "1308618",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u5c0f\u91ce\u5915\u5b50"
     ],
-    "Modify": "2021-09-25 18:34:13"
+    "Modify": "2021-09-25 18:34:13",
+    "JavDb": "e8WYr",
+    "JavLibrary": "javlilb6ye",
+    "JavBus": "SNIS-580"
 }

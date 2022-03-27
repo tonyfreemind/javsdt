@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1star989/1star989pl.jpg",
     "CoverBus": "7dau_b.jpg",
     "CutType": 1,
-    "Javdb": "AqPBq",
-    "Javlibrary": "javli7lvre",
-    "Javbus": "STAR-989",
     "Arzon": "1481925",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u698e\u672c\u7f8e\u54b2"
     ],
-    "Modify": "2021-09-25 19:46:16"
+    "Modify": "2021-09-25 19:46:16",
+    "JavDb": "AqPBq",
+    "JavLibrary": "javli7lvre",
+    "JavBus": "STAR-989"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mide385/mide385pl.jpg",
     "CoverBus": "5rj1_b.jpg",
     "CutType": 1,
-    "Javdb": "K4Vp7",
-    "Javlibrary": "javlikddqe",
-    "Javbus": "MIDE-385",
     "Arzon": "1367771",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "JULIA"
     ],
-    "Modify": "2021-09-25 17:27:00"
+    "Modify": "2021-09-25 17:27:00",
+    "JavDb": "K4Vp7",
+    "JavLibrary": "javlikddqe",
+    "JavBus": "MIDE-385"
 }

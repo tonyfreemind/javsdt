@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/snis406/snis406pl.jpg",
     "CoverBus": "4rsp_b.jpg",
     "CutType": 1,
-    "Javdb": "2aYGB",
-    "Javlibrary": "javliiq37a",
-    "Javbus": "SNIS-406",
     "Arzon": "1263649",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u5965\u7530\u54b2"
     ],
-    "Modify": "2021-09-25 18:31:10"
+    "Modify": "2021-09-25 18:31:10",
+    "JavDb": "2aYGB",
+    "JavLibrary": "javliiq37a",
+    "JavBus": "SNIS-406"
 }

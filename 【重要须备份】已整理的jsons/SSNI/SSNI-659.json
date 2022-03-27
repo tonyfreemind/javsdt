@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ssni659/ssni659pl.jpg",
     "CoverBus": "7glu_b.jpg",
     "CutType": 1,
-    "Javdb": "KK3p6",
-    "Javlibrary": "javli6tizi",
-    "Javbus": "SSNI-659",
     "Arzon": "1549006",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u5929\u4f7f\u3082\u3048"
     ],
-    "Modify": "2021-09-25 19:08:30"
+    "Modify": "2021-09-25 19:08:30",
+    "JavDb": "KK3p6",
+    "JavLibrary": "javli6tizi",
+    "JavBus": "SSNI-659"
 }

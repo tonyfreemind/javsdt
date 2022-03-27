@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/24vdd123/24vdd123pl.jpg",
     "CoverBus": "5um7_b.jpg",
     "CutType": 1,
-    "Javdb": "6d1va",
-    "Javlibrary": "javlikaiqa",
-    "Javbus": "https://www.buscdn.me/VDD-123_2017-02-03",
     "Arzon": "1377679",
     "CompletionStatus": 6,
     "Version": 1,
@@ -37,5 +34,8 @@
     "Actors": [
         "\u7be0\u7530\u3086\u3046"
     ],
-    "Modify": "2021-09-25 20:19:52"
+    "Modify": "2021-09-25 20:19:52",
+    "JavDb": "6d1va",
+    "JavLibrary": "javlikaiqa",
+    "JavBus": "https://www.buscdn.me/VDD-123_2017-02-03"
 }

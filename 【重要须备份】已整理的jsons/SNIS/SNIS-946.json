@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/snis946/snis946pl.jpg",
     "CoverBus": "61vy_b.jpg",
     "CutType": 1,
-    "Javdb": "Rk5MD",
-    "Javlibrary": "javlikl5ta",
-    "Javbus": "SNIS-946",
     "Arzon": "1553228",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u6a4b\u672c\u3042\u308a\u306a"
     ],
-    "Modify": "2021-09-25 18:39:35"
+    "Modify": "2021-09-25 18:39:35",
+    "JavDb": "Rk5MD",
+    "JavLibrary": "javlikl5ta",
+    "JavBus": "SNIS-946"
 }

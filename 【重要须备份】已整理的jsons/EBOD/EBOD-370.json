@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ebod370/ebod370pl.jpg",
     "CoverBus": "495e_b.jpg",
     "CutType": 1,
-    "Javdb": "VwX0Q",
-    "Javlibrary": "javlijt65u",
-    "Javbus": "EBOD-370",
     "Arzon": "1193595",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u6797\u3086\u306a"
     ],
-    "Modify": "2021-09-05 15:56:01"
+    "Modify": "2021-09-05 15:56:01",
+    "JavDb": "VwX0Q",
+    "JavLibrary": "javlijt65u",
+    "JavBus": "EBOD-370"
 }

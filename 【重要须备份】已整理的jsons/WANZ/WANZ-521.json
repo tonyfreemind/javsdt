@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/wanz521/wanz521pl.jpg",
     "CoverBus": "5mdl_b.jpg",
     "CutType": 1,
-    "Javdb": "MbmAR",
-    "Javlibrary": "javlil3s6e",
-    "Javbus": "WANZ-521",
     "Arzon": "1351275",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u3042\u3079\u307f\u304b\u3053"
     ],
-    "Modify": "2021-09-25 20:28:22"
+    "Modify": "2021-09-25 20:28:22",
+    "JavDb": "MbmAR",
+    "JavLibrary": "javlil3s6e",
+    "JavBus": "WANZ-521"
 }

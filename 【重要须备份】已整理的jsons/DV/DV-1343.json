@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/53dv1343/53dv1343pl.jpg",
     "CoverBus": "kwg_b.jpg",
     "CutType": 1,
-    "Javdb": "e9Zx",
-    "Javlibrary": "javlicieye",
-    "Javbus": "DV-1343",
     "Arzon": "972505",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u8fb0\u5df3\u3086\u3044"
     ],
-    "Modify": "2021-09-05 15:52:10"
+    "Modify": "2021-09-05 15:52:10",
+    "JavDb": "e9Zx",
+    "JavLibrary": "javlicieye",
+    "JavBus": "DV-1343"
 }

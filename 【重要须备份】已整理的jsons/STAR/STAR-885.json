@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1star885/1star885pl.jpg",
     "CoverBus": "6hiy_b.jpg",
     "CutType": 1,
-    "Javdb": "Rk66K",
-    "Javlibrary": "javli4zaqi",
-    "Javbus": "STAR-885",
     "Arzon": "1446608",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u98db\u9ce5\u308a\u3093"
     ],
-    "Modify": "2021-09-25 19:27:24"
+    "Modify": "2021-09-25 19:27:24",
+    "JavDb": "Rk66K",
+    "JavLibrary": "javli4zaqi",
+    "JavBus": "STAR-885"
 }

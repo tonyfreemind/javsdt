@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/pred141/pred141pl.jpg",
     "CoverBus": "715d_b.jpg",
     "CutType": 1,
-    "Javdb": "vWBpb",
-    "Javlibrary": "javli7yetq",
-    "Javbus": "PRED-141",
     "Arzon": "1507953",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u65b0\u4e95\u512a\u9999"
     ],
-    "Modify": "2021-09-25 18:10:27"
+    "Modify": "2021-09-25 18:10:27",
+    "JavDb": "vWBpb",
+    "JavLibrary": "javli7yetq",
+    "JavBus": "PRED-141"
 }

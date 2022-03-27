@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipx022/ipx022pl.jpg",
     "CoverBus": "66ow_b.jpg",
     "CutType": 1,
-    "Javdb": "ZX39q",
-    "Javlibrary": "javlikt754",
-    "Javbus": "IPX-022",
     "Arzon": "1416175",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u6843\u4e43\u6728\u304b\u306a"
     ],
-    "Modify": "2021-09-05 18:37:35"
+    "Modify": "2021-09-05 18:37:35",
+    "JavDb": "ZX39q",
+    "JavLibrary": "javlikt754",
+    "JavBus": "IPX-022"
 }

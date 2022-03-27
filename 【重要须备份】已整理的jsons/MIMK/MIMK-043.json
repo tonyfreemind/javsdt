@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mimk043/mimk043pl.jpg",
     "CoverBus": "5e3k_b.jpg",
     "CutType": 1,
-    "Javdb": "vJX8",
-    "Javlibrary": "javlilih7q",
-    "Javbus": "MIMK-043",
     "Arzon": "1323367",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u30c6\u30a3\u30a2"
     ],
-    "Modify": "2021-09-25 17:43:18"
+    "Modify": "2021-09-25 17:43:18",
+    "JavDb": "vJX8",
+    "JavLibrary": "javlilih7q",
+    "JavBus": "MIMK-043"
 }

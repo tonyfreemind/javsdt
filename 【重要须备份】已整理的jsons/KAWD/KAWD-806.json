@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/kawd806/kawd806pl.jpg",
     "CoverBus": "5z06_b.jpg",
     "CutType": 1,
-    "Javdb": "mO02r",
-    "Javlibrary": "javlikixyu",
-    "Javbus": "KAWD-806",
     "Arzon": "1391501",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u6a31\u7531\u7f57"
     ],
-    "Modify": "2021-09-05 21:18:04"
+    "Modify": "2021-09-05 21:18:04",
+    "JavDb": "mO02r",
+    "JavLibrary": "javlikixyu",
+    "JavBus": "KAWD-806"
 }

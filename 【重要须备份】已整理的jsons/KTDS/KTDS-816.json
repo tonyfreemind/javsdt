@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/h_094ktds816/h_094ktds816pl.jpg",
     "CoverBus": "58pg_b.jpg",
     "CutType": 1,
-    "Javdb": "96xk5",
-    "Javlibrary": "javlilawsu",
-    "Javbus": "KTDS-816",
     "Arzon": "1298811",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,8 @@
     "Actors": [
         "\u6dbc\u5bae\u7434\u97f3"
     ],
-    "Modify": "2021-09-05 21:20:23"
+    "Modify": "2021-09-05 21:20:23",
+    "JavDb": "96xk5",
+    "JavLibrary": "javlilawsu",
+    "JavBus": "KTDS-816"
 }

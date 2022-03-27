@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipz603/ipz603pl.jpg",
     "CoverBus": "4vvr_b.jpg",
     "CutType": 1,
-    "Javdb": "va1n",
-    "Javlibrary": "javliiyr4i",
-    "Javbus": "IPZ-603",
     "Arzon": "1279837",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u5e0c\u5cf6\u3042\u3044\u308a"
     ],
-    "Modify": "2021-09-05 18:57:26"
+    "Modify": "2021-09-05 18:57:26",
+    "JavDb": "va1n",
+    "JavLibrary": "javliiyr4i",
+    "JavBus": "IPZ-603"
 }

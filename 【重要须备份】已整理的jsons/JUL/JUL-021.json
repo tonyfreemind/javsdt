@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/jul021/jul021pl.jpg",
     "CoverBus": "7csd_b.jpg",
     "CutType": 1,
-    "Javdb": "AEe6n",
-    "Javlibrary": "javli6jv4i",
-    "Javbus": "JUL-021",
     "Arzon": "1540157",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
         "\u795e\u5bae\u5bfa\u30ca\u30aa",
         "\u4e09\u6d66\u6b69\u7f8e"
     ],
-    "Modify": "2021-09-05 19:04:30"
+    "Modify": "2021-09-05 19:04:30",
+    "JavDb": "AEe6n",
+    "JavLibrary": "javli6jv4i",
+    "JavBus": "JUL-021"
 }

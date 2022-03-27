@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/2dfdm015/2dfdm015pl.jpg",
     "CoverBus": "7gt0_b.jpg",
     "CutType": 1,
-    "Javdb": "pqWVe",
-    "Javlibrary": "javli6tqq4",
-    "Javbus": "DFDM-015",
     "Arzon": "1548917",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,8 @@
     "Actors": [
         "\u594f\u97f3\u304b\u306e\u3093"
     ],
-    "Modify": "2021-09-05 15:50:06"
+    "Modify": "2021-09-05 15:50:06",
+    "JavDb": "pqWVe",
+    "JavLibrary": "javli6tqq4",
+    "JavBus": "DFDM-015"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/pppd424/pppd424pl.jpg",
     "CoverBus": "58pu_b.jpg",
     "CutType": 1,
-    "Javdb": "ZXM3V",
-    "Javlibrary": "javlilafti",
-    "Javbus": "PPPD-424",
     "Arzon": "1304218",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "JULIA"
     ],
-    "Modify": "2021-09-25 18:06:23"
+    "Modify": "2021-09-25 18:06:23",
+    "JavDb": "ZXM3V",
+    "JavLibrary": "javlilafti",
+    "JavBus": "PPPD-424"
 }

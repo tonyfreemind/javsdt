@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/snis665/snis665pl.jpg",
     "CoverBus": "5i1h_b.jpg",
     "CutType": 1,
-    "Javdb": "1BEQA",
-    "Javlibrary": "javlilrn5e",
-    "Javbus": "SNIS-665",
     "Arzon": "1335583",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u5409\u6cfd\u660e\u6b65"
     ],
-    "Modify": "2021-09-25 18:35:43"
+    "Modify": "2021-09-25 18:35:43",
+    "JavDb": "1BEQA",
+    "JavLibrary": "javlilrn5e",
+    "JavBus": "SNIS-665"
 }

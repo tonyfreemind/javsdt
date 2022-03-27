@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ssni532/ssni532pl.jpg",
     "CoverBus": "77sk_b.jpg",
     "CutType": 1,
-    "Javdb": "QvMAG",
-    "Javlibrary": "javli6b7y4",
-    "Javbus": "SSNI-532",
     "Arzon": "1526151",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,8 @@
     "Actors": [
         "\u7fbd\u54b2\u307f\u306f\u308b"
     ],
-    "Modify": "2021-09-25 19:01:29"
+    "Modify": "2021-09-25 19:01:29",
+    "JavDb": "QvMAG",
+    "JavLibrary": "javli6b7y4",
+    "JavBus": "SSNI-532"
 }

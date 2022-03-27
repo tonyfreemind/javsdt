@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/iptd799/iptd799pl.jpg",
     "CoverBus": "2rcx_b.jpg",
     "CutType": 1,
-    "Javdb": "OM5B",
-    "Javlibrary": "javlidr4qu",
-    "Javbus": "IPTD-799",
     "Arzon": "961730",
     "CompletionStatus": 6,
     "Version": 1,
@@ -28,5 +25,8 @@
     "Actors": [
         "\u5e0c\u5fd7\u3042\u3044\u306e"
     ],
-    "Modify": "2021-09-05 18:36:21"
+    "Modify": "2021-09-05 18:36:21",
+    "JavDb": "OM5B",
+    "JavLibrary": "javlidr4qu",
+    "JavBus": "IPTD-799"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/wanz913/wanz913pl.jpg",
     "CoverBus": "7f09_b.jpg",
     "CutType": 1,
-    "Javdb": "AKzpw",
-    "Javlibrary": "javli6lu6y",
-    "Javbus": "WANZ-913",
     "Arzon": "1544157",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "JULIA"
     ],
-    "Modify": "2021-09-25 20:33:48"
+    "Modify": "2021-09-25 20:33:48",
+    "JavDb": "AKzpw",
+    "JavLibrary": "javli6lu6y",
+    "JavBus": "WANZ-913"
 }

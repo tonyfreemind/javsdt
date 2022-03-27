@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ssni675/ssni675pl.jpg",
     "CoverBus": "7hc3_b.jpg",
     "CutType": 1,
-    "Javdb": "Kq81A",
-    "Javlibrary": "javli6qd6q",
-    "Javbus": "SSNI-675",
     "Arzon": "1550507",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u8475\u53f8"
     ],
-    "Modify": "2021-09-25 18:40:45"
+    "Modify": "2021-09-25 18:40:45",
+    "JavDb": "Kq81A",
+    "JavLibrary": "javli6qd6q",
+    "JavBus": "SSNI-675"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/digital/video/mmcpvr00001/mmcpvr00001pl.jpg",
     "CoverBus": "6dsy_b.jpg",
     "CutType": 1,
-    "Javdb": "wKBDB",
-    "Javlibrary": "javli4zw6e",
-    "Javbus": "MMCPVR-001",
     "Arzon": "",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u4f50\u3005\u6ce2\u7dbe"
     ],
-    "Modify": "2021-09-25 17:47:17"
+    "Modify": "2021-09-25 17:47:17",
+    "JavDb": "wKBDB",
+    "JavLibrary": "javli4zw6e",
+    "JavBus": "MMCPVR-001"
 }

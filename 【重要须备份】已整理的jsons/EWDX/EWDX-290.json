@@ -16,9 +16,6 @@
     "CoverLibrary": "",
     "CoverBus": "",
     "CutType": 1,
-    "Javdb": "WkYmp",
-    "Javlibrary": "",
-    "Javbus": "",
     "Arzon": "",
     "CompletionStatus": 1,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u4e26\u6728\u5854\u5b50"
     ],
-    "Modify": "2021-11-07 20:40:06"
+    "Modify": "2021-11-07 20:40:06",
+    "JavDb": "WkYmp",
+    "JavLibrary": "",
+    "JavBus": ""
 }

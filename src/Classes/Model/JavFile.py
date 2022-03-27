@@ -1,11 +1,9 @@
 # -*- coding:utf-8 -*-
 import os
-import re
 from os import sep
 
-
 # 每一部jav的“结构体”
-from Car import extract_suf, tran_car_same_with_bus_arzon, tran_car_for_search_bus_arzon, extract_pref
+from Car import extract_suf, extract_pref
 
 
 class JavFile(object):
@@ -21,50 +19,53 @@ class JavFile(object):
         self.Car = car
         """1 车牌"""
 
-        self.Car_26id = tran_car_same_with_bus_arzon(car)
-        """2 ID放前面的车牌\n\nCar是ID-26xxx，Car_id则是26ID-xxx，db和library是前者，bus和arzon是后者"""
-
-        self.Car_search_arzon = tran_car_for_search_bus_arzon(car)
-        """2 搜索用的车牌\n\nCar是ID-26xxx，Car_search则是26IDxxx，用于bus和arzon搜索"""
-
-        self.Pref = extract_pref(self.Car)
-        """3 车牌前缀\n\n例如IPZ"""
-
-        self.Suf = extract_suf(self.Car)
-        """3 车牌后缀\n\n纯数字，例如ABC-123z的123，ID-26123的26123"""
-
         self.Name = file_raw
-        """4 完整文件名\n\n例如ABC-123-cd2.mp4，会在重命名过程中发生变化"""
+        """2 完整文件名\n\n例如ABC-123-cd2.mp4，会在重命名过程中发生变化"""
 
         self.Ext = os.path.splitext(file_raw)[1].lower()
-        """5 视频文件扩展名\n\n例如.mp4、.wmv"""
+        """3 视频文件扩展名\n\n例如.mp4、.wmv"""
 
         self.Dir = dir_current
-        """6 视频所在文件夹的路径\n\n例如D:\\\\MyData\\\\测试\\\\DV-1594【朝日奈あかり】，会在重命名过程中发生变化"""
+        """4 视频所在文件夹的路径\n\n例如D:\\\\MyData\\\\测试\\\\DV-1594【朝日奈あかり】，会在重命名过程中发生变化"""
 
         self.Episode = episode
-        """7 第几集\n\n一部时间较长的影片可能被分为多部份，例如cd1 cd2 cd3的1 2 3"""
+        """5 第几集\n\n一部时间较长的影片可能被分为多部份，例如cd1 cd2 cd3的1 2 3"""
 
         self.Sum_all_episodes = 0
-        """8 当前车牌总共多少部分\n\n例如abc-123分为abc-123-cd1.MP4和abc-123-cd2.mp4共两部分"""
+        """6 当前车牌总共多少部分\n\n例如abc-123分为abc-123-cd1.MP4和abc-123-cd2.mp4共两部分"""
 
         self.Subtitle = subtitle
-        """9（同文件夹的）字幕的文件名\n\n例如ABC-123.srt，会在重命名过程中发生变化"""
+        """7（同文件夹的）字幕的文件名\n\n例如ABC-123.srt，会在重命名过程中发生变化"""
 
         self.Ext_subtitle = os.path.splitext(subtitle)[1].lower()
-        """10 字幕文件扩展名\n\n例如.srt"""
+        """8 字幕文件扩展名\n\n例如.srt"""
 
         self.No = no_current
-        """11 编号\n\n当前处理的视频在所有视频中的编号，用于显示整理进度"""
+        """9 编号\n\n当前处理的视频在所有视频中的编号，用于显示整理进度"""
 
         self.Bool_subtitle = False
-        """12 是否拥有字幕"""
+        """10 是否拥有字幕"""
 
         self.Bool_divulge = False
-        """13 是否无码流出"""
+        """11 是否无码流出"""
 
     Bool_in_separate_folder = False
     """是否拥有独立文件夹\n\n整理过程中据此可以选择为它创建独立文件夹，同一级文件夹中的影片具有相同的值"""
+
+    @property
+    def Pref(self):
+        """车牌前缀，车尾\n\n例如IPZ"""
+        return extract_pref(self.Car)
+
+    @property
+    def Suf(self):
+        """3 车牌后缀\n\n纯数字，例如ABC-123z的123，26ID-020的20"""
+        return extract_suf(self.Car)
+
+    @property
+    def Car_search(self):
+        """2 搜索用的车牌，给bus和arzon搜索"""
+        return self.Car.replace("-", "")
 
     @property
     def Cd(self):

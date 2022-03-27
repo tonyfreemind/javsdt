@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/h_618mkz012/h_618mkz012pl.jpg",
     "CoverBus": "5ovi_b.jpg",
     "CutType": 1,
-    "Javdb": "5EVO9",
-    "Javlibrary": "javlijdbrq",
-    "Javbus": "MKZ-012",
     "Arzon": "1372056",
     "CompletionStatus": 6,
     "Version": 1,
@@ -30,5 +27,8 @@
     "Actors": [
         "\u4e0a\u539f\u82b1\u604b"
     ],
-    "Modify": "2021-09-25 17:47:09"
+    "Modify": "2021-09-25 17:47:09",
+    "JavDb": "5EVO9",
+    "JavLibrary": "javlijdbrq",
+    "JavBus": "MKZ-012"
 }

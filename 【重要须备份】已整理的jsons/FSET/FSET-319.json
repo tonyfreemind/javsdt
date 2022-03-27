@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1fset319/1fset319pl.jpg",
     "CoverBus": "1q2n_b.jpg",
     "CutType": 1,
-    "Javdb": "qAx7M",
-    "Javlibrary": "javliad33e",
-    "Javbus": "FSET-319",
     "Arzon": "932452",
     "CompletionStatus": 6,
     "Version": 1,
@@ -30,5 +27,8 @@
     "Actors": [
         "\u7425\u73c0\u3046\u305f"
     ],
-    "Modify": "2021-09-05 16:00:26"
+    "Modify": "2021-09-05 16:00:26",
+    "JavDb": "qAx7M",
+    "JavLibrary": "javliad33e",
+    "JavBus": "FSET-319"
 }

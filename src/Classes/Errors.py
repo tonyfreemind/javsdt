@@ -16,14 +16,3 @@ class SpecifiedUrlError(Exception):
 class CustomClassifyTargetDirError(Exception):
     """用户自定义的归类根目录有问题"""
     pass
-
-
-class DbCodePageNothingError(Exception):
-    """当前javdb的车头页面无数据"""
-    pass
-
-
-class InRangeButDbNotFoundError(Exception):
-    """javdb找不到"""
-    pass
-

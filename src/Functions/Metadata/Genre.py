@@ -7,20 +7,22 @@ from Const import Const
 from Enums import ExcelColEnum
 
 
-def better_dict_genres(pattern, to_language):
+def better_dict_genres(website, to_language):
     """
     得到优化的特征字典
 
     Args:
-        pattern: 处理模式（哪个网站）
+        website: 哪个网站
         to_language: 简zh/繁cht
 
     Returns:
         {'伴侶': '招待小姐', ...}
     """
+    if website is 'Arzon':
+        return {}
 
     # 使用哪一个网站的特征原数据， 0 db，1 library，2 bus，
-    col_jp = ExcelColEnum[pattern].value
+    col_jp = ExcelColEnum[website].value
     # 简繁中文，3简体 4繁体
     col_chs = ExcelColEnum[to_language].value
 

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/shkd752/shkd752pl.jpg",
     "CoverBus": "62xo_b.jpg",
     "CutType": 1,
-    "Javdb": "zKAMW",
-    "Javlibrary": "javlikrwy4",
-    "Javbus": "SHKD-752",
     "Arzon": "1405299",
     "CompletionStatus": 6,
     "Version": 1,
@@ -30,5 +27,8 @@
     "Actors": [
         "\u9999\u690e\u308a\u3042"
     ],
-    "Modify": "2021-09-25 18:25:31"
+    "Modify": "2021-09-25 18:25:31",
+    "JavDb": "zKAMW",
+    "JavLibrary": "javlikrwy4",
+    "JavBus": "SHKD-752"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/atid400/atid400pl.jpg",
     "CoverBus": "7iby_b.jpg",
     "CutType": 1,
-    "Javdb": "mbKzn",
-    "Javlibrary": "javli6rx7i",
-    "Javbus": "ATID-400",
     "Arzon": "1645420",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u4e8c\u5bae\u3072\u304b\u308a"
     ],
-    "Modify": "2021-11-07 21:04:31"
+    "Modify": "2021-11-07 21:04:31",
+    "JavDb": "mbKzn",
+    "JavLibrary": "javli6rx7i",
+    "JavBus": "ATID-400"
 }

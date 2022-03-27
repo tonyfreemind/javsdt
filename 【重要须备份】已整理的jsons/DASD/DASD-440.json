@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/dasd440/dasd440pl.jpg",
     "CoverBus": "6ly3_b.jpg",
     "CutType": 1,
-    "Javdb": "9W32p",
-    "Javlibrary": "javli7bz4e",
-    "Javbus": "DASD-440",
     "Arzon": "1463534",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u897f\u91ce\u7fd4"
     ],
-    "Modify": "2021-09-05 15:47:03"
+    "Modify": "2021-09-05 15:47:03",
+    "JavDb": "9W32p",
+    "JavLibrary": "javli7bz4e",
+    "JavBus": "DASD-440"
 }

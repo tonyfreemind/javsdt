@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ssni465/ssni465pl.jpg",
     "CoverBus": "72sn_b.jpg",
     "CutType": 1,
-    "Javdb": "v40BO",
-    "Javlibrary": "javli7zkya",
-    "Javbus": "SSNI-465",
     "Arzon": "1512387",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u5965\u7530\u54b2"
     ],
-    "Modify": "2021-09-25 18:58:29"
+    "Modify": "2021-09-25 18:58:29",
+    "JavDb": "v40BO",
+    "JavLibrary": "javli7zkya",
+    "JavBus": "SSNI-465"
 }

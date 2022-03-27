@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/cnd017/cnd017pl.jpg",
     "CoverBus": "nkn_b.jpg",
     "CutType": 1,
-    "Javdb": "RkWnn",
-    "Javlibrary": "javlioysqy",
-    "Javbus": "CND-017",
     "Arzon": "1113553",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u9234\u6728\u5fc3\u6625"
     ],
-    "Modify": "2021-09-05 15:45:06"
+    "Modify": "2021-09-05 15:45:06",
+    "JavDb": "RkWnn",
+    "JavLibrary": "javlioysqy",
+    "JavBus": "CND-017"
 }

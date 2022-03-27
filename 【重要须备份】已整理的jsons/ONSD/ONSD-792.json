@@ -16,9 +16,6 @@
     "CoverLibrary": "http://img10.pixhost.to/images/84/43560409_i232078.jpg",
     "CoverBus": "46ag_b.jpg",
     "CutType": 1,
-    "Javdb": "WMgg",
-    "Javlibrary": "javlijqdta",
-    "Javbus": "ONSD-792",
     "Arzon": "",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u307b\u3057\u306e\u3042\u3059\u304b"
     ],
-    "Modify": "2021-09-25 18:00:55"
+    "Modify": "2021-09-25 18:00:55",
+    "JavDb": "WMgg",
+    "JavLibrary": "javlijqdta",
+    "JavBus": "ONSD-792"
 }

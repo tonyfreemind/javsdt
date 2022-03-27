@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ssni579/ssni579pl.jpg",
     "CoverBus": "7b4l_b.jpg",
     "CutType": 1,
-    "Javdb": "K2PBA",
-    "Javlibrary": "javli6lmrm",
-    "Javbus": "SSNI-579",
     "Arzon": "1535721",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,8 @@
     "Actors": [
         "\u5965\u7530\u54b2"
     ],
-    "Modify": "2021-09-25 19:03:29"
+    "Modify": "2021-09-25 19:03:29",
+    "JavDb": "K2PBA",
+    "JavLibrary": "javli6lmrm",
+    "JavBus": "SSNI-579"
 }

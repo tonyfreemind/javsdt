@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mmus018so/mmus018sopl.jpg",
     "CoverBus": "6fpo_b.jpg",
     "CutType": 1,
-    "Javdb": "DRVv3",
-    "Javlibrary": "javli4yiti",
-    "Javbus": "MMUS-018",
     "Arzon": "1444881",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u67a2\u6728\u3042\u304a\u3044"
     ],
-    "Modify": "2021-09-25 17:48:30"
+    "Modify": "2021-09-25 17:48:30",
+    "JavDb": "DRVv3",
+    "JavLibrary": "javli4yiti",
+    "JavBus": "MMUS-018"
 }

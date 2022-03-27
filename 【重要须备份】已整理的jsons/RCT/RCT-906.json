@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1rct906/1rct906pl.jpg",
     "CoverBus": "5pav_b.jpg",
     "CutType": 1,
-    "Javdb": "",
-    "Javlibrary": "javlilyg2y",
-    "Javbus": "RCT-906",
     "Arzon": "1363515",
     "CompletionStatus": 7,
     "Version": 1,
@@ -34,5 +31,8 @@
         "\u6850\u5cf6\u7f8e\u5948\u5b50",
         "\u9234\u5c4b\u3044\u3061\u3054"
     ],
-    "Modify": "2021-10-30 12:26:40"
+    "Modify": "2021-10-30 12:26:40",
+    "JavDb": "",
+    "JavLibrary": "javlilyg2y",
+    "JavBus": "RCT-906"
 }

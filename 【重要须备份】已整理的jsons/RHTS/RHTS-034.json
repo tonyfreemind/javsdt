@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/h_066rhts034so/h_066rhts034sopl.jpg",
     "CoverBus": "4f8d_b.jpg",
     "CutType": 1,
-    "Javdb": "MdQ4",
-    "Javlibrary": "javlij3234",
-    "Javbus": "RHTS-034",
     "Arzon": "1218082",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,8 @@
         "\u6458\u6d25\u871c",
         "\u8352\u7267\u3057\u304a\u308a"
     ],
-    "Modify": "2021-09-25 18:14:53"
+    "Modify": "2021-09-25 18:14:53",
+    "JavDb": "MdQ4",
+    "JavLibrary": "javlij3234",
+    "JavBus": "RHTS-034"
 }

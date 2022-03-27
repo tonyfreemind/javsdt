@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1stars008/1stars008pl.jpg",
     "CoverBus": "70p9_b.jpg",
     "CutType": 1,
-    "Javdb": "Zy6OP",
-    "Javlibrary": "javli7yuru",
-    "Javbus": "STARS-008",
     "Arzon": "1504962",
     "CompletionStatus": 6,
     "Version": 1,
@@ -30,5 +27,8 @@
     "Actors": [
         "\u53e4\u5ddd\u4f0a\u7ec7"
     ],
-    "Modify": "2021-09-21 08:08:04"
+    "Modify": "2021-09-21 08:08:04",
+    "JavDb": "Zy6OP",
+    "JavLibrary": "javli7yuru",
+    "JavBus": "STARS-008"
 }

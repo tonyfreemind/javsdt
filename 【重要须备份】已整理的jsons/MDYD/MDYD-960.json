@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mdyd960/mdyd960pl.jpg",
     "CoverBus": "4i6e_b.jpg",
     "CutType": 1,
-    "Javdb": "K4kvO",
-    "Javlibrary": "javliiaj5y",
-    "Javbus": "MDYD-960",
     "Arzon": "1230229",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "Hitomi"
     ],
-    "Modify": "2021-09-05 21:27:12"
+    "Modify": "2021-09-05 21:27:12",
+    "JavDb": "K4kvO",
+    "JavLibrary": "javliiaj5y",
+    "JavBus": "MDYD-960"
 }

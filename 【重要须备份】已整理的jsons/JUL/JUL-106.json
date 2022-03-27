@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/jul106/jul106pl.jpg",
     "CoverBus": "7how_b.jpg",
     "CutType": 1,
-    "Javdb": "gWv0N",
-    "Javlibrary": "javli6qg4i",
-    "Javbus": "JUL-106",
     "Arzon": "1551991",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u5e0c\u5cf6\u3042\u3044\u308a"
     ],
-    "Modify": "2021-09-21 08:42:30"
+    "Modify": "2021-09-21 08:42:30",
+    "JavDb": "gWv0N",
+    "JavLibrary": "javli6qg4i",
+    "JavBus": "JUL-106"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/naka017/naka017pl.jpg",
     "CoverBus": "6t7r_b.jpg",
     "CutType": 1,
-    "Javdb": "3nbp9",
-    "Javlibrary": "javli7tr5a",
-    "Javbus": "NAKA-017",
     "Arzon": "1484510",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u6c34\u8c37\u5fc3\u97f3"
     ],
-    "Modify": "2021-09-25 17:53:54"
+    "Modify": "2021-09-25 17:53:54",
+    "JavDb": "3nbp9",
+    "JavLibrary": "javli7tr5a",
+    "JavBus": "NAKA-017"
 }

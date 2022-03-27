@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/jul315/jul315pl.jpg",
     "CoverBus": "7v1z_b.jpg",
     "CutType": 1,
-    "Javdb": "zZ3kE",
-    "Javlibrary": "javmezaj6u",
-    "Javbus": "JUL-315",
     "Arzon": "1653973",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u6625\u660e\u6f64"
     ],
-    "Modify": "2022-02-15 12:44:45"
+    "Modify": "2022-02-15 12:44:45",
+    "JavDb": "zZ3kE",
+    "JavLibrary": "javmezaj6u",
+    "JavBus": "JUL-315"
 }

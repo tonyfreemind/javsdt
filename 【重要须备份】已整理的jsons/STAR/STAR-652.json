@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1star652/1star652pl.jpg",
     "CoverBus": "5cm9_b.jpg",
     "CutType": 1,
-    "Javdb": "pkDVq",
-    "Javlibrary": "javliliqze",
-    "Javbus": "STAR-652",
     "Arzon": "1315328",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u53e4\u5ddd\u4f0a\u7ec7"
     ],
-    "Modify": "2021-09-25 19:19:33"
+    "Modify": "2021-09-25 19:19:33",
+    "JavDb": "pkDVq",
+    "JavLibrary": "javliliqze",
+    "JavBus": "STAR-652"
 }

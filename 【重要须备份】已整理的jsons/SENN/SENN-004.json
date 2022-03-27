@@ -16,9 +16,6 @@
     "CoverLibrary": "",
     "CoverBus": "7g0h_b.jpg",
     "CutType": 1,
-    "Javdb": "VNz4Q",
-    "Javlibrary": "",
-    "Javbus": "SENN-004",
     "Arzon": "",
     "CompletionStatus": 5,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u6c34\u8c37\u3042\u304a\u3044"
     ],
-    "Modify": "2021-09-25 18:23:09"
+    "Modify": "2021-09-25 18:23:09",
+    "JavDb": "VNz4Q",
+    "JavLibrary": "",
+    "JavBus": "SENN-004"
 }

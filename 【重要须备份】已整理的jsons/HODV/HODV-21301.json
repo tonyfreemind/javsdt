@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/41hodv21301/41hodv21301pl.jpg",
     "CoverBus": "6m5t_b.jpg",
     "CutType": 1,
-    "Javdb": "MbM84",
-    "Javlibrary": "javli7ag5u",
-    "Javbus": "HODV-21301",
     "Arzon": "1456298",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,8 @@
         "\u4fdd\u91cc\u512a\u82b1",
         "\u677e\u7530\u771f\u590f"
     ],
-    "Modify": "2021-09-25 17:11:00"
+    "Modify": "2021-09-25 17:11:00",
+    "JavDb": "MbM84",
+    "JavLibrary": "javli7ag5u",
+    "JavBus": "HODV-21301"
 }

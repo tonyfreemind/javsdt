@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/atid389/atid389pl.jpg",
     "CoverBus": "7go0_b.jpg",
     "CutType": 1,
-    "Javdb": "gq6pQ",
-    "Javlibrary": "javli6tlqe",
-    "Javbus": "ATID-389",
     "Arzon": "1549030",
     "CompletionStatus": 6,
     "Version": 1,
@@ -31,5 +28,8 @@
     "Actors": [
         "\u4f50\u77e5\u5b50"
     ],
-    "Modify": "2021-11-07 21:39:35"
+    "Modify": "2021-11-07 21:39:35",
+    "JavDb": "gq6pQ",
+    "JavLibrary": "javli6tlqe",
+    "JavBus": "ATID-389"
 }

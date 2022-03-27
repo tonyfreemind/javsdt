@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipx043/ipx043pl.jpg",
     "CoverBus": "68x0_b.jpg",
     "CutType": 1,
-    "Javdb": "kKp86",
-    "Javlibrary": "javli4qyzy",
-    "Javbus": "IPX-043",
     "Arzon": "1424911",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u685c\u7a7a\u3082\u3082"
     ],
-    "Modify": "2021-09-05 18:37:44"
+    "Modify": "2021-09-05 18:37:44",
+    "JavDb": "kKp86",
+    "JavLibrary": "javli4qyzy",
+    "JavBus": "IPX-043"
 }

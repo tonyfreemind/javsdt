@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1hbad406/1hbad406pl.jpg",
     "CoverBus": "6gmv_b.jpg",
     "CutType": 1,
-    "Javdb": "rm1dr",
-    "Javlibrary": "javli4yhsa",
-    "Javbus": "HBAD-406",
     "Arzon": "",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u821e\u5cf6\u3042\u304b\u308a"
     ],
-    "Modify": "2021-09-13 22:45:42"
+    "Modify": "2021-09-13 22:45:42",
+    "JavDb": "rm1dr",
+    "JavLibrary": "javli4yhsa",
+    "JavBus": "HBAD-406"
 }

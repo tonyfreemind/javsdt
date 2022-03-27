@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mide101/mide101pl.jpg",
     "CoverBus": "487g_b.jpg",
     "CutType": 1,
-    "Javdb": "V44AG",
-    "Javlibrary": "javlijrfsy",
-    "Javbus": "MIDE-101",
     "Arzon": "1192408",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u4e18\u54b2\u30a8\u30df\u30ea"
     ],
-    "Modify": "2021-09-25 17:22:58"
+    "Modify": "2021-09-25 17:22:58",
+    "JavDb": "V44AG",
+    "JavLibrary": "javlijrfsy",
+    "JavBus": "MIDE-101"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/h_479gne189/h_479gne189pl.jpg",
     "CoverBus": "69j7_b.jpg",
     "CutType": 1,
-    "Javdb": "EegQ",
-    "Javlibrary": "javli4rw6q",
-    "Javbus": "GNE-189",
     "Arzon": "1420774",
     "CompletionStatus": 6,
     "Version": 1,
@@ -37,5 +34,8 @@
         "\u85e4\u6ce2\u3055\u3068\u308a",
         "\u5929\u6728\u3086\u3046"
     ],
-    "Modify": "2021-09-05 16:02:19"
+    "Modify": "2021-09-05 16:02:19",
+    "JavDb": "EegQ",
+    "JavLibrary": "javli4rw6q",
+    "JavBus": "GNE-189"
 }

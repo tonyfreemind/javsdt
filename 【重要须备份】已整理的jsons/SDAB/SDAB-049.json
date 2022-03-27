@@ -16,9 +16,6 @@
     "CoverLibrary": "http://img14.pixhost.to/images/481/57297577_i350347.jpg",
     "CoverBus": "6bce_b.jpg",
     "CutType": 1,
-    "Javdb": "PQGP0",
-    "Javlibrary": "javli4qiqy",
-    "Javbus": "SDAB-049",
     "Arzon": "",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u7af9\u5185\u4e43\u611b"
     ],
-    "Modify": "2021-09-25 18:16:39"
+    "Modify": "2021-09-25 18:16:39",
+    "JavDb": "PQGP0",
+    "JavLibrary": "javli4qiqy",
+    "JavBus": "SDAB-049"
 }

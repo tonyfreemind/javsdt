@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/h_094ktra026/h_094ktra026pl.jpg",
     "CoverBus": "6ld4_b.jpg",
     "CutType": 1,
-    "Javdb": "Rk97p",
-    "Javlibrary": "javli7dj2a",
-    "Javbus": "KTRA-026",
     "Arzon": "1456222",
     "CompletionStatus": 6,
     "Version": 1,
@@ -31,5 +28,8 @@
     "Actors": [
         "\u8d64\u6e15\u84ee"
     ],
-    "Modify": "2021-09-05 21:21:39"
+    "Modify": "2021-09-05 21:21:39",
+    "JavDb": "Rk97p",
+    "JavLibrary": "javli7dj2a",
+    "JavBus": "KTRA-026"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mird177/mird177pl.jpg",
     "CoverBus": "6dk7_b.jpg",
     "CutType": 1,
-    "Javdb": "Y2yd",
-    "Javlibrary": "javli4zq4a",
-    "Javbus": "MIRD-177",
     "Arzon": "1436539",
     "CompletionStatus": 6,
     "Version": 1,
@@ -39,5 +36,8 @@
         "\u4f73\u82d7\u308b\u304b",
         "\u6850\u5d8b\u308a\u306e"
     ],
-    "Modify": "2021-09-25 17:45:35"
+    "Modify": "2021-09-25 17:45:35",
+    "JavDb": "Y2yd",
+    "JavLibrary": "javli4zq4a",
+    "JavBus": "MIRD-177"
 }

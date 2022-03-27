@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mide148/mide148pl.jpg",
     "CoverBus": "4fc4_b.jpg",
     "CutType": 1,
-    "Javdb": "yxkP0",
-    "Javlibrary": "javliidb5q",
-    "Javbus": "MIDE-148",
     "Arzon": "1219165",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u9234\u6728\u5fc3\u6625"
     ],
-    "Modify": "2021-09-25 17:23:23"
+    "Modify": "2021-09-25 17:23:23",
+    "JavDb": "yxkP0",
+    "JavLibrary": "javliidb5q",
+    "JavBus": "MIDE-148"
 }

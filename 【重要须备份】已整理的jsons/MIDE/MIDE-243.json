@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mide243/mide243pl.jpg",
     "CoverBus": "4u2u_b.jpg",
     "CutType": 1,
-    "Javdb": "ZXGdV",
-    "Javlibrary": "javliirkzy",
-    "Javbus": "MIDE-243",
     "Arzon": "1273834",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u795e\u54b2\u8a69\u7e54"
     ],
-    "Modify": "2021-09-25 17:24:50"
+    "Modify": "2021-09-25 17:24:50",
+    "JavDb": "ZXGdV",
+    "JavLibrary": "javliirkzy",
+    "JavBus": "MIDE-243"
 }

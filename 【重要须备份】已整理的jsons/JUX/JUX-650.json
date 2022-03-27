@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/jux650/jux650pl.jpg",
     "CoverBus": "4vem_b.jpg",
     "CutType": 1,
-    "Javdb": "Azb9e",
-    "Javlibrary": "javlii3wya",
-    "Javbus": "JUX-650",
     "Arzon": "1278310",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u6797\u3086\u306a"
     ],
-    "Modify": "2021-09-05 19:07:51"
+    "Modify": "2021-09-05 19:07:51",
+    "JavDb": "Azb9e",
+    "JavLibrary": "javlii3wya",
+    "JavBus": "JUX-650"
 }

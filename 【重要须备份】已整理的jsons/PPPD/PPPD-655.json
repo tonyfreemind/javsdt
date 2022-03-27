@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/pppd655/pppd655pl.jpg",
     "CoverBus": "6i7l_b.jpg",
     "CutType": 1,
-    "Javdb": "3nmAD",
-    "Javlibrary": "javli7dk3e",
-    "Javbus": "PPPD-655",
     "Arzon": "1451132",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u4f50\u5c71\u611b"
     ],
-    "Modify": "2021-09-25 18:06:55"
+    "Modify": "2021-09-25 18:06:55",
+    "JavDb": "3nmAD",
+    "JavLibrary": "javli7dk3e",
+    "JavBus": "PPPD-655"
 }

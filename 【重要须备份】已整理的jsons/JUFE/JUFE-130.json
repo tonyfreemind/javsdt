@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/jufe130/jufe130pl.jpg",
     "CoverBus": "7g8f_b.jpg",
     "CutType": 1,
-    "Javdb": "P2YMN",
-    "Javlibrary": "javli6tgzi",
-    "Javbus": "JUFE-130",
     "Arzon": "1548598",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u4f50\u5c71\u611b"
     ],
-    "Modify": "2021-09-13 22:46:18"
+    "Modify": "2021-09-13 22:46:18",
+    "JavDb": "P2YMN",
+    "JavLibrary": "javli6tgzi",
+    "JavBus": "JUFE-130"
 }

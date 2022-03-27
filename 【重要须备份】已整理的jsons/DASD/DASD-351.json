@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/dasd351/dasd351pl.jpg",
     "CoverBus": "5nhy_b.jpg",
     "CutType": 1,
-    "Javdb": "W143R",
-    "Javlibrary": "javlil3l6q",
-    "Javbus": "DASD-351",
     "Arzon": "1355188",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u6ce2\u591a\u91ce\u7ed3\u8863"
     ],
-    "Modify": "2021-09-05 15:46:37"
+    "Modify": "2021-09-05 15:46:37",
+    "JavDb": "W143R",
+    "JavLibrary": "javlil3l6q",
+    "JavBus": "DASD-351"
 }

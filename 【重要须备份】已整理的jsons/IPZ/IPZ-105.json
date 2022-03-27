@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipz105/ipz105pl.jpg",
     "CoverBus": "2bx8_b.jpg",
     "CutType": 1,
-    "Javdb": "rmbOZ",
-    "Javlibrary": "javlio3vti",
-    "Javbus": "IPZ-105",
     "Arzon": "1127252",
     "CompletionStatus": 6,
     "Version": 1,
@@ -30,5 +27,8 @@
     "Actors": [
         "\u524d\u7530\u304b\u304a\u308a"
     ],
-    "Modify": "2021-09-25 16:02:37"
+    "Modify": "2021-09-25 16:02:37",
+    "JavDb": "rmbOZ",
+    "JavLibrary": "javlio3vti",
+    "JavBus": "IPZ-105"
 }

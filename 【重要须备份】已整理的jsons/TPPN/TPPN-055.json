@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/tppn055/tppn055pl.jpg",
     "CoverBus": "4r0u_b.jpg",
     "CutType": 1,
-    "Javdb": "AzbQe",
-    "Javlibrary": "javliitf2u",
-    "Javbus": "TPPN-055",
     "Arzon": "1262160",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u6797\u3086\u306a"
     ],
-    "Modify": "2021-09-25 20:02:04"
+    "Modify": "2021-09-25 20:02:04",
+    "JavDb": "AzbQe",
+    "JavLibrary": "javliitf2u",
+    "JavBus": "TPPN-055"
 }

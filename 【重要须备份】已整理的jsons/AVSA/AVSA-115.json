@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/avsa115/avsa115pl.jpg",
     "CoverBus": "7f88_b.jpg",
     "CutType": 1,
-    "Javdb": "kyqAV",
-    "Javlibrary": "javli6rr5y",
-    "Javbus": "AVSA-115",
     "Arzon": "1547657",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u6c38\u702c\u3086\u3044"
     ],
-    "Modify": "2021-09-05 15:31:51"
+    "Modify": "2021-09-05 15:31:51",
+    "JavDb": "kyqAV",
+    "JavLibrary": "javli6rr5y",
+    "JavBus": "AVSA-115"
 }

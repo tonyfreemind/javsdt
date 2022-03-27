@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/cesd210/cesd210pl.jpg",
     "CoverBus": "5gv2_b.jpg",
     "CutType": 1,
-    "Javdb": "35a2z",
-    "Javlibrary": "javlillvqy",
-    "Javbus": "CESD-210",
     "Arzon": "1330678",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u5927\u69fb\u3072\u3073\u304d"
     ],
-    "Modify": "2022-02-15 19:12:59"
+    "Modify": "2022-02-15 19:12:59",
+    "JavDb": "35a2z",
+    "JavLibrary": "javlillvqy",
+    "JavBus": "CESD-210"
 }

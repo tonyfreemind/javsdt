@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/vec444/vec444pl.jpg",
     "CoverBus": "7vro_b.jpg",
     "CutType": 1,
-    "Javdb": "dP4xB",
-    "Javlibrary": "javmezbgza",
-    "Javbus": "VEC-444",
     "Arzon": "1589888",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u7e54\u7530\u771f\u5b50"
     ],
-    "Modify": "2022-02-15 12:32:52"
+    "Modify": "2022-02-15 12:32:52",
+    "JavDb": "dP4xB",
+    "JavLibrary": "javmezbgza",
+    "JavBus": "VEC-444"
 }

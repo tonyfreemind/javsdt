@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1sdnt010/1sdnt010pl.jpg",
     "CoverBus": "7cth_b.jpg",
     "CutType": 1,
-    "Javdb": "pxmbB",
-    "Javlibrary": "javli6ieze",
-    "Javbus": "SDNT-010",
     "Arzon": "1538569",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u685c\u6a39\u73b2\u5948"
     ],
-    "Modify": "2021-09-25 16:07:21"
+    "Modify": "2021-09-25 16:07:21",
+    "JavDb": "pxmbB",
+    "JavLibrary": "javli6ieze",
+    "JavBus": "SDNT-010"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/apaa280so/apaa280sopl.jpg",
     "CoverBus": "4hc0_b.jpg",
     "CutType": 1,
-    "Javdb": "veAvY",
-    "Javlibrary": "javliidoz4",
-    "Javbus": "APAA-280",
     "Arzon": "",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u94c3\u539f\u7231\u871c\u8389"
     ],
-    "Modify": "2021-09-05 15:25:55"
+    "Modify": "2021-09-05 15:25:55",
+    "JavDb": "veAvY",
+    "JavLibrary": "javliidoz4",
+    "JavBus": "APAA-280"
 }

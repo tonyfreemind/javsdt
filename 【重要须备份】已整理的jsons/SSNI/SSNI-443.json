@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ssni443/ssni443pl.jpg",
     "CoverBus": "7152_b.jpg",
     "CutType": 1,
-    "Javdb": "gBYpZ",
-    "Javlibrary": "javli7ye7e",
-    "Javbus": "SSNI-443",
     "Arzon": "1507966",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u5965\u7530\u54b2"
     ],
-    "Modify": "2021-09-25 18:57:12"
+    "Modify": "2021-09-25 18:57:12",
+    "JavDb": "gBYpZ",
+    "JavLibrary": "javli7ye7e",
+    "JavBus": "SSNI-443"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/118rtp067/118rtp067pl.jpg",
     "CoverBus": "5d8j_b.jpg",
     "CutType": 1,
-    "Javdb": "RJM8",
-    "Javlibrary": "javlilll2a",
-    "Javbus": "RTP-067",
     "Arzon": "1317911",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
         "\u4e00\u30ce\u702c\u604b",
         "\u7b39\u672c\u307f\u307b"
     ],
-    "Modify": "2021-09-25 18:15:51"
+    "Modify": "2021-09-25 18:15:51",
+    "JavDb": "RJM8",
+    "JavLibrary": "javlilll2a",
+    "JavBus": "RTP-067"
 }

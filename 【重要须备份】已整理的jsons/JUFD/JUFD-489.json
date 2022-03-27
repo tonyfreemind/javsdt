@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/jufd489/jufd489pl.jpg",
     "CoverBus": "4u3a_b.jpg",
     "CutType": 1,
-    "Javdb": "GMJwD",
-    "Javlibrary": "javliirk5q",
-    "Javbus": "JUFD-489",
     "Arzon": "1273819",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u6797\u3086\u306a"
     ],
-    "Modify": "2021-09-05 19:01:48"
+    "Modify": "2021-09-05 19:01:48",
+    "JavDb": "GMJwD",
+    "JavLibrary": "javliirk5q",
+    "JavBus": "JUFD-489"
 }

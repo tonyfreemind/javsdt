@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1dandy618/1dandy618pl.jpg",
     "CoverBus": "6pka_b.jpg",
     "CutType": 1,
-    "Javdb": "820AW",
-    "Javlibrary": "javli7le4m",
-    "Javbus": "DANDY-618",
     "Arzon": "1472590",
     "CompletionStatus": 6,
     "Version": 1,
@@ -36,5 +33,8 @@
         "\u512a\u68a8\u307e\u3044\u306a",
         "\u795e\u91ce\u3072\u306a"
     ],
-    "Modify": "2021-09-05 15:46:10"
+    "Modify": "2021-09-05 15:46:10",
+    "JavDb": "820AW",
+    "JavLibrary": "javli7le4m",
+    "JavBus": "DANDY-618"
 }

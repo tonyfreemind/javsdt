@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/hnd710/hnd710pl.jpg",
     "CoverBus": "78ua_b.jpg",
     "CutType": 1,
-    "Javdb": "dZak8",
-    "Javlibrary": "javli6dvre",
-    "Javbus": "HND-710",
     "Arzon": "1529705",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u795e\u54b2\u8a69\u7e54"
     ],
-    "Modify": "2021-09-05 17:46:28"
+    "Modify": "2021-09-05 17:46:28",
+    "JavDb": "dZak8",
+    "JavLibrary": "javli6dvre",
+    "JavBus": "HND-710"
 }

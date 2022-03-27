@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/digital/video/ipvr00006/ipvr00006pl.jpg",
     "CoverBus": "6bjb_b.jpg",
     "CutType": 1,
-    "Javdb": "wPXe",
-    "Javlibrary": "javli4zwsq",
-    "Javbus": "IPVR-006",
     "Arzon": "",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u897f\u5bae\u3086\u3081"
     ],
-    "Modify": "2021-09-05 18:36:54"
+    "Modify": "2021-09-05 18:36:54",
+    "JavDb": "wPXe",
+    "JavLibrary": "javli4zwsq",
+    "JavBus": "IPVR-006"
 }

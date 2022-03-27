@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1star994/1star994pl.jpg",
     "CoverBus": "7dah_b.jpg",
     "CutType": 1,
-    "Javdb": "ZNag7",
-    "Javlibrary": "javli7lvse",
-    "Javbus": "STAR-994",
     "Arzon": "1481930",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u672c\u5e84\u9234"
     ],
-    "Modify": "2021-09-25 19:48:00"
+    "Modify": "2021-09-25 19:48:00",
+    "JavDb": "ZNag7",
+    "JavLibrary": "javli7lvse",
+    "JavBus": "STAR-994"
 }

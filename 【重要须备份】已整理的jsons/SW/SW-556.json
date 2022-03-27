@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1sw556/1sw556pl.jpg",
     "CoverBus": "6kv9_b.jpg",
     "CutType": 1,
-    "Javdb": "DR1Za",
-    "Javlibrary": "javli7auqu",
-    "Javbus": "SW-556",
     "Arzon": "1456481",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,8 @@
     "Actors": [
         "\u6804\u5ddd\u4e43\u4e9c"
     ],
-    "Modify": "2021-09-25 19:58:02"
+    "Modify": "2021-09-25 19:58:02",
+    "JavDb": "DR1Za",
+    "JavLibrary": "javli7auqu",
+    "JavBus": "SW-556"
 }

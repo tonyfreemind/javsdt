@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/rbd328/rbd328pl.jpg",
     "CoverBus": "kt9_b.jpg",
     "CutType": 1,
-    "Javdb": "K4Pr6",
-    "Javlibrary": "javlici4zi",
-    "Javbus": "RBD-328",
     "Arzon": "969765",
     "CompletionStatus": 6,
     "Version": 1,
@@ -29,5 +26,8 @@
     "Actors": [
         "\u4e03\u54b2\u6953\u82b1"
     ],
-    "Modify": "2021-09-25 18:12:18"
+    "Modify": "2021-09-25 18:12:18",
+    "JavDb": "K4Pr6",
+    "JavLibrary": "javlici4zi",
+    "JavBus": "RBD-328"
 }

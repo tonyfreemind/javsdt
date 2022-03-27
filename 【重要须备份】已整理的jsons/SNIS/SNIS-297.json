@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/snis297/snis297pl.jpg",
     "CoverBus": "4kfn_b.jpg",
     "CutType": 1,
-    "Javdb": "xAr7n",
-    "Javlibrary": "javliilnya",
-    "Javbus": "SNIS-297",
     "Arzon": "1382937",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u5c0f\u5cf6\u307f\u306a\u307f"
     ],
-    "Modify": "2021-09-25 18:29:42"
+    "Modify": "2021-09-25 18:29:42",
+    "JavDb": "xAr7n",
+    "JavLibrary": "javliilnya",
+    "JavBus": "SNIS-297"
 }

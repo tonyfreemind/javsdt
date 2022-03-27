@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/hnd765/hnd765pl.jpg",
     "CoverBus": "7f60_b.jpg",
     "CutType": 1,
-    "Javdb": "3r22N",
-    "Javlibrary": "javli6rrqq",
-    "Javbus": "HND-765",
     "Arzon": "1547731",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,8 @@
     "Actors": [
         "\u795e\u5bae\u5bfa\u30ca\u30aa"
     ],
-    "Modify": "2021-09-05 17:47:35"
+    "Modify": "2021-09-05 17:47:35",
+    "JavDb": "3r22N",
+    "JavLibrary": "javli6rrqq",
+    "JavBus": "HND-765"
 }

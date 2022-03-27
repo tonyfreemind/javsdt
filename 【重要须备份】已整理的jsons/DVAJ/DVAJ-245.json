@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/dvaj245so/dvaj245sopl.jpg",
     "CoverBus": "61n2_b.jpg",
     "CutType": 1,
-    "Javdb": "r3pbv",
-    "Javlibrary": "javlikjj44",
-    "Javbus": "DVAJ-245",
     "Arzon": "1400507",
     "CompletionStatus": 6,
     "Version": 1,
@@ -31,5 +28,8 @@
     "Actors": [
         "\u3059\u307f\u308c\u7f8e\u9999"
     ],
-    "Modify": "2021-09-05 15:53:53"
+    "Modify": "2021-09-05 15:53:53",
+    "JavDb": "r3pbv",
+    "JavLibrary": "javlikjj44",
+    "JavBus": "DVAJ-245"
 }

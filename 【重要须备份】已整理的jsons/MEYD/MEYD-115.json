@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/meyd115/meyd115pl.jpg",
     "CoverBus": "5bjs_b.jpg",
     "CutType": 1,
-    "Javdb": "k4GDe",
-    "Javlibrary": "javlillb5i",
-    "Javbus": "MEYD-115",
     "Arzon": "1314192",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u3081\u3050\u308a"
     ],
-    "Modify": "2021-09-13 22:56:10"
+    "Modify": "2021-09-13 22:56:10",
+    "JavDb": "k4GDe",
+    "JavLibrary": "javlillb5i",
+    "JavBus": "MEYD-115"
 }

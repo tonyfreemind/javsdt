@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1iene603/1iene603pl.jpg",
     "CoverBus": "4ysv_b.jpg",
     "CutType": 1,
-    "Javdb": "kqDY",
-    "Javlibrary": "javliiyos4",
-    "Javbus": "IENE-603",
     "Arzon": "1287015",
     "CompletionStatus": 6,
     "Version": 1,
@@ -36,5 +33,8 @@
         "\u86ef\u540d\u308a\u306a",
         "\u5929\u6708\u53f6\u83dc"
     ],
-    "Modify": "2021-09-05 18:34:41"
+    "Modify": "2021-09-05 18:34:41",
+    "JavDb": "kqDY",
+    "JavLibrary": "javliiyos4",
+    "JavBus": "IENE-603"
 }

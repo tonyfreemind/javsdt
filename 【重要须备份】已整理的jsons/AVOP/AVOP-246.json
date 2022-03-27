@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/avop246/avop246pl.jpg",
     "CoverBus": "5od1_b.jpg",
     "CutType": 1,
-    "Javdb": "rmK7z",
-    "Javlibrary": "javliltu3q",
-    "Javbus": "AVOP-246",
     "Arzon": "1346456",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "JULIA"
     ],
-    "Modify": "2021-09-13 22:43:20"
+    "Modify": "2021-09-13 22:43:20",
+    "JavDb": "rmK7z",
+    "JavLibrary": "javliltu3q",
+    "JavBus": "AVOP-246"
 }

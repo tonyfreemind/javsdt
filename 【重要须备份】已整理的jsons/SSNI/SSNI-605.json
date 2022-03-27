@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ssni605/ssni605pl.jpg",
     "CoverBus": "7cqt_b.jpg",
     "CutType": 1,
-    "Javdb": "bgN8B",
-    "Javlibrary": "javli6j2zy",
-    "Javbus": "SSNI-605",
     "Arzon": "1540193",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u5929\u4f7f\u3082\u3048"
     ],
-    "Modify": "2021-09-25 19:05:07"
+    "Modify": "2021-09-25 19:05:07",
+    "JavDb": "bgN8B",
+    "JavLibrary": "javli6j2zy",
+    "JavBus": "SSNI-605"
 }

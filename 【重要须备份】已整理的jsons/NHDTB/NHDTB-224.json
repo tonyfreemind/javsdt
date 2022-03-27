@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1nhdtb224/1nhdtb224pl.jpg",
     "CoverBus": "6ykz_b.jpg",
     "CutType": 1,
-    "Javdb": "Pqe2r",
-    "Javlibrary": "javli7rera",
-    "Javbus": "NHDTB-224",
     "Arzon": "1496477",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,8 @@
         "\u677e\u5742\u7f8e\u7d00",
         "\u661f\u5ddd\u51db\u3005\u82b1"
     ],
-    "Modify": "2021-09-21 08:06:27"
+    "Modify": "2021-09-21 08:06:27",
+    "JavDb": "Pqe2r",
+    "JavLibrary": "javli7rera",
+    "JavBus": "NHDTB-224"
 }

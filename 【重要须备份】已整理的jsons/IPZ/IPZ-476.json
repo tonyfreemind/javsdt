@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipz476/ipz476pl.jpg",
     "CoverBus": "4hv3_b.jpg",
     "CutType": 1,
-    "Javdb": "32dN",
-    "Javlibrary": "javliiad6e",
-    "Javbus": "IPZ-476",
     "Arzon": "1229060",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u7f8e\u96ea\u3042\u308a\u3059"
     ],
-    "Modify": "2021-09-05 18:55:54"
+    "Modify": "2021-09-05 18:55:54",
+    "JavDb": "32dN",
+    "JavLibrary": "javliiad6e",
+    "JavBus": "IPZ-476"
 }

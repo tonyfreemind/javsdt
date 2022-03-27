@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/bda089/bda089pl.jpg",
     "CoverBus": "71ta_b.jpg",
     "CutType": 1,
-    "Javdb": "mrNWY",
-    "Javlibrary": "javli7z3ra",
-    "Javbus": "BDA-089",
     "Arzon": "1509010",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u897f\u7530\u30ab\u30ea\u30ca"
     ],
-    "Modify": "2021-09-05 15:34:43"
+    "Modify": "2021-09-05 15:34:43",
+    "JavDb": "mrNWY",
+    "JavLibrary": "javli7z3ra",
+    "JavBus": "BDA-089"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/snis393/snis393pl.jpg",
     "CoverBus": "4q5u_b.jpg",
     "CutType": 1,
-    "Javdb": "k40Me",
-    "Javlibrary": "javliitx24",
-    "Javbus": "SNIS-393",
     "Arzon": "1256367",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,8 @@
     "Actors": [
         "\u5b87\u591a\u7530\u307f\u304b"
     ],
-    "Modify": "2021-09-25 18:30:50"
+    "Modify": "2021-09-25 18:30:50",
+    "JavDb": "k40Me",
+    "JavLibrary": "javliitx24",
+    "JavBus": "SNIS-393"
 }

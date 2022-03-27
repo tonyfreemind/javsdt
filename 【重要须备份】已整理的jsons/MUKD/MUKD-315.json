@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mukd315/mukd315pl.jpg",
     "CoverBus": "4i9a_b.jpg",
     "CutType": 1,
-    "Javdb": "g0GzN",
-    "Javlibrary": "javliiajyu",
-    "Javbus": "MUKD-315",
     "Arzon": "",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,8 @@
     "Actors": [
         "\u4e95\u4e0a\u77b3"
     ],
-    "Modify": "2021-09-25 17:51:31"
+    "Modify": "2021-09-25 17:51:31",
+    "JavDb": "g0GzN",
+    "JavLibrary": "javliiajyu",
+    "JavBus": "MUKD-315"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ktkc046/ktkc046pl.jpg",
     "CoverBus": "6rxl_b.jpg",
     "CutType": 1,
-    "Javdb": "gy6kq",
-    "Javlibrary": "javli7jjqa",
-    "Javbus": "KTKC-046",
     "Arzon": "1480100",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u8d64\u6e15\u84ee"
     ],
-    "Modify": "2021-09-05 21:20:50"
+    "Modify": "2021-09-05 21:20:50",
+    "JavDb": "gy6kq",
+    "JavLibrary": "javli7jjqa",
+    "JavBus": "KTKC-046"
 }

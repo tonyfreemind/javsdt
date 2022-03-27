@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipz574/ipz574pl.jpg",
     "CoverBus": "4six_b.jpg",
     "CutType": 1,
-    "Javdb": "96yAg",
-    "Javlibrary": "javliiqhzi",
-    "Javbus": "IPZ-574",
     "Arzon": "1267425",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u5e0c\u5d0e\u30b8\u30a7\u30b7\u30ab"
     ],
-    "Modify": "2021-09-05 18:57:19"
+    "Modify": "2021-09-05 18:57:19",
+    "JavDb": "96yAg",
+    "JavLibrary": "javliiqhzi",
+    "JavBus": "IPZ-574"
 }

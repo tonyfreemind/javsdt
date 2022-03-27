@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/53dv1635/53dv1635pl.jpg",
     "CoverBus": "49jm_b.jpg",
     "CutType": 1,
-    "Javdb": "3Brz",
-    "Javlibrary": "javlijrite",
-    "Javbus": "DV-1635",
     "Arzon": "1192727",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u7f8e\u91cc\u6709\u7d17"
     ],
-    "Modify": "2021-09-05 15:52:51"
+    "Modify": "2021-09-05 15:52:51",
+    "JavDb": "3Brz",
+    "JavLibrary": "javlijrite",
+    "JavBus": "DV-1635"
 }

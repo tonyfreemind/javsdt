@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipx397/ipx397pl.jpg",
     "CoverBus": "7cy6_b.jpg",
     "CutType": 1,
-    "Javdb": "W3brK",
-    "Javlibrary": "javli6j62y",
-    "Javbus": "IPX-397",
     "Arzon": "1540551",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u512a\u6708\u5fc3\u83dc"
     ],
-    "Modify": "2021-09-05 18:50:34"
+    "Modify": "2021-09-05 18:50:34",
+    "JavDb": "W3brK",
+    "JavLibrary": "javli6j62y",
+    "JavBus": "IPX-397"
 }

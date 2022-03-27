@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/24vdd139/24vdd139pl.jpg",
     "CoverBus": "6nrh_b.jpg",
     "CutType": 1,
-    "Javdb": "MbxqA",
-    "Javlibrary": "javli7be6m",
-    "Javbus": "VDD-139",
     "Arzon": "1464468",
     "CompletionStatus": 6,
     "Version": 1,
@@ -36,5 +33,8 @@
     "Actors": [
         "\u536f\u6c34\u54b2\u6d41"
     ],
-    "Modify": "2021-09-25 20:20:24"
+    "Modify": "2021-09-25 20:20:24",
+    "JavDb": "MbxqA",
+    "JavLibrary": "javli7be6m",
+    "JavBus": "VDD-139"
 }

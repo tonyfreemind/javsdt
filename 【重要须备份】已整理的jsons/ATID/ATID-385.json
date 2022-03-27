@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/atid385/atid385pl.jpg",
     "CoverBus": "7fap_b.jpg",
     "CutType": 1,
-    "Javdb": "Zd4Dq",
-    "Javlibrary": "javli6l6ym",
-    "Javbus": "ATID-385",
     "Arzon": "1544725",
     "CompletionStatus": 6,
     "Version": 1,
@@ -31,5 +28,8 @@
     "Actors": [
         "\u307f\u305a\u304d\u9e97\u82b1"
     ],
-    "Modify": "2021-11-07 21:39:19"
+    "Modify": "2021-11-07 21:39:19",
+    "JavDb": "Zd4Dq",
+    "JavLibrary": "javli6l6ym",
+    "JavBus": "ATID-385"
 }

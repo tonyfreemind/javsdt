@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/avop227/avop227pl.jpg",
     "CoverBus": "5odq_b.jpg",
     "CutType": 1,
-    "Javdb": "xv5qV",
-    "Javlibrary": "javliltu6u",
-    "Javbus": "AVOP-227",
     "Arzon": "",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u77f3\u539f\u8389\u5948"
     ],
-    "Modify": "2021-09-05 17:25:22"
+    "Modify": "2021-09-05 17:25:22",
+    "JavDb": "xv5qV",
+    "JavLibrary": "javliltu6u",
+    "JavBus": "AVOP-227"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/vec285/vec285pl.jpg",
     "CoverBus": "68y4_b.jpg",
     "CutType": 1,
-    "Javdb": "0Rm5q",
-    "Javlibrary": "javli4qura",
-    "Javbus": "VEC-285",
     "Arzon": "1424834",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u9999\u690e\u308a\u3042"
     ],
-    "Modify": "2021-09-25 20:20:39"
+    "Modify": "2021-09-25 20:20:39",
+    "JavDb": "0Rm5q",
+    "JavLibrary": "javli4qura",
+    "JavBus": "VEC-285"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/apaa313so/apaa313sopl.jpg",
     "CoverBus": "4t4w_b.jpg",
     "CutType": 1,
-    "Javdb": "RkrZR",
-    "Javlibrary": "javliirusm",
-    "Javbus": "APAA-313",
     "Arzon": "",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u6c34\u5ddd\u3048\u307f\u308b"
     ],
-    "Modify": "2021-09-05 15:26:11"
+    "Modify": "2021-09-05 15:26:11",
+    "JavDb": "RkrZR",
+    "JavLibrary": "javliirusm",
+    "JavBus": "APAA-313"
 }

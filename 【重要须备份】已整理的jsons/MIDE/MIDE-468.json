@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mide468/mide468pl.jpg",
     "CoverBus": "66fl_b.jpg",
     "CutType": 1,
-    "Javdb": "5E3Oa",
-    "Javlibrary": "javlikt74m",
-    "Javbus": "MIDE-468",
     "Arzon": "",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u4f0a\u6771\u3061\u306a\u307f"
     ],
-    "Modify": "2021-09-25 17:28:25"
+    "Modify": "2021-09-25 17:28:25",
+    "JavDb": "5E3Oa",
+    "JavLibrary": "javlikt74m",
+    "JavBus": "MIDE-468"
 }

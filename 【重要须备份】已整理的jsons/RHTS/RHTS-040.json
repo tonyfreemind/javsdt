@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/rhts040so/rhts040sopl.jpg",
     "CoverBus": "4o2v_b.jpg",
     "CutType": 1,
-    "Javdb": "Aq2Ow",
-    "Javlibrary": "javliij234",
-    "Javbus": "RHTS-040",
     "Arzon": "",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u94c3\u539f\u7231\u871c\u8389"
     ],
-    "Modify": "2021-09-25 18:15:01"
+    "Modify": "2021-09-25 18:15:01",
+    "JavDb": "Aq2Ow",
+    "JavLibrary": "javliij234",
+    "JavBus": "RHTS-040"
 }

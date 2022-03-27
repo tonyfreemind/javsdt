@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mide099/mide099pl.jpg",
     "CoverBus": "480o_b.jpg",
     "CutType": 1,
-    "Javdb": "45E3Z",
-    "Javlibrary": "javlijrfsm",
-    "Javbus": "MIDE-099",
     "Arzon": "1192406",
     "CompletionStatus": 6,
     "Version": 1,
@@ -31,5 +28,8 @@
     "Actors": [
         "\u521d\u5ddd\u307f\u306a\u307f"
     ],
-    "Modify": "2021-09-25 17:22:49"
+    "Modify": "2021-09-25 17:22:49",
+    "JavDb": "45E3Z",
+    "JavLibrary": "javlijrfsm",
+    "JavBus": "MIDE-099"
 }

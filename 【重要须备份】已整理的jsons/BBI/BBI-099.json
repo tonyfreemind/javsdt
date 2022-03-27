@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/bbi099/bbi099pl.jpg",
     "CoverBus": "1k54_b.jpg",
     "CutType": 1,
-    "Javdb": "verb9",
-    "Javlibrary": "javlimth5m",
-    "Javbus": "BBI-099",
     "Arzon": "701092",
     "CompletionStatus": 6,
     "Version": 1,
@@ -31,5 +28,8 @@
     "Actors": [
         "\u91cc\u7f8e\u3086\u308a\u3042"
     ],
-    "Modify": "2021-09-05 15:33:16"
+    "Modify": "2021-09-05 15:33:16",
+    "JavDb": "verb9",
+    "JavLibrary": "javlimth5m",
+    "JavBus": "BBI-099"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipz542/ipz542pl.jpg",
     "CoverBus": "4ope_b.jpg",
     "CutType": 1,
-    "Javdb": "J2GKq",
-    "Javlibrary": "javliijfze",
-    "Javbus": "IPZ-542",
     "Arzon": "1387851",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u4e26\u6728\u512a"
     ],
-    "Modify": "2021-09-05 18:56:39"
+    "Modify": "2021-09-05 18:56:39",
+    "JavDb": "J2GKq",
+    "JavLibrary": "javliijfze",
+    "JavBus": "IPZ-542"
 }

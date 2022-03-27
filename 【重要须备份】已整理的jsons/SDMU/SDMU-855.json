@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1sdmu855/1sdmu855pl.jpg",
     "CoverBus": "6ovh_b.jpg",
     "CutType": 1,
-    "Javdb": "Aqe9m",
-    "Javlibrary": "javli7lcr4",
-    "Javbus": "SDMU-855",
     "Arzon": "1467299",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u7be0\u7530\u3086\u3046"
     ],
-    "Modify": "2021-09-25 18:22:21"
+    "Modify": "2021-09-25 18:22:21",
+    "JavDb": "Aqe9m",
+    "JavLibrary": "javli7lcr4",
+    "JavBus": "SDMU-855"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/55t28563/55t28563pl.jpg",
     "CoverBus": "76hh_b.jpg",
     "CutType": 1,
-    "Javdb": "",
-    "Javlibrary": "javli6asqa",
-    "Javbus": "T28-563",
     "Arzon": "1513972",
     "CompletionStatus": 7,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u6709\u6751\u306e\u305e\u307f"
     ],
-    "Modify": "2021-09-25 19:59:50"
+    "Modify": "2021-09-25 19:59:50",
+    "JavDb": "",
+    "JavLibrary": "javli6asqa",
+    "JavBus": "T28-563"
 }

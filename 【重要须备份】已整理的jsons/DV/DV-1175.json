@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/53dv1175/53dv1175pl.jpg",
     "CoverBus": "7b7w_b.jpg",
     "CutType": 1,
-    "Javdb": "B867r",
-    "Javlibrary": "javliprt4m",
-    "Javbus": "https://www.buscdn.me/DV-1175_2019-09-06",
     "Arzon": "976689",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u7e54\u7530\u771f\u5b50"
     ],
-    "Modify": "2021-09-05 15:51:55"
+    "Modify": "2021-09-05 15:51:55",
+    "JavDb": "B867r",
+    "JavLibrary": "javliprt4m",
+    "JavBus": "https://www.buscdn.me/DV-1175_2019-09-06"
 }

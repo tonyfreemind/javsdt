@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/shkd744/shkd744pl.jpg",
     "CoverBus": "5zn1_b.jpg",
     "CutType": 1,
-    "Javdb": "YwxP6",
-    "Javlibrary": "javlikifru",
-    "Javbus": "SHKD-744",
     "Arzon": "1393201",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u91cc\u7f8e\u3086\u308a\u3042"
     ],
-    "Modify": "2021-09-25 18:25:22"
+    "Modify": "2021-09-25 18:25:22",
+    "JavDb": "YwxP6",
+    "JavLibrary": "javlikifru",
+    "JavBus": "SHKD-744"
 }

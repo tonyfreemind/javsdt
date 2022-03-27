@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/13gvg121/13gvg121pl.jpg",
     "CoverBus": "4qup_b.jpg",
     "CutType": 1,
-    "Javdb": "P9Mva",
-    "Javlibrary": "javliitcze",
-    "Javbus": "GVG-121",
     "Arzon": "1258692",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u996d\u5188\u52a0\u5948\u5b50"
     ],
-    "Modify": "2021-09-05 16:03:15"
+    "Modify": "2021-09-05 16:03:15",
+    "JavDb": "P9Mva",
+    "JavLibrary": "javliitcze",
+    "JavBus": "GVG-121"
 }

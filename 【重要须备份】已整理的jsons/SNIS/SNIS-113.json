@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/snis113/snis113pl.jpg",
     "CoverBus": "45ha_b.jpg",
     "CutType": 1,
-    "Javdb": "O2GdD",
-    "Javlibrary": "javlijqvty",
-    "Javbus": "SNIS-113",
     "Arzon": "1182554",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u9ebb\u91cc\u68a8\u590f"
     ],
-    "Modify": "2021-09-25 18:27:56"
+    "Modify": "2021-09-25 18:27:56",
+    "JavDb": "O2GdD",
+    "JavLibrary": "javlijqvty",
+    "JavBus": "SNIS-113"
 }

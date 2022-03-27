@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1sdde451/1sdde451pl.jpg",
     "CoverBus": "5myt_b.jpg",
     "CutType": 1,
-    "Javdb": "RWwn",
-    "Javlibrary": "javlilty6u",
-    "Javbus": "SDDE-451",
     "Arzon": "1347375",
     "CompletionStatus": 6,
     "Version": 1,
@@ -42,5 +39,8 @@
         "\u5bae\u5d0e\u3086\u3046\u306a",
         "\u4e03\u539f\u30d2\u30ab\u30ea"
     ],
-    "Modify": "2021-09-25 18:18:57"
+    "Modify": "2021-09-25 18:18:57",
+    "JavDb": "RWwn",
+    "JavLibrary": "javlilty6u",
+    "JavBus": "SDDE-451"
 }

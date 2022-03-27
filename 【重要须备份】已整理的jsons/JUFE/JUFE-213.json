@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/jufe213/jufe213pl.jpg",
     "CoverBus": "7w24_b.jpg",
     "CutType": 1,
-    "Javdb": "AJbBM",
-    "Javlibrary": "javmezbkq4",
-    "Javbus": "JUFE-213",
     "Arzon": "1590318",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u6d41\u7530\u307f\u306a\u5b9f"
     ],
-    "Modify": "2022-02-15 12:31:00"
+    "Modify": "2022-02-15 12:31:00",
+    "JavDb": "AJbBM",
+    "JavLibrary": "javmezbkq4",
+    "JavBus": "JUFE-213"
 }

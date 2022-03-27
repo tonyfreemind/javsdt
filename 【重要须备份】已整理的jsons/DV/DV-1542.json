@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/53dv1542/53dv1542pl.jpg",
     "CoverBus": "3t1w_b.jpg",
     "CutType": 1,
-    "Javdb": "z4ZaW",
-    "Javlibrary": "javlijabru",
-    "Javbus": "DV-1542",
     "Arzon": "1141187",
     "CompletionStatus": 6,
     "Version": 1,
@@ -31,5 +28,8 @@
     "Actors": [
         "\u671d\u65e5\u5948\u3042\u304b\u308a"
     ],
-    "Modify": "2021-10-30 12:23:38"
+    "Modify": "2021-10-30 12:23:38",
+    "JavDb": "z4ZaW",
+    "JavLibrary": "javlijabru",
+    "JavBus": "DV-1542"
 }

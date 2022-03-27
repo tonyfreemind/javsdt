@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipx118/ipx118pl.jpg",
     "CoverBus": "6gql_b.jpg",
     "CutType": 1,
-    "Javdb": "GZZgQ",
-    "Javlibrary": "javli4zjry",
-    "Javbus": "IPX-118",
     "Arzon": "1585491",
     "CompletionStatus": 6,
     "Version": 1,
@@ -36,5 +33,8 @@
     "Actors": [
         "\u76f8\u6ca2\u307f\u306a\u307f"
     ],
-    "Modify": "2021-09-05 18:39:55"
+    "Modify": "2021-09-05 18:39:55",
+    "JavDb": "GZZgQ",
+    "JavLibrary": "javli4zjry",
+    "JavBus": "IPX-118"
 }

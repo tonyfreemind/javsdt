@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/h_635sw210/h_635sw210pl.jpg",
     "CoverBus": "3yba_b.jpg",
     "CutType": 1,
-    "Javdb": "k1eY",
-    "Javlibrary": "javlijd32q",
-    "Javbus": "SW-210",
     "Arzon": "1376214",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
         "\u897f\u5712\u5bfa\u308c\u304a",
         "\u4e09\u82b1\u308c\u306a"
     ],
-    "Modify": "2021-09-25 19:56:22"
+    "Modify": "2021-09-25 19:56:22",
+    "JavDb": "k1eY",
+    "JavLibrary": "javlijd32q",
+    "JavBus": "SW-210"
 }

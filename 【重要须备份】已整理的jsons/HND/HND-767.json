@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/hnd767/hnd767pl.jpg",
     "CoverBus": "7f64_b.jpg",
     "CutType": 1,
-    "Javdb": "qJ44x",
-    "Javlibrary": "javli6rqtm",
-    "Javbus": "HND-767",
     "Arzon": "1547733",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u6839\u5c3e\u3042\u304b\u308a"
     ],
-    "Modify": "2021-09-05 17:47:52"
+    "Modify": "2021-09-05 17:47:52",
+    "JavDb": "qJ44x",
+    "JavLibrary": "javli6rqtm",
+    "JavBus": "HND-767"
 }

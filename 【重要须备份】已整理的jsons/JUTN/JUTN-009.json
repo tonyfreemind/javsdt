@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/h_227jutn009/h_227jutn009pl.jpg",
     "CoverBus": "6s50_b.jpg",
     "CutType": 1,
-    "Javdb": "rq44z",
-    "Javlibrary": "javli7io7y",
-    "Javbus": "JUTN-009",
     "Arzon": "1479589",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,8 @@
     "Actors": [
         "\u702c\u540d\u304d\u3089\u308a"
     ],
-    "Modify": "2021-09-05 19:07:01"
+    "Modify": "2021-09-05 19:07:01",
+    "JavDb": "rq44z",
+    "JavLibrary": "javli7io7y",
+    "JavBus": "JUTN-009"
 }

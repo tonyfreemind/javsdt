@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipx151/ipx151pl.jpg",
     "CoverBus": "6ks6_b.jpg",
     "CutType": 1,
-    "Javdb": "gykDy",
-    "Javlibrary": "javli7a524",
-    "Javbus": "IPX-151",
     "Arzon": "1459208",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u795e\u54b2\u8a69\u7e54"
     ],
-    "Modify": "2021-09-05 18:41:26"
+    "Modify": "2021-09-05 18:41:26",
+    "JavDb": "gykDy",
+    "JavLibrary": "javli7a524",
+    "JavBus": "IPX-151"
 }

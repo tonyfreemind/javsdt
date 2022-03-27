@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mide232/mide232pl.jpg",
     "CoverBus": "4rhs_b.jpg",
     "CutType": 1,
-    "Javdb": "kKY30",
-    "Javlibrary": "javliiqu6i",
-    "Javbus": "MIDE-232",
     "Arzon": "1263226",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u3064\u307c\u307f"
     ],
-    "Modify": "2021-09-25 17:24:31"
+    "Modify": "2021-09-25 17:24:31",
+    "JavDb": "kKY30",
+    "JavLibrary": "javliiqu6i",
+    "JavBus": "MIDE-232"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/53dv1468/53dv1468pl.jpg",
     "CoverBus": "na6_b.jpg",
     "CutType": 1,
-    "Javdb": "wKDPB",
-    "Javlibrary": "javliora2i",
-    "Javbus": "DV-1468",
     "Arzon": "1102249",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u5c0f\u5cf6\u307f\u306a\u307f"
     ],
-    "Modify": "2021-09-05 15:52:19"
+    "Modify": "2021-09-05 15:52:19",
+    "JavDb": "wKDPB",
+    "JavLibrary": "javliora2i",
+    "JavBus": "DV-1468"
 }

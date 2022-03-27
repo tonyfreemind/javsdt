@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipx426/ipx426pl.jpg",
     "CoverBus": "7h19_b.jpg",
     "CutType": 1,
-    "Javdb": "20z5q",
-    "Javlibrary": "javli6qnyi",
-    "Javbus": "IPX-426",
     "Arzon": "1549934",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u512a\u6708\u5fc3\u83dc"
     ],
-    "Modify": "2021-09-05 18:52:45"
+    "Modify": "2021-09-05 18:52:45",
+    "JavDb": "20z5q",
+    "JavLibrary": "javli6qnyi",
+    "JavBus": "IPX-426"
 }

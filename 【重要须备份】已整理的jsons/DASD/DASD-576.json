@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/dasd576/dasd576pl.jpg",
     "CoverBus": "7afu_b.jpg",
     "CutType": 1,
-    "Javdb": "pP0yw",
-    "Javlibrary": "javli6la6m",
-    "Javbus": "DASD-576",
     "Arzon": "1533987",
     "CompletionStatus": 6,
     "Version": 1,
@@ -31,5 +28,8 @@
     "Actors": [
         "\u79cb\u5c71\u7965\u5b50"
     ],
-    "Modify": "2021-09-05 15:48:22"
+    "Modify": "2021-09-05 15:48:22",
+    "JavDb": "pP0yw",
+    "JavLibrary": "javli6la6m",
+    "JavBus": "DASD-576"
 }

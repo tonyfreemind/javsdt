@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mvsd413/mvsd413pl.jpg",
     "CoverBus": "7ff7_b.jpg",
     "CutType": 1,
-    "Javdb": "E6P93",
-    "Javlibrary": "javli6qqyi",
-    "Javbus": "MVSD-413",
     "Arzon": "1545800",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,8 @@
         "\u901a\u91ce\u672a\u5e06",
         "\u91d1\u57ce\u68a8\u82b1"
     ],
-    "Modify": "2021-09-25 17:52:39"
+    "Modify": "2021-09-25 17:52:39",
+    "JavDb": "E6P93",
+    "JavLibrary": "javli6qqyi",
+    "JavBus": "MVSD-413"
 }

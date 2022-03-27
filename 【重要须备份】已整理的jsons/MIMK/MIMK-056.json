@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mimk056/mimk056pl.jpg",
     "CoverBus": "6oft_b.jpg",
     "CutType": 1,
-    "Javdb": "4DYq6",
-    "Javlibrary": "javli7jwqm",
-    "Javbus": "MIMK-056",
     "Arzon": "1469878",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u690e\u540d\u305d\u3089"
     ],
-    "Modify": "2021-09-25 17:43:29"
+    "Modify": "2021-09-25 17:43:29",
+    "JavDb": "4DYq6",
+    "JavLibrary": "javli7jwqm",
+    "JavBus": "MIMK-056"
 }

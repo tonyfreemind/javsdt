@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/h_635sw146/h_635sw146pl.jpg",
     "CoverBus": "2sa8_b.jpg",
     "CutType": 1,
-    "Javdb": "qJVe",
-    "Javlibrary": "javliothtu",
-    "Javbus": "SW-146",
     "Arzon": "505624",
     "CompletionStatus": 6,
     "Version": 1,
@@ -37,5 +34,8 @@
         "\u6708\u4e18\u96c5",
         "\u68ee\u5ddd\u306a\u306a\u305b"
     ],
-    "Modify": "2021-09-25 19:56:00"
+    "Modify": "2021-09-25 19:56:00",
+    "JavDb": "qJVe",
+    "JavLibrary": "javliothtu",
+    "JavBus": "SW-146"
 }

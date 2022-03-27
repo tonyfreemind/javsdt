@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/snis136/snis136pl.jpg",
     "CoverBus": "482x_b.jpg",
     "CutType": 1,
-    "Javdb": "03qX",
-    "Javlibrary": "javlijrdyy",
-    "Javbus": "SNIS-136",
     "Arzon": "1188238",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u30c6\u30a3\u30a2"
     ],
-    "Modify": "2021-09-25 18:28:07"
+    "Modify": "2021-09-25 18:28:07",
+    "JavDb": "03qX",
+    "JavLibrary": "javlijrdyy",
+    "JavBus": "SNIS-136"
 }

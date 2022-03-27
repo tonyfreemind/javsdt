@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ebod212/ebod212pl.jpg",
     "CoverBus": "2rw9_b.jpg",
     "CutType": 1,
-    "Javdb": "Rn7m",
-    "Javlibrary": "javlioiszi",
-    "Javbus": "EBOD-212",
     "Arzon": "1052808",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u30c6\u30a3\u30a2"
     ],
-    "Modify": "2021-09-05 15:55:43"
+    "Modify": "2021-09-05 15:55:43",
+    "JavDb": "Rn7m",
+    "JavLibrary": "javlioiszi",
+    "JavBus": "EBOD-212"
 }

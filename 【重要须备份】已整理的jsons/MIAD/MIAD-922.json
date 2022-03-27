@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/miad922/miad922pl.jpg",
     "CoverBus": "5i4z_b.jpg",
     "CutType": 1,
-    "Javdb": "96nqV",
-    "Javlibrary": "javliltf2q",
-    "Javbus": "MIAD-922",
     "Arzon": "1450159",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u8de1\u7f8e\u3057\u3085\u308a"
     ],
-    "Modify": "2021-09-05 21:39:32"
+    "Modify": "2021-09-05 21:39:32",
+    "JavDb": "96nqV",
+    "JavLibrary": "javliltf2q",
+    "JavBus": "MIAD-922"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/118abp835/118abp835pl.jpg",
     "CoverBus": "704o_b.jpg",
     "CutType": 1,
-    "Javdb": "wG131",
-    "Javlibrary": "javli7zr6u",
-    "Javbus": "ABP-835",
     "Arzon": "1502183",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u5712\u7530\u307f\u304a\u3093"
     ],
-    "Modify": "2021-09-05 15:15:42"
+    "Modify": "2021-09-05 15:15:42",
+    "JavDb": "wG131",
+    "JavLibrary": "javli7zr6u",
+    "JavBus": "ABP-835"
 }

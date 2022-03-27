@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/juy836/juy836pl.jpg",
     "CoverBus": "72un_b.jpg",
     "CutType": 1,
-    "Javdb": "bq946",
-    "Javlibrary": "javli7zfqq",
-    "Javbus": "JUY-836",
     "Arzon": "1512360",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,8 @@
     "Actors": [
         "\u67cf\u6728\u80e1\u6843"
     ],
-    "Modify": "2021-09-05 19:10:34"
+    "Modify": "2021-09-05 19:10:34",
+    "JavDb": "bq946",
+    "JavLibrary": "javli7zfqq",
+    "JavBus": "JUY-836"
 }

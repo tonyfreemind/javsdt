@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipx372/ipx372pl.jpg",
     "CoverBus": "79te_b.jpg",
     "CutType": 1,
-    "Javdb": "v47mz",
-    "Javlibrary": "javli6lr5e",
-    "Javbus": "IPX-372",
     "Arzon": "1531723",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u76f8\u6ca2\u307f\u306a\u307f"
     ],
-    "Modify": "2021-09-05 18:49:53"
+    "Modify": "2021-09-05 18:49:53",
+    "JavDb": "v47mz",
+    "JavLibrary": "javli6lr5e",
+    "JavBus": "IPX-372"
 }

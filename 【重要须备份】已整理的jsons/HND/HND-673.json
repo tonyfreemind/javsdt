@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/hnd673/hnd673pl.jpg",
     "CoverBus": "73zv_b.jpg",
     "CutType": 1,
-    "Javdb": "P40B0",
-    "Javlibrary": "javli6dnqm",
-    "Javbus": "HND-673",
     "Arzon": "1515917",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u9ebb\u91cc\u68a8\u590f"
     ],
-    "Modify": "2021-09-05 17:45:42"
+    "Modify": "2021-09-05 17:45:42",
+    "JavDb": "P40B0",
+    "JavLibrary": "javli6dnqm",
+    "JavBus": "HND-673"
 }

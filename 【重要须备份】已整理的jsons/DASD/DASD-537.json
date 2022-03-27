@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/dasd537/dasd537pl.jpg",
     "CoverBus": "73z4_b.jpg",
     "CutType": 1,
-    "Javdb": "a2m9W",
-    "Javlibrary": "javli6dn64",
-    "Javbus": "DASD-537",
     "Arzon": "1515884",
     "CompletionStatus": 6,
     "Version": 1,
@@ -36,5 +33,8 @@
         "\u65b0\u57a3\u667a\u6c5f",
         "\u7b39\u672c\u7d50\u611b"
     ],
-    "Modify": "2021-09-05 15:47:30"
+    "Modify": "2021-09-05 15:47:30",
+    "JavDb": "a2m9W",
+    "JavLibrary": "javli6dn64",
+    "JavBus": "DASD-537"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ssni361/ssni361pl.jpg",
     "CoverBus": "6unz_b.jpg",
     "CutType": 1,
-    "Javdb": "Qnv97",
-    "Javlibrary": "javli7tmtu",
-    "Javbus": "SSNI-361",
     "Arzon": "1489325",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u7fbd\u54b2\u307f\u306f\u308b"
     ],
-    "Modify": "2021-09-25 18:53:19"
+    "Modify": "2021-09-25 18:53:19",
+    "JavDb": "Qnv97",
+    "JavLibrary": "javli7tmtu",
+    "JavBus": "SSNI-361"
 }

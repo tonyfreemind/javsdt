@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1stars174/1stars174pl.jpg",
     "CoverBus": "7gro_b.jpg",
     "CutType": 1,
-    "Javdb": "xg6ZO",
-    "Javlibrary": "javli6rwqm",
-    "Javbus": "STARS-174",
     "Arzon": "1547332",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,8 @@
     "Actors": [
         "\u6c38\u91ce\u3044\u3061\u590f"
     ],
-    "Modify": "2021-09-25 19:54:31"
+    "Modify": "2021-09-25 19:54:31",
+    "JavDb": "xg6ZO",
+    "JavLibrary": "javli6rwqm",
+    "JavBus": "STARS-174"
 }

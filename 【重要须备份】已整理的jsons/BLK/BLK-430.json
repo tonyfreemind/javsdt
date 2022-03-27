@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/blk430/blk430pl.jpg",
     "CoverBus": "7dmm_b.jpg",
     "CutType": 1,
-    "Javdb": "pxrqm",
-    "Javlibrary": "javli6jc2a",
-    "Javbus": "BLK-430",
     "Arzon": "1541111",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u6e1a\u307f\u3064\u304d"
     ],
-    "Modify": "2021-09-05 15:38:35"
+    "Modify": "2021-09-05 15:38:35",
+    "JavDb": "pxrqm",
+    "JavLibrary": "javli6jc2a",
+    "JavBus": "BLK-430"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/dasd348/dasd348pl.jpg",
     "CoverBus": "5lwc_b.jpg",
     "CutType": 1,
-    "Javdb": "K7Vm",
-    "Javlibrary": "javlilt55a",
-    "Javbus": "DASD-348",
     "Arzon": "1348487",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u5bae\u4e0b\u83ef\u5948"
     ],
-    "Modify": "2021-09-05 15:46:29"
+    "Modify": "2021-09-05 15:46:29",
+    "JavDb": "K7Vm",
+    "JavLibrary": "javlilt55a",
+    "JavBus": "DASD-348"
 }

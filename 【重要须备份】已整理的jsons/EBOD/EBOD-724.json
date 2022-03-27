@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ebod724/ebod724pl.jpg",
     "CoverBus": "7fou_b.jpg",
     "CutType": 1,
-    "Javdb": "qJngr",
-    "Javlibrary": "javli6tnzq",
-    "Javbus": "EBOD-724",
     "Arzon": "1545334",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u5927\u539f\u3086\u308a\u3042"
     ],
-    "Modify": "2021-09-05 15:58:18"
+    "Modify": "2021-09-05 15:58:18",
+    "JavDb": "qJngr",
+    "JavLibrary": "javli6tnzq",
+    "JavBus": "EBOD-724"
 }

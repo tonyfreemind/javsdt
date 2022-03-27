@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/118abp393/118abp393pl.jpg",
     "CoverBus": "57od_b.jpg",
     "CutType": 1,
-    "Javdb": "nedK6",
-    "Javlibrary": "javlildeta",
-    "Javbus": "ABP-393",
     "Arzon": "1297542",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u4e0a\u539f\u745e\u7a42"
     ],
-    "Modify": "2021-09-05 13:54:38"
+    "Modify": "2021-09-05 13:54:38",
+    "JavDb": "nedK6",
+    "JavLibrary": "javlildeta",
+    "JavBus": "ABP-393"
 }

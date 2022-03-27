@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/kawd800/kawd800pl.jpg",
     "CoverBus": "5xh2_b.jpg",
     "CutType": 1,
-    "Javdb": "eKPA1",
-    "Javlibrary": "javliklt3a",
-    "Javbus": "KAWD-800",
     "Arzon": "1386481",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u677e\u7530\u771f\u590f"
     ],
-    "Modify": "2021-09-05 21:17:56"
+    "Modify": "2021-09-05 21:17:56",
+    "JavDb": "eKPA1",
+    "JavLibrary": "javliklt3a",
+    "JavBus": "KAWD-800"
 }

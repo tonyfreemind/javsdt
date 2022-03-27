@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/avsa119/avsa119pl.jpg",
     "CoverBus": "7hn4_b.jpg",
     "CutType": 1,
-    "Javdb": "Ng8Qg",
-    "Javlibrary": "javli6qb4q",
-    "Javbus": "AVSA-119",
     "Arzon": "1551964",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u897f\u7530\u30ab\u30ea\u30ca"
     ],
-    "Modify": "2021-11-07 20:46:12"
+    "Modify": "2021-11-07 20:46:12",
+    "JavDb": "Ng8Qg",
+    "JavLibrary": "javli6qb4q",
+    "JavBus": "AVSA-119"
 }

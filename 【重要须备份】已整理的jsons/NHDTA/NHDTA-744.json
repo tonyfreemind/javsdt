@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1nhdta744/1nhdta744pl.jpg",
     "CoverBus": "57n4_b.jpg",
     "CutType": 1,
-    "Javdb": "kbam",
-    "Javlibrary": "javlildaqq",
-    "Javbus": "NHDTA-744",
     "Arzon": "1299110",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
         "\u306a\u3064\u3081\u611b\u8389",
         "\u6c34\u8c37\u3042\u304a\u3044"
     ],
-    "Modify": "2021-09-25 17:55:37"
+    "Modify": "2021-09-25 17:55:37",
+    "JavDb": "kbam",
+    "JavLibrary": "javlildaqq",
+    "JavBus": "NHDTA-744"
 }

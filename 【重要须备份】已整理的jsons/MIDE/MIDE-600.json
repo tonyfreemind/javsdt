@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mide600/mide600pl.jpg",
     "CoverBus": "6uak_b.jpg",
     "CutType": 1,
-    "Javdb": "kOR8m",
-    "Javlibrary": "javli7te3q",
-    "Javbus": "MIDE-600",
     "Arzon": "1488395",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,8 @@
     "Actors": [
         "\u5c0f\u5cf6\u307f\u306a\u307f"
     ],
-    "Modify": "2021-09-25 17:34:06"
+    "Modify": "2021-09-25 17:34:06",
+    "JavDb": "kOR8m",
+    "JavLibrary": "javli7te3q",
+    "JavBus": "MIDE-600"
 }

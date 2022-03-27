@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/118abp563/118abp563pl.jpg",
     "CoverBus": "5uy9_b.jpg",
     "CutType": 1,
-    "Javdb": "2mOXw",
-    "Javlibrary": "javlikairm",
-    "Javbus": "ABP-563",
     "Arzon": "1376423",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u5712\u7530\u307f\u304a\u3093"
     ],
-    "Modify": "2021-09-05 13:59:36"
+    "Modify": "2021-09-05 13:59:36",
+    "JavDb": "2mOXw",
+    "JavLibrary": "javlikairm",
+    "JavBus": "ABP-563"
 }

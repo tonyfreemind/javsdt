@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipz704/ipz704pl.jpg",
     "CoverBus": "5byy_b.jpg",
     "CutType": 1,
-    "Javdb": "veNxW",
-    "Javlibrary": "javlilltyi",
-    "Javbus": "IPZ-704",
     "Arzon": "1314717",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u685c\u6728\u51db"
     ],
-    "Modify": "2021-09-05 18:58:41"
+    "Modify": "2021-09-05 18:58:41",
+    "JavDb": "veNxW",
+    "JavLibrary": "javlilltyi",
+    "JavBus": "IPZ-704"
 }

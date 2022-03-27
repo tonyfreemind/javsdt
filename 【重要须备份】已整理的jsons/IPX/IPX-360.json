@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipx360/ipx360pl.jpg",
     "CoverBus": "786l_b.jpg",
     "CutType": 1,
-    "Javdb": "Z41kP",
-    "Javlibrary": "javli6bary",
-    "Javbus": "IPX-360",
     "Arzon": "1527138",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u660e\u91cc\u3064\u3080\u304e"
     ],
-    "Modify": "2021-09-05 18:49:13"
+    "Modify": "2021-09-05 18:49:13",
+    "JavDb": "Z41kP",
+    "JavLibrary": "javli6bary",
+    "JavBus": "IPX-360"
 }

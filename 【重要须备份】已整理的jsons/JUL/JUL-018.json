@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/jul018/jul018pl.jpg",
     "CoverBus": "7c26_b.jpg",
     "CutType": 1,
-    "Javdb": "rPXpA",
-    "Javlibrary": "javli6ifyu",
-    "Javbus": "JUL-018",
     "Arzon": "1538434",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u5927\u5cf6\u512a\u9999"
     ],
-    "Modify": "2021-09-05 19:04:22"
+    "Modify": "2021-09-05 19:04:22",
+    "JavDb": "rPXpA",
+    "JavLibrary": "javli6ifyu",
+    "JavBus": "JUL-018"
 }

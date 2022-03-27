@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/161hkd002/161hkd002pl.jpg",
     "CoverBus": "2z34_b.jpg",
     "CutType": 1,
-    "Javdb": "deNz8",
-    "Javlibrary": "javliddazq",
-    "Javbus": "HKD-02",
     "Arzon": "383793",
     "CompletionStatus": 6,
     "Version": 1,
@@ -37,5 +34,8 @@
     "Actors": [
         "\u6709\u5742\u6df1\u96ea"
     ],
-    "Modify": "2021-10-18 23:32:16"
+    "Modify": "2021-10-18 23:32:16",
+    "JavDb": "deNz8",
+    "JavLibrary": "javliddazq",
+    "JavBus": "HKD-02"
 }

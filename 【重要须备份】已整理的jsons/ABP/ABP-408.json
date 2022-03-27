@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/118abp408/118abp408pl.jpg",
     "CoverBus": "590y_b.jpg",
     "CutType": 1,
-    "Javdb": "PQX9a",
-    "Javlibrary": "javlilac2e",
-    "Javbus": "ABP-408",
     "Arzon": "1307313",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u4e0a\u539f\u745e\u7a42"
     ],
-    "Modify": "2021-09-05 13:55:17"
+    "Modify": "2021-09-05 13:55:17",
+    "JavDb": "PQX9a",
+    "JavLibrary": "javlilac2e",
+    "JavBus": "ABP-408"
 }

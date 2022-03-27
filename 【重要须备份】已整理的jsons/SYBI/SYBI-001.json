@@ -16,9 +16,6 @@
     "CoverLibrary": "",
     "CoverBus": "7guy_b.jpg",
     "CutType": 1,
-    "Javdb": "azpEO",
-    "Javlibrary": "",
-    "Javbus": "SYBI-001",
     "Arzon": "",
     "CompletionStatus": 5,
     "Version": 1,
@@ -31,5 +28,8 @@
     "Actors": [
         "\u767d\u5ddd\u3086\u305a"
     ],
-    "Modify": "2021-10-30 12:27:21"
+    "Modify": "2021-10-30 12:27:21",
+    "JavDb": "azpEO",
+    "JavLibrary": "",
+    "JavBus": "SYBI-001"
 }

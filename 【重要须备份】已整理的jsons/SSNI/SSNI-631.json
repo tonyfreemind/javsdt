@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ssni631/ssni631pl.jpg",
     "CoverBus": "7fri_b.jpg",
     "CutType": 1,
-    "Javdb": "OWK98",
-    "Javlibrary": "javli6l7q4",
-    "Javbus": "SSNI-631",
     "Arzon": "1544702",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u5965\u7530\u54b2"
     ],
-    "Modify": "2021-09-25 19:06:50"
+    "Modify": "2021-09-25 19:06:50",
+    "JavDb": "OWK98",
+    "JavLibrary": "javli6l7q4",
+    "JavBus": "SSNI-631"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/adn220/adn220pl.jpg",
     "CoverBus": "77rh_b.jpg",
     "CutType": 1,
-    "Javdb": "DObp4",
-    "Javlibrary": "javli6b6ty",
-    "Javbus": "ADN-220",
     "Arzon": "1526161",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,8 @@
     "Actors": [
         "\u6cb3\u5357\u5b9f\u91cc"
     ],
-    "Modify": "2021-09-21 08:00:20"
+    "Modify": "2021-09-21 08:00:20",
+    "JavDb": "DObp4",
+    "JavLibrary": "javli6b6ty",
+    "JavBus": "ADN-220"
 }

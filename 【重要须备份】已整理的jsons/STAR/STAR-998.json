@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1star998/1star998pl.jpg",
     "CoverBus": "6ui4_b.jpg",
     "CutType": 1,
-    "Javdb": "GZkrb",
-    "Javlibrary": "javli7rrry",
-    "Javbus": "STAR-998",
     "Arzon": "1487188",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u5c0f\u5009\u7531\u83dc"
     ],
-    "Modify": "2021-09-25 19:48:51"
+    "Modify": "2021-09-25 19:48:51",
+    "JavDb": "GZkrb",
+    "JavLibrary": "javli7rrry",
+    "JavBus": "STAR-998"
 }

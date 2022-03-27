@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1nhdta286/1nhdta286pl.jpg",
     "CoverBus": "25bd_b.jpg",
     "CutType": 1,
-    "Javdb": "OXvGz",
-    "Javlibrary": "javlioipsy",
-    "Javbus": "NHDTA-286",
     "Arzon": "1072464",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u4e2d\u91ce\u4e9a\u68a8\u6c99"
     ],
-    "Modify": "2021-09-21 08:06:18"
+    "Modify": "2021-09-21 08:06:18",
+    "JavDb": "OXvGz",
+    "JavLibrary": "javlioipsy",
+    "JavBus": "NHDTA-286"
 }

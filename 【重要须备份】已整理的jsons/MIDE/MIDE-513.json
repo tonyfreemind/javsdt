@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mide513/mide513pl.jpg",
     "CoverBus": "6dyh_b.jpg",
     "CutType": 1,
-    "Javdb": "96YPX",
-    "Javlibrary": "javli4ynrq",
-    "Javbus": "MIDE-513",
     "Arzon": "1440252",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u4e5d\u91cd\u304b\u3093\u306a"
     ],
-    "Modify": "2021-09-25 17:29:52"
+    "Modify": "2021-09-25 17:29:52",
+    "JavDb": "96YPX",
+    "JavLibrary": "javli4ynrq",
+    "JavBus": "MIDE-513"
 }

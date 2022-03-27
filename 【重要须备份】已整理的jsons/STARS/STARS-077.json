@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1stars077/1stars077pl.jpg",
     "CoverBus": "74uv_b.jpg",
     "CutType": 1,
-    "Javdb": "P480X",
-    "Javlibrary": "javli7353e",
-    "Javbus": "STARS-077",
     "Arzon": "1515476",
     "CompletionStatus": 6,
     "Version": 1,
@@ -31,5 +28,8 @@
     "Actors": [
         "\u6238\u7530\u771f\u7434"
     ],
-    "Modify": "2021-09-25 19:51:22"
+    "Modify": "2021-09-25 19:51:22",
+    "JavDb": "P480X",
+    "JavLibrary": "javli7353e",
+    "JavBus": "STARS-077"
 }

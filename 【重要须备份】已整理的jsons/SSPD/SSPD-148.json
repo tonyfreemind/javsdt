@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/sspd148/sspd148pl.jpg",
     "CoverBus": "7crp_b.jpg",
     "CutType": 1,
-    "Javdb": "RGeO8",
-    "Javlibrary": "javli6j234",
-    "Javbus": "SSPD-148",
     "Arzon": "1540227",
     "CompletionStatus": 6,
     "Version": 1,
@@ -31,5 +28,8 @@
     "Actors": [
         "\u5e0c\u5d0e\u30b8\u30a7\u30b7\u30ab"
     ],
-    "Modify": "2021-09-25 19:10:06"
+    "Modify": "2021-09-25 19:10:06",
+    "JavDb": "RGeO8",
+    "JavLibrary": "javli6j234",
+    "JavBus": "SSPD-148"
 }

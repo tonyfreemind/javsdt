@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/53dvaj0033/53dvaj0033pl.jpg",
     "CoverBus": "4qbd_b.jpg",
     "CutType": 1,
-    "Javdb": "QNbqG",
-    "Javlibrary": "javliiqr24",
-    "Javbus": "DVAJ-033",
     "Arzon": "1256926",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u8475\u53f8"
     ],
-    "Modify": "2021-09-05 15:53:26"
+    "Modify": "2021-09-05 15:53:26",
+    "JavDb": "QNbqG",
+    "JavLibrary": "javliiqr24",
+    "JavBus": "DVAJ-033"
 }

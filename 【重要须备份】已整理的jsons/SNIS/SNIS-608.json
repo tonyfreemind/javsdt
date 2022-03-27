@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/snis608/snis608pl.jpg",
     "CoverBus": "5c0b_b.jpg",
     "CutType": 1,
-    "Javdb": "50ga",
-    "Javlibrary": "javlillr44",
-    "Javbus": "SNIS-608",
     "Arzon": "1314693",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u5922\u4e43\u3042\u3044\u304b"
     ],
-    "Modify": "2021-09-25 18:34:47"
+    "Modify": "2021-09-25 18:34:47",
+    "JavDb": "50ga",
+    "JavLibrary": "javlillr44",
+    "JavBus": "SNIS-608"
 }

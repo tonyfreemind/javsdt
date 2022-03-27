@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/digital/video/sivr00029/sivr00029pl.jpg",
     "CoverBus": "6qct_b.jpg",
     "CutType": 1,
-    "Javdb": "wK97Y",
-    "Javlibrary": "javli7jf7m",
-    "Javbus": "SIVR-029",
     "Arzon": "",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u5965\u7530\u54b2"
     ],
-    "Modify": "2021-09-25 20:24:09"
+    "Modify": "2021-09-25 20:24:09",
+    "JavDb": "wK97Y",
+    "JavLibrary": "javli7jf7m",
+    "JavBus": "SIVR-029"
 }

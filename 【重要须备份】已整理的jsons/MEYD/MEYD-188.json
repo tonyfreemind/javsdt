@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/meyd188/meyd188pl.jpg",
     "CoverBus": "5msj_b.jpg",
     "CutType": 1,
-    "Javdb": "5E9MM",
-    "Javlibrary": "javlilywqa",
-    "Javbus": "MEYD-188",
     "Arzon": "1352137",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u8c37\u539f\u5e0c\u7f8e"
     ],
-    "Modify": "2021-09-13 22:56:28"
+    "Modify": "2021-09-13 22:56:28",
+    "JavDb": "5E9MM",
+    "JavLibrary": "javlilywqa",
+    "JavBus": "MEYD-188"
 }

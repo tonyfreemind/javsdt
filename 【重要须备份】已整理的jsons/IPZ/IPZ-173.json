@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipz173/ipz173pl.jpg",
     "CoverBus": "oht_b.jpg",
     "CutType": 1,
-    "Javdb": "nv49",
-    "Javlibrary": "javlijb32a",
-    "Javbus": "IPZ-173",
     "Arzon": "1142679",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u661f\u7f8e\u308a\u304b"
     ],
-    "Modify": "2021-09-05 18:54:13"
+    "Modify": "2021-09-05 18:54:13",
+    "JavDb": "nv49",
+    "JavLibrary": "javlijb32a",
+    "JavBus": "IPZ-173"
 }

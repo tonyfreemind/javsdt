@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipx077/ipx077pl.jpg",
     "CoverBus": "6c7e_b.jpg",
     "CutType": 1,
-    "Javdb": "k4Dae",
-    "Javlibrary": "javli43n4a",
-    "Javbus": "IPX-077",
     "Arzon": "1616177",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
         "\u5e02\u5ddd\u307e\u3055\u307f",
         "\u6843\u4e43\u6728\u304b\u306a"
     ],
-    "Modify": "2021-09-05 18:39:08"
+    "Modify": "2021-09-05 18:39:08",
+    "JavDb": "k4Dae",
+    "JavLibrary": "javli43n4a",
+    "JavBus": "IPX-077"
 }

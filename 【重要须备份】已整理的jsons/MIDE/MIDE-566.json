@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mide566/mide566pl.jpg",
     "CoverBus": "6my1_b.jpg",
     "CutType": 1,
-    "Javdb": "EbxK4",
-    "Javlibrary": "javli7biy4",
-    "Javbus": "MIDE-566",
     "Arzon": "",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u4f0a\u6771\u3061\u306a\u307f"
     ],
-    "Modify": "2021-09-25 17:32:18"
+    "Modify": "2021-09-25 17:32:18",
+    "JavDb": "EbxK4",
+    "JavLibrary": "javli7biy4",
+    "JavBus": "MIDE-566"
 }

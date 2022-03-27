@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/jux603/jux603pl.jpg",
     "CoverBus": "4s93_b.jpg",
     "CutType": 1,
-    "Javdb": "meQ9v",
-    "Javlibrary": "javliiqbsi",
-    "Javbus": "JUX-603",
     "Arzon": "1266827",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u6797\u3086\u306a"
     ],
-    "Modify": "2021-09-05 19:07:43"
+    "Modify": "2021-09-05 19:07:43",
+    "JavDb": "meQ9v",
+    "JavLibrary": "javliiqbsi",
+    "JavBus": "JUX-603"
 }

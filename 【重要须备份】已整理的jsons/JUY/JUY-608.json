@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/juy608/juy608pl.jpg",
     "CoverBus": "6ppy_b.jpg",
     "CutType": 1,
-    "Javdb": "05EY7",
-    "Javlibrary": "javli7iz64",
-    "Javbus": "JUY-608",
     "Arzon": "1474323",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u6765\u307e\u3048\u3073"
     ],
-    "Modify": "2021-09-05 19:08:40"
+    "Modify": "2021-09-05 19:08:40",
+    "JavDb": "05EY7",
+    "JavLibrary": "javli7iz64",
+    "JavBus": "JUY-608"
 }

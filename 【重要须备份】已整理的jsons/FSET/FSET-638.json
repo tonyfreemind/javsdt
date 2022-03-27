@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1fset638/1fset638pl.jpg",
     "CoverBus": "5kkx_b.jpg",
     "CutType": 1,
-    "Javdb": "e7VM",
-    "Javlibrary": "javlilruy4",
-    "Javbus": "FSET-638",
     "Arzon": "1341991",
     "CompletionStatus": 6,
     "Version": 1,
@@ -31,5 +28,8 @@
         "\u6c34\u8c37\u3042\u304a\u3044",
         "\u82b1\u54b2\u3044\u3042\u3093"
     ],
-    "Modify": "2021-09-05 16:00:55"
+    "Modify": "2021-09-05 16:00:55",
+    "JavDb": "e7VM",
+    "JavLibrary": "javlilruy4",
+    "JavBus": "FSET-638"
 }

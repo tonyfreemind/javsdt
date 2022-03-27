@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/hnd683/hnd683pl.jpg",
     "CoverBus": "75fu_b.jpg",
     "CutType": 1,
-    "Javdb": "mQVK5",
-    "Javlibrary": "javli6djsq",
-    "Javbus": "HND-683",
     "Arzon": "1520293",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,8 @@
     "Actors": [
         "\u677e\u672c\u83dc\u5948\u5b9f"
     ],
-    "Modify": "2021-09-05 17:46:01"
+    "Modify": "2021-09-05 17:46:01",
+    "JavDb": "mQVK5",
+    "JavLibrary": "javli6djsq",
+    "JavBus": "HND-683"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/atid357/atid357pl.jpg",
     "CoverBus": "77qz_b.jpg",
     "CutType": 1,
-    "Javdb": "rOkKR",
-    "Javlibrary": "javli6b64i",
-    "Javbus": "ATID-357",
     "Arzon": "1526165",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u4e8c\u5bae\u3072\u304b\u308a"
     ],
-    "Modify": "2021-11-07 21:03:31"
+    "Modify": "2021-11-07 21:03:31",
+    "JavDb": "rOkKR",
+    "JavLibrary": "javli6b64i",
+    "JavBus": "ATID-357"
 }

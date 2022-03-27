@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/miaa077/miaa077pl.jpg",
     "CoverBus": "73a9_b.jpg",
     "CutType": 1,
-    "Javdb": "Wd4Ng",
-    "Javlibrary": "javli7zj7e",
-    "Javbus": "MIAA-077",
     "Arzon": "1512960",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u6709\u5742\u6df1\u96ea"
     ],
-    "Modify": "2021-09-05 21:32:49"
+    "Modify": "2021-09-05 21:32:49",
+    "JavDb": "Wd4Ng",
+    "JavLibrary": "javli7zj7e",
+    "JavBus": "MIAA-077"
 }

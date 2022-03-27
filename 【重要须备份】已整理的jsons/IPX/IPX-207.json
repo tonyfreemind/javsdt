@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipx207/ipx207pl.jpg",
     "CoverBus": "6q5c_b.jpg",
     "CutType": 1,
-    "Javdb": "mrpgv",
-    "Javlibrary": "javli7i44y",
-    "Javbus": "IPX-207",
     "Arzon": "1474773",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u897f\u5bae\u3086\u3081"
     ],
-    "Modify": "2021-09-05 18:43:17"
+    "Modify": "2021-09-05 18:43:17",
+    "JavDb": "mrpgv",
+    "JavLibrary": "javli7i44y",
+    "JavBus": "IPX-207"
 }

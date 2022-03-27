@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1nhdtb052/1nhdtb052pl.jpg",
     "CoverBus": "6aju_b.jpg",
     "CutType": 1,
-    "Javdb": "akgP3",
-    "Javlibrary": "javli4ql64",
-    "Javbus": "NHDTB-052",
     "Arzon": "1426655",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
         "\u304d\u307f\u3068\u6b69\u5b9f",
         "\u304b\u306a\u3067\u81ea\u7531"
     ],
-    "Modify": "2021-09-25 17:56:10"
+    "Modify": "2021-09-25 17:56:10",
+    "JavDb": "akgP3",
+    "JavLibrary": "javli4ql64",
+    "JavBus": "NHDTB-052"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/vec445/vec445pl.jpg",
     "CoverBus": "7vrn_b.jpg",
     "CutType": 1,
-    "Javdb": "GKMqb",
-    "Javlibrary": "javmezbgze",
-    "Javbus": "VEC-445",
     "Arzon": "1589889",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u77b3\u30ea\u30e7\u30a6"
     ],
-    "Modify": "2022-02-15 12:45:37"
+    "Modify": "2022-02-15 12:45:37",
+    "JavDb": "GKMqb",
+    "JavLibrary": "javmezbgze",
+    "JavBus": "VEC-445"
 }

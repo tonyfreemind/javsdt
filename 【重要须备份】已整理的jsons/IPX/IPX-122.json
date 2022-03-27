@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipx122/ipx122pl.jpg",
     "CoverBus": "6hdq_b.jpg",
     "CutType": 1,
-    "Javdb": "MGNk",
-    "Javlibrary": "javli43uqi",
-    "Javbus": "IPX-122",
     "Arzon": "1449679",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u5cac\u306a\u306a\u307f"
     ],
-    "Modify": "2021-09-05 18:40:03"
+    "Modify": "2021-09-05 18:40:03",
+    "JavDb": "MGNk",
+    "JavLibrary": "javli43uqi",
+    "JavBus": "IPX-122"
 }

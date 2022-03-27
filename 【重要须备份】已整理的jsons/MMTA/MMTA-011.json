@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mmta011so/mmta011sopl.jpg",
     "CoverBus": "6lln_b.jpg",
     "CutType": 1,
-    "Javdb": "3nZ0b",
-    "Javlibrary": "javli7ap5y",
-    "Javbus": "MMTA-011",
     "Arzon": "1460739",
     "CompletionStatus": 6,
     "Version": 1,
@@ -31,5 +28,8 @@
     "Actors": [
         "\u53cb\u7530\u5f69\u4e5f\u9999"
     ],
-    "Modify": "2021-09-25 17:48:02"
+    "Modify": "2021-09-25 17:48:02",
+    "JavDb": "3nZ0b",
+    "JavLibrary": "javli7ap5y",
+    "JavBus": "MMTA-011"
 }

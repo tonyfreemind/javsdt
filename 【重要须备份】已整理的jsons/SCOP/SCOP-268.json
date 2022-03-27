@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/84scop268/84scop268pl.jpg",
     "CoverBus": "4m1p_b.jpg",
     "CutType": 1,
-    "Javdb": "P44J",
-    "Javlibrary": "javliidytm",
-    "Javbus": "SCOP-268",
     "Arzon": "1231510",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,8 @@
         "\u68ee\u7530\u307e\u3086",
         "\u5c0f\u6ce2\u98a8"
     ],
-    "Modify": "2021-09-25 18:16:20"
+    "Modify": "2021-09-25 18:16:20",
+    "JavDb": "P44J",
+    "JavLibrary": "javliidytm",
+    "JavBus": "SCOP-268"
 }

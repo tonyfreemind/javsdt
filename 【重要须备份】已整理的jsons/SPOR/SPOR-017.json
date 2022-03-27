@@ -16,9 +16,6 @@
     "CoverLibrary": "",
     "CoverBus": "",
     "CutType": 1,
-    "Javdb": "pe3K5",
-    "Javlibrary": "",
-    "Javbus": "",
     "Arzon": "",
     "CompletionStatus": 1,
     "Version": 1,
@@ -36,5 +33,8 @@
     "Actors": [
         "\u3086\u3046"
     ],
-    "Modify": "2021-09-25 15:59:01"
+    "Modify": "2021-09-25 15:59:01",
+    "JavDb": "pe3K5",
+    "JavLibrary": "",
+    "JavBus": ""
 }

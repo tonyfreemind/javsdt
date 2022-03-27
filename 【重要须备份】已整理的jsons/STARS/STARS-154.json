@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1stars154/1stars154pl.jpg",
     "CoverBus": "7erb_b.jpg",
     "CutType": 1,
-    "Javdb": "4Kg6a",
-    "Javlibrary": "javli6jlra",
-    "Javbus": "STARS-154",
     "Arzon": "1543040",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u7d17\u5009\u307e\u306a"
     ],
-    "Modify": "2021-09-21 08:08:13"
+    "Modify": "2021-09-21 08:08:13",
+    "JavDb": "4Kg6a",
+    "JavLibrary": "javli6jlra",
+    "JavBus": "STARS-154"
 }

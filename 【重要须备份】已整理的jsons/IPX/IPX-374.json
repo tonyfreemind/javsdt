@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipx374/ipx374pl.jpg",
     "CoverBus": "79tg_b.jpg",
     "CutType": 1,
-    "Javdb": "DOyeK",
-    "Javlibrary": "javli6lrza",
-    "Javbus": "IPX-374",
     "Arzon": "1531725",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u660e\u91cc\u3064\u3080\u304e"
     ],
-    "Modify": "2021-09-05 18:50:09"
+    "Modify": "2021-09-05 18:50:09",
+    "JavDb": "DOyeK",
+    "JavLibrary": "javli6lrza",
+    "JavBus": "IPX-374"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/cead156/cead156pl.jpg",
     "CoverBus": "5eos_b.jpg",
     "CutType": 1,
-    "Javdb": "ZNNW8",
-    "Javlibrary": "javlilju2e",
-    "Javbus": "CEAD-156",
     "Arzon": "1324997",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u83c5\u91ce\u3055\u3086\u304d"
     ],
-    "Modify": "2022-02-15 19:11:58"
+    "Modify": "2022-02-15 19:11:58",
+    "JavDb": "ZNNW8",
+    "JavLibrary": "javlilju2e",
+    "JavBus": "CEAD-156"
 }

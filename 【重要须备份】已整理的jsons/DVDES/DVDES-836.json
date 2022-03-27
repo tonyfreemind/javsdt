@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1dvdes836/1dvdes836pl.jpg",
     "CoverBus": "4roj_b.jpg",
     "CutType": 1,
-    "Javdb": "mevpY",
-    "Javlibrary": "javliitata",
-    "Javbus": "DVDES-836",
     "Arzon": "1258306",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,8 @@
         "\u7be0\u5bae\u3086\u308a",
         "\u65e9\u4e59\u5973\u3086\u3044"
     ],
-    "Modify": "2021-09-05 15:55:16"
+    "Modify": "2021-09-05 15:55:16",
+    "JavDb": "mevpY",
+    "JavLibrary": "javliitata",
+    "JavBus": "DVDES-836"
 }

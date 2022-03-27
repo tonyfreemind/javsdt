@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/club599/club599pl.jpg",
     "CoverBus": "7g8m_b.jpg",
     "CutType": 1,
-    "Javdb": "WVmV7",
-    "Javlibrary": "javli6rnqu",
-    "Javbus": "CLUB-599",
     "Arzon": "1548693",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
         "\u4e09\u539f\u307b\u306e\u304b",
         "\u539f\u7530\u5343\u6676"
     ],
-    "Modify": "2021-09-05 15:44:56"
+    "Modify": "2021-09-05 15:44:56",
+    "JavDb": "WVmV7",
+    "JavLibrary": "javli6rnqu",
+    "JavBus": "CLUB-599"
 }

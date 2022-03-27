@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/rbd945/rbd945pl.jpg",
     "CoverBus": "7cs7_b.jpg",
     "CutType": 1,
-    "Javdb": "2Ky7P",
-    "Javlibrary": "javli6j25a",
-    "Javbus": "RBD-945",
     "Arzon": "1540220",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u7e54\u7b20\u308b\u307f"
     ],
-    "Modify": "2021-09-25 18:13:52"
+    "Modify": "2021-09-25 18:13:52",
+    "JavDb": "2Ky7P",
+    "JavLibrary": "javli6j25a",
+    "JavBus": "RBD-945"
 }

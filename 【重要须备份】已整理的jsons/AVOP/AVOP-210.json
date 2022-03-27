@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/avop210/avop210pl.jpg",
     "CoverBus": "5od8_b.jpg",
     "CutType": 1,
-    "Javdb": "zK0Xb",
-    "Javlibrary": "javliltu4y",
-    "Javbus": "AVOP-210",
     "Arzon": "1346453",
     "CompletionStatus": 6,
     "Version": 1,
@@ -31,5 +28,8 @@
     "Actors": [
         "\u9ad8\u6865\u5723\u5b50"
     ],
-    "Modify": "2021-09-05 15:31:25"
+    "Modify": "2021-09-05 15:31:25",
+    "JavDb": "zK0Xb",
+    "JavLibrary": "javliltu4y",
+    "JavBus": "AVOP-210"
 }

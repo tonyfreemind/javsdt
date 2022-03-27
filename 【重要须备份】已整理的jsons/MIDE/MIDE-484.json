@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mide484/mide484pl.jpg",
     "CoverBus": "68w2_b.jpg",
     "CutType": 1,
-    "Javdb": "mO91Y",
-    "Javlibrary": "javli4qyq4",
-    "Javbus": "MIDE-484",
     "Arzon": "1424898",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u4e5d\u91cd\u304b\u3093\u306a"
     ],
-    "Modify": "2021-09-25 17:29:01"
+    "Modify": "2021-09-25 17:29:01",
+    "JavDb": "mO91Y",
+    "JavLibrary": "javli4qyq4",
+    "JavBus": "MIDE-484"
 }

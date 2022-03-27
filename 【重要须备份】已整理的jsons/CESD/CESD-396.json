@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/cesd396/cesd396pl.jpg",
     "CoverBus": "62b2_b.jpg",
     "CutType": 1,
-    "Javdb": "5Aa8",
-    "Javlibrary": "javlikl4t4",
-    "Javbus": "CESD-396",
     "Arzon": "1402455",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u672c\u7530\u5cac"
     ],
-    "Modify": "2022-02-15 19:13:10"
+    "Modify": "2022-02-15 19:13:10",
+    "JavDb": "5Aa8",
+    "JavLibrary": "javlikl4t4",
+    "JavBus": "CESD-396"
 }

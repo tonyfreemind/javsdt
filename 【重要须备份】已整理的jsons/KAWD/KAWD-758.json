@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/kawd758/kawd758pl.jpg",
     "CoverBus": "5qq3_b.jpg",
     "CutType": 1,
-    "Javdb": "Kk0bQ",
-    "Javlibrary": "javlilzjre",
-    "Javbus": "KAWD-758",
     "Arzon": "1364247",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u9234\u6728\u5fc3\u6625"
     ],
-    "Modify": "2021-09-05 21:17:11"
+    "Modify": "2021-09-05 21:17:11",
+    "JavDb": "Kk0bQ",
+    "JavLibrary": "javlilzjre",
+    "JavBus": "KAWD-758"
 }

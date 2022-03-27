@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/snis498/snis498pl.jpg",
     "CoverBus": "4ybh_b.jpg",
     "CutType": 1,
-    "Javdb": "xvXrV",
-    "Javlibrary": "javliizu5y",
-    "Javbus": "SNIS-498",
     "Arzon": "1286496",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u5965\u7530\u54b2"
     ],
-    "Modify": "2021-09-25 18:32:53"
+    "Modify": "2021-09-25 18:32:53",
+    "JavDb": "xvXrV",
+    "JavLibrary": "javliizu5y",
+    "JavBus": "SNIS-498"
 }

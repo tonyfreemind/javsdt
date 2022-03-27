@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/jul101/jul101pl.jpg",
     "CoverBus": "7gmi_b.jpg",
     "CutType": 1,
-    "Javdb": "AKaJO",
-    "Javlibrary": "javli6qt6y",
-    "Javbus": "JUL-101",
     "Arzon": "1548969",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u821e\u5ddd\u30bb\u30ca"
     ],
-    "Modify": "2021-09-05 19:06:53"
+    "Modify": "2021-09-05 19:06:53",
+    "JavDb": "AKaJO",
+    "JavLibrary": "javli6qt6y",
+    "JavBus": "JUL-101"
 }

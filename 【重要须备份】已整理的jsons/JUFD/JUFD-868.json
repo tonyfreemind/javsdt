@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/jufd868/jufd868pl.jpg",
     "CoverBus": "6dvl_b.jpg",
     "CutType": 1,
-    "Javdb": "65ywa",
-    "Javlibrary": "javli4yn3m",
-    "Javbus": "JUFD-868",
     "Arzon": "1440238",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u6589\u85e4\u307f\u3086"
     ],
-    "Modify": "2021-09-05 19:02:10"
+    "Modify": "2021-09-05 19:02:10",
+    "JavDb": "65ywa",
+    "JavLibrary": "javli4yn3m",
+    "JavBus": "JUFD-868"
 }

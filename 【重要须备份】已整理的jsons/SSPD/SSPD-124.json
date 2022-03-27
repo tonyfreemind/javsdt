@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/sspd124/sspd124pl.jpg",
     "CoverBus": "59h9_b.jpg",
     "CutType": 1,
-    "Javdb": "eKZd1",
-    "Javlibrary": "javlilb63i",
-    "Javbus": "SSPD-124",
     "Arzon": "",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
         "\u963f\u90e8\u4e43\u307f\u304f",
         "\u6dbc\u5ddd\u7d62\u97f3"
     ],
-    "Modify": "2021-09-25 19:09:58"
+    "Modify": "2021-09-25 19:09:58",
+    "JavDb": "eKZd1",
+    "JavLibrary": "javlilb63i",
+    "JavBus": "SSPD-124"
 }

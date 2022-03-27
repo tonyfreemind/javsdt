@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ssni484/ssni484pl.jpg",
     "CoverBus": "74i5_b.jpg",
     "CutType": 1,
-    "Javdb": "XERGP",
-    "Javlibrary": "javli6arsu",
-    "Javbus": "SSNI-484",
     "Arzon": "1517062",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u5965\u7530\u54b2"
     ],
-    "Modify": "2021-09-21 08:07:50"
+    "Modify": "2021-09-21 08:07:50",
+    "JavDb": "XERGP",
+    "JavLibrary": "javli6arsu",
+    "JavBus": "SSNI-484"
 }

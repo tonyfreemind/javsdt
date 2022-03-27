@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/apkh012so/apkh012sopl.jpg",
     "CoverBus": "5i6z_b.jpg",
     "CutType": 1,
-    "Javdb": "P91yv",
-    "Javlibrary": "javliltete",
-    "Javbus": "APKH-012",
     "Arzon": "1335822",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u9ebb\u751f\u9065"
     ],
-    "Modify": "2021-09-05 15:26:26"
+    "Modify": "2021-09-05 15:26:26",
+    "JavDb": "P91yv",
+    "JavLibrary": "javliltete",
+    "JavBus": "APKH-012"
 }

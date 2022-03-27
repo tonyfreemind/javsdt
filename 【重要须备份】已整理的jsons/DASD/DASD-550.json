@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/dasd550/dasd550pl.jpg",
     "CoverBus": "75fc_b.jpg",
     "CutType": 1,
-    "Javdb": "XEMW4",
-    "Javlibrary": "javli6diyi",
-    "Javbus": "DASD-550",
     "Arzon": "1520248",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,8 @@
     "Actors": [
         "\u9ed2\u5ddd\u30b5\u30ea\u30ca"
     ],
-    "Modify": "2021-09-05 15:47:38"
+    "Modify": "2021-09-05 15:47:38",
+    "JavDb": "XEMW4",
+    "JavLibrary": "javli6diyi",
+    "JavBus": "DASD-550"
 }

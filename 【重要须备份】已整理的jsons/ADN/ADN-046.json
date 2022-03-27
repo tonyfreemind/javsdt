@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/adn046/adn046pl.jpg",
     "CoverBus": "4kve_b.jpg",
     "CutType": 1,
-    "Javdb": "rmdKZ",
-    "Javlibrary": "javliijr54",
-    "Javbus": "ADN-046",
     "Arzon": "",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u77f3\u539f\u8389\u5948"
     ],
-    "Modify": "2021-09-05 15:22:05"
+    "Modify": "2021-09-05 15:22:05",
+    "JavDb": "rmdKZ",
+    "JavLibrary": "javliijr54",
+    "JavBus": "ADN-046"
 }

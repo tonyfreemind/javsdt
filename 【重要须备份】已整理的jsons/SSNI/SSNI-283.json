@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ssni283/ssni283pl.jpg",
     "CoverBus": "6omq_b.jpg",
     "CutType": 1,
-    "Javdb": "Aq7En",
-    "Javlibrary": "javli7ll3e",
-    "Javbus": "SSNI-283",
     "Arzon": "1470285",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u5922\u4e43\u3042\u3044\u304b"
     ],
-    "Modify": "2021-09-25 18:50:10"
+    "Modify": "2021-09-25 18:50:10",
+    "JavDb": "Aq7En",
+    "JavLibrary": "javli7ll3e",
+    "JavBus": "SSNI-283"
 }

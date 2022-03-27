@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/snis205/snis205pl.jpg",
     "CoverBus": "4dtd_b.jpg",
     "CutType": 1,
-    "Javdb": "8VKYV",
-    "Javlibrary": "javlijz5tu",
-    "Javbus": "SNIS-205",
     "Arzon": "1209424",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u5b87\u90fd\u5bae\u3057\u3092\u3093"
     ],
-    "Modify": "2021-09-25 18:28:49"
+    "Modify": "2021-09-25 18:28:49",
+    "JavDb": "8VKYV",
+    "JavLibrary": "javlijz5tu",
+    "JavBus": "SNIS-205"
 }

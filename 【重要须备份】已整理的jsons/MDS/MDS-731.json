@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/84mds731/84mds731pl.jpg",
     "CoverBus": "2p7d_b.jpg",
     "CutType": 1,
-    "Javdb": "V4vEz",
-    "Javlibrary": "javlioro4u",
-    "Javbus": "MDS-731",
     "Arzon": "1100029",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u7be0\u5bae\u3086\u308a"
     ],
-    "Modify": "2021-09-05 21:23:14"
+    "Modify": "2021-09-05 21:23:14",
+    "JavDb": "V4vEz",
+    "JavLibrary": "javlioro4u",
+    "JavBus": "MDS-731"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1iesp634/1iesp634pl.jpg",
     "CoverBus": "62jj_b.jpg",
     "CutType": 1,
-    "Javdb": "W1a5R",
-    "Javlibrary": "javlikl2rq",
-    "Javbus": "IESP-634",
     "Arzon": "1400883",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u82e5\u83dc\u5948\u592e"
     ],
-    "Modify": "2021-09-05 18:34:49"
+    "Modify": "2021-09-05 18:34:49",
+    "JavDb": "W1a5R",
+    "JavLibrary": "javlikl2rq",
+    "JavBus": "IESP-634"
 }

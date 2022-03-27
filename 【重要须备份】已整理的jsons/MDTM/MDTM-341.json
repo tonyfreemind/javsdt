@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/84mdtm341/84mdtm341pl.jpg",
     "CoverBus": "6hsf_b.jpg",
     "CutType": 1,
-    "Javdb": "82Rm3",
-    "Javlibrary": "javli4z324",
-    "Javbus": "MDTM-341",
     "Arzon": "1445211",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u690e\u540d\u305d\u3089"
     ],
-    "Modify": "2021-09-05 21:26:06"
+    "Modify": "2021-09-05 21:26:06",
+    "JavDb": "82Rm3",
+    "JavLibrary": "javli4z324",
+    "JavBus": "MDTM-341"
 }

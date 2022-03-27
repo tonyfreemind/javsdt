@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mide548/mide548pl.jpg",
     "CoverBus": "6jr3_b.jpg",
     "CutType": 1,
-    "Javdb": "ZN4NX",
-    "Javlibrary": "javli7di3y",
-    "Javbus": "MIDE-548",
     "Arzon": "1568092",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u4e03\u6ca2\u307f\u3042"
     ],
-    "Modify": "2021-09-25 17:30:50"
+    "Modify": "2021-09-25 17:30:50",
+    "JavDb": "ZN4NX",
+    "JavLibrary": "javli7di3y",
+    "JavBus": "MIDE-548"
 }

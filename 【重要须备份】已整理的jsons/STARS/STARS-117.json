@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1stars117/1stars117pl.jpg",
     "CoverBus": "7al5_b.jpg",
     "CutType": 1,
-    "Javdb": "M6zJk",
-    "Javlibrary": "javli6jr3y",
-    "Javbus": "STARS-117",
     "Arzon": "1533757",
     "CompletionStatus": 6,
     "Version": 1,
@@ -31,5 +28,8 @@
     "Actors": [
         "\u5c0f\u5009\u7531\u83dc"
     ],
-    "Modify": "2021-09-25 19:52:59"
+    "Modify": "2021-09-25 19:52:59",
+    "JavDb": "M6zJk",
+    "JavLibrary": "javli6jr3y",
+    "JavBus": "STARS-117"
 }

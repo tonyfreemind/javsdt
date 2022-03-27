@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/snis872/snis872pl.jpg",
     "CoverBus": "5wgh_b.jpg",
     "CutType": 1,
-    "Javdb": "0eVA7",
-    "Javlibrary": "javliklb5e",
-    "Javbus": "SNIS-872",
     "Arzon": "1383969",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u4e09\u4e0a\u60a0\u4e9c"
     ],
-    "Modify": "2021-09-25 18:37:44"
+    "Modify": "2021-09-25 18:37:44",
+    "JavDb": "0eVA7",
+    "JavLibrary": "javliklb5e",
+    "JavBus": "SNIS-872"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/snis999/snis999pl.jpg",
     "CoverBus": "666s_b.jpg",
     "CutType": 1,
-    "Javdb": "V49YX",
-    "Javlibrary": "javliktz3a",
-    "Javbus": "SNIS-999",
     "Arzon": "1415383",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,8 @@
     "Actors": [
         "\u5929\u4f7f\u3082\u3048"
     ],
-    "Modify": "2021-09-25 18:40:38"
+    "Modify": "2021-09-25 18:40:38",
+    "JavDb": "V49YX",
+    "JavLibrary": "javliktz3a",
+    "JavBus": "SNIS-999"
 }

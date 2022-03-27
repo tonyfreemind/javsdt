@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/meyd532/meyd532pl.jpg",
     "CoverBus": "79s0_b.jpg",
     "CutType": 1,
-    "Javdb": "GJ5xb",
-    "Javlibrary": "javli6lr6u",
-    "Javbus": "MEYD-532",
     "Arzon": "1531743",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u9727\u5cf6\u30ec\u30aa\u30ca"
     ],
-    "Modify": "2021-09-05 21:29:05"
+    "Modify": "2021-09-05 21:29:05",
+    "JavDb": "GJ5xb",
+    "JavLibrary": "javli6lr6u",
+    "JavBus": "MEYD-532"
 }

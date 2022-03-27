@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/meyd288/meyd288pl.jpg",
     "CoverBus": "64ty_b.jpg",
     "CutType": 1,
-    "Javdb": "mObDZ",
-    "Javlibrary": "javlikq5qy",
-    "Javbus": "MEYD-288",
     "Arzon": "1410653",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,8 @@
     "Actors": [
         "\u6771\u51db"
     ],
-    "Modify": "2021-09-05 21:27:48"
+    "Modify": "2021-09-05 21:27:48",
+    "JavDb": "mObDZ",
+    "JavLibrary": "javlikq5qy",
+    "JavBus": "MEYD-288"
 }

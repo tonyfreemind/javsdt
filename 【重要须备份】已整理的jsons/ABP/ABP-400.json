@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/118abp400/118abp400pl.jpg",
     "CoverBus": "57ww_b.jpg",
     "CutType": 1,
-    "Javdb": "dNM",
-    "Javlibrary": "javlildiru",
-    "Javbus": "ABP-400",
     "Arzon": "1302463",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
         "\u8352\u6728\u307e\u3044",
         "\u5317\u91ce\u306e\u305e\u307f"
     ],
-    "Modify": "2021-09-05 13:54:46"
+    "Modify": "2021-09-05 13:54:46",
+    "JavDb": "dNM",
+    "JavLibrary": "javlildiru",
+    "JavBus": "ABP-400"
 }

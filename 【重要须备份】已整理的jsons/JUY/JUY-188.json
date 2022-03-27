@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/juy188/juy188pl.jpg",
     "CoverBus": "628a_b.jpg",
     "CutType": 1,
-    "Javdb": "qD5k9",
-    "Javlibrary": "javliktcte",
-    "Javbus": "JUY-188",
     "Arzon": "1403398",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u7a32\u672c\u5fd7\u4e43"
     ],
-    "Modify": "2021-09-21 08:04:28"
+    "Modify": "2021-09-21 08:04:28",
+    "JavDb": "qD5k9",
+    "JavLibrary": "javliktcte",
+    "JavBus": "JUY-188"
 }

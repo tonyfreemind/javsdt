@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/rbd533/rbd533pl.jpg",
     "CoverBus": "3zco_b.jpg",
     "CutType": 1,
-    "Javdb": "AP1M",
-    "Javlibrary": "javlijlotu",
-    "Javbus": "RBD-533",
     "Arzon": "1158941",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
         "\u6ce2\u591a\u91ce\u7ed3\u8863",
         "\u5150\u5cf6\u5948\u592e"
     ],
-    "Modify": "2021-09-25 18:13:01"
+    "Modify": "2021-09-25 18:13:01",
+    "JavDb": "AP1M",
+    "JavLibrary": "javlijlotu",
+    "JavBus": "RBD-533"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/bbi168/bbi168pl.jpg",
     "CoverBus": "4ehu_b.jpg",
     "CutType": 1,
-    "Javdb": "0e8Y3",
-    "Javlibrary": "javlijzmri",
-    "Javbus": "BBI-168",
     "Arzon": "",
     "CompletionStatus": 6,
     "Version": 1,
@@ -31,5 +28,8 @@
     "Actors": [
         "\u685c\u6728\u51db"
     ],
-    "Modify": "2021-09-05 15:33:54"
+    "Modify": "2021-09-05 15:33:54",
+    "JavDb": "0e8Y3",
+    "JavLibrary": "javlijzmri",
+    "JavBus": "BBI-168"
 }

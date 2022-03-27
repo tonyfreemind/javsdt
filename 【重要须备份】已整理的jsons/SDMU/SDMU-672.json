@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1sdmu672/1sdmu672pl.jpg",
     "CoverBus": "66vv_b.jpg",
     "CutType": 1,
-    "Javdb": "E281M",
-    "Javlibrary": "javlikr4ze",
-    "Javbus": "SDMU-672",
     "Arzon": "1411397",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u677e\u7530\u771f\u590f"
     ],
-    "Modify": "2021-09-25 18:22:04"
+    "Modify": "2021-09-25 18:22:04",
+    "JavDb": "E281M",
+    "JavLibrary": "javlikr4ze",
+    "JavBus": "SDMU-672"
 }

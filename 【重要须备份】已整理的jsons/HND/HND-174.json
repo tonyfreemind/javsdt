@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/hnd174/hnd174pl.jpg",
     "CoverBus": "4qik_b.jpg",
     "CutType": 1,
-    "Javdb": "AVMm",
-    "Javlibrary": "javliitgrm",
-    "Javbus": "HND-174",
     "Arzon": "1261146",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u3044\u3068\u3046\u7f8e\u6182"
     ],
-    "Modify": "2021-09-05 17:44:16"
+    "Modify": "2021-09-05 17:44:16",
+    "JavDb": "AVMm",
+    "JavLibrary": "javliitgrm",
+    "JavBus": "HND-174"
 }

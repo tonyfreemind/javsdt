@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/vec381/vec381pl.jpg",
     "CoverBus": "79l9_b.jpg",
     "CutType": 1,
-    "Javdb": "mQXQM",
-    "Javlibrary": "javli6lbqe",
-    "Javbus": "VEC-381",
     "Arzon": "1531013",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u68ee\u307b\u305f\u308b"
     ],
-    "Modify": "2021-09-25 20:20:57"
+    "Modify": "2021-09-25 20:20:57",
+    "JavDb": "mQXQM",
+    "JavLibrary": "javli6lbqe",
+    "JavBus": "VEC-381"
 }

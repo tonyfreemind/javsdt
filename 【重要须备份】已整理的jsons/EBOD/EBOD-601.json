@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ebod601/ebod601pl.jpg",
     "CoverBus": "66es_b.jpg",
     "CutType": 1,
-    "Javdb": "nypV",
-    "Javlibrary": "javlikt7ta",
-    "Javbus": "EBOD-601",
     "Arzon": "1415861",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u624b\u585a\u3072\u304b\u308a"
     ],
-    "Modify": "2021-09-05 15:58:10"
+    "Modify": "2021-09-05 15:58:10",
+    "JavDb": "nypV",
+    "JavLibrary": "javlikt7ta",
+    "JavBus": "EBOD-601"
 }

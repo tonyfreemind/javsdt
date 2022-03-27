@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1sw587/1sw587pl.jpg",
     "CoverBus": "6syj_b.jpg",
     "CutType": 1,
-    "Javdb": "qA06N",
-    "Javlibrary": "javli7jirm",
-    "Javbus": "SW-587",
     "Arzon": "1481939",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u6709\u5742\u6df1\u96ea"
     ],
-    "Modify": "2021-09-25 19:58:26"
+    "Modify": "2021-09-25 19:58:26",
+    "JavDb": "qA06N",
+    "JavLibrary": "javli7jirm",
+    "JavBus": "SW-587"
 }

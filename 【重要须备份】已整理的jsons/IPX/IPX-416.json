@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipx416/ipx416pl.jpg",
     "CoverBus": "7foh_b.jpg",
     "CutType": 1,
-    "Javdb": "NP2Ag",
-    "Javlibrary": "javli6tcra",
-    "Javbus": "IPX-416",
     "Arzon": "1545423",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u6843\u4e43\u6728\u304b\u306a"
     ],
-    "Modify": "2021-09-05 18:51:46"
+    "Modify": "2021-09-05 18:51:46",
+    "JavDb": "NP2Ag",
+    "JavLibrary": "javli6tcra",
+    "JavBus": "IPX-416"
 }

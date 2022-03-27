@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipz489/ipz489pl.jpg",
     "CoverBus": "4je7_b.jpg",
     "CutType": 1,
-    "Javdb": "X9OG",
-    "Javlibrary": "javliibdqi",
-    "Javbus": "IPZ-489",
     "Arzon": "",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "Rio"
     ],
-    "Modify": "2021-09-05 18:56:03"
+    "Modify": "2021-09-05 18:56:03",
+    "JavDb": "X9OG",
+    "JavLibrary": "javliibdqi",
+    "JavBus": "IPZ-489"
 }

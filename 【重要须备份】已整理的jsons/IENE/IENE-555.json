@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1iene555/1iene555pl.jpg",
     "CoverBus": "4seg_b.jpg",
     "CutType": 1,
-    "Javdb": "meQ4v",
-    "Javlibrary": "javliiq42y",
-    "Javbus": "IENE-555",
     "Arzon": "1264185",
     "CompletionStatus": 6,
     "Version": 1,
@@ -31,5 +28,8 @@
     "Actors": [
         "\u6797\u3086\u306a"
     ],
-    "Modify": "2021-09-05 18:34:16"
+    "Modify": "2021-09-05 18:34:16",
+    "JavDb": "meQ4v",
+    "JavLibrary": "javliiq42y",
+    "JavBus": "IENE-555"
 }

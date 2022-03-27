@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/cesd490/cesd490pl.jpg",
     "CoverBus": "6ba3_b.jpg",
     "CutType": 1,
-    "Javdb": "RdWG4",
-    "Javlibrary": "javli4rgzq",
-    "Javbus": "CESD-490",
     "Arzon": "1431561",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u9999\u690e\u308a\u3042"
     ],
-    "Modify": "2022-02-15 19:13:42"
+    "Modify": "2022-02-15 19:13:42",
+    "JavDb": "RdWG4",
+    "JavLibrary": "javli4rgzq",
+    "JavBus": "CESD-490"
 }

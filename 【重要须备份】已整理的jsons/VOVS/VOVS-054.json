@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/digital/video/h_1127vovs00054/h_1127vovs00054pl.jpg",
     "CoverBus": "60jn_b.jpg",
     "CutType": 1,
-    "Javdb": "B88Dr",
-    "Javlibrary": "javlikqo74",
-    "Javbus": "VOVS-054",
     "Arzon": "",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u4e09\u539f\u307b\u306e\u304b"
     ],
-    "Modify": "2021-09-25 20:23:17"
+    "Modify": "2021-09-25 20:23:17",
+    "JavDb": "B88Dr",
+    "JavLibrary": "javlikqo74",
+    "JavBus": "VOVS-054"
 }

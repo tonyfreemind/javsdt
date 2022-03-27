@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ure020/ure020pl.jpg",
     "CoverBus": "4iyk_b.jpg",
     "CutType": 1,
-    "Javdb": "eN7p",
-    "Javlibrary": "javliibc7a",
-    "Javbus": "URE-020",
     "Arzon": "483883",
     "CompletionStatus": 6,
     "Version": 1,
@@ -36,5 +33,8 @@
         "\u5343\u4e43\u3042\u305a\u307f",
         "\u6069\u7530\u307b\u306e\u304b"
     ],
-    "Modify": "2021-09-25 20:17:59"
+    "Modify": "2021-09-25 20:17:59",
+    "JavDb": "eN7p",
+    "JavLibrary": "javliibc7a",
+    "JavBus": "URE-020"
 }

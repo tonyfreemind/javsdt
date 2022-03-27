@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/118abp560/118abp560pl.jpg",
     "CoverBus": "5uis_b.jpg",
     "CutType": 1,
-    "Javdb": "akemW",
-    "Javlibrary": "javlikad2q",
-    "Javbus": "ABP-560",
     "Arzon": "1376031",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u51f0\u304b\u306a\u3081"
     ],
-    "Modify": "2021-09-05 13:59:15"
+    "Modify": "2021-09-05 13:59:15",
+    "JavDb": "akemW",
+    "JavLibrary": "javlikad2q",
+    "JavBus": "ABP-560"
 }

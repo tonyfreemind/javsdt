@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/3wanz225/3wanz225pl.jpg",
     "CoverBus": "4ewv_b.jpg",
     "CutType": 1,
-    "Javdb": "2aYDm",
-    "Javlibrary": "javlij33ti",
-    "Javbus": "WANZ-225",
     "Arzon": "",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u6c96\u7530\u674f\u68a8"
     ],
-    "Modify": "2021-10-30 12:27:10"
+    "Modify": "2021-10-30 12:27:10",
+    "JavDb": "2aYDm",
+    "JavLibrary": "javlij33ti",
+    "JavBus": "WANZ-225"
 }

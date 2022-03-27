@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ssni056/ssni056pl.jpg",
     "CoverBus": "69vi_b.jpg",
     "CutType": 1,
-    "Javdb": "YwE9B",
-    "Javlibrary": "javli4qpsq",
-    "Javbus": "SSNI-056",
     "Arzon": "1426828",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
         "\u8475\u53f8",
         "\u6a4b\u672c\u3042\u308a\u306a"
     ],
-    "Modify": "2021-09-25 18:42:50"
+    "Modify": "2021-09-25 18:42:50",
+    "JavDb": "YwE9B",
+    "JavLibrary": "javli4qpsq",
+    "JavBus": "SSNI-056"
 }

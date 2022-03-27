@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1iesp659/1iesp659pl.jpg",
     "CoverBus": "7gii_b.jpg",
     "CutType": 1,
-    "Javdb": "9qn1R",
-    "Javlibrary": "javli6l5s4",
-    "Javbus": "IESP-659",
     "Arzon": "1545096",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u65e9\u7f8e\u308c\u3080"
     ],
-    "Modify": "2021-09-05 18:35:03"
+    "Modify": "2021-09-05 18:35:03",
+    "JavDb": "9qn1R",
+    "JavLibrary": "javli6l5s4",
+    "JavBus": "IESP-659"
 }

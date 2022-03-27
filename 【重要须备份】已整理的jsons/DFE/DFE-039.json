@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/2dfe039/2dfe039pl.jpg",
     "CoverBus": "7gwq_b.jpg",
     "CutType": 1,
-    "Javdb": "YrMRx",
-    "Javlibrary": "javli6tati",
-    "Javbus": "DFE-039",
     "Arzon": "1548919",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,8 @@
     "Actors": [
         "\u52a0\u702c\u306a\u306a\u307b"
     ],
-    "Modify": "2021-09-05 17:25:55"
+    "Modify": "2021-09-05 17:25:55",
+    "JavDb": "YrMRx",
+    "JavLibrary": "javli6tati",
+    "JavBus": "DFE-039"
 }

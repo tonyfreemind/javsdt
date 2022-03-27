@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ssni684/ssni684pl.jpg",
     "CoverBus": "7hbu_b.jpg",
     "CutType": 1,
-    "Javdb": "gWYXA",
-    "Javlibrary": "javli6qd4a",
-    "Javbus": "SSNI-684",
     "Arzon": "1550516",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u7434\u4e95\u3057\u307b\u308a"
     ],
-    "Modify": "2021-10-30 10:03:47"
+    "Modify": "2021-10-30 10:03:47",
+    "JavDb": "gWYXA",
+    "JavLibrary": "javli6qd4a",
+    "JavBus": "SSNI-684"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/bf287/bf287pl.jpg",
     "CoverBus": "42gz_b.jpg",
     "CutType": 1,
-    "Javdb": "GQz7",
-    "Javlibrary": "javlijjiya",
-    "Javbus": "BF-287",
     "Arzon": "1170478",
     "CompletionStatus": 6,
     "Version": 1,
@@ -31,5 +28,8 @@
     "Actors": [
         "\u6c34\u91ce\u671d\u9633"
     ],
-    "Modify": "2021-09-05 15:35:15"
+    "Modify": "2021-09-05 15:35:15",
+    "JavDb": "GQz7",
+    "JavLibrary": "javlijjiya",
+    "JavBus": "BF-287"
 }

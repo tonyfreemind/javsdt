@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/apns129so/apns129sopl.jpg",
     "CoverBus": "75i2_b.jpg",
     "CutType": 1,
-    "Javdb": "dZBgv",
-    "Javlibrary": "javli6disu",
-    "Javbus": "APNS-129",
     "Arzon": "1518300",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
         "\u661f\u5948\u3042\u3044",
         "\u60f3\u771f\u82b1"
     ],
-    "Modify": "2021-09-05 15:27:02"
+    "Modify": "2021-09-05 15:27:02",
+    "JavDb": "dZBgv",
+    "JavLibrary": "javli6disu",
+    "JavBus": "APNS-129"
 }

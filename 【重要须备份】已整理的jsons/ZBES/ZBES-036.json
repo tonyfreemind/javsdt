@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/zbes036/zbes036pl.jpg",
     "CoverBus": "66fe_b.jpg",
     "CutType": 1,
-    "Javdb": "WJVp",
-    "Javlibrary": "javli4tasa",
-    "Javbus": "ZBES-036",
     "Arzon": "1415860",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u661f\u5948\u3042\u3044"
     ],
-    "Modify": "2021-09-25 20:37:32"
+    "Modify": "2021-09-25 20:37:32",
+    "JavDb": "WJVp",
+    "JavLibrary": "javli4tasa",
+    "JavBus": "ZBES-036"
 }

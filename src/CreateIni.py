@@ -1,9 +1,8 @@
 # -*- coding:utf-8 -*-
-from os import system
 from configparser import RawConfigParser
 from traceback import format_exc
 
-from Const import Const
+from Classes.Const import Const
 
 try:
     print('>>正在重写ini文件...')
@@ -73,6 +72,8 @@ try:
     config_settings.set("其他设置", "javlibrary网址", "https://www.n53i.com/")
     config_settings.set("其他设置", "javbus网址", "https://www.buscdn.me")
     config_settings.set("其他设置", "javdb网址", "https://javdb31.com/")
+    config_settings.set("其他设置", "javlibrary的cf_clearance",
+                        "biyj49Wyi8FEOKojC.brqWsnLxuGxM8AcTLTJJ71xQ0-1648358264-0-150")
     config_settings.set("其他设置", "arzon的phpsessid", "679fpv1fgl9vjoeuo36q8crre7")
     config_settings.set("其他设置", "扫描文件类型", "mp4、mkv、avi、wmv、iso、rmvb、flv、ts")
     config_settings.set("其他设置", "重命名中的标题长度（50~150）", "50")
@@ -84,10 +85,8 @@ try:
     config_settings.set("百度人体分析", "appid", "")
     config_settings.set("百度人体分析", "api key", "")
     config_settings.set("百度人体分析", "secret key", "")
-    # Todo看不懂了
-    config_settings.write(
-        open('../../../MyGit/StudyProjects/Python/TestPy/ListUnion/【点我设置整理规则】.ini', "w", encoding='utf-8-sig'))
-    print('    >“【点我设置整理规则】.ini”重写成功！')
+    config_settings.write(open(Const.INI, "w", encoding='utf-8-sig'))
+    print(f'    >“{Const.INI}”重写成功！')
     ####################################################################################################################
     config_actor = RawConfigParser()
     config_actor.add_section("缺失的演员头像")

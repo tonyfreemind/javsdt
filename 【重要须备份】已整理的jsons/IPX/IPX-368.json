@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipx368/ipx368pl.jpg",
     "CoverBus": "79sj_b.jpg",
     "CutType": 1,
-    "Javdb": "M6zeA",
-    "Javlibrary": "javli6lrr4",
-    "Javbus": "IPX-368",
     "Arzon": "1531719",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u6843\u4e43\u6728\u304b\u306a"
     ],
-    "Modify": "2021-09-05 18:49:29"
+    "Modify": "2021-09-05 18:49:29",
+    "JavDb": "M6zeA",
+    "JavLibrary": "javli6lrr4",
+    "JavBus": "IPX-368"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/504ibw445z/504ibw445zpl.jpg",
     "CoverBus": "",
     "CutType": 1,
-    "Javdb": "0RVGk",
-    "Javlibrary": "javlijr37y",
-    "Javbus": "",
     "Arzon": "1184446",
     "CompletionStatus": 4,
     "Version": 1,
@@ -31,5 +28,8 @@
     "Actors": [
         "\u611b\u9808\u5fc3\u4e9c"
     ],
-    "Modify": "2021-09-05 18:28:29"
+    "Modify": "2021-09-05 18:28:29",
+    "JavDb": "0RVGk",
+    "JavLibrary": "javlijr37y",
+    "JavBus": ""
 }

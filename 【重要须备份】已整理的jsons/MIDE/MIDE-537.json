@@ -16,9 +16,6 @@
     "CoverLibrary": "http://img18.pixhost.to/images/104/67490069_i363465.jpg",
     "CoverBus": "6i17_b.jpg",
     "CutType": 1,
-    "Javdb": "O254B",
-    "Javlibrary": "javli7dbri",
-    "Javbus": "MIDE-537",
     "Arzon": "",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u4f0a\u6771\u3061\u306a\u307f"
     ],
-    "Modify": "2021-09-25 17:30:13"
+    "Modify": "2021-09-25 17:30:13",
+    "JavDb": "O254B",
+    "JavLibrary": "javli7dbri",
+    "JavBus": "MIDE-537"
 }

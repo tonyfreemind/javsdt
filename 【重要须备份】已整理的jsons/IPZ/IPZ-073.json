@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipz073/ipz073pl.jpg",
     "CoverBus": "2bwg_b.jpg",
     "CutType": 1,
-    "Javdb": "pM9w",
-    "Javlibrary": "javlioyd6i",
-    "Javbus": "IPZ-073",
     "Arzon": "",
     "CompletionStatus": 6,
     "Version": 1,
@@ -31,5 +28,8 @@
     "Actors": [
         "Rio"
     ],
-    "Modify": "2021-09-05 18:53:58"
+    "Modify": "2021-09-05 18:53:58",
+    "JavDb": "pM9w",
+    "JavLibrary": "javlioyd6i",
+    "JavBus": "IPZ-073"
 }

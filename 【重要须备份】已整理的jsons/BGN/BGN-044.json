@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/118bgn044/118bgn044pl.jpg",
     "CoverBus": "63im_b.jpg",
     "CutType": 1,
-    "Javdb": "pRYm",
-    "Javlibrary": "javliktprm",
-    "Javbus": "BGN-044",
     "Arzon": "1404929",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u702c\u540d\u304d\u3089\u308a"
     ],
-    "Modify": "2021-09-05 15:37:19"
+    "Modify": "2021-09-05 15:37:19",
+    "JavDb": "pRYm",
+    "JavLibrary": "javliktprm",
+    "JavBus": "BGN-044"
 }

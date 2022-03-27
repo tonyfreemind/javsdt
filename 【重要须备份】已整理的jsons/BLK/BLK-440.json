@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/blk440/blk440pl.jpg",
     "CoverBus": "7hd6_b.jpg",
     "CutType": 1,
-    "Javdb": "XAX9G",
-    "Javlibrary": "javli6qcra",
-    "Javbus": "BLK-440",
     "Arzon": "1550475",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u4e03\u702c\u3072\u306a"
     ],
-    "Modify": "2021-10-30 10:02:38"
+    "Modify": "2021-10-30 10:02:38",
+    "JavDb": "XAX9G",
+    "JavLibrary": "javli6qcra",
+    "JavBus": "BLK-440"
 }

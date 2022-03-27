@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/snis352/snis352pl.jpg",
     "CoverBus": "4o5o_b.jpg",
     "CutType": 1,
-    "Javdb": "mO38n",
-    "Javlibrary": "javliijare",
-    "Javbus": "SNIS-352",
     "Arzon": "1251739",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u5929\u4f7f\u3082\u3048"
     ],
-    "Modify": "2021-09-25 18:30:25"
+    "Modify": "2021-09-25 18:30:25",
+    "JavDb": "mO38n",
+    "JavLibrary": "javliijare",
+    "JavBus": "SNIS-352"
 }

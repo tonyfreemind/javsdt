@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mide160/mide160pl.jpg",
     "CoverBus": "4gu0_b.jpg",
     "CutType": 1,
-    "Javdb": "E2rOd",
-    "Javlibrary": "javliianza",
-    "Javbus": "MIDE-160",
     "Arzon": "",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u6c96\u7530\u674f\u68a8"
     ],
-    "Modify": "2021-09-25 17:23:35"
+    "Modify": "2021-09-25 17:23:35",
+    "JavDb": "E2rOd",
+    "JavLibrary": "javliianza",
+    "JavBus": "MIDE-160"
 }

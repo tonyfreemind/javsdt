@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/meyd553/meyd553pl.jpg",
     "CoverBus": "7fnu_b.jpg",
     "CutType": 1,
-    "Javdb": "v0rNG",
-    "Javlibrary": "javli6tc74",
-    "Javbus": "MEYD-553",
     "Arzon": "1545407",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u54b2\u4e43\u5c0f\u6625"
     ],
-    "Modify": "2021-09-05 21:30:19"
+    "Modify": "2021-09-05 21:30:19",
+    "JavDb": "v0rNG",
+    "JavLibrary": "javli6tc74",
+    "JavBus": "MEYD-553"
 }

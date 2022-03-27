@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/118abp166/118abp166pl.jpg",
     "CoverBus": "4ccx_b.jpg",
     "CutType": 1,
-    "Javdb": "mObgY",
-    "Javlibrary": "javlijycsa",
-    "Javbus": "ABP-166",
     "Arzon": "1204204",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u3042\u3084\u307f\u65ec\u679c"
     ],
-    "Modify": "2021-09-05 13:48:20"
+    "Modify": "2021-09-05 13:48:20",
+    "JavDb": "mObgY",
+    "JavLibrary": "javlijycsa",
+    "JavBus": "ABP-166"
 }

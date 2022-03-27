@@ -69,13 +69,13 @@ class JavData(object):
         self.CutType = CutTypeEnum.left.value
         """18 裁剪方式"""
 
-        self.Javdb = ''
+        self.JavDb = ''
         """19 db编号"""
 
-        self.Javlibrary = ''
+        self.JavLibrary = ''
         """20 library编号"""
 
-        self.Javbus = ''
+        self.JavBus = ''
         """21 bus编号"""
 
         self.Arzon = ''
@@ -104,25 +104,25 @@ class JavData(object):
 
         整理流程的末尾，更新一下这部影片成功收集到哪几个网站的数据
         """
-        if self.Javdb:
-            if self.Javlibrary:
-                if self.Javbus:
+        if self.JavDb:
+            if self.JavLibrary:
+                if self.JavBus:
                     completion = CompletionStatusEnum.db_library_bus.value  # 三个网站全部收集整理
                 else:
                     completion = CompletionStatusEnum.db_library.value
             else:
-                if self.Javbus:
+                if self.JavBus:
                     completion = CompletionStatusEnum.db_bus.value
                 else:
                     completion = CompletionStatusEnum.only_db.value
         else:
-            if self.Javlibrary:
-                if self.Javbus:
+            if self.JavLibrary:
+                if self.JavBus:
                     completion = CompletionStatusEnum.library_bus.value
                 else:
                     completion = CompletionStatusEnum.only_library.value
             else:
-                if self.Javbus:
+                if self.JavBus:
                     completion = CompletionStatusEnum.only_bus.value
                 else:
                     completion = CompletionStatusEnum.unknown.value

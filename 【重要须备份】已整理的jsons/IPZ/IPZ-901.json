@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipz901/ipz901pl.jpg",
     "CoverBus": "5v04_b.jpg",
     "CutType": 1,
-    "Javdb": "O32z",
-    "Javlibrary": "javlikbh54",
-    "Javbus": "IPZ-901",
     "Arzon": "1378576",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u67da\u6708\u3072\u307e\u308f\u308a"
     ],
-    "Modify": "2021-09-05 19:00:19"
+    "Modify": "2021-09-05 19:00:19",
+    "JavDb": "O32z",
+    "JavLibrary": "javlikbh54",
+    "JavBus": "IPZ-901"
 }

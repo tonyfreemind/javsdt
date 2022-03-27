@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/cawd079/cawd079pl.jpg",
     "CoverBus": "7mrp_b.jpg",
     "CutType": 1,
-    "Javdb": "RX7D4",
-    "Javlibrary": "javli6zu5q",
-    "Javbus": "CAWD-079",
     "Arzon": "1564768",
     "CompletionStatus": 6,
     "Version": 1,
@@ -31,5 +28,8 @@
     "Actors": [
         "\u6df1\u7530\u3048\u3044\u307f"
     ],
-    "Modify": "2022-02-15 19:05:36"
+    "Modify": "2022-02-15 19:05:36",
+    "JavDb": "RX7D4",
+    "JavLibrary": "javli6zu5q",
+    "JavBus": "CAWD-079"
 }

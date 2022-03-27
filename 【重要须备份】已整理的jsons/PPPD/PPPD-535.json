@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/pppd535/pppd535pl.jpg",
     "CoverBus": "5tc5_b.jpg",
     "CutType": 1,
-    "Javdb": "mevZd",
-    "Javlibrary": "javlikagza",
-    "Javbus": "PPPD-535",
     "Arzon": "1374098",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u8c37\u3042\u3065\u3055"
     ],
-    "Modify": "2021-09-25 18:06:39"
+    "Modify": "2021-09-25 18:06:39",
+    "JavDb": "mevZd",
+    "JavLibrary": "javlikagza",
+    "JavBus": "PPPD-535"
 }

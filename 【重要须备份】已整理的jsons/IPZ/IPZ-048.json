@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipz048/ipz048pl.jpg",
     "CoverBus": "2btt_b.jpg",
     "CutType": 1,
-    "Javdb": "PQZna",
-    "Javlibrary": "javliozwru",
-    "Javbus": "IPZ-048",
     "Arzon": "1109556",
     "CompletionStatus": 6,
     "Version": 1,
@@ -30,5 +27,8 @@
     "Actors": [
         "\u7fbd\u7530\u3042\u3044"
     ],
-    "Modify": "2021-09-05 18:53:50"
+    "Modify": "2021-09-05 18:53:50",
+    "JavDb": "PQZna",
+    "JavLibrary": "javliozwru",
+    "JavBus": "IPZ-048"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ebod462/ebod462pl.jpg",
     "CoverBus": "4wdf_b.jpg",
     "CutType": 1,
-    "Javdb": "ewmb",
-    "Javlibrary": "javlii3e7u",
-    "Javbus": "EBOD-462",
     "Arzon": "1280460",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u7f8e\u7af9\u3059\u305a"
     ],
-    "Modify": "2021-09-05 15:56:51"
+    "Modify": "2021-09-05 15:56:51",
+    "JavDb": "ewmb",
+    "JavLibrary": "javlii3e7u",
+    "JavBus": "EBOD-462"
 }

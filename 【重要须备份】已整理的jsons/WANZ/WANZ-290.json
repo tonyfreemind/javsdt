@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/wanz290/wanz290pl.jpg",
     "CoverBus": "4mas_b.jpg",
     "CutType": 1,
-    "Javdb": "DR4WM",
-    "Javlibrary": "javliiivy4",
-    "Javbus": "WANZ-290",
     "Arzon": "1245668",
     "CompletionStatus": 6,
     "Version": 1,
@@ -31,5 +28,8 @@
     "Actors": [
         "\u3064\u307c\u307f"
     ],
-    "Modify": "2021-09-25 20:27:05"
+    "Modify": "2021-09-25 20:27:05",
+    "JavDb": "DR4WM",
+    "JavLibrary": "javliiivy4",
+    "JavBus": "WANZ-290"
 }

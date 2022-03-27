@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/118ols005/118ols005pl.jpg",
     "CoverBus": "13ty_b.jpg",
     "CutType": 1,
-    "Javdb": "Aq1Mm",
-    "Javlibrary": "javlimj3yi",
-    "Javbus": "OLS-005",
     "Arzon": "491435",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u65e9\u4e59\u5973\u30eb\u30a4"
     ],
-    "Modify": "2021-09-25 18:00:28"
+    "Modify": "2021-09-25 18:00:28",
+    "JavDb": "Aq1Mm",
+    "JavLibrary": "javlimj3yi",
+    "JavBus": "OLS-005"
 }

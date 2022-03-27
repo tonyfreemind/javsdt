@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/hnd698/hnd698pl.jpg",
     "CoverBus": "773p_b.jpg",
     "CutType": 1,
-    "Javdb": "AbYZP",
-    "Javlibrary": "javli6ajru",
-    "Javbus": "HND-698",
     "Arzon": "1524947",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,8 @@
     "Actors": [
         "\u677e\u672c\u83dc\u5948\u5b9f"
     ],
-    "Modify": "2021-09-05 17:46:20"
+    "Modify": "2021-09-05 17:46:20",
+    "JavDb": "AbYZP",
+    "JavLibrary": "javli6ajru",
+    "JavBus": "HND-698"
 }

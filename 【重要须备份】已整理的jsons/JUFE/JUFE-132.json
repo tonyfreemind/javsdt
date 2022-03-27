@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/jufe132/jufe132pl.jpg",
     "CoverBus": "7g8d_b.jpg",
     "CutType": 1,
-    "Javdb": "OWyp0",
-    "Javlibrary": "javli6tg5u",
-    "Javbus": "JUFE-132",
     "Arzon": "1548600",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u6676\u30a8\u30ea\u30fc"
     ],
-    "Modify": "2021-09-05 19:03:40"
+    "Modify": "2021-09-05 19:03:40",
+    "JavDb": "OWyp0",
+    "JavLibrary": "javli6tg5u",
+    "JavBus": "JUFE-132"
 }

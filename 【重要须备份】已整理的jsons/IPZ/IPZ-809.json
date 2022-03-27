@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipz809/ipz809pl.jpg",
     "CoverBus": "5lht_b.jpg",
     "CutType": 1,
-    "Javdb": "zKVAJ",
-    "Javlibrary": "javlilt65a",
-    "Javbus": "IPZ-809",
     "Arzon": "1347085",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u6843\u4e43\u6728\u304b\u306a"
     ],
-    "Modify": "2021-09-05 18:59:15"
+    "Modify": "2021-09-05 18:59:15",
+    "JavDb": "zKVAJ",
+    "JavLibrary": "javlilt65a",
+    "JavBus": "IPZ-809"
 }

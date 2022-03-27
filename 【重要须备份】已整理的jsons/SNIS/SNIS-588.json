@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/snis588/snis588pl.jpg",
     "CoverBus": "5a4m_b.jpg",
     "CutType": 1,
-    "Javdb": "yPEd",
-    "Javlibrary": "javlilbgt4",
-    "Javbus": "SNIS-588",
     "Arzon": "1313475",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u5922\u4e43\u3042\u3044\u304b"
     ],
-    "Modify": "2021-09-25 18:34:30"
+    "Modify": "2021-09-25 18:34:30",
+    "JavDb": "yPEd",
+    "JavLibrary": "javlilbgt4",
+    "JavBus": "SNIS-588"
 }

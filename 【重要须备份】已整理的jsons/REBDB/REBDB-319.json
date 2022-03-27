@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/n_1412rebdb319/n_1412rebdb319pl.jpg",
     "CoverBus": "6rla_b.jpg",
     "CutType": 1,
-    "Javdb": "nKw2w",
-    "Javlibrary": "javli7i5tq",
-    "Javbus": "REBDB-319",
     "Arzon": "",
     "CompletionStatus": 6,
     "Version": 1,
@@ -31,5 +28,8 @@
     "Actors": [
         "\u521d\u4e43\u3075\u307f\u304b"
     ],
-    "Modify": "2021-09-25 18:14:45"
+    "Modify": "2021-09-25 18:14:45",
+    "JavDb": "nKw2w",
+    "JavLibrary": "javli7i5tq",
+    "JavBus": "REBDB-319"
 }

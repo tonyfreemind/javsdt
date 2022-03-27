@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/dasd595/dasd595pl.jpg",
     "CoverBus": "7c3l_b.jpg",
     "CutType": 1,
-    "Javdb": "K2GEm",
-    "Javlibrary": "javli6if54",
-    "Javbus": "DASD-595",
     "Arzon": "1538455",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u6839\u5c3e\u3042\u304b\u308a"
     ],
-    "Modify": "2021-09-05 15:48:46"
+    "Modify": "2021-09-05 15:48:46",
+    "JavDb": "K2GEm",
+    "JavLibrary": "javli6if54",
+    "JavBus": "DASD-595"
 }

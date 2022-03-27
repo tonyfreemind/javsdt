@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/cead029/cead029pl.jpg",
     "CoverBus": "4nkj_b.jpg",
     "CutType": 1,
-    "Javdb": "9Bp6",
-    "Javlibrary": "javliijxta",
-    "Javbus": "CEAD-029",
     "Arzon": "1247661",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u5bae\u672c\u7d17\u592e\u91cc"
     ],
-    "Modify": "2022-02-15 19:11:07"
+    "Modify": "2022-02-15 19:11:07",
+    "JavDb": "9Bp6",
+    "JavLibrary": "javliijxta",
+    "JavBus": "CEAD-029"
 }

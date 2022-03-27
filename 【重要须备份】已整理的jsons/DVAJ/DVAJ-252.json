@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/dvaj252so/dvaj252sopl.jpg",
     "CoverBus": "63ex_b.jpg",
     "CutType": 1,
-    "Javdb": "5nDYD",
-    "Javlibrary": "javliktxq4",
-    "Javbus": "DVAJ-252",
     "Arzon": "1405631",
     "CompletionStatus": 6,
     "Version": 1,
@@ -31,5 +28,8 @@
     "Actors": [
         "\u3059\u307f\u308c\u7f8e\u9999"
     ],
-    "Modify": "2021-09-05 15:54:01"
+    "Modify": "2021-09-05 15:54:01",
+    "JavDb": "5nDYD",
+    "JavLibrary": "javliktxq4",
+    "JavBus": "DVAJ-252"
 }

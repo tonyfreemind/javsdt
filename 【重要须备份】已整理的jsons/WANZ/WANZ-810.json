@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/wanz810/wanz810pl.jpg",
     "CoverBus": "6skb_b.jpg",
     "CutType": 1,
-    "Javdb": "NQVKG",
-    "Javlibrary": "javli7lz74",
-    "Javbus": "WANZ-810",
     "Arzon": "1483416",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u65e5\u5411\u3046\u307f"
     ],
-    "Modify": "2021-09-25 20:30:39"
+    "Modify": "2021-09-25 20:30:39",
+    "JavDb": "NQVKG",
+    "JavLibrary": "javli7lz74",
+    "JavBus": "WANZ-810"
 }

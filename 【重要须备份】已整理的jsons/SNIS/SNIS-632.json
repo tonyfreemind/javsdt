@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/snis632/snis632pl.jpg",
     "CoverBus": "5dg4_b.jpg",
     "CutType": 1,
-    "Javdb": "MmyQX",
-    "Javlibrary": "javlili42e",
-    "Javbus": "SNIS-632",
     "Arzon": "1320547",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u6a4b\u672c\u3042\u308a\u306a"
     ],
-    "Modify": "2021-09-25 18:35:14"
+    "Modify": "2021-09-25 18:35:14",
+    "JavDb": "MmyQX",
+    "JavLibrary": "javlili42e",
+    "JavBus": "SNIS-632"
 }

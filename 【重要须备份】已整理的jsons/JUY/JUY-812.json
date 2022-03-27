@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/juy812/juy812pl.jpg",
     "CoverBus": "717d_b.jpg",
     "CutType": 1,
-    "Javdb": "R5wbz",
-    "Javlibrary": "javli7yh3q",
-    "Javbus": "JUY-812",
     "Arzon": "1507940",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,8 @@
     "Actors": [
         "\u677e\u672c\u83dc\u5948\u5b9f"
     ],
-    "Modify": "2021-09-05 19:09:54"
+    "Modify": "2021-09-05 19:09:54",
+    "JavDb": "R5wbz",
+    "JavLibrary": "javli7yh3q",
+    "JavBus": "JUY-812"
 }

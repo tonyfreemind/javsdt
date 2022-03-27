@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/118chn102/118chn102pl.jpg",
     "CoverBus": "5e69_b.jpg",
     "CutType": 1,
-    "Javdb": "neJVM",
-    "Javlibrary": "javlili7zi",
-    "Javbus": "CHN-102",
     "Arzon": "1325268",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u5742\u4e95\u91cc\u7f8e"
     ],
-    "Modify": "2021-09-05 15:40:57"
+    "Modify": "2021-09-05 15:40:57",
+    "JavDb": "neJVM",
+    "JavLibrary": "javlili7zi",
+    "JavBus": "CHN-102"
 }

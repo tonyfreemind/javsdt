@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/tikm007/tikm007pl.jpg",
     "CoverBus": "6ono_b.jpg",
     "CutType": 1,
-    "Javdb": "OX0KB",
-    "Javlibrary": "javli7llrq",
-    "Javbus": "TIKM-007",
     "Arzon": "1470206",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u4f50\u3005\u6ce2\u308a\u306e"
     ],
-    "Modify": "2021-09-25 20:01:31"
+    "Modify": "2021-09-25 20:01:31",
+    "JavDb": "OX0KB",
+    "JavLibrary": "javli7llrq",
+    "JavBus": "TIKM-007"
 }

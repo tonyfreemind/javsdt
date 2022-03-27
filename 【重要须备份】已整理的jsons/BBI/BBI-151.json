@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/bbi151/bbi151pl.jpg",
     "CoverBus": "41to_b.jpg",
     "CutType": 1,
-    "Javdb": "XeJxM",
-    "Javlibrary": "javlijjc7e",
-    "Javbus": "BBI-151",
     "Arzon": "",
     "CompletionStatus": 6,
     "Version": 1,
@@ -31,5 +28,8 @@
     "Actors": [
         "\u685c\u6728\u51db"
     ],
-    "Modify": "2021-09-05 15:33:39"
+    "Modify": "2021-09-05 15:33:39",
+    "JavDb": "XeJxM",
+    "JavLibrary": "javlijjc7e",
+    "JavBus": "BBI-151"
 }

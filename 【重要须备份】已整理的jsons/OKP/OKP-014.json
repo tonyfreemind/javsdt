@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1okp014/1okp014pl.jpg",
     "CoverBus": "6n23_b.jpg",
     "CutType": 1,
-    "Javdb": "gykwy",
-    "Javlibrary": "javli7b3qy",
-    "Javbus": "OKP-014",
     "Arzon": "1462776",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u767d\u54b2\u308a\u306e"
     ],
-    "Modify": "2021-09-25 17:59:51"
+    "Modify": "2021-09-25 17:59:51",
+    "JavDb": "gykwy",
+    "JavLibrary": "javli7b3qy",
+    "JavBus": "OKP-014"
 }

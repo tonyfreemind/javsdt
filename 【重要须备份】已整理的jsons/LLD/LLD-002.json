@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/118lld002/118lld002pl.jpg",
     "CoverBus": "3asy_b.jpg",
     "CutType": 1,
-    "Javdb": "me5bd",
-    "Javlibrary": "javliart74",
-    "Javbus": "LLD-002",
     "Arzon": "697405",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u5c0f\u5ddd\u97f3\u5b50"
     ],
-    "Modify": "2021-09-05 21:22:03"
+    "Modify": "2021-09-05 21:22:03",
+    "JavDb": "me5bd",
+    "JavLibrary": "javliart74",
+    "JavBus": "LLD-002"
 }

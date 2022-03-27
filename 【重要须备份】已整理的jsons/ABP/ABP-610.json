@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/118abp610/118abp610pl.jpg",
     "CoverBus": "632z_b.jpg",
     "CutType": 1,
-    "Javdb": "MmnZk",
-    "Javlibrary": "javliktn5y",
-    "Javbus": "ABP-610",
     "Arzon": "1404544",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
         "\u51f0\u304b\u306a\u3081",
         "\u85e4\u6ce2\u3055\u3068\u308a"
     ],
-    "Modify": "2021-09-05 15:04:50"
+    "Modify": "2021-09-05 15:04:50",
+    "JavDb": "MmnZk",
+    "JavLibrary": "javliktn5y",
+    "JavBus": "ABP-610"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/blk409/blk409pl.jpg",
     "CoverBus": "76ou_b.jpg",
     "CutType": 1,
-    "Javdb": "Bb2RM",
-    "Javlibrary": "javli6akrq",
-    "Javbus": "BLK-409",
     "Arzon": "1522906",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u6c38\u702c\u3086\u3044"
     ],
-    "Modify": "2021-09-05 15:38:25"
+    "Modify": "2021-09-05 15:38:25",
+    "JavDb": "Bb2RM",
+    "JavLibrary": "javli6akrq",
+    "JavBus": "BLK-409"
 }

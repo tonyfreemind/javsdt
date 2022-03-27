@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/pppd280/pppd280pl.jpg",
     "CoverBus": "46aa_b.jpg",
     "CutType": 1,
-    "Javdb": "B83n1",
-    "Javlibrary": "javlijqd54",
-    "Javbus": "PPPD-280",
     "Arzon": "1183623",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u6d5c\u5d0e\u771f\u7dd2"
     ],
-    "Modify": "2021-09-25 18:05:00"
+    "Modify": "2021-09-25 18:05:00",
+    "JavDb": "B83n1",
+    "JavLibrary": "javlijqd54",
+    "JavBus": "PPPD-280"
 }

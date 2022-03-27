@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ssni678/ssni678pl.jpg",
     "CoverBus": "7hc0_b.jpg",
     "CutType": 1,
-    "Javdb": "V05Q3",
-    "Javlibrary": "javli6qd5y",
-    "Javbus": "SSNI-678",
     "Arzon": "1550510",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u5409\u9ad8\u5be7\u3005"
     ],
-    "Modify": "2021-09-25 19:09:36"
+    "Modify": "2021-09-25 19:09:36",
+    "JavDb": "V05Q3",
+    "JavLibrary": "javli6qd5y",
+    "JavBus": "SSNI-678"
 }

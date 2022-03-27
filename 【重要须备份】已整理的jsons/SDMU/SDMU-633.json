@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1sdmu633/1sdmu633pl.jpg",
     "CoverBus": "64cx_b.jpg",
     "CutType": 1,
-    "Javdb": "04Y3",
-    "Javlibrary": "javliktgs4",
-    "Javbus": "SDMU-633",
     "Arzon": "",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
         "\u9752\u5c71\u306f\u306a",
         "\u677e\u4e0b\u7f8e\u7e54"
     ],
-    "Modify": "2021-09-25 18:21:39"
+    "Modify": "2021-09-25 18:21:39",
+    "JavDb": "04Y3",
+    "JavLibrary": "javliktgs4",
+    "JavBus": "SDMU-633"
 }

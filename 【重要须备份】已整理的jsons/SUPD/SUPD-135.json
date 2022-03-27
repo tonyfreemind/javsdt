@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/supd135/supd135pl.jpg",
     "CoverBus": "5rud_b.jpg",
     "CutType": 1,
-    "Javdb": "76bdZ",
-    "Javlibrary": "javlikda4e",
-    "Javbus": "SUPD-135",
     "Arzon": "1368437",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u6843\u4e43\u6728\u304b\u306a"
     ],
-    "Modify": "2021-09-25 19:55:08"
+    "Modify": "2021-09-25 19:55:08",
+    "JavDb": "76bdZ",
+    "JavLibrary": "javlikda4e",
+    "JavBus": "SUPD-135"
 }

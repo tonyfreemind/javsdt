@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/cawd086/cawd086pl.jpg",
     "CoverBus": "7rtn_b.jpg",
     "CutType": 1,
-    "Javdb": "AXKVw",
-    "Javlibrary": "javme2zgsq",
-    "Javbus": "CAWD-086",
     "Arzon": "1569222",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
         "\u677e\u672c\u3044\u3061\u304b",
         "\u767d\u77f3\u304b\u3093\u306a"
     ],
-    "Modify": "2022-02-15 19:06:37"
+    "Modify": "2022-02-15 19:06:37",
+    "JavDb": "AXKVw",
+    "JavLibrary": "javme2zgsq",
+    "JavBus": "CAWD-086"
 }

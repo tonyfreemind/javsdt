@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/apak088so/apak088sopl.jpg",
     "CoverBus": "4hsk_b.jpg",
     "CutType": 1,
-    "Javdb": "0eaW7",
-    "Javlibrary": "javliia44m",
-    "Javbus": "APAK-088",
     "Arzon": "",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u94c3\u539f\u7231\u871c\u8389"
     ],
-    "Modify": "2021-09-05 15:26:19"
+    "Modify": "2021-09-05 15:26:19",
+    "JavDb": "0eaW7",
+    "JavLibrary": "javliia44m",
+    "JavBus": "APAK-088"
 }

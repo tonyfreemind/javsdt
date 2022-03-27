@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/atid352/atid352pl.jpg",
     "CoverBus": "74fx_b.jpg",
     "CutType": 1,
-    "Javdb": "56DdY",
-    "Javlibrary": "javli6dxti",
-    "Javbus": "ATID-352",
     "Arzon": "1517077",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u7a32\u5ddd\u306a\u3064\u3081"
     ],
-    "Modify": "2021-11-07 21:36:58"
+    "Modify": "2021-11-07 21:36:58",
+    "JavDb": "56DdY",
+    "JavLibrary": "javli6dxti",
+    "JavBus": "ATID-352"
 }

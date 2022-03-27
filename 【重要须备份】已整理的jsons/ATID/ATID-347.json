@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/atid347/atid347pl.jpg",
     "CoverBus": "72r9_b.jpg",
     "CutType": 1,
-    "Javdb": "Abkzy",
-    "Javlibrary": "javli7zf4q",
-    "Javbus": "ATID-347",
     "Arzon": "1512399",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u516b\u4e43\u3064\u3070\u3055"
     ],
-    "Modify": "2021-11-07 21:36:43"
+    "Modify": "2021-11-07 21:36:43",
+    "JavDb": "Abkzy",
+    "JavLibrary": "javli7zf4q",
+    "JavBus": "ATID-347"
 }

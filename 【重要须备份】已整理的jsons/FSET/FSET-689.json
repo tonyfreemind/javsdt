@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1fset689/1fset689pl.jpg",
     "CoverBus": "5zgp_b.jpg",
     "CutType": 1,
-    "Javdb": "vgyG",
-    "Javlibrary": "javliklo64",
-    "Javbus": "FSET-689",
     "Arzon": "1389234",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
         "\u4e8c\u5bae\u548c\u9999",
         "\u5fc3\u82b1\u3086\u3089"
     ],
-    "Modify": "2021-09-21 08:02:11"
+    "Modify": "2021-09-21 08:02:11",
+    "JavDb": "vgyG",
+    "JavLibrary": "javliklo64",
+    "JavBus": "FSET-689"
 }

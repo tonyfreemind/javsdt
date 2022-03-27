@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/cjod226/cjod226pl.jpg",
     "CoverBus": "7hpq_b.jpg",
     "CutType": 1,
-    "Javdb": "AQ3ge",
-    "Javlibrary": "javli6qb34",
-    "Javbus": "CJOD-226",
     "Arzon": "1552092",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,8 @@
         "\u771f\u6728\u4eca\u65e5\u5b50",
         "\u4ed3\u591a\u771f\u592e"
     ],
-    "Modify": "2021-09-21 08:01:34"
+    "Modify": "2021-09-21 08:01:34",
+    "JavDb": "AQ3ge",
+    "JavLibrary": "javli6qb34",
+    "JavBus": "CJOD-226"
 }

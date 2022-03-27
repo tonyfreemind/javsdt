@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/tyod349/tyod349pl.jpg",
     "CoverBus": "5xtp_b.jpg",
     "CutType": 1,
-    "Javdb": "Mb74P",
-    "Javlibrary": "javliklhrm",
-    "Javbus": "TYOD-349",
     "Arzon": "1389129",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,8 @@
     "Actors": [
         "\u8de1\u7f8e\u3057\u3085\u308a"
     ],
-    "Modify": "2021-09-25 20:02:31"
+    "Modify": "2021-09-25 20:02:31",
+    "JavDb": "Mb74P",
+    "JavLibrary": "javliklhrm",
+    "JavBus": "TYOD-349"
 }

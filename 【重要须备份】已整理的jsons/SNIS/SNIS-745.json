@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/snis745/snis745pl.jpg",
     "CoverBus": "5o9g_b.jpg",
     "CutType": 1,
-    "Javdb": "pk5W5",
-    "Javlibrary": "javlily2zy",
-    "Javbus": "SNIS-745",
     "Arzon": "1356738",
     "CompletionStatus": 6,
     "Version": 1,
@@ -39,5 +36,8 @@
     "Actors": [
         "\u5c0f\u91ce\u5915\u5b50"
     ],
-    "Modify": "2021-09-25 18:36:17"
+    "Modify": "2021-09-25 18:36:17",
+    "JavDb": "pk5W5",
+    "JavLibrary": "javlily2zy",
+    "JavBus": "SNIS-745"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/meyd335/meyd335pl.jpg",
     "CoverBus": "6dkj_b.jpg",
     "CutType": 1,
-    "Javdb": "12VA",
-    "Javlibrary": "javli4zqt4",
-    "Javbus": "MEYD-335",
     "Arzon": "1436555",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u6cb3\u5357\u5b9f\u91cc"
     ],
-    "Modify": "2021-09-05 21:27:57"
+    "Modify": "2021-09-05 21:27:57",
+    "JavDb": "12VA",
+    "JavLibrary": "javli4zqt4",
+    "JavBus": "MEYD-335"
 }

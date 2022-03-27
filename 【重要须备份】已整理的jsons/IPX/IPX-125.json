@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipx125/ipx125pl.jpg",
     "CoverBus": "6hdo_b.jpg",
     "CutType": 1,
-    "Javdb": "Y1wz",
-    "Javlibrary": "javli43uq4",
-    "Javbus": "IPX-125",
     "Arzon": "1449682",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
         "\u67da\u6708\u3072\u307e\u308f\u308a",
         "\u6709\u539f\u3042\u3086\u307f"
     ],
-    "Modify": "2021-09-05 18:40:12"
+    "Modify": "2021-09-05 18:40:12",
+    "JavDb": "Y1wz",
+    "JavLibrary": "javli43uq4",
+    "JavBus": "IPX-125"
 }

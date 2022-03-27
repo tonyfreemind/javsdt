@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1sdde491/1sdde491pl.jpg",
     "CoverBus": "61pg_b.jpg",
     "CutType": 1,
-    "Javdb": "R0Ag",
-    "Javlibrary": "javlikjvy4",
-    "Javbus": "SDDE-491",
     "Arzon": "1395998",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u672c\u7530\u5cac"
     ],
-    "Modify": "2021-09-25 18:19:08"
+    "Modify": "2021-09-25 18:19:08",
+    "JavDb": "R0Ag",
+    "JavLibrary": "javlikjvy4",
+    "JavBus": "SDDE-491"
 }

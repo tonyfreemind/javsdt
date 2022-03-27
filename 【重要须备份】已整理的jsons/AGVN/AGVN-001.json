@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/n_707agvn001/n_707agvn001pl.jpg",
     "CoverBus": "73km_b.jpg",
     "CutType": 1,
-    "Javdb": "O1dVB",
-    "Javlibrary": "javli7yo6e",
-    "Javbus": "AGVN-001",
     "Arzon": "",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u30b8\u30a7\u30de"
     ],
-    "Modify": "2021-11-07 16:58:56"
+    "Modify": "2021-11-07 16:58:56",
+    "JavDb": "O1dVB",
+    "JavLibrary": "javli7yo6e",
+    "JavBus": "AGVN-001"
 }

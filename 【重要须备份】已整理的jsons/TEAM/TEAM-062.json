@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/team062/team062pl.jpg",
     "CoverBus": "4oe0_b.jpg",
     "CutType": 1,
-    "Javdb": "25mZ",
-    "Javlibrary": "javliijhr4",
-    "Javbus": "TEAM-062",
     "Arzon": "1252334",
     "CompletionStatus": 6,
     "Version": 1,
@@ -31,5 +28,8 @@
     "Actors": [
         "\u8fbb\u672c\u674f"
     ],
-    "Modify": "2021-09-25 20:00:07"
+    "Modify": "2021-09-25 20:00:07",
+    "JavDb": "25mZ",
+    "JavLibrary": "javliijhr4",
+    "JavBus": "TEAM-062"
 }

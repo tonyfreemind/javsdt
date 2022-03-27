@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/hunta525/hunta525pl.jpg",
     "CoverBus": "6umd_b.jpg",
     "CutType": 1,
-    "Javdb": "B4b9d",
-    "Javlibrary": "javli7qnt4",
-    "Javbus": "HUNTA-525",
     "Arzon": "1489178",
     "CompletionStatus": 6,
     "Version": 1,
@@ -37,5 +34,8 @@
         "\u7b39\u672c\u307f\u307b",
         "\u5929\u99ac\u3086\u3044"
     ],
-    "Modify": "2021-09-05 18:27:27"
+    "Modify": "2021-09-05 18:27:27",
+    "JavDb": "B4b9d",
+    "JavLibrary": "javli7qnt4",
+    "JavBus": "HUNTA-525"
 }

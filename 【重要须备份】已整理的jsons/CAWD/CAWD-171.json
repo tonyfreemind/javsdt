@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/cawd171/cawd171pl.jpg",
     "CoverBus": "825z_b.jpg",
     "CutType": 1,
-    "Javdb": "RA21R",
-    "Javlibrary": "javmezyyru",
-    "Javbus": "CAWD-171",
     "Arzon": "1604738",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u8475\u4e95\u512a\u8475"
     ],
-    "Modify": "2022-02-15 19:10:22"
+    "Modify": "2022-02-15 19:10:22",
+    "JavDb": "RA21R",
+    "JavLibrary": "javmezyyru",
+    "JavBus": "CAWD-171"
 }

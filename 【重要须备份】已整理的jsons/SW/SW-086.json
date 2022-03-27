@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1sw086/1sw086pl.jpg",
     "CoverBus": "4eo3_b.jpg",
     "CutType": 1,
-    "Javdb": "g7pQ",
-    "Javlibrary": "javlipzp2y",
-    "Javbus": "https://www.buscdn.me/SW-086_2014-08-01",
     "Arzon": "955262",
     "CompletionStatus": 6,
     "Version": 1,
@@ -37,5 +34,8 @@
         "\u661f\u5ddd\u306a\u3064",
         "\u4e2d\u91ce\u4e9a\u68a8\u6c99"
     ],
-    "Modify": "2021-09-25 19:55:33"
+    "Modify": "2021-09-25 19:55:33",
+    "JavDb": "g7pQ",
+    "JavLibrary": "javlipzp2y",
+    "JavBus": "https://www.buscdn.me/SW-086_2014-08-01"
 }

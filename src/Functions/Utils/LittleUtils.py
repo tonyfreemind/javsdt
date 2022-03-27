@@ -1,3 +1,4 @@
+from configparser import RawConfigParser
 from enum import IntEnum
 from pyclbr import Class
 
@@ -29,3 +30,12 @@ def cut_str(src: str, len_limit: int):
         新字符串
     """
     return src[:len_limit] if len(src) > len_limit else src
+
+
+def update_ini_file(ini_file: str, section: str, option: str, value: str):
+    """在ini中写入新的内容"""
+    conf = RawConfigParser()
+    conf.read(ini_file, encoding='utf-8-sig')
+    conf.set(section, option, value)
+    conf.write(open(ini_file, "w", encoding='utf-8-sig'))
+    print(f'    >保存新的{option}至{ini_file}成功！')

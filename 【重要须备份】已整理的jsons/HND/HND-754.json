@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/hnd754/hnd754pl.jpg",
     "CoverBus": "7e12_b.jpg",
     "CutType": 1,
-    "Javdb": "5K3d9",
-    "Javlibrary": "javli6ji24",
-    "Javbus": "HND-754",
     "Arzon": "1543248",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u5c0f\u9ce5\u904a\u3082\u3082\u3048"
     ],
-    "Modify": "2021-09-05 17:47:18"
+    "Modify": "2021-09-05 17:47:18",
+    "JavDb": "5K3d9",
+    "JavLibrary": "javli6ji24",
+    "JavBus": "HND-754"
 }

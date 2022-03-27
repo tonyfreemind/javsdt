@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipz679/ipz679pl.jpg",
     "CoverBus": "59bv_b.jpg",
     "CutType": 1,
-    "Javdb": "Rxvz",
-    "Javlibrary": "javlilam2q",
-    "Javbus": "IPZ-679",
     "Arzon": "1307475",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u5e0c\u5cf6\u3042\u3044\u308a"
     ],
-    "Modify": "2021-09-05 18:58:25"
+    "Modify": "2021-09-05 18:58:25",
+    "JavDb": "Rxvz",
+    "JavLibrary": "javlilam2q",
+    "JavBus": "IPZ-679"
 }

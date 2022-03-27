@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/42vandr043/42vandr043pl.jpg",
     "CoverBus": "3rao_b.jpg",
     "CutType": 1,
-    "Javdb": "68ZE",
-    "Javlibrary": "javliozm54",
-    "Javbus": "VANDR-043",
     "Arzon": "1126986",
     "CompletionStatus": 6,
     "Version": 1,
@@ -38,5 +35,8 @@
         "\u661f\u6708\u8389\u592e",
         "\u6850\u9ebb\u3042\u304b\u308a"
     ],
-    "Modify": "2021-09-25 20:19:37"
+    "Modify": "2021-09-25 20:19:37",
+    "JavDb": "68ZE",
+    "JavLibrary": "javliozm54",
+    "JavBus": "VANDR-043"
 }

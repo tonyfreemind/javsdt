@@ -16,9 +16,6 @@
     "CoverLibrary": "",
     "CoverBus": "3ths_b.jpg",
     "CutType": 1,
-    "Javdb": "2k29w",
-    "Javlibrary": "",
-    "Javbus": "GR-072",
     "Arzon": "275564",
     "CompletionStatus": 5,
     "Version": 1,
@@ -29,5 +26,8 @@
     "Actors": [
         "\u85ab\u685c\u5b50"
     ],
-    "Modify": "2021-10-30 12:27:38"
+    "Modify": "2021-10-30 12:27:38",
+    "JavDb": "2k29w",
+    "JavLibrary": "",
+    "JavBus": "GR-072"
 }

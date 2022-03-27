@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1star893/1star893pl.jpg",
     "CoverBus": "6ihu_b.jpg",
     "CutType": 1,
-    "Javdb": "EbEnx",
-    "Javlibrary": "javli4zery",
-    "Javbus": "STAR-893",
     "Arzon": "1446615",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u767d\u77f3\u8309\u8389\u5948"
     ],
-    "Modify": "2021-09-25 19:29:19"
+    "Modify": "2021-09-25 19:29:19",
+    "JavDb": "EbEnx",
+    "JavLibrary": "javli4zery",
+    "JavBus": "STAR-893"
 }

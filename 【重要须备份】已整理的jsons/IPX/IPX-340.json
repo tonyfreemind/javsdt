@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipx340/ipx340pl.jpg",
     "CoverBus": "76hz_b.jpg",
     "CutType": 1,
-    "Javdb": "v4GXO",
-    "Javlibrary": "javli6acra",
-    "Javbus": "IPX-340",
     "Arzon": "1522554",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u5e0c\u5d0e\u30b8\u30a7\u30b7\u30ab"
     ],
-    "Modify": "2021-09-05 18:48:09"
+    "Modify": "2021-09-05 18:48:09",
+    "JavDb": "v4GXO",
+    "JavLibrary": "javli6acra",
+    "JavBus": "IPX-340"
 }

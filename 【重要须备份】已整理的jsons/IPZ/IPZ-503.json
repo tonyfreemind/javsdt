@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipz503/ipz503pl.jpg",
     "CoverBus": "4l0p_b.jpg",
     "CutType": 1,
-    "Javdb": "kKe5J",
-    "Javlibrary": "javliilr3q",
-    "Javbus": "IPZ-503",
     "Arzon": "1239767",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u5e0c\u5d0e\u30b8\u30a7\u30b7\u30ab"
     ],
-    "Modify": "2021-09-05 18:56:10"
+    "Modify": "2021-09-05 18:56:10",
+    "JavDb": "kKe5J",
+    "JavLibrary": "javliilr3q",
+    "JavBus": "IPZ-503"
 }

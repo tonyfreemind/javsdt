@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/pred184/pred184pl.jpg",
     "CoverBus": "79l1_b.jpg",
     "CutType": 1,
-    "Javdb": "a29Br",
-    "Javlibrary": "javli6lb6u",
-    "Javbus": "PRED-184",
     "Arzon": "1531134",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u67a2\u6728\u3042\u304a\u3044"
     ],
-    "Modify": "2021-09-25 18:10:43"
+    "Modify": "2021-09-25 18:10:43",
+    "JavDb": "a29Br",
+    "JavLibrary": "javli6lb6u",
+    "JavBus": "PRED-184"
 }

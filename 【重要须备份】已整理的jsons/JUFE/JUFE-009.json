@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/jufe009/jufe009pl.jpg",
     "CoverBus": "6vwe_b.jpg",
     "CutType": 1,
-    "Javdb": "2VDOm",
-    "Javlibrary": "javli7qk7u",
-    "Javbus": "JUFE-009",
     "Arzon": "1493233",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u7be0\u7530\u3086\u3046"
     ],
-    "Modify": "2021-09-05 19:02:18"
+    "Modify": "2021-09-05 19:02:18",
+    "JavDb": "2VDOm",
+    "JavLibrary": "javli7qk7u",
+    "JavBus": "JUFE-009"
 }

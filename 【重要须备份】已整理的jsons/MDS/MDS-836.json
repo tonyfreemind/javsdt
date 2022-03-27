@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/84mds836/84mds836pl.jpg",
     "CoverBus": "5lme_b.jpg",
     "CutType": 1,
-    "Javdb": "npD9",
-    "Javlibrary": "javlilqmyy",
-    "Javbus": "MDS-836",
     "Arzon": "1336889",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u571f\u5c4b\u3042\u3055\u307f"
     ],
-    "Modify": "2021-09-05 21:23:31"
+    "Modify": "2021-09-05 21:23:31",
+    "JavDb": "npD9",
+    "JavLibrary": "javlilqmyy",
+    "JavBus": "MDS-836"
 }

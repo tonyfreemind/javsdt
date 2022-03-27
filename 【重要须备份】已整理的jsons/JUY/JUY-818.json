@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/juy818/juy818pl.jpg",
     "CoverBus": "715j_b.jpg",
     "CutType": 1,
-    "Javdb": "VB5A3",
-    "Javlibrary": "javli7yh2y",
-    "Javbus": "JUY-818",
     "Arzon": "1507946",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u98db\u9ce5\u308a\u3093"
     ],
-    "Modify": "2021-09-05 19:10:10"
+    "Modify": "2021-09-05 19:10:10",
+    "JavDb": "VB5A3",
+    "JavLibrary": "javli7yh2y",
+    "JavBus": "JUY-818"
 }

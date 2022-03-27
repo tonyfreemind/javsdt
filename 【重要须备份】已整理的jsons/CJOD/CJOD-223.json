@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/cjod223/cjod223pl.jpg",
     "CoverBus": "7hpt_b.jpg",
     "CutType": 1,
-    "Javdb": "MnRPk",
-    "Javlibrary": "javli6qb3m",
-    "Javbus": "CJOD-223",
     "Arzon": "1552095",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
         "\u6676\u30a8\u30ea\u30fc",
         "\u661f\u8d8a\u304b\u306a\u3081"
     ],
-    "Modify": "2021-09-21 08:41:50"
+    "Modify": "2021-09-21 08:41:50",
+    "JavDb": "MnRPk",
+    "JavLibrary": "javli6qb3m",
+    "JavBus": "CJOD-223"
 }

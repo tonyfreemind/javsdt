@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ssni229/ssni229pl.jpg",
     "CoverBus": "6lig_b.jpg",
     "CutType": 1,
-    "Javdb": "NQ0NZ",
-    "Javlibrary": "javli7bv6q",
-    "Javbus": "SSNI-229",
     "Arzon": "1460665",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u4e09\u4e0a\u60a0\u4e9c"
     ],
-    "Modify": "2021-09-25 18:47:18"
+    "Modify": "2021-09-25 18:47:18",
+    "JavDb": "NQ0NZ",
+    "JavLibrary": "javli7bv6q",
+    "JavBus": "SSNI-229"
 }

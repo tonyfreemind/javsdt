@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/iptd598/iptd598pl.jpg",
     "CoverBus": "i78_b.jpg",
     "CutType": 1,
-    "Javdb": "meDzd",
-    "Javlibrary": "javliptt4e",
-    "Javbus": "IPTD-598",
     "Arzon": "",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u677e\u5c9b\u67ab"
     ],
-    "Modify": "2021-09-05 18:36:01"
+    "Modify": "2021-09-05 18:36:01",
+    "JavDb": "meDzd",
+    "JavLibrary": "javliptt4e",
+    "JavBus": "IPTD-598"
 }

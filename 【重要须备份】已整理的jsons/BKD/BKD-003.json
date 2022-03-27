@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/h_279bkd003/h_279bkd003pl.jpg",
     "CoverBus": "h3r_b.jpg",
     "CutType": 1,
-    "Javdb": "kAy4",
-    "Javlibrary": "javlidqvyq",
-    "Javbus": "https://www.buscdn.me/BKD-003_2009-09-05",
     "Arzon": "1545926",
     "CompletionStatus": 6,
     "Version": 1,
@@ -37,5 +34,8 @@
         "\u9ad8\u6728\u8056\u826f",
         "\u6a2a\u897f\u306a\u306a"
     ],
-    "Modify": "2021-09-05 15:37:53"
+    "Modify": "2021-09-05 15:37:53",
+    "JavDb": "kAy4",
+    "JavLibrary": "javlidqvyq",
+    "JavBus": "https://www.buscdn.me/BKD-003_2009-09-05"
 }

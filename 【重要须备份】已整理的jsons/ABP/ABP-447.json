@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/118abp447/118abp447pl.jpg",
     "CoverBus": "5d96_b.jpg",
     "CutType": 1,
-    "Javdb": "P94Nv",
-    "Javlibrary": "javlilissi",
-    "Javbus": "ABP-447",
     "Arzon": "1317880",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u7d50\u83dc\u3048\u307e"
     ],
-    "Modify": "2021-09-05 13:56:48"
+    "Modify": "2021-09-05 13:56:48",
+    "JavDb": "P94Nv",
+    "JavLibrary": "javlilissi",
+    "JavBus": "ABP-447"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mvsd412/mvsd412pl.jpg",
     "CoverBus": "7fle_b.jpg",
     "CutType": 1,
-    "Javdb": "xge5E",
-    "Javlibrary": "javli6qqym",
-    "Javbus": "MVSD-412",
     "Arzon": "1545799",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u6839\u5c3e\u3042\u304b\u308a"
     ],
-    "Modify": "2021-09-25 17:52:31"
+    "Modify": "2021-09-25 17:52:31",
+    "JavDb": "xge5E",
+    "JavLibrary": "javli6qqym",
+    "JavBus": "MVSD-412"
 }

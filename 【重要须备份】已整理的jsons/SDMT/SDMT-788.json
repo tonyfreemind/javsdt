@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1sdmt788/1sdmt788pl.jpg",
     "CoverBus": "1n4u_b.jpg",
     "CutType": 1,
-    "Javdb": "pkpvZ",
-    "Javlibrary": "javlioik7e",
-    "Javbus": "SDMT-788",
     "Arzon": "1072389",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u7be0\u3081\u3050\u307f"
     ],
-    "Modify": "2021-09-25 18:21:31"
+    "Modify": "2021-09-25 18:21:31",
+    "JavDb": "pkpvZ",
+    "JavLibrary": "javlioik7e",
+    "JavBus": "SDMT-788"
 }

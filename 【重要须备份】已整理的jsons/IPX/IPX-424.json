@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipx424/ipx424pl.jpg",
     "CoverBus": "7h1b_b.jpg",
     "CutType": 1,
-    "Javdb": "4AzXE",
-    "Javlibrary": "javli6qnzq",
-    "Javbus": "IPX-424",
     "Arzon": "1549932",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u590f\u5e0c\u307e\u308d\u3093"
     ],
-    "Modify": "2021-09-05 18:52:29"
+    "Modify": "2021-09-05 18:52:29",
+    "JavDb": "4AzXE",
+    "JavLibrary": "javli6qnzq",
+    "JavBus": "IPX-424"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/h_839shic007/h_839shic007pl.jpg",
     "CoverBus": "5gaj_b.jpg",
     "CutType": 1,
-    "Javdb": "96BxE",
-    "Javlibrary": "javliizvsu",
-    "Javbus": "SHIC-007",
     "Arzon": "",
     "CompletionStatus": 6,
     "Version": 1,
@@ -31,5 +28,8 @@
     "Actors": [
         "\u6c34\u5ddd\u3048\u307f\u308b"
     ],
-    "Modify": "2021-09-25 18:24:06"
+    "Modify": "2021-09-25 18:24:06",
+    "JavDb": "96BxE",
+    "JavLibrary": "javliizvsu",
+    "JavBus": "SHIC-007"
 }

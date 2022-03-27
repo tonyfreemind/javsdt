@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/snis228/snis228pl.jpg",
     "CoverBus": "4euk_b.jpg",
     "CutType": 1,
-    "Javdb": "EbbYx",
-    "Javlibrary": "javliidn7m",
-    "Javbus": "SNIS-228",
     "Arzon": "1218712",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u85cd\u6ca2\u6f64"
     ],
-    "Modify": "2021-09-25 18:28:58"
+    "Modify": "2021-09-25 18:28:58",
+    "JavDb": "EbbYx",
+    "JavLibrary": "javliidn7m",
+    "JavBus": "SNIS-228"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/57mcsr148/57mcsr148pl.jpg",
     "CoverBus": "4qbu_b.jpg",
     "CutType": 1,
-    "Javdb": "ZNB7",
-    "Javlibrary": "javliij63u",
-    "Javbus": "MCSR-148",
     "Arzon": "1247791",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
         "\u5bae\u91ce\u3086\u304b\u306a",
         "\u6069\u7530\u307b\u306e\u304b"
     ],
-    "Modify": "2021-10-30 12:25:17"
+    "Modify": "2021-10-30 12:25:17",
+    "JavDb": "ZNB7",
+    "JavLibrary": "javliij63u",
+    "JavBus": "MCSR-148"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/cjod204/cjod204pl.jpg",
     "CoverBus": "78ux_b.jpg",
     "CutType": 1,
-    "Javdb": "EvaXJ",
-    "Javlibrary": "javli6du2e",
-    "Javbus": "CJOD-204",
     "Arzon": "1529702",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,8 @@
     "Actors": [
         "\u67a2\u6728\u3042\u304a\u3044"
     ],
-    "Modify": "2021-09-05 15:42:57"
+    "Modify": "2021-09-05 15:42:57",
+    "JavDb": "EvaXJ",
+    "JavLibrary": "javli6du2e",
+    "JavBus": "CJOD-204"
 }

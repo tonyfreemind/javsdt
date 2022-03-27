@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/118docp198/118docp198pl.jpg",
     "CoverBus": "7hjc_b.jpg",
     "CutType": 1,
-    "Javdb": "XAPpP",
-    "Javlibrary": "javli6rtqu",
-    "Javbus": "DOCP-198",
     "Arzon": "1549888",
     "CompletionStatus": 6,
     "Version": 1,
@@ -31,5 +28,8 @@
         "\u5927\u539f\u3086\u308a\u3042",
         "\u306f\u3068\u308a\u5fc3\u54b2"
     ],
-    "Modify": "2021-09-05 15:51:23"
+    "Modify": "2021-09-05 15:51:23",
+    "JavDb": "XAPpP",
+    "JavLibrary": "javli6rtqu",
+    "JavBus": "DOCP-198"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipz969/ipz969pl.jpg",
     "CoverBus": "61wu_b.jpg",
     "CutType": 1,
-    "Javdb": "AWOe",
-    "Javlibrary": "javliktcrm",
-    "Javbus": "IPZ-969",
     "Arzon": "1401148",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u897f\u5bae\u3086\u3081"
     ],
-    "Modify": "2021-09-05 19:01:08"
+    "Modify": "2021-09-05 19:01:08",
+    "JavDb": "AWOe",
+    "JavLibrary": "javliktcrm",
+    "JavBus": "IPZ-969"
 }

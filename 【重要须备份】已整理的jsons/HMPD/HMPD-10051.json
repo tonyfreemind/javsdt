@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/41hmpd10051/41hmpd10051pl.jpg",
     "CoverBus": "673e_b.jpg",
     "CutType": 1,
-    "Javdb": "P9EvJ",
-    "Javlibrary": "javlikrbzi",
-    "Javbus": "HMPD-10051",
     "Arzon": "1411118",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u690e\u540d\u305d\u3089"
     ],
-    "Modify": "2021-09-05 17:43:51"
+    "Modify": "2021-09-05 17:43:51",
+    "JavDb": "P9EvJ",
+    "JavLibrary": "javlikrbzi",
+    "JavBus": "HMPD-10051"
 }

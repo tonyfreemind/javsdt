@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mide540/mide540pl.jpg",
     "CoverBus": "6i0v_b.jpg",
     "CutType": 1,
-    "Javdb": "31Ka",
-    "Javlibrary": "javli7dbr4",
-    "Javbus": "MIDE-540",
     "Arzon": "1637133",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u6c34\u30c8\u3055\u304f\u3089"
     ],
-    "Modify": "2021-09-25 17:30:27"
+    "Modify": "2021-09-25 17:30:27",
+    "JavDb": "31Ka",
+    "JavLibrary": "javli7dbr4",
+    "JavBus": "MIDE-540"
 }

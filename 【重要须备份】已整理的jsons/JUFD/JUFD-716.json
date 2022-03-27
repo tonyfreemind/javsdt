@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/jufd716/jufd716pl.jpg",
     "CoverBus": "5vp2_b.jpg",
     "CutType": 1,
-    "Javdb": "PQaN9",
-    "Javlibrary": "javlikbh4y",
-    "Javbus": "JUFD-716",
     "Arzon": "1382611",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,8 @@
     "Actors": [
         "\u82e5\u83dc\u5948\u592e"
     ],
-    "Modify": "2021-09-05 19:02:02"
+    "Modify": "2021-09-05 19:02:02",
+    "JavDb": "PQaN9",
+    "JavLibrary": "javlikbh4y",
+    "JavBus": "JUFD-716"
 }

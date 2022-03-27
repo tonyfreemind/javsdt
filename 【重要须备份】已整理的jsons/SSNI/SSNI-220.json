@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ssni220/ssni220pl.jpg",
     "CoverBus": "6l0n_b.jpg",
     "CutType": 1,
-    "Javdb": "depVa",
-    "Javlibrary": "javli7ae34",
-    "Javbus": "SSNI-220",
     "Arzon": "1460093",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u5965\u7530\u54b2"
     ],
-    "Modify": "2021-09-25 18:46:48"
+    "Modify": "2021-09-25 18:46:48",
+    "JavDb": "depVa",
+    "JavLibrary": "javli7ae34",
+    "JavBus": "SSNI-220"
 }

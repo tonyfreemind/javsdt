@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1sw680/1sw680pl.jpg",
     "CoverBus": "7iyj_b.jpg",
     "CutType": 1,
-    "Javdb": "pDG5b",
-    "Javlibrary": "javli6qa2a",
-    "Javbus": "SW-680",
     "Arzon": "1551894",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
         "\u4e03\u6d77\u3086\u3042",
         "\u5927\u6d66\u771f\u5948\u7f8e"
     ],
-    "Modify": "2021-09-21 08:08:22"
+    "Modify": "2021-09-21 08:08:22",
+    "JavDb": "pDG5b",
+    "JavLibrary": "javli6qa2a",
+    "JavBus": "SW-680"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/pppd812/pppd812pl.jpg",
     "CoverBus": "7fk9_b.jpg",
     "CutType": 1,
-    "Javdb": "9qnaq",
-    "Javlibrary": "javli6qwsq",
-    "Javbus": "PPPD-812",
     "Arzon": "1545764",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u5409\u6839\u3086\u308a\u3042"
     ],
-    "Modify": "2021-09-25 18:08:35"
+    "Modify": "2021-09-25 18:08:35",
+    "JavDb": "9qnaq",
+    "JavLibrary": "javli6qwsq",
+    "JavBus": "PPPD-812"
 }

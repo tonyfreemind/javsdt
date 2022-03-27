@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ssni542/ssni542pl.jpg",
     "CoverBus": "78jw_b.jpg",
     "CutType": 1,
-    "Javdb": "bq67g",
-    "Javlibrary": "javli6bpsm",
-    "Javbus": "SSNI-542",
     "Arzon": "1527621",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u4e09\u4e0a\u60a0\u4e9c"
     ],
-    "Modify": "2021-09-25 19:01:45"
+    "Modify": "2021-09-25 19:01:45",
+    "JavDb": "bq67g",
+    "JavLibrary": "javli6bpsm",
+    "JavBus": "SSNI-542"
 }

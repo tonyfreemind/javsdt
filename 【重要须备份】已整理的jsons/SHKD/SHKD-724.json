@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/shkd724/shkd724pl.jpg",
     "CoverBus": "5rdq_b.jpg",
     "CutType": 1,
-    "Javdb": "YwJk8",
-    "Javlibrary": "javlikdrsm",
-    "Javbus": "SHKD-724",
     "Arzon": "1367159",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u685c\u6728\u51db"
     ],
-    "Modify": "2021-09-25 18:25:14"
+    "Modify": "2021-09-25 18:25:14",
+    "JavDb": "YwJk8",
+    "JavLibrary": "javlikdrsm",
+    "JavBus": "SHKD-724"
 }

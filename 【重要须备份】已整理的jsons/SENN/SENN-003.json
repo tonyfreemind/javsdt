@@ -16,9 +16,6 @@
     "CoverLibrary": "",
     "CoverBus": "7g0i_b.jpg",
     "CutType": 1,
-    "Javdb": "X4zWa",
-    "Javlibrary": "",
-    "Javbus": "SENN-003",
     "Arzon": "",
     "CompletionStatus": 5,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u4e09\u5cf6\u5948\u6d25\u5b50"
     ],
-    "Modify": "2021-09-25 18:22:58"
+    "Modify": "2021-09-25 18:22:58",
+    "JavDb": "X4zWa",
+    "JavLibrary": "",
+    "JavBus": "SENN-003"
 }

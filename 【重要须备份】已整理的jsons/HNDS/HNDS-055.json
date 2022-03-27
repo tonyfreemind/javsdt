@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/hnds055/hnds055pl.jpg",
     "CoverBus": "6doh_b.jpg",
     "CutType": 1,
-    "Javdb": "3Gr1",
-    "Javlibrary": "javli43j6y",
-    "Javbus": "HNDS-055",
     "Arzon": "1439342",
     "CompletionStatus": 6,
     "Version": 1,
@@ -36,5 +33,8 @@
         "\u6cb3\u5357\u5b9f\u91cc",
         "\u661f\u5948\u3042\u3044"
     ],
-    "Modify": "2021-09-05 16:05:41"
+    "Modify": "2021-09-05 16:05:41",
+    "JavDb": "3Gr1",
+    "JavLibrary": "javli43j6y",
+    "JavBus": "HNDS-055"
 }

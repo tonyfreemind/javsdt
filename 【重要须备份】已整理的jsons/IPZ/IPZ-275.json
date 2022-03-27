@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipz275/ipz275pl.jpg",
     "CoverBus": "4272_b.jpg",
     "CutType": 1,
-    "Javdb": "88YV",
-    "Javlibrary": "javlijjbq4",
-    "Javbus": "IPZ-275",
     "Arzon": "",
     "CompletionStatus": 6,
     "Version": 1,
@@ -31,5 +28,8 @@
     "Actors": [
         "Rio"
     ],
-    "Modify": "2021-09-05 18:54:23"
+    "Modify": "2021-09-05 18:54:23",
+    "JavDb": "88YV",
+    "JavLibrary": "javlijjbq4",
+    "JavBus": "IPZ-275"
 }

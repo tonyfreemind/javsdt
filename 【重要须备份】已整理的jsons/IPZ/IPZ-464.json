@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipz464/ipz464pl.jpg",
     "CoverBus": "4h88_b.jpg",
     "CutType": 1,
-    "Javdb": "5ErAa",
-    "Javlibrary": "javliiaztu",
-    "Javbus": "IPZ-464",
     "Arzon": "1228303",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u4e26\u6728\u512a"
     ],
-    "Modify": "2021-09-05 18:55:37"
+    "Modify": "2021-09-05 18:55:37",
+    "JavDb": "5ErAa",
+    "JavLibrary": "javliiaztu",
+    "JavBus": "IPZ-464"
 }

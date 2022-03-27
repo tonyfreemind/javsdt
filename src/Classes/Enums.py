@@ -5,23 +5,20 @@ from enum import IntEnum
 class ScrapeStatusEnum(IntEnum):
     """执行刮削的结果"""
 
-    failed = 0
-    """终止"""
+    not_found = 0
+    """没找到"""
 
     success = 1
     """成功"""
 
-    not_found = 2
-    """没找到"""
-
-    multiple_results = 3
+    multiple_results = 2
     """存在多个搜索结果"""
 
-    exist_but_no_want = 4
+    exist_but_no_want = 3
     """
-    有结果，但结果页面上没有想要的内容
+    有搜索结果，但结果页面上没有想要的内容
     
-    比如arzon找得到，但没有简介
+    比如arzon找得到车牌，但页面上没有简介
     """
 
 

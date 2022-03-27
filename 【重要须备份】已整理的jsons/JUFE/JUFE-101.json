@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/jufe101/jufe101pl.jpg",
     "CoverBus": "7ape_b.jpg",
     "CutType": 1,
-    "Javdb": "D4K9a",
-    "Javlibrary": "javli6lf6e",
-    "Javbus": "JUFE-101",
     "Arzon": "1534970",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u4f50\u5c71\u611b"
     ],
-    "Modify": "2021-09-05 19:03:15"
+    "Modify": "2021-09-05 19:03:15",
+    "JavDb": "D4K9a",
+    "JavLibrary": "javli6lf6e",
+    "JavBus": "JUFE-101"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/17big038/17big038pl.jpg",
     "CoverBus": "",
     "CutType": 1,
-    "Javdb": "Q43M",
-    "Javlibrary": "javlid3u5q",
-    "Javbus": "",
     "Arzon": "294323",
     "CompletionStatus": 4,
     "Version": 1,
@@ -37,5 +34,8 @@
         "\u5e73\u672c\u4fe1\u5b50",
         "\u677e\u5c71\u967d\u5b50"
     ],
-    "Modify": "2021-09-25 15:59:28"
+    "Modify": "2021-09-25 15:59:28",
+    "JavDb": "Q43M",
+    "JavLibrary": "javlid3u5q",
+    "JavBus": ""
 }

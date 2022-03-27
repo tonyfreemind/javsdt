@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/hnd482/hnd482pl.jpg",
     "CoverBus": "6nmr_b.jpg",
     "CutType": 1,
-    "Javdb": "ZNmgv",
-    "Javlibrary": "javli7d5tm",
-    "Javbus": "HND-482",
     "Arzon": "1467621",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u9ebb\u91cc\u68a8\u590f"
     ],
-    "Modify": "2021-09-05 17:44:51"
+    "Modify": "2021-09-05 17:44:51",
+    "JavDb": "ZNmgv",
+    "JavLibrary": "javli7d5tm",
+    "JavBus": "HND-482"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/atid381/atid381pl.jpg",
     "CoverBus": "7fu3_b.jpg",
     "CutType": 1,
-    "Javdb": "kyBwe",
-    "Javlibrary": "javli6l66u",
-    "Javbus": "ATID-381",
     "Arzon": "1544721",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
         "\u795e\u7d0d\u82b1",
         "\u8d64\u702c\u5c1a\u5b50"
     ],
-    "Modify": "2021-11-07 21:38:51"
+    "Modify": "2021-11-07 21:38:51",
+    "JavDb": "kyBwe",
+    "JavLibrary": "javli6l66u",
+    "JavBus": "ATID-381"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/soe992/soe992pl.jpg",
     "CoverBus": "3wya_b.jpg",
     "CutType": 1,
-    "Javdb": "1B5Zd",
-    "Javlibrary": "javlijbf2y",
-    "Javbus": "SOE-992",
     "Arzon": "1147633",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u5b87\u90fd\u5bae\u3057\u3092\u3093"
     ],
-    "Modify": "2021-09-25 18:41:11"
+    "Modify": "2021-09-25 18:41:11",
+    "JavDb": "1B5Zd",
+    "JavLibrary": "javlijbf2y",
+    "JavBus": "SOE-992"
 }

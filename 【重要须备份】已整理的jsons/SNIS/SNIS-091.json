@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/snis091/snis091pl.jpg",
     "CoverBus": "441v_b.jpg",
     "CutType": 1,
-    "Javdb": "0RrY3",
-    "Javlibrary": "javlijqrsy",
-    "Javbus": "SNIS-091",
     "Arzon": "",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u5b87\u90fd\u5bae\u3057\u3092\u3093"
     ],
-    "Modify": "2021-09-25 18:27:39"
+    "Modify": "2021-09-25 18:27:39",
+    "JavDb": "0RrY3",
+    "JavLibrary": "javlijqrsy",
+    "JavBus": "SNIS-091"
 }

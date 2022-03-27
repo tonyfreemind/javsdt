@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/rbd237/rbd237pl.jpg",
     "CoverBus": "1pyj_b.jpg",
     "CutType": 1,
-    "Javdb": "eKGYz",
-    "Javlibrary": "javlipyuq4",
-    "Javbus": "RBD-237",
     "Arzon": "693280",
     "CompletionStatus": 6,
     "Version": 1,
@@ -31,5 +28,8 @@
     "Actors": [
         "\u5c0f\u5ddd\u3042\u3055\u7f8e"
     ],
-    "Modify": "2021-09-25 18:12:03"
+    "Modify": "2021-09-25 18:12:03",
+    "JavDb": "eKGYz",
+    "JavLibrary": "javlipyuq4",
+    "JavBus": "RBD-237"
 }

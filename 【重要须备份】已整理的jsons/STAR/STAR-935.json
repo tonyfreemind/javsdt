@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1star935/1star935pl.jpg",
     "CoverBus": "6o6l_b.jpg",
     "CutType": 1,
-    "Javdb": "82aJV",
-    "Javlibrary": "javli7dy5u",
-    "Javbus": "STAR-935",
     "Arzon": "1482362",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u53e4\u5ddd\u4f0a\u7ec7"
     ],
-    "Modify": "2021-09-25 19:39:52"
+    "Modify": "2021-09-25 19:39:52",
+    "JavDb": "82aJV",
+    "JavLibrary": "javli7dy5u",
+    "JavBus": "STAR-935"
 }

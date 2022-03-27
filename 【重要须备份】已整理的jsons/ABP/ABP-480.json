@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/118abp480/118abp480pl.jpg",
     "CoverBus": "5gyi_b.jpg",
     "CutType": 1,
-    "Javdb": "QPG",
-    "Javlibrary": "javlill644",
-    "Javbus": "ABP-480",
     "Arzon": "1333753",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u5317\u91ce\u306e\u305e\u307f"
     ],
-    "Modify": "2021-11-07 20:40:26"
+    "Modify": "2021-11-07 20:40:26",
+    "JavDb": "QPG",
+    "JavLibrary": "javlill644",
+    "JavBus": "ABP-480"
 }

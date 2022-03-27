@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/118abp680/118abp680pl.jpg",
     "CoverBus": "6cs3_b.jpg",
     "CutType": 1,
-    "Javdb": "wBme",
-    "Javlibrary": "javli43b2m",
-    "Javbus": "ABP-680",
     "Arzon": "1435326",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u702c\u540d\u304d\u3089\u308a"
     ],
-    "Modify": "2021-09-05 15:07:46"
+    "Modify": "2021-09-05 15:07:46",
+    "JavDb": "wBme",
+    "JavLibrary": "javli43b2m",
+    "JavBus": "ABP-680"
 }

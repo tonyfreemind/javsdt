@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/12cos008/12cos008pl.jpg",
     "CoverBus": "49kd_b.jpg",
     "CutType": 1,
-    "Javdb": "",
-    "Javlibrary": "javlidb424",
-    "Javbus": "COS-008",
     "Arzon": "1258137",
     "CompletionStatus": 7,
     "Version": 1,
@@ -32,5 +29,8 @@
         "\u89d2\u8272\u626e\u6f14"
     ],
     "Actors": [],
-    "Modify": "2021-09-05 15:45:42"
+    "Modify": "2021-09-05 15:45:42",
+    "JavDb": "",
+    "JavLibrary": "javlidb424",
+    "JavBus": "COS-008"
 }

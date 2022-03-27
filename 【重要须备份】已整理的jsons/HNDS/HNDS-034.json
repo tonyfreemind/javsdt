@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/hnds034/hnds034pl.jpg",
     "CoverBus": "4tpz_b.jpg",
     "CutType": 1,
-    "Javdb": "eNKr",
-    "Javlibrary": "javliirh7e",
-    "Javbus": "HNDS-034",
     "Arzon": "1409877",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,8 @@
         "\u5712\u539f\u771f\u592e",
         "\u4eca\u4e95\u9ebb\u8863"
     ],
-    "Modify": "2021-09-05 17:47:59"
+    "Modify": "2021-09-05 17:47:59",
+    "JavDb": "eNKr",
+    "JavLibrary": "javliirh7e",
+    "JavBus": "HNDS-034"
 }

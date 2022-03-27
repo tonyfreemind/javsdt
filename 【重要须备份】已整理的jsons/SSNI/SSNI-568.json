@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ssni568/ssni568pl.jpg",
     "CoverBus": "7a4i_b.jpg",
     "CutType": 1,
-    "Javdb": "9dvww",
-    "Javlibrary": "javli6jw64",
-    "Javbus": "SSNI-568",
     "Arzon": "1531963",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u5922\u4e43\u3042\u3044\u304b"
     ],
-    "Modify": "2021-09-25 19:03:14"
+    "Modify": "2021-09-25 19:03:14",
+    "JavDb": "9dvww",
+    "JavLibrary": "javli6jw64",
+    "JavBus": "SSNI-568"
 }

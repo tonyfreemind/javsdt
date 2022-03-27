@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/cjod205/cjod205pl.jpg",
     "CoverBus": "7agn_b.jpg",
     "CutType": 1,
-    "Javdb": "mQZdM",
-    "Javlibrary": "javli6la7a",
-    "Javbus": "CJOD-205",
     "Arzon": "1534011",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
         "\u7be0\u7530\u3086\u3046",
         "\u84ee\u5b9f\u30af\u30ec\u30a2"
     ],
-    "Modify": "2021-09-21 08:01:10"
+    "Modify": "2021-09-21 08:01:10",
+    "JavDb": "mQZdM",
+    "JavLibrary": "javli6la7a",
+    "JavBus": "CJOD-205"
 }

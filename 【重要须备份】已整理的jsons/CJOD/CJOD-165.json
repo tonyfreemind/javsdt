@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/cjod165/cjod165pl.jpg",
     "CoverBus": "6s89_b.jpg",
     "CutType": 1,
-    "Javdb": "WQzwg",
-    "Javlibrary": "javli7jmza",
-    "Javbus": "CJOD-165",
     "Arzon": "1482276",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u690e\u540d\u305d\u3089"
     ],
-    "Modify": "2021-09-05 15:42:26"
+    "Modify": "2021-09-05 15:42:26",
+    "JavDb": "WQzwg",
+    "JavLibrary": "javli7jmza",
+    "JavBus": "CJOD-165"
 }

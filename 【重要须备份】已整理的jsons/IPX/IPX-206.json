@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipx206/ipx206pl.jpg",
     "CoverBus": "6q52_b.jpg",
     "CutType": 1,
-    "Javdb": "R5Gqm",
-    "Javlibrary": "javli7i444",
-    "Javbus": "IPX-206",
     "Arzon": "1474772",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u5929\u6d77\u3064\u3070\u3055"
     ],
-    "Modify": "2021-09-05 18:43:09"
+    "Modify": "2021-09-05 18:43:09",
+    "JavDb": "R5Gqm",
+    "JavLibrary": "javli7i444",
+    "JavBus": "IPX-206"
 }

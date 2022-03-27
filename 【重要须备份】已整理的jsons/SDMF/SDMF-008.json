@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1sdmf008/1sdmf008pl.jpg",
     "CoverBus": "7grz_b.jpg",
     "CutType": 1,
-    "Javdb": "v0w4p",
-    "Javlibrary": "javli6rw34",
-    "Javbus": "SDMF-008",
     "Arzon": "1547322",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u5fa1\u5742\u308a\u3042"
     ],
-    "Modify": "2021-09-13 22:57:47"
+    "Modify": "2021-09-13 22:57:47",
+    "JavDb": "v0w4p",
+    "JavLibrary": "javli6rw34",
+    "JavBus": "SDMF-008"
 }

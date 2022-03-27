@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipz860/ipz860pl.jpg",
     "CoverBus": "5r41_b.jpg",
     "CutType": 1,
-    "Javdb": "RkkNn",
-    "Javlibrary": "javlil3u5e",
-    "Javbus": "IPZ-860",
     "Arzon": "1469401",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u76f8\u6ca2\u307f\u306a\u307f"
     ],
-    "Modify": "2021-09-05 18:59:45"
+    "Modify": "2021-09-05 18:59:45",
+    "JavDb": "RkkNn",
+    "JavLibrary": "javlil3u5e",
+    "JavBus": "IPZ-860"
 }

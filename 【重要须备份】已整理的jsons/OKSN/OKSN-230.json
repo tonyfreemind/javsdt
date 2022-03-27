@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/oksn230/oksn230pl.jpg",
     "CoverBus": "4o3l_b.jpg",
     "CutType": 1,
-    "Javdb": "ZX4vA",
-    "Javlibrary": "javliij2ya",
-    "Javbus": "OKSN-230",
     "Arzon": "1251206",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u6797\u3086\u306a"
     ],
-    "Modify": "2021-09-25 18:00:19"
+    "Modify": "2021-09-25 18:00:19",
+    "JavDb": "ZX4vA",
+    "JavLibrary": "javliij2ya",
+    "JavBus": "OKSN-230"
 }

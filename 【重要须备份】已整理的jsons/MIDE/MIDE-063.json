@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mide063/mide063pl.jpg",
     "CoverBus": "43z1_b.jpg",
     "CutType": 1,
-    "Javdb": "W1Yrq",
-    "Javlibrary": "javlijtbrq",
-    "Javbus": "MIDE-063",
     "Arzon": "1175366",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "JULIA"
     ],
-    "Modify": "2021-09-25 17:22:30"
+    "Modify": "2021-09-25 17:22:30",
+    "JavDb": "W1Yrq",
+    "JavLibrary": "javlijtbrq",
+    "JavBus": "MIDE-063"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1nhdta959/1nhdta959pl.jpg",
     "CoverBus": "5wzy_b.jpg",
     "CutType": 1,
-    "Javdb": "gKMy",
-    "Javlibrary": "javlikd54m",
-    "Javbus": "NHDTA-959",
     "Arzon": "1383874",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,8 @@
         "\u5bae\u5d0e\u3042\u3084",
         "\u5150\u7389\u308b\u307f"
     ],
-    "Modify": "2021-09-25 17:55:45"
+    "Modify": "2021-09-25 17:55:45",
+    "JavDb": "gKMy",
+    "JavLibrary": "javlikd54m",
+    "JavBus": "NHDTA-959"
 }

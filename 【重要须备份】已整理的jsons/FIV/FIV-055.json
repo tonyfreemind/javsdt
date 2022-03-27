@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/118fiv055/118fiv055pl.jpg",
     "CoverBus": "7gvb_b.jpg",
     "CutType": 1,
-    "Javdb": "nqyEM",
-    "Javlibrary": "javli6tlya",
-    "Javbus": "FIV-055",
     "Arzon": "1548863",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,8 @@
         "\u76f8\u7f8e\u3086\u306a",
         "\u661f\u54b2\u30de\u30a4\u30ab"
     ],
-    "Modify": "2021-09-05 16:00:17"
+    "Modify": "2021-09-05 16:00:17",
+    "JavDb": "nqyEM",
+    "JavLibrary": "javli6tlya",
+    "JavBus": "FIV-055"
 }

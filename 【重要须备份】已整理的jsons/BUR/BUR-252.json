@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/12bur252/12bur252pl.jpg",
     "CoverBus": "",
     "CutType": 1,
-    "Javdb": "7y1eR",
-    "Javlibrary": "javlimqa3y",
-    "Javbus": "",
     "Arzon": "498185",
     "CompletionStatus": 4,
     "Version": 1,
@@ -29,5 +26,8 @@
     "Actors": [
         "\u65e9\u4e59\u5973\u30eb\u30a4"
     ],
-    "Modify": "2021-09-05 15:38:44"
+    "Modify": "2021-09-05 15:38:44",
+    "JavDb": "7y1eR",
+    "JavLibrary": "javlimqa3y",
+    "JavBus": ""
 }

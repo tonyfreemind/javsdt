@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/hnd882/hnd882pl.jpg",
     "CoverBus": "7v2b_b.jpg",
     "CutType": 1,
-    "Javdb": "Yzpeb",
-    "Javlibrary": "javmezaj5m",
-    "Javbus": "HND-882",
     "Arzon": "1586810",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u4e59\u8449\u30ab\u30ec\u30f3"
     ],
-    "Modify": "2022-02-15 19:14:16"
+    "Modify": "2022-02-15 19:14:16",
+    "JavDb": "Yzpeb",
+    "JavLibrary": "javmezaj5m",
+    "JavBus": "HND-882"
 }

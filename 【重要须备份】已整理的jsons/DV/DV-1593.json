@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/53dv1593/53dv1593pl.jpg",
     "CoverBus": "438a_b.jpg",
     "CutType": 1,
-    "Javdb": "veRbp",
-    "Javlibrary": "javlijje3y",
-    "Javbus": "DV-1593",
     "Arzon": "1169473",
     "CompletionStatus": 6,
     "Version": 1,
@@ -31,5 +28,8 @@
     "Actors": [
         "\u8475\u53f8"
     ],
-    "Modify": "2021-09-05 15:52:35"
+    "Modify": "2021-09-05 15:52:35",
+    "JavDb": "veRbp",
+    "JavLibrary": "javlijje3y",
+    "JavBus": "DV-1593"
 }

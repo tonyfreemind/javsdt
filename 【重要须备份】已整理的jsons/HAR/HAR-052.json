@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/118har052/118har052pl.jpg",
     "CoverBus": "5rtt_b.jpg",
     "CutType": 1,
-    "Javdb": "4J46",
-    "Javlibrary": "javlil355q",
-    "Javbus": "HAR-052",
     "Arzon": "1367438",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,8 @@
         "\u5bff\u3086\u304b\u308a",
         "\u3055\u304f\u3089\u307f\u3086\u304d"
     ],
-    "Modify": "2021-09-05 17:42:22"
+    "Modify": "2021-09-05 17:42:22",
+    "JavDb": "4J46",
+    "JavLibrary": "javlil355q",
+    "JavBus": "HAR-052"
 }

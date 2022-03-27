@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/h_906gaso0076/h_906gaso0076pl.jpg",
     "CoverBus": "5fyp_b.jpg",
     "CutType": 1,
-    "Javdb": "GZ6w5",
-    "Javlibrary": "javliljw34",
-    "Javbus": "GASO-076",
     "Arzon": "",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u5712\u7530\u307f\u304a\u3093"
     ],
-    "Modify": "2021-09-05 16:01:46"
+    "Modify": "2021-09-05 16:01:46",
+    "JavDb": "GZ6w5",
+    "JavLibrary": "javliljw34",
+    "JavBus": "GASO-076"
 }

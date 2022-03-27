@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipx349/ipx349pl.jpg",
     "CoverBus": "7874_b.jpg",
     "CutType": 1,
-    "Javdb": "GJDeb",
-    "Javlibrary": "javli6bdqq",
-    "Javbus": "IPX-349",
     "Arzon": "1527127",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u5927\u539f\u5411\u8475"
     ],
-    "Modify": "2021-09-05 18:48:42"
+    "Modify": "2021-09-05 18:48:42",
+    "JavDb": "GJDeb",
+    "JavLibrary": "javli6bdqq",
+    "JavBus": "IPX-349"
 }

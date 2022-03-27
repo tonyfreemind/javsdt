@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mifd035/mifd035pl.jpg",
     "CoverBus": "6fo1_b.jpg",
     "CutType": 1,
-    "Javdb": "RdA3m",
-    "Javlibrary": "javli4ym3e",
-    "Javbus": "MIFD-035",
     "Arzon": "1444956",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u67cf\u6728\u3082\u3082"
     ],
-    "Modify": "2021-09-25 17:41:14"
+    "Modify": "2021-09-25 17:41:14",
+    "JavDb": "RdA3m",
+    "JavLibrary": "javli4ym3e",
+    "JavBus": "MIFD-035"
 }

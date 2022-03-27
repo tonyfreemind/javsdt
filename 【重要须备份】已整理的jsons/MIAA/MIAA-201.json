@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/miaa201/miaa201pl.jpg",
     "CoverBus": "7fnj_b.jpg",
     "CutType": 1,
-    "Javdb": "7qGwd",
-    "Javlibrary": "javli6tcym",
-    "Javbus": "MIAA-201",
     "Arzon": "1545362",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u7a32\u5834\u308b\u304b"
     ],
-    "Modify": "2021-09-05 21:38:00"
+    "Modify": "2021-09-05 21:38:00",
+    "JavDb": "7qGwd",
+    "JavLibrary": "javli6tcym",
+    "JavBus": "MIAA-201"
 }

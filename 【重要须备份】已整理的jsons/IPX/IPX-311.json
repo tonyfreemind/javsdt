@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipx311/ipx311pl.jpg",
     "CoverBus": "738i_b.jpg",
     "CutType": 1,
-    "Javdb": "DOJap",
-    "Javlibrary": "javli7zjrm",
-    "Javbus": "IPX-311",
     "Arzon": "1512980",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u76ca\u5742\u7f8e\u4e9c"
     ],
-    "Modify": "2021-09-05 18:47:21"
+    "Modify": "2021-09-05 18:47:21",
+    "JavDb": "DOJap",
+    "JavLibrary": "javli7zjrm",
+    "JavBus": "IPX-311"
 }

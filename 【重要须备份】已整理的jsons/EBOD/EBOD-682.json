@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ebod682/ebod682pl.jpg",
     "CoverBus": "6y77_b.jpg",
     "CutType": 1,
-    "Javdb": "ARORO",
-    "Javlibrary": "javli7t5re",
-    "Javbus": "EBOD-682",
     "Arzon": "1498787",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u3042\u3044\u3060\u98db\u9ce5"
     ],
-    "Modify": "2021-09-21 08:02:00"
+    "Modify": "2021-09-21 08:02:00",
+    "JavDb": "ARORO",
+    "JavLibrary": "javli7t5re",
+    "JavBus": "EBOD-682"
 }

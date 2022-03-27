@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipz225/ipz225pl.jpg",
     "CoverBus": "3z5r_b.jpg",
     "CutType": 1,
-    "Javdb": "bKGz0",
-    "Javlibrary": "javlijlesy",
-    "Javbus": "IPZ-225",
     "Arzon": "1158313",
     "CompletionStatus": 6,
     "Version": 1,
@@ -31,5 +28,8 @@
     "Actors": [
         "\u5929\u6d77\u3064\u3070\u3055"
     ],
-    "Modify": "2021-09-21 08:02:58"
+    "Modify": "2021-09-21 08:02:58",
+    "JavDb": "bKGz0",
+    "JavLibrary": "javlijlesy",
+    "JavBus": "IPZ-225"
 }

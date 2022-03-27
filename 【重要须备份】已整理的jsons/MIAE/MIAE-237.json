@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/miae237/miae237pl.jpg",
     "CoverBus": "6js9_b.jpg",
     "CutType": 1,
-    "Javdb": "1A1P4",
-    "Javlibrary": "javli7diyq",
-    "Javbus": "MIAE-237",
     "Arzon": "1455700",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u661f\u5948\u3042\u3044"
     ],
-    "Modify": "2021-09-25 17:19:48"
+    "Modify": "2021-09-25 17:19:48",
+    "JavDb": "1A1P4",
+    "JavLibrary": "javli7diyq",
+    "JavBus": "MIAE-237"
 }

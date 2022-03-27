@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/84bazx162/84bazx162pl.jpg",
     "CoverBus": "6wph_b.jpg",
     "CutType": 1,
-    "Javdb": "WQKKp",
-    "Javlibrary": "javli7qxq4",
-    "Javbus": "BAZX-162",
     "Arzon": "1488779",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,8 @@
         "\u51ea\u6c99\u3086\u3046",
         "\u5c71\u672c\u3057\u3085\u308a"
     ],
-    "Modify": "2021-09-05 15:32:50"
+    "Modify": "2021-09-05 15:32:50",
+    "JavDb": "WQKKp",
+    "JavLibrary": "javli7qxq4",
+    "JavBus": "BAZX-162"
 }

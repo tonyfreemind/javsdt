@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/iptd464/iptd464pl.jpg",
     "CoverBus": "1iqo_b.jpg",
     "CutType": 1,
-    "Javdb": "knJN",
-    "Javlibrary": "javlim3erq",
-    "Javbus": "IPTD-464",
     "Arzon": "",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "Rio"
     ],
-    "Modify": "2021-09-05 18:35:11"
+    "Modify": "2021-09-05 18:35:11",
+    "JavDb": "knJN",
+    "JavLibrary": "javlim3erq",
+    "JavBus": "IPTD-464"
 }

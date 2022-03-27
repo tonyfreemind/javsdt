@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/cjod227/cjod227pl.jpg",
     "CoverBus": "7hpp_b.jpg",
     "CutType": 1,
-    "Javdb": "RYN0m",
-    "Javlibrary": "javli6qb3y",
-    "Javbus": "CJOD-227",
     "Arzon": "1552099",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u8449\u6708\u30ec\u30a4\u30e9"
     ],
-    "Modify": "2021-09-21 08:42:03"
+    "Modify": "2021-09-21 08:42:03",
+    "JavDb": "RYN0m",
+    "JavLibrary": "javli6qb3y",
+    "JavBus": "CJOD-227"
 }

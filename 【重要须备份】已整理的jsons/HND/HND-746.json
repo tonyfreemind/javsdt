@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/hnd746/hnd746pl.jpg",
     "CoverBus": "7c0e_b.jpg",
     "CutType": 1,
-    "Javdb": "EdAQJ",
-    "Javlibrary": "javli6if74",
-    "Javbus": "HND-746",
     "Arzon": "1538492",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,8 @@
     "Actors": [
         "\u67a2\u6728\u3042\u304a\u3044"
     ],
-    "Modify": "2021-09-05 16:05:32"
+    "Modify": "2021-09-05 16:05:32",
+    "JavDb": "EdAQJ",
+    "JavLibrary": "javli6if74",
+    "JavBus": "HND-746"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/h_746ssr007/h_746ssr007pl.jpg",
     "CoverBus": "1nwo_b.jpg",
     "CutType": 1,
-    "Javdb": "63YE",
-    "Javlibrary": "javlio336m",
-    "Javbus": "https://www.buscdn.me/SSR-007_2013-06-23",
     "Arzon": "1126977",
     "CompletionStatus": 6,
     "Version": 1,
@@ -31,5 +28,8 @@
     "Actors": [
         "\u4eca\u85e4\u9727\u5b50"
     ],
-    "Modify": "2022-02-15 12:45:14"
+    "Modify": "2022-02-15 12:45:14",
+    "JavDb": "63YE",
+    "JavLibrary": "javlio336m",
+    "JavBus": "https://www.buscdn.me/SSR-007_2013-06-23"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/55akb023/55akb023pl.jpg",
     "CoverBus": "",
     "CutType": 1,
-    "Javdb": "vDKxY",
-    "Javlibrary": "javlib337i",
-    "Javbus": "",
     "Arzon": "694338",
     "CompletionStatus": 4,
     "Version": 1,
@@ -29,5 +26,8 @@
     "Actors": [
         "\u4eca\u6751\u7f8e\u7a42"
     ],
-    "Modify": "2021-09-05 15:24:13"
+    "Modify": "2021-09-05 15:24:13",
+    "JavDb": "vDKxY",
+    "JavLibrary": "javlib337i",
+    "JavBus": ""
 }

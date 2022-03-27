@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/dasd609/dasd609pl.jpg",
     "CoverBus": "7e0z_b.jpg",
     "CutType": 1,
-    "Javdb": "YqPJB",
-    "Javlibrary": "javli6ji64",
-    "Javbus": "DASD-609",
     "Arzon": "1543222",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u67cf\u6728\u80e1\u6843"
     ],
-    "Modify": "2021-09-05 15:49:19"
+    "Modify": "2021-09-05 15:49:19",
+    "JavDb": "YqPJB",
+    "JavLibrary": "javli6ji64",
+    "JavBus": "DASD-609"
 }

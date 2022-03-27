@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipz145/ipz145pl.jpg",
     "CoverBus": "2bzo_b.jpg",
     "CutType": 1,
-    "Javdb": "kqwm",
-    "Javlibrary": "javlija64e",
-    "Javbus": "IPZ-145",
     "Arzon": "1138293",
     "CompletionStatus": 6,
     "Version": 1,
@@ -30,5 +27,8 @@
     "Actors": [
         "\u5e0c\u5fd7\u3042\u3044\u306e"
     ],
-    "Modify": "2021-09-25 16:03:14"
+    "Modify": "2021-09-25 16:03:14",
+    "JavDb": "kqwm",
+    "JavLibrary": "javlija64e",
+    "JavBus": "IPZ-145"
 }

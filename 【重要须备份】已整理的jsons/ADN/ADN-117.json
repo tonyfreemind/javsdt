@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/adn117/adn117pl.jpg",
     "CoverBus": "5suc_b.jpg",
     "CutType": 1,
-    "Javdb": "vDg7b",
-    "Javlibrary": "javlikau4y",
-    "Javbus": "ADN-117",
     "Arzon": "1372484",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u77f3\u539f\u8389\u5948"
     ],
-    "Modify": "2021-09-05 15:22:26"
+    "Modify": "2021-09-05 15:22:26",
+    "JavDb": "vDg7b",
+    "JavLibrary": "javlikau4y",
+    "JavBus": "ADN-117"
 }

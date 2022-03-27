@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/h_924moc017/h_924moc017pl.jpg",
     "CoverBus": "4okc_b.jpg",
     "CutType": 1,
-    "Javdb": "ZdbP",
-    "Javlibrary": "javliiioyy",
-    "Javbus": "MOC-017",
     "Arzon": "1251037",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u68ee\u5ddd\u6dbc\u82b1"
     ],
-    "Modify": "2021-09-25 17:49:04"
+    "Modify": "2021-09-25 17:49:04",
+    "JavDb": "ZdbP",
+    "JavLibrary": "javliiioyy",
+    "JavBus": "MOC-017"
 }

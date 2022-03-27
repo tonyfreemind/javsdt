@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ssni368/ssni368pl.jpg",
     "CoverBus": "6vab_b.jpg",
     "CutType": 1,
-    "Javdb": "ym7QX",
-    "Javlibrary": "javli7qdze",
-    "Javbus": "SSNI-368",
     "Arzon": "1585480",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u5922\u4e43\u3042\u3044\u304b"
     ],
-    "Modify": "2021-09-25 18:53:51"
+    "Modify": "2021-09-25 18:53:51",
+    "JavDb": "ym7QX",
+    "JavLibrary": "javli7qdze",
+    "JavBus": "SSNI-368"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ssni624/ssni624pl.jpg",
     "CoverBus": "7dly_b.jpg",
     "CutType": 1,
-    "Javdb": "bgky0",
-    "Javlibrary": "javli6ja5m",
-    "Javbus": "SSNI-624",
     "Arzon": "1541143",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u661f\u5bae\u4e00\u82b1"
     ],
-    "Modify": "2021-09-25 19:06:24"
+    "Modify": "2021-09-25 19:06:24",
+    "JavDb": "bgky0",
+    "JavLibrary": "javli6ja5m",
+    "JavBus": "SSNI-624"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1msfh033/1msfh033pl.jpg",
     "CoverBus": "7wnq_b.jpg",
     "CutType": 1,
-    "Javdb": "3A37a",
-    "Javlibrary": "javmezbgqm",
-    "Javbus": "MSFH-033",
     "Arzon": "1592571",
     "CompletionStatus": 6,
     "Version": 1,
@@ -31,5 +28,8 @@
     "Actors": [
         "\u5e0c\u4ee3\u3042\u307f"
     ],
-    "Modify": "2022-02-15 12:45:05"
+    "Modify": "2022-02-15 12:45:05",
+    "JavDb": "3A37a",
+    "JavLibrary": "javmezbgqm",
+    "JavBus": "MSFH-033"
 }

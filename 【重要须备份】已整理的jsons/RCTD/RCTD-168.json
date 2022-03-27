@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1rctd168/1rctd168pl.jpg",
     "CoverBus": "6ve8_b.jpg",
     "CutType": 1,
-    "Javdb": "7yE0B",
-    "Javlibrary": "javli7tq24",
-    "Javbus": "RCTD-168",
     "Arzon": "1487261",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
         "\u6850\u8c37\u306a\u304a",
         "\u7686\u702c\u674f\u6a39"
     ],
-    "Modify": "2021-09-13 22:48:52"
+    "Modify": "2021-09-13 22:48:52",
+    "JavDb": "7yE0B",
+    "JavLibrary": "javli7tq24",
+    "JavBus": "RCTD-168"
 }

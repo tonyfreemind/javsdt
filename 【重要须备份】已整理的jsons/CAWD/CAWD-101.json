@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/cawd101/cawd101pl.jpg",
     "CoverBus": "7rti_b.jpg",
     "CutType": 1,
-    "Javdb": "Zzd3V",
-    "Javlibrary": "javme2zgri",
-    "Javbus": "CAWD-101",
     "Arzon": "1578883",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u4f0a\u85e4\u821e\u96ea"
     ],
-    "Modify": "2022-02-15 19:08:08"
+    "Modify": "2022-02-15 19:08:08",
+    "JavDb": "Zzd3V",
+    "JavLibrary": "javme2zgri",
+    "JavBus": "CAWD-101"
 }

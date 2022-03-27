@@ -16,9 +16,6 @@
     "CoverLibrary": "",
     "CoverBus": "",
     "CutType": 1,
-    "Javdb": "V0qvz",
-    "Javlibrary": "",
-    "Javbus": "",
     "Arzon": "",
     "CompletionStatus": 1,
     "Version": 1,
@@ -31,5 +28,8 @@
     "Actors": [
         "\u6d5c\u5d0e\u771f\u7dd2"
     ],
-    "Modify": "2021-11-07 16:59:06"
+    "Modify": "2021-11-07 16:59:06",
+    "JavDb": "V0qvz",
+    "JavLibrary": "",
+    "JavBus": ""
 }

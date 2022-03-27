@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/118abp852/118abp852pl.jpg",
     "CoverBus": "733d_b.jpg",
     "CutType": 1,
-    "Javdb": "mQJNv",
-    "Javlibrary": "javli7zasy",
-    "Javbus": "ABP-852",
     "Arzon": "1512136",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u5712\u7530\u307f\u304a\u3093"
     ],
-    "Modify": "2021-09-05 15:16:37"
+    "Modify": "2021-09-05 15:16:37",
+    "JavDb": "mQJNv",
+    "JavLibrary": "javli7zasy",
+    "JavBus": "ABP-852"
 }

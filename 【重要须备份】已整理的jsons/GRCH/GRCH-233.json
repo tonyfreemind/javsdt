@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1grch233/1grch233pl.jpg",
     "CoverBus": "6637_b.jpg",
     "CutType": 1,
-    "Javdb": "eKnXb",
-    "Javlibrary": "javlikr32m",
-    "Javbus": "GRCH-233",
     "Arzon": "1411324",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
         "\u9752\u7a7a\u307f\u3089\u3044",
         "\u3055\u304f\u3089\u307f\u3086\u304d"
     ],
-    "Modify": "2021-10-30 10:04:36"
+    "Modify": "2021-10-30 10:04:36",
+    "JavDb": "eKnXb",
+    "JavLibrary": "javlikr32m",
+    "JavBus": "GRCH-233"
 }

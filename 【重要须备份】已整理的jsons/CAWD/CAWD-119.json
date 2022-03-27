@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/cawd119/cawd119pl.jpg",
     "CoverBus": "7v2y_b.jpg",
     "CutType": 1,
-    "Javdb": "QRPz7",
-    "Javlibrary": "javmezai6m",
-    "Javbus": "CAWD-119",
     "Arzon": "1586527",
     "CompletionStatus": 6,
     "Version": 1,
@@ -31,5 +28,8 @@
     "Actors": [
         "\u307e\u307f\u3084\u7fbd\u82b1"
     ],
-    "Modify": "2022-02-15 12:42:04"
+    "Modify": "2022-02-15 12:42:04",
+    "JavDb": "QRPz7",
+    "JavLibrary": "javmezai6m",
+    "JavBus": "CAWD-119"
 }

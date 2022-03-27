@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/h_839shic018/h_839shic018pl.jpg",
     "CoverBus": "70p7_b.jpg",
     "CutType": 1,
-    "Javdb": "Ywemp",
-    "Javlibrary": "javlilak5a",
-    "Javbus": "SHIC-018",
     "Arzon": "1305515",
     "CompletionStatus": 6,
     "Version": 1,
@@ -37,5 +34,8 @@
         "\u85e4\u306b\u3044\u306a",
         "\u6c34\u5ddd\u3048\u307f\u308b"
     ],
-    "Modify": "2021-09-25 18:24:14"
+    "Modify": "2021-09-25 18:24:14",
+    "JavDb": "Ywemp",
+    "JavLibrary": "javlilak5a",
+    "JavBus": "SHIC-018"
 }

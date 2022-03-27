@@ -16,9 +16,6 @@
     "CoverLibrary": "",
     "CoverBus": "7g1q_b.jpg",
     "CutType": 1,
-    "Javdb": "G4P12",
-    "Javlibrary": "",
-    "Javbus": "HYPN-013",
     "Arzon": "",
     "CompletionStatus": 5,
     "Version": 1,
@@ -31,5 +28,8 @@
     "Actors": [
         "\u7f8e\u54b2\u304b\u3093\u306a"
     ],
-    "Modify": "2021-09-05 18:27:51"
+    "Modify": "2021-09-05 18:27:51",
+    "JavDb": "G4P12",
+    "JavLibrary": "",
+    "JavBus": "HYPN-013"
 }

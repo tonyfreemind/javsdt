@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipx187/ipx187pl.jpg",
     "CoverBus": "6on6_b.jpg",
     "CutType": 1,
-    "Javdb": "zkxn4",
-    "Javlibrary": "javli7llsq",
-    "Javbus": "IPX-187",
     "Arzon": "1470293",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u5409\u6c60\u7f8e\u6b69"
     ],
-    "Modify": "2021-09-05 18:42:47"
+    "Modify": "2021-09-05 18:42:47",
+    "JavDb": "zkxn4",
+    "JavLibrary": "javli7llsq",
+    "JavBus": "IPX-187"
 }

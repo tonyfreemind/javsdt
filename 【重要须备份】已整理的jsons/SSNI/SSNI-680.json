@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ssni680/ssni680pl.jpg",
     "CoverBus": "7hby_b.jpg",
     "CutType": 1,
-    "Javdb": "XAXK1",
-    "Javlibrary": "javli6qd5q",
-    "Javbus": "SSNI-680",
     "Arzon": "1550512",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u661f\u5bae\u4e00\u82b1"
     ],
-    "Modify": "2021-09-25 19:09:44"
+    "Modify": "2021-09-25 19:09:44",
+    "JavDb": "XAXK1",
+    "JavLibrary": "javli6qd5q",
+    "JavBus": "SSNI-680"
 }

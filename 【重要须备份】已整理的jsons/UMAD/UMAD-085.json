@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/84umad085/84umad085pl.jpg",
     "CoverBus": "4vc0_b.jpg",
     "CutType": 1,
-    "Javdb": "2maDm",
-    "Javlibrary": "javliiry2q",
-    "Javbus": "UMAD-085",
     "Arzon": "1264521",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,8 @@
         "\u6e0b\u8c37\u7f8e\u5e0c",
         "\u685c\u6728\u512a\u5e0c\u97f3"
     ],
-    "Modify": "2021-09-25 20:17:12"
+    "Modify": "2021-09-25 20:17:12",
+    "JavDb": "2maDm",
+    "JavLibrary": "javliiry2q",
+    "JavBus": "UMAD-085"
 }

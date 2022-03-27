@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/118dic046/118dic046pl.jpg",
     "CoverBus": "68lo_b.jpg",
     "CutType": 1,
-    "Javdb": "8VkgW",
-    "Javlibrary": "javli4rw54",
-    "Javbus": "DIC-046",
     "Arzon": "1420780",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u795e\u5bae\u5bfa\u30ca\u30aa"
     ],
-    "Modify": "2021-09-05 15:50:23"
+    "Modify": "2021-09-05 15:50:23",
+    "JavDb": "8VkgW",
+    "JavLibrary": "javli4rw54",
+    "JavBus": "DIC-046"
 }

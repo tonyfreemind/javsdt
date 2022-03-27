@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/dvdms298so/dvdms298sopl.jpg",
     "CoverBus": "6opb_b.jpg",
     "CutType": 1,
-    "Javdb": "33Qr0",
-    "Javlibrary": "javli7lhya",
-    "Javbus": "DVDMS-298",
     "Arzon": "1470150",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
         "\u795e\u91ce\u3072\u306a",
         "\u5929\u99ac\u3086\u3044"
     ],
-    "Modify": "2021-09-05 15:55:33"
+    "Modify": "2021-09-05 15:55:33",
+    "JavDb": "33Qr0",
+    "JavLibrary": "javli7lhya",
+    "JavBus": "DVDMS-298"
 }

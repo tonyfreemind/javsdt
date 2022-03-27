@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/h_286kri074/h_286kri074pl.jpg",
     "CoverBus": "6w9l_b.jpg",
     "CutType": 1,
-    "Javdb": "05kYk",
-    "Javlibrary": "javli7qn7a",
-    "Javbus": "KRI-074",
     "Arzon": "1488554",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
         "\u3042\u304a\u3044\u308c\u306a",
         "\u9ad8\u5bae\u3059\u305a"
     ],
-    "Modify": "2021-09-05 21:19:55"
+    "Modify": "2021-09-05 21:19:55",
+    "JavDb": "05kYk",
+    "JavLibrary": "javli7qn7a",
+    "JavBus": "KRI-074"
 }

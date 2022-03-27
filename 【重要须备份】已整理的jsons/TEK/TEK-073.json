@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/tek073/tek073pl.jpg",
     "CoverBus": "5e27_b.jpg",
     "CutType": 1,
-    "Javdb": "821d3",
-    "Javlibrary": "javlilieri",
-    "Javbus": "TEK-073",
     "Arzon": "1323372",
     "CompletionStatus": 6,
     "Version": 1,
@@ -31,5 +28,8 @@
     "Actors": [
         "\u4e09\u4e0a\u60a0\u4e9c"
     ],
-    "Modify": "2021-09-25 20:00:43"
+    "Modify": "2021-09-25 20:00:43",
+    "JavDb": "821d3",
+    "JavLibrary": "javlilieri",
+    "JavBus": "TEK-073"
 }

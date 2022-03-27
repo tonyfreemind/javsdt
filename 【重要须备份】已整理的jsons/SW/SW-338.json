@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/h_635sw338/h_635sw338pl.jpg",
     "CoverBus": "4umh_b.jpg",
     "CutType": 1,
-    "Javdb": "v2vp",
-    "Javlibrary": "javliircs4",
-    "Javbus": "SW-338",
     "Arzon": "1269986",
     "CompletionStatus": 6,
     "Version": 1,
@@ -36,5 +33,8 @@
         "\u6e0b\u8c37\u7f8e\u5e0c",
         "\u661f\u5ddd\u51db\u3005\u82b1"
     ],
-    "Modify": "2021-09-25 19:57:17"
+    "Modify": "2021-09-25 19:57:17",
+    "JavDb": "v2vp",
+    "JavLibrary": "javliircs4",
+    "JavBus": "SW-338"
 }

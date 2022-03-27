@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/juy988/juy988pl.jpg",
     "CoverBus": "7aco_b.jpg",
     "CutType": 1,
-    "Javdb": "OK9gB",
-    "Javlibrary": "javli6jn5i",
-    "Javbus": "JUY-988",
     "Arzon": "1533977",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u661f\u5948\u3042\u3044"
     ],
-    "Modify": "2021-09-05 19:11:29"
+    "Modify": "2021-09-05 19:11:29",
+    "JavDb": "OK9gB",
+    "JavLibrary": "javli6jn5i",
+    "JavBus": "JUY-988"
 }

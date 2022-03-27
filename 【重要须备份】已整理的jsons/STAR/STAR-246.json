@@ -16,9 +16,6 @@
     "CoverLibrary": "http://img10.pixhost.to/images/184/45398029_i146423.jpg",
     "CoverBus": "2dl8_b.jpg",
     "CutType": 1,
-    "Javdb": "38ba",
-    "Javlibrary": "javlipd44e",
-    "Javbus": "STAR-246",
     "Arzon": "",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u307b\u3057\u306e\u3042\u3059\u304b"
     ],
-    "Modify": "2021-09-25 19:11:42"
+    "Modify": "2021-09-25 19:11:42",
+    "JavDb": "38ba",
+    "JavLibrary": "javlipd44e",
+    "JavBus": "STAR-246"
 }

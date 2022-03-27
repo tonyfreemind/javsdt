@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ssni436/ssni436pl.jpg",
     "CoverBus": "7094_b.jpg",
     "CutType": 1,
-    "Javdb": "by89A",
-    "Javlibrary": "javli7y2ye",
-    "Javbus": "SSNI-436",
     "Arzon": "1503915",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u6a4b\u672c\u3042\u308a\u306a"
     ],
-    "Modify": "2021-09-25 18:56:38"
+    "Modify": "2021-09-25 18:56:38",
+    "JavDb": "by89A",
+    "JavLibrary": "javli7y2ye",
+    "JavBus": "SSNI-436"
 }

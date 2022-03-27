@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/12bur314/12bur314pl.jpg",
     "CoverBus": "234d_b.jpg",
     "CutType": 1,
-    "Javdb": "71Md",
-    "Javlibrary": "javlipld7a",
-    "Javbus": "BUR-314",
     "Arzon": "704181",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u4e0a\u6761\u3081\u3050"
     ],
-    "Modify": "2021-09-05 17:23:58"
+    "Modify": "2021-09-05 17:23:58",
+    "JavDb": "71Md",
+    "JavLibrary": "javlipld7a",
+    "JavBus": "BUR-314"
 }

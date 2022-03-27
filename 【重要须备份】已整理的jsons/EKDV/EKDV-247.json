@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/49ekdv247/49ekdv247pl.jpg",
     "CoverBus": "2rtp_b.jpg",
     "CutType": 1,
-    "Javdb": "V488Q",
-    "Javlibrary": "javliodvq4",
-    "Javbus": "EKDV-247",
     "Arzon": "1023501",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u3064\u307c\u307f"
     ],
-    "Modify": "2021-09-05 17:26:03"
+    "Modify": "2021-09-05 17:26:03",
+    "JavDb": "V488Q",
+    "JavLibrary": "javliodvq4",
+    "JavBus": "EKDV-247"
 }

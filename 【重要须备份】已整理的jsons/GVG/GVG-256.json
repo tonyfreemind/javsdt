@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/13gvg256/13gvg256pl.jpg",
     "CoverBus": "5col_b.jpg",
     "CutType": 1,
-    "Javdb": "e4GN",
-    "Javlibrary": "javlild234",
-    "Javbus": "GVG-256",
     "Arzon": "1315136",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u536f\u6c34\u54b2\u6d41"
     ],
-    "Modify": "2021-09-05 16:04:07"
+    "Modify": "2021-09-05 16:04:07",
+    "JavDb": "e4GN",
+    "JavLibrary": "javlild234",
+    "JavBus": "GVG-256"
 }

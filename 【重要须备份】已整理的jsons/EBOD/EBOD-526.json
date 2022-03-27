@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ebod526/ebod526pl.jpg",
     "CoverBus": "5jl2_b.jpg",
     "CutType": 1,
-    "Javdb": "0em9k",
-    "Javlibrary": "javlilqk4i",
-    "Javbus": "EBOD-526",
     "Arzon": "",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u9234\u6728\u5fc3\u6625"
     ],
-    "Modify": "2021-09-05 15:57:39"
+    "Modify": "2021-09-05 15:57:39",
+    "JavDb": "0em9k",
+    "JavLibrary": "javlilqk4i",
+    "JavBus": "EBOD-526"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/prtd010/prtd010pl.jpg",
     "CoverBus": "6cfp_b.jpg",
     "CutType": 1,
-    "Javdb": "nKAW6",
-    "Javlibrary": "javli4zrzy",
-    "Javbus": "PRTD-010",
     "Arzon": "1436004",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u4f50\u3005\u6ce2\u7dbe"
     ],
-    "Modify": "2021-11-07 18:03:01"
+    "Modify": "2021-11-07 18:03:01",
+    "JavDb": "nKAW6",
+    "JavLibrary": "javli4zrzy",
+    "JavBus": "PRTD-010"
 }

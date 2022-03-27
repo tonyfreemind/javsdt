@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipx005/ipx005pl.jpg",
     "CoverBus": "653r_b.jpg",
     "CutType": 1,
-    "Javdb": "Yn38e",
-    "Javlibrary": "javlikrhte",
-    "Javbus": "IPX-005",
     "Arzon": "1544420",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u6843\u4e43\u6728\u304b\u306a"
     ],
-    "Modify": "2021-09-05 18:37:01"
+    "Modify": "2021-09-05 18:37:01",
+    "JavDb": "Yn38e",
+    "JavLibrary": "javlikrhte",
+    "JavBus": "IPX-005"
 }

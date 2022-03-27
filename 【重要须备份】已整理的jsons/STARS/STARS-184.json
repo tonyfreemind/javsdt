@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1stars184/1stars184pl.jpg",
     "CoverBus": "7h6c_b.jpg",
     "CutType": 1,
-    "Javdb": "ZKmRV",
-    "Javlibrary": "javli6toti",
-    "Javbus": "STARS-184",
     "Arzon": "1549395",
     "CompletionStatus": 6,
     "Version": 1,
@@ -30,5 +27,8 @@
     "Actors": [
         "\u53e4\u5ddd\u4f0a\u7ec7"
     ],
-    "Modify": "2021-09-25 19:54:49"
+    "Modify": "2021-09-25 19:54:49",
+    "JavDb": "ZKmRV",
+    "JavLibrary": "javli6toti",
+    "JavBus": "STARS-184"
 }

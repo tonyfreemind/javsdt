@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/juy701/juy701pl.jpg",
     "CoverBus": "6upy_b.jpg",
     "CutType": 1,
-    "Javdb": "R5KE4",
-    "Javlibrary": "javli7qn4q",
-    "Javbus": "JUY-701",
     "Arzon": "1489203",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u8c37\u539f\u5e0c\u7f8e"
     ],
-    "Modify": "2021-09-21 08:04:51"
+    "Modify": "2021-09-21 08:04:51",
+    "JavDb": "R5KE4",
+    "JavLibrary": "javli7qn4q",
+    "JavBus": "JUY-701"
 }

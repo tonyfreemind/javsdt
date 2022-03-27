@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ssni578/ssni578pl.jpg",
     "CoverBus": "7b5b_b.jpg",
     "CutType": 1,
-    "Javdb": "wp482",
-    "Javlibrary": "javli6lmta",
-    "Javbus": "SSNI-578",
     "Arzon": "1535720",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u5929\u4f7f\u3082\u3048"
     ],
-    "Modify": "2021-09-25 19:03:22"
+    "Modify": "2021-09-25 19:03:22",
+    "JavDb": "wp482",
+    "JavLibrary": "javli6lmta",
+    "JavBus": "SSNI-578"
 }

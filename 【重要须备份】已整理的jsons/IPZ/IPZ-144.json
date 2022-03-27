@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipz144/ipz144pl.jpg",
     "CoverBus": "o91_b.jpg",
     "CutType": 1,
-    "Javdb": "J2ZO3",
-    "Javlibrary": "javlijasz4",
-    "Javbus": "IPZ-144",
     "Arzon": "1136891",
     "CompletionStatus": 6,
     "Version": 1,
@@ -31,5 +28,8 @@
     "Actors": [
         "\u521d\u97f3\u307f\u306e\u308a"
     ],
-    "Modify": "2021-09-25 16:03:05"
+    "Modify": "2021-09-25 16:03:05",
+    "JavDb": "J2ZO3",
+    "JavLibrary": "javlijasz4",
+    "JavBus": "IPZ-144"
 }

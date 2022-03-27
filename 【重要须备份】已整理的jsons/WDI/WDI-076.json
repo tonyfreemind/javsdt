@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/2wdi076/2wdi076pl.jpg",
     "CoverBus": "7ba1_b.jpg",
     "CutType": 1,
-    "Javdb": "Gdz95",
-    "Javlibrary": "javli6loze",
-    "Javbus": "WDI-076",
     "Arzon": "1535856",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u541b\u5cf6\u307f\u304a"
     ],
-    "Modify": "2021-09-13 23:00:38"
+    "Modify": "2021-09-13 23:00:38",
+    "JavDb": "Gdz95",
+    "JavLibrary": "javli6loze",
+    "JavBus": "WDI-076"
 }

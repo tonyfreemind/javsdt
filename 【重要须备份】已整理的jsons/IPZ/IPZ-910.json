@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipz910/ipz910pl.jpg",
     "CoverBus": "5vr3_b.jpg",
     "CutType": 1,
-    "Javdb": "Yww6K",
-    "Javlibrary": "javlikbhtu",
-    "Javbus": "IPZ-910",
     "Arzon": "1382663",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,8 @@
     "Actors": [
         "\u76f8\u6ca2\u307f\u306a\u307f"
     ],
-    "Modify": "2021-09-05 19:25:38"
+    "Modify": "2021-09-05 19:25:38",
+    "JavDb": "Yww6K",
+    "JavLibrary": "javlikbhtu",
+    "JavBus": "IPZ-910"
 }

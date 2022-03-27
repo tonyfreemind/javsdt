@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/kawd756/kawd756pl.jpg",
     "CoverBus": "5qpu_b.jpg",
     "CutType": 1,
-    "Javdb": "YwJ96",
-    "Javlibrary": "javlilzjze",
-    "Javbus": "KAWD-756",
     "Arzon": "1553195",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u6a31\u7531\u7f57"
     ],
-    "Modify": "2021-09-05 21:17:03"
+    "Modify": "2021-09-05 21:17:03",
+    "JavDb": "YwJ96",
+    "JavLibrary": "javlilzjze",
+    "JavBus": "KAWD-756"
 }

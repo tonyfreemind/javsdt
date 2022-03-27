@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipz559/ipz559pl.jpg",
     "CoverBus": "4qwo_b.jpg",
     "CutType": 1,
-    "Javdb": "829kd",
-    "Javlibrary": "javliiteya",
-    "Javbus": "IPZ-559",
     "Arzon": "1262187",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u5e0c\u5d0e\u30b8\u30a7\u30b7\u30ab"
     ],
-    "Modify": "2021-09-05 18:56:55"
+    "Modify": "2021-09-05 18:56:55",
+    "JavDb": "829kd",
+    "JavLibrary": "javliiteya",
+    "JavBus": "IPZ-559"
 }

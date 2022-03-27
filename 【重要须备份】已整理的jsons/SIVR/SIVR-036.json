@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/digital/video/sivr00036/sivr00036pl.jpg",
     "CoverBus": "6vsj_b.jpg",
     "CutType": 1,
-    "Javdb": "byxgv",
-    "Javlibrary": "javli7raze",
-    "Javbus": "SIVR-036",
     "Arzon": "",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
         "\u8475\u53f8",
         "\u5409\u9ad8\u5be7\u3005"
     ],
-    "Modify": "2021-09-25 20:25:08"
+    "Modify": "2021-09-25 20:25:08",
+    "JavDb": "byxgv",
+    "JavLibrary": "javli7raze",
+    "JavBus": "SIVR-036"
 }

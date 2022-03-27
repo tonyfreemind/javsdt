@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1stars267/1stars267pl.jpg",
     "CoverBus": "7x2j_b.jpg",
     "CutType": 1,
-    "Javdb": "P6YNv",
-    "Javlibrary": "javmezbmym",
-    "Javbus": "STARS-267",
     "Arzon": "1592596",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u767d\u5ddd\u3086\u305a"
     ],
-    "Modify": "2022-02-15 19:04:20"
+    "Modify": "2022-02-15 19:04:20",
+    "JavDb": "P6YNv",
+    "JavLibrary": "javmezbmym",
+    "JavBus": "STARS-267"
 }

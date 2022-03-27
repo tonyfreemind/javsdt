@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/snis397/snis397pl.jpg",
     "CoverBus": "4r6a_b.jpg",
     "CutType": 1,
-    "Javdb": "WwWOB",
-    "Javlibrary": "javliitm2y",
-    "Javbus": "SNIS-397",
     "Arzon": "1262870",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u5929\u4f7f\u3082\u3048"
     ],
-    "Modify": "2021-09-25 18:31:01"
+    "Modify": "2021-09-25 18:31:01",
+    "JavDb": "WwWOB",
+    "JavLibrary": "javliitm2y",
+    "JavBus": "SNIS-397"
 }

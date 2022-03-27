@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1svdvd121/1svdvd121pl.jpg",
     "CoverBus": "2om4_b.jpg",
     "CutType": 1,
-    "Javdb": "0eyRv",
-    "Javlibrary": "javlimya3m",
-    "Javbus": "SVDVD-121",
     "Arzon": "521937",
     "CompletionStatus": 6,
     "Version": 1,
@@ -31,5 +28,8 @@
     "Actors": [
         "\u3064\u307c\u307f"
     ],
-    "Modify": "2021-09-25 19:55:14"
+    "Modify": "2021-09-25 19:55:14",
+    "JavDb": "0eyRv",
+    "JavLibrary": "javlimya3m",
+    "JavBus": "SVDVD-121"
 }

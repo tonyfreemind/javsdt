@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/tikb018/tikb018pl.jpg",
     "CoverBus": "69wo_b.jpg",
     "CutType": 1,
-    "Javdb": "BkAO",
-    "Javlibrary": "javli4qprm",
-    "Javbus": "TIKB-018",
     "Arzon": "1426750",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u661f\u5948\u3042\u3044"
     ],
-    "Modify": "2021-09-25 20:01:23"
+    "Modify": "2021-09-25 20:01:23",
+    "JavDb": "BkAO",
+    "JavLibrary": "javli4qprm",
+    "JavBus": "TIKB-018"
 }

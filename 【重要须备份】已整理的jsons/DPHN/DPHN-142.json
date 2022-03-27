@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/33dphn142so/33dphn142sopl.jpg",
     "CoverBus": "3iaa_b.jpg",
     "CutType": 1,
-    "Javdb": "RXDn",
-    "Javlibrary": "javliplt4e",
-    "Javbus": "DPHN-142",
     "Arzon": "705131",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u6c34\u5d8b\u3042\u305a\u307f"
     ],
-    "Modify": "2021-09-05 15:51:31"
+    "Modify": "2021-09-05 15:51:31",
+    "JavDb": "RXDn",
+    "JavLibrary": "javliplt4e",
+    "JavBus": "DPHN-142"
 }

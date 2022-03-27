@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/beb076/beb076pl.jpg",
     "CoverBus": "n0r_b.jpg",
     "CutType": 1,
-    "Javdb": "neBAm",
-    "Javlibrary": "javliotmra",
-    "Javbus": "BEB-076",
     "Arzon": "1399789",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u611b\u6ca2\u6709\u7d17"
     ],
-    "Modify": "2021-09-05 15:34:51"
+    "Modify": "2021-09-05 15:34:51",
+    "JavDb": "neBAm",
+    "JavLibrary": "javliotmra",
+    "JavBus": "BEB-076"
 }

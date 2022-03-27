@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mkon020/mkon020pl.jpg",
     "CoverBus": "7gk1_b.jpg",
     "CutType": 1,
-    "Javdb": "6q38n",
-    "Javlibrary": "javli6qt3i",
-    "Javbus": "MKON-020",
     "Arzon": "1549060",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u7f8e\u7518\u308a\u304b"
     ],
-    "Modify": "2021-09-25 17:46:59"
+    "Modify": "2021-09-25 17:46:59",
+    "JavDb": "6q38n",
+    "JavLibrary": "javli6qt3i",
+    "JavBus": "MKON-020"
 }

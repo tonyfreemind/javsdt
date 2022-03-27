@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mifd100/mifd100pl.jpg",
     "CoverBus": "7ilh_b.jpg",
     "CutType": 1,
-    "Javdb": "e78Wp",
-    "Javlibrary": "javli6r344",
-    "Javbus": "MIFD-100",
     "Arzon": "1637137",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u9022\u5b9f\u307b\u305f\u308b"
     ],
-    "Modify": "2021-09-25 16:06:30"
+    "Modify": "2021-09-25 16:06:30",
+    "JavDb": "e78Wp",
+    "JavLibrary": "javli6r344",
+    "JavBus": "MIFD-100"
 }

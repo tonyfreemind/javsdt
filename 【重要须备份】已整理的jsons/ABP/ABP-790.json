@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/118abp790/118abp790pl.jpg",
     "CoverBus": "6tpn_b.jpg",
     "CutType": 1,
-    "Javdb": "96XXp",
-    "Javlibrary": "javli7lvyi",
-    "Javbus": "ABP-790",
     "Arzon": "1482149",
     "CompletionStatus": 6,
     "Version": 1,
@@ -31,5 +28,8 @@
     "Actors": [
         "\u6625\u54b2\u308a\u3087\u3046"
     ],
-    "Modify": "2021-09-05 15:13:33"
+    "Modify": "2021-09-05 15:13:33",
+    "JavDb": "96XXp",
+    "JavLibrary": "javli7lvyi",
+    "JavBus": "ABP-790"
 }

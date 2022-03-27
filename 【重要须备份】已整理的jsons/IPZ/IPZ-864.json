@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipz864/ipz864pl.jpg",
     "CoverBus": "5r17_b.jpg",
     "CutType": 1,
-    "Javdb": "bAd",
-    "Javlibrary": "javlil3uze",
-    "Javbus": "IPZ-864",
     "Arzon": "",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u821e\u5cf6\u3042\u304b\u308a"
     ],
-    "Modify": "2021-09-05 18:59:54"
+    "Modify": "2021-09-05 18:59:54",
+    "JavDb": "bAd",
+    "JavLibrary": "javlil3uze",
+    "JavBus": "IPZ-864"
 }

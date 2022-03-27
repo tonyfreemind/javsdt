@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/pppd399/pppd399pl.jpg",
     "CoverBus": "4yby_b.jpg",
     "CutType": 1,
-    "Javdb": "meXDY",
-    "Javlibrary": "javliizura",
-    "Javbus": "PPPD-399",
     "Arzon": "1286467",
     "CompletionStatus": 6,
     "Version": 1,
@@ -31,5 +28,8 @@
     "Actors": [
         "JULIA"
     ],
-    "Modify": "2021-09-25 18:06:15"
+    "Modify": "2021-09-25 18:06:15",
+    "JavDb": "meXDY",
+    "JavLibrary": "javliizura",
+    "JavBus": "PPPD-399"
 }

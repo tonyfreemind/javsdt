@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipx238/ipx238pl.jpg",
     "CoverBus": "6uyj_b.jpg",
     "CutType": 1,
-    "Javdb": "6xqBa",
-    "Javlibrary": "javli7rt24",
-    "Javbus": "IPX-238",
     "Arzon": "1589484",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u685c\u7a7a\u3082\u3082"
     ],
-    "Modify": "2021-09-05 18:44:22"
+    "Modify": "2021-09-05 18:44:22",
+    "JavDb": "6xqBa",
+    "JavLibrary": "javli7rt24",
+    "JavBus": "IPX-238"
 }

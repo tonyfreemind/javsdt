@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1stars013/1stars013pl.jpg",
     "CoverBus": "",
     "CutType": 1,
-    "Javdb": "5J6Jp",
-    "Javlibrary": "javli7q4ym",
-    "Javbus": "",
     "Arzon": "1506667",
     "CompletionStatus": 4,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u9727\u5cf6\u30ec\u30aa\u30ca"
     ],
-    "Modify": "2021-09-25 19:50:20"
+    "Modify": "2021-09-25 19:50:20",
+    "JavDb": "5J6Jp",
+    "JavLibrary": "javli7q4ym",
+    "JavBus": ""
 }

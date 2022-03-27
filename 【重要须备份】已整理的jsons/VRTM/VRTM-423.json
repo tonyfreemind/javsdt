@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/h_910vrtm423/h_910vrtm423pl.jpg",
     "CoverBus": "72je_b.jpg",
     "CutType": 1,
-    "Javdb": "gBmpm",
-    "Javlibrary": "javli7yl2y",
-    "Javbus": "VRTM-423",
     "Arzon": "1508219",
     "CompletionStatus": 6,
     "Version": 1,
@@ -37,5 +34,8 @@
         "\u5009\u6728\u3057\u304a\u308a",
         "\u7686\u6708\u3072\u304b\u308b"
     ],
-    "Modify": "2021-09-25 20:26:09"
+    "Modify": "2021-09-25 20:26:09",
+    "JavDb": "gBmpm",
+    "JavLibrary": "javli7yl2y",
+    "JavBus": "VRTM-423"
 }

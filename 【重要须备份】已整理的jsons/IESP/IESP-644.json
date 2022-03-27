@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1iesp644/1iesp644pl.jpg",
     "CoverBus": "6t07_b.jpg",
     "CutType": 1,
-    "Javdb": "5nA2Y",
-    "Javlibrary": "javli7jl4i",
-    "Javbus": "IESP-644",
     "Arzon": "1481951",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u516b\u4e43\u3064\u3070\u3055"
     ],
-    "Modify": "2021-09-05 18:34:56"
+    "Modify": "2021-09-05 18:34:56",
+    "JavDb": "5nA2Y",
+    "JavLibrary": "javli7jl4i",
+    "JavBus": "IESP-644"
 }

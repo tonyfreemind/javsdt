@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/tek079/tek079pl.jpg",
     "CoverBus": "5hyn_b.jpg",
     "CutType": 1,
-    "Javdb": "GZ1R5",
-    "Javlibrary": "javlilqrte",
-    "Javbus": "TEK-079",
     "Arzon": "1335578",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,8 @@
     "Actors": [
         "\u4e09\u4e0a\u60a0\u4e9c"
     ],
-    "Modify": "2021-09-25 20:01:00"
+    "Modify": "2021-09-25 20:01:00",
+    "JavDb": "GZ1R5",
+    "JavLibrary": "javlilqrte",
+    "JavBus": "TEK-079"
 }

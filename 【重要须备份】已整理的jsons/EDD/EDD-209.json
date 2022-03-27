@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/118edd209/118edd209pl.jpg",
     "CoverBus": "3sf5_b.jpg",
     "CutType": 1,
-    "Javdb": "nK399",
-    "Javlibrary": "javlioihya",
-    "Javbus": "EDD-209",
     "Arzon": "1077578",
     "CompletionStatus": 6,
     "Version": 1,
@@ -29,5 +26,8 @@
     "Actors": [
         "\u3042\u3084\u307f\u65ec\u679c"
     ],
-    "Modify": "2021-09-05 15:58:51"
+    "Modify": "2021-09-05 15:58:51",
+    "JavDb": "nK399",
+    "JavLibrary": "javlioihya",
+    "JavBus": "EDD-209"
 }

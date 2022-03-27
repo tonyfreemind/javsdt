@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ssni221/ssni221pl.jpg",
     "CoverBus": "6l17_b.jpg",
     "CutType": 1,
-    "Javdb": "3nZQD",
-    "Javlibrary": "javli7ae3y",
-    "Javbus": "SSNI-221",
     "Arzon": "1460056",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u5c0f\u91ce\u5915\u5b50"
     ],
-    "Modify": "2021-09-25 18:46:58"
+    "Modify": "2021-09-25 18:46:58",
+    "JavDb": "3nZQD",
+    "JavLibrary": "javli7ae3y",
+    "JavBus": "SSNI-221"
 }

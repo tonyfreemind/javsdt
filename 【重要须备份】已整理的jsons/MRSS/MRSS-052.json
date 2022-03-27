@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mrss052/mrss052pl.jpg",
     "CoverBus": "6iay_b.jpg",
     "CutType": 1,
-    "Javdb": "kKMez",
-    "Javlibrary": "javli7dk7a",
-    "Javbus": "MRSS-052",
     "Arzon": "",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u4f50\u3005\u6ce2\u7dbe"
     ],
-    "Modify": "2021-09-25 17:49:12"
+    "Modify": "2021-09-25 17:49:12",
+    "JavDb": "kKMez",
+    "JavLibrary": "javli7dk7a",
+    "JavBus": "MRSS-052"
 }

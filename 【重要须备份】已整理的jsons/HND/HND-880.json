@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/hnd880/hnd880pl.jpg",
     "CoverBus": "7v2d_b.jpg",
     "CutType": 1,
-    "Javdb": "0EqkX",
-    "Javlibrary": "javmezaj2q",
-    "Javbus": "HND-880",
     "Arzon": "1586808",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u4e95\u4e0a\u305d\u3089"
     ],
-    "Modify": "2022-02-15 12:43:17"
+    "Modify": "2022-02-15 12:43:17",
+    "JavDb": "0EqkX",
+    "JavLibrary": "javmezaj2q",
+    "JavBus": "HND-880"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/meyd560/meyd560pl.jpg",
     "CoverBus": "7h0q_b.jpg",
     "CutType": 1,
-    "Javdb": "n4ade",
-    "Javlibrary": "javli6qnqy",
-    "Javbus": "MEYD-560",
     "Arzon": "1549859",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u4e2d\u91ce\u4e03\u7dd2"
     ],
-    "Modify": "2021-09-05 21:30:27"
+    "Modify": "2021-09-05 21:30:27",
+    "JavDb": "n4ade",
+    "JavLibrary": "javli6qnqy",
+    "JavBus": "MEYD-560"
 }

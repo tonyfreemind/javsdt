@@ -182,7 +182,7 @@ class Standard(object):
         self._dict_for_standard[Const.CAR_PREF] = extract_pref(jav_data.Car)
         # 日期
         self._dict_for_standard[Const.RELEASE] = jav_data.Release
-        self._dict_for_standard[Const.RELEASE_YEAR] = jav_data.Release[0:4]
+        self._dict_for_standard[Const.RELEASE_YEAR] = jav_data.Release[:4]
         self._dict_for_standard[Const.RELEASE_MONTH] = jav_data.Release[5:7]
         self._dict_for_standard[Const.RELEASE_DAY] = jav_data.Release[8:10]
         # 演职人员
@@ -194,7 +194,7 @@ class Standard(object):
         self._dict_for_standard[Const.STUDIO] = replace_xml_win(jav_data.Studio) if jav_data.Studio else '有码制作商'
         # 评分 系列
         self._dict_for_standard[Const.SCORE] = jav_data.Score / 10
-        self._dict_for_standard[Const.SERIES] = jav_data.Series if jav_data.Series else '有码系列'
+        self._dict_for_standard[Const.SERIES] = jav_data.Series or '有码系列'
         # 全部演员（最多7个） 和 第一个演员
         if jav_data.Actors:
             self._dict_for_standard[Const.ALL_ACTORS] = ' '.join(jav_data.Actors[:7])  # 演员至多取7个
@@ -558,10 +558,13 @@ class Standard(object):
                 # 引发报错raise SameFileError("{!r} and {!r} are the same file".format(src, dst))
                 # 所以这里判断下path_fanart有没有，如果有，就不再搞图片了
                 if not os.path.exists(path_fanart):
-                    copyfile(path_fanart.replace(jav_file.Cd, '-cd1'), path_fanart)
-                    print('    >fanart.jpg复制成功')
-                    copyfile(path_poster.replace(jav_file.Cd, '-cd1'), path_poster)
-                    print('    >poster.jpg复制成功')
+                    # 还有个问题，如果T28-557 ㊥-cd1-fanart.jpg，而T28-557-cd2-fanart.jpg
+                    path_fanart_cd1 = path_fanart.replace(jav_file.Cd, '-cd1')
+                    if os.path.exists(path_fanart_cd1):
+                        copyfile(path_fanart.replace(jav_file.Cd, '-cd1'), path_fanart)
+                        print('    >fanart.jpg复制成功')
+                        copyfile(path_poster.replace(jav_file.Cd, '-cd1'), path_poster)
+                        print('    >poster.jpg复制成功')
 
             # 是否已存在可用的fanart
             if check_picture(path_fanart):
@@ -570,9 +573,9 @@ class Standard(object):
                 pass
             else:
                 status = False  # 用于判断fanart是否下载成功
-                if jav_model.Javdb:
+                if jav_model.JavDb:
                     # Todo 如果javdb的图片不是规则的
-                    url_cover = f'https://jdbimgs.com/covers/{jav_model.Javdb[:2].lower()}/{jav_model.Javdb}.jpg'
+                    url_cover = f'https://jdbimgs.com/covers/{jav_model.JavDb[:2].lower()}/{jav_model.JavDb}.jpg'
                     # print('    >从javdb下载封面: ', url_cover)  # 不希望“某些人”看到是从javdb上下载图片
                     print('    >下载封面: ...')
                     status = download_pic(url_cover, path_fanart, self._proxy_db)

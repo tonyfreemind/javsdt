@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/atid398/atid398pl.jpg",
     "CoverBus": "7ic0_b.jpg",
     "CutType": 1,
-    "Javdb": "qbKYD",
-    "Javlibrary": "javli6rx4q",
-    "Javbus": "ATID-398",
     "Arzon": "1553498",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u5f25\u751f\u307f\u3065\u304d"
     ],
-    "Modify": "2021-11-07 21:04:12"
+    "Modify": "2021-11-07 21:04:12",
+    "JavDb": "qbKYD",
+    "JavLibrary": "javli6rx4q",
+    "JavBus": "ATID-398"
 }

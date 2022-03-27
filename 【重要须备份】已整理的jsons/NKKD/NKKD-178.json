@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/nkkd178/nkkd178pl.jpg",
     "CoverBus": "7vto_b.jpg",
     "CutType": 1,
-    "Javdb": "aPEqO",
-    "Javlibrary": "javmezbb4e",
-    "Javbus": "NKKD-178",
     "Arzon": "1589821",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u6a58\u30e1\u30a2\u30ea\u30fc"
     ],
-    "Modify": "2022-02-15 12:32:34"
+    "Modify": "2022-02-15 12:32:34",
+    "JavDb": "aPEqO",
+    "JavLibrary": "javmezbb4e",
+    "JavBus": "NKKD-178"
 }

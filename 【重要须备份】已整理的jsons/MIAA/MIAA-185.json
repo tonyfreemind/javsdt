@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/miaa185/miaa185pl.jpg",
     "CoverBus": "7cyl_b.jpg",
     "CutType": 1,
-    "Javdb": "NZGgg",
-    "Javlibrary": "javli6j75u",
-    "Javbus": "MIAA-185",
     "Arzon": "1540530",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,8 @@
     "Actors": [
         "\u594f\u97f3\u304b\u306e\u3093"
     ],
-    "Modify": "2021-09-05 21:37:00"
+    "Modify": "2021-09-05 21:37:00",
+    "JavDb": "NZGgg",
+    "JavLibrary": "javli6j75u",
+    "JavBus": "MIAA-185"
 }

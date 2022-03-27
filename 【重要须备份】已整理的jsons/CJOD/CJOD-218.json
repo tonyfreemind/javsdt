@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/cjod218/cjod218pl.jpg",
     "CoverBus": "7f50_b.jpg",
     "CutType": 1,
-    "Javdb": "nz58M",
-    "Javlibrary": "javli6rr6a",
-    "Javbus": "CJOD-218",
     "Arzon": "1547723",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u67cf\u6728\u80e1\u6843"
     ],
-    "Modify": "2021-09-05 15:43:24"
+    "Modify": "2021-09-05 15:43:24",
+    "JavDb": "nz58M",
+    "JavLibrary": "javli6rr6a",
+    "JavBus": "CJOD-218"
 }

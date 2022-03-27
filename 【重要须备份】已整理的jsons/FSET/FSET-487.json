@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1fset487/1fset487pl.jpg",
     "CoverBus": "49o1_b.jpg",
     "CutType": 1,
-    "Javdb": "y94A",
-    "Javlibrary": "javlijr75m",
-    "Javbus": "FSET-487",
     "Arzon": "1197069",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
         "\u91ce\u3005\u5bae\u3053\u3053\u307f",
         "\u8449\u6708\u4e03\u702c"
     ],
-    "Modify": "2021-09-05 16:00:34"
+    "Modify": "2021-09-05 16:00:34",
+    "JavDb": "y94A",
+    "JavLibrary": "javlijr75m",
+    "JavBus": "FSET-487"
 }

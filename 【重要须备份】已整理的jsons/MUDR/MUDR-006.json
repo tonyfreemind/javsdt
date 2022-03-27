@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mudr006/mudr006pl.jpg",
     "CoverBus": "56p3_b.jpg",
     "CutType": 1,
-    "Javdb": "d4bGg",
-    "Javlibrary": "javlilartu",
-    "Javbus": "MUDR-006",
     "Arzon": "1297027",
     "CompletionStatus": 6,
     "Version": 1,
@@ -40,5 +37,8 @@
         "\u84ee\u5b9f\u30af\u30ec\u30a2",
         "\u5c0f\u897f\u307e\u308a\u3048"
     ],
-    "Modify": "2021-09-25 17:49:18"
+    "Modify": "2021-09-25 17:49:18",
+    "JavDb": "d4bGg",
+    "JavLibrary": "javlilartu",
+    "JavBus": "MUDR-006"
 }

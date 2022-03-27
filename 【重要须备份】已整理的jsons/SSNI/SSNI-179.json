@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ssni179/ssni179pl.jpg",
     "CoverBus": "6i8j_b.jpg",
     "CutType": 1,
-    "Javdb": "0073",
-    "Javlibrary": "javli7dkqa",
-    "Javbus": "SSNI-179",
     "Arzon": "1451707",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,8 @@
     "Actors": [
         "\u661f\u91ce\u30ca\u30df"
     ],
-    "Modify": "2021-09-25 18:45:36"
+    "Modify": "2021-09-25 18:45:36",
+    "JavDb": "0073",
+    "JavLibrary": "javli7dkqa",
+    "JavBus": "SSNI-179"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/pppd340/pppd340pl.jpg",
     "CoverBus": "4lru_b.jpg",
     "CutType": 1,
-    "Javdb": "35YN9",
-    "Javlibrary": "javliilj4y",
-    "Javbus": "PPPD-340",
     "Arzon": "1382934",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
         "JULIA",
         "\u5bae\u5ddd\u308c\u307f"
     ],
-    "Modify": "2021-09-25 18:05:43"
+    "Modify": "2021-09-25 18:05:43",
+    "JavDb": "35YN9",
+    "JavLibrary": "javliilj4y",
+    "JavBus": "PPPD-340"
 }

@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1stars170/1stars170pl.jpg",
     "CoverBus": "7grr_b.jpg",
     "CutType": 1,
-    "Javdb": "0dYk0",
-    "Javlibrary": "javli6rw24",
-    "Javbus": "STARS-170",
     "Arzon": "1547329",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
         "\u6238\u7530\u771f\u7434",
         "\u6709\u6816\u308b\u308b"
     ],
-    "Modify": "2021-09-25 19:54:12"
+    "Modify": "2021-09-25 19:54:12",
+    "JavDb": "0dYk0",
+    "JavLibrary": "javli6rw24",
+    "JavBus": "STARS-170"
 }

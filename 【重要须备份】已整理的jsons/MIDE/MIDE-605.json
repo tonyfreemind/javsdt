@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mide605/mide605pl.jpg",
     "CoverBus": "6uzi_b.jpg",
     "CutType": 1,
-    "Javdb": "DYV0p",
-    "Javlibrary": "javli7qx4e",
-    "Javbus": "MIDE-605",
     "Arzon": "1489582",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u4e03\u6ca2\u307f\u3042"
     ],
-    "Modify": "2021-09-25 17:34:31"
+    "Modify": "2021-09-25 17:34:31",
+    "JavDb": "DYV0p",
+    "JavLibrary": "javli7qx4e",
+    "JavBus": "MIDE-605"
 }

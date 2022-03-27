@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1stars145/1stars145pl.jpg",
     "CoverBus": "7ct4_b.jpg",
     "CutType": 1,
-    "Javdb": "1y9Yw",
-    "Javlibrary": "javli6iese",
-    "Javbus": "STARS-145",
     "Arzon": "1538576",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u6c38\u91ce\u3044\u3061\u590f"
     ],
-    "Modify": "2021-09-25 19:53:07"
+    "Modify": "2021-09-25 19:53:07",
+    "JavDb": "1y9Yw",
+    "JavLibrary": "javli6iese",
+    "JavBus": "STARS-145"
 }

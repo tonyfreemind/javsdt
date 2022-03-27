@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mide655/mide655pl.jpg",
     "CoverBus": "7470_b.jpg",
     "CutType": 1,
-    "Javdb": "kBAk0",
-    "Javlibrary": "javli6dsri",
-    "Javbus": "MIDE-655",
     "Arzon": "1516058",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,8 @@
     "Actors": [
         "\u521d\u5ddd\u307f\u306a\u307f"
     ],
-    "Modify": "2021-09-25 17:36:47"
+    "Modify": "2021-09-25 17:36:47",
+    "JavDb": "kBAk0",
+    "JavLibrary": "javli6dsri",
+    "JavBus": "MIDE-655"
 }

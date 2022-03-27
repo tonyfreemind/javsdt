@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/meyd248/meyd248pl.jpg",
     "CoverBus": "5we0_b.jpg",
     "CutType": 1,
-    "Javdb": "AgMy",
-    "Javlibrary": "javlikd2su",
-    "Javbus": "MEYD-248",
     "Arzon": "1383562",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,8 @@
     "Actors": [
         "\u672c\u7530\u5cac"
     ],
-    "Modify": "2021-09-21 08:05:29"
+    "Modify": "2021-09-21 08:05:29",
+    "JavDb": "AgMy",
+    "JavLibrary": "javlikd2su",
+    "JavBus": "MEYD-248"
 }

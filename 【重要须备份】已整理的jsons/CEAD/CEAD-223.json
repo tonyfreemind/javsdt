@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/cead223/cead223pl.jpg",
     "CoverBus": "6122_b.jpg",
     "CutType": 1,
-    "Javdb": "88wd",
-    "Javlibrary": "javlikjzr4",
-    "Javbus": "CEAD-223",
     "Arzon": "1395858",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u672c\u7530\u5cac"
     ],
-    "Modify": "2022-02-15 19:12:39"
+    "Modify": "2022-02-15 19:12:39",
+    "JavDb": "88wd",
+    "JavLibrary": "javlikjzr4",
+    "JavBus": "CEAD-223"
 }

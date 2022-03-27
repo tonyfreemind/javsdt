@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/84mild703/84mild703pl.jpg",
     "CoverBus": "ttb_b.jpg",
     "CutType": 1,
-    "Javdb": "35v3b",
-    "Javlibrary": "javliadh5y",
-    "Javbus": "MILD-703",
     "Arzon": "702789",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u85e4\u4e95\u30b7\u30a7\u30ea\u30fc"
     ],
-    "Modify": "2021-09-25 17:42:26"
+    "Modify": "2021-09-25 17:42:26",
+    "JavDb": "35v3b",
+    "JavLibrary": "javliadh5y",
+    "JavBus": "MILD-703"
 }

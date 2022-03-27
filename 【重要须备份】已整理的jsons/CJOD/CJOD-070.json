@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/cjod070/cjod070pl.jpg",
     "CoverBus": "5vd4_b.jpg",
     "CutType": 1,
-    "Javdb": "2aBNq",
-    "Javlibrary": "javlikbk44",
-    "Javbus": "CJOD-070",
     "Arzon": "1381470",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u82e5\u83dc\u5948\u592e"
     ],
-    "Modify": "2021-09-05 15:41:23"
+    "Modify": "2021-09-05 15:41:23",
+    "JavDb": "2aBNq",
+    "JavLibrary": "javlikbk44",
+    "JavBus": "CJOD-070"
 }

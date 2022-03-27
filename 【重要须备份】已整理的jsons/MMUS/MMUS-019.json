@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mmus019so/mmus019sopl.jpg",
     "CoverBus": "6iam_b.jpg",
     "CutType": 1,
-    "Javdb": "rmXKA",
-    "Javlibrary": "javli7dk7i",
-    "Javbus": "MMUS-019",
     "Arzon": "1451214",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u5742\u54b2\u307f\u307b"
     ],
-    "Modify": "2021-09-25 17:48:39"
+    "Modify": "2021-09-25 17:48:39",
+    "JavDb": "rmXKA",
+    "JavLibrary": "javli7dk7i",
+    "JavBus": "MMUS-019"
 }

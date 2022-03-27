@@ -16,9 +16,6 @@
     "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ebod475/ebod475pl.jpg",
     "CoverBus": "56qm_b.jpg",
     "CutType": 1,
-    "Javdb": "6bg0",
-    "Javlibrary": "javlildx54",
-    "Javbus": "EBOD-475",
     "Arzon": "1297038",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,8 @@
     "Actors": [
         "\u7f8e\u7af9\u3059\u305a"
     ],
-    "Modify": "2021-09-05 15:56:59"
+    "Modify": "2021-09-05 15:56:59",
+    "JavDb": "6bg0",
+    "JavLibrary": "javlildx54",
+    "JavBus": "EBOD-475"
 }
