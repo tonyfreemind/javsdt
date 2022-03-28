@@ -277,39 +277,37 @@ class Standard(object):
         Args:
             jav_file: jav视频文件对象
         """
-        # 如果需要归类，且不是针对文件夹来归类
-        if self._need_classify and not self._need_classify_folder:
+        # 如果不需要归类，或者是针对文件夹来归类
+        if not self._need_classify or self._need_classify_folder:
+            return  # 【进行下一步处理】
 
-            # region 得到归类的目标文件夹
-            dir_dest = f'{self._dir_classify_root}{sep}'
-            """归类的目标文件夹路径"""
-            for element in self._list_name_classify_dir:
-                dir_dest = f'{dir_dest}{self._dict_for_standard[element].strip()}'
-            dir_dest = f'{self._dir_classify_root}{sep}{"".join([replace_os_invalid_char(self._dict_for_standard[element]) for element in self._list_name_classify_dir])}'
-            # endregion
+        # region 确定归类的目标文件夹
+        dir_relative = "".join(
+            [replace_os_invalid_char(self._dict_for_standard[element]) for element in self._list_name_classify_dir]
+        )
+        dir_target = f'{self._dir_classify_root}{sep}{dir_relative}'
+        """归类的目标文件夹路径"""
+        # 没有先创建该文件夹
+        if not os.path.exists(dir_target):
+            os.makedirs(dir_target)
+        # endregion
 
-            # region 创建该文件夹
-            if not os.path.exists(dir_dest):
-                os.makedirs(dir_dest)
-            path_new = f'{dir_dest}{sep}{jav_file.Name}'
-            """新的视频文件路径"""
-            # endregion
+        # region 移动视频
+        path_new = f'{dir_target}{sep}{jav_file.Name}'  # 新的视频文件路径
+        if os.path.exists(path_new):
+            raise FileExistsError(f'归类失败，重复的影片，归类的目标文件夹已经存在相同的影片: {path_new}')  # 【终止整理】
 
-            # region 移动视频和字幕
-            if not os.path.exists(path_new):  # 目标文件夹没有相同的影片
-                os.rename(jav_file.Path, path_new)
-                jav_file.Dir = dir_dest  # 【更新】jav.dir
-                print('    >归类视频文件完成')
-                # 移动字幕
-                if jav_file.Subtitle:
-                    path_subtitle_new = f'{dir_dest}{sep}{jav_file.Subtitle}'
-                    """新的字幕文件路径"""
-                    if jav_file.Path_subtitle != path_subtitle_new:
-                        os.rename(jav_file.Path_subtitle, path_subtitle_new)
-                    print('    >归类字幕文件完成')
-            else:
-                raise FileExistsError(f'归类失败，重复的影片，归类的目标文件夹已经存在相同的影片: {path_new}')  # 【终止对该jav的整理】
-            # endregion
+        os.rename(jav_file.Path, path_new)
+        jav_file.Dir = dir_target  # 【更新】jav.dir
+        print('    >归类视频文件完成')
+        # endregion
+
+        # region 移动字幕
+        if jav_file.Subtitle:
+            path_subtitle_new = f'{dir_target}{sep}{jav_file.Subtitle}'  # 新的字幕文件路径
+            if jav_file.Path_subtitle != path_subtitle_new:
+                os.rename(jav_file.Path_subtitle, path_subtitle_new)  # 下面不再处理字幕，不用更新字幕成员
+        # endregion
 
     def rename_folder(self, jav_file: JavFile):
         """
@@ -320,59 +318,51 @@ class Standard(object):
         Args:
             jav_file: jav元数据对象
         """
-        if self._need_rename_folder:
+        if not self._need_rename_folder:
+            return
 
-            # region 得到新文件夹名
-            folder_new = ''
-            for element in self._list_name_folder:
-                folder_new = f'{folder_new}{self._dict_for_standard[element]}'
-            folder_new = folder_new.rstrip(' .')  # 【临时变量】新的所在文件夹。去除末尾空格和“.”
+        # region 得到新文件夹名
+        folder_new = ''.join(
+            [replace_os_invalid_char(self._dict_for_standard[element]) for element in self._list_name_folder]
+        ).lstrip('.')
+        """新的所在文件夹名称"""
+        # endregion
+
+        # （1）视频已经在独立文件夹中，直接重命名当前文件夹，无需新建文件夹；（2）当前视频是该车牌的最后一集，他的兄弟姐妹已经处理完成，才会重命名它们的“家”。
+        if jav_file.Bool_in_separate_folder and jav_file.Episode == jav_file.Sum_all_episodes:
+            # region 直接重命名现有文件夹
+            dir_new = f'{os.path.dirname(jav_file.Dir)}{sep}{folder_new}'  # 新的视频文件所在文件夹路径
+            # 目标文件夹还不存在
+            if not os.path.exists(dir_new):
+                os.rename(jav_file.Dir, dir_new)
+                jav_file.Dir = dir_new  # 【更新】jav.dir
+            elif jav_file.Dir != dir_new:
+                # 文件夹已存在，但不是现在所处的文件夹
+                raise FileExistsError(f'重命名文件夹失败，已存在相同文件夹: {dir_new}')  # 【终止整理】
+            print('    >重命名文件夹完成')
             # endregion
+        else:
+            # region 创建新的独立文件夹，再移动
+            dir_target = f'{jav_file.Dir}{sep}{folder_new}'  # 需要创建的文件夹
+            # 确认没有同名文件夹
+            if not os.path.exists(dir_target):
+                os.makedirs(dir_target)
+            path_new = f'{dir_target}{sep}{jav_file.Name}'  # 【临时变量】新的影片路径
+            # 如果这个文件夹是现成的，确认在它内部没有同名视频文件。
+            if os.path.exists(path_new):
+                raise FileExistsError(f'创建独立文件夹失败，已存在相同的视频文件: {path_new}')  # 【终止整理】
 
-            # 视频已经在独立文件夹中，直接重命名当前文件夹
-            if jav_file.Bool_in_separate_folder:
-                # region 重命名文件夹
-                # 当前视频是该车牌的最后一集，表明他的兄弟姐妹已经处理完成，才会重命名它们的“家”。
-                if jav_file.Episode == jav_file.Sum_all_episodes:
-                    dir_new = f'{os.path.dirname(jav_file.Dir)}{sep}{folder_new}'
-                    """新的（视频文件）所在文件夹路径"""
-                    # 目标文件夹还不存在
-                    if not os.path.exists(dir_new):
-                        os.rename(jav_file.Dir, dir_new)
-                        jav_file.Dir = dir_new  # 【更新】jav.dir
-                    # 目标文件夹存在，但就是现在的文件夹，即新旧相同
-                    elif jav_file.Dir == dir_new:
-                        pass
-                    # 真的有一个同名的文件夹了
-                    else:
-                        raise FileExistsError(f'重命名文件夹失败，已存在相同文件夹: {dir_new}')  # 【终止整理】
-                    print('    >重命名文件夹完成')
-                # endregion
-            # 视频不在独立文件夹中，在当前文件夹中创建新的独立的文件夹
-            else:
-                # region 创建新的独立文件夹
-                dir_dest = f'{jav_file.Dir}{sep}{folder_new}'
-                """需要创建的文件夹"""
-                # 确认没有同名文件夹
-                if not os.path.exists(dir_dest):
-                    os.makedirs(dir_dest)
-                path_new = f'{dir_dest}{sep}{jav_file.Name}'  # 【临时变量】新的影片路径
-                # 如果这个文件夹是现成的，确认在它内部没有同名视频文件。
-                if not os.path.exists(path_new):
-                    os.rename(jav_file.Path, path_new)
-                    jav_file.Dir = dir_dest  # 【更新】jav.dir
-                    print('    >移动到独立文件夹完成')
-                    # 移动字幕
-                    if jav_file.Subtitle:
-                        path_subtitle_new = f'{dir_dest}{sep}{jav_file.Subtitle}'
-                        """新的字幕路径"""
-                        os.rename(jav_file.Path_subtitle, path_subtitle_new)
-                        # 后续不会操作 字幕文件 了，jav.path_subtitle不再更新
-                        print('    >移动字幕到独立文件夹')
-                # 里面已有同名视频文件，这不是它的家。
-                else:
-                    raise FileExistsError(f'创建独立文件夹失败，已存在相同的视频文件: {path_new}')  # 【终止整理】
-                # endregion
+            # 移动视频
+            os.rename(jav_file.Path, path_new)
+            jav_file.Dir = dir_target  # 【更新】jav.dir
+            print('    >移动到独立文件夹完成')
+
+            # 移动字幕
+            if jav_file.Subtitle:
+                path_subtitle_new = f'{dir_target}{sep}{jav_file.Subtitle}'  # 新的字幕路径
+                os.rename(jav_file.Path_subtitle, path_subtitle_new)  # 后续不会操作字幕文件了，不再更新字幕成员
+                print('    >移动字幕到独立文件夹')
+            # endregion
 
     def collect_sculpture(self, jav_file: JavFile, jav_data: JavData):
         """
