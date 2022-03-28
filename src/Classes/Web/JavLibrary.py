@@ -1,17 +1,16 @@
 # -*- coding:utf-8 -*-
 import re
-from typing import List
 # from traceback import format_exc
 
-from Classes.Config import Ini
-from Classes.Enums import ScrapeStatusEnum
+from Static.Config import Ini
+from Enums import ScrapeStatusEnum
 from Classes.Model.JavData import JavData
 from Classes.Model.JavFile import JavFile
 from Classes.Web.JavWeb import JavWeb
-from Classes.Const import Const
+from Static.Const import Const
 from Functions.Metadata.Genre import prefect_genres
 from Functions.Utils.LittleUtils import update_ini_file
-from Functions.Utils.XML import replace_xml_win, replace_line_break
+from Functions.Utils.XML import replace_line_break
 
 
 class JavLibrary(JavWeb):
@@ -124,12 +123,12 @@ class JavLibrary(JavWeb):
         # 导演
         if not jav_data.Director:
             directorg = re.search(r'director\.php.+?>(.+?)<', html)
-            jav_data.Director = replace_xml_win(directorg.group(1)) if directorg else ''
+            jav_data.Director = directorg.group(1) if directorg else ''
 
         # 制作商
         if not jav_data.Studio:
             studiog = re.search(r'maker\.php.+?>(.+?)<', html)
-            jav_data.Studio = replace_xml_win(studiog.group(1)) if studiog else ''
+            jav_data.Studio = studiog.group(1) if studiog else ''
 
         # 发行商
         if not jav_data.Publisher:

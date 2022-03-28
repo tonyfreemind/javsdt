@@ -2,7 +2,7 @@
 from configparser import RawConfigParser
 from traceback import format_exc
 
-from Classes.Const import Const
+from Static.Const import Const
 
 try:
     print('>>正在重写ini文件...')

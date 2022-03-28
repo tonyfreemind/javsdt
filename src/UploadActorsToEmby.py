@@ -7,7 +7,7 @@ from json import loads
 from os.path import exists
 
 # 检查“演员头像”文件夹是否就绪
-from Const import Const
+from Static.Const import Const
 
 if not exists(Const.FOLDER_ACTOR):
     input('\n“{Const.folder_actor}”文件夹丢失！请把它放进exe的文件夹中！\n')

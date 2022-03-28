@@ -1,29 +1,32 @@
 import os
 from os import sep
-import Config
 from shutil import copyfile
 from configparser import RawConfigParser  # 读取ini
 from configparser import NoOptionError  # ini文件不存在或不存在指定node的错误
+from typing import List, TextIO
 
-from Car import extract_pref
 from Classes.Model.JavData import JavData
 from Classes.Model.JavFile import JavFile
-from Classes.MyLogger import record_video_old
-from Classes.Errors import TooManyDirectoryLevelsError, DownloadFanartError
-from Classes.Const import Const
+from Classes.Handler.MyLogger import record_video_old
+from Classes.Static.Errors import TooManyDirectoryLevelsError, DownloadFanartError
+from Classes.Static.Const import Const
+from Classes.Static.Config import Ini
 from Functions.Utils.Download import download_pic
 from Functions.Progress.Picture import check_picture, crop_poster_youma, add_watermark_subtitle, add_watermark_divulge
-from Functions.Utils.XML import replace_xml_win, replace_xml
+from Functions.Utils.XML import replace_xml_invalid_char, replace_os_invalid_char
 from Functions.Utils.LittleUtils import cut_str
 
 
 class Standard(object):
     """ 本地文件规范化"""
 
-    def __init__(self, ini: Config.Ini):
+    def __init__(self, ini: Ini):
 
         self._dict_for_standard = ini.dict_for_standard
         """字典\n\n用于给用户自定义命名的各类元素包含其中"""
+
+        self._dir_classify_root = ''
+        """路径: 归类的目标根目录"""
 
         # region ######################################## 1公式元素 ########################################
         self._bool_need_actors_end_of_title = ini.need_actors_end_of_title
@@ -76,9 +79,6 @@ class Standard(object):
 
         self._need_classify_folder = ini.need_classify_folder
         """是否 针对“文件夹”归类jav\n\n“否”即针对“文件”"""
-
-        self._dir_classify_root = ''
-        """路径: 归类的目标根目录"""
 
         self._list_name_classify_dir = ini.list_name_classify_dir
         """公式: 归类的目标文件夹的拼接\n\n由classify_formula切割得到"""
@@ -162,27 +162,27 @@ class Standard(object):
         str_actors = ' '.join(jav_data.Actors[:3])  # 演员们字符串
         int_actors_len = len(str_actors) if self._bool_need_actors_end_of_title else 0  # 演员文字长
         len_real_limit = self._int_title_len - int_actors_len  # 实际限制的标题长 = 限制标题长 - 末尾可能存在的演员文字长
-        complete_title = replace_xml_win(jav_data.Title)
-        zh_complete_title = replace_xml_win(jav_data.TitleZh) if jav_data.TitleZh else complete_title
-        title = cut_str(complete_title, len_real_limit)
-        zh_title = cut_str(zh_complete_title, len_real_limit)
+        title_cut = cut_str(jav_data.Title, len_real_limit)
+        zh_complete_title = jav_data.TitleZh or jav_data.Title  # 如果用户用了“中文标题”，但没有翻译标题，那么还是用日文
+        zh_title_cut = cut_str(zh_complete_title, len_real_limit)
         # jav_data.Title已经删去末尾的演员姓名，如果用户还需要，则再加上
         if self._bool_need_actors_end_of_title:
-            self._dict_for_standard[Const.TITLE] = f'{title} {str_actors}'
-            """可能删减过的日语标题\n\n用于文件的重命名"""
-            self._dict_for_standard[Const.COMPLETE_TITLE] += f'{complete_title} {str_actors}'
-            """完整的日语标题\n\n用于nfo中记录信息"""
-            self._dict_for_standard[Const.ZH_TITLE] += f'{zh_title} {str_actors}'
-            """可能删减过的中文标题\n\n用于文件的重命名，如果用户没有设置翻译账户，则仍为日语标题"""
-            self._dict_for_standard[Const.ZH_COMPLETE_TITLE] += f'{zh_complete_title} {str_actors}'
-            """完整的中文标题\n\n用于nfo中记录信息，如果用户没有设置翻译账户，则仍为日语标题"""
+            self._dict_for_standard[Const.TITLE] = f'{title_cut} {str_actors}'
+            self._dict_for_standard[Const.ZH_TITLE] = f'{zh_title_cut} {str_actors}'
+            self._dict_for_standard[Const.COMPLETE_TITLE] = f'{jav_data.Title} {str_actors}'
+            self._dict_for_standard[Const.ZH_COMPLETE_TITLE] = f'{zh_complete_title} {str_actors}'
+        else:
+            self._dict_for_standard[Const.TITLE] = title_cut
+            self._dict_for_standard[Const.ZH_TITLE] = zh_title_cut
+            self._dict_for_standard[Const.COMPLETE_TITLE] = jav_data.Title
+            self._dict_for_standard[Const.ZH_COMPLETE_TITLE] = zh_complete_title
 
         # '是否中字'这一命名元素被激活
         self._dict_for_standard[Const.BOOL_SUBTITLE] = self._subtitle_expression if jav_file.Bool_subtitle else ''
         self._dict_for_standard[Const.BOOL_DIVULGE] = self._divulge_expression if jav_file.Bool_divulge else ''
         # 车牌
         self._dict_for_standard[Const.CAR] = jav_data.Car  # car可能发生了变化
-        self._dict_for_standard[Const.CAR_PREF] = extract_pref(jav_data.Car)
+        self._dict_for_standard[Const.CAR_PREF] = jav_data.Pref
         # 日期
         self._dict_for_standard[Const.RELEASE] = jav_data.Release
         self._dict_for_standard[Const.RELEASE_YEAR] = jav_data.Release[:4]
@@ -190,11 +190,10 @@ class Standard(object):
         self._dict_for_standard[Const.RELEASE_DAY] = jav_data.Release[8:10]
         # 演职人员
         self._dict_for_standard[Const.RUNTIME] = jav_data.Runtime
-        self._dict_for_standard[Const.DIRECTOR] = replace_xml_win(jav_data.Director) if jav_data.Director else '有码导演'
+        self._dict_for_standard[Const.DIRECTOR] = jav_data.Director or '有码导演'
         # 公司
-        self._dict_for_standard[Const.PUBLISHER] = replace_xml_win(
-            jav_data.Publisher) if jav_data.Publisher else '有码发行商'
-        self._dict_for_standard[Const.STUDIO] = replace_xml_win(jav_data.Studio) if jav_data.Studio else '有码制作商'
+        self._dict_for_standard[Const.PUBLISHER] = jav_data.Publisher or '有码发行商'
+        self._dict_for_standard[Const.STUDIO] = jav_data.Studio or '有码制作商'
         # 评分 系列
         self._dict_for_standard[Const.SCORE] = jav_data.Score / 10
         self._dict_for_standard[Const.SERIES] = jav_data.Series or '有码系列'
@@ -226,14 +225,11 @@ class Standard(object):
         """返回的路径\n\n如果重命名操作不成功，将目标视频文件名返回，提醒用户自行重命名"""
         if self._need_rename_video:
             # region 得到新视频文件名
-            name_dest = ''
+            name_dest = ''.join(
+                [replace_os_invalid_char(self._dict_for_standard[element]) for element in self._list_name_video]
+            )
             """新视频文件名\n\n不带文件类型后缀"""
-            for element in self._list_name_video:
-                name_dest = f'{name_dest}{self._dict_for_standard[element]}'
-            if os.name == 'nt':  # 如果是windows系统
-                name_dest = name_dest.translate(self._winDic)  # 将文件名中的非法字符替换为空格
-            name_dest = f'{name_dest.strip()}{jav_file.Cd}'  # 去除首尾空格，否则windows会自动删除空格，导致程序仍以为带空格
-            path_new = f'{jav_file.Dir}{sep}{name_dest}{jav_file.Ext}'
+            path_new = f'{jav_file.Dir}{sep}{name_dest}{jav_file.Cd}{jav_file.Ext}'
             """视频文件的新路径"""
             # endregion
 
@@ -289,6 +285,7 @@ class Standard(object):
             """归类的目标文件夹路径"""
             for element in self._list_name_classify_dir:
                 dir_dest = f'{dir_dest}{self._dict_for_standard[element].strip()}'
+            dir_dest = f'{self._dir_classify_root}{sep}{"".join([replace_os_invalid_char(self._dict_for_standard[element]) for element in self._list_name_classify_dir])}'
             # endregion
 
             # region 创建该文件夹
@@ -454,82 +451,86 @@ class Standard(object):
                 raise FileExistsError(f'归类失败，归类的目标位置已存在相同文件夹: {dir_new}')
             # endregion
 
-    def write_nfo(self, jav_file: JavFile, jav_model: JavData, genres: list):
+    # region 写nfo
+    def write_nfo(self, jav_file: JavFile, jav_data: JavData, genres: List[str]):
         """
         写nfo
 
         Args:
             jav_file: jav视频文件对象
-            jav_model: jav元数据对象
-            genres: 特征
+            jav_data: jav元数据对象
+            genres: 特征，不同于jav_data.Genres
         """
-        if self._need_nfo:
+        # 不需要nfo
+        if not self._need_nfo:
+            return
 
-            # nfo路径
-            if self._need_only_cd:  # 如果是为kodi准备的nfo，不需要多cd
-                path_nfo = f'{jav_file.Dir}{sep}{jav_file.Name_no_ext.replace(jav_file.Cd, "")}.nfo'
-            else:
-                path_nfo = f'{jav_file.Dir}{sep}{jav_file.Name_no_ext}.nfo'
+        # nfo路径，果是为kodi准备的nfo，不需要多cd
+        path_nfo = f'{jav_file.Dir}{sep}{jav_file.Name_no_ext.replace(jav_file.Cd, "")}.nfo' \
+            if self._need_only_cd \
+            else f'{jav_file.Dir}{sep}{jav_file.Name_no_ext}.nfo'
 
-            # nfo中tilte的写法
-            title_in_nfo = ''
-            for i in self._list_name_nfo_title:
-                title_in_nfo = f'{title_in_nfo}{self._dict_for_standard[i]}'  # nfo中tilte的写法
+        # nfo中tilte的写法
+        title_in_nfo = ''.join(
+            [replace_xml_invalid_char(self._dict_for_standard[element]) for element in self._list_name_nfo_title]
+        )
 
-            # 简介，用中文还是日语
-            plot = replace_xml(jav_model.PlotZh) if self._need_zh_plot else replace_xml(jav_model.Plot)
+        with open(file=path_nfo, mode='w', encoding='utf-8') as f:
+            f.write(
+                f'<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>\n'
+                f'<movie>\n'
+                f'  <plot>{replace_xml_invalid_char(jav_data.PlotZh if self._need_zh_plot else jav_data.Plot)}{replace_xml_invalid_char(jav_data.Review)}</plot>\n'
+                f'  <title>{title_in_nfo}</title>\n'
+                f'  <originaltitle>{jav_data.Car} {replace_xml_invalid_char(jav_data.Title)}</originaltitle>\n'
+                f'  <director>{replace_xml_invalid_char(jav_data.Director)}</director>\n'
+                f'  <rating>{jav_data.Score / 10}</rating>\n'
+                f'  <criticrating>{jav_data.Score}</criticrating>\n'
+                f'  <year>{jav_data.Release[:4]}</year>\n'
+                f'  <mpaa>NC-17</mpaa>\n'
+                f'  <customrating>NC-17</customrating>\n'
+                f'  <countrycode>JP</countrycode>\n'
+                f'  <premiered>{jav_data.Release}</premiered>\n'
+                f'  <release>{jav_data.Release}</release>\n'
+                f'  <runtime>{jav_data.Runtime}</runtime>\n'
+                f'  <country>日本</country>\n'
+                f'  <studio>{replace_xml_invalid_char(jav_data.Studio)}</studio>\n'
+                f'  <id>{jav_data.Car}</id>\n'
+                f'  <num>{jav_data.Car}</num>\n'
+                f'  <set>{replace_xml_invalid_char(jav_data.Series)}</set>\n'
+            )
 
-            # 写入nfo
-            f = open(path_nfo, 'w', encoding="utf-8")
-            f.write(f'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\" ?>\n'
-                    f'<movie>\n'
-                    f'  <plot>{plot}{replace_xml(jav_model.Review)}</plot>\n'
-                    f'  <title>{title_in_nfo}</title>\n'
-                    f'  <originaltitle>{jav_model.Car} {replace_xml(jav_model.Title)}</originaltitle>\n'
-                    f'  <director>{replace_xml(jav_model.Director)}</director>\n'
-                    f'  <rating>{jav_model.Score / 10}</rating>\n'
-                    f'  <criticrating>{jav_model.Score}</criticrating>\n'  # 烂番茄评分 用上面的评分*10
-                    f'  <year>{jav_model.Release[0:4]}</year>\n'
-                    f'  <mpaa>NC-17</mpaa>\n'
-                    f'  <customrating>NC-17</customrating>\n'
-                    f'  <countrycode>JP</countrycode>\n'
-                    f'  <premiered>{jav_model.Release}</premiered>\n'
-                    f'  <release>{jav_model.Release}</release>\n'
-                    f'  <runtime>{jav_model.Runtime}</runtime>\n'
-                    f'  <country>日本</country>\n'
-                    f'  <studio>{replace_xml(jav_model.Studio)}</studio>\n'
-                    f'  <id>{jav_model.Car}</id>\n'
-                    f'  <num>{jav_model.Car}</num>\n'
-                    f'  <set>{replace_xml(jav_model.Series)}</set>\n')  # emby不管set系列，kodi可以
-            # 需要将特征写入genre
+            # 需要将特征写入genre或tag中
             if self._need_nfo_genres:
-                for i in genres:
-                    f.write(f'  <genre>{i}</genre>\n')
-                if self._need_series_as_genre and jav_model.Series:
-                    f.write(f'  <genre>系列:{jav_model.Series}</genre>\n')
-                if self._need_studio_as_genre and jav_model.Studio:
-                    f.write(f'  <genre>片商:{jav_model.Studio}</genre>\n')
-                for i in self._list_extra_genres:
-                    f.write(f'  <genre>{self._dict_for_standard[i]}</genre>\n')
-            # 需要将特征写入tag
+                self._write_genres_or_tags(f, jav_data, genres, 'genre')
             if self._need_nfo_tags:
-                for i in genres:
-                    f.write(f'  <tag>{i}</tag>\n')
-                if self._need_series_as_genre and jav_model.Series:
-                    f.write(f'  <tag>系列:{jav_model.Series}</tag>\n')
-                if self._need_studio_as_genre and jav_model.Studio:
-                    f.write(f'  <tag>片商:{jav_model.Studio}</tag>\n')
-                for i in self._list_extra_genres:
-                    f.write(f'  <tag>{self._dict_for_standard[i]}</tag>\n')
+                self._write_genres_or_tags(f, jav_data, genres, 'tag')
+
             # 写入演员
-            for i in jav_model.Actors:
-                f.write(f'  <actor>\n'
-                        f'    <name>{i}</name>\n'
-                        f'    <type>Actor</type>\n'
-                        f'  </actor>\n')
+            self._write_actors(f, jav_data)
+
+            # 结尾
             f.write('</movie>\n')
-            f.close()
-            print('    >nfo收集完成')
+        print('    >nfo收集完成')
+
+    def _write_genres_or_tags(self, nfo: TextIO, jav_data: JavData, genres: List[str], symbol: str):
+        for i in genres:
+            nfo.write(f'  <{symbol}>{i}</{symbol}>\n')
+        if self._need_series_as_genre and jav_data.Series:
+            nfo.write(f'  <{symbol}>系列:{replace_xml_invalid_char(jav_data.Series)}</{symbol}>\n')
+        if self._need_studio_as_genre and jav_data.Studio:
+            nfo.write(f'  <{symbol}>片商:{replace_xml_invalid_char(jav_data.Studio)}</{symbol}>\n')
+        for i in self._list_extra_genres:
+            nfo.write(f'  <{symbol}>{self._dict_for_standard[i]}</{symbol}>\n')
+
+    @staticmethod
+    def _write_actors(nfo: TextIO, jav_data: JavData):
+        for actor in jav_data.Actors:
+            nfo.write(f'  <actor>\n'
+                      f'    <name>{actor}</name>\n'
+                      f'    <type>Actor</type>\n'
+                      f'  </actor>\n')
+
+    # endregion
 
     def download_fanart(self, jav_file: JavFile, jav_model: JavData):
         """

@@ -3,8 +3,8 @@ import re
 from typing import List
 # from traceback import format_exc
 
-from Classes.Config import Ini
-from Classes.Enums import ScrapeStatusEnum
+from Static.Config import Ini
+from Enums import ScrapeStatusEnum
 from Classes.Model.JavData import JavData
 from Classes.Model.JavFile import JavFile
 from Classes.Web.JavWeb import JavWeb

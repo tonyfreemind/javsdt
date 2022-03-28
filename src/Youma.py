@@ -8,17 +8,17 @@ from Classes.Web.JavDb import JavDb
 from Classes.Web.JavLibrary import JavLibrary
 from Classes.Web.JavBus import JavBus
 from Classes.Web.Arzon import Arzon
-from Classes.FileExplorer import FileExplorer
-from Classes.FileAnalyzer import FileAnalyzer
-from Classes.Stantdard import Standard
-from Classes.MyLogger import Logger
-from Classes.Baidu import Translator
+from FileExplorer import FileExplorer
+from FileAnalyzer import FileAnalyzer
+from Stantdard import Standard
+from MyLogger import MyLogger
+from Baidu import Translator
 
-from Classes.Config import Ini
+from Static.Config import Ini
 from Classes.Model.JavData import JavData
-from Classes.Enums import ScrapeStatusEnum
-from Classes.Errors import TooManyDirectoryLevelsError, SpecifiedUrlError, CustomClassifyTargetDirError
-from Classes.Const import Const
+from Enums import ScrapeStatusEnum
+from Errors import TooManyDirectoryLevelsError, SpecifiedUrlError, CustomClassifyTargetDirError
+from Static.Const import Const
 
 from Functions.Progress.User import choose_directory
 from Functions.Utils.JsonUtility import read_json_to_dict
@@ -34,7 +34,7 @@ javBus = JavBus(ini)
 arzon = Arzon(ini)
 translator = Translator(ini)
 standard = Standard(ini)
-logger = Logger()
+logger = MyLogger()
 # 当前程序文件夹 所处的 父文件夹路径 Todo 弄一个环境对象
 dir_pwd_father = os.path.dirname(os.getcwd())
 # endregion
@@ -74,20 +74,20 @@ while not input_key:
         fileExplorer.init_dict_subtitle_file(list_sub_files)
 
         # 获取当前一级文件夹内，包含的jav
-        list_jav_files = fileExplorer.find_jav_files(list_sub_files)
+        fileExplorer.find_jav_files(list_sub_files)
         """存放: 需要整理的jav文件对象jav_file"""
-        if not list_jav_files:
+        if not fileExplorer.len_list_jav_files():
             continue  # 没有jav，则跳出当前所处文件夹
 
         # 判定当前所处文件夹是否是独立文件夹，独立文件夹是指该文件夹仅用来存放该影片，而不是大杂烩文件夹，是后期移动剪切操作的重要依据
-        fileExplorer.judge_separate_folder(len(list_jav_files), list_sub_dirs)
+        fileExplorer.judge_separate_folder(list_sub_dirs)
 
         # 处理“集”的问题，（1）所选文件夹总共有多少个视频文件，包括非jav文件，主要用于显示进度（2）同一车牌有多少cd，用于cd1，cd2...的命名
-        fileExplorer.init_jav_file_episodes(list_jav_files)
+        fileExplorer.init_jav_file_episodes()
         # endregion
 
         # region（3.2.2）开始处理每一部jav文件
-        for jav_file in list_jav_files:
+        for jav_file in fileExplorer.list_jav_files():
 
             # region 显示当前进度
             print(f'>> [{jav_file.No}/{fileExplorer.sum_all_videos()}]:{jav_file.Name}')

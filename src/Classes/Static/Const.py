@@ -93,9 +93,17 @@ class Const(object):
 
     # region 元素名称
     TITLE = '标题'
+    """可能删减过的日语标题\n\n用于文件的重命名"""
+
     COMPLETE_TITLE = '完整标题'
+    """完整的日语标题\n\n用于nfo中记录信息"""
+
     ZH_TITLE = '中文标题'
+    """可能删减过的中文标题\n\n用于文件的重命名，如果用户没有设置翻译账户，则仍为日语标题"""
+
     ZH_COMPLETE_TITLE = '中文完整标题'
+    """完整的中文标题\n\n用于nfo中记录信息，如果用户没有设置翻译账户，则仍为日语标题"""
+
     SERIES = '系列'
     STUDIO = '片商'
     PUBLISHER = '发行商'

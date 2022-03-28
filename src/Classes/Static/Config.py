@@ -3,7 +3,7 @@ from os import sep
 from configparser import RawConfigParser
 from traceback import format_exc
 
-from Classes.Const import Const
+from Static.Const import Const
 
 
 class Ini(object):
@@ -82,7 +82,7 @@ class Ini(object):
             """是否 针对“文件夹”归类jav\n\n“否”即针对“文件”"""
 
             self.dir_custom_classify_root = dict_ini[Const.DIR_CUSTOM_CLASSIFY_TARGET]
-            """路径: 归类的目标根目录"""
+            """路径: 用户自定义的归类的根目录\n\n用于判定出真实的归类根目录"""
 
             self._classify_formula = dict_ini[Const.CLASSIFY_FORMULA]
             """公式str: 影片按什么文件结构来归类\n\n比如: 影片类型\\\\全部演员”"""

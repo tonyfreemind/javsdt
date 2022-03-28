@@ -2,6 +2,8 @@
 import re
 from typing import List
 
+from Const import Const
+
 
 def find_car_youma(file, list_suren_car: List[str]):
     """
@@ -101,8 +103,23 @@ def find_car_suren(file, list_suren_car):
 
 def find_car_fc2(file):
     subtitle_carg = re.search(r'FC2[^\d]*(\d+)', file)  # 匹配字幕车牌
-    subtitle_car = f'FC2-{subtitle_carg.group(1)}' if subtitle_carg else ''
-    return subtitle_car
+    return f'FC2-{subtitle_carg.group(1)}' if subtitle_carg else ''
+
+
+def get_suren_cars():
+    """
+    得到素人车牌集合
+
+    Returns:
+        list 素人车牌
+    """
+    try:
+        with open(Const.TXT_SUREN_CARS, 'r', encoding="utf-8") as f:
+            list_suren_cars = list(f)
+    except:
+        input(f'“{Const.TXT_SUREN_CARS}”读取失败！')
+    list_suren_cars = [i.strip().upper() for i in list_suren_cars if i != '\n']
+    return list_suren_cars
 
 
 def tran_car_same_with_bus_arzon(car: str):

@@ -1,6 +1,4 @@
 from configparser import RawConfigParser
-from enum import IntEnum
-from pyclbr import Class
 
 
 def convert_2dlist_to_dict(list_src: list):
@@ -20,7 +18,7 @@ def convert_2dlist_to_dict(list_src: list):
 
 def cut_str(src: str, len_limit: int):
     """
-    从原字符串中切出限制长的新字符串
+    从原字符串中切出[:len_limit]限制长的新字符串
 
     Args:
         src: 原字符串
@@ -33,7 +31,15 @@ def cut_str(src: str, len_limit: int):
 
 
 def update_ini_file(ini_file: str, section: str, option: str, value: str):
-    """在ini中写入新的内容"""
+    """
+    在ini中写入新的内容
+
+    Args:
+        ini_file: ini文件
+        section: 节点
+        option: 键
+        value: 值
+    """
     conf = RawConfigParser()
     conf.read(ini_file, encoding='utf-8-sig')
     conf.set(section, option, value)

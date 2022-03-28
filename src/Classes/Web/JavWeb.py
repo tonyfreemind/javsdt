@@ -8,10 +8,10 @@ from traceback import format_exc
 from Car import extract_pref, extract_suf
 from Classes.Model.JavData import JavData
 from Classes.Model.JavFile import JavFile
-from Classes.Const import Const
-from Classes.Config import Ini
-from Classes.Enums import ScrapeStatusEnum
-from Classes.Errors import SpecifiedUrlError
+from Static.Const import Const
+from Static.Config import Ini
+from Enums import ScrapeStatusEnum
+from Errors import SpecifiedUrlError
 from Functions.Metadata.Genre import better_dict_genres
 
 

@@ -1,7 +1,7 @@
 # -*- coding:utf-8 -*-
-import time
-
-from Classes.Enums import CompletionStatusEnum, CutTypeEnum
+from Datetime import time_now
+from Enums import CompletionStatusEnum, CutTypeEnum
+from Functions.Metadata.Car import extract_pref
 
 
 class JavData(object):
@@ -19,7 +19,7 @@ class JavData(object):
         """1 车牌"""
 
         self.CarOrigin = ''
-        """2 原始车牌"""
+        """2 原始车牌\n\ndmm上记录的车牌"""
 
         self.Series = ''
         """3 系列"""
@@ -28,13 +28,13 @@ class JavData(object):
         """4 原标题"""
 
         self.TitleZh = ''
-        """5 简体中文标题"""
+        """5 简中标题"""
 
         self.Plot = ''
         """6 剧情概述"""
 
         self.PlotZh = ''
-        """7 简体剧情"""
+        """7 简中剧情"""
 
         self.Review = ''
         """8 剧评"""
@@ -55,7 +55,7 @@ class JavData(object):
         """13 发行商"""
 
         self.Score = 0
-        """14 评分"""
+        """14 评分\n\n10分制"""
 
         self.CoverDb = ''
         """15 封面Db"""
@@ -93,16 +93,23 @@ class JavData(object):
         self.Actors = []
         """25 演员们"""
 
-        self.Modify = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
+        self.Modify = time_now()
         """26 修改时间"""
 
         self.__dict__.update(kwargs)
 
+    # Todo 这个pref会不会被放进json里?
+    @property
+    def Pref(self):
+        """车牌前缀，车尾\n\n例如IPZ"""
+        return extract_pref(self.Car)
+
     def prefect_completion_status(self):
+        # sourcery skip: assign-if-exp, merge-else-if-into-elif
         """
         更新一下整理的完成度
 
-        整理流程的末尾，更新一下这部影片成功收集到哪几个网站的数据
+        这部影片成功收集到哪几个网站的数据，在整理流程的末尾更新一下标志
         """
         if self.JavDb:
             if self.JavLibrary:

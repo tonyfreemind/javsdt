@@ -2,38 +2,38 @@ import os
 from os import sep
 from xml.etree.ElementTree import parse, ParseError
 
-from Classes.Config import Ini
+from Classes.Static.Config import Ini
 from Classes.Model.JavFile import JavFile
 
 
 class FileAnalyzer(object):
-    """jav视频文件性质鉴定\n\n判定该影片是否有字幕、是否无码流出"""
+    """
+    jav视频文件性质鉴定
+
+    判定该影片是否有字幕、是否无码流出
+    """
 
     def __init__(self, ini: Ini):
         self._list_subtitle_words_in_filename = ini.list_subtitle_symbol_words
-        self._list_divulge_words_in_filename = ini.list_divulge_symbol_words
+        """字符集: 影片有字幕，体现在视频名称中包含这些字符"""
 
-    def _judge_exist_subtitle(self, dir_current: str, name_no_ext: str):
+        self._list_divulge_words_in_filename = ini.list_divulge_symbol_words
+        """字符集: 影片是无码流出，体现在视频名称中包含这些字符"""
+
+    def _judge_exist_subtitle(self, jav_file: JavFile):
         """
         判定当前jav是否有“中文字幕”
 
-        根据【原文件名】和【已存在的、之前整理的nfo】，
-
-        Args:
-            dir_current: 当前jav所处文件夹路径
-            name_no_ext: 视频文件名，不带文件类型后缀
-
-        Returns:
-            bool
+        根据【原文件名】和【已存在的、之前整理的nfo】
         """
         # 去除 '-CD' 和 '-CARIB'对 '-C'判断中字的影响
-        name_no_ext = name_no_ext.upper().replace('-CD', '').replace('-CARIB', '')
+        name_no_ext = jav_file.Name_no_ext.upper().replace('-CD', '').replace('-CARIB', '')
         # 如果原文件名包含“-c、-C、中字”这些字符
         for i in self._list_subtitle_words_in_filename:
             if i in name_no_ext:
                 return True
         # 先前整理过的nfo中有 ‘中文字幕’这个Genre
-        path_old_nfo = f'{dir_current}{sep}{name_no_ext}.nfo'
+        path_old_nfo = f'{jav_file.Dir}{sep}{name_no_ext}.nfo'
         if os.path.exists(path_old_nfo):
             try:
                 tree = parse(path_old_nfo)
@@ -44,25 +44,18 @@ class FileAnalyzer(object):
                     return True
         return False
 
-    def _judge_exist_divulge(self, dir_current: str, name_no_ext: str):
+    def _judge_exist_divulge(self, jav_file: JavFile):
         """
         判断当前jav是否有“无码流出”
 
-        根据【原文件名】和【已存在的、之前整理的nfo】，
-
-        Args:
-            dir_current: 当前jav所处文件夹路径
-            name_no_ext: jav文件名不带文件类型后缀
-
-        Returns:
-            bool
+        根据【原文件名】和【已存在的、之前整理的nfo】
         """
         # 如果原文件名包含“-c、-C、中字”这些字符
         for i in self._list_divulge_words_in_filename:
-            if i in name_no_ext:
+            if i in jav_file.Name_no_ext:
                 return True
         # 先前整理过的nfo中有 ‘中文字幕’这个Genre
-        path_old_nfo = f'{dir_current}{sep}{name_no_ext}.nfo'
+        path_old_nfo = f'{jav_file.Dir}{sep}{jav_file.Name_no_ext}.nfo'
         if os.path.exists(path_old_nfo):
             try:
                 tree = parse(path_old_nfo)
@@ -87,6 +80,6 @@ class FileAnalyzer(object):
         if jav_file.Subtitle:
             jav_file.Bool_subtitle = True  # 判定成功
         else:
-            jav_file.Bool_subtitle = self._judge_exist_subtitle(jav_file.Dir, jav_file.Name_no_ext)
+            jav_file.Bool_subtitle = self._judge_exist_subtitle(jav_file)
         # 判断是否是无码流出的作品，同理
-        jav_file.Bool_divulge = self._judge_exist_divulge(jav_file.Dir, jav_file.Name_no_ext)
+        jav_file.Bool_divulge = self._judge_exist_divulge(jav_file)

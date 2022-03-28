@@ -4,9 +4,9 @@ from typing import List
 from lxml import etree
 # from traceback import format_exc
 
-from Classes.Config import Ini
-from Classes.Const import Const
-from Classes.Enums import ScrapeStatusEnum
+from Static.Config import Ini
+from Static.Const import Const
+from Enums import ScrapeStatusEnum
 from Classes.Model.JavData import JavData
 from Classes.Model.JavFile import JavFile
 from Classes.Web.JavWeb import JavWeb

@@ -6,7 +6,7 @@ from time import sleep, time
 # from traceback import format_exc
 # from aip import AipBodyAnalysis  # 百度ai人体分析
 
-from Classes.Config import Ini
+from Static.Config import Ini
 
 
 class Translator(object):

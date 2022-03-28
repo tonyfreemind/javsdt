@@ -1,21 +1,22 @@
 from time import strftime, localtime, time
 
-from Const import Const
+from Classes.Static.Const import Const
+from Datetime import time_now
 
 
-class Logger(object):
+class MyLogger(object):
     """
     日志工具
 
-    用于记录失败/警告次数、失败/警告信息，保存至本地txt
+    用于输出/记录失败/警告次数、失败/警告信息，保存至本地txt
     """
 
     def __init__(self):
         self._no_fail = 0
-        """数量: 错误\n\n可能导致或已经发生的致命错误，比如整理未完成，同车牌有不同视频"""
+        """数量: 错误\n\n可能导致或已经发生的致命错误，比如整理未完成，db或library同车牌有不同视频"""
 
         self._no_warn = 0
-        """数量: 警告\n\n对整理结果不致命的问题，比如找不到简介"""
+        """数量: 警告\n\n对整理结果不致命的问题，比如找不到简介，bus或arzon同车牌有不同视频"""
 
         self._dir_choose = ''
         """所选文件夹的路径"""
@@ -23,7 +24,7 @@ class Logger(object):
         self._path_relative = ''
         """路径: 当前jav_file相对于dir_choose的路径\n\n用于报错"""
 
-    def rest_and_record_choose(self, dir_choose:str):
+    def rest_and_record_choose(self, dir_choose: str):
         """每次选择文件夹后重置"""
         self._no_fail = 0
         self._no_warn = 0
@@ -35,7 +36,7 @@ class Logger(object):
 
         Args:
             fail_msg: 失败信息
-            extra_msg: 额外的错误信息，一般放出错视频的路径
+            extra_msg: 额外的错误信息，默认是 出错视频的路径
         """
         self._no_fail += 1
         if not extra_msg:
@@ -67,7 +68,7 @@ class Logger(object):
             dir_choose: 选择的文件夹
         """
         self._dir_choose = dir_choose
-        msg = f'已选择文件夹: {dir_choose}  {strftime("%Y-%m-%d %H:%M:%S", localtime(time()))}\n'
+        msg = f'已选择文件夹: {dir_choose}  {time_now()}\n'
         write_txt(Const.TXT_FAIL, msg)
         write_txt(Const.TXT_WARN, msg)
         write_txt(Const.TXT_RENAME, msg)
@@ -109,7 +110,8 @@ def record_video_old(name_new: str, name_old: str):
         name_new: 新文件名
         name_old: 旧文件名
     """
-    msg = f'<<<< {name_old}\n>>>> {name_new}\n'
+    msg = f'<<<< {name_old}\n' \
+          f'>>>> {name_new}\n'
     write_txt(Const.TXT_RENAME, msg)
 
 
