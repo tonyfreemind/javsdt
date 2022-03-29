@@ -50,7 +50,7 @@ class FileExplorer(object):
         self._dir_choose = ''
         """用户此次选择的文件夹"""
 
-        self._dir_classify_target = ''
+        self._dir_classify_root = ''
         """真实的归类的目标根文件夹\n\n每次新选文件夹都会变化"""
 
         self._no_current = 0
@@ -121,13 +121,13 @@ class FileExplorer(object):
                         f'归类的根目录: 【{dir_target}】与所选文件夹不在同一磁盘，无法归类！请修正！')
                 if not os.path.exists(dir_target):
                     raise CustomClassifyTargetDirError(f'归类的根目录: 【{dir_target}】不存在！无法归类！请修正！')
-                self._dir_classify_target = dir_target
+                self._dir_classify_root = dir_target
             else:
                 # 用户希望归类在“所选文件夹”
-                self._dir_classify_target = f'{self._dir_choose}{sep}归类完成'
+                self._dir_classify_root = f'{self._dir_choose}{sep}归类完成'
         else:
             # 用户不需要归类，不用关心
-            self._dir_classify_target = ''
+            self._dir_classify_root = ''
 
     def _count_videos_amount(self):
         """
@@ -264,9 +264,9 @@ class FileExplorer(object):
 
     # region 成员只读
 
-    def dir_classify_target(self):
+    def dir_classify_root(self):
         """返回真实的归类根目录"""
-        return self._dir_classify_target
+        return self._dir_classify_root
 
     def list_jav_files(self):
         """只读jav_files"""

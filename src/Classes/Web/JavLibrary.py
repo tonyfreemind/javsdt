@@ -9,7 +9,7 @@ from Classes.Model.JavFile import JavFile
 from Classes.Web.JavWeb import JavWeb
 from Static.Const import Const
 from Functions.Metadata.Genre import prefect_genres
-from Functions.Utils.LittleUtils import update_ini_file
+from Functions.Utils.LittleUtils import update_ini_file_value
 from Functions.Utils.XML import replace_line_break
 
 
@@ -166,7 +166,7 @@ class JavLibrary(JavWeb):
     def _update_headers(self):
         new = input('    >请输入新的javlibrary cf_clearance: ')
         self._requests.headers = self._init_headers(new)
-        update_ini_file(Const.INI, Const.NODE_OTHER, Const.LIBRARY_CF_CLEARANCE, new)
+        update_ini_file_value(Const.INI, Const.NODE_OTHER, Const.LIBRARY_CF_CLEARANCE, new)
 
     # endregion
 

@@ -25,7 +25,7 @@ def replace_xml_invalid_char(src):
 
 def replace_os_invalid_char(src: str):
     """
-    替换windows路径不允许的特殊字符 \/:*?"<>|
+    替换windows路径不允许的特殊字符 \/:*?"<>|，还有首尾的空格和.
 
     Args:
         src: 原字符串，文件名、简介、标题、导演姓名等
@@ -48,7 +48,7 @@ def replace_os_invalid_char(src: str):
         '|': '#'
     }
     # return src.translate(str.maketrans(r'\/:*?"<>|', '##：#？#《》#'))
-    return src.translate(str.maketrans(dict_replace)).strip()
+    return src.translate(str.maketrans(dict_replace)).strip(' .')
 
 
 def replace_line_break(src: str):

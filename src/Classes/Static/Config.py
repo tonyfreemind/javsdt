@@ -194,7 +194,7 @@ class Ini(object):
             self.tuple_video_types = tuple(dict_ini[Const.TUPLE_VIDEO_TYPES].upper().split('、'))
             """集合:文件类型\n\n只有列举出的视频文件类型，才会被处理"""
 
-            self.int_title_len = int(dict_ini[Const.INT_TITLE_LEN])
+            self.len_title_limit = int(dict_ini[Const.INT_TITLE_LEN])
             """命名公式中“标题”的长度\n\nwindows只允许255字符，所以限制长度，nfo中的标题不受此影响"""
             # endregion
 

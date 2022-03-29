@@ -9,7 +9,7 @@ from Enums import ScrapeStatusEnum
 from Classes.Model.JavData import JavData
 from Classes.Model.JavFile import JavFile
 from Classes.Web.JavWeb import JavWeb
-from Functions.Utils.LittleUtils import update_ini_file
+from Functions.Utils.LittleUtils import update_ini_file_value
 
 
 class Arzon(JavWeb):
@@ -78,7 +78,7 @@ class Arzon(JavWeb):
                 continue
             # 在ini中记录下这个新通行证
             phpsessid = self._requests.cookies.get_dict()['PHPSESSID']
-            update_ini_file(Const.INI, Const.NODE_OTHER, Const.ARZON_PHPSESSID, phpsessid)
+            update_ini_file_value(Const.INI, Const.NODE_OTHER, Const.ARZON_PHPSESSID, phpsessid)
             print('通过arzon的成人验证！\n')
         input(f'{Const.PLEASE_CHECK_URL}{self._URL_ADULT}')
 
