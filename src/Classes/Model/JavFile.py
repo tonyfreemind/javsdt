@@ -15,7 +15,6 @@ class JavFile(object):
 
     def __init__(self, car: str, file_raw: str, dir_current: str, episode: int, subtitle: str,
                  no_current: int):
-        # Todo 是否需要在流程中修正car，Car_id，Car_search是否置为property
         self.Car = car
         """1 车牌"""
 

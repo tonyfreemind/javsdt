@@ -13,7 +13,7 @@
     "Studio": "MOODYZ",
     "Publisher": "MOODYZ Gati",
     "Score": 90,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/migd767/migd767pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "5wdn_b.jpg",
     "CutType": 1,
     "Arzon": "1383484",
@@ -33,5 +33,6 @@
     "Modify": "2021-09-21 08:06:09",
     "JavDb": "XXk1",
     "JavLibrary": "javlikd26e",
-    "JavBus": "MIGD-767"
+    "JavBus": "MIGD-767",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/migd767/migd767pl.jpg"
 }

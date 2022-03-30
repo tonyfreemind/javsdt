@@ -13,7 +13,7 @@
     "Studio": "IDEA POCKET",
     "Publisher": "\u30c6\u30a3\u30c3\u30b7\u30e5",
     "Score": 88,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipx308/ipx308pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "738b_b.jpg",
     "CutType": 1,
     "Arzon": "1513011",
@@ -35,5 +35,6 @@
     "Modify": "2021-09-05 18:47:13",
     "JavDb": "Yegv6",
     "JavLibrary": "javli7zjtm",
-    "JavBus": "IPX-308"
+    "JavBus": "IPX-308",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ipx308/ipx308pl.jpg"
 }

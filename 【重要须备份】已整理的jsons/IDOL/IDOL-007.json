@@ -13,7 +13,7 @@
     "Studio": "\u30a2\u30a4\u30a8\u30ca\u30b8\u30fc",
     "Publisher": "IE NERGY\uff01",
     "Score": 60,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1idol007/1idol007pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "",
     "CutType": 1,
     "Arzon": "1515491",
@@ -32,5 +32,6 @@
     "Modify": "2021-09-21 08:42:19",
     "JavDb": "wKDQ7",
     "JavLibrary": "javliayera",
-    "JavBus": ""
+    "JavBus": "",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1idol007/1idol007pl.jpg"
 }

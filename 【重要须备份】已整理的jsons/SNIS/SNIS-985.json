@@ -13,7 +13,7 @@
     "Studio": "S1 NO.1 STYLE",
     "Publisher": "S1 NO.1 STYLE",
     "Score": 92,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/snis985/snis985pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "654e_b.jpg",
     "CutType": 1,
     "Arzon": "1410896",
@@ -35,5 +35,6 @@
     "Modify": "2021-09-25 18:40:14",
     "JavDb": "65JA7",
     "JavLibrary": "javlikr63m",
-    "JavBus": "SNIS-985"
+    "JavBus": "SNIS-985",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/snis985/snis985pl.jpg"
 }

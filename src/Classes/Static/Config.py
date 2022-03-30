@@ -118,7 +118,7 @@ class Ini(object):
             """是否 为kodi收集演员头像"""
 
             self.need_only_cd = dict_ini[Const.NEED_ONLY_CD] == '是'
-            """是否 对于多cd的影片，kodi只需要一份图片和nfo"""
+            """是否 对于多cd的影片，只收集一份图片和nfo（kodi模式）"""
             # endregion
 
             # region ######################################## 8代理 ########################################
@@ -310,15 +310,17 @@ class Ini(object):
     def web_url_proxy(self, website):
         """按模式返回网址"""
 
-        if website == 'JavDb':
+        if website == 'Arzon':
+            return 'https://www.arzon.jp', self.proxy_arzon
+        elif website == 'Dmm':
+            return '', self.proxy_dmm
+        elif website == 'Jav321':
+            return 'https://www.jav321.com/', self.proxy_321
+        elif website == 'JavBus':
+            return self.url_bus, self.proxy_bus
+        elif website == 'JavDb':
             return self.url_db, self.proxy_db
         elif website == 'JavLibrary':
             return self.url_library, self.proxy_library
-        elif website == 'JavBus':
-            return self.url_bus, self.proxy_bus
-        elif website == 'Arzon':
-            return 'https://www.arzon.jp', self.proxy_321
-        elif website == 'Jav321':
-            return 'https://www.jav321.com/', self.proxy_321
         else:
             raise

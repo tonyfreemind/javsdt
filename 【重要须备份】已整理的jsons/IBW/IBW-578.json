@@ -13,7 +13,7 @@
     "Studio": "I.B.WORKS",
     "Publisher": "I.B.WORKS",
     "Score": 94,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/504ibw578z/504ibw578zpl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "",
     "CutType": 1,
     "Arzon": "1344270",
@@ -36,5 +36,6 @@
     "Modify": "2021-09-05 18:28:47",
     "JavDb": "Yn0Ep",
     "JavLibrary": "javlilrd2y",
-    "JavBus": ""
+    "JavBus": "",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/504ibw578z/504ibw578zpl.jpg"
 }

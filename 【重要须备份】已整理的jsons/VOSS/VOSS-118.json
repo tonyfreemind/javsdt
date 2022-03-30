@@ -13,7 +13,7 @@
     "Studio": "VENUS",
     "Publisher": "\u719f\u4ebaPROJECT",
     "Score": 90,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/voss118/voss118pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "6unn_b.jpg",
     "CutType": 1,
     "Arzon": "1489120",
@@ -32,5 +32,6 @@
     "Modify": "2021-09-25 20:23:08",
     "JavDb": "OQKMy",
     "JavLibrary": "javli7tm7i",
-    "JavBus": "VOSS-118"
+    "JavBus": "VOSS-118",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/voss118/voss118pl.jpg"
 }

@@ -13,7 +13,7 @@
     "Studio": "Aurora Project Annex",
     "Publisher": "\u30aa\u30fc\u30ed\u30e9\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u30fb\u30a2\u30cd\u30c3\u30af\u30b9",
     "Score": 83,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/apns129so/apns129sopl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "75i2_b.jpg",
     "CutType": 1,
     "Arzon": "1518300",
@@ -34,5 +34,6 @@
     "Modify": "2021-09-05 15:27:02",
     "JavDb": "dZBgv",
     "JavLibrary": "javli6disu",
-    "JavBus": "APNS-129"
+    "JavBus": "APNS-129",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/apns129so/apns129sopl.jpg"
 }

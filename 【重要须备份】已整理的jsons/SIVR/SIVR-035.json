@@ -13,7 +13,7 @@
     "Studio": "S1 NO.1 STYLE",
     "Publisher": "S1 VR",
     "Score": 95,
-    "CoverLibrary": "http://pics.dmm.co.jp/digital/video/sivr00035/sivr00035pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "6v1n_b.jpg",
     "CutType": 1,
     "Arzon": "",
@@ -34,5 +34,6 @@
     "Modify": "2021-09-25 20:25:00",
     "JavDb": "PqPB0",
     "JavLibrary": "javli7qpt4",
-    "JavBus": "SIVR-035"
+    "JavBus": "SIVR-035",
+    "CoverDmm": "http://pics.dmm.co.jp/digital/video/sivr00035/sivr00035pl.jpg"
 }

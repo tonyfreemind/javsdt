@@ -13,7 +13,7 @@
     "Studio": "h.m.p",
     "Publisher": "h.m.p",
     "Score": 70,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/41hodv21271/41hodv21271pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "6erw_b.jpg",
     "CutType": 1,
     "Arzon": "1436805",
@@ -32,5 +32,6 @@
     "Modify": "2021-09-05 18:15:20",
     "JavDb": "ZnKX",
     "JavLibrary": "javli43az4",
-    "JavBus": "HODV-21271"
+    "JavBus": "HODV-21271",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/41hodv21271/41hodv21271pl.jpg"
 }

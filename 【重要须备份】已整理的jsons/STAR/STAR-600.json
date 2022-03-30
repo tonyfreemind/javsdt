@@ -13,7 +13,7 @@
     "Studio": "SOD Create",
     "Publisher": "SOD star",
     "Score": 70,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1star600/1star600pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "4skj_b.jpg",
     "CutType": 1,
     "Arzon": "1264161",
@@ -31,5 +31,6 @@
     "Modify": "2021-09-25 19:18:53",
     "JavDb": "k4q06",
     "JavLibrary": "javliiq55q",
-    "JavBus": "STAR-600"
+    "JavBus": "STAR-600",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1star600/1star600pl.jpg"
 }

@@ -13,7 +13,7 @@
     "Studio": "SOD Create",
     "Publisher": "SOD star",
     "Score": 90,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1stars184/1stars184pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "7h6c_b.jpg",
     "CutType": 1,
     "Arzon": "1549395",
@@ -30,5 +30,6 @@
     "Modify": "2021-09-25 19:54:49",
     "JavDb": "ZKmRV",
     "JavLibrary": "javli6toti",
-    "JavBus": "STARS-184"
+    "JavBus": "STARS-184",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1stars184/1stars184pl.jpg"
 }

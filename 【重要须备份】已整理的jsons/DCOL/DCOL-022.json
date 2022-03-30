@@ -13,7 +13,7 @@
     "Studio": "D\u2606Collection",
     "Publisher": "D\u2606Collection",
     "Score": 89,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/dcol022/dcol022pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "",
     "CutType": 1,
     "Arzon": "1182505",
@@ -31,5 +31,6 @@
     "Modify": "2021-09-05 15:49:57",
     "JavDb": "RkWQn",
     "JavLibrary": "javlijqury",
-    "JavBus": ""
+    "JavBus": "",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/dcol022/dcol022pl.jpg"
 }

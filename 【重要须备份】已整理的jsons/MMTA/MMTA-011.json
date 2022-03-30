@@ -13,7 +13,7 @@
     "Studio": "MARRION",
     "Publisher": "TOMODA",
     "Score": 91,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mmta011so/mmta011sopl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "6lln_b.jpg",
     "CutType": 1,
     "Arzon": "1460739",
@@ -31,5 +31,6 @@
     "Modify": "2021-09-25 17:48:02",
     "JavDb": "3nZ0b",
     "JavLibrary": "javli7ap5y",
-    "JavBus": "MMTA-011"
+    "JavBus": "MMTA-011",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mmta011so/mmta011sopl.jpg"
 }

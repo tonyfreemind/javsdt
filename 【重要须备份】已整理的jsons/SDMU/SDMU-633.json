@@ -13,7 +13,7 @@
     "Studio": "SOD Create",
     "Publisher": "\u30df\u30e9\u30fc\u53f7",
     "Score": 60,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1sdmu633/1sdmu633pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "64cx_b.jpg",
     "CutType": 1,
     "Arzon": "",
@@ -34,5 +34,6 @@
     "Modify": "2021-09-25 18:21:39",
     "JavDb": "04Y3",
     "JavLibrary": "javliktgs4",
-    "JavBus": "SDMU-633"
+    "JavBus": "SDMU-633",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1sdmu633/1sdmu633pl.jpg"
 }

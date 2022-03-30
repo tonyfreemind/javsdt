@@ -13,7 +13,7 @@
     "Studio": "\u30a2\u30ea\u30b9JAPAN",
     "Publisher": "\u30a2\u30ea\u30b9JAPAN",
     "Score": 57,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/dvaj227so/dvaj227sopl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "5xss_b.jpg",
     "CutType": 1,
     "Arzon": "1388563",
@@ -30,5 +30,6 @@
     "Modify": "2021-09-21 08:01:51",
     "JavDb": "GN7D",
     "JavLibrary": "javliklqqa",
-    "JavBus": "DVAJ-227"
+    "JavBus": "DVAJ-227",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/dvaj227so/dvaj227sopl.jpg"
 }

@@ -13,7 +13,7 @@
     "Studio": "\u7121\u57a2",
     "Publisher": "\u7121\u57a2",
     "Score": 89,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mudr098/mudr098pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "7imt_b.jpg",
     "CutType": 1,
     "Arzon": "1554168",
@@ -34,5 +34,6 @@
     "Modify": "2021-09-25 16:06:43",
     "JavDb": "04em0",
     "JavLibrary": "javli6r37u",
-    "JavBus": "MUDR-098"
+    "JavBus": "MUDR-098",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mudr098/mudr098pl.jpg"
 }

@@ -13,7 +13,7 @@
     "Studio": "S1 NO.1 STYLE",
     "Publisher": "S1 NO.1 STYLE",
     "Score": 89,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ssni246/ssni246pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "6mns_b.jpg",
     "CutType": 1,
     "Arzon": "1464640",
@@ -33,5 +33,6 @@
     "Modify": "2021-09-25 18:48:45",
     "JavDb": "DRaz5",
     "JavLibrary": "javli7bkse",
-    "JavBus": "SSNI-246"
+    "JavBus": "SSNI-246",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ssni246/ssni246pl.jpg"
 }

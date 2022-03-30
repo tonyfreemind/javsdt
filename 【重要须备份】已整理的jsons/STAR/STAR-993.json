@@ -13,7 +13,7 @@
     "Studio": "SOD Create",
     "Publisher": "SOD star",
     "Score": 88,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1star993/1star993pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "7dav_b.jpg",
     "CutType": 1,
     "Arzon": "1481929",
@@ -32,5 +32,6 @@
     "Modify": "2021-09-25 19:47:09",
     "JavDb": "pkEyb",
     "JavLibrary": "javli7lvsi",
-    "JavBus": "STAR-993"
+    "JavBus": "STAR-993",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1star993/1star993pl.jpg"
 }

@@ -29,6 +29,25 @@ def show_jsons_one_element_by_dir_choose(dir_choose, key):
 
 
 # 展示所有json中的某一项，某一项由手动输入
+def show_jsons_special_element_by_dir_choose(dir_choose):
+    for root, dirs, files in os.walk(dir_choose):
+        for file in files:
+            if file.endswith(('.json',)):
+                path = f'{root}\\{file}'
+                print(path)
+                dict_json = read_json_to_dict(path)
+                if not dict_json['CoverLibrary']:
+                    dict_json['CoverDmm'] = ''
+                elif not dict_json['CoverLibrary'].startswith('http'):
+                    print('特殊:', dict_json['CoverLibrary'])
+                    dict_json['CoverDmm'] = ''
+                elif 'dmm.co.jp' in dict_json['CoverLibrary']:
+                    dict_json['CoverDmm'] = dict_json['CoverLibrary']
+                    dict_json['CoverLibrary'] = ''
+                write_json(path, dict_json)
+
+
+# 展示所有json中的某一项，某一项由手动输入
 def show_json_one_element_by_path(path, key):
     dict_json = read_json_to_dict(path)
     try:
@@ -89,9 +108,11 @@ def replace_key_name(path, key_old, key_new):
 if __name__ == '__main__':
     print('请选择要整理的文件夹：')
     root_choose = choose_directory()
-    for root, dirs, files in os.walk(root_choose):
-        for file in files:
-            if file.endswith('.json'):
-                replace_key_name(f'{root}\\{file}', 'Javdb', 'JavDb')
-                replace_key_name(f'{root}\\{file}', 'Javlibrary', 'JavLibrary')
-                replace_key_name(f'{root}\\{file}', 'Javbus', 'JavBus')
+    # for root, dirs, files in os.walk(root_choose):
+    #     for file in files:
+    #         if file.endswith('.json'):
+    #             replace_key_name(f'{root}\\{file}', 'Javdb', 'JavDb')
+    #             replace_key_name(f'{root}\\{file}', 'Javlibrary', 'JavLibrary')
+    #             replace_key_name(f'{root}\\{file}', 'Javbus', 'JavBus')
+
+    show_jsons_special_element_by_dir_choose(root_choose)

@@ -8,6 +8,7 @@ from traceback import format_exc
 from Car import extract_pref, extract_suf
 from Classes.Model.JavData import JavData
 from Classes.Model.JavFile import JavFile
+from Picture import check_picture
 from Static.Const import Const
 from Static.Config import Ini
 from Enums import ScrapeStatusEnum
@@ -155,6 +156,24 @@ class JavWeb(object):
         self._update_item_status(item_appoint, ScrapeStatusEnum.success)
         return html_appoint
 
+    def _request_url(self, url: str, allow_redirects=True):
+        try:
+            rsp = self._requests.get(url, timeout=(6, 7), allow_redirects=allow_redirects)
+        except ProxyError:
+            # 代理出错，用户可能想使用代理，但实际没开代理软件
+            print(f'{Const.PROXY_ERROR_TRY_AGAIN}{url}')
+            return None
+        except SSLError:
+            # 2种情况（1）网址是https，requests也走https，但代理只支持http，导致证书验证不通过（2）用户的代理是公用代理，访问太频繁被拒绝
+            print(f'{Const.REQUEST_MAX_TRY}{url}')
+            return None
+        except:
+            # 其他出错
+            print(format_exc())
+            print(f'{Const.REQUEST_ERROR_TRY_AGAIN}{url}')
+            return None
+        return rsp
+
     def _get_html(self, aim: str, url: str):
         """
         获取html
@@ -166,24 +185,15 @@ class JavWeb(object):
         Returns:
             html
         """
-        allow_redirects = self.__class__.__name__ != 'JavLibrary'  # javlibrary不需要跳转
+        # library不需要跳转
+        allow_redirects = self.__class__.__name__ != 'JavLibrary'
+
         if aim:
             print(aim, url)
-        for _ in range(2):
-            try:
-                rsp = self._requests.get(url, timeout=(6, 7), allow_redirects=allow_redirects)
-            except ProxyError:
-                # 代理出错，用户可能想使用代理，但实际没开代理软件
-                print(f'{Const.PROXY_ERROR_TRY_AGAIN}{url}')
-                continue
-            except SSLError:
-                # 2种情况（1）网址是https，requests也走https，但代理只支持http，导致证书验证不通过（2）用户的代理是公用代理，访问太频繁被拒绝
-                print(f'{Const.REQUEST_MAX_TRY}{url}')
-                continue
-            except:
-                # 其他出错
-                print(format_exc())
-                print(f'{Const.REQUEST_ERROR_TRY_AGAIN}{url}')
+
+        for _ in range(3):
+            rsp = self._request_url(url, allow_redirects)
+            if not rsp:
                 continue
             rsp.encoding = 'utf-8'
             rsp_content = rsp.text
@@ -196,9 +206,28 @@ class JavWeb(object):
                 print(Const.NEED_UPDATE_HEADERS)
                 self._update_headers()
                 continue
-            # print(rsp_content)
             print(Const.HTML_NOT_TARGET_TRY_AGAIN)
         input(f'{Const.PLEASE_CHECK_URL}{url}')
+
+    def download_picture(self, url: str, path: str):
+        """下载图片"""
+        if not url:
+            return False
+
+        print(f'    >从{self.__class__.__name__}下载封面:', url)
+        for _ in range(3):
+            if not (rsp := self._request_url(url)):
+                print('    >下载失败，重新下载....')
+                continue
+            with open(path, 'wb') as pic:
+                for chunk in rsp:
+                    pic.write(chunk)
+            if not check_picture(path):
+                print('    >下载失败，重新下载....')
+                continue
+            print('    >fanart.jpg下载成功')
+            return True
+        return False
 
     def _select_normal(self, jav_data: JavData):
         """（找到目标网页后）更新信息"""

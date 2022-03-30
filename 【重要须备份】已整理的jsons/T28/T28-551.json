@@ -13,7 +13,7 @@
     "Studio": "TMA",
     "Publisher": "TMA",
     "Score": 83,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/55t28551/55t28551pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "7032_b.jpg",
     "CutType": 1,
     "Arzon": "1495028",
@@ -35,5 +35,6 @@
     "Modify": "2021-09-25 19:59:42",
     "JavDb": "",
     "JavLibrary": "javli73t5m",
-    "JavBus": "T28-551"
+    "JavBus": "T28-551",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/55t28551/55t28551pl.jpg"
 }

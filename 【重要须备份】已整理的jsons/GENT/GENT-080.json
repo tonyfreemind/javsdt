@@ -13,7 +13,7 @@
     "Studio": "\u30b8\u30a7\u30f3\u30c8\u30eb\u30de\u30f3/\u5984\u60f3\u65cf",
     "Publisher": "\u30b8\u30a7\u30f3\u30c8\u30eb\u30de\u30f3\uff08\u30b8\u30a7\u30f3\u30c8\u30eb\u30de\u30f3/\u5984\u60f3\u65cf\uff09",
     "Score": 95,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/gent080/gent080pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "4uq6_b.jpg",
     "CutType": 1,
     "Arzon": "",
@@ -33,5 +33,6 @@
     "Modify": "2021-09-05 16:02:02",
     "JavDb": "PQX8E",
     "JavLibrary": "javliity2i",
-    "JavBus": "GENT-080"
+    "JavBus": "GENT-080",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/gent080/gent080pl.jpg"
 }

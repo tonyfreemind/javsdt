@@ -13,7 +13,7 @@
     "Studio": "OPPAI",
     "Publisher": "OPPAI",
     "Score": 0,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ppbd151/ppbd151pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "6v87_b.jpg",
     "CutType": 1,
     "Arzon": "1490118",
@@ -34,5 +34,6 @@
     "Modify": "2021-09-25 18:04:53",
     "JavDb": "DYNa2",
     "JavLibrary": "javli7qcrq",
-    "JavBus": "PPBD-151"
+    "JavBus": "PPBD-151",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ppbd151/ppbd151pl.jpg"
 }

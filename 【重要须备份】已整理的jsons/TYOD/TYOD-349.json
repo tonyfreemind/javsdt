@@ -13,7 +13,7 @@
     "Studio": "\u4e71\u4e38",
     "Publisher": "\u4e71\u4e38",
     "Score": 85,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/tyod349/tyod349pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "5xtp_b.jpg",
     "CutType": 1,
     "Arzon": "1389129",
@@ -35,5 +35,6 @@
     "Modify": "2021-09-25 20:02:31",
     "JavDb": "Mb74P",
     "JavLibrary": "javliklhrm",
-    "JavBus": "TYOD-349"
+    "JavBus": "TYOD-349",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/tyod349/tyod349pl.jpg"
 }

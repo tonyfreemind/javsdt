@@ -13,7 +13,7 @@
     "Studio": "AVS",
     "Publisher": "AVSCollector\u2019s",
     "Score": 85,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/naka017/naka017pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "6t7r_b.jpg",
     "CutType": 1,
     "Arzon": "1484510",
@@ -32,5 +32,6 @@
     "Modify": "2021-09-25 17:53:54",
     "JavDb": "3nbp9",
     "JavLibrary": "javli7tr5a",
-    "JavBus": "NAKA-017"
+    "JavBus": "NAKA-017",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/naka017/naka017pl.jpg"
 }

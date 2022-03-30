@@ -13,7 +13,7 @@
     "Studio": "Fitch",
     "Publisher": "Fitch",
     "Score": 87,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/jufd489/jufd489pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "4u3a_b.jpg",
     "CutType": 1,
     "Arzon": "1273819",
@@ -34,5 +34,6 @@
     "Modify": "2021-09-05 19:01:48",
     "JavDb": "GMJwD",
     "JavLibrary": "javliirk5q",
-    "JavBus": "JUFD-489"
+    "JavBus": "JUFD-489",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/jufd489/jufd489pl.jpg"
 }

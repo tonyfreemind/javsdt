@@ -13,7 +13,7 @@
     "Studio": "\u30c0\u30b9\u30c3\uff01",
     "Publisher": "Platina",
     "Score": 80,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/pla066/pla066pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "6a4h_b.jpg",
     "CutType": 1,
     "Arzon": "1429808",
@@ -34,5 +34,6 @@
     "Modify": "2021-09-21 08:06:45",
     "JavDb": "y6RA",
     "JavLibrary": "javli4ry3i",
-    "JavBus": "PLA-066"
+    "JavBus": "PLA-066",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/pla066/pla066pl.jpg"
 }

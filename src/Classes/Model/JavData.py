@@ -66,6 +66,9 @@ class JavData(object):
         self.CoverBus = ''
         """17 封面Bus"""
 
+        self.CoverDmm = ''
+        """16 封面Dmm"""
+
         self.CutType = CutTypeEnum.left.value
         """18 裁剪方式"""
 

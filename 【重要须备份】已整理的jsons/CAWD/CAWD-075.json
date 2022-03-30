@@ -13,7 +13,7 @@
     "Studio": "kawaii",
     "Publisher": "kawaii",
     "Score": 78,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/cawd075/cawd075pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "7mrs_b.jpg",
     "CutType": 1,
     "Arzon": "1564765",
@@ -33,5 +33,6 @@
     "Modify": "2022-02-15 19:04:54",
     "JavDb": "9pAPp",
     "JavLibrary": "javli6zusu",
-    "JavBus": "CAWD-075"
+    "JavBus": "CAWD-075",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/cawd075/cawd075pl.jpg"
 }

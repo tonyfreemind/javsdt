@@ -13,7 +13,7 @@
     "Studio": "h.m.p DORAMA",
     "Publisher": "h.m.p DORAMA",
     "Score": 81,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/homa062/homa062pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "741n_b.jpg",
     "CutType": 1,
     "Arzon": "1513845",
@@ -32,5 +32,6 @@
     "Modify": "2021-09-05 18:26:42",
     "JavDb": "VX9b2",
     "JavLibrary": "javli6dnqu",
-    "JavBus": "HOMA-062"
+    "JavBus": "HOMA-062",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/homa062/homa062pl.jpg"
 }

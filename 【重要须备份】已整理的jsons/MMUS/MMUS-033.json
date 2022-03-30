@@ -13,7 +13,7 @@
     "Studio": "MARRION",
     "Publisher": "MCP",
     "Score": 75,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mmus033so/mmus033sopl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "75x5_b.jpg",
     "CutType": 1,
     "Arzon": "1521254",
@@ -32,5 +32,6 @@
     "Modify": "2021-09-25 17:48:57",
     "JavDb": "36gvN",
     "JavLibrary": "javli6bt34",
-    "JavBus": "MMUS-033"
+    "JavBus": "MMUS-033",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mmus033so/mmus033sopl.jpg"
 }

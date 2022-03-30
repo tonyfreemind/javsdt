@@ -13,7 +13,7 @@
     "Studio": "SOD Create",
     "Publisher": "SOD star",
     "Score": 86,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1stars164/1stars164pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "7grt_b.jpg",
     "CutType": 1,
     "Arzon": "1545087",
@@ -34,5 +34,6 @@
     "Modify": "2021-09-25 19:53:53",
     "JavDb": "P2E49",
     "JavLibrary": "javli6tr64",
-    "JavBus": "STARS-164"
+    "JavBus": "STARS-164",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1stars164/1stars164pl.jpg"
 }

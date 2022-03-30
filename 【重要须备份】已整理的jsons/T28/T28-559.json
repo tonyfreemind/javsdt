@@ -14,7 +14,7 @@
     "Publisher": "TMA",
     "Score": 0,
     "CoverDb": "",
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/55t28559/55t28559pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "744y_b.jpg",
     "CutType": 1,
     "JavDb": "",
@@ -31,5 +31,6 @@
         "16\u5c0f\u65f6+"
     ],
     "Actors": [],
-    "Modify": "2022-03-27 23:02:25"
+    "Modify": "2022-03-27 23:02:25",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/55t28559/55t28559pl.jpg"
 }

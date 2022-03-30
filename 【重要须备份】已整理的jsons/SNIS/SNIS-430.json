@@ -13,7 +13,7 @@
     "Studio": "S1 NO.1 STYLE",
     "Publisher": "S1 NO.1 STYLE",
     "Score": 85,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/snis430/snis430pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "4tgl_b.jpg",
     "CutType": 1,
     "Arzon": "1272417",
@@ -30,5 +30,6 @@
     "Modify": "2021-09-25 18:31:54",
     "JavDb": "9b46",
     "JavLibrary": "javliira4y",
-    "JavBus": "SNIS-430"
+    "JavBus": "SNIS-430",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/snis430/snis430pl.jpg"
 }

@@ -13,7 +13,7 @@
     "Studio": "MOODYZ",
     "Publisher": "MOODYZ Fresh",
     "Score": 85,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mifd035/mifd035pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "6fo1_b.jpg",
     "CutType": 1,
     "Arzon": "1444956",
@@ -34,5 +34,6 @@
     "Modify": "2021-09-25 17:41:14",
     "JavDb": "RdA3m",
     "JavLibrary": "javli4ym3e",
-    "JavBus": "MIFD-035"
+    "JavBus": "MIFD-035",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mifd035/mifd035pl.jpg"
 }

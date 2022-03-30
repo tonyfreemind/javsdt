@@ -13,7 +13,7 @@
     "Studio": "SOD Create",
     "Publisher": "SOD star",
     "Score": 70,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1star542/1star542pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "4ezt_b.jpg",
     "CutType": 1,
     "Arzon": "1215428",
@@ -31,5 +31,6 @@
     "Modify": "2021-09-25 19:16:08",
     "JavDb": "WwwA7",
     "JavLibrary": "javlijzkr4",
-    "JavBus": "STAR-542"
+    "JavBus": "STAR-542",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1star542/1star542pl.jpg"
 }

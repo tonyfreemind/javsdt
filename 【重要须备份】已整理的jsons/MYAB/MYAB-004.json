@@ -13,7 +13,7 @@
     "Studio": "AVS",
     "Publisher": "AVSCollector\u2019s",
     "Score": 90,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/myab004/myab004pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "6wlv_b.jpg",
     "CutType": 1,
     "Arzon": "1494396",
@@ -33,5 +33,6 @@
     "Modify": "2021-09-25 17:53:47",
     "JavDb": "NREV4",
     "JavLibrary": "javli7r66q",
-    "JavBus": "MYAB-004"
+    "JavBus": "MYAB-004",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/myab004/myab004pl.jpg"
 }

@@ -13,7 +13,7 @@
     "Studio": "\u7f8e",
     "Publisher": "\u7f8e\u30c3\u75f4",
     "Score": 87,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/beb076/beb076pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "n0r_b.jpg",
     "CutType": 1,
     "Arzon": "1399789",
@@ -32,5 +32,6 @@
     "Modify": "2021-09-05 15:34:51",
     "JavDb": "neBAm",
     "JavLibrary": "javliotmra",
-    "JavBus": "BEB-076"
+    "JavBus": "BEB-076",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/beb076/beb076pl.jpg"
 }

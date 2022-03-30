@@ -13,7 +13,7 @@
     "Studio": "MOODYZ",
     "Publisher": "MOODYZ Best",
     "Score": 91,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mizd109/mizd109pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "6rmw_b.jpg",
     "CutType": 1,
     "Arzon": "1479802",
@@ -42,5 +42,6 @@
     "Modify": "2021-09-25 17:46:17",
     "JavDb": "nK13Y",
     "JavLibrary": "javli7jbyu",
-    "JavBus": "MIZD-109"
+    "JavBus": "MIZD-109",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mizd109/mizd109pl.jpg"
 }

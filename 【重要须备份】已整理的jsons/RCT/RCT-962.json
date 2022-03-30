@@ -13,7 +13,7 @@
     "Studio": "ROCKET",
     "Publisher": "ROCKET",
     "Score": 94,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1rct962/1rct962pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "5xjp_b.jpg",
     "CutType": 1,
     "Arzon": "1383896",
@@ -37,5 +37,6 @@
     "Modify": "2021-09-25 18:14:19",
     "JavDb": "GvyJ",
     "JavLibrary": "javliklctq",
-    "JavBus": "RCT-962"
+    "JavBus": "RCT-962",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1rct962/1rct962pl.jpg"
 }

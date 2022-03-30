@@ -13,7 +13,7 @@
     "Studio": "BeFree",
     "Publisher": "BeFree",
     "Score": 86,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/bf342/bf342pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "4gko_b.jpg",
     "CutType": 1,
     "Arzon": "1223981",
@@ -31,5 +31,6 @@
     "Modify": "2021-09-05 15:35:23",
     "JavDb": "76824",
     "JavLibrary": "javliiatze",
-    "JavBus": "BF-342"
+    "JavBus": "BF-342",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/bf342/bf342pl.jpg"
 }

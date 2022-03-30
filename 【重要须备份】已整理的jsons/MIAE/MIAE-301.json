@@ -13,7 +13,7 @@
     "Studio": "MOODYZ",
     "Publisher": "MOODYZ ACID",
     "Score": 70,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/miae301/miae301pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "6q56_b.jpg",
     "CutType": 1,
     "Arzon": "1474746",
@@ -34,5 +34,6 @@
     "Modify": "2021-09-25 17:20:27",
     "JavDb": "RkyBg",
     "JavLibrary": "javli7i434",
-    "JavBus": "MIAE-301"
+    "JavBus": "MIAE-301",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/miae301/miae301pl.jpg"
 }

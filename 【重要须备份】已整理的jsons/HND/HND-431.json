@@ -13,7 +13,7 @@
     "Studio": "\u672c\u4e2d",
     "Publisher": "\u672c\u4e2d",
     "Score": 68,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/hnd431/hnd431pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "65e2_b.jpg",
     "CutType": 1,
     "Arzon": "1413492",
@@ -33,5 +33,6 @@
     "Modify": "2021-09-05 17:44:43",
     "JavDb": "2mpZw",
     "JavLibrary": "javlikrk4y",
-    "JavBus": "HND-431"
+    "JavBus": "HND-431",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/hnd431/hnd431pl.jpg"
 }

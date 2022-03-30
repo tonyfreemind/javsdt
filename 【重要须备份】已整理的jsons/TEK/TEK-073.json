@@ -13,7 +13,7 @@
     "Studio": "MUTEKI",
     "Publisher": "MUTEKI",
     "Score": 83,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/tek073/tek073pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "5e27_b.jpg",
     "CutType": 1,
     "Arzon": "1323372",
@@ -31,5 +31,6 @@
     "Modify": "2021-09-25 20:00:43",
     "JavDb": "821d3",
     "JavLibrary": "javlilieri",
-    "JavBus": "TEK-073"
+    "JavBus": "TEK-073",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/tek073/tek073pl.jpg"
 }

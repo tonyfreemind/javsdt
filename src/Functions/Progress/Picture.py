@@ -47,13 +47,13 @@ def crop_poster_youma(path_fanart, path_poster):
     # 如果fanart不是正常的800*576的横向图，而是非常“瘦”的图
     if wf < wide:
         poster = img.crop((0, 0, wf, int(wf * 1.42)))
-        poster.save(path_poster, quality=95)  # quality=95 是无损crop，如果不设置，默认75
-        print('    >poster.jpg裁剪成功')
     else:
+        # 正常的图
         x_left = wf - wide
-        poster = img.crop((x_left, 0, wf, hf))    # poster在fanart的 左上角(x_left, 0)，右下角(x_left + wide, hf)
-        poster.save(path_poster, quality=95)                 # 坐标轴的Y轴是反的
-        print('    >poster.jpg裁剪成功')
+        poster = img.crop((x_left, 0, wf, hf))    # poster在fanart的 左上角(x_left, 0)，右下角(x_left + wide, hf)，Y轴反的
+
+    poster.save(path_poster, quality=95)  # quality=95 是无损crop，如果不设置，默认75
+    print('    >poster.jpg裁剪成功')
 
 
 # 功能: 不使用人体分析，裁剪fanart封面作为poster，裁剪中间，或者裁剪右边

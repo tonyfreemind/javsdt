@@ -13,7 +13,7 @@
     "Studio": "kawaii",
     "Publisher": "kawaii",
     "Score": 87,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/kawd709/kawd709pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "5fe6_b.jpg",
     "CutType": 1,
     "Arzon": "1479042",
@@ -32,5 +32,6 @@
     "Modify": "2021-09-05 21:16:30",
     "JavDb": "P9rZe",
     "JavLibrary": "javliljgte",
-    "JavBus": "KAWD-709"
+    "JavBus": "KAWD-709",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/kawd709/kawd709pl.jpg"
 }

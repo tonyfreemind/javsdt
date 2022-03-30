@@ -14,7 +14,7 @@
     "Publisher": "NTR",
     "Score": 80,
     "CoverDb": "",
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1ntr001/1ntr001pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "",
     "CutType": 1,
     "JavDb": "OX2WK",
@@ -32,5 +32,6 @@
     "Actors": [
         "\u84ee\u5b9f\u30af\u30ec\u30a2"
     ],
-    "Modify": "2021-10-24 17:27:27"
+    "Modify": "2021-10-24 17:27:27",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1ntr001/1ntr001pl.jpg"
 }

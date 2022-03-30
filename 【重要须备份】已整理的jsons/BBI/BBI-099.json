@@ -13,7 +13,7 @@
     "Studio": "\u7f8e",
     "Publisher": "\u7f8e",
     "Score": 90,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/bbi099/bbi099pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "1k54_b.jpg",
     "CutType": 1,
     "Arzon": "701092",
@@ -31,5 +31,6 @@
     "Modify": "2021-09-05 15:33:16",
     "JavDb": "verb9",
     "JavLibrary": "javlimth5m",
-    "JavBus": "BBI-099"
+    "JavBus": "BBI-099",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/bbi099/bbi099pl.jpg"
 }

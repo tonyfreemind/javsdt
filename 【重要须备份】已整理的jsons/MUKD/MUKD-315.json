@@ -13,7 +13,7 @@
     "Studio": "\u7121\u57a2",
     "Publisher": "\u7121\u57a2",
     "Score": 95,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mukd315/mukd315pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "4i9a_b.jpg",
     "CutType": 1,
     "Arzon": "",
@@ -35,5 +35,6 @@
     "Modify": "2021-09-25 17:51:31",
     "JavDb": "g0GzN",
     "JavLibrary": "javliiajyu",
-    "JavBus": "MUKD-315"
+    "JavBus": "MUKD-315",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mukd315/mukd315pl.jpg"
 }

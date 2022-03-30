@@ -13,7 +13,7 @@
     "Studio": "\u30de\u30c9\u30f3\u30ca",
     "Publisher": "Madonna",
     "Score": 92,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/jux467/jux467pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "4j06_b.jpg",
     "CutType": 1,
     "Arzon": "1233940",
@@ -33,5 +33,6 @@
     "Modify": "2021-09-05 19:07:18",
     "JavDb": "356kN",
     "JavLibrary": "javliib56u",
-    "JavBus": "JUX-467"
+    "JavBus": "JUX-467",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/jux467/jux467pl.jpg"
 }

@@ -13,7 +13,7 @@
     "Studio": "S1 NO.1 STYLE",
     "Publisher": "S1 NO.1 STYLE",
     "Score": 87,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/snis752/snis752pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "5ooi_b.jpg",
     "CutType": 1,
     "Arzon": "1357544",
@@ -35,5 +35,6 @@
     "Modify": "2021-09-25 18:36:34",
     "JavDb": "K4877",
     "JavLibrary": "javlilycse",
-    "JavBus": "SNIS-752"
+    "JavBus": "SNIS-752",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/snis752/snis752pl.jpg"
 }

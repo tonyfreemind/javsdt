@@ -13,7 +13,7 @@
     "Studio": "\u30ef\u30fc\u30d7\u30a8\u30f3\u30bf\u30c6\u30a4\u30f3\u30e1\u30f3\u30c8",
     "Publisher": "COBRA\uff08\u30ef\u30fc\u30d7\uff09",
     "Score": 82,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/2ecb111/2ecb111pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "6lsx_b.jpg",
     "CutType": 1,
     "Arzon": "1460114",
@@ -33,5 +33,6 @@
     "Modify": "2021-09-05 15:58:43",
     "JavDb": "GZbz7",
     "JavLibrary": "javli7agza",
-    "JavBus": "ECB-111"
+    "JavBus": "ECB-111",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/2ecb111/2ecb111pl.jpg"
 }

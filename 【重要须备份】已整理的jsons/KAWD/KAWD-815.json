@@ -13,7 +13,7 @@
     "Studio": "kawaii",
     "Publisher": "kawaii",
     "Score": 86,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/kawd815/kawd815pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "6145_b.jpg",
     "CutType": 1,
     "Arzon": "1398953",
@@ -33,5 +33,6 @@
     "Modify": "2021-09-05 21:18:12",
     "JavDb": "RkbmK",
     "JavLibrary": "javlikjd5a",
-    "JavBus": "KAWD-815"
+    "JavBus": "KAWD-815",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/kawd815/kawd815pl.jpg"
 }

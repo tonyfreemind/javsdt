@@ -13,7 +13,7 @@
     "Studio": "\u7f8e",
     "Publisher": "\u7f8e",
     "Score": 91,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/bbi177/bbi177pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "4ivr_b.jpg",
     "CutType": 1,
     "Arzon": "1233978",
@@ -31,5 +31,6 @@
     "Modify": "2021-09-05 15:34:18",
     "JavDb": "XW2mb",
     "JavLibrary": "javliib4ym",
-    "JavBus": "BBI-177"
+    "JavBus": "BBI-177",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/bbi177/bbi177pl.jpg"
 }

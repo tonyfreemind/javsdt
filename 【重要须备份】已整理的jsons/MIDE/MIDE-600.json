@@ -13,7 +13,7 @@
     "Studio": "MOODYZ",
     "Publisher": "MOODYZ DIVA",
     "Score": 83,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mide600/mide600pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "6uak_b.jpg",
     "CutType": 1,
     "Arzon": "1488395",
@@ -35,5 +35,6 @@
     "Modify": "2021-09-25 17:34:06",
     "JavDb": "kOR8m",
     "JavLibrary": "javli7te3q",
-    "JavBus": "MIDE-600"
+    "JavBus": "MIDE-600",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mide600/mide600pl.jpg"
 }

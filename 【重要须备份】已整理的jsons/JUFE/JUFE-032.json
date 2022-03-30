@@ -13,7 +13,7 @@
     "Studio": "Fitch",
     "Publisher": "Fitch",
     "Score": 82,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/jufe032/jufe032pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "6zdk_b.jpg",
     "CutType": 1,
     "Arzon": "1502376",
@@ -33,5 +33,6 @@
     "Modify": "2021-09-05 19:02:35",
     "JavDb": "4VJEG",
     "JavLibrary": "javli7zq4q",
-    "JavBus": "JUFE-032"
+    "JavBus": "JUFE-032",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/jufe032/jufe032pl.jpg"
 }

@@ -13,7 +13,7 @@
     "Studio": "VENUS",
     "Publisher": "ULTIMA",
     "Score": 73,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/vagu119/vagu119pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "4pi8_b.jpg",
     "CutType": 1,
     "Arzon": "1257143",
@@ -35,5 +35,6 @@
     "Modify": "2021-09-25 16:08:24",
     "JavDb": "GMNZ5",
     "JavLibrary": "javliitssy",
-    "JavBus": "VAGU-119"
+    "JavBus": "VAGU-119",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/vagu119/vagu119pl.jpg"
 }

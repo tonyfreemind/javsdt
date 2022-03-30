@@ -13,7 +13,7 @@
     "Studio": "\u7d76\u671b\u30a8\u30ed\u30b9/\u5984\u60f3\u65cf",
     "Publisher": "\u7d76\u671b\u30a8\u30ed\u30b9",
     "Score": 80,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/zbes036/zbes036pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "66fe_b.jpg",
     "CutType": 1,
     "Arzon": "1415860",
@@ -33,5 +33,6 @@
     "Modify": "2021-09-25 20:37:32",
     "JavDb": "WJVp",
     "JavLibrary": "javli4tasa",
-    "JavBus": "ZBES-036"
+    "JavBus": "ZBES-036",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/zbes036/zbes036pl.jpg"
 }

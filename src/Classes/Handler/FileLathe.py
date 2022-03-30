@@ -1,23 +1,20 @@
 import os
 from os import sep
 from shutil import copyfile
-from configparser import RawConfigParser  # 读取ini
-from configparser import NoOptionError  # ini文件不存在或不存在指定node的错误
 from typing import List, TextIO
 
 from Classes.Model.JavData import JavData
 from Classes.Model.JavFile import JavFile
 from Classes.Handler.MyLogger import record_video_old
-from Classes.Static.Errors import TooManyDirectoryLevelsError, DownloadFanartError
+from Classes.Static.Errors import TooManyDirectoryLevelsError
 from Classes.Static.Const import Const
 from Classes.Static.Config import Ini
-from Functions.Utils.Download import download_pic
 from Functions.Progress.Picture import check_picture, crop_poster_youma, add_watermark_subtitle, add_watermark_divulge
 from Functions.Utils.XML import replace_xml_invalid_char, replace_os_invalid_char
 from Functions.Utils.LittleUtils import cut_str, update_ini_file_value_plus_one
 
 
-class Standard(object):
+class FileLathe(object):
     """ 本地文件规范化"""
 
     def __init__(self, ini: Ini):
@@ -111,7 +108,7 @@ class Standard(object):
         """是否 为kodi收集演员头像"""
 
         self._need_only_cd = ini.need_only_cd
-        """是否 对于多cd的影片，kodi只需要一份图片和nfo"""
+        """是否 对于多cd的影片，只收集一份图片和nfo（kodi模式）"""
         # endregion
 
         # region ######################################## 8代理 ########################################
@@ -207,6 +204,46 @@ class Standard(object):
         self._dict[Const.VIDEO] = self._dict[Const.ORIGIN_VIDEO] = jav_file.Name_no_ext
         self._dict[Const.ORIGIN_FOLDER] = jav_file.Folder
 
+    def _assemble_file_formula(self, name: str):
+        """
+        组装文件相关的命名公式
+
+        Args:
+            name: self的成员名称
+
+        Examples:
+            var = self._assemble_formula('_list_name_video')
+            # 如果 self._list_name_video = ['车牌', '空格', '标题']，self._dict = {'车牌':'ABC-123', '空格':' ', '标题':'我是一个标题', ...}
+            # 则得到 var = “ABC-123 我是一个标题”
+
+        Returns:
+            拼装命名公式后得到的字符串
+        """
+        return "".join(
+            [replace_os_invalid_char(self._dict[element])
+             for element in getattr(self, name)]
+        )
+
+    def _assemble_nfo_formula(self, name: str):
+        """
+        组装nfo相关的命名公式
+
+        Args:
+            name: self的成员名称
+
+        Examples:
+            var = self._assemble_formula('_list_name_nfo_title')
+            # 如果 self._list_name_nfo_title = ['车牌', '空格', '标题']，self._dict = {'车牌':'ABC-123', '空格':' ', '标题':'我是一个标题', ...}
+            # 则得到 var = “ABC-123 我是一个标题”
+
+        Returns:
+            拼装得到的字符串
+        """
+        return "".join(
+            [replace_xml_invalid_char(self._dict[element])
+             for element in getattr(self, name)]
+        )
+
     def rename_mp4(self, jav_file: JavFile):
         """
         重命名磁盘中的视频及字幕文件
@@ -225,11 +262,9 @@ class Standard(object):
 
         if self._need_rename_video:
             # region 得到新视频文件名
-            name_dest = ''.join(
-                [replace_os_invalid_char(self._dict[element]) for element in self._list_name_video]
-            )
+            name_new = self._assemble_file_formula('_list_name_video')
             """新视频文件名，不带文件类型"""
-            path_new = f'{jav_file.Dir}{sep}{name_dest}{jav_file.Cd}{jav_file.Ext}'
+            path_new = f'{jav_file.Dir}{sep}{name_new}{jav_file.Cd}{jav_file.Ext}'
             """视频文件的新路径"""
             # endregion
 
@@ -250,14 +285,14 @@ class Standard(object):
             # 存在目标文件，但不是现在的文件。
             else:
                 raise FileExistsError(f'重命名影片失败，重复的影片，已经有相同文件名的视频了: {path_new}')  # 【终止整理】
-            self._dict[Const.VIDEO] = name_dest  # 【更新】
-            jav_file.Name = f'{name_dest}{jav_file.Ext}'  # 【更新】
+            self._dict[Const.VIDEO] = name_new  # 【更新】
+            jav_file.Name = f'{name_new}{jav_file.Ext}'  # 【更新】
             print(f'    >修改文件名{jav_file.Cd}完成')
             # endregion
 
             # region 重命名字幕文件
             if jav_file.Subtitle and self._need_rename_subtitle:
-                subtitle_new = f'{name_dest}{jav_file.Ext_subtitle}'  # 新字幕文件名
+                subtitle_new = f'{name_new}{jav_file.Ext_subtitle}'  # 新字幕文件名
                 path_subtitle_new = f'{jav_file.Dir}{sep}{subtitle_new}'  # 字幕文件的新路径
                 if jav_file.Path_subtitle != path_subtitle_new:
                     os.rename(jav_file.Path_subtitle, path_subtitle_new)
@@ -280,21 +315,18 @@ class Standard(object):
             return
 
         # region 确定归类的目标文件夹
-        dir_relative = "".join(
-            [replace_os_invalid_char(self._dict[element]) for element in self._list_name_classify_dir]
-        )
-        dir_target = f'{self._dir_classify_root}{sep}{dir_relative}'
+        dir_target = f'{self._dir_classify_root}{sep}{self._assemble_file_formula("_list_name_classify_dir")}'
         """归类的目标文件夹路径"""
         if not os.path.exists(dir_target):
             os.makedirs(dir_target)
         # endregion
 
         # region 移动视频
-        path_new = f'{dir_target}{sep}{jav_file.Name}'  # 新的视频文件路径
-        if os.path.exists(path_new):
-            raise FileExistsError(f'归类失败，重复的影片，归类的目标文件夹已经存在相同的影片: {path_new}')  # 【终止整理】
+        path_target = f'{dir_target}{sep}{jav_file.Name}'  # 新的视频文件路径
+        if os.path.exists(path_target):
+            raise FileExistsError(f'归类失败，重复的影片，归类的目标文件夹已经存在相同的影片: {path_target}')  # 【终止整理】
 
-        os.rename(jav_file.Path, path_new)
+        os.rename(jav_file.Path, path_target)
         jav_file.Dir = dir_target  # 【更新】jav.dir
         print('    >归类视频文件完成')
         # endregion
@@ -319,9 +351,8 @@ class Standard(object):
             return
 
         # region 得到新文件夹名
-        folder_new = ''.join(
-            [replace_os_invalid_char(self._dict[element]) for element in self._list_name_folder]
-        ).lstrip('.')
+
+        folder_new = self._assemble_file_formula('_list_name_folder')
         """新的所在文件夹名称"""
         # endregion
 
@@ -421,7 +452,7 @@ class Standard(object):
 
         # region 文件夹内的文件们集体搬家
         dir_target = f'{self._dir_classify_root}{sep}' \
-                     f'{"".join(replace_os_invalid_char(self._dict[element]) for element in self._list_name_classify_dir)}' \
+                     f'{self._assemble_file_formula("_list_name_classify_dir")}' \
                      f'{sep}{jav_file.Folder}'
         """新 视频所在文件夹的路径"""
         if os.path.exists(dir_target):
@@ -455,18 +486,12 @@ class Standard(object):
         path_nfo = f'{jav_file.Dir}{sep}{jav_file.Name_no_ext.replace(jav_file.Cd, "")}.nfo' \
             if self._need_only_cd \
             else f'{jav_file.Dir}{sep}{jav_file.Name_no_ext}.nfo'
-
-        # nfo中tilte的写法
-        title_in_nfo = ''.join(
-            [replace_xml_invalid_char(self._dict[element]) for element in self._list_name_nfo_title]
-        )
-
         with open(file=path_nfo, mode='w', encoding='utf-8') as f:
             f.write(
                 f'<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>\n'
                 f'<movie>\n'
                 f'  <plot>{replace_xml_invalid_char(jav_data.PlotZh if self._need_zh_plot else jav_data.Plot)}{replace_xml_invalid_char(jav_data.Review)}</plot>\n'
-                f'  <title>{title_in_nfo}</title>\n'
+                f'  <title>{self._assemble_nfo_formula("_list_name_nfo_title")}</title>\n'
                 f'  <originaltitle>{jav_data.Car} {replace_xml_invalid_char(jav_data.Title)}</originaltitle>\n'
                 f'  <director>{replace_xml_invalid_char(jav_data.Director)}</director>\n'
                 f'  <rating>{jav_data.Score / 10}</rating>\n'
@@ -518,76 +543,78 @@ class Standard(object):
 
     # endregion
 
-    def download_fanart(self, jav_file: JavFile, jav_model: JavData):
+    def need_download_fanart(self, jav_file: JavFile):
         """
-        下载fanart，切割poster
+        判定是否需要下载fanart
 
         Args:
             jav_file: jav视频文件对象
-            jav_model: jav元数据对象
+
+        Returns:
+            需要下载fanart => fanart预期路径；不需要 => 空。
         """
         if not self._need_download_fanart:
-            return
+            return ''  # 不需要图片，不需要下载
 
-        # fanart和poster路径
-        path_fanart = f'{jav_file.Dir}{sep}'
-        path_poster = f'{jav_file.Dir}{sep}'
-        for i in self._list_name_fanart:
-            path_fanart = f'{path_fanart}{self._dict[i]}'
-        for i in self._list_name_poster:
-            path_poster = f'{path_poster}{self._dict[i]}'
-
-        # kodi只需要一份图片，不管视频是cd几，仅需一份图片，不需要cd几。
+        # fanart预期路径
+        path_fanart = f'{jav_file.Dir}{sep}{self._assemble_file_formula("_list_name_fanart")}'
+        # kodi只需要一份图片，不管视频是cd几，仅需一份图片。
         if self._need_only_cd:
-            path_fanart = path_fanart.replace(jav_file.Cd, '')  # 去除cd
+            path_fanart = path_fanart.replace(jav_file.Cd, '')
+
+        # （1）如果现在的视频文件不是cd1（不是第一集），emby需要多份，直接复制第一集的图片
+        # （2）path_fanart已存在，也不需要重复搞图片
+        # 如果用户有例如abc-123.mkv和abc-123.mp4这两个视频，并且用户设置“不重命名视频”（导致没有分cd1、cd2），
+        # 处理完mkv，再处理mp4，mp4的fanart路径和mkv的相同
+        # 引发报错raise SameFileError("{!r} and {!r} are the same file".format(src, dst))
+        # 所以一定要判断下path_fanart有没有，如果有，就不再重复搞图片了
+        elif jav_file.Episode != 1 and not os.path.exists(path_fanart):
+            # 如果用户在一个车牌上有两个视频，一个有字幕，变成了T28-557㊥-cd1-fanart.jpg，另一个没字幕，变成了T28-557-cd2-fanart.jpg，
+            # 简单地把cd1的图片路径替换一下cd2，期望能得到cd2的路径，“T28-557㊥-cd1-fanart.jpg” => “T28-557㊥-cd2-fanart.jpg”
+            # 但cd2的实际路径是“T28-557-cd2-fanart.jpg”，所以一定先判定一下path_fanart_cd1是否存在
+            path_fanart_cd1 = path_fanart.replace(jav_file.Cd, '-cd1')
+            if os.path.exists(path_fanart_cd1):
+                copyfile(path_fanart_cd1, path_fanart)
+                print('    >fanart.jpg复制成功')
+                return ''  # 复制成功，无需下载
+
+        if not check_picture(path_fanart):
+            return path_fanart  # 需要下载
+
+        print('    >已有fanart.jpg')
+        # 如果 path_fanart = ABC-123.jpg，而用户已有有一个 abc-123，os.path.exists()也会判定成功，所以重命名一下
+        os.rename(path_fanart, path_fanart)
+        return ''  # 已有，不需要下载
+
+    def crop_poster(self, jav_file: JavFile, path_fanart: str):
+        """
+        整出poster，加上条幅
+
+        （1）可能不需要管图片；（2）可以直接复制之前cd的poster；（3）依据fanart裁剪poster。
+
+        Args:
+            jav_file: jav视频文件对象
+            path_fanart: 已有fanart的路径
+        """
+        if not self._need_download_fanart:
+            return  # 不需要图片，无需处理
+
+        # poster预期路径
+        path_poster = f'{jav_file.Dir}{sep}{self._assemble_file_formula("_list_name_poster")}'
+
+        if self._need_only_cd:
             path_poster = path_poster.replace(jav_file.Cd, '')
+        elif jav_file.Episode != 1 and not os.path.exists(path_poster):
+            path_poster_cd1 = path_poster.replace(jav_file.Cd, '-cd1')
+            if os.path.exists(path_poster_cd1):
+                copyfile(path_poster_cd1, path_poster)
+                print('    >poster.jpg复制成功')
+                return  # 复制成功
 
-        # emby需要多份，如果现在的视频文件不是cd1（不是第一集），直接复制第一集的图片
-        elif jav_file.Episode != 1:
-            # 如果用户有例如abc-123.mkv和abc-123.mp4这两个视频，并且用户设置“不重命名视频”（导致没有分cd1、cd2），处理完mkv，
-            # 再处理mp4，mp4的fanart路径和mkv相同
-            # 引发报错raise SameFileError("{!r} and {!r} are the same file".format(src, dst))
-            # 所以这里判断下path_fanart有没有，如果有，就不再搞图片了
-            if not os.path.exists(path_fanart):
-                # 还有个问题，如果T28-557 ㊥-cd1-fanart.jpg，而T28-557-cd2-fanart.jpg
-                path_fanart_cd1 = path_fanart.replace(jav_file.Cd, '-cd1')
-                if os.path.exists(path_fanart_cd1):
-                    copyfile(path_fanart.replace(jav_file.Cd, '-cd1'), path_fanart)
-                    print('    >fanart.jpg复制成功')
-                    copyfile(path_poster.replace(jav_file.Cd, '-cd1'), path_poster)
-                    print('    >poster.jpg复制成功')
-
-        # 是否已存在可用的fanart
-        if check_picture(path_fanart):
-            # 这里有个遗留问题，如果已有的图片文件名是小写，比如abc-123 xx.jpg，但现在path_fanart是大写ABC-123，无法改变，poster同样
-            # print('    >已有fanart.jpg')
-            pass
-        else:
-            status = False  # 用于判断fanart是否下载成功
-            if jav_model.JavDb:
-                # Todo 如果javdb的图片不是规则的
-                url_cover = f'https://jdbimgs.com/covers/{jav_model.JavDb[:2].lower()}/{jav_model.JavDb}.jpg'
-                # print('    >从javdb下载封面: ', url_cover)  # 不希望“某些人”看到是从javdb上下载图片
-                print('    >下载封面: ...')
-                status = download_pic(url_cover, path_fanart, self._proxy_db)
-            if not status and jav_model.CoverBus:
-                url_cover = f'{self._url_bus}/pics/cover/{jav_model.CoverBus}'
-                print('    >从javbus下载封面: ', url_cover)
-                status = download_pic(url_cover, path_fanart, self._proxy_bus)
-            if not status and jav_model.CoverLibrary:
-                url_cover = jav_model.CoverLibrary
-                print('    >从dmm下载封面: ', url_cover)
-                status = download_pic(url_cover, path_fanart, self._proxy_dmm)
-            if status:
-                pass
-            else:
-                raise DownloadFanartError
-
-        # 裁剪生成 poster
         if check_picture(path_poster):
+            print('    >已有poster.jpg')
+            os.rename(path_poster, path_poster)
             # 这里有个问题，如果用户已有poster了，但没条幅，用户又想加上条幅...无法为用户加上
-            # print('    >已有poster.jpg')
-            pass
         else:
             crop_poster_youma(path_fanart, path_poster)
             # 需要加上条纹

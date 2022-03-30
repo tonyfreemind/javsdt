@@ -13,7 +13,7 @@
     "Studio": "\u672c\u4e2d",
     "Publisher": "\u672c\u4e2d",
     "Score": 92,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/hnd765/hnd765pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "7f60_b.jpg",
     "CutType": 1,
     "Arzon": "1547731",
@@ -35,5 +35,6 @@
     "Modify": "2021-09-05 17:47:35",
     "JavDb": "3r22N",
     "JavLibrary": "javli6rrqq",
-    "JavBus": "HND-765"
+    "JavBus": "HND-765",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/hnd765/hnd765pl.jpg"
 }

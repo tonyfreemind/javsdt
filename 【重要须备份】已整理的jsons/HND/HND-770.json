@@ -13,7 +13,7 @@
     "Studio": "\u672c\u4e2d",
     "Publisher": "\u672c\u4e2d",
     "Score": 88,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/hnd770/hnd770pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "7f5f_b.jpg",
     "CutType": 1,
     "Arzon": "1547736",
@@ -34,5 +34,6 @@
     "Modify": "2021-09-25 16:00:19",
     "JavDb": "P2002",
     "JavLibrary": "javli6rqrm",
-    "JavBus": "HND-770"
+    "JavBus": "HND-770",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/hnd770/hnd770pl.jpg"
 }

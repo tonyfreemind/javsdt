@@ -13,7 +13,7 @@
     "Studio": "\u7f8e",
     "Publisher": "\u7f8e",
     "Score": 87,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/bbi151/bbi151pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "41to_b.jpg",
     "CutType": 1,
     "Arzon": "",
@@ -31,5 +31,6 @@
     "Modify": "2021-09-05 15:33:39",
     "JavDb": "XeJxM",
     "JavLibrary": "javlijjc7e",
-    "JavBus": "BBI-151"
+    "JavBus": "BBI-151",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/bbi151/bbi151pl.jpg"
 }

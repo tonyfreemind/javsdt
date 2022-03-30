@@ -13,7 +13,7 @@
     "Studio": "CMP",
     "Publisher": "\u540c\u4eba\u30de\u30cb\u30a2\u56f3\u66f8",
     "Score": 80,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/djms008/djms008pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "",
     "CutType": 1,
     "Arzon": "",
@@ -29,5 +29,6 @@
     "Modify": "2021-09-05 15:50:33",
     "JavDb": "",
     "JavLibrary": "javliijtsm",
-    "JavBus": "DJMS-008"
+    "JavBus": "DJMS-008",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/djms008/djms008pl.jpg"
 }

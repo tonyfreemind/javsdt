@@ -13,7 +13,7 @@
     "Studio": "S1 NO.1 STYLE",
     "Publisher": "S1 NO.1 STYLE",
     "Score": 89,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ssni479/ssni479pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "73n0_b.jpg",
     "CutType": 1,
     "Arzon": "1513794",
@@ -35,5 +35,6 @@
     "Modify": "2021-09-25 18:59:01",
     "JavDb": "N9p63",
     "JavLibrary": "javli73444",
-    "JavBus": "SSNI-479"
+    "JavBus": "SSNI-479",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ssni479/ssni479pl.jpg"
 }

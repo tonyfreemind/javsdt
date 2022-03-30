@@ -1,6 +1,6 @@
 # -*- coding:utf-8 -*-
 import os
-from os import sep    # 路径分隔符: 当前系统的路径分隔符 windows是“\”，linux和mac是“/”
+from os import sep  # 路径分隔符: 当前系统的路径分隔符 windows是“\”，linux和mac是“/”
 import json
 from traceback import format_exc
 
@@ -8,21 +8,21 @@ from Classes.Web.JavDb import JavDb
 from Classes.Web.JavLibrary import JavLibrary
 from Classes.Web.JavBus import JavBus
 from Classes.Web.Arzon import Arzon
+from Dmm import Dmm
 from FileExplorer import FileExplorer
 from FileAnalyzer import FileAnalyzer
-from Stantdard import Standard
+from FileLathe import FileLathe
 from MyLogger import MyLogger
 from Baidu import Translator
 
 from Static.Config import Ini
 from Classes.Model.JavData import JavData
 from Enums import ScrapeStatusEnum
-from Errors import TooManyDirectoryLevelsError, SpecifiedUrlError, CustomClassifyTargetDirError
+from Errors import TooManyDirectoryLevelsError, SpecifiedUrlError, CustomClassifyTargetDirError, DownloadFanartError
 from Static.Const import Const
 
 from Functions.Progress.User import choose_directory
 from Functions.Utils.JsonUtility import read_json_to_dict
-
 
 # region（1）准备全局工具
 ini = Ini(Const.YOUMA)
@@ -32,8 +32,9 @@ javDb = JavDb(ini)
 javLibrary = JavLibrary(ini)
 javBus = JavBus(ini)
 arzon = Arzon(ini)
+dmm = Dmm(ini)
 translator = Translator(ini)
-standard = Standard(ini)
+fileLathe = FileLathe(ini)
 logger = MyLogger()
 # 当前程序文件夹 所处的 父文件夹路径 Todo 弄一个环境对象
 dir_pwd_father = os.path.dirname(os.getcwd())
@@ -53,7 +54,7 @@ while not input_key:
         fileExplorer.rest_and_check_choose(dir_choose)
     except CustomClassifyTargetDirError as error:
         input(f'请修正上述错误后重启程序：{str(error)}')
-    standard.update_dir_classify_root(fileExplorer.dir_classify_root())
+    fileLathe.update_dir_classify_root(fileExplorer.dir_classify_root())
     # endregion
 
     # region （3.2）遍历所选文件夹内部进行处理
@@ -155,7 +156,7 @@ while not input_key:
 
                     # 完善jav_model.CompletionStatus
                     jav_model.prefect_completion_status()
-                                    # endregion
+                    # endregion
 
                 # region（3.2.3）后续完善
                 # 如果用户 首次整理该片不存在path_json 或 如果这次整理用户正确地输入了翻译账户，则保存json
@@ -175,30 +176,37 @@ while not input_key:
                     genres.append('无码流出')
 
                 # 完善handler.dict_for_standard
-                standard.prefect_dict_for_standard(jav_file, jav_model)
-                if path_new := standard.rename_mp4(jav_file):
+                fileLathe.prefect_dict_for_standard(jav_file, jav_model)
+                if path_new := fileLathe.rename_mp4(jav_file):
                     logger.record_fail('请自行重命名大小写: ', path_new)
 
                 # 2 归类影片，只针对视频文件和字幕文件。注意: 第2操作和下面（第3操作+第7操作）互斥，只能执行第2操作或（第3操作+第7操作）
-                standard.classify_files(jav_file)
+                fileLathe.classify_files(jav_file)
 
                 # 3重命名文件夹。如果是针对“文件”归类（即第2步），这一步会被跳过，因为用户只需要归类视频文件，不需要管文件夹。
-                standard.rename_folder(jav_file)
+                fileLathe.rename_folder(jav_file)
 
                 # 更新一下path_relative
                 logger.update_relative_path(f'{sep}{jav_file.Path.replace(dir_choose, "")}')  # 影片的相对于所选文件夹的路径，用于报错
 
                 # 4写入nfo【独特】
-                standard.write_nfo(jav_file, jav_model, genres)
+                fileLathe.write_nfo(jav_file, jav_model, genres)
 
                 # 5需要两张封面图片【独特】
-                standard.download_fanart(jav_file, jav_model)
+                if path_fanart := fileLathe.need_download_fanart(jav_file):
+                    if not javDb.download_picture(jav_model.CoverDb, path_fanart) \
+                            or javBus.download_picture(jav_model.CoverBus, path_fanart) \
+                            or dmm.download_picture(jav_model.CoverDmm, path_fanart) \
+                            or javLibrary.download_picture(jav_model.CoverDmm, path_fanart):
+                        raise DownloadFanartError
+
+                fileLathe.crop_poster(jav_file, path_fanart)
 
                 # 6收集演员头像【相同】
-                standard.collect_sculpture(jav_file, jav_model)
+                fileLathe.collect_sculpture(jav_file, jav_model)
 
                 # 7归类影片，针对文件夹【相同】
-                standard.classify_folder(jav_file)
+                fileLathe.classify_folder(jav_file)
 
             except SpecifiedUrlError as error:
                 logger.record_fail(str(error))

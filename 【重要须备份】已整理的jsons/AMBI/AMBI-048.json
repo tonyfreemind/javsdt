@@ -13,7 +13,7 @@
     "Studio": "\u30d7\u30e9\u30cd\u30c3\u30c8\u30d7\u30e9\u30b9",
     "Publisher": "\u30a2\u30f3\u30d3\u30d0\u30ec\u30f3\u30c4",
     "Score": 92,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/h_237ambi048/h_237ambi048pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "4tr6_b.jpg",
     "CutType": 1,
     "Arzon": "1263132",
@@ -33,5 +33,6 @@
     "Modify": "2021-09-05 15:24:25",
     "JavDb": "7yNOV",
     "JavLibrary": "javliiqs2m",
-    "JavBus": "AMBI-048"
+    "JavBus": "AMBI-048",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/h_237ambi048/h_237ambi048pl.jpg"
 }

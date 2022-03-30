@@ -13,7 +13,7 @@
     "Studio": "TMA",
     "Publisher": "Expotion",
     "Score": 81,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/55akb023/55akb023pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "",
     "CutType": 1,
     "Arzon": "694338",
@@ -29,5 +29,6 @@
     "Modify": "2021-09-05 15:24:13",
     "JavDb": "vDKxY",
     "JavLibrary": "javlib337i",
-    "JavBus": ""
+    "JavBus": "",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/55akb023/55akb023pl.jpg"
 }

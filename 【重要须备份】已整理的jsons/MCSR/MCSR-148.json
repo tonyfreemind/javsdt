@@ -13,7 +13,7 @@
     "Studio": "\u30d3\u30c3\u30b0\u30e2\u30fc\u30ab\u30eb",
     "Publisher": "\u30de\u30b9\u30ab\u30c3\u30c8",
     "Score": 73,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/57mcsr148/57mcsr148pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "4qbu_b.jpg",
     "CutType": 1,
     "Arzon": "1247791",
@@ -33,5 +33,6 @@
     "Modify": "2021-10-30 12:25:17",
     "JavDb": "ZNB7",
     "JavLibrary": "javliij63u",
-    "JavBus": "MCSR-148"
+    "JavBus": "MCSR-148",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/57mcsr148/57mcsr148pl.jpg"
 }

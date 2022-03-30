@@ -13,7 +13,7 @@
     "Studio": "kawaii",
     "Publisher": "kawaii",
     "Score": 82,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/kawd744/kawd744pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "5nh3_b.jpg",
     "CutType": 1,
     "Arzon": "1355151",
@@ -33,5 +33,6 @@
     "Modify": "2021-09-05 21:16:53",
     "JavDb": "96rOp",
     "JavLibrary": "javlilytte",
-    "JavBus": "KAWD-744"
+    "JavBus": "KAWD-744",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/kawd744/kawd744pl.jpg"
 }

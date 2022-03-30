@@ -13,7 +13,7 @@
     "Studio": "MOODYZ",
     "Publisher": "MOODYZ DIVA",
     "Score": 91,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mide128/mide128pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "4bee_b.jpg",
     "CutType": 1,
     "Arzon": "1203323",
@@ -34,5 +34,6 @@
     "Modify": "2021-09-25 17:23:07",
     "JavDb": "rmK4N",
     "JavLibrary": "javlijyvy4",
-    "JavBus": "MIDE-128"
+    "JavBus": "MIDE-128",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mide128/mide128pl.jpg"
 }

@@ -13,7 +13,7 @@
     "Studio": "Aurora Project Annex",
     "Publisher": "Aurora Project Annex",
     "Score": 82,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/apaa313so/apaa313sopl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "4t4w_b.jpg",
     "CutType": 1,
     "Arzon": "",
@@ -33,5 +33,6 @@
     "Modify": "2021-09-05 15:26:11",
     "JavDb": "RkrZR",
     "JavLibrary": "javliirusm",
-    "JavBus": "APAA-313"
+    "JavBus": "APAA-313",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/apaa313so/apaa313sopl.jpg"
 }

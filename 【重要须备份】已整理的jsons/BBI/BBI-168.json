@@ -13,7 +13,7 @@
     "Studio": "\u7f8e",
     "Publisher": "\u7f8e",
     "Score": 90,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/bbi168/bbi168pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "4ehu_b.jpg",
     "CutType": 1,
     "Arzon": "",
@@ -31,5 +31,6 @@
     "Modify": "2021-09-05 15:33:54",
     "JavDb": "0e8Y3",
     "JavLibrary": "javlijzmri",
-    "JavBus": "BBI-168"
+    "JavBus": "BBI-168",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/bbi168/bbi168pl.jpg"
 }

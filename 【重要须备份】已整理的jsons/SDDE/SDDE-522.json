@@ -13,7 +13,7 @@
     "Studio": "SOD Create",
     "Publisher": "SENZ",
     "Score": 90,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1sdde522/1sdde522pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "6cxd_b.jpg",
     "CutType": 1,
     "Arzon": "",
@@ -37,5 +37,6 @@
     "Modify": "2021-09-25 18:19:16",
     "JavDb": "bbyP",
     "JavLibrary": "javli4tv6u",
-    "JavBus": "SDDE-522"
+    "JavBus": "SDDE-522",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1sdde522/1sdde522pl.jpg"
 }

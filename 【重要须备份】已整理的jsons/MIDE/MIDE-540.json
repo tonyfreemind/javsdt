@@ -13,7 +13,7 @@
     "Studio": "MOODYZ",
     "Publisher": "MOODYZ DIVA",
     "Score": 90,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mide540/mide540pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "6i0v_b.jpg",
     "CutType": 1,
     "Arzon": "1637133",
@@ -33,5 +33,6 @@
     "Modify": "2021-09-25 17:30:27",
     "JavDb": "31Ka",
     "JavLibrary": "javli7dbr4",
-    "JavBus": "MIDE-540"
+    "JavBus": "MIDE-540",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mide540/mide540pl.jpg"
 }

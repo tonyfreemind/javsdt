@@ -13,7 +13,7 @@
     "Studio": "\u30c1\u30ad\u30c1\u30ad\u30d0\u30fc\u30b0/\u5984\u60f3\u65cf",
     "Publisher": "",
     "Score": 82,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/tikm007/tikm007pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "6ono_b.jpg",
     "CutType": 1,
     "Arzon": "1470206",
@@ -33,5 +33,6 @@
     "Modify": "2021-09-25 20:01:31",
     "JavDb": "OX0KB",
     "JavLibrary": "javli7llrq",
-    "JavBus": "TIKM-007"
+    "JavBus": "TIKM-007",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/tikm007/tikm007pl.jpg"
 }

@@ -14,7 +14,7 @@
     "Publisher": "\u30b7\u30e5\u30d7\u30ea\u30fc\u30e0",
     "Score": 80,
     "CoverDb": "",
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/supd080/supd080pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "18qi_b.jpg",
     "CutType": 1,
     "JavDb": "YwmKx",
@@ -34,5 +34,6 @@
         "\u91cc\u7f8e\u3086\u308a\u3042"
     ],
     "Modify": "2021-11-07 18:22:19",
-    "ModifyDate": "2021-07-29 16:26:42"
+    "ModifyDate": "2021-07-29 16:26:42",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/supd080/supd080pl.jpg"
 }

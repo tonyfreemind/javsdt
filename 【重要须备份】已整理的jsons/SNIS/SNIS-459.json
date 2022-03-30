@@ -14,7 +14,7 @@
     "Publisher": "S1 NO.1 STYLE",
     "Score": 64,
     "CoverDb": "",
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/snis459/snis459pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "4uxm_b.jpg",
     "CutType": 1,
     "JavDb": "0gXb",
@@ -36,5 +36,6 @@
         "\u693f\u3042\u3044\u306e"
     ],
     "Modify": "2021-11-07 18:22:16",
-    "ModifyDate": "2021-07-29 16:26:26"
+    "ModifyDate": "2021-07-29 16:26:26",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/snis459/snis459pl.jpg"
 }

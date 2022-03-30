@@ -13,7 +13,7 @@
     "Studio": "\u30c9\u30ea\u30fc\u30e0\u30c1\u30b1\u30c3\u30c8",
     "Publisher": "VIVID\uff08\u30c9\u30ea\u30fc\u30e0\u30c1\u30b1\u30c3\u30c8\uff09",
     "Score": 77,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/24vdd138/24vdd138pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "6lt3_b.jpg",
     "CutType": 1,
     "Arzon": "1460111",
@@ -35,5 +35,6 @@
     "Modify": "2021-09-25 20:20:16",
     "JavDb": "nKGq6",
     "JavLibrary": "javli7ag34",
-    "JavBus": "VDD-138"
+    "JavBus": "VDD-138",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/24vdd138/24vdd138pl.jpg"
 }

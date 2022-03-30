@@ -16,7 +16,7 @@ def better_dict_genres(website, to_language):
     Returns:
         {'伴侶': '招待小姐', ...}
     """
-    if website is 'Arzon':
+    if website in ['Arzon', 'Dmm', 'Jav321']:
         return {}
 
     # 使用哪一个网站的特征原数据， 0 db，1 library，2 bus，

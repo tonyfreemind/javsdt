@@ -14,7 +14,7 @@
     "Publisher": "SWITCH\uff08\u30d2\u30d3\u30ce\uff09",
     "Score": 93,
     "CoverDb": "",
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1sw028/1sw028pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "jo6_b.jpg",
     "CutType": 1,
     "JavDb": "JPx8",
@@ -35,5 +35,6 @@
         "\u65e9\u4e59\u5973\u30eb\u30a4"
     ],
     "Modify": "2021-11-07 18:22:20",
-    "ModifyDate": "2021-07-29 16:24:15"
+    "ModifyDate": "2021-07-29 16:24:15",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1sw028/1sw028pl.jpg"
 }

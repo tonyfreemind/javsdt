@@ -13,7 +13,7 @@
     "Studio": "S1 NO.1 STYLE",
     "Publisher": "S1 NO.1 STYLE",
     "Score": 90,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ssni228/ssni228pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "6lis_b.jpg",
     "CutType": 1,
     "Arzon": "1460664",
@@ -34,5 +34,6 @@
     "Modify": "2021-09-25 18:47:07",
     "JavDb": "pkdMq",
     "JavLibrary": "javli7bvse",
-    "JavBus": "SSNI-228"
+    "JavBus": "SSNI-228",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ssni228/ssni228pl.jpg"
 }

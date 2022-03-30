@@ -13,7 +13,7 @@
     "Studio": "kawaii",
     "Publisher": "kawaii",
     "Score": 85,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/kawd792/kawd792pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "5vet_b.jpg",
     "CutType": 1,
     "Arzon": "1381421",
@@ -33,5 +33,6 @@
     "Modify": "2021-09-05 21:17:39",
     "JavDb": "76V1R",
     "JavLibrary": "javlikbky4",
-    "JavBus": "KAWD-792"
+    "JavBus": "KAWD-792",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/kawd792/kawd792pl.jpg"
 }
