@@ -25,6 +25,9 @@ class FileLathe(object):
         self._dir_classify_root = ''
         """路径: 归类的目标根目录"""
 
+        self._path_fanart = ''
+        """当前处理的视频的预期fanart路径"""
+
         # region ######################################## 1公式元素 ########################################
         self._bool_need_actors_end_of_title = ini.need_actors_end_of_title
         """是否 去除 标题末尾 可能存在的演员姓名"""
@@ -82,7 +85,7 @@ class FileLathe(object):
         # endregion
 
         # region ######################################## 5图片 ########################################
-        self._need_download_fanart = ini.need_download_fanart
+        self._need_fanart_poster = ini.need_fanart_poster
         """是否 下载图片"""
 
         self._list_name_fanart = ini.list_name_fanart
@@ -543,6 +546,9 @@ class FileLathe(object):
 
     # endregion
 
+    def need_fanart_poster(self):
+        return self._need_fanart_poster
+
     def need_download_fanart(self, jav_file: JavFile):
         """
         判定是否需要下载fanart
@@ -551,10 +557,8 @@ class FileLathe(object):
             jav_file: jav视频文件对象
 
         Returns:
-            需要下载fanart => fanart预期路径；不需要 => 空。
+            是否需要下载
         """
-        if not self._need_download_fanart:
-            return ''  # 不需要图片，不需要下载
 
         # fanart预期路径
         path_fanart = f'{jav_file.Dir}{sep}{self._assemble_file_formula("_list_name_fanart")}'
@@ -576,17 +580,19 @@ class FileLathe(object):
             if os.path.exists(path_fanart_cd1):
                 copyfile(path_fanart_cd1, path_fanart)
                 print('    >fanart.jpg复制成功')
-                return ''  # 复制成功，无需下载
+                self._path_fanart = path_fanart
+                return False  # 复制成功，无需下载
 
+        self._path_fanart = path_fanart
         if not check_picture(path_fanart):
-            return path_fanart  # 需要下载
+            return True  # 需要下载
 
         print('    >已有fanart.jpg')
         # 如果 path_fanart = ABC-123.jpg，而用户已有有一个 abc-123，os.path.exists()也会判定成功，所以重命名一下
         os.rename(path_fanart, path_fanart)
-        return ''  # 已有，不需要下载
+        return False  # 已有，不需要下载
 
-    def crop_poster(self, jav_file: JavFile, path_fanart: str):
+    def crop_poster(self, jav_file: JavFile):
         """
         整出poster，加上条幅
 
@@ -594,10 +600,7 @@ class FileLathe(object):
 
         Args:
             jav_file: jav视频文件对象
-            path_fanart: 已有fanart的路径
         """
-        if not self._need_download_fanart:
-            return  # 不需要图片，无需处理
 
         # poster预期路径
         path_poster = f'{jav_file.Dir}{sep}{self._assemble_file_formula("_list_name_poster")}'
@@ -616,7 +619,7 @@ class FileLathe(object):
             os.rename(path_poster, path_poster)
             # 这里有个问题，如果用户已有poster了，但没条幅，用户又想加上条幅...无法为用户加上
         else:
-            crop_poster_youma(path_fanart, path_poster)
+            crop_poster_youma(self._path_fanart, path_poster)
             # 需要加上条纹
             if self._need_subtitle_watermark and jav_file.Bool_subtitle:
                 add_watermark_subtitle(path_poster)

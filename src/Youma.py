@@ -177,6 +177,8 @@ while not input_key:
 
                 # 完善handler.dict_for_standard
                 fileLathe.prefect_dict_for_standard(jav_file, jav_model)
+
+                # 1重命名视频
                 if path_new := fileLathe.rename_mp4(jav_file):
                     logger.record_fail('请自行重命名大小写: ', path_new)
 
@@ -193,14 +195,15 @@ while not input_key:
                 fileLathe.write_nfo(jav_file, jav_model, genres)
 
                 # 5需要两张封面图片【独特】
-                if path_fanart := fileLathe.need_download_fanart(jav_file):
-                    if not javDb.download_picture(jav_model.CoverDb, path_fanart) \
-                            or javBus.download_picture(jav_model.CoverBus, path_fanart) \
-                            or dmm.download_picture(jav_model.CoverDmm, path_fanart) \
-                            or javLibrary.download_picture(jav_model.CoverDmm, path_fanart):
-                        raise DownloadFanartError
+                if fileLathe.need_fanart_poster():
+                    if path_fanart := fileLathe.need_download_fanart(jav_file):
+                        if not javDb.download_picture(jav_model.CoverDb, path_fanart) \
+                                or javBus.download_picture(jav_model.CoverBus, path_fanart) \
+                                or dmm.download_picture(jav_model.CoverDmm, path_fanart) \
+                                or javLibrary.download_picture(jav_model.CoverDmm, path_fanart):
+                            raise DownloadFanartError
 
-                fileLathe.crop_poster(jav_file, path_fanart)
+                    fileLathe.crop_poster(jav_file)
 
                 # 6收集演员头像【相同】
                 fileLathe.collect_sculpture(jav_file, jav_model)

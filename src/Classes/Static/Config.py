@@ -92,7 +92,7 @@ class Ini(object):
             # endregion
 
             # region ######################################## 5图片 ########################################
-            self.need_download_fanart = dict_ini[Const.NEED_DOWNLOAD_FANART] == '是'
+            self.need_fanart_poster = dict_ini[Const.NEED_DOWNLOAD_FANART] == '是'
             """是否 下载图片"""
 
             self.list_name_fanart = dict_ini[Const.NAME_FANART_FORMULA].split('+')
