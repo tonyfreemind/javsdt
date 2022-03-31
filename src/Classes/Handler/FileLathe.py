@@ -142,7 +142,7 @@ class FileLathe(object):
         # endregion
 
     def update_dir_classify_root(self, dir_classify_root: str):
-        """用fileExplorer中的dir_classify_root更新"""
+        """在主流程中用fileExplorer中的dir_classify_root更新"""
         self._dir_classify_root = dir_classify_root
 
     def prefect_dict_for_standard(self, jav_file: JavFile, jav_data: JavData):
@@ -249,16 +249,13 @@ class FileLathe(object):
 
     def rename_mp4(self, jav_file: JavFile):
         """
-        重命名磁盘中的视频及字幕文件
-
-        Notes:
-            如果重命名失败，会返回目标的视频文件名，需用户自行重命名。如果重命名成功，则返回空。
+        重命名视频及字幕文件
 
         Args:
             jav_file: jav视频文件对象
 
         Returns:
-            path_return，需用户自行重命名的视频文件名
+            重命名失败 => 预期的文件名，提醒用户自行重命名；重命名成功 => 空。
         """
         path_return = ''
         """返回的路径\n\n如果重命名操作不成功，将目标视频文件名返回，提醒用户自行重命名"""
@@ -353,11 +350,8 @@ class FileLathe(object):
         if not self._need_rename_folder:
             return
 
-        # region 得到新文件夹名
-
         folder_new = self._assemble_file_formula('_list_name_folder')
         """新的所在文件夹名称"""
-        # endregion
 
         # 视频已经在独立文件夹中，且当前视频是该车牌的最后一集，他的兄弟姐妹已经处理完成，直接重命名当前文件夹，无需新建文件夹。
         if jav_file.Bool_in_separate_folder and jav_file.Episode == jav_file.Sum_all_episodes:
@@ -551,7 +545,7 @@ class FileLathe(object):
 
     def need_download_fanart(self, jav_file: JavFile):
         """
-        判定是否需要下载fanart
+        判断是否需要下载fanart
 
         Args:
             jav_file: jav视频文件对象

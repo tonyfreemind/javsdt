@@ -233,25 +233,26 @@ class Ini(object):
         1、如果用户自定义的各种命名公式中有dict_for_standard未包含的元素，则添加。
         2、得到归类路径的公式。
         """
-        dict_for_standard = {'车牌': 'ABC-123',
-                             '车牌前缀': 'ABC',
-                             '标题': f'{self.pattern}标题',
-                             '完整标题': f'完整{self.pattern}标题',
-                             '导演': f'{self.pattern}导演',
-                             '制作商': f'{self.pattern}制作商',
-                             '发行商': f'{self.pattern}发行商',
-                             '评分': 0.0,
-                             '片长': 0,
-                             '系列': f'{self.pattern}系列',
-                             '发行年月日': '1970-01-01', '发行年份': '1970', '月': '01', '日': '01',
-                             '首个演员': f'{self.pattern}演员', '全部演员': f'{self.pattern}演员',
-                             '空格': ' ',
+        dict_for_standard = {Const.CAR: 'ABC-123',
+                             Const.CAR_PREF: 'ABC',
+                             Const.TITLE: f'{self.pattern}标题',
+                             Const.COMPLETE_TITLE: f'完整{self.pattern}标题',
+                             Const.DIRECTOR: f'{self.pattern}导演',
+                             Const.STUDIO: f'{self.pattern}制作商',
+                             Const.PUBLISHER: f'{self.pattern}发行商',
+                             Const.SCORE: 0.0,
+                             Const.RUNTIME: 0,
+                             Const.SERIES: f'{self.pattern}系列',
+                             Const.RELEASE: '1970-01-01',
+                             Const.RELEASE_YEAR: '1970', Const.RELEASE_MONTH: '01', Const.RELEASE_DAY: '01',
+                             Const.FIRST_ACTOR: f'{self.pattern}演员', Const.ALL_ACTORS: f'{self.pattern}演员',
+                             Const.WHITESPACE: ' ',
                              '\\': sep, '/': sep,  # 文件路径分隔符
-                             '是否中字': '',
-                             '是否流出': '',
-                             '影片类型': self._av_type,  # 自定义有码、无码、素人、FC2的对应称谓
-                             '视频': 'ABC-123',  # 当前及未来的视频文件名，不带ext
-                             '原文件名': 'ABC-123', '原文件夹名': 'ABC-123', }
+                             Const.BOOL_SUBTITLE: '',
+                             Const.BOOL_DIVULGE: '',
+                             Const.AV_TYPE: self._av_type,  # 自定义有码、无码、素人、FC2的对应称谓
+                             Const.VIDEO: 'ABC-123',  # 当前及未来的视频文件名，不带ext
+                             Const.ORIGIN_VIDEO: 'ABC-123', Const.ORIGIN_FOLDER: 'ABC-123', }
         if self.pattern == 'fc2':
             dict_for_standard[Const.CAR] = 'FC2-123'
             dict_for_standard[Const.CAR_PREF] = 'FC2'
@@ -309,7 +310,6 @@ class Ini(object):
 
     def web_url_proxy(self, website):
         """按模式返回网址"""
-
         if website == 'Arzon':
             return 'https://www.arzon.jp', self.proxy_arzon
         elif website == 'Dmm':

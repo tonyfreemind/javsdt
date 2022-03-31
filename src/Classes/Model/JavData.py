@@ -54,7 +54,7 @@ class JavData(object):
         self.Publisher = ''
         """13 发行商"""
 
-        self.Score = 0
+        self.Score = 0.0
         """14 评分\n\n10分制"""
 
         self.CoverDb = ''
@@ -67,37 +67,37 @@ class JavData(object):
         """17 封面Bus"""
 
         self.CoverDmm = ''
-        """16 封面Dmm"""
+        """18 封面Dmm"""
 
         self.CutType = CutTypeEnum.left.value
-        """18 裁剪方式"""
+        """19 裁剪方式"""
 
         self.JavDb = ''
-        """19 db编号"""
+        """20 db编号"""
 
         self.JavLibrary = ''
-        """20 library编号"""
+        """21 library编号"""
 
         self.JavBus = ''
-        """21 bus编号"""
+        """22 bus编号"""
 
         self.Arzon = ''
-        """22 arzon编号"""
+        """23 arzon编号"""
 
         self.CompletionStatus = CompletionStatusEnum.unknown.value
-        """23 完成度，三大网站为全部"""
+        """24 完成度，三大网站为全部"""
 
         self.Version = 1
-        """24 版本"""
+        """25 版本"""
 
         self.Genres = []
-        """24 类型"""
+        """26 类型"""
 
         self.Actors = []
-        """25 演员们"""
+        """27 演员们"""
 
         self.Modify = time_now()
-        """26 修改时间"""
+        """28 修改时间"""
 
         self.__dict__.update(kwargs)
 

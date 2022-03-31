@@ -115,6 +115,8 @@ class JavDb(JavWeb):
         genres = re.findall(r'tags.+?">(.+?)</a>', html)
         jav_data.Genres.extend(prefect_genres(self._DICT_GENRES, genres))
 
+        #Todo 查找图片url
+
     @staticmethod
     def _confirm_normal_rsp(content: str):
         return bool(re.search(r'成人影片數據庫', content) or re.search(r'頁面未找到', content))

@@ -123,6 +123,8 @@ class Const(object):
     VIDEO = '视频'
     ORIGIN_FOLDER = '原文件夹名'
     ORIGIN_VIDEO = '原文件名'
+    WHITESPACE = '空格'
+    AV_TYPE = '影片类型'
     # endregion
 
     YOUMA = '有码'
@@ -163,4 +165,5 @@ class Const(object):
     # region 其他
     CAR_DEFAULT = 'ABC-123'
     XPATH_DB_CARS = '//*[@id="videos"]/div/div[*]/a/div[2]/text()'
+    """用于找出db的video code页面上的cars"""
     # region
