@@ -21,8 +21,8 @@ from Enums import ScrapeStatusEnum
 from Errors import TooManyDirectoryLevelsError, SpecifiedUrlError, CustomClassifyTargetDirError, DownloadFanartError
 from Static.Const import Const
 
-from Functions.Progress.User import choose_directory
-from Functions.Utils.JsonUtility import read_json_to_dict
+from User import choose_directory
+from Functions.Utils.JsonUtils import read_json_to_dict
 
 # region（1）准备全局工具
 ini = Ini(Const.YOUMA)
@@ -141,7 +141,7 @@ while not input_key:
 
                     # region arzon找简介
                     status = arzon.scrape(jav_file, jav_model)
-                    url_search_arzon = f'https://www.arzon.jp/itemlist.html?t=&m=all&s=&q={jav_file.Car.replace("-", "")}'
+                    url_search_arzon = f'https://www.arzon.jp/itemlist.html?t=&m=all&s=&q={jav_file.Car_search}'
                     if status is ScrapeStatusEnum.exist_but_no_want:
                         logger.record_warn(f'找不到简介，尽管arzon上有搜索结果: {url_search_arzon}，')
                     elif status is ScrapeStatusEnum.not_found:

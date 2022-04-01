@@ -52,6 +52,7 @@ class Arzon(JavWeb):
         return f'{self._URL}/itemlist.html?t=&m=all&s=&q={jav_file.Car_search}'
 
     def _select_special(self, html: str, jav_data: JavData):
+        # Todo 标题
         plot = re.search(r'h2>作品紹介</h2>([\s\S]*?)</div>', html).group(1)
         jav_data.Plot = self._remove_br(plot)
 

@@ -70,6 +70,7 @@ class JavDb(JavWeb):
         # 车牌，标题 <title> ID-020 可愛すぎる魔法少女5人とパジャマで中出し性交 | JavDB 成人影片數據庫 </title>
         car_title = re.search(r'title> (.+) \| JavDB', html).group(1)
         jav_data.Car, jav_data.Title = car_title.split(' ', 1)
+        print('    >Db标题:', jav_data.Title)
 
         # 带着主要信息的那一块 複製番號" data-clipboard-text="BKD-171">
         html = re.search(r'複製番號([\s\S]+?)存入清單', html, re.DOTALL).group(1)

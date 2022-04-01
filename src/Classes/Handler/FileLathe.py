@@ -9,8 +9,8 @@ from Classes.Handler.MyLogger import record_video_old
 from Classes.Static.Errors import TooManyDirectoryLevelsError
 from Classes.Static.Const import Const
 from Classes.Static.Config import Ini
-from Functions.Progress.Picture import check_picture, crop_poster_youma, add_watermark_subtitle, add_watermark_divulge
-from Functions.Utils.XML import replace_xml_invalid_char, replace_os_invalid_char
+from Picture import check_picture, crop_poster_youma, add_watermark_subtitle, add_watermark_divulge
+from Functions.Utils.FileUtils import replace_xml_invalid_char, replace_os_invalid_char
 from Functions.Utils.LittleUtils import cut_str, update_ini_file_value_plus_one
 
 
@@ -633,4 +633,4 @@ class FileLathe(object):
                     copyfile(Const.INI_ACTOR_ORIGIN, Const.INI_ACTOR)
                     print(f'\n“{Const.INI_ACTOR}”成功！')
                 else:
-                    input('\n请打开“【ini】重新创建ini.exe”创建丢失的程序组件!再重启程序')
+                    input(f'\n请打开“{Const.EXE_CREATE_INI}”创建丢失的程序组件!再重启程序')

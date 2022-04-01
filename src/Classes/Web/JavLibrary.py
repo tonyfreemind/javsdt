@@ -10,7 +10,7 @@ from Classes.Web.JavWeb import JavWeb
 from Static.Const import Const
 from Functions.Metadata.Genre import prefect_genres
 from Functions.Utils.LittleUtils import update_ini_file_value
-from Functions.Utils.XML import replace_line_break
+from Functions.Utils.FileUtils import replace_line_break
 
 
 class JavLibrary(JavWeb):
@@ -83,21 +83,22 @@ class JavLibrary(JavWeb):
     def _select_special(self, html: str, jav_data: JavData):
 
         # 标题
+        title = re.search(r'title>([A-Z].+?) - JAVLibrary</title>', html).group(1)
+        print('    >Library标题:', jav_data.Title)
         if not jav_data.Title:
-            jav_data.Title = re.search(r'title>([A-Z].+?) - JAVLibrary</title>', html).group(1)
+            jav_data.Title =title
 
         # 车牌
         if not jav_data.JavDb:
             # javdb没找到（没从javdb更新数据），Car需要更新为正确的车牌，
-            car_temp = jav_data.Title.split(' ', 1)[0]
+            car = jav_data.Title.split(' ', 1)[0]
             # 在javlibrary中，T-28 和 ID 的车牌很奇特。javlibrary是T-28XXX，而其他网站是T28-XXX；ID-20XXX，而其他网站是20ID-XXX。
-            if 'T-28' in car_temp:
-                car_temp = car_temp.replace('T-28', 'T28-', 1)
-            jav_data.Car = car_temp
+            if 'T-28' in car:
+                car = car.replace('T-28', 'T28-', 1)
+            jav_data.Car = car
 
         # 精彩影评
         jav_data.Review = self._find_review(html)
-        # print(review)
 
         # 有大部分信息的html
         html = re.search(r'video_title"([\s\S]*?)favorite_edit', html, re.DOTALL).group(1)

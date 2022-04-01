@@ -62,6 +62,7 @@ class JavBus(JavWeb):
         return f'{self._URL}/search/{jav_file.Car_search}&type=1&parent=ce'
 
     def _select_special(self, html: str, jav_data: JavData):
+        # Todo 标题
         # 封面
         if coverg := re.search(r'bigImage" href="/pics/cover/(.+?)"', html):
             jav_data.CoverBus = coverg.group(1)

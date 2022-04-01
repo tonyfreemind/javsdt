@@ -6,7 +6,7 @@ from typing import List
 from Classes.Model.JavFile import JavFile
 from Classes.Static.Config import Ini
 from Classes.Static.Errors import CustomClassifyTargetDirError
-from Functions.Metadata.Car import find_car_fc2, find_car_youma, get_suren_cars
+from Functions.Metadata.Car import find_car_fc2, find_youma_car, get_suren_cars
 
 
 class FileExplorer(object):
@@ -31,7 +31,7 @@ class FileExplorer(object):
         self._need_rename_folder = ini.need_rename_folder
         """需要重命名文件夹或创建新的独立文件夹"""
 
-        self._dir_custom_classify_target = ini.dir_custom_classify_root
+        self._dir_custom_classify_root = ini.dir_custom_classify_root
         """用户自定义的归类的根目录\n\n用于判定出真实的归类根目录"""
 
         self._tuple_video_types = ini.tuple_video_types
@@ -67,7 +67,7 @@ class FileExplorer(object):
         self._dict_subtitle_file = {}
         """存储（某一层级文件夹内）字幕文件和车牌对应关系\n\n例如{ 'c:/a/abc_123.srt': 'abc-123' }，用于构建视频文件的字幕体系"""
 
-        self._list_jav_files = []
+        self._list_jav_files: List[JavFile] = []
         """存储（某一层级文件夹内）的jav_files"""
 
         self._dict_car_episode = {}
@@ -81,18 +81,14 @@ class FileExplorer(object):
         """
         判断到底要不要 重命名文件夹或者创建新的文件夹
 
-        用户可能选择了不修改文件夹，但选择了归类，那么仍需要修改文件夹
-
         Returns:
-            bool
+            是否需要重命名文件夹
         """
-        if self._need_classify and self._need_classify_folder:
-            # 如果需要归类，并且是针对文件夹，那么必须重命名文件夹或者创建新的文件夹
-            return True
-        elif self._need_rename_folder:
-            # 用户本来就在ini中写了要重命名文件夹
-            return True
-        return False
+        return bool(
+            self._need_classify  # 如果需要归类，
+            and self._need_classify_folder  # 并且是针对文件夹，那么必须重命名文件夹或者创建新的文件夹
+            or self._need_rename_folder  # 如果用户本来就在ini中写了要重命名文件夹
+        )
 
     # region 重置
 
@@ -105,23 +101,23 @@ class FileExplorer(object):
         """
         self._dir_choose = dir_choose
         self._no_current = 0
-        self._check_classify_target_directory()
+        self._check_custom_classify_root()
         self._sum_videos_in_choose_dir = self._count_videos_amount()
 
-    def _check_classify_target_directory(self):
+    def _check_custom_classify_root(self):
         """检查用户设置的“归类根目录”的合法性"""
 
         # 用户需要归类，检查他设置的归类根目录是否合法
         if self._need_classify:
-            dir_target = self._dir_custom_classify_target.rstrip(sep)
-            if dir_target not in ['所选文件夹', self._dir_choose]:
+            dir_root = self._dir_custom_classify_root.rstrip(sep)
+            if dir_root not in ['所选文件夹', self._dir_choose]:
                 # 用户自定义了一个路径
-                if dir_target[:2] != self._dir_choose[:2]:
+                if dir_root[:2] != self._dir_choose[:2]:
                     raise CustomClassifyTargetDirError(
-                        f'归类的根目录: 【{dir_target}】与所选文件夹不在同一磁盘，无法归类！请修正！')
-                if not os.path.exists(dir_target):
-                    raise CustomClassifyTargetDirError(f'归类的根目录: 【{dir_target}】不存在！无法归类！请修正！')
-                self._dir_classify_root = dir_target
+                        f'归类的根目录: 【{dir_root}】与所选文件夹不在同一磁盘，无法归类！请修正！')
+                if not os.path.exists(dir_root):
+                    raise CustomClassifyTargetDirError(f'归类的根目录: 【{dir_root}】不存在！无法归类！请修正！')
+                self._dir_classify_root = dir_root
             else:
                 # 用户希望归类在“所选文件夹”
                 self._dir_classify_root = f'{self._dir_choose}{sep}归类完成'
@@ -137,9 +133,8 @@ class FileExplorer(object):
             总数量
         """
         num_videos = 0
-        len_choose = len(self._dir_choose)
         for root, dirs, files in os.walk(self._dir_choose):
-            if '归类完成' not in root[len_choose:]:
+            if '归类完成' not in root[len(self._dir_choose):]:
                 # 排除”归类完成“文件夹
                 for file_raw in files:
                     file_temp = file_raw.upper()
@@ -179,7 +174,7 @@ class FileExplorer(object):
                     # 去除用户设置的、干扰车牌的文字
                     for word in self._list_surplus_words:
                         file = file.replace(word, '')
-                    subtitle_car = find_car_youma(file, self._list_suren_cars)
+                    subtitle_car = find_youma_car(file, self._list_suren_cars)
                     """字幕文件名中的车牌"""
                 elif 'FC2' in file:
                     subtitle_car = find_car_fc2(file)
@@ -209,7 +204,7 @@ class FileExplorer(object):
                 for word in self._list_surplus_words:
                     file = file.replace(word, '')
                 # 查找车牌
-                if car := find_car_youma(file, self._list_suren_cars):
+                if car := find_youma_car(file, self._list_suren_cars):
                     try:
                         self._dict_car_episode[car] += 1  # 已经有这个车牌了，加一集cd
                     except KeyError:

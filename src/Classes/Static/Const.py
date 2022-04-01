@@ -159,6 +159,8 @@ class Const(object):
     INI_ACTOR = '【缺失的演员头像统计For Kodi】.ini'
     INI_ACTOR_ORIGIN = 'actors_for_kodi.ini'
 
+    EXE_CREATE_INI = '【ini】重新创建ini.exe'
+
     FOLDER_ACTOR = '演员头像'
     # endregion
 

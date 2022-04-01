@@ -1,8 +1,9 @@
 # -*- coding:utf-8 -*-
+from typing import List
 from openpyxl import load_workbook
 
-from Static.Const import Const
-from Enums import ExcelColEnum
+from Classes.Static.Const import Const
+from Classes.Static.Enums import ExcelColEnum
 
 
 def better_dict_genres(website, to_language):
@@ -31,7 +32,7 @@ def better_dict_genres(website, to_language):
 
 
 # Todo优化
-def prefect_genres(dict_genres: dict, genres: list):
+def prefect_genres(dict_genres: dict, genres: List[str]):
     return [dict_genres[i] for i in genres
             if not i.startswith('AV OP')
             and not i.startswith('AVOP')

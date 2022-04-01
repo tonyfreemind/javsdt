@@ -221,7 +221,7 @@ class Ini(object):
             print('\n读取ini文件成功!\n')
         except:
             print(format_exc())
-            input('\n无法读取ini文件，请修改它为正确格式，或者打开“【ini】重新创建ini.exe”创建全新的ini！')
+            input(f'\n无法读取ini文件，请修改它为正确格式，或者打开“{Const.EXE_CREATE_INI}”创建全新的ini！')
 
         self.dict_for_standard = self._get_dict_for_standard()
         """字典\n\n用于给用户自定义命名的各类元素包含其中"""

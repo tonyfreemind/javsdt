@@ -23,7 +23,7 @@ except:
     url_emby = api_key = ''
     bool_replace = False
     print(format_exc())
-    input('无法读取ini文件，请修改它为正确格式，或者打开“【ini】重新创建ini.exe”创建全新的ini！')
+    input(f'无法读取ini文件，请修改它为正确格式，或者打开“{Const.EXE_CREATE_INI}”创建全新的ini！')
 print('读取ini文件成功!\n')
 # 修正用户输入的emby网址，无论是不是带“/”
 url_emby = url_emby.strip('/')
