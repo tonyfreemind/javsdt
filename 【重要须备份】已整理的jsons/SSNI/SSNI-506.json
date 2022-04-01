@@ -31,9 +31,11 @@
     "Actors": [
         "\u5c0f\u5cf6\u307f\u306a\u307f"
     ],
-    "Modify": "2021-09-25 19:00:30",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "XE8OJ",
     "JavLibrary": "javli6az3y",
     "JavBus": "SSNI-506",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ssni506/ssni506pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ssni506/ssni506pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/xe/XE8OJ.jpg",
+    "Init": "2021-09-25 19:00:30"
 }

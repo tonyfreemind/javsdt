@@ -31,9 +31,11 @@
     "Actors": [
         "\u661f\u5bae\u4e00\u82b1"
     ],
-    "Modify": "2021-09-25 19:08:06",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "v0zJG",
     "JavLibrary": "javli6qwsi",
     "JavBus": "SSNI-650",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ssni650/ssni650pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ssni650/ssni650pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/v0/v0zJG.jpg",
+    "Init": "2021-09-25 19:08:06"
 }

@@ -29,9 +29,11 @@
     "Actors": [
         "\u4e26\u6728\u512a"
     ],
-    "Modify": "2021-09-05 18:55:02",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "J2G8A",
     "JavLibrary": "javlij3j3m",
     "JavBus": "IPZ-404",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ipz404/ipz404pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ipz404/ipz404pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/j2/J2G8A.jpg",
+    "Init": "2021-09-05 18:55:02"
 }

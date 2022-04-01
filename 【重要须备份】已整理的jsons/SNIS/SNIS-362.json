@@ -30,9 +30,11 @@
     "Actors": [
         "\u30c6\u30a3\u30a2"
     ],
-    "Modify": "2021-09-25 18:30:34",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "PKXE",
     "JavLibrary": "javliijfqi",
     "JavBus": "SNIS-362",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/snis362/snis362pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/snis362/snis362pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/pk/PKXE.jpg",
+    "Init": "2021-09-25 18:30:34"
 }

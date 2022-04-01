@@ -31,9 +31,11 @@
         "\u795e\u5bae\u5bfa\u30ca\u30aa",
         "\u4e09\u6d66\u6b69\u7f8e"
     ],
-    "Modify": "2021-09-05 19:04:30",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "AEe6n",
     "JavLibrary": "javli6jv4i",
     "JavBus": "JUL-021",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/jul021/jul021pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/jul021/jul021pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/ae/AEe6n.jpg",
+    "Init": "2021-09-05 19:04:30"
 }

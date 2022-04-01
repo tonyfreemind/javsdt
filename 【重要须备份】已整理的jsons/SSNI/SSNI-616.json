@@ -31,9 +31,11 @@
     "Actors": [
         "\u690e\u8449\u3048\u307e"
     ],
-    "Modify": "2021-09-25 19:05:50",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "9eVMw",
     "JavLibrary": "javli6j23i",
     "JavBus": "SSNI-616",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ssni616/ssni616pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ssni616/ssni616pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/9e/9eVMw.jpg",
+    "Init": "2021-09-25 19:05:50"
 }

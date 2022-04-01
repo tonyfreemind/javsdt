@@ -31,9 +31,11 @@
     "Actors": [
         "\u6e1a\u307f\u3064\u304d"
     ],
-    "Modify": "2021-10-30 10:02:48",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "72zR1",
     "JavLibrary": "javli6qcsm",
     "JavBus": "BLK-441",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/blk441/blk441pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/blk441/blk441pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/72/72zR1.jpg",
+    "Init": "2021-10-30 10:02:48"
 }

@@ -30,9 +30,11 @@
     "Actors": [
         "\u6843\u4e43\u6728\u304b\u306a"
     ],
-    "Modify": "2021-09-25 19:55:08",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "76bdZ",
     "JavLibrary": "javlikda4e",
     "JavBus": "SUPD-135",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/supd135/supd135pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/supd135/supd135pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/76/76bdZ.jpg",
+    "Init": "2021-09-25 19:55:08"
 }

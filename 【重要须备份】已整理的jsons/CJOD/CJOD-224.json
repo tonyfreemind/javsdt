@@ -31,9 +31,11 @@
     "Actors": [
         "\u6c34\u68ee\u7fe0"
     ],
-    "Modify": "2021-09-21 08:01:23",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "0pgZX",
     "JavLibrary": "javli6qb3i",
     "JavBus": "CJOD-224",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/cjod224/cjod224pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/cjod224/cjod224pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/0p/0pgZX.jpg",
+    "Init": "2021-09-21 08:01:23"
 }

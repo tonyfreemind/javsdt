@@ -28,9 +28,11 @@
     "Actors": [
         "\u5317\u91ce\u306e\u305e\u307f"
     ],
-    "Modify": "2021-09-05 13:53:57",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "WYR",
     "JavLibrary": "javliiy6z4",
     "JavBus": "ABP-354",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/118abp354/118abp354pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/118abp354/118abp354pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/wy/WYR.jpg",
+    "Init": "2021-09-05 13:53:57"
 }

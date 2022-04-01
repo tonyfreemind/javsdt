@@ -28,9 +28,11 @@
         "\u661f\u5ddd\u306a\u3064",
         "\u82e5\u6797\u512a"
     ],
-    "Modify": "2021-09-25 18:15:15",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "VJvA",
     "JavLibrary": "javlip3u74",
     "JavBus": "RKI-165",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/rki165/rki165pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/rki165/rki165pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/vj/VJvA.jpg",
+    "Init": "2021-09-25 18:15:15"
 }

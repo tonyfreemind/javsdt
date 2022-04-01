@@ -31,9 +31,11 @@
     "Actors": [
         "\u5409\u6cfd\u660e\u6b65"
     ],
-    "Modify": "2021-09-25 18:35:43",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "1BEQA",
     "JavLibrary": "javlilrn5e",
     "JavBus": "SNIS-665",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/snis665/snis665pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/snis665/snis665pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/1b/1BEQA.jpg",
+    "Init": "2021-09-25 18:35:43"
 }

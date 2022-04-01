@@ -31,9 +31,11 @@
     "Actors": [
         "\u5965\u7530\u54b2"
     ],
-    "Modify": "2021-09-25 18:58:29",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "v40BO",
     "JavLibrary": "javli7zkya",
     "JavBus": "SSNI-465",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ssni465/ssni465pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ssni465/ssni465pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/v4/v40BO.jpg",
+    "Init": "2021-09-25 18:58:29"
 }

@@ -45,7 +45,7 @@ class JavLibrary(JavWeb):
             return self._get_html('    >获取信息:', self._url_item(item))  # library找到了
         else:
             # 找“可能是多个结果的网页”上的所有items，这个正则表达式可以忽略avop-00127bod，它是近几年重置的，信息冗余
-            list_results = re.findall(r'v=jav(.+?)" title="(.+?-\d+?[a-z]? .+?)"', html_search)
+            list_results = re.findall(r'v=(jav.+?)" title="(.+?-\d+?[a-z]? .+?)"', html_search)
             if not list_results:
                 return ''  # library找不到
 
@@ -69,7 +69,7 @@ class JavLibrary(JavWeb):
                 return ''  # library找不到
 
             # 默认使用第一个结果
-            item = list_results[list_fit_index[0]]
+            item = list_results[list_fit_index[0]][0]
             status = ScrapeStatusEnum.success if len(list_fit_index) == 1 else ScrapeStatusEnum.multiple_results
             self._update_item_status(item, status)
             return self._get_html('    >获取信息:', self._url_item(item))  # library找到了

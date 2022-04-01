@@ -32,9 +32,11 @@
     "Actors": [
         "\u5c0f\u91ce\u5915\u5b50"
     ],
-    "Modify": "2021-09-25 18:59:11",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "bqxRe",
     "JavLibrary": "javli6arzi",
     "JavBus": "SSNI-485",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ssni485/ssni485pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ssni485/ssni485pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/bq/bqxRe.jpg",
+    "Init": "2021-09-25 18:59:11"
 }

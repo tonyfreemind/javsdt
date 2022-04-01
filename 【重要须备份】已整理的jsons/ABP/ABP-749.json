@@ -30,9 +30,11 @@
     "Actors": [
         "\u9234\u6751\u3042\u3044\u308a"
     ],
-    "Modify": "2021-09-05 15:11:38",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "GOD85",
     "JavLibrary": "javli7bl7m",
     "JavBus": "ABP-749",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/118abp749/118abp749pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/118abp749/118abp749pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/go/GOD85.jpg",
+    "Init": "2021-09-05 15:11:38"
 }

@@ -32,9 +32,11 @@
     "Actors": [
         "\u9ed2\u5ddd\u30b5\u30ea\u30ca"
     ],
-    "Modify": "2021-09-05 15:47:38",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "XEMW4",
     "JavLibrary": "javli6diyi",
     "JavBus": "DASD-550",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/dasd550/dasd550pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/dasd550/dasd550pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/xe/XEMW4.jpg",
+    "Init": "2021-09-05 15:47:38"
 }

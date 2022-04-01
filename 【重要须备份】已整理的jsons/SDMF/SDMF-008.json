@@ -29,9 +29,11 @@
     "Actors": [
         "\u5fa1\u5742\u308a\u3042"
     ],
-    "Modify": "2021-09-13 22:57:47",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "v0w4p",
     "JavLibrary": "javli6rw34",
     "JavBus": "SDMF-008",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1sdmf008/1sdmf008pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1sdmf008/1sdmf008pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/v0/v0w4p.jpg",
+    "Init": "2021-09-13 22:57:47"
 }

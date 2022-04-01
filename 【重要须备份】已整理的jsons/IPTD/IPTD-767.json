@@ -28,9 +28,11 @@
     "Actors": [
         "Rio"
     ],
-    "Modify": "2021-09-05 18:36:14",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "zN66",
     "JavLibrary": "javlidqpqq",
     "JavBus": "IPTD-767",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/iptd767/iptd767pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/iptd767/iptd767pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/zn/zN66.jpg",
+    "Init": "2021-09-05 18:36:14"
 }

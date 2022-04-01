@@ -29,9 +29,11 @@
     "Actors": [
         "\u611b\u6ca2\u6709\u7d17"
     ],
-    "Modify": "2021-09-05 15:34:51",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "neBAm",
     "JavLibrary": "javliotmra",
     "JavBus": "BEB-076",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/beb076/beb076pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/beb076/beb076pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/ne/neBAm.jpg",
+    "Init": "2021-09-05 15:34:51"
 }

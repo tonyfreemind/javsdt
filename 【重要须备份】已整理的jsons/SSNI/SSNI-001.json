@@ -31,9 +31,11 @@
     "Actors": [
         "\u5c0f\u91ce\u5915\u5b50"
     ],
-    "Modify": "2021-09-25 18:41:20",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "P906N",
     "JavLibrary": "javliktz34",
     "JavBus": "SSNI-001",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ssni001/ssni001pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ssni001/ssni001pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/p9/P906N.jpg",
+    "Init": "2021-09-25 18:41:20"
 }

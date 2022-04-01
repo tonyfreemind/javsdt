@@ -31,9 +31,11 @@
     "Actors": [
         "\u685c\u3082\u3053"
     ],
-    "Modify": "2022-02-15 19:05:50",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "R672R",
     "JavLibrary": "javme2ztqa",
     "JavBus": "CAWD-080",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/cawd080/cawd080pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/cawd080/cawd080pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/r6/R672R.jpg",
+    "Init": "2022-02-15 19:05:50"
 }

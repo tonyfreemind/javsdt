@@ -34,9 +34,11 @@
         "NIMO",
         "\u6df1\u7530\u7d50\u68a8"
     ],
-    "Modify": "2021-09-25 17:50:04",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "AqBey",
     "JavLibrary": "javli7ajta",
     "JavBus": "MUDR-039",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mudr039/mudr039pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mudr039/mudr039pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/aq/AqBey.jpg",
+    "Init": "2021-09-25 17:50:04"
 }

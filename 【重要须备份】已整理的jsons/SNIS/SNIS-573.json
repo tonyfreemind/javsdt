@@ -38,9 +38,11 @@
         "\u5929\u4f7f\u3082\u3048",
         "\u5c0f\u91ce\u5915\u5b50"
     ],
-    "Modify": "2021-09-25 18:33:56",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "BpdA",
     "JavLibrary": "javlilaf5y",
     "JavBus": "SNIS-573",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/snis573/snis573pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/snis573/snis573pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/bp/BpdA.jpg",
+    "Init": "2021-09-25 18:33:56"
 }

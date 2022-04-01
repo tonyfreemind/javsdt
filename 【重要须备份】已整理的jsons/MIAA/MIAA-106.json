@@ -31,9 +31,11 @@
     "Actors": [
         "\u6c38\u702c\u3086\u3044"
     ],
-    "Modify": "2021-09-05 21:33:42",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "kBXEV",
     "JavLibrary": "javli6btzy",
     "JavBus": "MIAA-106",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/miaa106/miaa106pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/miaa106/miaa106pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/kb/kBXEV.jpg",
+    "Init": "2021-09-05 21:33:42"
 }

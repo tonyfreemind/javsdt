@@ -31,9 +31,11 @@
     "Actors": [
         "\u9df2\u5c3e\u3081\u3044"
     ],
-    "Modify": "2021-09-25 19:04:14",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "MY18Q",
     "JavLibrary": "javli6ig3m",
     "JavBus": "SSNI-598",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ssni598/ssni598pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ssni598/ssni598pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/my/MY18Q.jpg",
+    "Init": "2021-09-25 19:04:14"
 }

@@ -30,9 +30,11 @@
     "Actors": [
         "\u68ee\u4e0b\u7f8e\u601c"
     ],
-    "Modify": "2021-09-25 18:22:30",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "R50Mn",
     "JavLibrary": "javli73x2u",
     "JavBus": "SDMU-931",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1sdmu931/1sdmu931pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1sdmu931/1sdmu931pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/r5/R50Mn.jpg",
+    "Init": "2021-09-25 18:22:30"
 }

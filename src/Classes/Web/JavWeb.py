@@ -169,7 +169,7 @@ class JavWeb(object):
             return None
         except:
             # 其他出错
-            print(format_exc())
+            # print(format_exc())
             print(f'{Const.REQUEST_ERROR_TRY_AGAIN}{url}')
             return None
         return rsp
@@ -193,7 +193,7 @@ class JavWeb(object):
 
         for _ in range(3):
             rsp = self._request_url(url, allow_redirects)
-            if not rsp:
+            if rsp is None:
                 continue
             rsp.encoding = 'utf-8'
             rsp_content = rsp.text
@@ -214,6 +214,9 @@ class JavWeb(object):
         if not url:
             return False
 
+        if self.__class__.__name__ == 'JavBus':
+            url = f'{self._URL}/pics/cover/{url}'
+
         print(f'    >从{self.__class__.__name__}下载封面:', url)
         for _ in range(3):
             if not (rsp := self._request_url(url)):
@@ -231,7 +234,6 @@ class JavWeb(object):
 
     def _select_normal(self, jav_data: JavData):
         """（找到目标网页后）更新信息"""
-        # Todo 把json中的Javdb更新为JavDb
         # 更新网站对应的item
         setattr(jav_data, self.__class__.__name__, self._item)
 

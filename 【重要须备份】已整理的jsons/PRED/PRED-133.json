@@ -29,9 +29,11 @@
     "Actors": [
         "\u5c71\u5cb8\u9022\u82b1"
     ],
-    "Modify": "2021-09-25 18:10:08",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "mr6Dv",
     "JavLibrary": "javli73f3y",
     "JavBus": "PRED-133",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/pred133/pred133pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/pred133/pred133pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/mr/mr6Dv.jpg",
+    "Init": "2021-09-25 18:10:08"
 }

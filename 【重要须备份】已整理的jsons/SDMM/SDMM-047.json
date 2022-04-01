@@ -31,9 +31,11 @@
         "\u60a0\u6708\u30ea\u30a2\u30ca",
         "\u91d1\u57ce\u68a8\u82b1"
     ],
-    "Modify": "2021-09-25 18:21:04",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "DVEOJ",
     "JavLibrary": "javli6rw3u",
     "JavBus": "SDMM-047",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1sdmm047/1sdmm047pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1sdmm047/1sdmm047pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/dv/DVEOJ.jpg",
+    "Init": "2021-09-25 18:21:04"
 }

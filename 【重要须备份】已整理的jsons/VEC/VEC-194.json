@@ -30,9 +30,11 @@
     "Actors": [
         "\u6ce2\u591a\u91ce\u7ed3\u8863"
     ],
-    "Modify": "2021-09-25 20:20:31",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "ne7EV",
     "JavLibrary": "javliliet4",
     "JavBus": "VEC-194",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/vec194/vec194pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/vec194/vec194pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/ne/ne7EV.jpg",
+    "Init": "2021-09-25 20:20:31"
 }

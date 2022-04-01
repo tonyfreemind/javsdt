@@ -29,9 +29,11 @@
     "Actors": [
         "Rio"
     ],
-    "Modify": "2021-09-05 18:56:03",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "X9OG",
     "JavLibrary": "javliibdqi",
     "JavBus": "IPZ-489",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ipz489/ipz489pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ipz489/ipz489pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/x9/X9OG.jpg",
+    "Init": "2021-09-05 18:56:03"
 }

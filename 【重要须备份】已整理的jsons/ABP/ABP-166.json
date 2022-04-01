@@ -30,9 +30,11 @@
     "Actors": [
         "\u3042\u3084\u307f\u65ec\u679c"
     ],
-    "Modify": "2021-09-05 13:48:20",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "mObgY",
     "JavLibrary": "javlijycsa",
     "JavBus": "ABP-166",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/118abp166/118abp166pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/118abp166/118abp166pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/mo/mObgY.jpg",
+    "Init": "2021-09-05 13:48:20"
 }

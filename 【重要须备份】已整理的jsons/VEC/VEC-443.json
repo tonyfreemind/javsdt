@@ -30,9 +30,11 @@
     "Actors": [
         "\u6771\u51db"
     ],
-    "Modify": "2022-02-15 12:32:43",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "JZrVA",
     "JavLibrary": "javmezbu6i",
     "JavBus": "VEC-443",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/vec443/vec443pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/vec443/vec443pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/jz/JZrVA.jpg",
+    "Init": "2022-02-15 12:32:43"
 }

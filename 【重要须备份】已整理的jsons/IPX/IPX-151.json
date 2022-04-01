@@ -30,9 +30,11 @@
     "Actors": [
         "\u795e\u54b2\u8a69\u7e54"
     ],
-    "Modify": "2021-09-05 18:41:26",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "gykDy",
     "JavLibrary": "javli7a524",
     "JavBus": "IPX-151",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ipx151/ipx151pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ipx151/ipx151pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/gy/gykDy.jpg",
+    "Init": "2021-09-05 18:41:26"
 }

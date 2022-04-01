@@ -31,9 +31,11 @@
     "Actors": [
         "\u4e03\u6ca2\u307f\u3042"
     ],
-    "Modify": "2022-02-15 12:32:06",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "P6qNJ",
     "JavLibrary": "javmezbl4e",
     "JavBus": "MIDE-834",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mide834/mide834pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mide834/mide834pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/p6/P6qNJ.jpg",
+    "Init": "2022-02-15 12:32:06"
 }

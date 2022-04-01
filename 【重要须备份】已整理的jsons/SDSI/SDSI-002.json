@@ -29,9 +29,11 @@
     "Actors": [
         "\u9999\u5742\u666f\u5b50"
     ],
-    "Modify": "2021-09-25 18:22:37",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "J0Vm8",
     "JavLibrary": "javliir4sa",
     "JavBus": "SDSI-002",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1sdsi002/1sdsi002pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1sdsi002/1sdsi002pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/j0/J0Vm8.jpg",
+    "Init": "2021-09-25 18:22:37"
 }

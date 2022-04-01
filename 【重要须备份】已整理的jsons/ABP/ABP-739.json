@@ -30,9 +30,11 @@
     "Actors": [
         "\u9ed2\u5ddd\u30b5\u30ea\u30ca"
     ],
-    "Modify": "2021-09-05 15:11:20",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "gykkA",
     "JavLibrary": "javli7afre",
     "JavBus": "ABP-739",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/118abp739/118abp739pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/118abp739/118abp739pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/gy/gykkA.jpg",
+    "Init": "2021-09-05 15:11:20"
 }

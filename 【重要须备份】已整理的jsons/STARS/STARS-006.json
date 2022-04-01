@@ -29,9 +29,11 @@
     "Actors": [
         "\u672c\u5e84\u9234"
     ],
-    "Modify": "2021-09-25 19:49:55",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "pkGQq",
     "JavLibrary": "javli7tare",
     "JavBus": "STARS-006",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1stars006/1stars006pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1stars006/1stars006pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/pk/pkGQq.jpg",
+    "Init": "2021-09-25 19:49:55"
 }

@@ -29,9 +29,11 @@
     "Actors": [
         "\u5c0f\u5ddd\u3042\u3055\u7f8e"
     ],
-    "Modify": "2021-09-05 15:34:01",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "AzWrq",
     "JavLibrary": "javliibr2y",
     "JavBus": "BBI-170",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/bbi170/bbi170pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/bbi170/bbi170pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/az/AzWrq.jpg",
+    "Init": "2021-09-05 15:34:01"
 }

@@ -30,9 +30,11 @@
     "Actors": [
         "\u76ca\u5742\u7f8e\u4e9c"
     ],
-    "Modify": "2021-09-05 18:47:21",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "DOJap",
     "JavLibrary": "javli7zjrm",
     "JavBus": "IPX-311",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ipx311/ipx311pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ipx311/ipx311pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/do/DOJap.jpg",
+    "Init": "2021-09-05 18:47:21"
 }

@@ -31,9 +31,11 @@
     "Actors": [
         "\u594f\u97f3\u304b\u306e\u3093"
     ],
-    "Modify": "2021-09-05 21:35:51",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "RGREg",
     "JavLibrary": "javli6ijza",
     "JavBus": "MIAA-175",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/miaa175/miaa175pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/miaa175/miaa175pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/rg/RGREg.jpg",
+    "Init": "2021-09-05 21:35:51"
 }

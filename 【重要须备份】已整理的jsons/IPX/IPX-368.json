@@ -31,9 +31,11 @@
     "Actors": [
         "\u6843\u4e43\u6728\u304b\u306a"
     ],
-    "Modify": "2021-09-05 18:49:29",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "M6zeA",
     "JavLibrary": "javli6lrr4",
     "JavBus": "IPX-368",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ipx368/ipx368pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ipx368/ipx368pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/m6/M6zeA.jpg",
+    "Init": "2021-09-05 18:49:29"
 }

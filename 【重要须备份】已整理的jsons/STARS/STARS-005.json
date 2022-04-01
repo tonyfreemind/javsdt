@@ -31,9 +31,11 @@
     "Actors": [
         "\u6238\u7530\u771f\u7434"
     ],
-    "Modify": "2021-09-25 19:49:45",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "MbgQ4",
     "JavLibrary": "javli7taze",
     "JavBus": "STARS-005",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1stars005/1stars005pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1stars005/1stars005pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/mb/MbgQ4.jpg",
+    "Init": "2021-09-25 19:49:45"
 }

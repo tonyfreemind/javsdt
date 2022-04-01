@@ -33,9 +33,11 @@
         "\u6e0b\u8c37\u7f8e\u5e0c",
         "\u661f\u5ddd\u51db\u3005\u82b1"
     ],
-    "Modify": "2021-09-25 19:57:17",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "v2vp",
     "JavLibrary": "javliircs4",
     "JavBus": "SW-338",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/h_635sw338/h_635sw338pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/h_635sw338/h_635sw338pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/v2/v2vp.jpg",
+    "Init": "2021-09-25 19:57:17"
 }

@@ -30,9 +30,11 @@
     "Actors": [
         "\u8475\u53f8"
     ],
-    "Modify": "2021-09-25 19:03:05",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "WdbWZ",
     "JavLibrary": "javli6jw6a",
     "JavBus": "SSNI-567",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ssni567/ssni567pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ssni567/ssni567pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/wd/WdbWZ.jpg",
+    "Init": "2021-09-25 19:03:05"
 }

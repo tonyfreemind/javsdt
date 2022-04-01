@@ -28,9 +28,11 @@
     "Actors": [
         "\u3064\u307c\u307f"
     ],
-    "Modify": "2021-09-25 20:27:05",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "DR4WM",
     "JavLibrary": "javliiivy4",
     "JavBus": "WANZ-290",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/wanz290/wanz290pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/wanz290/wanz290pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/dr/DR4WM.jpg",
+    "Init": "2021-09-25 20:27:05"
 }

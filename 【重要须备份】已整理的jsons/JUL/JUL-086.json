@@ -31,9 +31,11 @@
     "Actors": [
         "\u5927\u5cf6\u512a\u9999"
     ],
-    "Modify": "2021-09-05 19:06:37",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "kyqPV",
     "JavLibrary": "javli6rqsu",
     "JavBus": "JUL-086",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/jul086/jul086pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/jul086/jul086pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/ky/kyqPV.jpg",
+    "Init": "2021-09-05 19:06:37"
 }

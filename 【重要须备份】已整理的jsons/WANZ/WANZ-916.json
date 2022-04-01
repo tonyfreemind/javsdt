@@ -30,9 +30,11 @@
     "Actors": [
         "\u8d64\u702c\u5c1a\u5b50"
     ],
-    "Modify": "2021-09-25 20:34:10",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "MqmdR",
     "JavLibrary": "javli6luzu",
     "JavBus": "WANZ-916",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/wanz916/wanz916pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/wanz916/wanz916pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/mq/MqmdR.jpg",
+    "Init": "2021-09-25 20:34:10"
 }

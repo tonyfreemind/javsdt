@@ -30,9 +30,11 @@
     "Actors": [
         "\u661f\u5948\u3042\u3044"
     ],
-    "Modify": "2021-09-05 15:41:40",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "m0DY",
     "JavLibrary": "javli4zmq4",
     "JavBus": "CJOD-136",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/cjod136/cjod136pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/cjod136/cjod136pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/m0/m0DY.jpg",
+    "Init": "2021-09-05 15:41:40"
 }

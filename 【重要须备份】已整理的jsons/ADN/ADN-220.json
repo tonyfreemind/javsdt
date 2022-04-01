@@ -32,9 +32,11 @@
     "Actors": [
         "\u6cb3\u5357\u5b9f\u91cc"
     ],
-    "Modify": "2021-09-21 08:00:20",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "DObp4",
     "JavLibrary": "javli6b6ty",
     "JavBus": "ADN-220",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/adn220/adn220pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/adn220/adn220pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/do/DObp4.jpg",
+    "Init": "2021-09-21 08:00:20"
 }

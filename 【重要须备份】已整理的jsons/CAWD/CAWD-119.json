@@ -28,9 +28,11 @@
     "Actors": [
         "\u307e\u307f\u3084\u7fbd\u82b1"
     ],
-    "Modify": "2022-02-15 12:42:04",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "QRPz7",
     "JavLibrary": "javmezai6m",
     "JavBus": "CAWD-119",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/cawd119/cawd119pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/cawd119/cawd119pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/qr/QRPz7.jpg",
+    "Init": "2022-02-15 12:42:04"
 }

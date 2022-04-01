@@ -30,9 +30,11 @@
     "Actors": [
         "\u9ad8\u6865\u5723\u5b50"
     ],
-    "Modify": "2021-09-25 17:27:07",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "VwdK2",
     "JavLibrary": "javlikas4q",
     "JavBus": "MIDE-389",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mide389/mide389pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mide389/mide389pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/vw/VwdK2.jpg",
+    "Init": "2021-09-25 17:27:07"
 }

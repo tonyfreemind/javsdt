@@ -29,9 +29,11 @@
     "Actors": [
         "\u677e\u4e0b\u7d17\u6804\u5b50"
     ],
-    "Modify": "2021-09-25 19:10:22",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "mpV5D",
     "JavLibrary": "javli6j23u",
     "JavBus": "SSPD-149",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/sspd149/sspd149pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/sspd149/sspd149pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/mp/mpV5D.jpg",
+    "Init": "2021-09-25 19:10:22"
 }

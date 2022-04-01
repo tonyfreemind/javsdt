@@ -26,9 +26,11 @@
     "Actors": [
         "\u7d50\u57ce\u307f\u3046"
     ],
-    "Modify": "2021-09-05 15:50:33",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "",
     "JavLibrary": "javliijtsm",
     "JavBus": "DJMS-008",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/djms008/djms008pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/djms008/djms008pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers//.jpg",
+    "Init": "2021-09-05 15:50:33"
 }

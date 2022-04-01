@@ -31,9 +31,11 @@
     "Actors": [
         "\u8475\u53f8"
     ],
-    "Modify": "2021-09-25 18:57:49",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "B4RJ1",
     "JavLibrary": "javli7zyym",
     "JavBus": "SSNI-454",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ssni454/ssni454pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ssni454/ssni454pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/b4/B4RJ1.jpg",
+    "Init": "2021-09-25 18:57:49"
 }

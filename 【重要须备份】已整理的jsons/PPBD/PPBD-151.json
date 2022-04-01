@@ -31,9 +31,11 @@
     "Actors": [
         "\u8c37\u3042\u3065\u3055"
     ],
-    "Modify": "2021-09-25 18:04:53",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "DYNa2",
     "JavLibrary": "javli7qcrq",
     "JavBus": "PPBD-151",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ppbd151/ppbd151pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ppbd151/ppbd151pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/dy/DYNa2.jpg",
+    "Init": "2021-09-25 18:04:53"
 }

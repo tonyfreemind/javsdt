@@ -31,9 +31,11 @@
     "Actors": [
         "\u5fc3\u82b1\u3086\u3089"
     ],
-    "Modify": "2021-09-05 21:40:16",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "V42X3",
     "JavLibrary": "javliktmqm",
     "JavBus": "MIAE-102",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/miae102/miae102pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/miae102/miae102pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/v4/V42X3.jpg",
+    "Init": "2021-09-05 21:40:16"
 }

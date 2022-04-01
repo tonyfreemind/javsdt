@@ -31,9 +31,11 @@
     "Actors": [
         "\u6c38\u6fa4\u3086\u304d\u306e"
     ],
-    "Modify": "2022-02-15 19:14:03",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "p7JPm",
     "JavLibrary": "javmezajt4",
     "JavBus": "HND-881",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/hnd881/hnd881pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/hnd881/hnd881pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/p7/p7JPm.jpg",
+    "Init": "2022-02-15 19:14:03"
 }

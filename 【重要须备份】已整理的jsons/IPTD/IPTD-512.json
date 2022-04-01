@@ -29,9 +29,11 @@
     "Actors": [
         "\u5c0f\u5ddd\u3042\u3055\u7f8e"
     ],
-    "Modify": "2021-09-05 18:35:17",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "akRWR",
     "JavLibrary": "javlipdk3y",
     "JavBus": "IPTD-512",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/iptd512/iptd512pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/iptd512/iptd512pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/ak/akRWR.jpg",
+    "Init": "2021-09-05 18:35:17"
 }

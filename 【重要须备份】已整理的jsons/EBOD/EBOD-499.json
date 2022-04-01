@@ -29,9 +29,11 @@
     "Actors": [
         "\u30c6\u30a3\u30a2"
     ],
-    "Modify": "2021-09-05 15:57:07",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "16nv",
     "JavLibrary": "javlillmzq",
     "JavBus": "EBOD-499",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ebod499/ebod499pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ebod499/ebod499pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/16/16nv.jpg",
+    "Init": "2021-09-05 15:57:07"
 }

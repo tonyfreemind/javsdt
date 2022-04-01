@@ -29,9 +29,11 @@
         "\u6ce2\u591a\u91ce\u7ed3\u8863",
         "\u5150\u5cf6\u5948\u592e"
     ],
-    "Modify": "2021-09-25 18:13:01",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "AP1M",
     "JavLibrary": "javlijlotu",
     "JavBus": "RBD-533",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/rbd533/rbd533pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/rbd533/rbd533pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/ap/AP1M.jpg",
+    "Init": "2021-09-25 18:13:01"
 }

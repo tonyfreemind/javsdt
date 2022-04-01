@@ -28,9 +28,11 @@
     "Actors": [
         "\u4e59\u90fd\u3055\u304d\u306e"
     ],
-    "Modify": "2021-09-21 08:00:11",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "Ww008",
     "JavLibrary": "javli7d7ti",
     "JavBus": "ABP-754",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/118abp754/118abp754pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/118abp754/118abp754pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/ww/Ww008.jpg",
+    "Init": "2021-09-21 08:00:11"
 }

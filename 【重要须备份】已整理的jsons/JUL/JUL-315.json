@@ -31,9 +31,11 @@
     "Actors": [
         "\u6625\u660e\u6f64"
     ],
-    "Modify": "2022-02-15 12:44:45",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "zZ3kE",
     "JavLibrary": "javmezaj6u",
     "JavBus": "JUL-315",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/jul315/jul315pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/jul315/jul315pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/zz/zZ3kE.jpg",
+    "Init": "2022-02-15 12:44:45"
 }

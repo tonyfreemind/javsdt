@@ -30,9 +30,11 @@
     "Actors": [
         "\u65e9\u4e59\u5973\u3086\u3044"
     ],
-    "Modify": "2021-09-05 15:26:03",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "KkGDA",
     "JavLibrary": "javliiimzy",
     "JavBus": "APAA-299",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/apaa299so/apaa299sopl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/apaa299so/apaa299sopl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/kk/KkGDA.jpg",
+    "Init": "2021-09-05 15:26:03"
 }

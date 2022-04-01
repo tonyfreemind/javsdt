@@ -30,9 +30,11 @@
     "Actors": [
         "\u5bae\u672c\u7d17\u592e\u91cc"
     ],
-    "Modify": "2022-02-15 19:11:07",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "9Bp6",
     "JavLibrary": "javliijxta",
     "JavBus": "CEAD-029",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/cead029/cead029pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/cead029/cead029pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/9b/9Bp6.jpg",
+    "Init": "2022-02-15 19:11:07"
 }

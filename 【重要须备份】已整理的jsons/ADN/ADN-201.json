@@ -31,9 +31,11 @@
     "Actors": [
         "\u677e\u672c\u83dc\u5948\u5b9f"
     ],
-    "Modify": "2021-09-05 15:23:07",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "8N5g9",
     "JavLibrary": "javli7t33e",
     "JavBus": "ADN-201",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/adn201/adn201pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/adn201/adn201pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/8n/8N5g9.jpg",
+    "Init": "2021-09-05 15:23:07"
 }

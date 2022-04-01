@@ -28,9 +28,11 @@
     "Actors": [
         "\u4e09\u4e0a\u60a0\u4e9c"
     ],
-    "Modify": "2021-09-25 20:00:43",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "821d3",
     "JavLibrary": "javlilieri",
     "JavBus": "TEK-073",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/tek073/tek073pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/tek073/tek073pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/82/821d3.jpg",
+    "Init": "2021-09-25 20:00:43"
 }

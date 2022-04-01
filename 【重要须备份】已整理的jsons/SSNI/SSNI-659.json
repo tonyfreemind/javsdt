@@ -30,9 +30,11 @@
     "Actors": [
         "\u5929\u4f7f\u3082\u3048"
     ],
-    "Modify": "2021-09-25 19:08:30",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "KK3p6",
     "JavLibrary": "javli6tizi",
     "JavBus": "SSNI-659",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ssni659/ssni659pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ssni659/ssni659pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/kk/KK3p6.jpg",
+    "Init": "2021-09-25 19:08:30"
 }

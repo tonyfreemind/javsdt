@@ -31,9 +31,11 @@
     "Actors": [
         "\u7530\u4e2d\u306d\u306d"
     ],
-    "Modify": "2022-02-15 19:03:59",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "kPQRP",
     "JavLibrary": "javmezbl5y",
     "JavBus": "MIAA-333",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/miaa333/miaa333pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/miaa333/miaa333pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/kp/kPQRP.jpg",
+    "Init": "2022-02-15 19:03:59"
 }

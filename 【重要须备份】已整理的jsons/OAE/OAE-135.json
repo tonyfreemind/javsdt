@@ -29,9 +29,11 @@
     "Actors": [
         "\u67b6\u4e43\u3086\u3089"
     ],
-    "Modify": "2021-09-25 17:59:29",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "1AAd4",
     "JavLibrary": "javli43e2a",
     "JavBus": "OAE-135",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/oae135/oae135pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/oae135/oae135pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/1a/1AAd4.jpg",
+    "Init": "2021-09-25 17:59:29"
 }

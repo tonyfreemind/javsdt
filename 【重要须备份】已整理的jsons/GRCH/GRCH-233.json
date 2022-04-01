@@ -31,9 +31,11 @@
         "\u9752\u7a7a\u307f\u3089\u3044",
         "\u3055\u304f\u3089\u307f\u3086\u304d"
     ],
-    "Modify": "2021-10-30 10:04:36",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "eKnXb",
     "JavLibrary": "javlikr32m",
     "JavBus": "GRCH-233",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1grch233/1grch233pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1grch233/1grch233pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/ek/eKnXb.jpg",
+    "Init": "2021-10-30 10:04:36"
 }

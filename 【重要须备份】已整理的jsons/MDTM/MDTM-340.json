@@ -30,9 +30,11 @@
     "Actors": [
         "\u306a\u306a\u305b\u9ebb\u8863"
     ],
-    "Modify": "2021-09-05 21:25:58",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "ZNNZv",
     "JavLibrary": "javli4z32a",
     "JavBus": "MDTM-340",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/84mdtm340/84mdtm340pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/84mdtm340/84mdtm340pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/zn/ZNNZv.jpg",
+    "Init": "2021-09-05 21:25:58"
 }

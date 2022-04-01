@@ -29,9 +29,11 @@
     "Actors": [
         "\u8475\u5343\u6075"
     ],
-    "Modify": "2021-09-25 18:23:43",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "1AJKY",
     "JavLibrary": "javliiquqi",
     "JavBus": "SGA-025",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/118sga025/118sga025pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/118sga025/118sga025pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/1a/1AJKY.jpg",
+    "Init": "2021-09-25 18:23:43"
 }

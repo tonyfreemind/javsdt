@@ -32,9 +32,11 @@
     "Actors": [
         "\u5929\u4f7f\u3082\u3048"
     ],
-    "Modify": "2021-09-25 18:40:38",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "V49YX",
     "JavLibrary": "javliktz3a",
     "JavBus": "SNIS-999",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/snis999/snis999pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/snis999/snis999pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/v4/V49YX.jpg",
+    "Init": "2021-09-25 18:40:38"
 }

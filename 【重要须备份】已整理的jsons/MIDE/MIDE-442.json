@@ -31,9 +31,11 @@
     "Actors": [
         "\u4e5d\u91cd\u304b\u3093\u306a"
     ],
-    "Modify": "2021-09-25 17:27:54",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "0eJb7",
     "JavLibrary": "javlikl2ry",
     "JavBus": "MIDE-442",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mide442/mide442pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mide442/mide442pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/0e/0eJb7.jpg",
+    "Init": "2021-09-25 17:27:54"
 }

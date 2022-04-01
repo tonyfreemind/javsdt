@@ -30,9 +30,11 @@
     "Actors": [
         "JULIA"
     ],
-    "Modify": "2021-09-25 20:33:48",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "AKzpw",
     "JavLibrary": "javli6lu6y",
     "JavBus": "WANZ-913",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/wanz913/wanz913pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/wanz913/wanz913pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/ak/AKzpw.jpg",
+    "Init": "2021-09-25 20:33:48"
 }

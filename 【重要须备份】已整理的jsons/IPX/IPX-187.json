@@ -30,9 +30,11 @@
     "Actors": [
         "\u5409\u6c60\u7f8e\u6b69"
     ],
-    "Modify": "2021-09-05 18:42:47",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "zkxn4",
     "JavLibrary": "javli7llsq",
     "JavBus": "IPX-187",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ipx187/ipx187pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ipx187/ipx187pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/zk/zkxn4.jpg",
+    "Init": "2021-09-05 18:42:47"
 }

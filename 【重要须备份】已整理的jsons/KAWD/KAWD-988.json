@@ -30,9 +30,11 @@
     "Actors": [
         "\u6c38\u702c\u3086\u3044"
     ],
-    "Modify": "2021-09-05 21:19:17",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "v4aBY",
     "JavLibrary": "javli6dj4a",
     "JavBus": "KAWD-988",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/kawd988/kawd988pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/kawd988/kawd988pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/v4/v4aBY.jpg",
+    "Init": "2021-09-05 21:19:17"
 }

@@ -30,9 +30,11 @@
     "Actors": [
         "\u6d41\u7530\u307f\u306a\u5b9f"
     ],
-    "Modify": "2022-02-15 12:31:00",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "AJbBM",
     "JavLibrary": "javmezbkq4",
     "JavBus": "JUFE-213",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/jufe213/jufe213pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/jufe213/jufe213pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/aj/AJbBM.jpg",
+    "Init": "2022-02-15 12:31:00"
 }

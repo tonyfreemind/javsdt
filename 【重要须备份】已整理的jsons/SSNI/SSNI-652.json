@@ -30,9 +30,11 @@
     "Actors": [
         "\u9df2\u5c3e\u3081\u3044"
     ],
-    "Modify": "2021-09-25 19:08:14",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "DVPBa",
     "JavLibrary": "javli6qwse",
     "JavBus": "SSNI-652",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ssni652/ssni652pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ssni652/ssni652pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/dv/DVPBa.jpg",
+    "Init": "2021-09-25 19:08:14"
 }

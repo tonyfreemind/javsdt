@@ -30,9 +30,11 @@
     "Actors": [
         "\u672c\u7530\u5cac"
     ],
-    "Modify": "2022-02-15 19:12:39",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "88wd",
     "JavLibrary": "javlikjzr4",
     "JavBus": "CEAD-223",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/cead223/cead223pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/cead223/cead223pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/88/88wd.jpg",
+    "Init": "2022-02-15 19:12:39"
 }

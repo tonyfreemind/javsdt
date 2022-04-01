@@ -30,9 +30,11 @@
     "Actors": [
         "\u7acb\u82b1\u7f8e\u6dbc"
     ],
-    "Modify": "2021-09-05 18:56:47",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "1Bd54",
     "JavLibrary": "javliilzru",
     "JavBus": "IPZ-550",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ipz550/ipz550pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ipz550/ipz550pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/1b/1Bd54.jpg",
+    "Init": "2021-09-05 18:56:47"
 }

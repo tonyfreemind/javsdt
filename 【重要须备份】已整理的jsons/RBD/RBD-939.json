@@ -31,9 +31,11 @@
         "\u521d\u7f8e\u308a\u3093",
         "\u6cb3\u5408\u306e\u306e\u304b"
     ],
-    "Modify": "2021-09-13 22:56:57",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "PM1YJ",
     "JavLibrary": "javli6inrq",
     "JavBus": "RBD-939",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/rbd939/rbd939pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/rbd939/rbd939pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/pm/PM1YJ.jpg",
+    "Init": "2021-09-13 22:56:57"
 }

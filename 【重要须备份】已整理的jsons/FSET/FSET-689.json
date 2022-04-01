@@ -29,9 +29,11 @@
         "\u4e8c\u5bae\u548c\u9999",
         "\u5fc3\u82b1\u3086\u3089"
     ],
-    "Modify": "2021-09-21 08:02:11",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "vgyG",
     "JavLibrary": "javliklo64",
     "JavBus": "FSET-689",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1fset689/1fset689pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1fset689/1fset689pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/vg/vgyG.jpg",
+    "Init": "2021-09-21 08:02:11"
 }

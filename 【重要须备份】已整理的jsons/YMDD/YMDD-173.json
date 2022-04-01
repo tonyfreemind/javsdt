@@ -32,9 +32,11 @@
     "Actors": [
         "\u30e1\u30ed\u30c7\u30a3\u30fc\u30fb\u96db\u30fb\u30de\u30fc\u30af\u30b9"
     ],
-    "Modify": "2021-09-25 20:37:11",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "ZdKBA",
     "JavLibrary": "javli6tetm",
     "JavBus": "YMDD-173",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ymdd173so/ymdd173sopl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ymdd173so/ymdd173sopl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/zd/ZdKBA.jpg",
+    "Init": "2021-09-25 20:37:11"
 }

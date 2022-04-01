@@ -31,9 +31,11 @@
     "Actors": [
         "\u7be0\u7530\u3086\u3046"
     ],
-    "Modify": "2021-09-05 21:33:34",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "AbePe",
     "JavLibrary": "javli6bt6u",
     "JavBus": "MIAA-105",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/miaa105/miaa105pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/miaa105/miaa105pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/ab/AbePe.jpg",
+    "Init": "2021-09-05 21:33:34"
 }

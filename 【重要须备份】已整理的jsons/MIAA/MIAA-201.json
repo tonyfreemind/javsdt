@@ -31,9 +31,11 @@
     "Actors": [
         "\u7a32\u5834\u308b\u304b"
     ],
-    "Modify": "2021-09-05 21:38:00",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "7qGwd",
     "JavLibrary": "javli6tcym",
     "JavBus": "MIAA-201",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/miaa201/miaa201pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/miaa201/miaa201pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/7q/7qGwd.jpg",
+    "Init": "2021-09-05 21:38:00"
 }

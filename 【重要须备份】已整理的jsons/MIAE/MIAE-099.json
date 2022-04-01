@@ -31,9 +31,11 @@
     "Actors": [
         "\u6804\u5ddd\u4e43\u4e9c"
     ],
-    "Modify": "2021-09-13 22:48:06",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "e8rnz",
     "JavLibrary": "javlikrnt4",
     "JavBus": "MIAE-099",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/miae099/miae099pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/miae099/miae099pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/e8/e8rnz.jpg",
+    "Init": "2021-09-13 22:48:06"
 }

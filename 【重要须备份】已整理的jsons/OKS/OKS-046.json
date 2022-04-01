@@ -31,9 +31,11 @@
     "Actors": [
         "\u8de1\u7f8e\u3057\u3085\u308a"
     ],
-    "Modify": "2021-09-25 18:00:02",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "1AV9d",
     "JavLibrary": "javli7leye",
     "JavBus": "OKS-046",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1oks046/1oks046pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1oks046/1oks046pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/1a/1AV9d.jpg",
+    "Init": "2021-09-25 18:00:02"
 }

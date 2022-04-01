@@ -28,9 +28,11 @@
     "Actors": [
         "\u685c\u6728\u51db"
     ],
-    "Modify": "2021-09-05 15:33:54",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "0e8Y3",
     "JavLibrary": "javlijzmri",
     "JavBus": "BBI-168",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/bbi168/bbi168pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/bbi168/bbi168pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/0e/0e8Y3.jpg",
+    "Init": "2021-09-05 15:33:54"
 }

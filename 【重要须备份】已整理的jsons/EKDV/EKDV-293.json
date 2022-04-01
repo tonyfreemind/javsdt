@@ -29,9 +29,11 @@
     "Actors": [
         "\u4e0a\u539f\u4e9a\u8863"
     ],
-    "Modify": "2021-09-05 15:59:21",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "PQXJX",
     "JavLibrary": "javlio3rsu",
     "JavBus": "EKDV-293",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/49ekdv293/49ekdv293pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/49ekdv293/49ekdv293pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/pq/PQXJX.jpg",
+    "Init": "2021-09-05 15:59:21"
 }

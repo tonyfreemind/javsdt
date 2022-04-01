@@ -31,9 +31,11 @@
     "Actors": [
         "\u5c0f\u5cf6\u307f\u306a\u307f"
     ],
-    "Modify": "2021-09-25 19:02:28",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "QvP09",
     "JavLibrary": "javli6lb3a",
     "JavBus": "SSNI-556",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ssni556/ssni556pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ssni556/ssni556pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/qv/QvP09.jpg",
+    "Init": "2021-09-25 19:02:28"
 }

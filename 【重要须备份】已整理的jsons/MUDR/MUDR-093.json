@@ -31,9 +31,11 @@
     "Actors": [
         "\u6c38\u702c\u3086\u3044"
     ],
-    "Modify": "2021-09-25 17:51:12",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "WVyMg",
     "JavLibrary": "javli6tcqm",
     "JavBus": "MUDR-093",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mudr093/mudr093pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mudr093/mudr093pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/wv/WVyMg.jpg",
+    "Init": "2021-09-25 17:51:12"
 }

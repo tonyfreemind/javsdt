@@ -31,9 +31,11 @@
     "Actors": [
         "\u590f\u76ee\u5f69\u6625"
     ],
-    "Modify": "2021-11-07 21:38:32",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "MYer1",
     "JavLibrary": "javli6ju6a",
     "JavBus": "ATID-377",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/atid377/atid377pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/atid377/atid377pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/my/MYer1.jpg",
+    "Init": "2021-11-07 21:38:32"
 }

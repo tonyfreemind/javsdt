@@ -30,9 +30,11 @@
     "Actors": [
         "\u9ebb\u5009\u6182"
     ],
-    "Modify": "2021-09-25 18:09:51",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "wKwxn",
     "JavLibrary": "javli7tc4m",
     "JavBus": "PRED-110",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/pred110/pred110pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/pred110/pred110pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/wk/wKwxn.jpg",
+    "Init": "2021-09-25 18:09:51"
 }

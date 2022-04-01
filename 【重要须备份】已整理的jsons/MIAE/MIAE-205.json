@@ -32,9 +32,11 @@
     "Actors": [
         "\u661f\u5948\u3042\u3044"
     ],
-    "Modify": "2021-09-25 17:19:31",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "pmzZ",
     "JavLibrary": "javli4zcs4",
     "JavBus": "MIAE-205",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/miae205/miae205pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/miae205/miae205pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/pm/pmzZ.jpg",
+    "Init": "2021-09-25 17:19:31"
 }

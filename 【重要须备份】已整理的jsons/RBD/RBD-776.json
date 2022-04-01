@@ -29,9 +29,11 @@
     "Actors": [
         "\u677e\u4e0b\u7d17\u6804\u5b50"
     ],
-    "Modify": "2021-09-25 18:13:16",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "QV2DJ",
     "JavLibrary": "javliltaqu",
     "JavBus": "RBD-776",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/rbd776/rbd776pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/rbd776/rbd776pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/qv/QV2DJ.jpg",
+    "Init": "2021-09-25 18:13:16"
 }

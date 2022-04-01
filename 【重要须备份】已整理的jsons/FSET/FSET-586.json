@@ -32,9 +32,11 @@
         "\u671d\u6bd4\u5948\u9ebb\u91cc",
         "\u7b39\u672c\u307f\u307b"
     ],
-    "Modify": "2021-09-05 16:00:46",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "b9NB",
     "JavLibrary": "javlilatre",
     "JavBus": "FSET-586",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1fset586/1fset586pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1fset586/1fset586pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/b9/b9NB.jpg",
+    "Init": "2021-09-05 16:00:46"
 }

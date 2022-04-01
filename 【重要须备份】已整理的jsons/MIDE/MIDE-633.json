@@ -31,9 +31,11 @@
     "Actors": [
         "\u4e03\u6ca2\u307f\u3042"
     ],
-    "Modify": "2021-09-25 17:35:55",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "gBERA",
     "JavLibrary": "javli73j7i",
     "JavBus": "MIDE-633",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mide633/mide633pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mide633/mide633pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/gb/gBERA.jpg",
+    "Init": "2021-09-25 17:35:55"
 }

@@ -29,8 +29,10 @@
     "Actors": [
         "\u307b\u3057\u306e\u3042\u3059\u304b"
     ],
-    "Modify": "2021-09-25 19:11:42",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "38ba",
     "JavLibrary": "javlipd44e",
-    "JavBus": "STAR-246"
+    "JavBus": "STAR-246",
+    "CoverDb": "https://jdbimgs.com/covers/38/38ba.jpg",
+    "Init": "2021-09-25 19:11:42"
 }

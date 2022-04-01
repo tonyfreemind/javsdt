@@ -30,9 +30,11 @@
     "Actors": [
         "\u4e09\u4e0a\u60a0\u4e9c"
     ],
-    "Modify": "2021-09-25 18:27:14",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "r3rXN",
     "JavLibrary": "javlikqps4",
     "JavBus": "SIVR-002",
-    "CoverDmm": "http://pics.dmm.co.jp/digital/video/sivr00002/sivr00002pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/digital/video/sivr00002/sivr00002pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/r3/r3rXN.jpg",
+    "Init": "2021-09-25 18:27:14"
 }

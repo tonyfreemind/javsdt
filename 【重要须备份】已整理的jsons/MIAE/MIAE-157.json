@@ -31,9 +31,11 @@
     "Actors": [
         "\u9999\u690e\u308a\u3042"
     ],
-    "Modify": "2021-10-24 16:22:49",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "meRpy",
     "JavLibrary": "javli4r64y",
     "JavBus": "MIAE-157",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/miae157/miae157pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/miae157/miae157pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/me/meRpy.jpg",
+    "Init": "2021-10-24 16:22:49"
 }

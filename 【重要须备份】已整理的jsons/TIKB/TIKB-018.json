@@ -30,9 +30,11 @@
     "Actors": [
         "\u661f\u5948\u3042\u3044"
     ],
-    "Modify": "2021-09-25 20:01:23",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "BkAO",
     "JavLibrary": "javli4qprm",
     "JavBus": "TIKB-018",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/tikb018/tikb018pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/tikb018/tikb018pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/bk/BkAO.jpg",
+    "Init": "2021-09-25 20:01:23"
 }

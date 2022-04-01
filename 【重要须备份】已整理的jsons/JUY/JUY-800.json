@@ -31,9 +31,11 @@
     "Actors": [
         "\u4e00\u8272\u6843\u5b50"
     ],
-    "Modify": "2021-09-05 19:09:45",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "XB22G",
     "JavLibrary": "javli7yzqq",
     "JavBus": "JUY-800",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/juy800/juy800pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/juy800/juy800pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/xb/XB22G.jpg",
+    "Init": "2021-09-05 19:09:45"
 }

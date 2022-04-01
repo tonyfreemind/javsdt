@@ -31,9 +31,11 @@
     "Actors": [
         "\u4f0a\u85e4\u821e\u96ea"
     ],
-    "Modify": "2021-09-05 15:38:57",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "kBEnV",
     "JavLibrary": "javli6duym",
     "JavBus": "CAWD-003",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/cawd003/cawd003pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/cawd003/cawd003pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/kb/kBEnV.jpg",
+    "Init": "2021-09-05 15:38:57"
 }

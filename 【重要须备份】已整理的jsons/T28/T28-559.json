@@ -13,9 +13,10 @@
     "Studio": "TMA",
     "Publisher": "TMA",
     "Score": 0,
-    "CoverDb": "",
+    "CoverDb": "https://jdbimgs.com/covers//.jpg",
     "CoverLibrary": "",
     "CoverBus": "744y_b.jpg",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/55t28559/55t28559pl.jpg",
     "CutType": 1,
     "JavDb": "",
     "JavLibrary": "javli73vqq",
@@ -31,6 +32,6 @@
         "16\u5c0f\u65f6+"
     ],
     "Actors": [],
-    "Modify": "2022-03-27 23:02:25",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/55t28559/55t28559pl.jpg"
+    "Init": "2022-03-27 23:02:25",
+    "Modify": "2022-04-01 22:01:12"
 }

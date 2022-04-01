@@ -29,9 +29,11 @@
     "Actors": [
         "\u5c0f\u5009\u307f\u306a\u307f"
     ],
-    "Modify": "2021-09-25 18:04:44",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "XWDbV",
     "JavLibrary": "javliaz6q4",
     "JavBus": "PMS-071",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/5pms071/5pms071pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/5pms071/5pms071pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/xw/XWDbV.jpg",
+    "Init": "2021-09-25 18:04:44"
 }

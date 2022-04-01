@@ -31,9 +31,11 @@
     "Actors": [
         "\u6df1\u7530\u3048\u3044\u307f"
     ],
-    "Modify": "2021-09-25 16:06:43",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "04em0",
     "JavLibrary": "javli6r37u",
     "JavBus": "MUDR-098",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mudr098/mudr098pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mudr098/mudr098pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/04/04em0.jpg",
+    "Init": "2021-09-25 16:06:43"
 }

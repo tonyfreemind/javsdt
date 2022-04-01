@@ -34,9 +34,11 @@
     "Actors": [
         "\u7be0\u7530\u3086\u3046"
     ],
-    "Modify": "2021-09-25 20:19:52",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "6d1va",
     "JavLibrary": "javlikaiqa",
     "JavBus": "https://www.buscdn.me/VDD-123_2017-02-03",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/24vdd123/24vdd123pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/24vdd123/24vdd123pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/6d/6d1va.jpg",
+    "Init": "2021-09-25 20:19:52"
 }

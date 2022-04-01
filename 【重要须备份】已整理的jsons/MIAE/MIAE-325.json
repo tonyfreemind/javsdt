@@ -31,9 +31,11 @@
     "Actors": [
         "\u9234\u6728\u3055\u3068\u307f"
     ],
-    "Modify": "2021-09-25 17:21:01",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "e8d8M",
     "JavLibrary": "javli7ly3i",
     "JavBus": "MIAE-325",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/miae325/miae325pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/miae325/miae325pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/e8/e8d8M.jpg",
+    "Init": "2021-09-25 17:21:01"
 }

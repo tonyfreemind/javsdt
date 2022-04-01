@@ -28,9 +28,11 @@
     "Actors": [
         "\u6a31\u7531\u7f57"
     ],
-    "Modify": "2021-09-05 21:15:49",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "4DNrZ",
     "JavLibrary": "javlilajr4",
     "JavBus": "KAWD-692",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/kawd692/kawd692pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/kawd692/kawd692pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/4d/4DNrZ.jpg",
+    "Init": "2021-09-05 21:15:49"
 }

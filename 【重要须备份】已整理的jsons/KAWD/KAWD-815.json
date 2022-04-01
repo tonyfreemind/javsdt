@@ -30,9 +30,11 @@
     "Actors": [
         "\u6a31\u7531\u7f57"
     ],
-    "Modify": "2021-09-05 21:18:12",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "RkbmK",
     "JavLibrary": "javlikjd5a",
     "JavBus": "KAWD-815",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/kawd815/kawd815pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/kawd815/kawd815pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/rk/RkbmK.jpg",
+    "Init": "2021-09-05 21:18:12"
 }

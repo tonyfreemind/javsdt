@@ -31,7 +31,6 @@ def better_dict_genres(website, to_language):
     return {row[col_jp].value: row[col_chs].value for row in rows if row[col_jp].value}
 
 
-# Todo优化
 def prefect_genres(dict_genres: dict, genres: List[str]):
     return [dict_genres[i] for i in genres
             if not i.startswith('AV OP')

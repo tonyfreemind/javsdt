@@ -29,9 +29,11 @@
     "Actors": [
         "Rio"
     ],
-    "Modify": "2021-09-05 18:35:11",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "knJN",
     "JavLibrary": "javlim3erq",
     "JavBus": "IPTD-464",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/iptd464/iptd464pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/iptd464/iptd464pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/kn/knJN.jpg",
+    "Init": "2021-09-05 18:35:11"
 }

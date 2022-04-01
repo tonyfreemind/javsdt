@@ -30,9 +30,11 @@
     "Actors": [
         "\u5927\u69fb\u3072\u3073\u304d"
     ],
-    "Modify": "2022-02-15 19:12:59",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "35a2z",
     "JavLibrary": "javlillvqy",
     "JavBus": "CESD-210",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/cesd210/cesd210pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/cesd210/cesd210pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/35/35a2z.jpg",
+    "Init": "2022-02-15 19:12:59"
 }

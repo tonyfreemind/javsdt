@@ -29,9 +29,11 @@
     "Actors": [
         "\u5927\u6a4b\u672a\u4e45"
     ],
-    "Modify": "2021-09-25 17:45:00",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "Rd1nR",
     "JavLibrary": "javlipyy7i",
     "JavBus": "MIRD-081",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mird081/mird081pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mird081/mird081pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/rd/Rd1nR.jpg",
+    "Init": "2021-09-25 17:45:00"
 }

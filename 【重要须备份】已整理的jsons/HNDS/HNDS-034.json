@@ -32,9 +32,11 @@
         "\u5712\u539f\u771f\u592e",
         "\u4eca\u4e95\u9ebb\u8863"
     ],
-    "Modify": "2021-09-05 17:47:59",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "eNKr",
     "JavLibrary": "javliirh7e",
     "JavBus": "HNDS-034",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/hnds034/hnds034pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/hnds034/hnds034pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/en/eNKr.jpg",
+    "Init": "2021-09-05 17:47:59"
 }

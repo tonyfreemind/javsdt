@@ -29,9 +29,11 @@
     "Actors": [
         "\u5929\u30ce\u3046\u305f"
     ],
-    "Modify": "2022-02-15 12:42:58",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "BXBW4",
     "JavLibrary": "javmezai6u",
     "JavBus": "CAWD-123",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/cawd123/cawd123pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/cawd123/cawd123pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/bx/BXBW4.jpg",
+    "Init": "2022-02-15 12:42:58"
 }

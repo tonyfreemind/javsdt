@@ -28,9 +28,11 @@
     "Actors": [
         "\u6c34\u5e0c\u674f"
     ],
-    "Modify": "2021-09-25 18:17:02",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "qM5P",
     "JavLibrary": "javlioznti",
     "JavBus": "SDDE-305",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1sdde305/1sdde305pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1sdde305/1sdde305pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/qm/qM5P.jpg",
+    "Init": "2021-09-25 18:17:02"
 }

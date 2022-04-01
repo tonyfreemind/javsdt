@@ -29,9 +29,11 @@
     "Actors": [
         "\u83ef\u5d8b\u308c\u3044\u83dc"
     ],
-    "Modify": "2021-09-05 15:20:08",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "14BwA",
     "JavLibrary": "javli6jl5q",
     "JavBus": "ABP-925",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/118abp925/118abp925pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/118abp925/118abp925pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/14/14BwA.jpg",
+    "Init": "2021-09-05 15:20:08"
 }

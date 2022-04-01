@@ -31,9 +31,11 @@
     "Actors": [
         "\u9ad8\u6865\u5723\u5b50"
     ],
-    "Modify": "2021-09-25 17:28:33",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "d4km8",
     "JavLibrary": "javli4qyqm",
     "JavBus": "MIDE-481",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mide481/mide481pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mide481/mide481pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/d4/d4km8.jpg",
+    "Init": "2021-09-25 17:28:33"
 }

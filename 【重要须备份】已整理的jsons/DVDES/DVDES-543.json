@@ -33,9 +33,11 @@
         "\u6d77\u5b9d\u7f8e\u7fbd",
         "\u6708\u7f8e\u5f25\u751f"
     ],
-    "Modify": "2021-09-05 15:54:39",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "YJb",
     "JavLibrary": "javlioif24",
     "JavBus": "DVDES-543",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1dvdes543/1dvdes543pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1dvdes543/1dvdes543pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/yj/YJb.jpg",
+    "Init": "2021-09-05 15:54:39"
 }

@@ -31,9 +31,11 @@
     "Actors": [
         "\u6c96\u7530\u674f\u68a8"
     ],
-    "Modify": "2021-09-25 17:23:35",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "E2rOd",
     "JavLibrary": "javliianza",
     "JavBus": "MIDE-160",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mide160/mide160pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mide160/mide160pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/e2/E2rOd.jpg",
+    "Init": "2021-09-25 17:23:35"
 }

@@ -31,9 +31,11 @@
     "Actors": [
         "\u9234\u6728\u5fc3\u6625"
     ],
-    "Modify": "2021-09-25 17:23:23",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "yxkP0",
     "JavLibrary": "javliidb5q",
     "JavBus": "MIDE-148",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mide148/mide148pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mide148/mide148pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/yx/yxkP0.jpg",
+    "Init": "2021-09-25 17:23:23"
 }

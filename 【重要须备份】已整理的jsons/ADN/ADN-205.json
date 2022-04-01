@@ -28,9 +28,11 @@
     "Actors": [
         "\u6cb3\u5357\u5b9f\u91cc"
     ],
-    "Modify": "2021-09-05 15:23:35",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "DOpEa",
     "JavLibrary": "javli73e7a",
     "JavBus": "ADN-205",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/adn205/adn205pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/adn205/adn205pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/do/DOpEa.jpg",
+    "Init": "2021-09-05 15:23:35"
 }

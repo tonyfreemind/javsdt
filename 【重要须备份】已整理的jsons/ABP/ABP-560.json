@@ -29,9 +29,11 @@
     "Actors": [
         "\u51f0\u304b\u306a\u3081"
     ],
-    "Modify": "2021-09-05 13:59:15",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "akemW",
     "JavLibrary": "javlikad2q",
     "JavBus": "ABP-560",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/118abp560/118abp560pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/118abp560/118abp560pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/ak/akemW.jpg",
+    "Init": "2021-09-05 13:59:15"
 }

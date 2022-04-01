@@ -53,7 +53,7 @@ class JavDb(JavWeb):
         # endregion
 
         # region 确定目标所在html
-        item = list_results[list_fit_index[0]]  # 默认用第一个搜索结果
+        item = list_results[list_fit_index[0]][0] # 默认用第一个搜索结果
         status = ScrapeStatusEnum.success if len(list_fit_index) == 1 else ScrapeStatusEnum.multiple_results
         self._update_item_status(item, status)
         return self._get_html('    >获取系列:', self._url_item(item))  # bus找到了
@@ -71,6 +71,10 @@ class JavDb(JavWeb):
         car_title = re.search(r'title> (.+) \| JavDB', html).group(1)
         jav_data.Car, jav_data.Title = car_title.split(' ', 1)
         print('    >Db标题:', jav_data.Title)
+
+        # 封面 fancybox="gallery" href="https://jdbimgs.com/covers/9a/9AeQg.jpg">
+        coverg = re.search(r'img src="(.+?)" class="video-cover', html)
+        jav_data.CoverDb = coverg.group(1) if coverg else ''
 
         # 带着主要信息的那一块 複製番號" data-clipboard-text="BKD-171">
         html = re.search(r'複製番號([\s\S]+?)存入清單', html, re.DOTALL).group(1)
@@ -116,8 +120,6 @@ class JavDb(JavWeb):
         genres = re.findall(r'tags.+?">(.+?)</a>', html)
         jav_data.Genres.extend(prefect_genres(self._DICT_GENRES, genres))
 
-        #Todo 查找图片url
-
     @staticmethod
     def _confirm_normal_rsp(content: str):
         return bool(re.search(r'成人影片數據庫', content) or re.search(r'頁面未找到', content))
@@ -162,7 +164,6 @@ class JavDb(JavWeb):
             最小车尾，最大车尾
         """
         html_pref = self._get_html('', url_page)
-        # Todo xpath直接取第一个和最后一个
         if list_cars := etree.HTML(html_pref).xpath(Const.XPATH_DB_CARS):
             suf_min = int(extract_suf(list_cars[-1]))
             suf_max = int(extract_suf(list_cars[0]))

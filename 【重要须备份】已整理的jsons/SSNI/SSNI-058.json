@@ -31,9 +31,11 @@
     "Actors": [
         "\u5922\u4e43\u3042\u3044\u304b"
     ],
-    "Modify": "2021-09-25 18:42:59",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "kwEm",
     "JavLibrary": "javli4rutm",
     "JavBus": "SSNI-058",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ssni058/ssni058pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ssni058/ssni058pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/kw/kwEm.jpg",
+    "Init": "2021-09-25 18:42:59"
 }

@@ -29,9 +29,11 @@
     "Actors": [
         "\u4e0a\u539f\u745e\u7a42"
     ],
-    "Modify": "2021-09-05 13:55:17",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "PQX9a",
     "JavLibrary": "javlilac2e",
     "JavBus": "ABP-408",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/118abp408/118abp408pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/118abp408/118abp408pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/pq/PQX9a.jpg",
+    "Init": "2021-09-05 13:55:17"
 }

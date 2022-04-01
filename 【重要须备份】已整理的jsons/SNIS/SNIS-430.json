@@ -27,9 +27,11 @@
     "Actors": [
         "\u7f8e\u91cc\u6709\u7d17"
     ],
-    "Modify": "2021-09-25 18:31:54",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "9b46",
     "JavLibrary": "javliira4y",
     "JavBus": "SNIS-430",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/snis430/snis430pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/snis430/snis430pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/9b/9b46.jpg",
+    "Init": "2021-09-25 18:31:54"
 }

@@ -30,9 +30,11 @@
     "Actors": [
         "\u6731\u8389\u304d\u3087\u3046\u3053"
     ],
-    "Modify": "2021-10-30 10:04:15",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "v3BDz",
     "JavLibrary": "javli6qd4u",
     "JavBus": "SSNI-687",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ssni687/ssni687pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ssni687/ssni687pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/v3/v3BDz.jpg",
+    "Init": "2021-10-30 10:04:15"
 }

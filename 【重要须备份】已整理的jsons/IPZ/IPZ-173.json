@@ -29,9 +29,11 @@
     "Actors": [
         "\u661f\u7f8e\u308a\u304b"
     ],
-    "Modify": "2021-09-05 18:54:13",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "nv49",
     "JavLibrary": "javlijb32a",
     "JavBus": "IPZ-173",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ipz173/ipz173pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ipz173/ipz173pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/nv/nv49.jpg",
+    "Init": "2021-09-05 18:54:13"
 }

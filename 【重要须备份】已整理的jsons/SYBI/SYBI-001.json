@@ -28,9 +28,11 @@
     "Actors": [
         "\u767d\u5ddd\u3086\u305a"
     ],
-    "Modify": "2021-10-30 12:27:21",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "azpEO",
     "JavLibrary": "",
     "JavBus": "SYBI-001",
-    "CoverDmm": ""
+    "CoverDmm": "",
+    "CoverDb": "https://jdbimgs.com/covers/az/azpEO.jpg",
+    "Init": "2021-10-30 12:27:21"
 }

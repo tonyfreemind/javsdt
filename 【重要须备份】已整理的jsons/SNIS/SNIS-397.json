@@ -30,9 +30,11 @@
     "Actors": [
         "\u5929\u4f7f\u3082\u3048"
     ],
-    "Modify": "2021-09-25 18:31:01",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "WwWOB",
     "JavLibrary": "javliitm2y",
     "JavBus": "SNIS-397",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/snis397/snis397pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/snis397/snis397pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/ww/WwWOB.jpg",
+    "Init": "2021-09-25 18:31:01"
 }

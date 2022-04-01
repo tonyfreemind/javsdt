@@ -30,9 +30,11 @@
     "Actors": [
         "\u5e0c\u5fd7\u3042\u3044\u306e"
     ],
-    "Modify": "2021-09-05 18:56:20",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "JMv8",
     "JavLibrary": "javliiib6a",
     "JavBus": "IPZ-522",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ipz522/ipz522pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ipz522/ipz522pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/jm/JMv8.jpg",
+    "Init": "2021-09-05 18:56:20"
 }

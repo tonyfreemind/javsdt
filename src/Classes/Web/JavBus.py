@@ -62,7 +62,11 @@ class JavBus(JavWeb):
         return f'{self._URL}/search/{jav_file.Car_search}&type=1&parent=ce'
 
     def _select_special(self, html: str, jav_data: JavData):
-        # Todo 标题
+
+        # 标题
+        title = re.search(r'h3>(.+?)</h3', html, re.DOTALL).group(1)  # javbus上的标题可能占两行
+        print('    >Bus标题:', title)
+
         # 封面
         if coverg := re.search(r'bigImage" href="/pics/cover/(.+?)"', html):
             jav_data.CoverBus = coverg.group(1)

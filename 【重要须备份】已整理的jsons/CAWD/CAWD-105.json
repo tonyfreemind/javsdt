@@ -29,9 +29,11 @@
     "Actors": [
         "\u4f0a\u85e4\u821e\u96ea"
     ],
-    "Modify": "2022-02-15 19:08:43",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "DXEP2",
     "JavLibrary": "javmezbw7q",
     "JavBus": "CAWD-105",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/cawd105/cawd105pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/cawd105/cawd105pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/dx/DXEP2.jpg",
+    "Init": "2022-02-15 19:08:43"
 }

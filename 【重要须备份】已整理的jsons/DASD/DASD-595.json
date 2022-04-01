@@ -30,9 +30,11 @@
     "Actors": [
         "\u6839\u5c3e\u3042\u304b\u308a"
     ],
-    "Modify": "2021-09-05 15:48:46",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "K2GEm",
     "JavLibrary": "javli6if54",
     "JavBus": "DASD-595",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/dasd595/dasd595pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/dasd595/dasd595pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/k2/K2GEm.jpg",
+    "Init": "2021-09-05 15:48:46"
 }

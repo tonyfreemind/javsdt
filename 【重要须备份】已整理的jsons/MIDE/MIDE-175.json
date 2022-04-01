@@ -30,9 +30,11 @@
     "Actors": [
         "\u9234\u6728\u5fc3\u6625"
     ],
-    "Modify": "2021-09-25 17:23:54",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "pkWrE",
     "JavLibrary": "javliidu2m",
     "JavBus": "MIDE-175",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mide175/mide175pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mide175/mide175pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/pk/pkWrE.jpg",
+    "Init": "2021-09-25 17:23:54"
 }

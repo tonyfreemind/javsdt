@@ -30,9 +30,11 @@
     "Actors": [
         "\u5929\u4f7f\u3082\u3048"
     ],
-    "Modify": "2021-09-25 18:49:37",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "BzdEd",
     "JavLibrary": "javli7iqqu",
     "JavBus": "SSNI-270",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ssni270/ssni270pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ssni270/ssni270pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/bz/BzdEd.jpg",
+    "Init": "2021-09-25 18:49:37"
 }

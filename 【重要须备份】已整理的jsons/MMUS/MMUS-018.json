@@ -29,9 +29,11 @@
     "Actors": [
         "\u67a2\u6728\u3042\u304a\u3044"
     ],
-    "Modify": "2021-09-25 17:48:30",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "DRVv3",
     "JavLibrary": "javli4yiti",
     "JavBus": "MMUS-018",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mmus018so/mmus018sopl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mmus018so/mmus018sopl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/dr/DRVv3.jpg",
+    "Init": "2021-09-25 17:48:30"
 }

@@ -30,9 +30,11 @@
     "Actors": [
         "\u65e5\u548c\u3082\u3082\u304b"
     ],
-    "Modify": "2021-09-05 21:21:01",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "AbePm",
     "JavLibrary": "javli6bt4u",
     "JavBus": "KTKC-062",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ktkc062/ktkc062pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ktkc062/ktkc062pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/ab/AbePm.jpg",
+    "Init": "2021-09-05 21:21:01"
 }

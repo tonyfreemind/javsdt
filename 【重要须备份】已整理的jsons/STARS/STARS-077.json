@@ -28,9 +28,11 @@
     "Actors": [
         "\u6238\u7530\u771f\u7434"
     ],
-    "Modify": "2021-09-25 19:51:22",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "P480X",
     "JavLibrary": "javli7353e",
     "JavBus": "STARS-077",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1stars077/1stars077pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1stars077/1stars077pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/p4/P480X.jpg",
+    "Init": "2021-09-25 19:51:22"
 }

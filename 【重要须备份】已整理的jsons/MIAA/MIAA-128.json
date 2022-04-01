@@ -31,9 +31,11 @@
     "Actors": [
         "\u6c38\u702c\u3086\u3044"
     ],
-    "Modify": "2021-09-05 21:34:28",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "BbnDG",
     "JavLibrary": "javli6buyi",
     "JavBus": "MIAA-128",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/miaa128/miaa128pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/miaa128/miaa128pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/bb/BbnDG.jpg",
+    "Init": "2021-09-05 21:34:28"
 }

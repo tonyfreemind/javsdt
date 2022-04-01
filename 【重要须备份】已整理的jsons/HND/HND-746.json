@@ -32,9 +32,11 @@
     "Actors": [
         "\u67a2\u6728\u3042\u304a\u3044"
     ],
-    "Modify": "2021-09-05 16:05:32",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "EdAQJ",
     "JavLibrary": "javli6if74",
     "JavBus": "HND-746",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/hnd746/hnd746pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/hnd746/hnd746pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/ed/EdAQJ.jpg",
+    "Init": "2021-09-05 16:05:32"
 }

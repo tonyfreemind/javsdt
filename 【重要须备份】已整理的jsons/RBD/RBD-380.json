@@ -27,9 +27,11 @@
     "Actors": [
         "\u82a6\u540d\u672a\u5e06"
     ],
-    "Modify": "2021-09-25 18:12:53",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "d48qa",
     "JavLibrary": "javliody4e",
     "JavBus": "RBD-380",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/rbd380/rbd380pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/rbd380/rbd380pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/d4/d48qa.jpg",
+    "Init": "2021-09-25 18:12:53"
 }

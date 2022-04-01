@@ -30,9 +30,11 @@
         "\u5c71\u4e95\u3059\u305a",
         "\u6850\u5c71\u7d50\u7fbd"
     ],
-    "Modify": "2021-09-25 18:22:45",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "QWR6M",
     "JavLibrary": "",
     "JavBus": "SENN-001",
-    "CoverDmm": ""
+    "CoverDmm": "",
+    "CoverDb": "https://jdbimgs.com/covers/qw/QWR6M.jpg",
+    "Init": "2021-09-25 18:22:45"
 }

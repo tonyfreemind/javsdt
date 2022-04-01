@@ -31,9 +31,11 @@
     "Actors": [
         "\u82b1\u97f3\u3046\u3089\u3089"
     ],
-    "Modify": "2021-09-25 17:41:48",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "AQx6n",
     "JavLibrary": "javli6tmze",
     "JavBus": "MIFD-095",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mifd095/mifd095pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mifd095/mifd095pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/aq/AQx6n.jpg",
+    "Init": "2021-09-25 17:41:48"
 }

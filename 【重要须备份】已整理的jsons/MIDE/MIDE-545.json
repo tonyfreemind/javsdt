@@ -32,9 +32,11 @@
     "Actors": [
         "\u3064\u307c\u307f"
     ],
-    "Modify": "2021-09-25 17:30:35",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "rAnN",
     "JavLibrary": "javli7bn5i",
     "JavBus": "MIDE-545",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mide545/mide545pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mide545/mide545pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/ra/rAnN.jpg",
+    "Init": "2021-09-25 17:30:35"
 }

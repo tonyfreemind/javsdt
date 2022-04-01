@@ -30,9 +30,11 @@
     "Actors": [
         "\u624b\u585a\u3072\u304b\u308a"
     ],
-    "Modify": "2021-09-05 15:58:10",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "nypV",
     "JavLibrary": "javlikt7ta",
     "JavBus": "EBOD-601",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ebod601/ebod601pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ebod601/ebod601pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/ny/nypV.jpg",
+    "Init": "2021-09-05 15:58:10"
 }

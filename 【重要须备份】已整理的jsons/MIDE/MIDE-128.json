@@ -31,9 +31,11 @@
     "Actors": [
         "JULIA"
     ],
-    "Modify": "2021-09-25 17:23:07",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "rmK4N",
     "JavLibrary": "javlijyvy4",
     "JavBus": "MIDE-128",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mide128/mide128pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mide128/mide128pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/rm/rmK4N.jpg",
+    "Init": "2021-09-25 17:23:07"
 }

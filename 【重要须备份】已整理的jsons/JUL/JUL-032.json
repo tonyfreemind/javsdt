@@ -31,9 +31,11 @@
     "Actors": [
         "\u67ca\u308b\u3044"
     ],
-    "Modify": "2021-09-05 19:04:38",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "aBG9X",
     "JavLibrary": "javli6jv74",
     "JavBus": "JUL-032",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/jul032/jul032pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/jul032/jul032pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/ab/aBG9X.jpg",
+    "Init": "2021-09-05 19:04:38"
 }

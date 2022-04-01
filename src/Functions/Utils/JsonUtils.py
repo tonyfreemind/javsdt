@@ -2,6 +2,7 @@
 import os
 from json import load, dump
 
+from Datetime import time_now
 from User import choose_directory
 
 
@@ -140,10 +141,40 @@ def check_lost_series(path):
         print('  >没有json：', path)
         return False
 
+
+def upate_coverDb(dir_choose):
+    for root, dirs, files in os.walk(dir_choose):
+        for file in files:
+            if file.endswith(('.json',)):
+                path = f'{root}\\{file}'
+                dict_json = read_json_to_dict(path)
+                item = dict_json['JavDb']
+                if item:
+                    print('有了', item)
+                dict_json['CoverDb'] = f'https://jdbimgs.com/covers/{item[:2].lower()}/{item}.jpg'
+                print(dict_json['CoverDb'])
+                write_json(path, dict_json)
+
+
+def exchange_init_modify(path: str):
+    dict_json = read_json_to_dict(path)
+    if dict_json['Init'] > dict_json['Modify']:
+        dict_json['Init'], dict_json['Modify'] = dict_json['Modify'], dict_json['Init']
+        print(path)
+    else:
+        print(dict_json['Init'], dict_json['Modify'])
+    write_json(path, dict_json)
+
+
 # endregion
 
 
 if __name__ == '__main__':
     print('请选择要整理的文件夹：')
-    root_choose = choose_directory()
-    show_jsons_special_element_by_dir_choose(root_choose)
+    dir_choose = choose_directory()
+    # show_jsons_special_element_by_dir_choose(root_choose
+    for root, dirs, files in os.walk(dir_choose):
+        for file in files:
+            if file.endswith(('.json',)):
+                path = f'{root}\\{file}'
+                exchange_init_modify(path)

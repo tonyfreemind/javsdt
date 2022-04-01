@@ -28,9 +28,11 @@
     "Actors": [
         "\u4eca\u85e4\u9727\u5b50"
     ],
-    "Modify": "2022-02-15 12:45:14",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "63YE",
     "JavLibrary": "javlio336m",
     "JavBus": "https://www.buscdn.me/SSR-007_2013-06-23",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/h_746ssr007/h_746ssr007pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/h_746ssr007/h_746ssr007pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/63/63YE.jpg",
+    "Init": "2022-02-15 12:45:14"
 }

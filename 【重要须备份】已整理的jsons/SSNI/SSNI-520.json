@@ -33,9 +33,11 @@
     "Actors": [
         "\u6a4b\u672c\u3042\u308a\u306a"
     ],
-    "Modify": "2021-09-25 19:01:04",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "wY29D",
     "JavLibrary": "javli6ai54",
     "JavBus": "SSNI-520",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ssni520/ssni520pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ssni520/ssni520pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/wy/wY29D.jpg",
+    "Init": "2021-09-25 19:01:04"
 }

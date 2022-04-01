@@ -29,9 +29,11 @@
     "Actors": [
         "\u698e\u672c\u7f8e\u54b2"
     ],
-    "Modify": "2021-09-25 19:46:16",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "AqPBq",
     "JavLibrary": "javli7lvre",
     "JavBus": "STAR-989",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1star989/1star989pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1star989/1star989pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/aq/AqPBq.jpg",
+    "Init": "2021-09-25 19:46:16"
 }

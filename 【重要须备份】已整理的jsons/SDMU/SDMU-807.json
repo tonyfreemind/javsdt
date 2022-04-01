@@ -33,9 +33,11 @@
         "\u304b\u306a\u3067\u81ea\u7531",
         "\u91ce\u3005\u5bae\u307f\u3055\u3068"
     ],
-    "Modify": "2021-09-25 18:22:12",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "NQA0Z",
     "JavLibrary": "javli7aqsa",
     "JavBus": "SDMU-807",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1sdmu807/1sdmu807pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1sdmu807/1sdmu807pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/nq/NQA0Z.jpg",
+    "Init": "2021-09-25 18:22:12"
 }

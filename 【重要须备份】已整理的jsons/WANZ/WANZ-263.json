@@ -30,9 +30,11 @@
     "Actors": [
         "\u672c\u7530\u8389\u5b50"
     ],
-    "Modify": "2021-09-13 22:59:08",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "0RayE",
     "JavLibrary": "javliibbrm",
     "JavBus": "WANZ-263",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/wanz263/wanz263pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/wanz263/wanz263pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/0r/0RayE.jpg",
+    "Init": "2021-09-13 22:59:08"
 }

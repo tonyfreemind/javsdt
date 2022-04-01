@@ -28,9 +28,11 @@
     "Actors": [
         "\u65e9\u4e59\u5973\u30eb\u30a4"
     ],
-    "Modify": "2021-09-05 15:41:15",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "BzE0d",
     "JavLibrary": "javlimlnti",
     "JavBus": "CHU-037",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/chu037/chu037pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/chu037/chu037pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/bz/BzE0d.jpg",
+    "Init": "2021-09-05 15:41:15"
 }

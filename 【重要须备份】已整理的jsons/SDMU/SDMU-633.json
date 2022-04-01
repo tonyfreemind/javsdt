@@ -31,9 +31,11 @@
         "\u9752\u5c71\u306f\u306a",
         "\u677e\u4e0b\u7f8e\u7e54"
     ],
-    "Modify": "2021-09-25 18:21:39",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "04Y3",
     "JavLibrary": "javliktgs4",
     "JavBus": "SDMU-633",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1sdmu633/1sdmu633pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1sdmu633/1sdmu633pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/04/04Y3.jpg",
+    "Init": "2021-09-25 18:21:39"
 }

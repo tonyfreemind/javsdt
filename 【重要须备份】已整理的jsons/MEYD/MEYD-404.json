@@ -30,9 +30,11 @@
     "Actors": [
         "\u7e54\u7530\u771f\u5b50"
     ],
-    "Modify": "2021-09-05 21:28:13",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "ZNWZA",
     "JavLibrary": "javli7jw3m",
     "JavBus": "MEYD-404",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/meyd404/meyd404pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/meyd404/meyd404pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/zn/ZNWZA.jpg",
+    "Init": "2021-09-05 21:28:13"
 }

@@ -29,9 +29,11 @@
     "Actors": [
         "\u5e0c\u5d0e\u30b8\u30a7\u30b7\u30ab"
     ],
-    "Modify": "2021-09-05 18:55:45",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "kKeEJ",
     "JavLibrary": "javliiad7q",
     "JavBus": "IPZ-473",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ipz473/ipz473pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ipz473/ipz473pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/kk/kKeEJ.jpg",
+    "Init": "2021-09-05 18:55:45"
 }

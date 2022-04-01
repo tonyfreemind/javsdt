@@ -30,9 +30,11 @@
     "Actors": [
         "\u5965\u7530\u54b2"
     ],
-    "Modify": "2021-09-25 18:46:48",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "depVa",
     "JavLibrary": "javli7ae34",
     "JavBus": "SSNI-220",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ssni220/ssni220pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ssni220/ssni220pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/de/depVa.jpg",
+    "Init": "2021-09-25 18:46:48"
 }

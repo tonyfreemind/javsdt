@@ -30,9 +30,11 @@
     "Actors": [
         "JULIA"
     ],
-    "Modify": "2021-09-25 20:31:08",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "KmpVm",
     "JavLibrary": "javli7ql7a",
     "JavBus": "WANZ-823",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/wanz823/wanz823pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/wanz823/wanz823pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/km/KmpVm.jpg",
+    "Init": "2021-09-25 20:31:08"
 }

@@ -30,9 +30,11 @@
     "Actors": [
         "\u6238\u7530\u771f\u7434"
     ],
-    "Modify": "2021-09-25 19:52:40",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "ngEzM",
     "JavLibrary": "javli6bm74",
     "JavBus": "STARS-109",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1stars109/1stars109pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1stars109/1stars109pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/ng/ngEzM.jpg",
+    "Init": "2021-09-25 19:52:40"
 }

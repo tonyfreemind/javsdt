@@ -30,9 +30,11 @@
     "Actors": [
         "\u9234\u6728\u5fc3\u6625"
     ],
-    "Modify": "2021-09-05 21:16:22",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "MbAOQ",
     "JavLibrary": "javlillqsa",
     "JavBus": "KAWD-701",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/kawd701/kawd701pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/kawd701/kawd701pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/mb/MbAOQ.jpg",
+    "Init": "2021-09-05 21:16:22"
 }

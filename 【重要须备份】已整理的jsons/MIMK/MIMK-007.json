@@ -32,9 +32,11 @@
     "Actors": [
         "Hitomi"
     ],
-    "Modify": "2021-09-25 17:42:34",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "meOEM",
     "JavLibrary": "javliobcre",
     "JavBus": "MIMK-007",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mimk007/mimk007pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mimk007/mimk007pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/me/meOEM.jpg",
+    "Init": "2021-09-25 17:42:34"
 }

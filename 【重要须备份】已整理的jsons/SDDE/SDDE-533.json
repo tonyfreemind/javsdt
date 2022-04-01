@@ -35,9 +35,11 @@
         "\u5929\u6708\u53f6\u83dc",
         "\u8d64\u6e15\u84ee"
     ],
-    "Modify": "2021-09-25 18:19:32",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "mxmv",
     "JavLibrary": "javli4zhqi",
     "JavBus": "SDDE-533",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1sdde533/1sdde533pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1sdde533/1sdde533pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/mx/mxmv.jpg",
+    "Init": "2021-09-25 18:19:32"
 }

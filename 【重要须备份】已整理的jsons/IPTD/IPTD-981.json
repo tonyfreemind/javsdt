@@ -27,9 +27,11 @@
     "Actors": [
         "Rio"
     ],
-    "Modify": "2021-09-05 18:36:47",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "4k0J",
     "JavLibrary": "javlioqr4e",
     "JavBus": "IPTD-981",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/iptd981/iptd981pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/iptd981/iptd981pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/4k/4k0J.jpg",
+    "Init": "2021-09-05 18:36:47"
 }

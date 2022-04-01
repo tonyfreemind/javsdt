@@ -30,9 +30,11 @@
     "Actors": [
         "\u6771\u51db"
     ],
-    "Modify": "2021-09-25 18:14:00",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "4d6XR",
     "JavLibrary": "javli6l72m",
     "JavBus": "RBD-951",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/rbd951/rbd951pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/rbd951/rbd951pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/4d/4d6XR.jpg",
+    "Init": "2021-09-25 18:14:00"
 }

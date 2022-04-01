@@ -27,9 +27,11 @@
     "Actors": [
         "\u4e00\u6761\u30ea\u30aa\u30f3"
     ],
-    "Modify": "2021-10-30 12:23:19",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "9vBR",
     "JavLibrary": "javlildkta",
     "JavBus": "BF-421",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/bf421/bf421pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/bf421/bf421pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/9v/9vBR.jpg",
+    "Init": "2021-10-30 12:23:19"
 }

@@ -30,9 +30,11 @@
     "Actors": [
         "\u7be0\u3081\u3050\u307f"
     ],
-    "Modify": "2021-09-25 18:21:31",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "pkpvZ",
     "JavLibrary": "javlioik7e",
     "JavBus": "SDMT-788",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1sdmt788/1sdmt788pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1sdmt788/1sdmt788pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/pk/pkpvZ.jpg",
+    "Init": "2021-09-25 18:21:31"
 }

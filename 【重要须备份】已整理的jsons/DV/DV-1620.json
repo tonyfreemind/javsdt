@@ -28,9 +28,11 @@
     "Actors": [
         "\u5ddd\u4e0a\u5948\u3005\u7f8e"
     ],
-    "Modify": "2021-09-05 15:52:43",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "R3Mp",
     "JavLibrary": "javlijrx6u",
     "JavBus": "DV-1620",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/53dv1620/53dv1620pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/53dv1620/53dv1620pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/r3/R3Mp.jpg",
+    "Init": "2021-09-05 15:52:43"
 }

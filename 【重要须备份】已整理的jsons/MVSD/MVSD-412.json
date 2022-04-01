@@ -31,9 +31,11 @@
     "Actors": [
         "\u6839\u5c3e\u3042\u304b\u308a"
     ],
-    "Modify": "2021-09-25 17:52:31",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "xge5E",
     "JavLibrary": "javli6qqym",
     "JavBus": "MVSD-412",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mvsd412/mvsd412pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mvsd412/mvsd412pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/xg/xge5E.jpg",
+    "Init": "2021-09-25 17:52:31"
 }

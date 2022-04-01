@@ -31,9 +31,11 @@
     "Actors": [
         "\u4e00\u8272\u6843\u5b50"
     ],
-    "Modify": "2021-09-25 20:19:21",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "AKaVO",
     "JavLibrary": "javli6ti6u",
     "JavBus": "URE-054",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ure054/ure054pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ure054/ure054pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/ak/AKaVO.jpg",
+    "Init": "2021-09-25 20:19:21"
 }

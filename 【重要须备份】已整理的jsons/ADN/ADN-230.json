@@ -30,9 +30,11 @@
     "Actors": [
         "\u6771\u51db"
     ],
-    "Modify": "2021-09-05 15:23:55",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "BKeRr",
     "JavLibrary": "javli6ju4q",
     "JavBus": "ADN-230",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/adn230/adn230pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/adn230/adn230pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/bk/BKeRr.jpg",
+    "Init": "2021-09-05 15:23:55"
 }

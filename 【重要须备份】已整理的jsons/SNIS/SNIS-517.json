@@ -31,9 +31,11 @@
     "Actors": [
         "\u5b87\u90fd\u5bae\u3057\u3092\u3093"
     ],
-    "Modify": "2021-09-25 18:33:20",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "GMkBJ",
     "JavLibrary": "javliizese",
     "JavBus": "SNIS-517",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/snis517/snis517pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/snis517/snis517pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/gm/GMkBJ.jpg",
+    "Init": "2021-09-25 18:33:20"
 }

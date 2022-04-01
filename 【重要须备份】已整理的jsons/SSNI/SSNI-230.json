@@ -31,9 +31,11 @@
     "Actors": [
         "\u661f\u91ce\u30ca\u30df"
     ],
-    "Modify": "2021-09-25 18:47:28",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "depAg",
     "JavLibrary": "javli7bvzi",
     "JavBus": "SSNI-230",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ssni230/ssni230pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ssni230/ssni230pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/de/depAg.jpg",
+    "Init": "2021-09-25 18:47:28"
 }

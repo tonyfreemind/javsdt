@@ -30,9 +30,11 @@
     "Actors": [
         "\u5922\u4e43\u3042\u3044\u304b"
     ],
-    "Modify": "2021-09-25 18:29:07",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "0DK3",
     "JavLibrary": "javliiawz4",
     "JavBus": "SNIS-237",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/snis237/snis237pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/snis237/snis237pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/0d/0DK3.jpg",
+    "Init": "2021-09-25 18:29:07"
 }

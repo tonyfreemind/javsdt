@@ -28,9 +28,11 @@
     "Actors": [
         "\u5929\u6d77\u3064\u3070\u3055"
     ],
-    "Modify": "2021-09-21 08:02:58",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "bKGz0",
     "JavLibrary": "javlijlesy",
     "JavBus": "IPZ-225",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ipz225/ipz225pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ipz225/ipz225pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/bk/bKGz0.jpg",
+    "Init": "2021-09-21 08:02:58"
 }

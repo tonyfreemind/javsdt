@@ -32,9 +32,11 @@
         "\u7be0\u5bae\u3086\u308a",
         "\u65e9\u4e59\u5973\u3086\u3044"
     ],
-    "Modify": "2021-09-05 15:55:16",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "mevpY",
     "JavLibrary": "javliitata",
     "JavBus": "DVDES-836",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1dvdes836/1dvdes836pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1dvdes836/1dvdes836pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/me/mevpY.jpg",
+    "Init": "2021-09-05 15:55:16"
 }

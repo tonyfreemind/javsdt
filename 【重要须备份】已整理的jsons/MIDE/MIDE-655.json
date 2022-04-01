@@ -32,9 +32,11 @@
     "Actors": [
         "\u521d\u5ddd\u307f\u306a\u307f"
     ],
-    "Modify": "2021-09-25 17:36:47",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "kBAk0",
     "JavLibrary": "javli6dsri",
     "JavBus": "MIDE-655",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mide655/mide655pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mide655/mide655pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/kb/kBAk0.jpg",
+    "Init": "2021-09-25 17:36:47"
 }

@@ -32,9 +32,11 @@
     "Actors": [
         "\u4fdd\u5742\u3048\u308a"
     ],
-    "Modify": "2021-09-25 20:21:56",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "GbeJ",
     "JavLibrary": "javlikdr7i",
     "JavBus": "VNDS-3219",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/h_254vnds3219/h_254vnds3219pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/h_254vnds3219/h_254vnds3219pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/gb/GbeJ.jpg",
+    "Init": "2021-09-25 20:21:56"
 }

@@ -13,9 +13,10 @@
     "Studio": "S1 NO.1 STYLE",
     "Publisher": "S1 NO.1 STYLE",
     "Score": 87,
-    "CoverDb": "",
+    "CoverDb": "https://jdbimgs.com/covers/1a/1A1m9.jpg",
     "CoverLibrary": "",
     "CoverBus": "61v6_b.jpg",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/snis940/snis940pl.jpg",
     "CutType": 1,
     "JavDb": "1A1m9",
     "JavLibrary": "javlikl6tq",
@@ -34,6 +35,6 @@
     "Actors": [
         "\u4e09\u4e0a\u60a0\u4e9c"
     ],
-    "Modify": "2021-09-25 18:39:26",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/snis940/snis940pl.jpg"
+    "Init": "2021-09-25 18:39:26",
+    "Modify": "2022-04-01 22:01:12"
 }

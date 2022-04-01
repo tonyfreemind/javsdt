@@ -30,9 +30,11 @@
     "Actors": [
         "\u5c71\u5cb8\u9022\u82b1"
     ],
-    "Modify": "2021-09-25 18:09:42",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "k4nvm",
     "JavLibrary": "javli7df34",
     "JavBus": "PRED-068",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/pred068/pred068pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/pred068/pred068pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/k4/k4nvm.jpg",
+    "Init": "2021-09-25 18:09:42"
 }

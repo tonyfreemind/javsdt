@@ -31,9 +31,11 @@
     "Actors": [
         "\u5c71\u5cb8\u9022\u82b1"
     ],
-    "Modify": "2021-09-25 18:10:35",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "1EpNJ",
     "JavLibrary": "javli6b77a",
     "JavBus": "PRED-172",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/pred172/pred172pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/pred172/pred172pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/1e/1EpNJ.jpg",
+    "Init": "2021-09-25 18:10:35"
 }

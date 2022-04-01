@@ -29,9 +29,11 @@
     "Actors": [
         "\u7fbd\u7530\u3042\u3044"
     ],
-    "Modify": "2021-09-25 16:02:49",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "2aJ3P",
     "JavLibrary": "javlio3vr4",
     "JavBus": "IPZ-111",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ipz111/ipz111pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ipz111/ipz111pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/2a/2aJ3P.jpg",
+    "Init": "2021-09-25 16:02:49"
 }

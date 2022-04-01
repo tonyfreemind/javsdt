@@ -30,9 +30,11 @@
     "Actors": [
         "\u5927\u57ce\u96ea\u4e43"
     ],
-    "Modify": "2021-09-05 19:05:49",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "ay20r",
     "JavLibrary": "javli6l7si",
     "JavBus": "JUL-063",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/jul063/jul063pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/jul063/jul063pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/ay/ay20r.jpg",
+    "Init": "2021-09-05 19:05:49"
 }

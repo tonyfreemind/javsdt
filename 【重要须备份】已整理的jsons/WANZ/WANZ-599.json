@@ -31,9 +31,11 @@
     "Actors": [
         "\u9ebb\u91cc\u68a8\u590f"
     ],
-    "Modify": "2021-09-25 20:29:10",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "d4MA5",
     "JavLibrary": "javlikbe2e",
     "JavBus": "WANZ-599",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/wanz599/wanz599pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/wanz599/wanz599pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/d4/d4MA5.jpg",
+    "Init": "2021-09-25 20:29:10"
 }

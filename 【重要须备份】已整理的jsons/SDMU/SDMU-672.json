@@ -29,9 +29,11 @@
     "Actors": [
         "\u677e\u7530\u771f\u590f"
     ],
-    "Modify": "2021-09-25 18:22:04",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "E281M",
     "JavLibrary": "javlikr4ze",
     "JavBus": "SDMU-672",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1sdmu672/1sdmu672pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1sdmu672/1sdmu672pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/e2/E281M.jpg",
+    "Init": "2021-09-25 18:22:04"
 }

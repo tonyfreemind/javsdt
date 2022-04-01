@@ -30,9 +30,11 @@
     "Actors": [
         "\u8c37\u539f\u5e0c\u7f8e"
     ],
-    "Modify": "2021-09-13 22:56:28",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "5E9MM",
     "JavLibrary": "javlilywqa",
     "JavBus": "MEYD-188",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/meyd188/meyd188pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/meyd188/meyd188pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/5e/5E9MM.jpg",
+    "Init": "2021-09-13 22:56:28"
 }

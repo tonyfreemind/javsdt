@@ -31,9 +31,11 @@
     "Actors": [
         "\u9ebb\u751f\u9065"
     ],
-    "Modify": "2021-09-05 18:58:50",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "OX7wz",
     "JavLibrary": "javliligqi",
     "JavBus": "IPZ-723",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ipz723/ipz723pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ipz723/ipz723pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/ox/OX7wz.jpg",
+    "Init": "2021-09-05 18:58:50"
 }

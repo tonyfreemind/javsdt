@@ -30,9 +30,11 @@
     "Actors": [
         "\u4e0a\u6761\u3081\u3050"
     ],
-    "Modify": "2021-09-05 17:23:58",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "71Md",
     "JavLibrary": "javlipld7a",
     "JavBus": "BUR-314",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/12bur314/12bur314pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/12bur314/12bur314pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/71/71Md.jpg",
+    "Init": "2021-09-05 17:23:58"
 }

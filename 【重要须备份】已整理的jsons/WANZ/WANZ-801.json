@@ -30,9 +30,11 @@
     "Actors": [
         "\u7be0\u7530\u3086\u3046"
     ],
-    "Modify": "2021-09-25 20:30:30",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "deMa9",
     "JavLibrary": "javli7jv4y",
     "JavBus": "WANZ-801",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/wanz801/wanz801pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/wanz801/wanz801pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/de/deMa9.jpg",
+    "Init": "2021-09-25 20:30:30"
 }

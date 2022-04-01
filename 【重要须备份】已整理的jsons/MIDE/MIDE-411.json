@@ -31,9 +31,11 @@
     "Actors": [
         "\u897f\u5bae\u3053\u306e\u307f"
     ],
-    "Modify": "2021-09-25 17:27:40",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "ZGVX",
     "JavLibrary": "javlikbhqe",
     "JavBus": "MIDE-411",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mide411/mide411pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mide411/mide411pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/zg/ZGVX.jpg",
+    "Init": "2021-09-25 17:27:40"
 }

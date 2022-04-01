@@ -29,9 +29,11 @@
     "Actors": [
         "\u6765\u90a3"
     ],
-    "Modify": "2021-09-21 08:02:39",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "QVGd9",
     "JavLibrary": "javlijd4t4",
     "JavBus": "IPZ-202",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ipz202/ipz202pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ipz202/ipz202pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/qv/QVGd9.jpg",
+    "Init": "2021-09-21 08:02:39"
 }

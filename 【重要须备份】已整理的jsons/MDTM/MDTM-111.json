@@ -31,9 +31,11 @@
     "Actors": [
         "\u5929\u6708\u53f6\u83dc"
     ],
-    "Modify": "2021-09-05 21:24:55",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "AzOdq",
     "JavLibrary": "javlilip24",
     "JavBus": "MDTM-111",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/84mdtm111/84mdtm111pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/84mdtm111/84mdtm111pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/az/AzOdq.jpg",
+    "Init": "2021-09-05 21:24:55"
 }

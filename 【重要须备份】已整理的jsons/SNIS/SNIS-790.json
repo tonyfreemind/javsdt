@@ -31,9 +31,11 @@
     "Actors": [
         "\u661f\u91ce\u30ca\u30df"
     ],
-    "Modify": "2022-02-15 12:31:26",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "Yb9p",
     "JavLibrary": "javlikdb7i",
     "JavBus": "SNIS-790",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/snis790/snis790pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/snis790/snis790pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/yb/Yb9p.jpg",
+    "Init": "2022-02-15 12:31:26"
 }

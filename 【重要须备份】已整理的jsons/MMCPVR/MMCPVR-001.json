@@ -31,9 +31,11 @@
     "Actors": [
         "\u4f50\u3005\u6ce2\u7dbe"
     ],
-    "Modify": "2021-09-25 17:47:17",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "wKBDB",
     "JavLibrary": "javli4zw6e",
     "JavBus": "MMCPVR-001",
-    "CoverDmm": "http://pics.dmm.co.jp/digital/video/mmcpvr00001/mmcpvr00001pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/digital/video/mmcpvr00001/mmcpvr00001pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/wk/wKBDB.jpg",
+    "Init": "2021-09-25 17:47:17"
 }

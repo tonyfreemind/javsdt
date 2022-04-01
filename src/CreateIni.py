@@ -91,7 +91,6 @@ try:
     config_actor = RawConfigParser()
     config_actor.add_section("缺失的演员头像")
     config_actor.set("缺失的演员头像", "演员姓名", "N(次数)")
-    # Todo 改成注释
     config_actor.add_section("说明")
     config_actor.set("说明", "上面的“演员姓名 = N(次数)”的表达式", "后面的N数字表示你有N部(次)影片都在找她的头像，可惜找不到")
     config_actor.set("说明", "你可以去保存一下她的头像jpg到“演员头像”文件夹", "以后就能保存她的头像到影片的文件夹了")

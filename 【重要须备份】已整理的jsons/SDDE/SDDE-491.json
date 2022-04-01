@@ -30,9 +30,11 @@
     "Actors": [
         "\u672c\u7530\u5cac"
     ],
-    "Modify": "2021-09-25 18:19:08",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "R0Ag",
     "JavLibrary": "javlikjvy4",
     "JavBus": "SDDE-491",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1sdde491/1sdde491pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1sdde491/1sdde491pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/r0/R0Ag.jpg",
+    "Init": "2021-09-25 18:19:08"
 }

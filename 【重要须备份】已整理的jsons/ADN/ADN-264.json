@@ -29,9 +29,11 @@
     "Actors": [
         "\u7434\u4e95\u3057\u307b\u308a"
     ],
-    "Modify": "2022-02-15 19:04:30",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "1KGEW",
     "JavLibrary": "javmezbasu",
     "JavBus": "ADN-264",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/adn264/adn264pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/adn264/adn264pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/1k/1KGEW.jpg",
+    "Init": "2022-02-15 19:04:30"
 }

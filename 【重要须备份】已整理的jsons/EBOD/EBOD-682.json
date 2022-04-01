@@ -29,9 +29,11 @@
     "Actors": [
         "\u3042\u3044\u3060\u98db\u9ce5"
     ],
-    "Modify": "2021-09-21 08:02:00",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "ARORO",
     "JavLibrary": "javli7t5re",
     "JavBus": "EBOD-682",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ebod682/ebod682pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ebod682/ebod682pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/ar/ARORO.jpg",
+    "Init": "2021-09-21 08:02:00"
 }

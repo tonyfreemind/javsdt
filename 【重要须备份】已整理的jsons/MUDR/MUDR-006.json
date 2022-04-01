@@ -37,9 +37,11 @@
         "\u84ee\u5b9f\u30af\u30ec\u30a2",
         "\u5c0f\u897f\u307e\u308a\u3048"
     ],
-    "Modify": "2021-09-25 17:49:18",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "d4bGg",
     "JavLibrary": "javlilartu",
     "JavBus": "MUDR-006",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mudr006/mudr006pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mudr006/mudr006pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/d4/d4bGg.jpg",
+    "Init": "2021-09-25 17:49:18"
 }

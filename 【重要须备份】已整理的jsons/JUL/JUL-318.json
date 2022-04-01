@@ -31,9 +31,11 @@
     "Actors": [
         "\u702c\u6238\u5948\u3005\u5b50"
     ],
-    "Modify": "2022-02-15 12:44:55",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "5apJ7",
     "JavLibrary": "javmezajzq",
     "JavBus": "JUL-318",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/jul318/jul318pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/jul318/jul318pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/5a/5apJ7.jpg",
+    "Init": "2022-02-15 12:44:55"
 }

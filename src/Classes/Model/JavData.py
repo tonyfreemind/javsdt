@@ -96,6 +96,9 @@ class JavData(object):
         self.Actors = []
         """27 演员们"""
 
+        self.Init = time_now()
+        """28 修改时间"""
+
         self.Modify = time_now()
         """28 修改时间"""
 

@@ -28,9 +28,11 @@
         "\u6c34\u8c37\u3042\u304a\u3044",
         "\u82b1\u54b2\u3044\u3042\u3093"
     ],
-    "Modify": "2021-09-05 16:00:55",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "e7VM",
     "JavLibrary": "javlilruy4",
     "JavBus": "FSET-638",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1fset638/1fset638pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1fset638/1fset638pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/e7/e7VM.jpg",
+    "Init": "2021-09-05 16:00:55"
 }

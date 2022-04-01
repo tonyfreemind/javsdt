@@ -30,9 +30,11 @@
     "Actors": [
         "\u7be0\u7530\u3042\u3086\u307f"
     ],
-    "Modify": "2021-09-05 21:27:04",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "K4b1A",
     "JavLibrary": "javlijzdrq",
     "JavBus": "MDYD-932",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mdyd932/mdyd932pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mdyd932/mdyd932pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/k4/K4b1A.jpg",
+    "Init": "2021-09-05 21:27:04"
 }

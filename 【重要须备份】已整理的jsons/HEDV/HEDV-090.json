@@ -31,9 +31,11 @@
         "\u96ea\u4e43",
         "\u5800\u5ddd\u771f\u592e"
     ],
-    "Modify": "2021-09-05 17:43:18",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "eEJb",
     "JavLibrary": "javlim3c64",
     "JavBus": "HEDV-090",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/49hedv090/49hedv090pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/49hedv090/49hedv090pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/ee/eEJb.jpg",
+    "Init": "2021-09-05 17:43:18"
 }

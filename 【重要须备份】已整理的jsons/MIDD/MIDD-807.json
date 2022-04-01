@@ -29,9 +29,11 @@
     "Actors": [
         "\u5927\u6a4b\u672a\u4e45"
     ],
-    "Modify": "2021-09-25 17:21:39",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "Az8G0",
     "JavLibrary": "javliddd5e",
     "JavBus": "MIDD-807",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/midd807/midd807pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/midd807/midd807pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/az/Az8G0.jpg",
+    "Init": "2021-09-25 17:21:39"
 }

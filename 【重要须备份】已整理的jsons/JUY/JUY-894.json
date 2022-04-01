@@ -32,9 +32,11 @@
     "Actors": [
         "\u795e\u5bae\u5bfa\u30ca\u30aa"
     ],
-    "Modify": "2021-09-05 19:11:06",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "kBZXm",
     "JavLibrary": "javli6azsm",
     "JavBus": "JUY-894",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/juy894/juy894pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/juy894/juy894pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/kb/kBZXm.jpg",
+    "Init": "2021-09-05 19:11:06"
 }

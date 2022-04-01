@@ -30,9 +30,11 @@
         "\u8352\u6728\u307e\u3044",
         "\u5317\u91ce\u306e\u305e\u307f"
     ],
-    "Modify": "2021-09-05 13:54:46",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "dNM",
     "JavLibrary": "javlildiru",
     "JavBus": "ABP-400",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/118abp400/118abp400pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/118abp400/118abp400pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/dn/dNM.jpg",
+    "Init": "2021-09-05 13:54:46"
 }

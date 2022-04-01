@@ -30,9 +30,11 @@
     "Actors": [
         "\u307b\u3057\u306e\u666f\u5b50"
     ],
-    "Modify": "2021-09-05 15:59:53",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "WExp",
     "JavLibrary": "javlila4ra",
     "JavBus": "EYAN-047",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/eyan047/eyan047pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/eyan047/eyan047pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/we/WExp.jpg",
+    "Init": "2021-09-05 15:59:53"
 }

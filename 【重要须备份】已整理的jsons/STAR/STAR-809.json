@@ -28,9 +28,11 @@
     "Actors": [
         "\u767d\u77f3\u8309\u8389\u5948"
     ],
-    "Modify": "2021-09-25 19:22:33",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "Xe5VV",
     "JavLibrary": "javlikr4si",
     "JavBus": "STAR-809",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1star809/1star809pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1star809/1star809pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/xe/Xe5VV.jpg",
+    "Init": "2021-09-25 19:22:33"
 }

@@ -29,9 +29,11 @@
     "Actors": [
         "\u5317\u91ce\u306e\u305e\u307f"
     ],
-    "Modify": "2021-11-07 20:40:26",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "QPG",
     "JavLibrary": "javlill644",
     "JavBus": "ABP-480",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/118abp480/118abp480pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/118abp480/118abp480pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/qp/QPG.jpg",
+    "Init": "2021-11-07 20:40:26"
 }

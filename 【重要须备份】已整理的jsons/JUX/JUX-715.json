@@ -31,9 +31,11 @@
     "Actors": [
         "\u5927\u5cf6\u512a\u9999"
     ],
-    "Modify": "2021-10-30 12:25:05",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "5Ebpp",
     "JavLibrary": "javlii372i",
     "JavBus": "JUX-715",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/jux715/jux715pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/jux715/jux715pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/5e/5Ebpp.jpg",
+    "Init": "2021-10-30 12:25:05"
 }

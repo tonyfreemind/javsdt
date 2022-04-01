@@ -30,9 +30,11 @@
     "Actors": [
         "\u6c34\u30c8\u3055\u304f\u3089"
     ],
-    "Modify": "2021-09-25 17:30:27",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "31Ka",
     "JavLibrary": "javli7dbr4",
     "JavBus": "MIDE-540",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mide540/mide540pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mide540/mide540pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/31/31Ka.jpg",
+    "Init": "2021-09-25 17:30:27"
 }

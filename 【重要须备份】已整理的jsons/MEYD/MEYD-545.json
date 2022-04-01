@@ -30,9 +30,11 @@
     "Actors": [
         "\u9577\u702c\u9ebb\u7f8e"
     ],
-    "Modify": "2021-09-05 21:29:40",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "Q0B24",
     "JavLibrary": "javli6j7ty",
     "JavBus": "MEYD-545",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/meyd545/meyd545pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/meyd545/meyd545pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/q0/Q0B24.jpg",
+    "Init": "2021-09-05 21:29:40"
 }

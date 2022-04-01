@@ -31,9 +31,11 @@
     "Actors": [
         "\u897f\u5bae\u3086\u3081"
     ],
-    "Modify": "2021-09-05 18:40:41",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "b8Za",
     "JavLibrary": "javli7dkza",
     "JavBus": "IPX-131",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ipx131/ipx131pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ipx131/ipx131pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/b8/b8Za.jpg",
+    "Init": "2021-09-05 18:40:41"
 }

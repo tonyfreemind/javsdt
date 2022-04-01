@@ -29,9 +29,11 @@
     "Actors": [
         "\u5927\u539f\u5411\u8475"
     ],
-    "Modify": "2021-09-05 18:48:42",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "GJDeb",
     "JavLibrary": "javli6bdqq",
     "JavBus": "IPX-349",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ipx349/ipx349pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ipx349/ipx349pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/gj/GJDeb.jpg",
+    "Init": "2021-09-05 18:48:42"
 }

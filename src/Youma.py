@@ -113,6 +113,7 @@ while not input_key:
 
                     # region从javdb获取信息
                     javDb.scrape(jav_file, jav_model)
+                    # Todo找到一个才报警
                     if javDb.status is ScrapeStatusEnum.not_found:
                         logger.record_warn(f'javdb找不到该车牌的信息: {jav_file.Car}，')
                     elif javDb.status is ScrapeStatusEnum.multiple_results:
@@ -160,7 +161,7 @@ while not input_key:
 
                 # region（3.2.3）后续完善
                 # 如果用户 首次整理该片不存在path_json 或 如果这次整理用户正确地输入了翻译账户，则保存json
-                if os.path.exists(path_json) or translator.prefect_zh(jav_model):
+                if not os.path.exists(path_json) or translator.prefect_zh(jav_model):
                     if not os.path.exists(dir_prefs_jsons):
                         os.makedirs(dir_prefs_jsons)
                     with open(path_json, 'w', encoding='utf-8') as f:
@@ -196,11 +197,13 @@ while not input_key:
 
                 # 5需要两张封面图片【独特】
                 if fileLathe.need_fanart_poster():
-                    if path_fanart := fileLathe.need_download_fanart(jav_file):
-                        if not javDb.download_picture(jav_model.CoverDb, path_fanart) \
-                                or javBus.download_picture(jav_model.CoverBus, path_fanart) \
-                                or dmm.download_picture(jav_model.CoverDmm, path_fanart) \
-                                or javLibrary.download_picture(jav_model.CoverDmm, path_fanart):
+                    if fileLathe.need_download_fanart(jav_file):
+                        if javDb.download_picture(jav_model.CoverDb, fileLathe.path_fanart()) \
+                                or javBus.download_picture(jav_model.CoverBus, fileLathe.path_fanart()) \
+                                or dmm.download_picture(jav_model.CoverDmm, fileLathe.path_fanart()) \
+                                or javLibrary.download_picture(jav_model.CoverDmm, fileLathe.path_fanart()):
+                            pass
+                        else:
                             raise DownloadFanartError
 
                     fileLathe.crop_poster(jav_file)

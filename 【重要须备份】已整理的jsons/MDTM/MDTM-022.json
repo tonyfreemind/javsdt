@@ -31,9 +31,11 @@
     "Actors": [
         "\u3055\u3068\u3046\u611b\u7406"
     ],
-    "Modify": "2021-09-05 21:24:20",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "96BDR",
     "JavLibrary": "javliiqqsm",
     "JavBus": "MDTM-022",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/84mdtm022/84mdtm022pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/84mdtm022/84mdtm022pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/96/96BDR.jpg",
+    "Init": "2021-09-05 21:24:20"
 }

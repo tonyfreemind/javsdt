@@ -30,9 +30,11 @@
     "Actors": [
         "JULIA"
     ],
-    "Modify": "2021-09-25 20:31:55",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "WQYvK",
     "JavLibrary": "javli7y5qm",
     "JavBus": "WANZ-847",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/wanz847/wanz847pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/wanz847/wanz847pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/wq/WQYvK.jpg",
+    "Init": "2021-09-25 20:31:55"
 }

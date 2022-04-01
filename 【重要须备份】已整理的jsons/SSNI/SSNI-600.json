@@ -31,9 +31,11 @@
     "Actors": [
         "\u795e\u6728\u307e\u307b\u308d"
     ],
-    "Modify": "2021-09-25 19:04:22",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "wpAgm",
     "JavLibrary": "javli6ig3e",
     "JavBus": "SSNI-600",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ssni600/ssni600pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ssni600/ssni600pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/wp/wpAgm.jpg",
+    "Init": "2021-09-25 19:04:22"
 }

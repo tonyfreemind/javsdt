@@ -32,9 +32,11 @@
         "\u7af9\u5167\u771f\u7434",
         "\u5712\u539f\u771f\u592e"
     ],
-    "Modify": "2021-09-05 15:55:08",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "5EEE9",
     "JavLibrary": "javliiby24",
     "JavBus": "DVDES-787",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1dvdes787/1dvdes787pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1dvdes787/1dvdes787pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/5e/5EEE9.jpg",
+    "Init": "2021-09-05 15:55:08"
 }

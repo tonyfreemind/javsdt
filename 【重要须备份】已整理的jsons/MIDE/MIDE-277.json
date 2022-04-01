@@ -32,9 +32,11 @@
     "Actors": [
         "JULIA"
     ],
-    "Modify": "2021-09-25 17:25:09",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "9DAnX",
     "JavLibrary": "javlildn4u",
     "JavBus": "MIDE-277",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mide277/mide277pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mide277/mide277pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/9d/9DAnX.jpg",
+    "Init": "2021-09-25 17:25:09"
 }

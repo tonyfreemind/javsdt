@@ -29,9 +29,11 @@
     "Actors": [
         "\u7af9\u5185\u590f\u5e0c"
     ],
-    "Modify": "2022-02-15 12:31:57",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "ppOZk",
     "JavLibrary": "javmezblte",
     "JavBus": "MEYD-619",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/meyd619/meyd619pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/meyd619/meyd619pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/pp/ppOZk.jpg",
+    "Init": "2022-02-15 12:31:57"
 }

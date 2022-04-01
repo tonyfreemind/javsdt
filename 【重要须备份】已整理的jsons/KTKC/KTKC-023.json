@@ -32,9 +32,11 @@
         "\u5f8c\u85e4\u91cc\u9999",
         "\u8d64\u6e15\u84ee"
     ],
-    "Modify": "2021-09-05 21:20:40",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "A690",
     "JavLibrary": "javli4r2tu",
     "JavBus": "KTKC-023",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ktkc023/ktkc023pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ktkc023/ktkc023pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/a6/A690.jpg",
+    "Init": "2021-09-05 21:20:40"
 }

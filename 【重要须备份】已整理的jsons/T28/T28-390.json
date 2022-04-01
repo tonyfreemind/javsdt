@@ -30,9 +30,11 @@
     "Actors": [
         "\u7be0\u7530\u3042\u3086\u307f"
     ],
-    "Modify": "2021-09-21 08:08:31",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "meMOY",
     "JavLibrary": "javliij4ta",
     "JavBus": "T28-390",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/55t28390/55t28390pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/55t28390/55t28390pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/me/meMOY.jpg",
+    "Init": "2021-09-21 08:08:31"
 }

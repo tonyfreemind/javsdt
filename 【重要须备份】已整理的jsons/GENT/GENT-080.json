@@ -30,9 +30,11 @@
     "Actors": [
         "\u4e0a\u539f\u4e9a\u8863"
     ],
-    "Modify": "2021-09-05 16:02:02",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "PQX8E",
     "JavLibrary": "javliity2i",
     "JavBus": "GENT-080",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/gent080/gent080pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/gent080/gent080pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/pq/PQX8E.jpg",
+    "Init": "2021-09-05 16:02:02"
 }

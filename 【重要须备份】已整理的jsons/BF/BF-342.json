@@ -28,9 +28,11 @@
     "Actors": [
         "\u6797\u3086\u306a"
     ],
-    "Modify": "2021-09-05 15:35:23",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "76824",
     "JavLibrary": "javliiatze",
     "JavBus": "BF-342",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/bf342/bf342pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/bf342/bf342pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/76/76824.jpg",
+    "Init": "2021-09-05 15:35:23"
 }

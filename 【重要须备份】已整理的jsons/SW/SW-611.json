@@ -29,9 +29,11 @@
         "\u661f\u3042\u3081\u308a",
         "\u5fa1\u5742\u308a\u3042"
     ],
-    "Modify": "2021-09-25 19:58:34",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "XBQ01",
     "JavLibrary": "javli73p74",
     "JavBus": "SW-611",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1sw611/1sw611pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1sw611/1sw611pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/xb/XBQ01.jpg",
+    "Init": "2021-09-25 19:58:34"
 }

@@ -30,9 +30,11 @@
     "Actors": [
         "\u5e0c\u5cf6\u3042\u3044\u308a"
     ],
-    "Modify": "2021-09-05 21:29:31",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "V850n",
     "JavLibrary": "javli6j7tq",
     "JavBus": "MEYD-544",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/meyd544/meyd544pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/meyd544/meyd544pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/v8/V850n.jpg",
+    "Init": "2021-09-05 21:29:31"
 }

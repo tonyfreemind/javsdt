@@ -30,9 +30,11 @@
     "Actors": [
         "\u6c38\u702c\u307f\u306a\u3082"
     ],
-    "Modify": "2021-09-05 15:17:41",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "kB2vm",
     "JavLibrary": "javli6a7r4",
     "JavBus": "ABP-878",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/118abp878/118abp878pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/118abp878/118abp878pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/kb/kB2vm.jpg",
+    "Init": "2021-09-05 15:17:41"
 }

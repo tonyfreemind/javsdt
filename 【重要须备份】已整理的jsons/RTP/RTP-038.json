@@ -31,9 +31,11 @@
         "\u6bd4\u5948\u307f\u3086",
         "\u9ebb\u91cc\u68a8\u590f"
     ],
-    "Modify": "2021-09-25 18:15:33",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "15Kw",
     "JavLibrary": "javliiblre",
     "JavBus": "RTP-038",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/118rtp038/118rtp038pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/118rtp038/118rtp038pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/15/15Kw.jpg",
+    "Init": "2021-09-25 18:15:33"
 }

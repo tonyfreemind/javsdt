@@ -30,9 +30,11 @@
     "Actors": [
         "\u3064\u307c\u307f"
     ],
-    "Modify": "2021-09-25 20:27:13",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "xAZ5B",
     "JavLibrary": "javliithta",
     "JavBus": "WANZ-329",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/wanz329/wanz329pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/wanz329/wanz329pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/xa/xAZ5B.jpg",
+    "Init": "2021-09-25 20:27:13"
 }

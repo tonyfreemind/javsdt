@@ -31,9 +31,11 @@
     "Actors": [
         "\u4e59\u8449\u30ab\u30ec\u30f3"
     ],
-    "Modify": "2022-02-15 19:14:16",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "Yzpeb",
     "JavLibrary": "javmezaj5m",
     "JavBus": "HND-882",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/hnd882/hnd882pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/hnd882/hnd882pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/yz/Yzpeb.jpg",
+    "Init": "2022-02-15 19:14:16"
 }

@@ -30,9 +30,11 @@
     "Actors": [
         "\u6238\u7530\u771f\u7434"
     ],
-    "Modify": "2021-09-25 19:39:06",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "ZNwZJ",
     "JavLibrary": "javli7bysi",
     "JavBus": "STAR-932",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1star932/1star932pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1star932/1star932pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/zn/ZNwZJ.jpg",
+    "Init": "2021-09-25 19:39:06"
 }

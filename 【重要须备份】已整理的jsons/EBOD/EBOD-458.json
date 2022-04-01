@@ -30,9 +30,11 @@
     "Actors": [
         "\u30c6\u30a3\u30a2"
     ],
-    "Modify": "2021-09-05 15:56:42",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "3x71",
     "JavLibrary": "javliity3a",
     "JavBus": "EBOD-458",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ebod458/ebod458pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ebod458/ebod458pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/3x/3x71.jpg",
+    "Init": "2021-09-05 15:56:42"
 }

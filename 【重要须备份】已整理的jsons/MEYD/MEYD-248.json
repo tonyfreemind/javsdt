@@ -31,9 +31,11 @@
     "Actors": [
         "\u672c\u7530\u5cac"
     ],
-    "Modify": "2021-09-21 08:05:29",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "AgMy",
     "JavLibrary": "javlikd2su",
     "JavBus": "MEYD-248",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/meyd248/meyd248pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/meyd248/meyd248pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/ag/AgMy.jpg",
+    "Init": "2021-09-21 08:05:29"
 }

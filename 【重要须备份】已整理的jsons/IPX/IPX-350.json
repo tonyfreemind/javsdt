@@ -31,9 +31,11 @@
         "\u5929\u6d77\u3064\u3070\u3055",
         "\u7fbd\u54b2\u307f\u306f\u308b"
     ],
-    "Modify": "2021-09-05 18:48:50",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "WdDvB",
     "JavLibrary": "javli6basq",
     "JavBus": "IPX-350",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ipx350/ipx350pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ipx350/ipx350pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/wd/WdDvB.jpg",
+    "Init": "2021-09-05 18:48:50"
 }

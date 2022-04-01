@@ -31,9 +31,11 @@
     "Actors": [
         "\u30c6\u30a3\u30a2"
     ],
-    "Modify": "2021-09-25 18:32:45",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "prJm",
     "JavLibrary": "javliizuzi",
     "JavBus": "SNIS-497",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/snis497/snis497pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/snis497/snis497pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/pr/prJm.jpg",
+    "Init": "2021-09-25 18:32:45"
 }

@@ -30,9 +30,11 @@
     "Actors": [
         "\u9752\u6728\u7f8e\u7a7a"
     ],
-    "Modify": "2021-09-05 21:38:57",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "QDDJ",
     "JavLibrary": "javlioler4",
     "JavBus": "MIAD-567",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/miad567/miad567pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/miad567/miad567pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/qd/QDDJ.jpg",
+    "Init": "2021-09-05 21:38:57"
 }

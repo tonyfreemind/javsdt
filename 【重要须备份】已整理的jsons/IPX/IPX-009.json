@@ -31,9 +31,11 @@
     "Actors": [
         "\u67da\u6708\u3072\u307e\u308f\u308a"
     ],
-    "Modify": "2021-09-05 18:37:10",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "2nmm",
     "JavLibrary": "javlikrhtu",
     "JavBus": "IPX-009",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ipx009/ipx009pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ipx009/ipx009pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/2n/2nmm.jpg",
+    "Init": "2021-09-05 18:37:10"
 }

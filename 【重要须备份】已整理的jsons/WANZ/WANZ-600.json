@@ -30,9 +30,11 @@
     "Actors": [
         "\u6804\u5ddd\u4e43\u4e9c"
     ],
-    "Modify": "2021-09-25 20:29:17",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "YwK2d",
     "JavLibrary": "javlikbe2a",
     "JavBus": "WANZ-600",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/wanz600/wanz600pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/wanz600/wanz600pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/yw/YwK2d.jpg",
+    "Init": "2021-09-25 20:29:17"
 }

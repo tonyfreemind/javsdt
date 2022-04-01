@@ -30,9 +30,11 @@
     "Actors": [
         "\u9ed2\u5d0e\u307f\u304b"
     ],
-    "Modify": "2021-09-25 18:10:15",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "MX37k",
     "JavLibrary": "javli73f2i",
     "JavBus": "PRED-137",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/pred137/pred137pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/pred137/pred137pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/mx/MX37k.jpg",
+    "Init": "2021-09-25 18:10:15"
 }

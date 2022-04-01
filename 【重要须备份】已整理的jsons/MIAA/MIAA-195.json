@@ -32,9 +32,11 @@
     "Actors": [
         "\u67cf\u6728\u80e1\u6843"
     ],
-    "Modify": "2021-09-05 21:37:32",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "E6zRA",
     "JavLibrary": "javli6tc64",
     "JavBus": "MIAA-195",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/miaa195/miaa195pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/miaa195/miaa195pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/e6/E6zRA.jpg",
+    "Init": "2021-09-05 21:37:32"
 }

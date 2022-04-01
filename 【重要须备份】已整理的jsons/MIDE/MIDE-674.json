@@ -31,9 +31,11 @@
     "Actors": [
         "\u6c34\u30c8\u3055\u304f\u3089"
     ],
-    "Modify": "2021-09-25 17:37:40",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "mQ1an",
     "JavLibrary": "javli6ba6m",
     "JavBus": "MIDE-674",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mide674/mide674pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mide674/mide674pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/mq/mQ1an.jpg",
+    "Init": "2021-09-25 17:37:40"
 }

@@ -31,9 +31,11 @@
     "Actors": [
         "\u6797\u3086\u306a"
     ],
-    "Modify": "2021-09-05 19:07:08",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "O2K1K",
     "JavLibrary": "javlijz46e",
     "JavBus": "JUX-386",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/jux386/jux386pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/jux386/jux386pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/o2/O2K1K.jpg",
+    "Init": "2021-09-05 19:07:08"
 }

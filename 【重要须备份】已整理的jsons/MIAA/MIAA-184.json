@@ -31,9 +31,11 @@
     "Actors": [
         "\u6839\u5c3e\u3042\u304b\u308a"
     ],
-    "Modify": "2021-09-05 21:36:49",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "dR23Q",
     "JavLibrary": "javli6j75y",
     "JavBus": "MIAA-184",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/miaa184/miaa184pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/miaa184/miaa184pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/dr/dR23Q.jpg",
+    "Init": "2021-09-05 21:36:49"
 }

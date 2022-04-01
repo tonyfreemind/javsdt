@@ -31,9 +31,11 @@
     "Actors": [
         "\u6cf7\u6cfd\u841d\u62c9"
     ],
-    "Modify": "2021-09-05 18:54:38",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "Rd2vz",
     "JavLibrary": "javlij3b2e",
     "JavBus": "IPZ-385",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ipz385/ipz385pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ipz385/ipz385pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/rd/Rd2vz.jpg",
+    "Init": "2021-09-05 18:54:38"
 }

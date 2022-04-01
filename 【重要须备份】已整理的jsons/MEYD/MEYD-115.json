@@ -30,9 +30,11 @@
     "Actors": [
         "\u3081\u3050\u308a"
     ],
-    "Modify": "2021-09-13 22:56:10",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "k4GDe",
     "JavLibrary": "javlillb5i",
     "JavBus": "MEYD-115",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/meyd115/meyd115pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/meyd115/meyd115pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/k4/k4GDe.jpg",
+    "Init": "2021-09-13 22:56:10"
 }

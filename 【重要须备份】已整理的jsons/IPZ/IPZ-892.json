@@ -31,9 +31,11 @@
     "Actors": [
         "\u9234\u6728\u5fc3\u6625"
     ],
-    "Modify": "2021-09-21 08:03:45",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "6dNXM",
     "JavLibrary": "javlikabry",
     "JavBus": "IPZ-892",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ipz892/ipz892pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ipz892/ipz892pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/6d/6dNXM.jpg",
+    "Init": "2021-09-21 08:03:45"
 }

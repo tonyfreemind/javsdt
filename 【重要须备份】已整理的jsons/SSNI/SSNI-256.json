@@ -31,9 +31,11 @@
     "Actors": [
         "\u8475\u53f8"
     ],
-    "Modify": "2021-09-25 18:49:01",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "3nKg1",
     "JavLibrary": "javli7d66y",
     "JavBus": "SSNI-256",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ssni256/ssni256pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ssni256/ssni256pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/3n/3nKg1.jpg",
+    "Init": "2021-09-25 18:49:01"
 }

@@ -31,9 +31,11 @@
     "Actors": [
         "\u5317\u5ddd\u3086\u305a"
     ],
-    "Modify": "2021-09-05 21:25:10",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "qD16",
     "JavLibrary": "javlikdusm",
     "JavBus": "MDTM-228",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/84mdtm228/84mdtm228pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/84mdtm228/84mdtm228pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/qd/qD16.jpg",
+    "Init": "2021-09-05 21:25:10"
 }

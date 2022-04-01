@@ -27,9 +27,11 @@
     "Actors": [
         "\u7f8e\u96ea\u3042\u308a\u3059"
     ],
-    "Modify": "2021-09-05 18:53:42",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "YNVb",
     "JavLibrary": "javliordr4",
     "JavBus": "IPZ-018",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ipz018/ipz018pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ipz018/ipz018pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/yn/YNVb.jpg",
+    "Init": "2021-09-05 18:53:42"
 }

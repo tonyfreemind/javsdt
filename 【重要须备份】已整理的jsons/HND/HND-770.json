@@ -31,9 +31,11 @@
     "Actors": [
         "\u594f\u97f3\u304b\u306e\u3093"
     ],
-    "Modify": "2021-09-25 16:00:19",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "P2002",
     "JavLibrary": "javli6rqrm",
     "JavBus": "HND-770",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/hnd770/hnd770pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/hnd770/hnd770pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/p2/P2002.jpg",
+    "Init": "2021-09-25 16:00:19"
 }

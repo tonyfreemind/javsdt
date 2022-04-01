@@ -31,9 +31,11 @@
     "Actors": [
         "\u6839\u5c3e\u3042\u304b\u308a"
     ],
-    "Modify": "2021-09-05 18:52:20",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "R249K",
     "JavLibrary": "javli6tc5e",
     "JavBus": "IPX-421",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ipx421/ipx421pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ipx421/ipx421pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/r2/R249K.jpg",
+    "Init": "2021-09-05 18:52:20"
 }

@@ -30,9 +30,11 @@
     "Actors": [
         "\u4e09\u4e0a\u60a0\u4e9c"
     ],
-    "Modify": "2021-09-25 18:37:44",
+    "Modify": "2022-04-01 22:01:12",
     "JavDb": "0eVA7",
     "JavLibrary": "javliklb5e",
     "JavBus": "SNIS-872",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/snis872/snis872pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/snis872/snis872pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/0e/0eVA7.jpg",
+    "Init": "2021-09-25 18:37:44"
 }

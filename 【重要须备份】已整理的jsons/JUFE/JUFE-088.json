@@ -31,9 +31,11 @@
     "Actors": [
         "\u67cf\u6728\u80e1\u6843"
     ],
-    "Modify": "2021-09-05 19:03:07",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "xZ18g",
     "JavLibrary": "javli6bare",
     "JavBus": "JUFE-088",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/jufe088/jufe088pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/jufe088/jufe088pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/xz/xZ18g.jpg",
+    "Init": "2021-09-05 19:03:07"
 }

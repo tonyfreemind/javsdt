@@ -262,9 +262,9 @@ class FileLathe(object):
 
         if self._need_rename_video:
             # region 得到新视频文件名
-            name_new = self._assemble_file_formula('_list_name_video')
+            name_new = f'{self._assemble_file_formula("_list_name_video")}{jav_file.Cd}'
             """新视频文件名，不带文件类型"""
-            path_new = f'{jav_file.Dir}{sep}{name_new}{jav_file.Cd}{jav_file.Ext}'
+            path_new = f'{jav_file.Dir}{sep}{name_new}{jav_file.Ext}'
             """视频文件的新路径"""
             # endregion
 
@@ -360,7 +360,7 @@ class FileLathe(object):
             # 目标文件夹还不存在
             if not os.path.exists(dir_new):
                 os.rename(jav_file.Dir, dir_new)
-                jav_file.Dir = dir_new  # 【更新】jav.dir
+                jav_file.Dir = dir_new  # 【更新】
             elif jav_file.Dir != dir_new:
                 # 文件夹已存在，但不是现在所处的文件夹
                 raise FileExistsError(f'重命名文件夹失败，已存在相同文件夹: {dir_new}')  # 【终止整理】
@@ -381,7 +381,6 @@ class FileLathe(object):
 
             # 移动视频
             os.rename(jav_file.Path, path_new)
-            jav_file.Dir = dir_target  # 【更新】jav.dir
             print('    >移动到独立文件夹完成')
 
             # 移动字幕
@@ -390,6 +389,8 @@ class FileLathe(object):
                 os.rename(jav_file.Path_subtitle, path_subtitle_new)  # 后续不会操作字幕文件了，不再更新字幕成员
                 print('    >移动字幕到独立文件夹')
             # endregion
+
+            jav_file.Dir = dir_target  # 【更新】jav.dir
 
     def collect_sculpture(self, jav_file: JavFile, jav_data: JavData):
         """
@@ -585,6 +586,9 @@ class FileLathe(object):
         # 如果 path_fanart = ABC-123.jpg，而用户已有有一个 abc-123，os.path.exists()也会判定成功，所以重命名一下
         os.rename(path_fanart, path_fanart)
         return False  # 已有，不需要下载
+
+    def path_fanart(self):
+        return self._path_fanart
 
     def crop_poster(self, jav_file: JavFile):
         """

@@ -31,9 +31,11 @@
     "Actors": [
         "\u7f8e\u96ea\u3042\u308a\u3059"
     ],
-    "Modify": "2021-09-05 18:55:54",
+    "Modify": "2022-04-01 22:01:11",
     "JavDb": "32dN",
     "JavLibrary": "javliiad6e",
     "JavBus": "IPZ-476",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ipz476/ipz476pl.jpg"
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ipz476/ipz476pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/32/32dN.jpg",
+    "Init": "2021-09-05 18:55:54"
 }
