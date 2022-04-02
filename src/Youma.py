@@ -54,7 +54,7 @@ while not input_key:
         fileExplorer.rest_and_check_choose(dir_choose)
     except CustomClassifyTargetDirError as error:
         input(f'请修正上述错误后重启程序：{str(error)}')
-    fileLathe.update_dir_classify_root(fileExplorer.dir_classify_root())
+    fileLathe.update_dir_classify_root(fileExplorer.dir_classify_root)
     # endregion
 
     # region （3.2）遍历所选文件夹内部进行处理
@@ -88,10 +88,10 @@ while not input_key:
         # endregion
 
         # region（3.2.2）开始处理每一部jav文件
-        for jav_file in fileExplorer.list_jav_files():
+        for jav_file in fileExplorer.list_jav_files:
 
             # region 显示当前进度
-            print(f'>> [{jav_file.No}/{fileExplorer.sum_all_videos()}]:{jav_file.Name}')
+            print(f'>> [{jav_file.No}/{fileExplorer.sum_all_videos}]:{jav_file.Name}')
             print(f'    >发现车牌: {jav_file.Car}')
             logger.update_relative_path(jav_file.Path[len(dir_choose):])  # 影片的相对于所选文件夹的路径，用于报错
             # endregion

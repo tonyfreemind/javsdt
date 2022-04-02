@@ -259,14 +259,17 @@ class FileExplorer(object):
 
     # region 成员只读
 
+    @property
     def dir_classify_root(self):
         """返回真实的归类根目录"""
         return self._dir_classify_root
 
+    @property
     def list_jav_files(self):
         """只读jav_files"""
         return self._list_jav_files
 
+    @property
     def sum_all_videos(self):
         """所选文件夹中包含的需处理的视频总数量"""
         return self._sum_videos_in_choose_dir
