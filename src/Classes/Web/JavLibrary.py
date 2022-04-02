@@ -84,9 +84,9 @@ class JavLibrary(JavWeb):
 
         # 标题
         title = re.search(r'title>([A-Z].+?) - JAVLibrary</title>', html).group(1)
-        print('    >Library标题:', jav_data.Title)
+        print('    >Library标题:', title)
         if not jav_data.Title:
-            jav_data.Title =title
+            jav_data.Title = title
 
         # 车牌
         if not jav_data.JavDb:

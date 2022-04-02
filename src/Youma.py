@@ -8,34 +8,33 @@ from Classes.Web.JavDb import JavDb
 from Classes.Web.JavLibrary import JavLibrary
 from Classes.Web.JavBus import JavBus
 from Classes.Web.Arzon import Arzon
-from Dmm import Dmm
-from FileExplorer import FileExplorer
-from FileAnalyzer import FileAnalyzer
-from FileLathe import FileLathe
-from MyLogger import MyLogger
-from Baidu import Translator
-
-from Static.Config import Ini
+from Classes.Web.Dmm import Dmm
+from Classes.Web.Baidu import Translator
+from Classes.Handler.FileExplorer import FileExplorer
+from Classes.Handler.FileAnalyzer import FileAnalyzer
+from Classes.Handler.FileLathe import FileLathe
+from Classes.Handler.MyLogger import MyLogger
+from Classes.Static.Config import Ini
 from Classes.Model.JavData import JavData
-from Enums import ScrapeStatusEnum
-from Errors import TooManyDirectoryLevelsError, SpecifiedUrlError, CustomClassifyTargetDirError, DownloadFanartError
-from Static.Const import Const
-
-from User import choose_directory
+from Classes.Static.Enums import ScrapeStatusEnum
+from Classes.Static.Errors import TooManyDirectoryLevelsError, SpecifiedUrlError, \
+    CustomClassifyTargetDirError, DownloadFanartError
+from Classes.Static.Const import Const
+from Functions.Utils.User import choose_directory
 from Functions.Utils.JsonUtils import read_json_to_dict
 
 # region（1）准备全局工具
+logger = MyLogger()
 ini = Ini(Const.YOUMA)
 fileExplorer = FileExplorer(ini)
 fileAnalyzer = FileAnalyzer(ini)
+fileLathe = FileLathe(ini)
+translator = Translator(ini)
 javDb = JavDb(ini)
 javLibrary = JavLibrary(ini)
+dmm = Dmm(ini)
 javBus = JavBus(ini)
 arzon = Arzon(ini)
-dmm = Dmm(ini)
-translator = Translator(ini)
-fileLathe = FileLathe(ini)
-logger = MyLogger()
 # 当前程序文件夹 所处的 父文件夹路径 Todo 弄一个环境对象
 dir_pwd_father = os.path.dirname(os.getcwd())
 # endregion
@@ -87,7 +86,7 @@ while not input_key:
         fileExplorer.init_jav_file_episodes()
         # endregion
 
-        # region（3.2.2）开始处理每一部jav文件
+        # region 开始处理每一部jav文件
         for jav_file in fileExplorer.list_jav_files:
 
             # region 显示当前进度
@@ -104,15 +103,15 @@ while not input_key:
                 if os.path.exists(path_json):
                     # region 读取已有json
                     print(f'    >从本地json读取元数据: {path_json}')
-                    jav_model = JavData(**read_json_to_dict(path_json))
-                    genres = jav_model.Genres  # 特征需要单独拎出来加上“中文字幕”等
+                    jav_data = JavData(**read_json_to_dict(path_json))
+                    genres = jav_data.Genres  # 特征需要单独拎出来加上“中文字幕”等
                     # endregion
                 else:
                     # region 去网站获取
-                    jav_model = JavData()
+                    jav_data = JavData()
 
                     # region从javdb获取信息
-                    javDb.scrape(jav_file, jav_model)
+                    javDb.scrape(jav_file, jav_data)
                     # Todo找到一个才报警
                     if javDb.status is ScrapeStatusEnum.not_found:
                         logger.record_warn(f'javdb找不到该车牌的信息: {jav_file.Car}，')
@@ -121,19 +120,19 @@ while not input_key:
                     # endregion
 
                     # 从javlibrary获取信息
-                    status = javLibrary.scrape(jav_file, jav_model)
+                    status = javLibrary.scrape(jav_file, jav_data)
                     if status is ScrapeStatusEnum.not_found:
                         logger.record_warn(f'javlibrary找不到该车牌的信息: {jav_file.Car}，')
                     elif status is ScrapeStatusEnum.multiple_results:
                         logger.record_fail(f'javlibrary搜索到同车牌的不同视频: {jav_file.Car}，')
                     # endregion
 
-                    if not jav_model.JavDb and not jav_model.JavLibrary:
+                    if not jav_data.JavDb and not jav_data.JavLibrary:
                         logger.record_fail(f'Javdb和Javlibrary都找不到该车牌信息: {jav_file.Car}，')
                         continue  # 结束对该jav的整理
 
                     # 前往javbus查找【封面】【系列】【特征】.py
-                    status = javBus.scrape(jav_file, jav_model)
+                    status = javBus.scrape(jav_file, jav_data)
                     if status is ScrapeStatusEnum.multiple_results:
                         logger.record_warn(f'javbus搜索到同车牌的不同视频: {jav_file.Car}，')
                     elif status is ScrapeStatusEnum.not_found:
@@ -141,7 +140,7 @@ while not input_key:
                     # endregion
 
                     # region arzon找简介
-                    status = arzon.scrape(jav_file, jav_model)
+                    status = arzon.scrape(jav_file, jav_data)
                     url_search_arzon = f'https://www.arzon.jp/itemlist.html?t=&m=all&s=&q={jav_file.Car_search}'
                     if status is ScrapeStatusEnum.exist_but_no_want:
                         logger.record_warn(f'找不到简介，尽管arzon上有搜索结果: {url_search_arzon}，')
@@ -152,20 +151,20 @@ while not input_key:
                     # endregion
 
                     # 整合genres
-                    jav_model.Genres = list(set(jav_model.Genres))
-                    genres = list(jav_model.Genres)
+                    jav_data.Genres = list(set(jav_data.Genres))
+                    genres = list(jav_data.Genres)
 
-                    # 完善jav_model.CompletionStatus
-                    jav_model.prefect_completion_status()
+                    # 完善CompletionStatus
+                    jav_data.prefect_completion_status()
                     # endregion
 
-                # region（3.2.3）后续完善
+                # region 后续完善
                 # 如果用户 首次整理该片不存在path_json 或 如果这次整理用户正确地输入了翻译账户，则保存json
-                if not os.path.exists(path_json) or translator.prefect_zh(jav_model):
+                if not os.path.exists(path_json) or translator.prefect_zh(jav_data):
                     if not os.path.exists(dir_prefs_jsons):
                         os.makedirs(dir_prefs_jsons)
                     with open(path_json, 'w', encoding='utf-8') as f:
-                        json.dump(jav_model.__dict__, f, indent=4)
+                        json.dump(jav_data.__dict__, f, indent=4)
                     print(f'    >保存本地json成功: {path_json}')
 
                 # 完善jav_file
@@ -177,7 +176,7 @@ while not input_key:
                     genres.append('无码流出')
 
                 # 完善handler.dict_for_standard
-                fileLathe.prefect_dict_for_standard(jav_file, jav_model)
+                fileLathe.prefect_dict_for_standard(jav_file, jav_data)
 
                 # 1重命名视频
                 if path_new := fileLathe.rename_mp4(jav_file):
@@ -193,23 +192,32 @@ while not input_key:
                 logger.update_relative_path(f'{sep}{jav_file.Path.replace(dir_choose, "")}')  # 影片的相对于所选文件夹的路径，用于报错
 
                 # 4写入nfo【独特】
-                fileLathe.write_nfo(jav_file, jav_model, genres)
+                fileLathe.write_nfo(jav_file, jav_data, genres)
 
                 # 5需要两张封面图片【独特】
                 if fileLathe.need_fanart_poster():
-                    if fileLathe.need_download_fanart(jav_file):
-                        if javDb.download_picture(jav_model.CoverDb, fileLathe.path_fanart()) \
-                                or javBus.download_picture(jav_model.CoverBus, fileLathe.path_fanart()) \
-                                or dmm.download_picture(jav_model.CoverDmm, fileLathe.path_fanart()) \
-                                or javLibrary.download_picture(jav_model.CoverDmm, fileLathe.path_fanart()):
-                            pass
-                        else:
-                            raise DownloadFanartError
-
+                    # 如果需要下载图片，依次去各网站下载，成功则停止
+                    if (
+                            fileLathe.need_download_fanart(jav_file)
+                            and not javDb.download_picture(
+                        jav_data.CoverDb, fileLathe.path_fanart()
+                    )
+                            and not javBus.download_picture(
+                        jav_data.CoverBus, fileLathe.path_fanart()
+                    )
+                            and not dmm.download_picture(
+                        jav_data.CoverDmm, fileLathe.path_fanart()
+                    )
+                            and not javLibrary.download_picture(
+                        jav_data.CoverDmm, fileLathe.path_fanart()
+                    )
+                    ):
+                        raise DownloadFanartError
+                    # 裁剪生成poster
                     fileLathe.crop_poster(jav_file)
 
                 # 6收集演员头像【相同】
-                fileLathe.collect_sculpture(jav_file, jav_model)
+                fileLathe.collect_sculpture(jav_file, jav_data)
 
                 # 7归类影片，针对文件夹【相同】
                 fileLathe.classify_folder(jav_file)
@@ -229,7 +237,7 @@ while not input_key:
             except:
                 logger.record_fail(f'发生错误，如一直在该影片报错请截图并联系作者: {format_exc()}')
                 continue  # 【退出对该jav的整理】
-            # endregion
+                # endregion
     # endregion
 
     # 当前所选文件夹完成

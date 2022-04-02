@@ -113,7 +113,10 @@ class Translator(object):
             是否进行了翻译操作
         """
         # 翻译出中文标题和简介
-        if self._tran_id and self._tran_sk and not jav_data.TitleZh:
+        if jav_data.TitleZh:
+            return False  # 已经翻译过
+
+        if self._tran_id and self._tran_sk:
             jav_data.TitleZh = self.translate(jav_data.Title)
             sleep(0.9)
             jav_data.PlotZh = self.translate(jav_data.Plot)

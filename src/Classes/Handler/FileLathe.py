@@ -149,7 +149,7 @@ class FileLathe(object):
         """
         完善self._dict
 
-        用jav_file、jav_model中的原始数据完善self._dict
+        用jav_file、jav_data中的原始数据完善self._dict
 
         Args:
             jav_file: jav视频文件对象
@@ -381,7 +381,7 @@ class FileLathe(object):
 
             # 移动视频
             os.rename(jav_file.Path, path_new)
-            print('    >移动到独立文件夹完成')
+            print('    >移动视频到独立文件夹完成')
 
             # 移动字幕
             if jav_file.Subtitle:

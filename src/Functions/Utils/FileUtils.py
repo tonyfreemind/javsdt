@@ -48,7 +48,7 @@ def replace_os_invalid_char(src: str):
         '|': '#'
     }
     # return src.translate(str.maketrans(r'\/:*?"<>|', '##：#？#《》#'))
-    return src.translate(str.maketrans(dict_replace)).strip(' .')
+    return src.translate(str.maketrans(dict_replace)).strip(' .') if src not in dict_replace else src
 
 
 def replace_line_break(src: str):

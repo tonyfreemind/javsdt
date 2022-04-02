@@ -56,7 +56,7 @@ class JavDb(JavWeb):
         item = list_results[list_fit_index[0]][0] # 默认用第一个搜索结果
         status = ScrapeStatusEnum.success if len(list_fit_index) == 1 else ScrapeStatusEnum.multiple_results
         self._update_item_status(item, status)
-        return self._get_html('    >获取系列:', self._url_item(item))  # bus找到了
+        return self._get_html('    >获取信息:', self._url_item(item))  # bus找到了
         # endregion
 
     def _url_item(self, item: str):
@@ -70,7 +70,7 @@ class JavDb(JavWeb):
         # 车牌，标题 <title> ID-020 可愛すぎる魔法少女5人とパジャマで中出し性交 | JavDB 成人影片數據庫 </title>
         car_title = re.search(r'title> (.+) \| JavDB', html).group(1)
         jav_data.Car, jav_data.Title = car_title.split(' ', 1)
-        print('    >Db标题:', jav_data.Title)
+        print('    >Db标题:', car_title)
 
         # 封面 fancybox="gallery" href="https://jdbimgs.com/covers/9a/9AeQg.jpg">
         coverg = re.search(r'img src="(.+?)" class="video-cover', html)
