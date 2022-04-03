@@ -13,28 +13,31 @@
     "Studio": "IDEA POCKET",
     "Publisher": "\u30c6\u30a3\u30c3\u30b7\u30e5",
     "Score": 90,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipx493/ipx493pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/o7/O7MDO.jpg",
+    "CoverLibrary": "",
     "CoverBus": "7nu6_b.jpg",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ipx493/ipx493pl.jpg",
     "CutType": 1,
-    "Javdb": "O7MDO",
-    "Javlibrary": "javli6zl2u",
-    "Javbus": "IPX-493",
+    "JavDb": "O7MDO",
+    "JavLibrary": "javli6zl2u",
+    "JavBus": "IPX-493",
     "Arzon": "1568482",
     "CompletionStatus": 6,
     "Version": 1,
     "Genres": [
-        "\u53e3\u4ea4",
-        "\u5355\u4f53\u4f5c\u54c1",
-        "\u6570\u4f4d\u9a6c\u8d5b\u514b",
-        "\u4e2d\u51fa",
-        "\u59d0\u59d0",
-        "\u65e0\u7801\u7834\u89e3",
         "\u4e3b\u89c2\u89c6\u89d2",
         "\u8fde\u88e4\u889c",
-        "\u5973\u4e0a\u53f8"
+        "\u6570\u4f4d\u9a6c\u8d5b\u514b",
+        "\u4e2d\u51fa",
+        "\u5973\u4e0a\u53f8",
+        "\u5355\u4f53\u4f5c\u54c1",
+        "\u65e0\u7801\u7834\u89e3",
+        "\u59d0\u59d0",
+        "\u53e3\u4ea4"
     ],
     "Actors": [
         "\u677e\u4e0b\u7d17\u6804\u5b50"
     ],
-    "Modify": "2022-02-06 01:51:49"
+    "Init": "2022-04-03 20:25:15",
+    "Modify": "2022-04-03 20:25:28"
 }

@@ -1,0 +1,37 @@
+{
+    "Car": "IPTD-800",
+    "CarOrigin": "iptd800",
+    "Series": "",
+    "Title": "\u50d5\u306e\u5f7c\u5973\u306fRio\u5148\u751f",
+    "TitleZh": "\u6211\u7684\u5973\u670b\u53cb\u662fRio\u8001\u5e08",
+    "Plot": "",
+    "PlotZh": "",
+    "Review": "",
+    "Release": "2011-11-01",
+    "Runtime": 170,
+    "Director": "\u30ad\u30e7\u30a6\u30bb\u30a4",
+    "Studio": "IDEA POCKET",
+    "Publisher": "\u30c6\u30a3\u30c3\u30b7\u30e5",
+    "Score": 94,
+    "CoverDb": "https://jdbimgs.com/covers/pp/PpEr.jpg",
+    "CoverLibrary": "",
+    "CoverBus": "2rci_b.jpg",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/iptd800/iptd800pl.jpg",
+    "CutType": 1,
+    "JavDb": "PpEr",
+    "JavLibrary": "javlidr4qq",
+    "JavBus": "IPTD-800",
+    "Arzon": "",
+    "CompletionStatus": 6,
+    "Version": 1,
+    "Genres": [
+        "\u4e3b\u89c2\u89c6\u89d2",
+        "\u5973\u6559\u5e08",
+        "\u5355\u4f53\u4f5c\u54c1"
+    ],
+    "Actors": [
+        "Rio"
+    ],
+    "Init": "2022-04-03 19:50:55",
+    "Modify": "2022-04-03 19:51:04"
+}

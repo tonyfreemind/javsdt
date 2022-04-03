@@ -12,26 +12,29 @@
     "Director": "\u9e92\u9e9f",
     "Studio": "IDEA POCKET",
     "Publisher": "\u30c6\u30a3\u30c3\u30b7\u30e5",
-    "Score": 84,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipx053/ipx053pl.jpg",
+    "Score": 83,
+    "CoverDb": "https://jdbimgs.com/covers/g0/g0Kg7.jpg",
+    "CoverLibrary": "",
     "CoverBus": "69vs_b.jpg",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ipx053/ipx053pl.jpg",
     "CutType": 1,
-    "Javdb": "g0Kg7",
-    "Javlibrary": "javli4r2tm",
-    "Javbus": "IPX-053",
+    "JavDb": "g0Kg7",
+    "JavLibrary": "javli4r2tm",
+    "JavBus": "IPX-053",
     "Arzon": "1552319",
     "CompletionStatus": 6,
     "Version": 1,
     "Genres": [
-        "\u7f8e\u5c11\u5973",
-        "\u5355\u4f53\u4f5c\u54c1",
         "\u6570\u4f4d\u9a6c\u8d5b\u514b",
-        "\u989c\u5c04",
         "\u9ad8\u4e2d\u751f",
+        "\u5355\u4f53\u4f5c\u54c1",
+        "\u989c\u5c04",
+        "\u7f8e\u5c11\u5973",
         "\u53e3\u4ea4"
     ],
     "Actors": [
         "\u660e\u91cc\u3064\u3080\u304e"
     ],
-    "Modify": "2022-02-09 21:55:50"
+    "Init": "2022-04-03 19:59:19",
+    "Modify": "2022-04-03 19:59:41"
 }
