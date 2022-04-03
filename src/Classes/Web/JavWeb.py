@@ -5,15 +5,15 @@ from typing import Dict, List
 from requests.exceptions import ProxyError, SSLError
 from traceback import format_exc
 
-from Car import extract_pref, extract_suf
 from Classes.Model.JavData import JavData
 from Classes.Model.JavFile import JavFile
-from Picture import check_picture
-from Static.Const import Const
-from Static.Config import Ini
-from Enums import ScrapeStatusEnum
-from Errors import SpecifiedUrlError
+from Classes.Static.Const import Const
+from Classes.Static.Config import Ini
+from Classes.Static.Enums import ScrapeStatusEnum
+from Classes.Static.Errors import SpecifiedUrlError
 from Functions.Metadata.Genre import better_dict_genres
+from Functions.Metadata.Picture import check_picture
+from Functions.Metadata.Car import extract_pref, extract_suf
 
 
 class JavWeb(object):
@@ -203,7 +203,7 @@ class JavWeb(object):
                 # 正常响应
                 return rsp_content
             elif self._need_update_headers(rsp_content):
-                # 网站遇到某些特殊情况需要更新headers，比如cloudflare、18岁验证
+                # 网站遇到某些特殊情况要更新headers，比如cloudflare、18岁验证
                 print('    >打开网页失败，需要更新headers...')
                 self._update_headers()
                 continue
@@ -253,7 +253,7 @@ class JavWeb(object):
 
     @staticmethod
     def _confirm_cloudflare(html: str):
-        return bool(re.search(r'Cloudflare', html))
+        return bool(re.search(r'Cloudflare', html, re.I))
 
     @staticmethod
     def _check_result_cars(jav_file: JavFile, list_cars: List[str]):
@@ -371,6 +371,17 @@ class JavWeb(object):
     @staticmethod
     def _reset_special():
         pass
+
+    @staticmethod
+    def _init_headers(cf_clearance: str, url: str = ''):
+        """
+        更新headers
+
+        Args:
+            cf_clearance: cloudflare通行证
+            url: host
+        """
+        raise AttributeError(Const.NO_IMPLEMENT_ERROR)
 
     # endregion
 

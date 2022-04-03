@@ -16,7 +16,7 @@
     "CoverDb": "https://jdbimgs.com/covers/1a/1A1m9.jpg",
     "CoverLibrary": "",
     "CoverBus": "61v6_b.jpg",
-    "CoverDmm": "//pics.dmm.co.jp/mono/movie/adult/snis940/snis940pl.jpg",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/snis940/snis940pl.jpg",
     "CutType": 1,
     "JavDb": "1A1m9",
     "JavLibrary": "javlikl6tq",
@@ -25,16 +25,16 @@
     "CompletionStatus": 6,
     "Version": 1,
     "Genres": [
-        "\u8584\u9a6c\u8d5b\u514b",
-        "\u5355\u4f53\u4f5c\u54c1",
-        "\u5973\u4ec6",
         "\u7f8e\u5c11\u5973",
         "\u5de8\u4e73",
+        "\u8584\u9a6c\u8d5b\u514b",
+        "\u5973\u4ec6",
+        "\u5355\u4f53\u4f5c\u54c1",
         "\u4e73\u6db2"
     ],
     "Actors": [
         "\u4e09\u4e0a\u60a0\u4e9c"
     ],
-    "Init": "2022-04-03 17:36:19",
-    "Modify": "2022-04-03 17:36:42"
+    "Init": "2022-04-03 18:20:14",
+    "Modify": "2022-04-03 18:20:24"
 }

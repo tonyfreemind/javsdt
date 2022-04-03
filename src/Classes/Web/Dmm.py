@@ -1,7 +1,6 @@
 # -*- coding:utf-8 -*-
-
+from Classes.Static.Config import Ini
 from Classes.Web.JavWeb import JavWeb
-from Static.Config import Ini
 
 
 class Dmm(JavWeb):

@@ -1,3 +1,4 @@
+# -*- coding:utf-8 -*-
 import os
 from os import sep
 from shutil import copyfile
@@ -9,13 +10,13 @@ from Classes.Handler.MyLogger import record_video_old
 from Classes.Static.Errors import TooManyDirectoryLevelsError
 from Classes.Static.Const import Const
 from Classes.Static.Config import Ini
-from Picture import check_picture, crop_poster_youma, add_watermark_subtitle, add_watermark_divulge
-from Functions.Utils.FileUtils import replace_xml_invalid_char, replace_os_invalid_char
+from Functions.Metadata.Picture import check_picture, crop_poster_youma, add_watermark_subtitle, add_watermark_divulge
+from Functions.Utils.FileUtils import replace_xml_invalid_char, replace_os_invalid_char, dir_father
 from Functions.Utils.LittleUtils import cut_str, update_ini_file_value_plus_one
 
 
 class FileLathe(object):
-    """ 本地文件规范化"""
+    """本地文件规范化"""
 
     def __init__(self, ini: Ini):
 
@@ -278,45 +279,48 @@ class FileLathe(object):
         path_return = ''
         """返回的路径\n\n如果重命名操作不成功，将目标视频文件名返回，提醒用户自行重命名"""
 
-        if self._need_rename_video:
-            # region 得到新视频文件名
-            name_new = f'{self._assemble_file_formula("_list_name_video")}{jav_file.Cd}'
-            """新视频文件名，不带文件类型"""
-            path_new = f'{jav_file.Dir}{sep}{name_new}{jav_file.Ext}'
-            """视频文件的新路径"""
-            # endregion
+        if not self._need_rename_video:
+            return path_return
 
-            # region 重命名视频文件
-            if not os.path.exists(path_new):
-                # 不存在同路径视频文件
+        # region 得到新视频文件名
+        name_new = f'{self._assemble_file_formula("_list_name_video")}{jav_file.Cd}'
+        """新视频文件名，不带文件类型"""
+        path_new = f'{jav_file.Dir}{sep}{name_new}{jav_file.Ext}'
+        """视频文件的新路径"""
+        # endregion
+
+        # region 重命名视频文件
+        if not os.path.exists(path_new):
+            # 不存在同路径视频文件
+            os.rename(jav_file.Path, path_new)
+            record_video_old(jav_file.Path, path_new)
+        elif jav_file.Path.upper() == path_new.upper():
+            # 已存在目标文件，且就是现在的文件
+            try:
                 os.rename(jav_file.Path, path_new)
-                record_video_old(jav_file.Path, path_new)
-            elif jav_file.Path.upper() == path_new.upper():
-                # 已存在目标文件，且就是现在的文件
-                try:
-                    os.rename(jav_file.Path, path_new)
-                # windows本地磁盘，“abc-123.mp4”重命名为“abc-123.mp4”或“ABC-123.mp4”没问题，但有用户反映，挂载的磁盘会报错“file exists error”
-                except FileExistsError:
-                    # 提醒用户后续自行更改
-                    path_return = path_new
-                    # 注意：即使重命名操作没有成功，但之后的操作（归类、保存nfo、下载图片等）仍然围绕预期文件名来命名
-            # 存在目标文件，但不是现在的文件。
-            else:
-                raise FileExistsError(f'重命名影片失败，重复的影片，已经有相同文件名的视频了: {path_new}')  # 【终止整理】
-            self._dict[Const.VIDEO] = name_new  # 【更新】
-            jav_file.Name = f'{name_new}{jav_file.Ext}'  # 【更新】
-            print(f'    >重命名视频{jav_file.Cd}完成')
-            # endregion
+            # windows本地磁盘，“abc-123.mp4”重命名为“abc-123.mp4”或“ABC-123.mp4”没问题，但有用户反映，挂载的磁盘会报错“file exists error”
+            except FileExistsError:
+                # 提醒用户后续自行更改
+                path_return = path_new
+                # 注意：即使重命名操作没有成功，但之后的操作（归类、保存nfo、下载图片等）仍然围绕预期文件名来命名
+        # 存在目标文件，但不是现在的文件。
+        else:
+            raise FileExistsError(f'重命名影片失败，重复的影片，已经有相同文件名的视频了: {path_new}')  # 【终止整理】
+        self._dict[Const.VIDEO] = name_new  # 【更新】
+        jav_file.Name = f'{name_new}{jav_file.Ext}'  # 【更新】
+        print(f'    >重命名视频{jav_file.Cd}完成')
+        # endregion
 
-            # region 重命名字幕文件
-            if jav_file.Subtitle and self._need_rename_subtitle:
-                subtitle_new = f'{name_new}{jav_file.Ext_subtitle}'  # 新字幕文件名
-                path_subtitle_new = f'{jav_file.Dir}{sep}{subtitle_new}'  # 字幕文件的新路径
-                if jav_file.Path_subtitle != path_subtitle_new:
-                    os.rename(jav_file.Path_subtitle, path_subtitle_new)
-                    jav_file.Subtitle = subtitle_new  # 【更新】
-                print('    >重命名字幕完成')
-            # endregion
+        # region 重命名字幕文件
+        if jav_file.Subtitle and self._need_rename_subtitle:
+            subtitle_new = f'{name_new}{jav_file.Ext_subtitle}'  # 新字幕文件名
+            path_subtitle_new = f'{jav_file.Dir}{sep}{subtitle_new}'  # 字幕文件的新路径
+            if jav_file.Path_subtitle != path_subtitle_new:
+                os.rename(jav_file.Path_subtitle, path_subtitle_new)
+                jav_file.Subtitle = subtitle_new  # 【更新】
+            print('    >重命名字幕完成')
+        # endregion
+
         return path_return
 
     def classify_files(self, jav_file: JavFile):
@@ -372,18 +376,19 @@ class FileLathe(object):
         """新的所在文件夹名称"""
 
         # 视频已经在独立文件夹中，且当前视频是该车牌的最后一集，他的兄弟姐妹已经处理完成，直接重命名当前文件夹，无需新建文件夹。
-        if jav_file.Bool_in_separate_folder and jav_file.Episode == jav_file.Sum_all_episodes:
-            # region 直接重命名现有文件夹
-            dir_new = f'{os.path.dirname(jav_file.Dir)}{sep}{folder_new}'  # 新的视频文件所在文件夹路径
-            # 目标文件夹还不存在
-            if not os.path.exists(dir_new):
-                os.rename(jav_file.Dir, dir_new)
-                jav_file.Dir = dir_new  # 【更新】
-            elif jav_file.Dir != dir_new:
-                # 文件夹已存在，但不是现在所处的文件夹
-                raise FileExistsError(f'重命名文件夹失败，已存在相同文件夹: {dir_new}')  # 【终止整理】
-            print('    >重命名文件夹完成')
-            # endregion
+        if jav_file.Bool_in_separate_folder:
+            if jav_file.Episode == jav_file.Sum_all_episodes:
+                # region 直接重命名现有文件夹
+                dir_new = f'{dir_father(jav_file.Dir)}{sep}{folder_new}'  # 新的视频文件所在文件夹路径
+                # 目标文件夹还不存在
+                if not os.path.exists(dir_new):
+                    os.rename(jav_file.Dir, dir_new)
+                    jav_file.Dir = dir_new  # 【更新】
+                elif jav_file.Dir.upper() != dir_new.upper():
+                    # 文件夹已存在，但不是现在所处的文件夹
+                    raise FileExistsError(f'重命名文件夹失败，已存在相同文件夹: {dir_new}')  # 【终止整理】
+                print('    >重命名文件夹完成')
+                # endregion
         else:
             # region 创建新的独立文件夹，再移动
             dir_target = f'{jav_file.Dir}{sep}{folder_new}'
@@ -605,9 +610,6 @@ class FileLathe(object):
         os.rename(path_fanart, path_fanart)
         return False  # 已有，不需要下载
 
-    def path_fanart(self):
-        return self._path_fanart
-
     def crop_poster(self, jav_file: JavFile):
         """
         整出poster，加上条幅
@@ -656,3 +658,11 @@ class FileLathe(object):
                     print(f'\n“{Const.INI_ACTOR}”成功！')
                 else:
                     input(f'\n请打开“{Const.EXE_CREATE_INI}”创建丢失的程序组件!再重启程序')
+
+    # region 只读
+
+    @property
+    def path_fanart(self):
+        return self._path_fanart
+
+    # endregion

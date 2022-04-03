@@ -1,4 +1,5 @@
 # -*- coding:utf-8 -*-
+import os.path
 from os import name as system_name
 
 
@@ -6,7 +7,7 @@ def replace_xml_invalid_char(src):
     """
     替换xml中的不允许的特殊字符，替换制表符，去除首尾空格
 
-    xml需要转义【&<>"'】，但双引号和单引号似乎被什么操作变得不影响
+    xml需要转义【&<>"'】，但双引号和单引号似乎被什么操作变得不影响。不处理【空格】元素。
 
     Args:
         src: 原字符串，例如文件名、简介、标题、导演姓名等
@@ -28,7 +29,9 @@ def replace_xml_invalid_char(src):
 
 def replace_os_invalid_char(src: str):
     """
-    替换windows路径不允许的特殊字符 \/:*?"<>|，还有首尾的空格和.
+    替换windows路径不允许的特殊字符 \/:*?"<>|
+
+    如果src是斜杠，不作处理，它是正常的路径分隔符
 
     Args:
         src: 原字符串，文件名、简介、标题、导演姓名等
@@ -71,3 +74,9 @@ def replace_line_break(src: str):
         .replace('\t', '') \
         .replace('\r', '') \
         .strip()
+
+
+def dir_father(path: str):
+    """所处文件夹完整路径"""
+    name = os.path.dirname(path)
+    return name[:-1] if name.endswith('\\') else name

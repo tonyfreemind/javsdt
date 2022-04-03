@@ -16,7 +16,7 @@
     "CoverDb": "https://jdbimgs.com/covers/jp/JPx8.jpg",
     "CoverLibrary": "",
     "CoverBus": "jo6_b.jpg",
-    "CoverDmm": "//pics.dmm.co.jp/mono/movie/adult/1sw028/1sw028pl.jpg",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1sw028/1sw028pl.jpg",
     "CutType": 1,
     "JavDb": "JPx8",
     "JavLibrary": "javliadfy4",
@@ -25,9 +25,9 @@
     "CompletionStatus": 6,
     "Version": 1,
     "Genres": [
+        "\u6027\u9a9a\u6270",
         "\u541e\u7cbe",
         "\u6f6e\u5439",
-        "\u6027\u9a9a\u6270",
         "\u4f01\u753b"
     ],
     "Actors": [
@@ -35,6 +35,6 @@
         "\u6c34\u6ca2\u3048\u307f\u308a",
         "\u6625\u65e5\u3082\u306a"
     ],
-    "Init": "2022-04-03 17:37:12",
-    "Modify": "2022-04-03 17:37:22"
+    "Init": "2022-04-03 18:21:05",
+    "Modify": "2022-04-03 18:21:14"
 }

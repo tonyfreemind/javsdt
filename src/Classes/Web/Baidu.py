@@ -6,7 +6,7 @@ from time import sleep, time
 # from traceback import format_exc
 # from aip import AipBodyAnalysis  # 百度ai人体分析
 
-from Static.Config import Ini
+from Classes.Static.Config import Ini
 
 
 class Translator(object):
@@ -120,7 +120,7 @@ class Translator(object):
             jav_data.TitleZh = self.translate(jav_data.Title)
             sleep(0.9)
             jav_data.PlotZh = self.translate(jav_data.Plot)
-            print('    >翻译plot成功')
+            print('    >翻译title、plot成功')
             return True
         else:
             print('    >你没有正确填写百度翻译api账户!')

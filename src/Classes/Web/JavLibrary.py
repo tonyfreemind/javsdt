@@ -2,12 +2,12 @@
 import re
 # from traceback import format_exc
 
-from Static.Config import Ini
-from Enums import ScrapeStatusEnum
+from Classes.Static.Config import Ini
+from Classes.Static.Const import Const
+from Classes.Static.Enums import ScrapeStatusEnum
 from Classes.Model.JavData import JavData
 from Classes.Model.JavFile import JavFile
 from Classes.Web.JavWeb import JavWeb
-from Static.Const import Const
 from Functions.Metadata.Genre import prefect_genres
 from Functions.Utils.LittleUtils import update_ini_file_value
 from Functions.Utils.FileUtils import replace_line_break
@@ -17,17 +17,12 @@ class JavLibrary(JavWeb):
     """
     javlibrary刮削工具
 
-    获取影片的大部分信息，与javdb互补
+    获取影片的大部分信息，补充db没取到的信息
     """
 
     def __init__(self, settings: Ini):
         appoint_symbol = '图书馆'
-        headers = {
-            'Cookie': f'cf_clearance={settings.library_cf_clearance};',
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome'
-                          '/86.0.4240.198 Safari/537.36',
-            'Host': 'www.javlibrary.com'
-        }
+        headers = self._init_headers(settings.library_cf_clearance, settings.url_library)
         super().__init__(settings, appoint_symbol, headers)
 
     # region 重写父类方法
@@ -107,9 +102,8 @@ class JavLibrary(JavWeb):
         if coverg := re.search(r'src="(.+?)" width="600', html):
             cover_library = coverg.group(1)
             if not cover_library.startswith('http'):
-                jav_data.CoverDmm = cover_library
+                jav_data.CoverDmm = f'http:{cover_library}'
             else:
-                cover_library = f'http:{cover_library}'
                 jav_data.CoverLibrary = cover_library
             jav_data.CarOrigin = cover_library.split('/')[-2]  # library上图片是dmm的，切割一下，是车牌在dmm的id
 
@@ -168,8 +162,17 @@ class JavLibrary(JavWeb):
 
     def _update_headers(self):
         new = input('    >请输入新的javlibrary cf_clearance: ')
-        self._requests.headers = self._init_headers(new)
+        self._requests.headers = self._init_headers(new, self._URL)
         update_ini_file_value(Const.INI, Const.NODE_OTHER, Const.LIBRARY_CF_CLEARANCE, new)
+
+    @staticmethod
+    def _init_headers(cf_clearance: str, url: str = ''):
+        return {
+            'Cookie': f'cf_clearance={cf_clearance};',
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
+                          '86.0.4240.198 Safari/537.36',
+            'Host': re.search('(www.+com)', url).group(1)
+        }
 
     # endregion
 
@@ -191,14 +194,5 @@ class JavLibrary(JavWeb):
         if review:
             review = f'//{review}'
         return review
-
-    @staticmethod
-    def _init_headers(cf_clearance: str):
-        return {
-            'Cookie': f'cf_clearance={cf_clearance};',
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
-                          '86.0.4240.198 Safari/537.36',
-            'Host': 'www.javlibrary.com'
-        }
 
     # endregion

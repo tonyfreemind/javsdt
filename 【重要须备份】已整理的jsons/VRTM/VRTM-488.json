@@ -16,7 +16,7 @@
     "CoverDb": "https://jdbimgs.com/covers/zx/Zxgzq.jpg",
     "CoverLibrary": "",
     "CoverBus": "7lna_b.jpg",
-    "CoverDmm": "//pics.dmm.co.jp/mono/movie/adult/h_910vrtm488/h_910vrtm488pl.jpg",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/h_910vrtm488/h_910vrtm488pl.jpg",
     "CutType": 1,
     "JavDb": "Zxgzq",
     "JavLibrary": "javli63s6e",
@@ -25,23 +25,23 @@
     "CompletionStatus": 6,
     "Version": 1,
     "Genres": [
-        "\u8361\u5987",
-        "\u77ed\u88d9",
-        "\u7f8e\u81c0",
         "\u6545\u4e8b\u96c6",
         "\u8fc7\u819d\u889c",
-        "\u4e2d\u51fa",
         "\u5185\u8863",
         "\u5404\u79cd\u804c\u4e1a",
+        "\u7f8e\u81c0",
+        "\u604b\u817f\u7656",
+        "\u77ed\u88d9",
+        "\u4e2d\u51fa",
         "\u59d0\u59d0",
         "\u540e\u5165",
-        "\u8db3\u4ea4",
-        "\u604b\u817f\u7656"
+        "\u8361\u5987",
+        "\u8db3\u4ea4"
     ],
     "Actors": [
         "\u901a\u91ce\u672a\u5e06",
         "\u5927\u6d66\u771f\u5948\u7f8e"
     ],
-    "Init": "2022-04-03 18:00:58",
-    "Modify": "2022-04-03 18:01:05"
+    "Init": "2022-04-03 18:21:33",
+    "Modify": "2022-04-03 18:21:40"
 }

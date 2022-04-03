@@ -1,6 +1,6 @@
 # -*- coding:utf-8 -*-
-from Datetime import time_now
-from Enums import CompletionStatusEnum, CutTypeEnum
+from Classes.Static.Enums import CompletionStatusEnum, CutTypeEnum
+from Functions.Utils.Datetime import time_now
 from Functions.Metadata.Car import extract_pref
 
 

@@ -16,7 +16,7 @@
     "CoverDb": "https://jdbimgs.com/covers/7y/7Y1nB.jpg",
     "CoverLibrary": "",
     "CoverBus": "7l89_b.jpg",
-    "CoverDmm": "//pics.dmm.co.jp/mono/movie/adult/1stars213/1stars213pl.jpg",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1stars213/1stars213pl.jpg",
     "CutType": 1,
     "JavDb": "7Y1nB",
     "JavLibrary": "javli63cze",
@@ -25,14 +25,14 @@
     "CompletionStatus": 6,
     "Version": 1,
     "Genres": [
-        "\u7f8e\u5c11\u5973",
-        "\u5355\u4f53\u4f5c\u54c1",
+        "\u9996\u6b21\u4eae\u76f8",
         "\u6f6e\u5439",
-        "\u9996\u6b21\u4eae\u76f8"
+        "\u7f8e\u5c11\u5973",
+        "\u5355\u4f53\u4f5c\u54c1"
     ],
     "Actors": [
         "\u671d\u6bd4\u5948\u306a\u306a\u305b"
     ],
-    "Init": "2022-04-03 17:36:51",
-    "Modify": "2022-04-03 17:37:08"
+    "Init": "2022-04-03 18:20:46",
+    "Modify": "2022-04-03 18:20:57"
 }

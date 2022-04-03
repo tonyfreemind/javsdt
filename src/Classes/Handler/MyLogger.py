@@ -1,5 +1,4 @@
-from time import strftime, localtime, time
-
+# -*- coding:utf-8 -*-
 from Classes.Static.Const import Const
 from Datetime import time_now
 
@@ -102,13 +101,13 @@ class MyLogger(object):
         self._path_relative = path_new
 
 
-def record_video_old(name_new: str, name_old: str):
+def record_video_old(name_old: str, name_new: str):
     """
     记录新旧文件名
 
     Args:
-        name_new: 新文件名
         name_old: 旧文件名
+        name_new: 新文件名
     """
     msg = f'<<<< {name_old}\n' \
           f'>>>> {name_new}\n'

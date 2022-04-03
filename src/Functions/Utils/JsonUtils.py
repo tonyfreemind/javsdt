@@ -2,8 +2,8 @@
 import os
 from json import load, dump
 
-from Datetime import time_now
-from User import choose_directory
+from Functions.Utils.Datetime import time_now
+from Functions.Utils.User import choose_directory
 
 
 def read_json_to_dict(path):

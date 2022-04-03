@@ -20,7 +20,8 @@ from Classes.Static.Enums import ScrapeStatusEnum
 from Classes.Static.Errors import TooManyDirectoryLevelsError, SpecifiedUrlError, \
     CustomClassifyTargetDirError, DownloadFanartError
 from Classes.Static.Const import Const
-from Datetime import time_now
+from FileUtils import dir_father
+from Functions.Utils.Datetime import time_now
 from Functions.Utils.User import choose_directory
 from Functions.Utils.JsonUtils import read_json_to_dict
 
@@ -37,7 +38,7 @@ dmm = Dmm(ini)
 javBus = JavBus(ini)
 arzon = Arzon(ini)
 # 当前程序文件夹 所处的 父文件夹路径 Todo 弄一个环境对象
-dir_pwd_father = os.path.dirname(os.getcwd())
+dir_pwd_father = dir_father(os.getcwd())
 # endregion
 
 # region（2）整理程序
@@ -77,7 +78,7 @@ while not input_key:
         # 获取当前一级文件夹内，包含的jav
         fileExplorer.find_jav_files(list_sub_files)
         """存放: 需要整理的jav文件对象jav_file"""
-        if not fileExplorer.len_list_jav_files():
+        if not fileExplorer.len_list_jav_files:
             continue  # 没有jav，则跳出当前所处文件夹
 
         # 判定当前所处文件夹是否是独立文件夹，独立文件夹是指该文件夹仅用来存放该影片，而不是大杂烩文件夹，是后期移动剪切操作的重要依据
@@ -206,18 +207,10 @@ while not input_key:
                     # 如果需要下载图片，依次去各网站下载，成功则停止
                     if (
                             fileLathe.need_download_fanart(jav_file)
-                            and not javDb.download_picture(
-                        jav_data.CoverDb, fileLathe.path_fanart()
-                    )
-                            and not javBus.download_picture(
-                        jav_data.CoverBus, fileLathe.path_fanart()
-                    )
-                            and not dmm.download_picture(
-                        jav_data.CoverDmm, fileLathe.path_fanart()
-                    )
-                            and not javLibrary.download_picture(
-                        jav_data.CoverDmm, fileLathe.path_fanart()
-                    )
+                            and not javDb.download_picture(jav_data.CoverDb, fileLathe.path_fanart)
+                            and not javBus.download_picture(jav_data.CoverBus, fileLathe.path_fanart)
+                            and not dmm.download_picture(jav_data.CoverDmm, fileLathe.path_fanart)
+                            and not javLibrary.download_picture(jav_data.CoverDmm, fileLathe.path_fanart)
                     ):
                         raise DownloadFanartError('下载fanart失败: ')
                     # 裁剪生成poster

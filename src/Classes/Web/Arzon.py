@@ -3,9 +3,9 @@ import re
 from requests.exceptions import ProxyError
 # from traceback import format_exc
 
-from Static.Config import Ini
-from Static.Const import Const
-from Enums import ScrapeStatusEnum
+from Classes.Static.Config import Ini
+from Classes.Static.Const import Const
+from Classes.Static.Enums import ScrapeStatusEnum
 from Classes.Model.JavData import JavData
 from Classes.Model.JavFile import JavFile
 from Classes.Web.JavWeb import JavWeb

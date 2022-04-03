@@ -20,13 +20,13 @@
     "CompletionStatus": 6,
     "Version": 1,
     "Genres": [
-        "\u4e2a\u5b50\u9ad8",
-        "\u8fde\u88e4\u889c",
-        "\u8584\u9a6c\u8d5b\u514b",
         "\u9a91\u8138",
+        "\u9ad8\u6311",
+        "\u8fde\u88e4\u889c",
         "\u9a91\u4e58",
         "\u8db3\u4ea4",
-        "\u5355\u4f53\u4f5c\u54c1"
+        "\u5355\u4f53\u4f5c\u54c1",
+        "\u8584\u9a6c\u8d5b\u514b"
     ],
     "Actors": [
         "\u690e\u8449\u3048\u307e"

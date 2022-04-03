@@ -16,7 +16,7 @@
     "CoverDb": "https://jdbimgs.com/covers/4e/4Exnb.jpg",
     "CoverLibrary": "",
     "CoverBus": "7sgp_b.jpg",
-    "CoverDmm": "//pics.dmm.co.jp/mono/movie/adult/ssni825/ssni825pl.jpg",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ssni825/ssni825pl.jpg",
     "CutType": 1,
     "JavDb": "4Exnb",
     "JavLibrary": "javme2347e",
@@ -25,16 +25,16 @@
     "CompletionStatus": 6,
     "Version": 1,
     "Genres": [
-        "\u8584\u9a6c\u8d5b\u514b",
-        "\u5355\u4f53\u4f5c\u54c1",
         "\u7f8e\u5c11\u5973",
         "\u5de8\u4e73",
+        "\u8584\u9a6c\u8d5b\u514b",
+        "\u5355\u4f53\u4f5c\u54c1",
         "\u6df1\u5589",
         "\u9996\u6b21\u4eae\u76f8"
     ],
     "Actors": [
         "\u4e09\u5bae\u3064\u3070\u304d"
     ],
-    "Init": "2022-04-03 17:36:42",
-    "Modify": "2022-04-03 17:36:51"
+    "Init": "2022-04-03 18:20:38",
+    "Modify": "2022-04-03 18:20:46"
 }

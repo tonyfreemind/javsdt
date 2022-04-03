@@ -4,14 +4,15 @@ from typing import List
 from lxml import etree
 # from traceback import format_exc
 
-from Static.Config import Ini
-from Static.Const import Const
-from Enums import ScrapeStatusEnum
+from Classes.Static.Config import Ini
+from Classes.Static.Const import Const
+from Classes.Static.Enums import ScrapeStatusEnum
 from Classes.Model.JavData import JavData
 from Classes.Model.JavFile import JavFile
 from Classes.Web.JavWeb import JavWeb
 from Functions.Metadata.Car import extract_suf
 from Functions.Metadata.Genre import prefect_genres
+from LittleUtils import update_ini_file_value
 
 
 class JavDb(JavWeb):
@@ -23,11 +24,7 @@ class JavDb(JavWeb):
 
     def __init__(self, settings: Ini):
         appoint_symbol = '仓库'
-        headers = {
-            "user-agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) "
-                          "Chrome/86.0.4240.198 Safari/537.36",
-            "accept-encodin": "gzip, deflate, br",
-        }
+        headers = self._init_headers(settings.db_cf_clearance)
         super().__init__(settings, appoint_symbol, headers)
 
     # region 重写父类方法
@@ -53,7 +50,7 @@ class JavDb(JavWeb):
         # endregion
 
         # region 确定目标所在html
-        item = list_results[list_fit_index[0]][0] # 默认用第一个搜索结果
+        item = list_results[list_fit_index[0]][0]  # 默认用第一个搜索结果
         status = ScrapeStatusEnum.success if len(list_fit_index) == 1 else ScrapeStatusEnum.multiple_results
         self._update_item_status(item, status)
         return self._get_html('    >获取信息:', self._url_item(item))  # bus找到了
@@ -144,10 +141,19 @@ class JavDb(JavWeb):
         """
         return bool(re.search('異常行為', html))
 
+    def _update_headers(self):
+        new = input('    >请输入新的db cf_clearance: ')
+        self._requests.headers = self._init_headers(new)
+        update_ini_file_value(Const.INI, Const.NODE_OTHER, Const.DB_CF_CLEARANCE, new)
+
     @staticmethod
-    def _update_headers():
-        # Todo 实现
-        pass
+    def _init_headers(cf_clearance: str, url: str = ''):
+        return {
+            'Cookie': f'cf_clearance={cf_clearance};',
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) "
+                          "Chrome/86.0.4240.198 Safari/537.36",
+            "accept-encodin": "gzip, deflate, br",
+        }
 
     # endregion
 
@@ -271,7 +277,7 @@ class JavDb(JavWeb):
             # 预估的页面找不到数据，即已经超出范围，比如实际只有10页，预估到12页。
             else:
                 # 防止预估的no_page太大，比如HODV-21301
-                no_page = min(no_page, 60)
+                no_page = min(no_page, 50)
                 # 往前推，直至找到最后有数据的那一页
                 while True:
                     no_page -= 1

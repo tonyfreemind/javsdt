@@ -2,7 +2,6 @@
 import os
 from os import sep
 
-# 每一部jav的“结构体”
 from Functions.Metadata.Car import extract_suf, extract_pref
 
 

@@ -3,7 +3,7 @@ from os import sep
 from configparser import RawConfigParser
 from traceback import format_exc
 
-from Static.Const import Const
+from Classes.Static.Const import Const
 
 
 class Ini(object):
@@ -173,7 +173,7 @@ class Ini(object):
 
             # region ######################################## 10其他设置 ########################################
             # Todo 支持繁体
-            self.to_language = 'zh' if dict_ini[Const.LANGUAGE] == '简' else 'cht'
+            self.to_language = 'zh' if dict_ini[Const.LANGUAGE] == 'zh' else 'cht'
             """是否 使用简体中文\n\n标题、简介、特征翻译为“简体”还是“繁体”"""
 
             self.url_library = f'{dict_ini[Const.URL_LIBRARY].rstrip("/")}/cn'
@@ -184,6 +184,9 @@ class Ini(object):
 
             self.url_db = dict_ini[Const.URL_DB].rstrip('/')
             """网址 javdb"""
+
+            self.db_cf_clearance = dict_ini[Const.DB_CF_CLEARANCE]
+            """db cookies的一部分"""
 
             self.library_cf_clearance = dict_ini[Const.LIBRARY_CF_CLEARANCE]
             """library cookies的一部分"""
@@ -317,7 +320,7 @@ class Ini(object):
         elif website == 'Dmm':
             return '', self.proxy_dmm
         elif website == 'Jav321':
-            return 'https://www.jav321.com/', self.proxy_321
+            return f'https://www.jav321.com/{"cn" if self.to_language == "zh" else "tw"}', self.proxy_321
         elif website == 'JavBus':
             return self.url_bus, self.proxy_bus
         elif website == 'JavDb':

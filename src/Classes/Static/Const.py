@@ -48,9 +48,9 @@ class Const(object):
 
     PROXY_DEFAULT = '127.0.0.1:1080'
     NODE_PROXY = '局部代理'
-    PROXY = '代理端口'
-    NEED_HTTP_OR_SOCKS5 = 'http还是socks5？'
     NEED_PROXY = '是否使用局部代理？'
+    NEED_HTTP_OR_SOCKS5 = 'http还是socks5？'
+    PROXY = '代理端口'
     NEED_PROXY_LIBRARY = '是否代理javlibrary？'
     NEED_PROXY_BUS = '是否代理javbus？'
     NEED_PROXY_321 = '是否代理jav321？'
@@ -71,8 +71,9 @@ class Const(object):
     URL_LIBRARY = 'javlibrary网址'
     URL_BUS = 'javbus网址'
     URL_DB = 'javdb网址'
-    ARZON_PHPSESSID = 'arzon的phpsessid'
+    DB_CF_CLEARANCE = 'db的cf_clearance'
     LIBRARY_CF_CLEARANCE = 'javlibrary的cf_clearance'
+    ARZON_PHPSESSID = 'arzon的phpsessid'
     TUPLE_VIDEO_TYPES = '扫描文件类型'
     INT_TITLE_LEN = '重命名中的标题长度（50~150）'
 

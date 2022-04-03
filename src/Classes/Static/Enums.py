@@ -57,7 +57,7 @@ class PatternEnum():
 
 
 class ExcelColEnum(IntEnum):
-    """执行刮削的结果"""
+    """特征对照表excel"""
 
     JavDb = 0
     """A列 db特征"""
