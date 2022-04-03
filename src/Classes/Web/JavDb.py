@@ -132,6 +132,19 @@ class JavDb(JavWeb):
         return self._confirm_cloudflare(html)
 
     @staticmethod
+    def _confirm_ban(html: str):
+        """
+        是否被网站封禁IP
+
+        Args:
+            html: 网页
+
+        Returns:
+            是否需要更新
+        """
+        return bool(re.search('異常行為', html))
+
+    @staticmethod
     def _update_headers():
         # Todo 实现
         pass

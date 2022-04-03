@@ -12,31 +12,30 @@
     "Director": "TAKE-D",
     "Studio": "S1 NO.1 STYLE",
     "Publisher": "S1 NO.1 STYLE",
-    "Score": 64,
+    "Score": 65,
     "CoverDb": "https://jdbimgs.com/covers/0g/0gXb.jpg",
     "CoverLibrary": "",
     "CoverBus": "4uxm_b.jpg",
-    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/snis459/snis459pl.jpg",
+    "CoverDmm": "//pics.dmm.co.jp/mono/movie/adult/snis459/snis459pl.jpg",
     "CutType": 1,
     "JavDb": "0gXb",
     "JavLibrary": "javlii3ttu",
     "JavBus": "SNIS-459",
-    "Arzon": "1276706",
+    "Arzon": "1276586",
     "CompletionStatus": 6,
     "Version": 1,
     "Genres": [
-        "\u989c\u5c04",
         "\u8584\u9a6c\u8d5b\u514b",
-        "\u7f8e\u5c11\u5973",
-        "\u591aP",
         "\u5355\u4f53\u4f5c\u54c1",
+        "\u7f8e\u5c11\u5973",
+        "\u989c\u5c04",
         "\u5de8\u4e73",
+        "\u591aP",
         "\u9996\u6b21\u4eae\u76f8"
     ],
     "Actors": [
-        "\u693f\u3042\u3044\u306e"
+        "\u85e4\u4e95\u30ec\u30a4\u30e9"
     ],
-    "Init": "2021-11-07 18:22:16",
-    "Modify": "2022-04-01 22:01:12",
-    "ModifyDate": "2021-07-29 16:26:26"
+    "Init": "2022-04-03 17:35:35",
+    "Modify": "2022-04-03 17:36:18"
 }

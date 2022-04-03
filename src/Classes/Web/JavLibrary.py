@@ -107,10 +107,10 @@ class JavLibrary(JavWeb):
         if coverg := re.search(r'src="(.+?)" width="600', html):
             cover_library = coverg.group(1)
             if not cover_library.startswith('http'):
+                jav_data.CoverDmm = cover_library
+            else:
                 cover_library = f'http:{cover_library}'
                 jav_data.CoverLibrary = cover_library
-            else:
-                jav_data.CoverDmm = cover_library
             jav_data.CarOrigin = cover_library.split('/')[-2]  # library上图片是dmm的，切割一下，是车牌在dmm的id
 
         # 发行日期

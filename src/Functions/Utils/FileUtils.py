@@ -14,13 +14,16 @@ def replace_xml_invalid_char(src):
     Returns:
         替换后字符串
     """
-    return src.replace('&', '&amp;') \
-        .replace('<', '&lt;') \
-        .replace('>', '&gt;') \
-        .replace('\n', '') \
-        .replace('\t', '') \
-        .replace('\r', '') \
-        .strip()
+    if src == ' ':
+        return src
+    else:
+        return src.replace('&', '&amp;') \
+            .replace('<', '&lt;') \
+            .replace('>', '&gt;') \
+            .replace('\n', '') \
+            .replace('\t', '') \
+            .replace('\r', '') \
+            .strip()
 
 
 def replace_os_invalid_char(src: str):
@@ -36,6 +39,10 @@ def replace_os_invalid_char(src: str):
     if system_name != 'nt':
         # 不是windows系统
         return src
+
+    if src == '\\':
+        return src
+
     dict_replace = {
         '\\': '#',
         '/': '#',
@@ -47,8 +54,7 @@ def replace_os_invalid_char(src: str):
         '>': '》',
         '|': '#'
     }
-    # return src.translate(str.maketrans(r'\/:*?"<>|', '##：#？#《》#'))
-    return src.translate(str.maketrans(dict_replace)).strip(' .') if src not in dict_replace else src
+    return src.translate(str.maketrans(dict_replace))
 
 
 def replace_line_break(src: str):

@@ -131,18 +131,6 @@ class Const(object):
     WUMA = '无码'
 
     # region 错误信息
-    BAIDU_TRANSLATE_ACCOUNT_EMPTY_ERROR = '    >你没有填写百度翻译api账户!'
-    BAIDU_TRANSLATE_ACCOUNT_ERROR = '    >请正确输入百度翻译API账号！'
-    PROXY_ERROR_TRY_AGAIN = '    >通过代理失败，重新尝试...'
-    REQUEST_ERROR_TRY_AGAIN = '    >打开网页失败，重新尝试...'
-    REQUEST_MAX_TRY = '    >打开网页失败，网站拒绝了你的请求，你可能在使用公共的代理...'
-    HTML_NOT_TARGET_TRY_AGAIN = '    >打开网页失败，空返回...重新尝试...'
-    NEED_UPDATE_HEADERS = '    >打开网页失败，需要更新headers...'
-    PLEASE_CHECK_URL = '>>请检查你的网络环境是否可以打开: '
-    ARZON_EXIST_BUT_NO_PLOT = '【arzon有该影片，但找不到简介】'
-    ARZON_PLOT_NOT_FOUND = '【影片下架，暂无简介】'
-    SPECIFIED_FORMAT_ERROR = '你指定的网址的格式有问题:'
-    SPECIFIED_URL_ERROR = '你指定的网址找不到jav:'
     NO_IMPLEMENT_ERROR = '方法还未实现'
     # endregion
 

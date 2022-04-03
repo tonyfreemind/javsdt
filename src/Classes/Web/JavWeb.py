@@ -145,13 +145,13 @@ class JavWeb(object):
         item_appointg = re.search(rf'{self._APPOINT_SYMBOL}(.+?)\.', jav_file.Name)
         if not item_appointg:
             # 指定的格式不正确
-            raise SpecifiedUrlError(f'{Const.SPECIFIED_FORMAT_ERROR} {self.__class__.__name__} {jav_file.Name}')
+            raise SpecifiedUrlError(f'你指定的网址的格式有问题: {self.__class__.__name__} {jav_file.Name}')
         item_appoint = item_appointg.group(1)
         url_appoint = self._url_item(item_appoint)
         html_appoint = self._get_html('    >前往指定网址:', url_appoint)
         if self._confirm_not_found(html_appoint):
             # 指定的网页上没内容，报错
-            raise SpecifiedUrlError(f'{Const.SPECIFIED_URL_ERROR} {url_appoint}，')
+            raise SpecifiedUrlError(f'你指定的网址找不到jav: {url_appoint}，')
         # 用户指定正确，更新item
         self._update_item_status(item_appoint, ScrapeStatusEnum.success)
         return html_appoint
@@ -161,16 +161,16 @@ class JavWeb(object):
             rsp = self._requests.get(url, timeout=(6, 7), allow_redirects=allow_redirects)
         except ProxyError:
             # 代理出错，用户可能想使用代理，但实际没开代理软件
-            print(f'{Const.PROXY_ERROR_TRY_AGAIN}{url}')
+            print(f'    >通过代理失败，重新尝试... {url}')
             return None
         except SSLError:
             # 2种情况（1）网址是https，requests也走https，但代理只支持http，导致证书验证不通过（2）用户的代理是公用代理，访问太频繁被拒绝
-            print(f'{Const.REQUEST_MAX_TRY}{url}')
+            print(f'    >打开网页失败，网站拒绝了你的请求，你可能在使用公共的代理...{url}')
             return None
         except:
             # 其他出错
             # print(format_exc())
-            print(f'{Const.REQUEST_ERROR_TRY_AGAIN}{url}')
+            print(f'    >打开网页失败，重新尝试... {url}')
             return None
         return rsp
 
@@ -186,7 +186,8 @@ class JavWeb(object):
             html
         """
         # library不需要跳转
-        allow_redirects = self.__class__.__name__ != 'JavLibrary'
+        website = self.__class__.__name__
+        allow_redirects = (website != 'JavLibrary')
 
         if aim:
             print(aim, url)
@@ -203,18 +204,24 @@ class JavWeb(object):
                 return rsp_content
             elif self._need_update_headers(rsp_content):
                 # 网站遇到某些特殊情况需要更新headers，比如cloudflare、18岁验证
-                print(Const.NEED_UPDATE_HEADERS)
+                print('    >打开网页失败，需要更新headers...')
                 self._update_headers()
                 continue
-            print(Const.HTML_NOT_TARGET_TRY_AGAIN)
-        input(f'{Const.PLEASE_CHECK_URL}{url}')
+            elif self._confirm_ban(rsp_content):
+                # 被网站封禁ip
+                input(f'    >被{website}网站封禁: {rsp_content}')
+            print('    >打开网页失败，空返回...重新尝试...')
+        input(f'>>请检查你的网络环境是否可以打开: {url}')
 
     def download_picture(self, url: str, path: str):
         """下载图片"""
+        website = self.__class__.__name__
+
         if not url:
+            print(f'    >{website}没找到图片')
             return False
 
-        if self.__class__.__name__ == 'JavBus':
+        if website == 'JavBus':
             url = f'{self._URL}/pics/cover/{url}'
 
         print(f'    >从{self.__class__.__name__}下载封面:', url)
@@ -230,6 +237,7 @@ class JavWeb(object):
                 continue
             print('    >fanart.jpg下载成功')
             return True
+        print(f'    >从{website}下载图片失败')
         return False
 
     def _select_normal(self, jav_data: JavData):
@@ -326,6 +334,19 @@ class JavWeb(object):
             没内容 => True
         """
         raise AttributeError(Const.NO_IMPLEMENT_ERROR)
+
+    @staticmethod
+    def _confirm_ban(html: str):
+        """
+        是否被网站封禁IP
+
+        Args:
+            html: 网页
+
+        Returns:
+            是否需要更新
+        """
+        return False
 
     @staticmethod
     def _need_update_headers(html: str) -> bool:

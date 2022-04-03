@@ -284,6 +284,8 @@ class Ini(object):
                     dict_for_standard[j] = j
                 self.list_name_classify_dir.append(j)
             self.list_name_classify_dir.append(sep)
+        if self.list_name_classify_dir[-1] == sep:
+            self.list_name_classify_dir.pop()
         return dict_for_standard
 
     @staticmethod

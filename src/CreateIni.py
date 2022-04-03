@@ -69,9 +69,9 @@ try:
     config_settings.set("原影片文件的性质", "FC2", "FC2")
     config_settings.add_section("其他设置")
     config_settings.set("其他设置", "简繁中文？", "简")
-    config_settings.set("其他设置", "javlibrary网址", "https://www.n53i.com/")
-    config_settings.set("其他设置", "javbus网址", "https://www.buscdn.me")
-    config_settings.set("其他设置", "javdb网址", "https://javdb31.com/")
+    config_settings.set("其他设置", "javlibrary网址", "https://www.javlibrary.com/")
+    config_settings.set("其他设置", "javbus网址", "https://www.seejav.bid")
+    config_settings.set("其他设置", "javdb网址", "https://javdb36.com/")
     config_settings.set("其他设置", "javlibrary的cf_clearance",
                         "biyj49Wyi8FEOKojC.brqWsnLxuGxM8AcTLTJJ71xQ0-1648358264-0-150")
     config_settings.set("其他设置", "arzon的phpsessid", "679fpv1fgl9vjoeuo36q8crre7")
@@ -95,7 +95,8 @@ try:
     config_actor.set("说明", "上面的“演员姓名 = N(次数)”的表达式", "后面的N数字表示你有N部(次)影片都在找她的头像，可惜找不到")
     config_actor.set("说明", "你可以去保存一下她的头像jpg到“演员头像”文件夹", "以后就能保存她的头像到影片的文件夹了")
     config_actor.write(open(Const.INI_ACTOR, "w", encoding='utf-8-sig'))
-    input('    >“actors_for_kodi.ini”重写成功！')
+    print('    >“actors_for_kodi.ini”重写成功！')
+    input('>>结束!')
 except:
     print(format_exc())
     input('\n创建ini失败，解决上述问题后，重新打开exe创建ini！')

@@ -37,7 +37,7 @@ class Arzon(JavWeb):
         if items := re.findall(r'h2><a href="/item_(.+?)\.html" title=', html_search):
             # 依次搜寻简介，找到为止。arzon上很可能有多个搜索结果，不是每个结果都有简介
             for item in items:
-                html_item = self._get_html('    >查找plot:', self._url_item(item))
+                html_item = self._get_html('    >获取plot:', self._url_item(item))
                 if re.search(r'h2>作品紹介</h2>([\s\S]*?)</div>', html_item):
                     self._update_item_status(item, ScrapeStatusEnum.success)
                     return html_item  # arzon找到了
@@ -71,16 +71,16 @@ class Arzon(JavWeb):
             try:
                 self._requests.get(self._URL_ADULT, timeout=(6, 7))
             except ProxyError:
-                print(f'{Const.PROXY_ERROR_TRY_AGAIN}{self._URL_ADULT}')
+                print(f'    >通过代理失败，重新尝试... {self._URL_ADULT}')
                 continue
             except:
-                print(f'{Const.REQUEST_ERROR_TRY_AGAIN}{self._URL_ADULT}')
+                print(f'    >打开网页失败，重新尝试... {self._URL_ADULT}')
                 continue
             # 在ini中记录下这个新通行证
             phpsessid = self._requests.cookies.get_dict()['PHPSESSID']
             update_ini_file_value(Const.INI, Const.NODE_OTHER, Const.ARZON_PHPSESSID, phpsessid)
             print('通过arzon的成人验证！\n')
-        input(f'{Const.PLEASE_CHECK_URL}{self._URL_ADULT}')
+        input(f'    >打开网页失败，重新尝试... {self._URL_ADULT}')
 
     # endregion
 

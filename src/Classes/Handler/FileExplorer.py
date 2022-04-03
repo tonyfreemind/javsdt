@@ -28,9 +28,6 @@ class FileExplorer(object):
         self._need_classify_folder = ini.need_classify_folder
         """归类是针对【文件夹】而不是【文件】"""
 
-        self._need_rename_folder = ini.need_rename_folder
-        """需要重命名文件夹或创建新的独立文件夹"""
-
         self._dir_custom_classify_root = ini.dir_custom_classify_root
         """用户自定义的归类的根目录\n\n用于判定出真实的归类根目录"""
 
@@ -41,9 +38,6 @@ class FileExplorer(object):
         """视频文件名中多余的、干扰车牌的文字"""
         self._list_suren_cars = get_suren_cars()
         """素人车牌前缀\n\n如果当前处理模式是youma、wuma，让程序能跳过这些素人车牌"""
-
-        self._need_rename_folder = self._judge_need_rename_folder()
-        """是否需要重命名文件夹"""
         # endregion
 
         # region 每次选择的文件夹通用
@@ -76,19 +70,6 @@ class FileExplorer(object):
         self._sum_videos_in_current_dir = 0
         """（某一层级文件夹内）包含的视频总数\n\n用于判断这一级文件夹是否是独立文件夹"""
         # endregion
-
-    def _judge_need_rename_folder(self):
-        """
-        判断到底要不要 重命名文件夹或者创建新的文件夹
-
-        Returns:
-            是否需要重命名文件夹
-        """
-        return bool(
-            self._need_classify  # 如果需要归类，
-            and self._need_classify_folder  # 并且是针对文件夹，那么必须重命名文件夹或者创建新的文件夹
-            or self._need_rename_folder  # 如果用户本来就在ini中写了要重命名文件夹
-        )
 
     # region 重置
 

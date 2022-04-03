@@ -20,6 +20,7 @@ from Classes.Static.Enums import ScrapeStatusEnum
 from Classes.Static.Errors import TooManyDirectoryLevelsError, SpecifiedUrlError, \
     CustomClassifyTargetDirError, DownloadFanartError
 from Classes.Static.Const import Const
+from Datetime import time_now
 from Functions.Utils.User import choose_directory
 from Functions.Utils.JsonUtils import read_json_to_dict
 
@@ -143,8 +144,10 @@ while not input_key:
                     status = arzon.scrape(jav_file, jav_data)
                     url_search_arzon = f'https://www.arzon.jp/itemlist.html?t=&m=all&s=&q={jav_file.Car_search}'
                     if status is ScrapeStatusEnum.exist_but_no_want:
+                        jav_data.Plot = '【arzon有该影片，但找不到简介】'
                         logger.record_warn(f'找不到简介，尽管arzon上有搜索结果: {url_search_arzon}，')
                     elif status is ScrapeStatusEnum.not_found:
+                        jav_data.Plot = '【影片下架，暂无简介】'
                         logger.record_warn(f'找不到简介，影片被arzon下架: {url_search_arzon}，')
                     # elif status is ScrapeStatusEnum.failed:
                     #     logger.record_warn(f'访问arzon失败，需要重新整理该简介: {url_search_arzon}，')
@@ -158,11 +161,15 @@ while not input_key:
                     jav_data.prefect_completion_status()
                     # endregion
 
+                    # 更新path_json
+                    path_json = f'{dir_prefs_jsons}{jav_data.Car}.json'
+
                 # region 后续完善
-                # 如果用户 首次整理该片不存在path_json 或 如果这次整理用户正确地输入了翻译账户，则保存json
-                if not os.path.exists(path_json) or translator.prefect_zh(jav_data):
+                # 如果 进行了翻译操作 或 不存在path_json，则保存json
+                if translator.prefect_zh(jav_data) or not os.path.exists(path_json):
                     if not os.path.exists(dir_prefs_jsons):
                         os.makedirs(dir_prefs_jsons)
+                    jav_data.Modify = time_now()
                     with open(path_json, 'w', encoding='utf-8') as f:
                         json.dump(jav_data.__dict__, f, indent=4)
                     print(f'    >保存本地json成功: {path_json}')
@@ -212,7 +219,7 @@ while not input_key:
                         jav_data.CoverDmm, fileLathe.path_fanart()
                     )
                     ):
-                        raise DownloadFanartError
+                        raise DownloadFanartError('下载fanart失败: ')
                     # 裁剪生成poster
                     fileLathe.crop_poster(jav_file)
 
@@ -232,6 +239,9 @@ while not input_key:
                 logger.record_fail(str(error))
                 continue
             except TooManyDirectoryLevelsError as error:
+                logger.record_fail(str(error))
+                continue
+            except DownloadFanartError as error:
                 logger.record_fail(str(error))
                 continue
             except:

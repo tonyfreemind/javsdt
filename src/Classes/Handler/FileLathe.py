@@ -66,9 +66,6 @@ class FileLathe(object):
         self._list_name_video = ini.list_name_video
         """公式: 重命名视频"""
 
-        self._need_rename_folder = ini.need_rename_folder
-        """是否 重命名视频所在文件夹，或者为它创建独立文件夹"""
-
         self._list_name_folder = ini.list_name_folder
         """公式: 新文件夹名\n\n示例: '车牌', '【', '全部演员', '】'"""
         # endregion
@@ -141,9 +138,30 @@ class FileLathe(object):
         """网址 javbus"""
         # endregion
 
+        self._need_rename_folder = self._judge_need_rename_folder(ini.need_rename_folder)
+        """需要重命名文件夹或创建新的独立文件夹"""
+
     def update_dir_classify_root(self, dir_classify_root: str):
         """在主流程中用fileExplorer中的dir_classify_root更新"""
         self._dir_classify_root = dir_classify_root
+
+    def _judge_need_rename_folder(self, need_rename_folder: bool):
+        """
+        判断到底要不要 重命名文件夹或者创建新的文件夹
+
+        Args:
+            need_rename_folder: ini是否需要重命名文件夹
+
+        Returns:
+            是否需要重命名文件夹
+        """
+        if self._need_classify:  # 如果需要归类
+            if self._need_classify_folder:  # 并且是针对文件夹
+                return True  # 那么必须重命名文件夹或者创建新的文件夹
+        else:  # 不需要归类
+            if need_rename_folder:  # 但是用户本来就在ini中写了要重命名文件夹
+                return True
+        return False
 
     def prefect_dict_for_standard(self, jav_file: JavFile, jav_data: JavData):
         """
@@ -225,7 +243,7 @@ class FileLathe(object):
         return "".join(
             [replace_os_invalid_char(self._dict[element])
              for element in getattr(self, name)]
-        )
+        ).strip().rstrip('.')
 
     def _assemble_nfo_formula(self, name: str):
         """
@@ -287,7 +305,7 @@ class FileLathe(object):
                 raise FileExistsError(f'重命名影片失败，重复的影片，已经有相同文件名的视频了: {path_new}')  # 【终止整理】
             self._dict[Const.VIDEO] = name_new  # 【更新】
             jav_file.Name = f'{name_new}{jav_file.Ext}'  # 【更新】
-            print(f'    >修改文件名{jav_file.Cd}完成')
+            print(f'    >重命名视频{jav_file.Cd}完成')
             # endregion
 
             # region 重命名字幕文件
@@ -297,7 +315,7 @@ class FileLathe(object):
                 if jav_file.Path_subtitle != path_subtitle_new:
                     os.rename(jav_file.Path_subtitle, path_subtitle_new)
                     jav_file.Subtitle = subtitle_new  # 【更新】
-                print('    >修改字幕名完成')
+                print('    >重命名字幕完成')
             # endregion
         return path_return
 
@@ -387,7 +405,7 @@ class FileLathe(object):
             if jav_file.Subtitle:
                 path_subtitle_new = f'{dir_target}{sep}{jav_file.Subtitle}'  # 新的字幕路径
                 os.rename(jav_file.Path_subtitle, path_subtitle_new)  # 后续不会操作字幕文件了，不再更新字幕成员
-                print('    >移动字幕到独立文件夹')
+                print('    >移动字幕到独立文件夹完成')
             # endregion
 
             jav_file.Dir = dir_target  # 【更新】jav.dir
@@ -419,12 +437,12 @@ class FileLathe(object):
                 update_ini_file_value_plus_one(Const.INI_ACTOR, Const.NODE_NO_ACTOR, actor)
                 continue
             # 已经收录了这个演员头像
-            dir_actor_target = f'{jav_file.Dir}{sep}.actors{sep}'
+            dir_actor_target = f'{jav_file.Dir}{sep}.actors'
             """头像的目标文件夹"""
             if not os.path.exists(dir_actor_target):
                 os.makedirs(dir_actor_target)
             # 复制一份到“.actors”
-            copyfile(f'{path_exist_actor}{ext_pic}', f'{dir_actor_target}{actor}{ext_pic}')
+            copyfile(f'{path_exist_actor}{ext_pic}', f'{dir_actor_target}{sep}{actor}{ext_pic}')
             print('    >演员头像收集完成: ', actor)
 
     def classify_folder(self, jav_file: JavFile):
