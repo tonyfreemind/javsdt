@@ -12,7 +12,7 @@ from Classes.Model.JavFile import JavFile
 from Classes.Web.JavWeb import JavWeb
 from Functions.Metadata.Car import extract_suf
 from Functions.Metadata.Genre import prefect_genres
-from LittleUtils import update_ini_file_value
+from Functions.Utils.LittleUtils import update_ini_file_value
 
 
 class JavDb(JavWeb):

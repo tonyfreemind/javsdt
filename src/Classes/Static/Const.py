@@ -142,7 +142,7 @@ class Const(object):
     TXT_ACTORS_INCLUDED = '已收录的人员清单.txt'
     TXT_ACTORS_NOT_INCLUDED = '已收录的人员清单.txt'
 
-    TXT_SUREN_CARS = 'StaticFiles/【素人车牌】.txt'
+    TXT_SUREN_CARS = '【素人车牌】.txt'
     EXCEL_GENRE = '【特征对照表】.xlsx'
 
     INI_ACTOR = '【缺失的演员头像统计For Kodi】.ini'

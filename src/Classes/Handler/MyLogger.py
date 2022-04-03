@@ -1,6 +1,6 @@
 # -*- coding:utf-8 -*-
 from Classes.Static.Const import Const
-from Datetime import time_now
+from Functions.Utils.Datetime import time_now
 
 
 class MyLogger(object):

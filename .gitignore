@@ -18,6 +18,8 @@
 
 *.ini
 
+*.exe
+
 /src/*.ico
 /src/*.png
 

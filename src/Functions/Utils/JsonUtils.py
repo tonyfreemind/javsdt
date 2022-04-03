@@ -2,7 +2,6 @@
 import os
 from json import load, dump
 
-from Functions.Utils.Datetime import time_now
 from Functions.Utils.User import choose_directory
 
 

@@ -20,7 +20,7 @@ from Classes.Static.Enums import ScrapeStatusEnum
 from Classes.Static.Errors import TooManyDirectoryLevelsError, SpecifiedUrlError, \
     CustomClassifyTargetDirError, DownloadFanartError
 from Classes.Static.Const import Const
-from FileUtils import dir_father
+from Functions.Utils.FileUtils import dir_father
 from Functions.Utils.Datetime import time_now
 from Functions.Utils.User import choose_directory
 from Functions.Utils.JsonUtils import read_json_to_dict
