@@ -13,12 +13,9 @@
     "Studio": "V\uff06R\u30d7\u30ed\u30c0\u30af\u30c4",
     "Publisher": "V\uff06R\u30d7\u30ed\u30c0\u30af\u30c4",
     "Score": 100,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/42vspds325/42vspds325pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "32yz_b.jpg",
     "CutType": 1,
-    "Javdb": "xvD2P",
-    "Javlibrary": "javlicl3su",
-    "Javbus": "VSPDS-325",
     "Arzon": "465991",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,11 @@
         "\u82bd\u8863\u5948",
         "\u7d05\u57ce\u307e\u3086"
     ],
-    "Modify": "2021-09-25 20:26:37"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "xvD2P",
+    "JavLibrary": "javlicl3su",
+    "JavBus": "VSPDS-325",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/42vspds325/42vspds325pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/xv/xvD2P.jpg",
+    "Init": "2021-09-25 20:26:37"
 }

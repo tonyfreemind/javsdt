@@ -13,12 +13,9 @@
     "Studio": "\u30de\u30c9\u30f3\u30ca",
     "Publisher": "\u719f\u308c\u30b3\u30df",
     "Score": 92,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ure032/ure032pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "59gz_b.jpg",
     "CutType": 1,
-    "Javdb": "BrJd",
-    "Javlibrary": "javlilb62e",
-    "Javbus": "URE-032",
     "Arzon": "490363",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,11 @@
         "\u963f\u90e8\u4e43\u307f\u304f",
         "\u677e\u4e95\u512a\u5b50"
     ],
-    "Modify": "2021-09-25 20:18:40"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "BrJd",
+    "JavLibrary": "javlilb62e",
+    "JavBus": "URE-032",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ure032/ure032pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/br/BrJd.jpg",
+    "Init": "2021-09-25 20:18:40"
 }

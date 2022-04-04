@@ -1,0 +1,42 @@
+{
+    "Car": "GIRO-92",
+    "CarOrigin": "h_173giro92",
+    "Series": "",
+    "Title": "\u7f8e\u5c11\u5973\u6226\u58eb\u30bb\u30fc\u30e9\u30fc\u30ec\u30b8\u30a7\u30f3\u30c9V \u5f8c\u7de8",
+    "TitleZh": "\u7f8e\u5c11\u5973\u6218\u58ebV\u540e\u7bc7",
+    "Plot": "\u3010\u5f71\u7247\u4e0b\u67b6\uff0c\u6682\u65e0\u7b80\u4ecb\u3011",
+    "PlotZh": "\u3010\u5f71\u7247\u4e0b\u67b6\uff0c\u6682\u65f6\u65e0\u7b80\u4ecb\u3011",
+    "Review": "",
+    "Release": "2015-06-26",
+    "Runtime": 180,
+    "Director": "\u5742\u7530\u5fb9",
+    "Studio": "GIGA",
+    "Publisher": "GIGA",
+    "Score": 91,
+    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/h_173giro92/h_173giro92pl.jpg",
+    "CoverBus": "",
+    "CutType": 1,
+    "Javdb": "8VXpx",
+    "Javlibrary": "javliit5qq",
+    "Javbus": "",
+    "Arzon": "",
+    "CompletionStatus": 4,
+    "Version": 1,
+    "Genres": [
+        "\u62d8\u675f",
+        "\u7279\u6444",
+        "\u6b66\u672f\u683c\u6597",
+        "\u52a8\u753b\u89d2\u8272",
+        "\u51cc\u8fb1"
+    ],
+    "Actors": [
+        "\u771f\u6728\u4eca\u65e5\u5b50",
+        "\u3042\u3084\u306d\u9065\u83dc",
+        "\u7389\u57ce\u30de\u30a4",
+        "\u7af9\u5167\u771f\u7434",
+        "\u661f\u7a7a\u3082\u3042",
+        "\u9ad8\u5c71\u3048\u307f\u308a",
+        "\u9cf4\u6708\u3089\u3093"
+    ],
+    "Modify": "2022-02-17 13:12:32"
+}

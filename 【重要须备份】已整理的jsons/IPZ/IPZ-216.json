@@ -13,12 +13,9 @@
     "Studio": "IDEA POCKET",
     "Publisher": "\u30c6\u30a3\u30c3\u30b7\u30e5",
     "Score": 91,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ipz216/ipz216pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "3yex_b.jpg",
     "CutType": 1,
-    "Javdb": "Yn91p",
-    "Javlibrary": "javlijjw7m",
-    "Javbus": "IPZ-216",
     "Arzon": "1154059",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,11 @@
     "Actors": [
         "\u7fbd\u7530\u3042\u3044"
     ],
-    "Modify": "2021-09-25 16:03:37"
+    "Modify": "2022-04-01 22:01:11",
+    "JavDb": "Yn91p",
+    "JavLibrary": "javlijjw7m",
+    "JavBus": "IPZ-216",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ipz216/ipz216pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/yn/Yn91p.jpg",
+    "Init": "2021-09-25 16:03:37"
 }

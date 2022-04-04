@@ -13,12 +13,9 @@
     "Studio": "\u30ef\u30f3\u30ba\u30d5\u30a1\u30af\u30c8\u30ea\u30fc",
     "Publisher": "WANZ",
     "Score": 93,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/wanz895/wanz895pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "7ar4_b.jpg",
     "CutType": 1,
-    "Javdb": "D4KpJ",
-    "Javlibrary": "javli6lh6u",
-    "Javbus": "WANZ-895",
     "Arzon": "1534999",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,11 @@
     "Actors": [
         "\u6839\u5c3e\u3042\u304b\u308a"
     ],
-    "Modify": "2021-09-25 20:32:59"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "D4KpJ",
+    "JavLibrary": "javli6lh6u",
+    "JavBus": "WANZ-895",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/wanz895/wanz895pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/d4/D4KpJ.jpg",
+    "Init": "2021-09-25 20:32:59"
 }

@@ -13,12 +13,9 @@
     "Studio": "S1 NO.1 STYLE",
     "Publisher": "S1 NO.1 STYLE",
     "Score": 92,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/snis546/snis546pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "56zn_b.jpg",
     "CutType": 1,
-    "Javdb": "2Znw",
-    "Javlibrary": "javlilasya",
-    "Javbus": "SNIS-546",
     "Arzon": "1301311",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,11 @@
     "Actors": [
         "\u5922\u4e43\u3042\u3044\u304b"
     ],
-    "Modify": "2021-09-25 18:33:47"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "2Znw",
+    "JavLibrary": "javlilasya",
+    "JavBus": "SNIS-546",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/snis546/snis546pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/2z/2Znw.jpg",
+    "Init": "2021-09-25 18:33:47"
 }

@@ -13,12 +13,9 @@
     "Studio": "SOD Create",
     "Publisher": "SOFT ON DEMAND",
     "Score": 15,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1star140/1star140pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "gbp_b.jpg",
     "CutType": 1,
-    "Javdb": "k4Z5e",
-    "Javlibrary": "javlimjmta",
-    "Javbus": "STAR-140",
     "Arzon": "493261",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,11 @@
     "Actors": [
         "\u7bc4\u7530\u7d17\u3005"
     ],
-    "Modify": "2021-09-25 19:10:49"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "k4Z5e",
+    "JavLibrary": "javlimjmta",
+    "JavBus": "STAR-140",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1star140/1star140pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/k4/k4Z5e.jpg",
+    "Init": "2021-09-25 19:10:49"
 }

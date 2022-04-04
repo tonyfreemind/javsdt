@@ -13,12 +13,9 @@
     "Studio": "S1 NO.1 STYLE",
     "Publisher": "S1 NO.1 STYLE",
     "Score": 90,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/snis449/snis449pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "4uyg_b.jpg",
     "CutType": 1,
-    "Javdb": "KkBbb",
-    "Javlibrary": "javlii3t5e",
-    "Javbus": "SNIS-449",
     "Arzon": "1276694",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,11 @@
     "Actors": [
         "\u8475\u53f8"
     ],
-    "Modify": "2021-09-25 18:32:02"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "KkBbb",
+    "JavLibrary": "javlii3t5e",
+    "JavBus": "SNIS-449",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/snis449/snis449pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/kk/KkBbb.jpg",
+    "Init": "2021-09-25 18:32:02"
 }

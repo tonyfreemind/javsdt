@@ -13,12 +13,9 @@
     "Studio": "JET\u6620\u50cf",
     "Publisher": "JET\u6620\u50cf",
     "Score": 85,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ngod115/ngod115pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "7ft8_b.jpg",
     "CutType": 1,
-    "Javdb": "R2Knz",
-    "Javlibrary": "javli6l77u",
-    "Javbus": "NGOD-115",
     "Arzon": "1544660",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,11 @@
     "Actors": [
         "\u7f8e\u8c37\u6731\u91cc"
     ],
-    "Modify": "2021-09-25 17:54:27"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "R2Knz",
+    "JavLibrary": "javli6l77u",
+    "JavBus": "NGOD-115",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ngod115/ngod115pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/r2/R2Knz.jpg",
+    "Init": "2021-09-25 17:54:27"
 }

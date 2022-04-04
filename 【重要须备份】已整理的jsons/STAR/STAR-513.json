@@ -13,12 +13,9 @@
     "Studio": "SOD Create",
     "Publisher": "SOD star",
     "Score": 84,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1star513/1star513pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "49mx_b.jpg",
     "CutType": 1,
-    "Javdb": "mO4xD",
-    "Javlibrary": "javlijr734",
-    "Javbus": "STAR-513",
     "Arzon": "1189453",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,11 @@
     "Actors": [
         "\u53e4\u5ddd\u4f0a\u7ec7"
     ],
-    "Modify": "2021-09-25 19:15:22"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "mO4xD",
+    "JavLibrary": "javlijr734",
+    "JavBus": "STAR-513",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1star513/1star513pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/mo/mO4xD.jpg",
+    "Init": "2021-09-25 19:15:22"
 }

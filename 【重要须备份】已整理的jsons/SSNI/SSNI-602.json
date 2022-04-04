@@ -13,12 +13,9 @@
     "Studio": "S1 NO.1 STYLE",
     "Publisher": "S1 NO.1 STYLE",
     "Score": 87,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ssni602/ssni602pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "7bs8_b.jpg",
     "CutType": 1,
-    "Javdb": "0y1Jq",
-    "Javlibrary": "javli6ig34",
-    "Javbus": "SSNI-602",
     "Arzon": "1536670",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,11 @@
     "Actors": [
         "\u65b0\u540d\u3042\u307f\u3093"
     ],
-    "Modify": "2021-09-25 19:04:39"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "0y1Jq",
+    "JavLibrary": "javli6ig34",
+    "JavBus": "SSNI-602",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ssni602/ssni602pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/0y/0y1Jq.jpg",
+    "Init": "2021-09-25 19:04:39"
 }

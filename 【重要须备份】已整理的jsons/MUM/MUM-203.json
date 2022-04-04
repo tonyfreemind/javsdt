@@ -13,12 +13,9 @@
     "Studio": "\u30df\u30cb\u30de\u30e0",
     "Publisher": "\u30df\u30cb\u30de\u30e0",
     "Score": 87,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mum203/mum203pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "59b4_b.jpg",
     "CutType": 1,
-    "Javdb": "RGxm",
-    "Javlibrary": "javlilamq4",
-    "Javbus": "MUM-203",
     "Arzon": "1307506",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,11 @@
         "\u5c0f\u897f\u307e\u308a\u3048",
         "\u8fbb\u4e95\u3086\u3046"
     ],
-    "Modify": "2021-09-25 17:51:57"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "RGxm",
+    "JavLibrary": "javlilamq4",
+    "JavBus": "MUM-203",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mum203/mum203pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/rg/RGxm.jpg",
+    "Init": "2021-09-25 17:51:57"
 }

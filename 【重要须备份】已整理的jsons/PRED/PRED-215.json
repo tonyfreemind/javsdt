@@ -13,12 +13,9 @@
     "Studio": "\u30d7\u30ec\u30df\u30a2\u30e0",
     "Publisher": "\u30a8\u30ec\u30ac\u30f3\u30b9",
     "Score": 91,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/pred215/pred215pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "7i9q_b.jpg",
     "CutType": 1,
-    "Javdb": "1MG7d",
-    "Javlibrary": "javli6ruqy",
-    "Javbus": "PRED-215",
     "Arzon": "1553455",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,11 @@
     "Actors": [
         "\u6676\u30a8\u30ea\u30fc"
     ],
-    "Modify": "2021-09-25 16:07:12"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "1MG7d",
+    "JavLibrary": "javli6ruqy",
+    "JavBus": "PRED-215",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/pred215/pred215pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/1m/1MG7d.jpg",
+    "Init": "2021-09-25 16:07:12"
 }

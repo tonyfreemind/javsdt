@@ -13,12 +13,9 @@
     "Studio": "S1 NO.1 STYLE",
     "Publisher": "S1 NO.1 STYLE",
     "Score": 86,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/soe411/soe411pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "i5c_b.jpg",
     "CutType": 1,
-    "Javdb": "62M7",
-    "Javlibrary": "javlipjm3q",
-    "Javbus": "SOE-411",
     "Arzon": "700694",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,11 @@
     "Actors": [
         "\u6708\u898b\u681e"
     ],
-    "Modify": "2021-09-25 18:41:02"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "62M7",
+    "JavLibrary": "javlipjm3q",
+    "JavBus": "SOE-411",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/soe411/soe411pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/62/62M7.jpg",
+    "Init": "2021-09-25 18:41:02"
 }

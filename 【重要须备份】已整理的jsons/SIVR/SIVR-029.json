@@ -13,12 +13,9 @@
     "Studio": "S1 NO.1 STYLE",
     "Publisher": "S1 VR",
     "Score": 60,
-    "CoverLibrary": "http://pics.dmm.co.jp/digital/video/sivr00029/sivr00029pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "6qct_b.jpg",
     "CutType": 1,
-    "Javdb": "wK97Y",
-    "Javlibrary": "javli7jf7m",
-    "Javbus": "SIVR-029",
     "Arzon": "",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,11 @@
     "Actors": [
         "\u5965\u7530\u54b2"
     ],
-    "Modify": "2021-09-25 20:24:09"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "wK97Y",
+    "JavLibrary": "javli7jf7m",
+    "JavBus": "SIVR-029",
+    "CoverDmm": "http://pics.dmm.co.jp/digital/video/sivr00029/sivr00029pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/wk/wK97Y.jpg",
+    "Init": "2021-09-25 20:24:09"
 }

@@ -13,12 +13,9 @@
     "Studio": "MOODYZ",
     "Publisher": "MOODYZ DIVA",
     "Score": 92,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/midd867/midd867pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "loc_b.jpg",
     "CutType": 1,
-    "Javdb": "Mm1V1",
-    "Javlibrary": "javlioap3i",
-    "Javbus": "MIDD-867",
     "Arzon": "1021893",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,11 @@
     "Actors": [
         "\u5927\u6a4b\u672a\u4e45"
     ],
-    "Modify": "2021-09-25 17:21:47"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "Mm1V1",
+    "JavLibrary": "javlioap3i",
+    "JavBus": "MIDD-867",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/midd867/midd867pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/mm/Mm1V1.jpg",
+    "Init": "2021-09-25 17:21:47"
 }

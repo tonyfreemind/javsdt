@@ -13,26 +13,29 @@
     "Studio": "S1 NO.1 STYLE",
     "Publisher": "S1 NO.1 STYLE",
     "Score": 90,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ssni624/ssni624pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "7dly_b.jpg",
     "CutType": 1,
-    "Javdb": "bgky0",
-    "Javlibrary": "javli6ja5m",
-    "Javbus": "SSNI-624",
     "Arzon": "1541143",
     "CompletionStatus": 6,
     "Version": 1,
     "Genres": [
-        "\u4e2a\u5b50\u9ad8",
-        "\u8fde\u88e4\u889c",
-        "\u8584\u9a6c\u8d5b\u514b",
-        "\u51cc\u8fb1",
         "\u76d1\u7981",
         "\u804c\u4e1a\u88c5",
-        "\u5355\u4f53\u4f5c\u54c1"
+        "\u51cc\u8fb1",
+        "\u9ad8\u6311",
+        "\u8fde\u88e4\u889c",
+        "\u5355\u4f53\u4f5c\u54c1",
+        "\u8584\u9a6c\u8d5b\u514b"
     ],
     "Actors": [
         "\u661f\u5bae\u4e00\u82b1"
     ],
-    "Modify": "2021-09-25 19:06:24"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "bgky0",
+    "JavLibrary": "javli6ja5m",
+    "JavBus": "SSNI-624",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ssni624/ssni624pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/bg/bgky0.jpg",
+    "Init": "2021-09-25 19:06:24"
 }

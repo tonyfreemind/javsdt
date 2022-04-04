@@ -13,12 +13,9 @@
     "Studio": "S1 NO.1 STYLE",
     "Publisher": "S1 NO.1 STYLE",
     "Score": 93,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/snis580/snis580pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "59id_b.jpg",
     "CutType": 1,
-    "Javdb": "e8WYr",
-    "Javlibrary": "javlilb6ye",
-    "Javbus": "SNIS-580",
     "Arzon": "1308618",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,11 @@
     "Actors": [
         "\u5c0f\u91ce\u5915\u5b50"
     ],
-    "Modify": "2021-09-25 18:34:13"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "e8WYr",
+    "JavLibrary": "javlilb6ye",
+    "JavBus": "SNIS-580",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/snis580/snis580pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/e8/e8WYr.jpg",
+    "Init": "2021-09-25 18:34:13"
 }

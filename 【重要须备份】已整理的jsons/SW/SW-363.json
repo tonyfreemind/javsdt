@@ -13,12 +13,9 @@
     "Studio": "SWITCH",
     "Publisher": "SWITCH\uff08\u30d2\u30d3\u30ce\uff09",
     "Score": 60,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/h_635sw363/h_635sw363pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "56vw_b.jpg",
     "CutType": 1,
-    "Javdb": "kJV0",
-    "Javlibrary": "javlii36zq",
-    "Javbus": "SW-363",
     "Arzon": "1299012",
     "CompletionStatus": 6,
     "Version": 1,
@@ -36,5 +33,11 @@
         "\u307f\u306a\u307f\u611b\u661f",
         "\u9ad8\u5c71\u3048\u307f\u308a"
     ],
-    "Modify": "2021-09-25 19:57:45"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "kJV0",
+    "JavLibrary": "javlii36zq",
+    "JavBus": "SW-363",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/h_635sw363/h_635sw363pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/kj/kJV0.jpg",
+    "Init": "2021-09-25 19:57:45"
 }

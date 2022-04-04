@@ -13,12 +13,9 @@
     "Studio": "S1 NO.1 STYLE",
     "Publisher": "S1 NO.1 STYLE",
     "Score": 85,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ssni117/ssni117pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "6e7v_b.jpg",
     "CutType": 1,
-    "Javdb": "a8zar",
-    "Javlibrary": "javli4yzqu",
-    "Javbus": "SSNI-117",
     "Arzon": "1440757",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,11 @@
     "Actors": [
         "\u5c0f\u5cf6\u307f\u306a\u307f"
     ],
-    "Modify": "2021-09-25 18:44:10"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "a8zar",
+    "JavLibrary": "javli4yzqu",
+    "JavBus": "SSNI-117",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ssni117/ssni117pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/a8/a8zar.jpg",
+    "Init": "2021-09-25 18:44:10"
 }

@@ -13,12 +13,9 @@
     "Studio": "\u30de\u30c9\u30f3\u30ca",
     "Publisher": "Madonna",
     "Score": 80,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/juy356/juy356pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "6bvt_b.jpg",
     "CutType": 1,
-    "Javdb": "0R4r0",
-    "Javlibrary": "javli4t67m",
-    "Javbus": "JUY-356",
     "Arzon": "1434738",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,11 @@
     "Actors": [
         "\u5927\u5cf6\u512a\u9999"
     ],
-    "Modify": "2021-09-25 16:04:51"
+    "Modify": "2022-04-01 22:01:11",
+    "JavDb": "0R4r0",
+    "JavLibrary": "javli4t67m",
+    "JavBus": "JUY-356",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/juy356/juy356pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/0r/0R4r0.jpg",
+    "Init": "2021-09-25 16:04:51"
 }

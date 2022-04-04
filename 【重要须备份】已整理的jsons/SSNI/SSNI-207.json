@@ -13,12 +13,9 @@
     "Studio": "S1 NO.1 STYLE",
     "Publisher": "S1 NO.1 STYLE",
     "Score": 88,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ssni207/ssni207pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "6k1i_b.jpg",
     "CutType": 1,
-    "Javdb": "bKMea",
-    "Javlibrary": "javli7a2qq",
-    "Javbus": "SSNI-207",
     "Arzon": "1456136",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,11 @@
     "Actors": [
         "\u8475\u53f8"
     ],
-    "Modify": "2021-09-25 18:46:16"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "bKMea",
+    "JavLibrary": "javli7a2qq",
+    "JavBus": "SSNI-207",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ssni207/ssni207pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/bk/bKMea.jpg",
+    "Init": "2021-09-25 18:46:16"
 }

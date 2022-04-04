@@ -13,12 +13,9 @@
     "Studio": "\u672a\u6e80",
     "Publisher": "\u672a\u6e80",
     "Score": 83,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mmnd141/mmnd141pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "5x1m_b.jpg",
     "CutType": 1,
-    "Javdb": "gRkE",
-    "Javlibrary": "javliklp5m",
-    "Javbus": "MMND-141",
     "Arzon": "1512646",
     "CompletionStatus": 6,
     "Version": 1,
@@ -31,5 +28,11 @@
     "Actors": [
         "\u6c34\u30c8\u3055\u304f\u3089"
     ],
-    "Modify": "2021-09-25 17:47:45"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "gRkE",
+    "JavLibrary": "javliklp5m",
+    "JavBus": "MMND-141",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mmnd141/mmnd141pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/gr/gRkE.jpg",
+    "Init": "2021-09-25 17:47:45"
 }

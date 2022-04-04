@@ -13,12 +13,9 @@
     "Studio": "S1 NO.1 STYLE",
     "Publisher": "S1 NO.1 STYLE",
     "Score": 79,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/snis825/snis825pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "5tbz_b.jpg",
     "CutType": 1,
-    "Javdb": "pkyXZ",
-    "Javlibrary": "javlikac5i",
-    "Javbus": "SNIS-825",
     "Arzon": "1374111",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,11 @@
     "Actors": [
         "\u4e09\u4e0a\u60a0\u4e9c"
     ],
-    "Modify": "2021-09-25 18:37:07"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "pkyXZ",
+    "JavLibrary": "javlikac5i",
+    "JavBus": "SNIS-825",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/snis825/snis825pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/pk/pkyXZ.jpg",
+    "Init": "2021-09-25 18:37:07"
 }

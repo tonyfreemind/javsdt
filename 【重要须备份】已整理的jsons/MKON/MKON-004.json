@@ -13,12 +13,9 @@
     "Studio": "\u304b\u3050\u3084\u59ebPt/\u5984\u60f3\u65cf",
     "Publisher": "\u30df\u30b3\u30f3",
     "Score": 80,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mkon004/mkon004pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "6yjx_b.jpg",
     "CutType": 1,
-    "Javdb": "VBrqD",
-    "Javlibrary": "javli73d6q",
-    "Javbus": "MKON-004",
     "Arzon": "1499184",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,11 @@
     "Actors": [
         "\u5b9d\u7530\u3082\u306a\u307f"
     ],
-    "Modify": "2021-09-25 17:46:50"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "VBrqD",
+    "JavLibrary": "javli73d6q",
+    "JavBus": "MKON-004",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mkon004/mkon004pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/vb/VBrqD.jpg",
+    "Init": "2021-09-25 17:46:50"
 }

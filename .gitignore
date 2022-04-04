@@ -3,6 +3,7 @@
 /测试/
 /venv/
 /bug/
+/测试jav/
 /有待更新.docx
 /用前必读.txt
 
@@ -12,15 +13,17 @@
 /src/dist/
 /src/venv/
 /src/test.py
+/src/test.html
 
 *.spec
 
 *.ini
 
+*.exe
+
 /src/*.ico
 /src/*.png
 
 /src/*.txt
-!/src/StaticFiles/【素人车牌】.txt
 
-#/src/Functions/Web/Javdb.py
+#/src/Functions/Web/JavDb.py

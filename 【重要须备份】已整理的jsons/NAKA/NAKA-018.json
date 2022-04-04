@@ -13,12 +13,9 @@
     "Studio": "AVS",
     "Publisher": "AVSCollector\u2019s",
     "Score": 71,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/naka018/naka018pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "6y5x_b.jpg",
     "CutType": 1,
-    "Javdb": "PqN9J",
-    "Javlibrary": "javli7t52u",
-    "Javbus": "NAKA-018",
     "Arzon": "1498726",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,11 @@
     "Actors": [
         "\u7a32\u5ddd\u306a\u3064\u3081"
     ],
-    "Modify": "2021-09-25 17:54:02"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "PqN9J",
+    "JavLibrary": "javli7t52u",
+    "JavBus": "NAKA-018",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/naka018/naka018pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/pq/PqN9J.jpg",
+    "Init": "2021-09-25 17:54:02"
 }

@@ -13,12 +13,9 @@
     "Studio": "Fitch",
     "Publisher": "Fitch",
     "Score": 86,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/jufd739/jufd739pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "5zcc_b.jpg",
     "CutType": 1,
-    "Javdb": "yrMYX",
-    "Javlibrary": "javliki2qe",
-    "Javbus": "JUFD-739",
     "Arzon": "1392690",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,11 @@
     "Actors": [
         "\u3081\u3050\u308a"
     ],
-    "Modify": "2021-09-25 16:04:07"
+    "Modify": "2022-04-01 22:01:11",
+    "JavDb": "yrMYX",
+    "JavLibrary": "javliki2qe",
+    "JavBus": "JUFD-739",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/jufd739/jufd739pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/yr/yrMYX.jpg",
+    "Init": "2021-09-25 16:04:07"
 }

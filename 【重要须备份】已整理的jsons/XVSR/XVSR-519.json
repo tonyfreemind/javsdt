@@ -13,12 +13,9 @@
     "Studio": "\u30de\u30c3\u30af\u30b9\u30a8\u30fc",
     "Publisher": "Calen",
     "Score": 52,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/xvsr519so/xvsr519sopl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "7f9p_b.jpg",
     "CutType": 1,
-    "Javdb": "mJ37R",
-    "Javlibrary": "javli6rqru",
-    "Javbus": "XVSR-519",
     "Arzon": "1547645",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,11 @@
     "Actors": [
         "\u7ec0\u91ce\u5149"
     ],
-    "Modify": "2021-09-25 20:37:02"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "mJ37R",
+    "JavLibrary": "javli6rqru",
+    "JavBus": "XVSR-519",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/xvsr519so/xvsr519sopl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/mj/mJ37R.jpg",
+    "Init": "2021-09-25 20:37:02"
 }

@@ -13,12 +13,9 @@
     "Studio": "VENUS",
     "Publisher": "\u5973\u795e\uff08\u30f4\u30a3\u30fc\u30ca\u30b9\uff09",
     "Score": 82,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/vec384/vec384pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "7b51_b.jpg",
     "CutType": 1,
-    "Javdb": "kYDV6",
-    "Javlibrary": "javli6lmse",
-    "Javbus": "VEC-384",
     "Arzon": "1535604",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,11 @@
     "Actors": [
         "\u6709\u5742\u6df1\u96ea"
     ],
-    "Modify": "2021-09-25 20:21:07"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "kYDV6",
+    "JavLibrary": "javli6lmse",
+    "JavBus": "VEC-384",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/vec384/vec384pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/ky/kYDV6.jpg",
+    "Init": "2021-09-25 20:21:07"
 }

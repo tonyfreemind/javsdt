@@ -13,12 +13,9 @@
     "Studio": "MOODYZ",
     "Publisher": "MOODYZ DIVA",
     "Score": 87,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mide723/mide723pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "7g7z_b.jpg",
     "CutType": 1,
-    "Javdb": "mJxQZ",
-    "Javlibrary": "javli6tg3a",
-    "Javbus": "MIDE-723",
     "Arzon": "1548818",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,11 @@
     "Actors": [
         "\u7531\u611b\u53ef\u5948"
     ],
-    "Modify": "2021-09-25 17:40:37"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "mJxQZ",
+    "JavLibrary": "javli6tg3a",
+    "JavBus": "MIDE-723",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mide723/mide723pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/mj/mJxQZ.jpg",
+    "Init": "2021-09-25 17:40:37"
 }

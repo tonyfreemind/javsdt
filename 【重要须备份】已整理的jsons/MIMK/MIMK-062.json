@@ -13,12 +13,9 @@
     "Studio": "MOODYZ",
     "Publisher": "\u307e\u3093\u304d\u3064",
     "Score": 89,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mimk062/mimk062pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "6t7s_b.jpg",
     "CutType": 1,
-    "Javdb": "V4yYX",
-    "Javlibrary": "javli7ttqu",
-    "Javbus": "MIMK-062",
     "Arzon": "1484546",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,11 @@
     "Actors": [
         "\u4f50\u5c71\u611b"
     ],
-    "Modify": "2021-09-25 17:44:03"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "V4yYX",
+    "JavLibrary": "javli7ttqu",
+    "JavBus": "MIMK-062",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mimk062/mimk062pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/v4/V4yYX.jpg",
+    "Init": "2021-09-25 17:44:03"
 }

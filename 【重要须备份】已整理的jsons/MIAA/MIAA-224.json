@@ -13,12 +13,9 @@
     "Studio": "MOODYZ",
     "Publisher": "\u307f\u3093\u306a\u306e\u30ad\u30ab\u30bf\u30f3",
     "Score": 80,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/miaa224/miaa224pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "7ils_b.jpg",
     "CutType": 1,
-    "Javdb": "vyeQp",
-    "Javlibrary": "javli6r35i",
-    "Javbus": "MIAA-224",
     "Arzon": "1554080",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,11 @@
     "Actors": [
         "\u4f50\u77e5\u5b50"
     ],
-    "Modify": "2021-09-25 16:05:33"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "vyeQp",
+    "JavLibrary": "javli6r35i",
+    "JavBus": "MIAA-224",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/miaa224/miaa224pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/vy/vyeQp.jpg",
+    "Init": "2021-09-25 16:05:33"
 }

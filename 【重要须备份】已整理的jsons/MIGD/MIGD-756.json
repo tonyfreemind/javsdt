@@ -13,12 +13,9 @@
     "Studio": "MOODYZ",
     "Publisher": "MOODYZ Gati",
     "Score": 83,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/migd756/migd756pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "5rii_b.jpg",
     "CutType": 1,
-    "Javdb": "vDv8p",
-    "Javlibrary": "javlikddqq",
-    "Javbus": "MIGD-756",
     "Arzon": "1367776",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,11 @@
     "Actors": [
         "\u9ebb\u91cc\u68a8\u590f"
     ],
-    "Modify": "2021-09-25 17:42:05"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "vDv8p",
+    "JavLibrary": "javlikddqq",
+    "JavBus": "MIGD-756",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/migd756/migd756pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/vd/vDv8p.jpg",
+    "Init": "2021-09-25 17:42:05"
 }

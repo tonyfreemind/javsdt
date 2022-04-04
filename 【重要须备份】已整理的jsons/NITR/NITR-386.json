@@ -13,12 +13,9 @@
     "Studio": "\u30af\u30ea\u30b9\u30bf\u30eb\u6620\u50cf",
     "Publisher": "NITRO",
     "Score": 80,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/49nitr386/49nitr386pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "6kps_b.jpg",
     "CutType": 1,
-    "Javdb": "65kva",
-    "Javlibrary": "javli7bwty",
-    "Javbus": "NITR-386",
     "Arzon": "1454615",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,11 @@
     "Actors": [
         "\u7948\u91cc\u304d\u3059\u307f"
     ],
-    "Modify": "2021-09-25 17:56:36"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "65kva",
+    "JavLibrary": "javli7bwty",
+    "JavBus": "NITR-386",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/49nitr386/49nitr386pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/65/65kva.jpg",
+    "Init": "2021-09-25 17:56:36"
 }

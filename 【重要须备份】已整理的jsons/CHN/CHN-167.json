@@ -12,26 +12,29 @@
     "Director": "\u30de\u30f3\u30cf\u30c3\u30bf\u30f3\u6728\u6751",
     "Studio": "\u30d7\u30ec\u30b9\u30c6\u30fc\u30b8",
     "Publisher": "\u8cb8",
-    "Score": 73,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/118chn167/118chn167pl.jpg",
+    "Score": 72,
+    "CoverLibrary": "",
     "CoverBus": "6y9i_b.jpg",
     "CutType": 1,
-    "Javdb": "2V1by",
-    "Javlibrary": "javli7r7y4",
-    "Javbus": "CHN-167",
     "Arzon": "1494653",
     "CompletionStatus": 6,
     "Version": 1,
     "Genres": [
-        "\u7f8e\u4e73",
-        "\u53e3\u4ea4",
-        "\u5355\u4f53\u4f5c\u54c1",
         "\u7f8e\u5c11\u5973",
+        "\u7f8e\u4e73",
         "\u65e0\u6bdb",
-        "\u6f6e\u5439"
+        "\u5355\u4f53\u4f5c\u54c1",
+        "\u6f6e\u5439",
+        "\u53e3\u4ea4"
     ],
     "Actors": [
         "\u7dd2\u65b9\u30a8\u30ec\u30ca"
     ],
-    "Modify": "2021-11-09 21:16:40"
+    "Modify": "2022-04-01 22:01:11",
+    "JavDb": "2V1by",
+    "JavLibrary": "javli7r7y4",
+    "JavBus": "CHN-167",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/118chn167/118chn167pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/2v/2V1by.jpg",
+    "Init": "2021-09-13 22:45:21"
 }

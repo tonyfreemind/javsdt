@@ -13,12 +13,9 @@
     "Studio": "TMA",
     "Publisher": "TMA",
     "Score": 83,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/55t28551/55t28551pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "7032_b.jpg",
     "CutType": 1,
-    "Javdb": "",
-    "Javlibrary": "javli73t5m",
-    "Javbus": "T28-551",
     "Arzon": "1495028",
     "CompletionStatus": 7,
     "Version": 1,
@@ -35,5 +32,11 @@
         "\u516b\u5c0b\u9ebb\u8863",
         "\u4f50\u85e4\u306e\u306e\u304b"
     ],
-    "Modify": "2021-09-25 19:59:42"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "",
+    "JavLibrary": "javli73t5m",
+    "JavBus": "T28-551",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/55t28551/55t28551pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers//.jpg",
+    "Init": "2021-09-25 19:59:42"
 }

@@ -13,12 +13,9 @@
     "Studio": "\u30d6\u30a4\u30a2\u30f3\u30c9\u30a2\u30fc\u30eb\u30d7\u30ed\u30c7\u30e5\u30fc\u30b9",
     "Publisher": "V\uff06R PRODUCE",
     "Score": 88,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/h_910vrtm421/h_910vrtm421pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "72jc_b.jpg",
     "CutType": 1,
-    "Javdb": "wGvMe",
-    "Javlibrary": "javli7yl2a",
-    "Javbus": "VRTM-421",
     "Arzon": "1508217",
     "CompletionStatus": 6,
     "Version": 1,
@@ -37,5 +34,11 @@
         "\u671b\u6708\u308a\u3055",
         "\u3042\u3086\u307f\u8389\u82b1"
     ],
-    "Modify": "2021-09-25 20:25:59"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "wGvMe",
+    "JavLibrary": "javli7yl2a",
+    "JavBus": "VRTM-421",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/h_910vrtm421/h_910vrtm421pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/wg/wGvMe.jpg",
+    "Init": "2021-09-25 20:25:59"
 }

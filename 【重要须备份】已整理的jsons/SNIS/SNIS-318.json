@@ -13,12 +13,9 @@
     "Studio": "S1 NO.1 STYLE",
     "Publisher": "S1 NO.1 STYLE",
     "Score": 81,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/snis318/snis318pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "4ltr_b.jpg",
     "CutType": 1,
-    "Javdb": "Jbwz",
-    "Javlibrary": "javliilj6u",
-    "Javbus": "SNIS-318",
     "Arzon": "1244166",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,11 @@
     "Actors": [
         "\u30c6\u30a3\u30a2"
     ],
-    "Modify": "2021-09-25 18:30:08"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "Jbwz",
+    "JavLibrary": "javliilj6u",
+    "JavBus": "SNIS-318",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/snis318/snis318pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/jb/Jbwz.jpg",
+    "Init": "2021-09-25 18:30:08"
 }

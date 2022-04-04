@@ -13,12 +13,9 @@
     "Studio": "S1 NO.1 STYLE",
     "Publisher": "S1 NO.1 STYLE",
     "Score": 84,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/snis999/snis999pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "666s_b.jpg",
     "CutType": 1,
-    "Javdb": "V49YX",
-    "Javlibrary": "javliktz3a",
-    "Javbus": "SNIS-999",
     "Arzon": "1415383",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,11 @@
     "Actors": [
         "\u5929\u4f7f\u3082\u3048"
     ],
-    "Modify": "2021-09-25 18:40:38"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "V49YX",
+    "JavLibrary": "javliktz3a",
+    "JavBus": "SNIS-999",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/snis999/snis999pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/v4/V49YX.jpg",
+    "Init": "2021-09-25 18:40:38"
 }

@@ -13,12 +13,9 @@
     "Studio": "\u7121\u57a2",
     "Publisher": "\u7121\u57a2",
     "Score": 75,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mudr047/mudr047pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "6q00_b.jpg",
     "CutType": 1,
-    "Javdb": "WwXXB",
-    "Javlibrary": "javli7i5sq",
-    "Javbus": "MUDR-047",
     "Arzon": "1474779",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,11 @@
     "Actors": [
         "\u9ebb\u91cc\u68a8\u590f"
     ],
-    "Modify": "2021-09-25 17:50:19"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "WwXXB",
+    "JavLibrary": "javli7i5sq",
+    "JavBus": "MUDR-047",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mudr047/mudr047pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/ww/WwXXB.jpg",
+    "Init": "2021-09-25 17:50:19"
 }

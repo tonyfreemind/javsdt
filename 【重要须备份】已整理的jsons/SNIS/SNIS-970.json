@@ -13,12 +13,9 @@
     "Studio": "S1 NO.1 STYLE",
     "Publisher": "S1 NO.1 STYLE",
     "Score": 84,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/snis970/snis970pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "63mi_b.jpg",
     "CutType": 1,
-    "Javdb": "AqRNO",
-    "Javlibrary": "javliktj6q",
-    "Javbus": "SNIS-970",
     "Arzon": "1406202",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,11 @@
     "Actors": [
         "\u6a4b\u672c\u3042\u308a\u306a"
     ],
-    "Modify": "2021-09-25 18:40:00"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "AqRNO",
+    "JavLibrary": "javliktj6q",
+    "JavBus": "SNIS-970",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/snis970/snis970pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/aq/AqRNO.jpg",
+    "Init": "2021-09-25 18:40:00"
 }

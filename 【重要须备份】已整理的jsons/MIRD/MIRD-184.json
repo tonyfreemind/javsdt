@@ -13,12 +13,9 @@
     "Studio": "MOODYZ",
     "Publisher": "MOODYZ REAL",
     "Score": 90,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mird184/mird184pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "6y6p_b.jpg",
     "CutType": 1,
-    "Javdb": "1evA9",
-    "Javlibrary": "javli7t53e",
-    "Javbus": "MIRD-184",
     "Arzon": "1498811",
     "CompletionStatus": 6,
     "Version": 1,
@@ -38,5 +35,11 @@
         "\u661f\u5948\u3042\u3044",
         "\u4f50\u85e4\u306e\u306e\u304b"
     ],
-    "Modify": "2021-09-25 17:45:50"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "1evA9",
+    "JavLibrary": "javli7t53e",
+    "JavBus": "MIRD-184",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mird184/mird184pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/1e/1evA9.jpg",
+    "Init": "2021-09-25 17:45:50"
 }

@@ -13,12 +13,9 @@
     "Studio": "MARRION",
     "Publisher": "KCP",
     "Score": 87,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mmus017so/mmus017sopl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "6dww_b.jpg",
     "CutType": 1,
-    "Javdb": "P9wPa",
-    "Javlibrary": "javli43lqi",
-    "Javbus": "MMUS-017",
     "Arzon": "1440176",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,11 @@
     "Actors": [
         "\u4f50\u3005\u6ce2\u7dbe"
     ],
-    "Modify": "2021-09-25 17:48:20"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "P9wPa",
+    "JavLibrary": "javli43lqi",
+    "JavBus": "MMUS-017",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mmus017so/mmus017sopl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/p9/P9wPa.jpg",
+    "Init": "2021-09-25 17:48:20"
 }

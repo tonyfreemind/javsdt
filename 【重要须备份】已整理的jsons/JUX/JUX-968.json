@@ -1,0 +1,38 @@
+{
+    "Car": "JUX-968",
+    "CarOrigin": "jux968",
+    "Series": "\u5076\u7136\u306e\u5bc6\u5ba4",
+    "Title": "\u5076\u7136\u306e\u5bc6\u5ba4 \u5973\u6559\u5e2b\u3068\u751f\u5f92",
+    "TitleZh": "\u5076\u7136\u7684\u5bc6\u5ba4\u5973\u6559\u5e08\u548c\u5b66\u751f",
+    "Plot": "\u3010\u5f71\u7247\u4e0b\u67b6\uff0c\u6682\u65e0\u7b80\u4ecb\u3011",
+    "PlotZh": "\u3010\u5f71\u7247\u4e0b\u67b6\uff0c\u6682\u65f6\u65e0\u7b80\u4ecb\u3011",
+    "Review": "",
+    "Release": "2016-09-25",
+    "Runtime": 120,
+    "Director": "\u306a\u304c\u3057\u3081",
+    "Studio": "\u30de\u30c9\u30f3\u30ca",
+    "Publisher": "Madonna",
+    "Score": 92,
+    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/jux968/jux968pl.jpg",
+    "CoverBus": "5nh7_b.jpg",
+    "CutType": 1,
+    "Javdb": "zK727",
+    "Javlibrary": "javlilytti",
+    "Javbus": "JUX-968",
+    "Arzon": "",
+    "CompletionStatus": 6,
+    "Version": 1,
+    "Genres": [
+        "\u5973\u6559\u5e08",
+        "\u5355\u4f53\u4f5c\u54c1",
+        "\u7f9e\u803b",
+        "\u6570\u4f4d\u9a6c\u8d5b\u514b",
+        "\u4eba\u59bb",
+        "\u5404\u79cd\u804c\u4e1a",
+        "\u719f\u5973"
+    ],
+    "Actors": [
+        "\u4eca\u4e95\u771f\u7531\u7f8e"
+    ],
+    "Modify": "2022-02-09 23:20:28"
+}

@@ -1,0 +1,39 @@
+{
+    "Car": "IPTD-727",
+    "CarOrigin": "iptd727",
+    "Series": "",
+    "Title": "Rio\u306e\u5b8c\u5168\u4e3b\u89b3\u6deb\u8a9e\u30de\u30cb\u30e5\u30a2\u30eb",
+    "TitleZh": "Rio\u7684\u5b8c\u5168\u4e3b\u89c2\u6deb\u8bed\u624b\u518c",
+    "Plot": "\u3010\u5f71\u7247\u4e0b\u67b6\uff0c\u6682\u65e0\u7b80\u4ecb\u3011",
+    "PlotZh": "\u3010\u5f71\u7247\u4e0b\u67b6\uff0c\u6682\u65f6\u65e0\u7b80\u4ecb\u3011",
+    "Review": "",
+    "Release": "2011-05-01",
+    "Runtime": 170,
+    "Director": "",
+    "Studio": "IDEA POCKET",
+    "Publisher": "\u30c6\u30a3\u30c3\u30b7\u30e5",
+    "Score": 84,
+    "CoverLibrary": "",
+    "CoverBus": "2b0b_b.jpg",
+    "CutType": 1,
+    "Arzon": "",
+    "CompletionStatus": 6,
+    "Version": 1,
+    "Genres": [
+        "\u773c\u955c",
+        "\u4e3b\u89c2\u89c6\u89d2",
+        "\u6570\u4f4d\u9a6c\u8d5b\u514b",
+        "\u89d2\u8272\u626e\u6f14",
+        "\u6deb\u8bed"
+    ],
+    "Actors": [
+        "Rio"
+    ],
+    "Modify": "2022-04-01 22:01:11",
+    "JavDb": "VR1A",
+    "JavLibrary": "javliaay3m",
+    "JavBus": "IPTD-727",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/iptd727/iptd727pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/vr/VR1A.jpg",
+    "Init": "2021-09-05 18:36:08"
+}
