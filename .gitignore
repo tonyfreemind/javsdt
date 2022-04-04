@@ -13,6 +13,7 @@
 /src/dist/
 /src/venv/
 /src/test.py
+/src/test.html
 
 *.spec
 
@@ -24,6 +25,5 @@
 /src/*.png
 
 /src/*.txt
-!/src/StaticFiles/【素人车牌】.txt
 
 #/src/Functions/Web/JavDb.py
