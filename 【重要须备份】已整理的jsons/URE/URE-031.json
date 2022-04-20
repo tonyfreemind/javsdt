@@ -13,12 +13,9 @@
     "Studio": "\u30de\u30c9\u30f3\u30ca",
     "Publisher": "\u719f\u308c\u30b3\u30df",
     "Score": 91,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ure031/ure031pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "57zo_b.jpg",
     "CutType": 1,
-    "Javdb": "NYbx",
-    "Javlibrary": "javlilay44",
-    "Javbus": "URE-031",
     "Arzon": "490362",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,11 @@
         "\u963f\u90e8\u4e43\u307f\u304f",
         "\u677e\u4e95\u512a\u5b50"
     ],
-    "Modify": "2021-09-25 20:18:28"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "NYbx",
+    "JavLibrary": "javlilay44",
+    "JavBus": "URE-031",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ure031/ure031pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/ny/NYbx.jpg",
+    "Init": "2021-09-25 20:18:28"
 }

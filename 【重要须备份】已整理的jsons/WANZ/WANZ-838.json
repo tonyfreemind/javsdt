@@ -13,12 +13,9 @@
     "Studio": "\u30ef\u30f3\u30ba\u30d5\u30a1\u30af\u30c8\u30ea\u30fc",
     "Publisher": "WANZ",
     "Score": 86,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/wanz838/wanz838pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "6zbf_b.jpg",
     "CutType": 1,
-    "Javdb": "33VWe",
-    "Javlibrary": "javli7zw4q",
-    "Javbus": "WANZ-838",
     "Arzon": "1502405",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,11 @@
     "Actors": [
         "JULIA"
     ],
-    "Modify": "2021-09-25 20:31:27"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "33VWe",
+    "JavLibrary": "javli7zw4q",
+    "JavBus": "WANZ-838",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/wanz838/wanz838pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/33/33VWe.jpg",
+    "Init": "2021-09-25 20:31:27"
 }

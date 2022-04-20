@@ -13,12 +13,9 @@
     "Studio": "S1 NO.1 STYLE",
     "Publisher": "S1 NO.1 STYLE",
     "Score": 84,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/snis888/snis888pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "5xdu_b.jpg",
     "CutType": 1,
-    "Javdb": "mO3Rn",
-    "Javlibrary": "javlikit2a",
-    "Javbus": "SNIS-888",
     "Arzon": "1388297",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,11 @@
     "Actors": [
         "\u5c0f\u91ce\u5915\u5b50"
     ],
-    "Modify": "2021-09-25 18:38:21"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "mO3Rn",
+    "JavLibrary": "javlikit2a",
+    "JavBus": "SNIS-888",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/snis888/snis888pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/mo/mO3Rn.jpg",
+    "Init": "2021-09-25 18:38:21"
 }

@@ -12,30 +12,33 @@
     "Director": "\u6ca2\u5eb5",
     "Studio": "\u30c9\u30ea\u30fc\u30e0\u30c1\u30b1\u30c3\u30c8",
     "Publisher": "VIVID\uff08\u30c9\u30ea\u30fc\u30e0\u30c1\u30b1\u30c3\u30c8\uff09",
-    "Score": 85,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/24vdd134/24vdd134pl.jpg",
+    "Score": 84,
+    "CoverDb": "https://jdbimgs.com/covers/06/06V3.jpg",
+    "CoverLibrary": "",
     "CoverBus": "6ev7_b.jpg",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/24vdd134/24vdd134pl.jpg",
     "CutType": 1,
-    "Javdb": "06V3",
-    "Javlibrary": "javli4yxtu",
-    "Javbus": "VDD-134",
+    "JavDb": "06V3",
+    "JavLibrary": "javli4yxtu",
+    "JavBus": "VDD-134",
     "Arzon": "1441085",
     "CompletionStatus": 6,
     "Version": 1,
     "Genres": [
-        "\u51cc\u8fb1",
-        "\u5404\u79cd\u804c\u4e1a",
-        "\u8fde\u88e4\u889c",
-        "\u62db\u5f85\u5c0f\u59d0",
-        "\u89d2\u8272\u626e\u6f14",
-        "\u4f01\u753b",
-        "\u5355\u4f53\u4f5c\u54c1",
         "\u7f9e\u803b",
+        "\u5404\u79cd\u804c\u4e1a",
         "\u591aP",
-        "\u804c\u4e1a\u88c5"
+        "\u51cc\u8fb1",
+        "\u89d2\u8272\u626e\u6f14",
+        "\u62db\u5f85\u5c0f\u59d0",
+        "\u5355\u4f53\u4f5c\u54c1",
+        "\u4f01\u753b",
+        "\u804c\u4e1a\u88c5",
+        "\u8fde\u88e4\u889c"
     ],
     "Actors": [
         "\u68ee\u82fa\u8389"
     ],
-    "Modify": "2021-09-25 20:20:08"
+    "Init": "2022-04-03 18:21:50",
+    "Modify": "2022-04-03 18:21:57"
 }

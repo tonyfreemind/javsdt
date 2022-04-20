@@ -13,12 +13,9 @@
     "Studio": "\u4e71\u4e38",
     "Publisher": "\u4e71\u4e38",
     "Score": 85,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/tyod280/tyod280pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "4ybr_b.jpg",
     "CutType": 1,
-    "Javdb": "bAqEa",
-    "Javlibrary": "javliizu6u",
-    "Javbus": "TYOD-280",
     "Arzon": "1383004",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,11 @@
     "Actors": [
         "\u6797\u3086\u306a"
     ],
-    "Modify": "2021-09-25 20:02:23"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "bAqEa",
+    "JavLibrary": "javliizu6u",
+    "JavBus": "TYOD-280",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/tyod280/tyod280pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/ba/bAqEa.jpg",
+    "Init": "2021-09-25 20:02:23"
 }

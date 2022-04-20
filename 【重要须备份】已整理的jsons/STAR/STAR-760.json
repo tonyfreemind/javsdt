@@ -13,12 +13,9 @@
     "Studio": "SOD Create",
     "Publisher": "SOD star",
     "Score": 92,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1star760/1star760pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "5wzj_b.jpg",
     "CutType": 1,
-    "Javdb": "J2rK8",
-    "Javlibrary": "javlikd52i",
-    "Javbus": "STAR-760",
     "Arzon": "1402995",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,11 @@
     "Actors": [
         "\u5e02\u5ddd\u307e\u3055\u307f"
     ],
-    "Modify": "2021-09-25 19:21:48"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "J2rK8",
+    "JavLibrary": "javlikd52i",
+    "JavBus": "STAR-760",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1star760/1star760pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/j2/J2rK8.jpg",
+    "Init": "2021-09-25 19:21:48"
 }

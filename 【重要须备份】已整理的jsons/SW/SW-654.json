@@ -13,12 +13,9 @@
     "Studio": "SWITCH",
     "Publisher": "SWITCH",
     "Score": 60,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1sw654/1sw654pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "7az8_b.jpg",
     "CutType": 1,
-    "Javdb": "JORPq",
-    "Javlibrary": "javli6jrqa",
-    "Javbus": "SW-654",
     "Arzon": "1533778",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,11 @@
         "\u6df1\u7530\u7d50\u68a8",
         "\u5f69\u98a8\u306e\u3093"
     ],
-    "Modify": "2021-09-25 19:58:48"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "JORPq",
+    "JavLibrary": "javli6jrqa",
+    "JavBus": "SW-654",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1sw654/1sw654pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/jo/JORPq.jpg",
+    "Init": "2021-09-25 19:58:48"
 }

@@ -13,12 +13,9 @@
     "Studio": "Fitch",
     "Publisher": "Fitch",
     "Score": 83,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/jufd977/jufd977pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "6sla_b.jpg",
     "CutType": 1,
-    "Javdb": "wKeGB",
-    "Javlibrary": "javli7ly7u",
-    "Javbus": "JUFD-977",
     "Arzon": "1483380",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,11 @@
         "\u7f8e\u4fdd\u7d50\u8863",
         "\u82bd\u68ee\u3057\u305a\u304f"
     ],
-    "Modify": "2021-09-25 16:04:23"
+    "Modify": "2022-04-01 22:01:11",
+    "JavDb": "wKeGB",
+    "JavLibrary": "javli7ly7u",
+    "JavBus": "JUFD-977",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/jufd977/jufd977pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/wk/wKeGB.jpg",
+    "Init": "2021-09-25 16:04:23"
 }

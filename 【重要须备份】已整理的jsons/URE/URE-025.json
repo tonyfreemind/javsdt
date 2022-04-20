@@ -13,12 +13,9 @@
     "Studio": "\u30de\u30c9\u30f3\u30ca",
     "Publisher": "\u719f\u308c\u30b3\u30df",
     "Score": 85,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ure025/ure025pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "4vex_b.jpg",
     "CutType": 1,
-    "Javdb": "Mb97",
-    "Javlibrary": "javlii3p4i",
-    "Javbus": "URE-025",
     "Arzon": "1278317",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,11 @@
     "Actors": [
         "\u5317\u5ddd\u30a8\u30ea\u30ab"
     ],
-    "Modify": "2021-09-25 20:18:15"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "Mb97",
+    "JavLibrary": "javlii3p4i",
+    "JavBus": "URE-025",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ure025/ure025pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/mb/Mb97.jpg",
+    "Init": "2021-09-25 20:18:15"
 }

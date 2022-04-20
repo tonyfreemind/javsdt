@@ -13,12 +13,9 @@
     "Studio": "S1 NO.1 STYLE",
     "Publisher": "S1 NO.1 STYLE",
     "Score": 85,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/snis515/snis515pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "4zai_b.jpg",
     "CutType": 1,
-    "Javdb": "kKJeN",
-    "Javlibrary": "javliizesi",
-    "Javbus": "SNIS-515",
     "Arzon": "1291306",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,11 @@
     "Actors": [
         "\u5712\u7530\u307f\u304a\u3093"
     ],
-    "Modify": "2021-09-25 18:33:11"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "kKJeN",
+    "JavLibrary": "javliizesi",
+    "JavBus": "SNIS-515",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/snis515/snis515pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/kk/kKJeN.jpg",
+    "Init": "2021-09-25 18:33:11"
 }

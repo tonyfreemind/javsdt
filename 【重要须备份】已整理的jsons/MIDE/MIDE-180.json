@@ -13,12 +13,9 @@
     "Studio": "MOODYZ",
     "Publisher": "MOODYZ DIVA",
     "Score": 90,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mide180/mide180pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "4kzq_b.jpg",
     "CutType": 1,
-    "Javdb": "Mm0pJ",
-    "Javlibrary": "javliilk4m",
-    "Javbus": "MIDE-180",
     "Arzon": "1239719",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,11 @@
     "Actors": [
         "\u521d\u5ddd\u307f\u306a\u307f"
     ],
-    "Modify": "2021-09-25 17:24:13"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "Mm0pJ",
+    "JavLibrary": "javliilk4m",
+    "JavBus": "MIDE-180",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mide180/mide180pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/mm/Mm0pJ.jpg",
+    "Init": "2021-09-25 17:24:13"
 }

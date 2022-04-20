@@ -13,12 +13,9 @@
     "Studio": "MOODYZ",
     "Publisher": "MOODYZ DIVA",
     "Score": 90,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mide495/mide495pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "6b7i_b.jpg",
     "CutType": 1,
-    "Javdb": "9DAG6",
-    "Javlibrary": "javli4rozi",
-    "Javbus": "MIDE-495",
     "Arzon": "1431474",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,11 @@
     "Actors": [
         "JULIA"
     ],
-    "Modify": "2021-09-25 17:29:32"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "9DAG6",
+    "JavLibrary": "javli4rozi",
+    "JavBus": "MIDE-495",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mide495/mide495pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/9d/9DAG6.jpg",
+    "Init": "2021-09-25 17:29:32"
 }

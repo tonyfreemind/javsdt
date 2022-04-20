@@ -13,12 +13,9 @@
     "Studio": "S1 NO.1 STYLE",
     "Publisher": "S1 NO.1 STYLE",
     "Score": 90,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/snis656/snis656pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "5gnx_b.jpg",
     "CutType": 1,
-    "Javdb": "5EVPa",
-    "Javlibrary": "javliltbry",
-    "Javbus": "SNIS-656",
     "Arzon": "1599153",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,11 @@
     "Actors": [
         "\u5b87\u90fd\u5bae\u3057\u3092\u3093"
     ],
-    "Modify": "2021-09-25 18:35:34"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "5EVPa",
+    "JavLibrary": "javliltbry",
+    "JavBus": "SNIS-656",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/snis656/snis656pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/5e/5EVPa.jpg",
+    "Init": "2021-09-25 18:35:34"
 }

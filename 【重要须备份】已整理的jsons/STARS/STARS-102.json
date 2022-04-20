@@ -13,12 +13,9 @@
     "Studio": "SOD Create",
     "Publisher": "SOD star",
     "Score": 78,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1stars102/1stars102pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "78dl_b.jpg",
     "CutType": 1,
-    "Javdb": "78OYB",
-    "Javlibrary": "javli6bjsu",
-    "Javbus": "STARS-102",
     "Arzon": "1529525",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,11 @@
     "Actors": [
         "\u4eca\u4e95\u3072\u307e\u308a"
     ],
-    "Modify": "2021-09-25 19:52:15"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "78OYB",
+    "JavLibrary": "javli6bjsu",
+    "JavBus": "STARS-102",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1stars102/1stars102pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/78/78OYB.jpg",
+    "Init": "2021-09-25 19:52:15"
 }

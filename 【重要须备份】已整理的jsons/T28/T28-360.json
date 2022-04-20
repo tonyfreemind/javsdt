@@ -13,12 +13,9 @@
     "Studio": "TMA",
     "Publisher": "TMA",
     "Score": 84,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/55t28360/55t28360pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "4eb4_b.jpg",
     "CutType": 1,
-    "Javdb": "meyDY",
-    "Javlibrary": "javlijyyyy",
-    "Javbus": "T28-360",
     "Arzon": "1200603",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,11 @@
         "\u6d5c\u5d0e\u771f\u7dd2",
         "\u690e\u540d\u307e\u308a\u306a"
     ],
-    "Modify": "2021-09-25 19:59:15"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "meyDY",
+    "JavLibrary": "javlijyyyy",
+    "JavBus": "T28-360",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/55t28360/55t28360pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/me/meyDY.jpg",
+    "Init": "2021-09-25 19:59:15"
 }

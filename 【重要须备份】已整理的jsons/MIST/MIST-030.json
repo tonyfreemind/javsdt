@@ -13,12 +13,9 @@
     "Studio": "Mr.michiru",
     "Publisher": "",
     "Score": 75,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/h_890mist030/h_890mist030pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "4gdd_b.jpg",
     "CutType": 1,
-    "Javdb": "76DN1",
-    "Javlibrary": "javliidwqi",
-    "Javbus": "MIST-030",
     "Arzon": "1224136",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,11 @@
         "\u85e4\u5d8b\u552f",
         "\u6e21\u8fba\u7f8e\u7fbd"
     ],
-    "Modify": "2021-09-25 17:46:05"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "76DN1",
+    "JavLibrary": "javliidwqi",
+    "JavBus": "MIST-030",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/h_890mist030/h_890mist030pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/76/76DN1.jpg",
+    "Init": "2021-09-25 17:46:05"
 }

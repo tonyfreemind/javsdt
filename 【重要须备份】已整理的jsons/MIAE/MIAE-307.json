@@ -13,12 +13,9 @@
     "Studio": "MOODYZ",
     "Publisher": "MOODYZ ACID",
     "Score": 88,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/miae307/miae307pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "6q4w_b.jpg",
     "CutType": 1,
-    "Javdb": "pkgB5",
-    "Javlibrary": "javli7i42e",
-    "Javbus": "MIAE-307",
     "Arzon": "1474752",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,11 @@
     "Actors": [
         "\u6ce2\u591a\u91ce\u7ed3\u8863"
     ],
-    "Modify": "2021-09-25 17:20:37"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "pkgB5",
+    "JavLibrary": "javli7i42e",
+    "JavBus": "MIAE-307",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/miae307/miae307pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/pk/pkgB5.jpg",
+    "Init": "2021-09-25 17:20:37"
 }

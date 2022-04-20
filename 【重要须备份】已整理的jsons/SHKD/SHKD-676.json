@@ -1,0 +1,38 @@
+{
+    "Car": "SHKD-676",
+    "CarOrigin": "shkd676",
+    "Series": "\u8131\u7344\u8005",
+    "Title": "\u8131\u7344\u8005",
+    "TitleZh": "\u8d8a\u72f1\u8005",
+    "Plot": "\u3010\u5f71\u7247\u4e0b\u67b6\uff0c\u6682\u65e0\u7b80\u4ecb\u3011",
+    "PlotZh": "\u3010\u5f71\u7247\u4e0b\u67b6\uff0c\u6682\u65f6\u65e0\u7b80\u4ecb\u3011",
+    "Review": "////\u6211\u53bb\uff0c\u8fd9\u4e2a\u9898\u6750\u5f88\u9002\u5408\u5979\uff01\u671f\u5f85\u7b49\u65b0\u7247////\u6211\u5e0c\u671b\u770b\u5230\u8fd9\u4e2a\u5a4a\u5b50\u88ab\u4eba\u72e0\u72e0\u5730\u8650\uff0c\u72e0\u72e0\u5730\u5e72\uff0c\u5f80\u6b7b\u91cc\u5e72//",
+    "Release": "2016-03-07",
+    "Runtime": 100,
+    "Director": "\u9ad8\u539f\u5bff",
+    "Studio": "Attackers",
+    "Publisher": "\u6b7b\u591c\u60aa",
+    "Score": 94,
+    "CoverLibrary": "",
+    "CoverBus": "5cqv_b.jpg",
+    "CutType": 1,
+    "Arzon": "",
+    "CompletionStatus": 6,
+    "Version": 1,
+    "Genres": [
+        "\u5355\u4f53\u4f5c\u54c1",
+        "\u4e2d\u51fa",
+        "\u5f3a\u5978",
+        "\u4eba\u59bb"
+    ],
+    "Actors": [
+        "\u77f3\u539f\u8389\u5948"
+    ],
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "2ae3B",
+    "JavLibrary": "javlillj6u",
+    "JavBus": "SHKD-676",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/shkd676/shkd676pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/2a/2ae3B.jpg",
+    "Init": "2021-09-25 18:24:56"
+}

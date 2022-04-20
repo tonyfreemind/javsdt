@@ -13,12 +13,9 @@
     "Studio": "S1 NO.1 STYLE",
     "Publisher": "S1 NO.1 STYLE",
     "Score": 80,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/snis769/snis769pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "5psp_b.jpg",
     "CutType": 1,
-    "Javdb": "Reyn",
-    "Javlibrary": "javlilz45a",
-    "Javbus": "SNIS-769",
     "Arzon": "1362090",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,11 @@
     "Actors": [
         "\u7f8e\u7af9\u3059\u305a"
     ],
-    "Modify": "2021-09-25 18:36:51"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "Reyn",
+    "JavLibrary": "javlilz45a",
+    "JavBus": "SNIS-769",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/snis769/snis769pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/re/Reyn.jpg",
+    "Init": "2021-09-25 18:36:51"
 }

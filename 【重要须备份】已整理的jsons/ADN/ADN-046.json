@@ -1,0 +1,39 @@
+{
+    "Car": "ADN-046",
+    "CarOrigin": "adn046",
+    "Series": "\u3042\u306a\u305f\u3001\u8a31\u3057\u3066\u2026\u3002",
+    "Title": "\u3042\u306a\u305f\u3001\u8a31\u3057\u3066\u2026\u3002\u592b\u306e\u5f93\u5f1f\u306b\u8feb\u3089\u308c\u3066",
+    "TitleZh": "\u8bf7\u539f\u8c05\u6211\u2026\u3002\u8feb\u4e8e\u4e08\u592b\u7684\u8868\u5f1f",
+    "Plot": "\u3010arzon\u6709\u8be5\u5f71\u7247\uff0c\u4f46\u627e\u4e0d\u5230\u7b80\u4ecb\u3011",
+    "PlotZh": "\u3010arzon\u6709\u8be5\u5f71\u7247\uff0c\u4f46\u627e\u4e0d\u5230\u7b80\u4ecb\u3011",
+    "Review": "",
+    "Release": "2015-01-07",
+    "Runtime": 100,
+    "Director": "\u306a\u304e\u3089\u5065\u9020",
+    "Studio": "Attackers",
+    "Publisher": "\u5927\u4eba\u306e\u30c9\u30e9\u30de",
+    "Score": 93,
+    "CoverLibrary": "",
+    "CoverBus": "4kve_b.jpg",
+    "CutType": 1,
+    "Arzon": "",
+    "CompletionStatus": 6,
+    "Version": 1,
+    "Genres": [
+        "\u51cc\u8fb1",
+        "\u5267\u60c5",
+        "\u767d\u5929\u51fa\u8f68",
+        "\u5355\u4f53\u4f5c\u54c1",
+        "\u4eba\u59bb"
+    ],
+    "Actors": [
+        "\u77f3\u539f\u8389\u5948"
+    ],
+    "Modify": "2022-04-01 22:01:11",
+    "JavDb": "rmdKZ",
+    "JavLibrary": "javliijr54",
+    "JavBus": "ADN-046",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/adn046/adn046pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/rm/rmdKZ.jpg",
+    "Init": "2021-09-05 15:22:05"
+}

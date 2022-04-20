@@ -13,12 +13,9 @@
     "Studio": "MARRION",
     "Publisher": "KCP",
     "Score": 60,
-    "CoverLibrary": "http://pics.dmm.co.jp/digital/video/mmcpvr00002/mmcpvr00002pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "6h6y_b.jpg",
     "CutType": 1,
-    "Javdb": "4DdNJ",
-    "Javlibrary": "javli4zd7a",
-    "Javbus": "MMCPVR-002",
     "Arzon": "",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,11 @@
     "Actors": [
         "\u67a2\u6728\u3042\u304a\u3044"
     ],
-    "Modify": "2021-09-25 17:47:30"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "4DdNJ",
+    "JavLibrary": "javli4zd7a",
+    "JavBus": "MMCPVR-002",
+    "CoverDmm": "http://pics.dmm.co.jp/digital/video/mmcpvr00002/mmcpvr00002pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/4d/4DdNJ.jpg",
+    "Init": "2021-09-25 17:47:30"
 }

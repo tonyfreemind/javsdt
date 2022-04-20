@@ -13,12 +13,9 @@
     "Studio": "\u7121\u57a2",
     "Publisher": "\u7121\u57a2",
     "Score": 88,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mukd335/mukd335pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "4pux_b.jpg",
     "CutType": 1,
-    "Javdb": "P9yDv",
-    "Javlibrary": "javliitk6e",
-    "Javbus": "MUKD-335",
     "Arzon": "1257760",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,11 @@
     "Actors": [
         "\u65e9\u4e59\u5973\u3086\u3044"
     ],
-    "Modify": "2021-09-25 17:51:38"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "P9yDv",
+    "JavLibrary": "javliitk6e",
+    "JavBus": "MUKD-335",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mukd335/mukd335pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/p9/P9yDv.jpg",
+    "Init": "2021-09-25 17:51:38"
 }

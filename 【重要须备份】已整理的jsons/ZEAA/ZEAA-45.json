@@ -13,12 +13,9 @@
     "Studio": "\u30bb\u30f3\u30bf\u30fc\u30d3\u30ec\u30c3\u30b8",
     "Publisher": "\u6975\uff08\u30bb\u30f3\u30bf\u30fc\u30d3\u30ec\u30c3\u30b8\uff09",
     "Score": 81,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/h_086zeaa45/h_086zeaa45pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "",
     "CutType": 1,
-    "Javdb": "89WvW",
-    "Javlibrary": "javli6toze",
-    "Javbus": "",
     "Arzon": "1550280",
     "CompletionStatus": 4,
     "Version": 1,
@@ -33,5 +30,11 @@
     "Actors": [
         "\u4e95\u4e0a\u307e\u3055\u307f"
     ],
-    "Modify": "2021-09-25 20:37:41"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "89WvW",
+    "JavLibrary": "javli6toze",
+    "JavBus": "",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/h_086zeaa45/h_086zeaa45pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/89/89WvW.jpg",
+    "Init": "2021-09-25 20:37:41"
 }

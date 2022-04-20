@@ -13,12 +13,9 @@
     "Studio": "\u30ef\u30f3\u30ba\u30d5\u30a1\u30af\u30c8\u30ea\u30fc",
     "Publisher": "WANZ FACTORY",
     "Score": 78,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/3wanz236/3wanz236pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "4gbv_b.jpg",
     "CutType": 1,
-    "Javdb": "gy04m",
-    "Javlibrary": "javliidgry",
-    "Javbus": "WANZ-236",
     "Arzon": "1223706",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,11 @@
     "Actors": [
         "\u84ee\u5b9f\u30af\u30ec\u30a2"
     ],
-    "Modify": "2021-09-25 20:26:55"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "gy04m",
+    "JavLibrary": "javliidgry",
+    "JavBus": "WANZ-236",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/3wanz236/3wanz236pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/gy/gy04m.jpg",
+    "Init": "2021-09-25 20:26:55"
 }

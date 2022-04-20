@@ -13,12 +13,9 @@
     "Studio": "S1 NO.1 STYLE",
     "Publisher": "S1 NO.1 STYLE",
     "Score": 54,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/snis346/snis346pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "4n5v_b.jpg",
     "CutType": 1,
-    "Javdb": "84QV",
-    "Javlibrary": "javliiig4e",
-    "Javbus": "SNIS-346",
     "Arzon": "1247166",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,11 @@
     "Actors": [
         "\u7b39\u672c\u307f\u307b"
     ],
-    "Modify": "2021-09-25 18:30:16"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "84QV",
+    "JavLibrary": "javliiig4e",
+    "JavBus": "SNIS-346",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/snis346/snis346pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/84/84QV.jpg",
+    "Init": "2021-09-25 18:30:16"
 }

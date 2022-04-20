@@ -1,0 +1,39 @@
+{
+    "Car": "IPZ-198",
+    "CarOrigin": "ipz198",
+    "Series": "\u79d8\u5bc6\u5973\u635c\u67fb\u5b98",
+    "Title": "\u79d8\u5bc6\u5973\u635c\u67fb\u5b98",
+    "TitleZh": "\u79d8\u5bc6\u5973\u641c\u67e5\u5b98",
+    "Plot": "\u3010\u5f71\u7247\u4e0b\u67b6\uff0c\u6682\u65e0\u7b80\u4ecb\u3011",
+    "PlotZh": "\u3010\u5f71\u7247\u4e0b\u67b6\uff0c\u6682\u65f6\u65e0\u7b80\u4ecb\u3011",
+    "Review": "",
+    "Release": "2013-09-19",
+    "Runtime": 150,
+    "Director": "\u6ca2\u5eb5",
+    "Studio": "IDEA POCKET",
+    "Publisher": "\u30c6\u30a3\u30c3\u30b7\u30e5",
+    "Score": 83,
+    "CoverLibrary": "",
+    "CoverBus": "3xac_b.jpg",
+    "CutType": 1,
+    "Arzon": "",
+    "CompletionStatus": 6,
+    "Version": 1,
+    "Genres": [
+        "\u5973\u641c\u67e5\u5b98",
+        "\u7d27\u8eab\u8863",
+        "\u5f3a\u5978",
+        "\u5355\u4f53\u4f5c\u54c1",
+        "\u6570\u4f4d\u9a6c\u8d5b\u514b"
+    ],
+    "Actors": [
+        "\u77f3\u539f\u8389\u5948"
+    ],
+    "Modify": "2022-04-01 22:01:11",
+    "JavDb": "me8Xy",
+    "JavLibrary": "javlijbj7m",
+    "JavBus": "IPZ-198",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ipz198/ipz198pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/me/me8Xy.jpg",
+    "Init": "2021-09-21 08:02:31"
+}

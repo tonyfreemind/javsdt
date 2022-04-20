@@ -13,12 +13,9 @@
     "Studio": "S1 NO.1 STYLE",
     "Publisher": "S1 NO.1 STYLE",
     "Score": 85,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ssni235/ssni235pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "6lij_b.jpg",
     "CutType": 1,
-    "Javdb": "r3w5z",
-    "Javlibrary": "javli7bv4i",
-    "Javbus": "SSNI-235",
     "Arzon": "1460671",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,11 @@
     "Actors": [
         "\u677e\u672c\u83dc\u5948\u5b9f"
     ],
-    "Modify": "2021-09-25 18:47:52"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "r3w5z",
+    "JavLibrary": "javli7bv4i",
+    "JavBus": "SSNI-235",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ssni235/ssni235pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/r3/r3w5z.jpg",
+    "Init": "2021-09-25 18:47:52"
 }

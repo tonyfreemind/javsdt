@@ -13,12 +13,9 @@
     "Studio": "MOODYZ",
     "Publisher": "\u307e\u3093\u304d\u3064",
     "Score": 92,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mimk007/mimk007pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "2biz_b.jpg",
     "CutType": 1,
-    "Javdb": "meOEM",
-    "Javlibrary": "javliobcre",
-    "Javbus": "MIMK-007",
     "Arzon": "1021904",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,11 @@
     "Actors": [
         "Hitomi"
     ],
-    "Modify": "2021-09-25 17:42:34"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "meOEM",
+    "JavLibrary": "javliobcre",
+    "JavBus": "MIMK-007",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mimk007/mimk007pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/me/meOEM.jpg",
+    "Init": "2021-09-25 17:42:34"
 }

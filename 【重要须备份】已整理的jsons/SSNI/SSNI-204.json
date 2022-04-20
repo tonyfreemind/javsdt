@@ -13,12 +13,9 @@
     "Studio": "S1 NO.1 STYLE",
     "Publisher": "S1 NO.1 STYLE",
     "Score": 93,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ssni204/ssni204pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "6k1v_b.jpg",
     "CutType": 1,
-    "Javdb": "gyRYm",
-    "Javlibrary": "javli7a2qe",
-    "Javbus": "SSNI-204",
     "Arzon": "1637147",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,11 @@
     "Actors": [
         "\u5b87\u90fd\u5bae\u3057\u3092\u3093"
     ],
-    "Modify": "2021-09-25 18:46:01"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "gyRYm",
+    "JavLibrary": "javli7a2qe",
+    "JavBus": "SSNI-204",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ssni204/ssni204pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/gy/gyRYm.jpg",
+    "Init": "2021-09-25 18:46:01"
 }

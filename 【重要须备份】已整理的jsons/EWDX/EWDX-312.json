@@ -1,0 +1,35 @@
+{
+    "Car": "EWDX-312",
+    "CarOrigin": "",
+    "Series": "",
+    "Title": "\u862d",
+    "TitleZh": "\u5170",
+    "Plot": "\u3010\u5f71\u7247\u4e0b\u67b6\uff0c\u6682\u65e0\u7b80\u4ecb\u3011",
+    "PlotZh": "\u3010\u5f71\u7247\u4e0b\u67b6\uff0c\u6682\u65f6\u65e0\u7b80\u4ecb\u3011",
+    "Review": "",
+    "Release": "2020-07-10",
+    "Runtime": 63,
+    "Director": "",
+    "Studio": "E\u2605\u4eba\u59bbDX",
+    "Publisher": "E\u2605\u4eba\u59bbDX",
+    "Score": 82,
+    "CoverLibrary": "",
+    "CoverBus": "",
+    "CutType": 1,
+    "Javdb": "WzrB8",
+    "Javlibrary": "",
+    "Javbus": "",
+    "Arzon": "",
+    "CompletionStatus": 1,
+    "Version": 1,
+    "Genres": [
+        "\u8fde\u88e4\u889c",
+        "\u4eba\u59bb",
+        "\u4e2d\u51fa",
+        "\u51fa\u8f68"
+    ],
+    "Actors": [
+        "\u91ce\u3005\u5bae\u862d"
+    ],
+    "Modify": "2022-02-06 10:38:38"
+}

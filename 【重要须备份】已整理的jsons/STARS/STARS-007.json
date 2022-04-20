@@ -13,12 +13,9 @@
     "Studio": "SOD Create",
     "Publisher": "SOD star",
     "Score": 66,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1stars007/1stars007pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "6vfz_b.jpg",
     "CutType": 1,
-    "Javdb": "ZN7Zq",
-    "Javlibrary": "javli7ta2q",
-    "Javbus": "STARS-007",
     "Arzon": "1487196",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,11 @@
     "Actors": [
         "\u6210\u5bae\u308a\u304b"
     ],
-    "Modify": "2021-09-25 19:50:05"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "ZN7Zq",
+    "JavLibrary": "javli7ta2q",
+    "JavBus": "STARS-007",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1stars007/1stars007pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/zn/ZN7Zq.jpg",
+    "Init": "2021-09-25 19:50:05"
 }

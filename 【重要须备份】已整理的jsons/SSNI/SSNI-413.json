@@ -13,12 +13,9 @@
     "Studio": "S1 NO.1 STYLE",
     "Publisher": "S1 NO.1 STYLE",
     "Score": 91,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ssni413/ssni413pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "6yie_b.jpg",
     "CutType": 1,
-    "Javdb": "6xyVK",
-    "Javlibrary": "javli73d3y",
-    "Javbus": "SSNI-413",
     "Arzon": "1499284",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,11 @@
     "Actors": [
         "\u6a4b\u672c\u3042\u308a\u306a"
     ],
-    "Modify": "2021-09-25 18:55:35"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "6xyVK",
+    "JavLibrary": "javli73d3y",
+    "JavBus": "SSNI-413",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ssni413/ssni413pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/6x/6xyVK.jpg",
+    "Init": "2021-09-25 18:55:35"
 }

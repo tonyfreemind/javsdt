@@ -13,12 +13,9 @@
     "Studio": "S1 NO.1 STYLE",
     "Publisher": "S1 NO.1 STYLE",
     "Score": 91,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ssni567/ssni567pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "7a4l_b.jpg",
     "CutType": 1,
-    "Javdb": "WdbWZ",
-    "Javlibrary": "javli6jw6a",
-    "Javbus": "SSNI-567",
     "Arzon": "1531962",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,11 @@
     "Actors": [
         "\u8475\u53f8"
     ],
-    "Modify": "2021-09-25 19:03:05"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "WdbWZ",
+    "JavLibrary": "javli6jw6a",
+    "JavBus": "SSNI-567",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ssni567/ssni567pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/wd/WdbWZ.jpg",
+    "Init": "2021-09-25 19:03:05"
 }

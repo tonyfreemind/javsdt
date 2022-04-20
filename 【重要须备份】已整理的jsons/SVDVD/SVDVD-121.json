@@ -13,12 +13,9 @@
     "Studio": "\u30b5\u30c7\u30a3\u30b9\u30c6\u30a3\u30c3\u30af\u30f4\u30a3\u30ec\u30c3\u30b8",
     "Publisher": "\u30b5\u30c7\u30a3\u30b9\u30c6\u30a3\u30c3\u30af\u30f4\u30a3\u30ec\u30c3\u30b8",
     "Score": 77,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1svdvd121/1svdvd121pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "2om4_b.jpg",
     "CutType": 1,
-    "Javdb": "0eyRv",
-    "Javlibrary": "javlimya3m",
-    "Javbus": "SVDVD-121",
     "Arzon": "521937",
     "CompletionStatus": 6,
     "Version": 1,
@@ -31,5 +28,11 @@
     "Actors": [
         "\u3064\u307c\u307f"
     ],
-    "Modify": "2021-09-25 19:55:14"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "0eyRv",
+    "JavLibrary": "javlimya3m",
+    "JavBus": "SVDVD-121",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1svdvd121/1svdvd121pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/0e/0eyRv.jpg",
+    "Init": "2021-09-25 19:55:14"
 }

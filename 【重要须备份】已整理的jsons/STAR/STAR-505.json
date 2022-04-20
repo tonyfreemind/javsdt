@@ -13,12 +13,9 @@
     "Studio": "SOD Create",
     "Publisher": "SOD\u30af\u30ea\u30a8\u30a4\u30c8",
     "Score": 88,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1star505/1star505pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "47fa_b.jpg",
     "CutType": 1,
-    "Javdb": "AqQ2n",
-    "Javlibrary": "javlijq77a",
-    "Javbus": "STAR-505",
     "Arzon": "1200334",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,11 @@
     "Actors": [
         "\u53e4\u5ddd\u4f0a\u7ec7"
     ],
-    "Modify": "2021-09-25 19:14:32"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "AqQ2n",
+    "JavLibrary": "javlijq77a",
+    "JavBus": "STAR-505",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1star505/1star505pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/aq/AqQ2n.jpg",
+    "Init": "2021-09-25 19:14:32"
 }

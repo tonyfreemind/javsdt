@@ -13,12 +13,9 @@
     "Studio": "SOD Create",
     "Publisher": "SOD\u30af\u30ea\u30a8\u30a4\u30c8",
     "Score": 86,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1star380/1star380pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "qy6_b.jpg",
     "CutType": 1,
-    "Javdb": "RkYp8",
-    "Javlibrary": "javliothze",
-    "Javbus": "STAR-380",
     "Arzon": "1093268",
     "CompletionStatus": 6,
     "Version": 1,
@@ -31,5 +28,11 @@
     "Actors": [
         "\u53e4\u5ddd\u4f0a\u7ec7"
     ],
-    "Modify": "2021-09-25 19:12:21"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "RkYp8",
+    "JavLibrary": "javliothze",
+    "JavBus": "STAR-380",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1star380/1star380pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/rk/RkYp8.jpg",
+    "Init": "2021-09-25 19:12:21"
 }

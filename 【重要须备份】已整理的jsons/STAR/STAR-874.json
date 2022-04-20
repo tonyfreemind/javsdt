@@ -13,12 +13,9 @@
     "Studio": "SOD Create",
     "Publisher": "SOD star",
     "Score": 80,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1star874/1star874pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "6fwe_b.jpg",
     "CutType": 1,
-    "Javdb": "mODDr",
-    "Javlibrary": "javli4yazi",
-    "Javbus": "STAR-874",
     "Arzon": "1441900",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,11 @@
     "Actors": [
         "\u98db\u9ce5\u308a\u3093"
     ],
-    "Modify": "2021-09-25 19:25:51"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "mODDr",
+    "JavLibrary": "javli4yazi",
+    "JavBus": "STAR-874",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1star874/1star874pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/mo/mODDr.jpg",
+    "Init": "2021-09-25 19:25:51"
 }

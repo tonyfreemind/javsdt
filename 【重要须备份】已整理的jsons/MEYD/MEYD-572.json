@@ -13,12 +13,9 @@
     "Studio": "\u6e9c\u6c60\u30b4\u30ed\u30fc",
     "Publisher": "\u6e9c\u6c60\u30b4\u30ed\u30fc",
     "Score": 90,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/meyd572/meyd572pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "7ilu_b.jpg",
     "CutType": 1,
-    "Javdb": "YGwMd",
-    "Javlibrary": "javli6r3tq",
-    "Javbus": "MEYD-572",
     "Arzon": "1554177",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,11 @@
     "Actors": [
         "\u4eca\u4e95\u590f\u5e06"
     ],
-    "Modify": "2021-09-25 16:05:12"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "YGwMd",
+    "JavLibrary": "javli6r3tq",
+    "JavBus": "MEYD-572",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/meyd572/meyd572pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/yg/YGwMd.jpg",
+    "Init": "2021-09-25 16:05:12"
 }

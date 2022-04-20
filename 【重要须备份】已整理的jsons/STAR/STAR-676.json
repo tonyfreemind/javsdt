@@ -13,12 +13,9 @@
     "Studio": "SOD Create",
     "Publisher": "SOD star",
     "Score": 90,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1star676/1star676pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "5hhh_b.jpg",
     "CutType": 1,
-    "Javdb": "kKeJe",
-    "Javlibrary": "javliltn4m",
-    "Javbus": "STAR-676",
     "Arzon": "1331255",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,11 @@
     "Actors": [
         "\u53e4\u5ddd\u4f0a\u7ec7"
     ],
-    "Modify": "2021-09-25 19:20:24"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "kKeJe",
+    "JavLibrary": "javliltn4m",
+    "JavBus": "STAR-676",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1star676/1star676pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/kk/kKeJe.jpg",
+    "Init": "2021-09-25 19:20:24"
 }

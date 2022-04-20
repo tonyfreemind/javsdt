@@ -13,12 +13,9 @@
     "Studio": "S1 NO.1 STYLE",
     "Publisher": "S1 NO.1 STYLE",
     "Score": 89,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ssni100/ssni100pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "6d0c_b.jpg",
     "CutType": 1,
-    "Javdb": "YnQOp",
-    "Javlibrary": "javli43gsu",
-    "Javbus": "SSNI-100",
     "Arzon": "1437608",
     "CompletionStatus": 6,
     "Version": 1,
@@ -35,5 +32,11 @@
     "Actors": [
         "\u5b87\u90fd\u5bae\u3057\u3092\u3093"
     ],
-    "Modify": "2021-09-25 18:43:53"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "YnQOp",
+    "JavLibrary": "javli43gsu",
+    "JavBus": "SSNI-100",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ssni100/ssni100pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/yn/YnQOp.jpg",
+    "Init": "2021-09-25 18:43:53"
 }

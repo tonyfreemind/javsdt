@@ -13,12 +13,9 @@
     "Studio": "\u30c9\u30ea\u30fc\u30e0\u30c1\u30b1\u30c3\u30c8",
     "Publisher": "VIVID\uff08\u30c9\u30ea\u30fc\u30e0\u30c1\u30b1\u30c3\u30c8\uff09",
     "Score": 82,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/24vdd082/24vdd082pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "vjn_b.jpg",
     "CutType": 1,
-    "Javdb": "Yw3vp",
-    "Javlibrary": "javlijdk2q",
-    "Javbus": "VDD-082",
     "Arzon": "1133056",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,11 @@
     "Actors": [
         "\u82a6\u540d\u30e6\u30ea\u30a2"
     ],
-    "Modify": "2021-09-25 20:19:44"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "Yw3vp",
+    "JavLibrary": "javlijdk2q",
+    "JavBus": "VDD-082",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/24vdd082/24vdd082pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/yw/Yw3vp.jpg",
+    "Init": "2021-09-25 20:19:44"
 }

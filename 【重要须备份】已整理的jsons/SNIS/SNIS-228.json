@@ -13,12 +13,9 @@
     "Studio": "S1 NO.1 STYLE",
     "Publisher": "S1 NO.1 STYLE",
     "Score": 86,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/snis228/snis228pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "4euk_b.jpg",
     "CutType": 1,
-    "Javdb": "EbbYx",
-    "Javlibrary": "javliidn7m",
-    "Javbus": "SNIS-228",
     "Arzon": "1218712",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,11 @@
     "Actors": [
         "\u85cd\u6ca2\u6f64"
     ],
-    "Modify": "2021-09-25 18:28:58"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "EbbYx",
+    "JavLibrary": "javliidn7m",
+    "JavBus": "SNIS-228",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/snis228/snis228pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/eb/EbbYx.jpg",
+    "Init": "2021-09-25 18:28:58"
 }

@@ -13,12 +13,9 @@
     "Studio": "\u30ef\u30f3\u30ba\u30d5\u30a1\u30af\u30c8\u30ea\u30fc",
     "Publisher": "WANZ FACTORY",
     "Score": 86,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/wanz290/wanz290pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "4mas_b.jpg",
     "CutType": 1,
-    "Javdb": "DR4WM",
-    "Javlibrary": "javliiivy4",
-    "Javbus": "WANZ-290",
     "Arzon": "1245668",
     "CompletionStatus": 6,
     "Version": 1,
@@ -31,5 +28,11 @@
     "Actors": [
         "\u3064\u307c\u307f"
     ],
-    "Modify": "2021-09-25 20:27:05"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "DR4WM",
+    "JavLibrary": "javliiivy4",
+    "JavBus": "WANZ-290",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/wanz290/wanz290pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/dr/DR4WM.jpg",
+    "Init": "2021-09-25 20:27:05"
 }

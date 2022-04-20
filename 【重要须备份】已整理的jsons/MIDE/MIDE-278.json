@@ -13,12 +13,9 @@
     "Studio": "MOODYZ",
     "Publisher": "MOODYZ DIVA",
     "Score": 85,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/mide278/mide278pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "5676_b.jpg",
     "CutType": 1,
-    "Javdb": "p37ge",
-    "Javlibrary": "javlildn4q",
-    "Javbus": "MIDE-278",
     "Arzon": "1296167",
     "CompletionStatus": 6,
     "Version": 1,
@@ -34,5 +31,11 @@
     "Actors": [
         "\u521d\u5ddd\u307f\u306a\u307f"
     ],
-    "Modify": "2021-09-25 17:25:20"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "p37ge",
+    "JavLibrary": "javlildn4q",
+    "JavBus": "MIDE-278",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/mide278/mide278pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/p3/p37ge.jpg",
+    "Init": "2021-09-25 17:25:20"
 }

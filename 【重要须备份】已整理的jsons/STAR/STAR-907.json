@@ -13,12 +13,9 @@
     "Studio": "SOD Create",
     "Publisher": "SOD star",
     "Score": 90,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1star907/1star907pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "6jzr_b.jpg",
     "CutType": 1,
-    "Javdb": "Ggam",
-    "Javlibrary": "javli7aq4y",
-    "Javbus": "STAR-907",
     "Arzon": "1465763",
     "CompletionStatus": 6,
     "Version": 1,
@@ -32,5 +29,11 @@
     "Actors": [
         "\u6238\u7530\u771f\u7434"
     ],
-    "Modify": "2021-09-25 19:33:15"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "Ggam",
+    "JavLibrary": "javli7aq4y",
+    "JavBus": "STAR-907",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1star907/1star907pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/gg/Ggam.jpg",
+    "Init": "2021-09-25 19:33:15"
 }

@@ -13,12 +13,9 @@
     "Studio": "\u30de\u30c9\u30f3\u30ca",
     "Publisher": "\u719f\u308c\u30b3\u30df",
     "Score": 81,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/ure020/ure020pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "4iyk_b.jpg",
     "CutType": 1,
-    "Javdb": "eN7p",
-    "Javlibrary": "javliibc7a",
-    "Javbus": "URE-020",
     "Arzon": "483883",
     "CompletionStatus": 6,
     "Version": 1,
@@ -36,5 +33,11 @@
         "\u5343\u4e43\u3042\u305a\u307f",
         "\u6069\u7530\u307b\u306e\u304b"
     ],
-    "Modify": "2021-09-25 20:17:59"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "eN7p",
+    "JavLibrary": "javliibc7a",
+    "JavBus": "URE-020",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/ure020/ure020pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/en/eN7p.jpg",
+    "Init": "2021-09-25 20:17:59"
 }

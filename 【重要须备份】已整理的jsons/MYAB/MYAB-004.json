@@ -13,12 +13,9 @@
     "Studio": "AVS",
     "Publisher": "AVSCollector\u2019s",
     "Score": 90,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/myab004/myab004pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "6wlv_b.jpg",
     "CutType": 1,
-    "Javdb": "NREV4",
-    "Javlibrary": "javli7r66q",
-    "Javbus": "MYAB-004",
     "Arzon": "1494396",
     "CompletionStatus": 6,
     "Version": 1,
@@ -33,5 +30,11 @@
     "Actors": [
         "\u7be0\u7530\u3086\u3046"
     ],
-    "Modify": "2021-09-25 17:53:47"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "NREV4",
+    "JavLibrary": "javli7r66q",
+    "JavBus": "MYAB-004",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/myab004/myab004pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/nr/NREV4.jpg",
+    "Init": "2021-09-25 17:53:47"
 }

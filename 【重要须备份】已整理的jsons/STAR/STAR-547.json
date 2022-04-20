@@ -13,12 +13,9 @@
     "Studio": "SOD Create",
     "Publisher": "SOD star",
     "Score": 85,
-    "CoverLibrary": "http://pics.dmm.co.jp/mono/movie/adult/1star547/1star547pl.jpg",
+    "CoverLibrary": "",
     "CoverBus": "4gcf_b.jpg",
     "CutType": 1,
-    "Javdb": "wqrem",
-    "Javlibrary": "javliidp5m",
-    "Javbus": "STAR-547",
     "Arzon": "",
     "CompletionStatus": 6,
     "Version": 1,
@@ -31,5 +28,11 @@
     "Actors": [
         "\u77f3\u539f\u8389\u5948"
     ],
-    "Modify": "2021-09-25 19:17:11"
+    "Modify": "2022-04-01 22:01:12",
+    "JavDb": "wqrem",
+    "JavLibrary": "javliidp5m",
+    "JavBus": "STAR-547",
+    "CoverDmm": "http://pics.dmm.co.jp/mono/movie/adult/1star547/1star547pl.jpg",
+    "CoverDb": "https://jdbimgs.com/covers/wq/wqrem.jpg",
+    "Init": "2021-09-25 19:17:11"
 }
