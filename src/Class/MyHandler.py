@@ -28,7 +28,9 @@ class Handler(object):
         config_settings.read('【点我设置整理规则】.ini', encoding='utf-8-sig')
         # ###################################################### 公式元素 ##############################################
         # 是否 去除 标题 末尾可能存在的演员姓名
-        self._bool_need_actors_end_of_title = config_settings.get("公式元素", "标题末尾保留演员姓名？") == '是'
+        tonychange = config_settings.get("公式元素", "标题末尾保留演员姓名？")
+
+        self._bool_need_actors_end_of_title = tonychange == '猪'
         # ###################################################### nfo ##################################################
         # 是否 收集nfo
         self._bool_nfo = config_settings.get("收集nfo", "是否收集nfo？") == '是'
